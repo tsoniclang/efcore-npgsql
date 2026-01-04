@@ -1,0 +1,63 @@
+{
+  "namespace": "Microsoft.Extensions.DependencyInjection",
+  "contributingAssemblies": [
+    "Microsoft.EntityFrameworkCore",
+    "Microsoft.Extensions.Caching.Memory",
+    "Microsoft.Extensions.DependencyInjection",
+    "Microsoft.Extensions.DependencyInjection.Abstractions",
+    "Microsoft.Extensions.Logging",
+    "Microsoft.Extensions.Options",
+    "Npgsql.EntityFrameworkCore.PostgreSQL"
+  ],
+  "types": [
+    {
+      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Microsoft.Extensions.DependencyInjection.NpgsqlServiceCollectionExtensions",
+      "clrName": "Microsoft.Extensions.DependencyInjection.NpgsqlServiceCollectionExtensions",
+      "tsEmitName": "NpgsqlServiceCollectionExtensions",
+      "kind": "StaticNamespace",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": true,
+      "isStatic": true,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Microsoft.Extensions.DependencyInjection.NpgsqlServiceCollectionExtensions::AddNpgsql(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,System.Action_1[[Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.NpgsqlDbContextOptionsBuilder,Npgsql.EntityFrameworkCore.PostgreSQL,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]],System.Action_1[[Microsoft.EntityFrameworkCore.DbContextOptionsBuilder,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IServiceCollection",
+          "clrName": "AddNpgsql",
+          "tsEmitName": "addNpgsql",
+          "normalizedSignature": "AddNpgsql|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,System.Action_1[[Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.NpgsqlDbContextOptionsBuilder,Npgsql.EntityFrameworkCore.PostgreSQL,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]],System.Action_1[[Microsoft.EntityFrameworkCore.DbContextOptionsBuilder,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IServiceCollection|static=true",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 1,
+          "parameterCount": 4,
+          "isExtensionMethod": true
+        },
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Microsoft.Extensions.DependencyInjection.NpgsqlServiceCollectionExtensions::AddEntityFrameworkNpgsql(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.Extensions.DependencyInjection.IServiceCollection",
+          "clrName": "AddEntityFrameworkNpgsql",
+          "tsEmitName": "addEntityFrameworkNpgsql",
+          "normalizedSignature": "AddEntityFrameworkNpgsql|(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.Extensions.DependencyInjection.IServiceCollection|static=true",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": true
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": []
+    }
+  ]
+}

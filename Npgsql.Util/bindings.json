@@ -1,0 +1,17 @@
+{
+  "namespace": "Npgsql.Util",
+  "types": [
+    {
+      "stableId": "Npgsql:Npgsql.Util.NpgsqlTimeout",
+      "clrName": "Npgsql.Util.NpgsqlTimeout",
+      "tsEmitName": "NpgsqlTimeout",
+      "assemblyName": "Npgsql",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": []
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "namespace": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json",
+  "contributingAssemblies": [
+    "Npgsql.EntityFrameworkCore.PostgreSQL"
+  ],
+  "types": [
+    {
+      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonBitArrayReaderWriter",
+      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonBitArrayReaderWriter",
+      "tsEmitName": "JsonBitArrayReaderWriter",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonBitArrayReaderWriter::FromJsonTyped(Microsoft.EntityFrameworkCore.Storage.Json.Utf8JsonReaderManager\u0026,System.Object):System.Collections.BitArray",
+          "clrName": "FromJsonTyped",
+          "tsEmitName": "fromJsonTyped",
+          "normalizedSignature": "FromJsonTyped|(Microsoft.EntityFrameworkCore.Storage.Json.Utf8JsonReaderManager\u0026,System.Object):System.Collections.BitArray|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 2,
+          "isExtensionMethod": false,
+          "parameterModifiers": [
+            {
+              "index": 0,
+              "modifier": "ref"
+            }
+          ]
+        },
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonBitArrayReaderWriter::ToJsonTyped(System.Text.Json.Utf8JsonWriter,System.Collections.BitArray):System.Void",
+          "clrName": "ToJsonTyped",
+          "tsEmitName": "toJsonTyped",
+          "normalizedSignature": "ToJsonTyped|(System.Text.Json.Utf8JsonWriter,System.Collections.BitArray):System.Void|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 2,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonBitArrayReaderWriter::Instance:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonBitArrayReaderWriter",
+          "clrName": "Instance",
+          "tsEmitName": "instance",
+          "normalizedSignature": "Instance|:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonBitArrayReaderWriter|static=true|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonBitArrayReaderWriter::ConstructorExpression:System.Linq.Expressions.Expression",
+          "clrName": "ConstructorExpression",
+          "tsEmitName": "constructorExpression",
+          "normalizedSignature": "ConstructorExpression|:System.Linq.Expressions.Expression|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0
+        }
+      ]
+    },
+    {
+      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonMacaddrReaderWriter",
+      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonMacaddrReaderWriter",
+      "tsEmitName": "JsonMacaddrReaderWriter",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonMacaddrReaderWriter::FromJsonTyped(Microsoft.EntityFrameworkCore.Storage.Json.Utf8JsonReaderManager\u0026,System.Object):System.Net.NetworkInformation.PhysicalAddress",
+          "clrName": "FromJsonTyped",
+          "tsEmitName": "fromJsonTyped",
+          "normalizedSignature": "FromJsonTyped|(Microsoft.EntityFrameworkCore.Storage.Json.Utf8JsonReaderManager\u0026,System.Object):System.Net.NetworkInformation.PhysicalAddress|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 2,
+          "isExtensionMethod": false,
+          "parameterModifiers": [
+            {
+              "index": 0,
+              "modifier": "ref"
+            }
+          ]
+        },
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonMacaddrReaderWriter::ToJsonTyped(System.Text.Json.Utf8JsonWriter,System.Net.NetworkInformation.PhysicalAddress):System.Void",
+          "clrName": "ToJsonTyped",
+          "tsEmitName": "toJsonTyped",
+          "normalizedSignature": "ToJsonTyped|(System.Text.Json.Utf8JsonWriter,System.Net.NetworkInformation.PhysicalAddress):System.Void|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 2,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonMacaddrReaderWriter::Instance:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonMacaddrReaderWriter",
+          "clrName": "Instance",
+          "tsEmitName": "instance",
+          "normalizedSignature": "Instance|:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonMacaddrReaderWriter|static=true|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonMacaddrReaderWriter::ConstructorExpression:System.Linq.Expressions.Expression",
+          "clrName": "ConstructorExpression",
+          "tsEmitName": "constructorExpression",
+          "normalizedSignature": "ConstructorExpression|:System.Linq.Expressions.Expression|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": []
+    }
+  ]
+}

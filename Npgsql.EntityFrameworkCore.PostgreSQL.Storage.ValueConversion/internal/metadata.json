@@ -1,0 +1,51 @@
+{
+  "namespace": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.ValueConversion",
+  "contributingAssemblies": [
+    "Npgsql.EntityFrameworkCore.PostgreSQL"
+  ],
+  "types": [
+    {
+      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.ValueConversion.NpgsqlArrayConverter\u00603",
+      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.ValueConversion.NpgsqlArrayConverter\u00603",
+      "tsEmitName": "NpgsqlArrayConverter_3",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 3,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.ValueConversion.NpgsqlArrayConverter\u00603::ElementConverter:Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter",
+          "clrName": "ElementConverter",
+          "tsEmitName": "elementConverter",
+          "normalizedSignature": "ElementConverter|:Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0
+        },
+        {
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1
+        }
+      ]
+    }
+  ]
+}

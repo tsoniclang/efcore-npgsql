@@ -1,0 +1,60 @@
+{
+  "namespace": "Npgsql.EntityFrameworkCore.PostgreSQL",
+  "contributingAssemblies": [
+    "Npgsql.EntityFrameworkCore.PostgreSQL"
+  ],
+  "types": [
+    {
+      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.NpgsqlRetryingExecutionStrategy",
+      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.NpgsqlRetryingExecutionStrategy",
+      "tsEmitName": "NpgsqlRetryingExecutionStrategy",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.DbContext):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1
+        },
+        {
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.ExecutionStrategyDependencies):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1
+        },
+        {
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.DbContext,System.Int32):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2
+        },
+        {
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.ExecutionStrategyDependencies,System.Int32):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2
+        },
+        {
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.ExecutionStrategyDependencies,System.Collections.Generic.ICollection_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2
+        },
+        {
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.DbContext,System.Int32,System.TimeSpan,System.Collections.Generic.ICollection_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 4
+        },
+        {
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.ExecutionStrategyDependencies,System.Int32,System.TimeSpan,System.Collections.Generic.ICollection_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 4
+        }
+      ]
+    }
+  ]
+}

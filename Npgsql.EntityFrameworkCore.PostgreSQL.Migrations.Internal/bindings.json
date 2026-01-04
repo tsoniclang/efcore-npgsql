@@ -1,0 +1,394 @@
+{
+  "namespace": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal",
+  "types": [
+    {
+      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository",
+      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository",
+      "tsEmitName": "NpgsqlHistoryRepository",
+      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository::AcquireDatabaseLock():Microsoft.EntityFrameworkCore.Migrations.IMigrationsDatabaseLock",
+          "clrName": "AcquireDatabaseLock",
+          "tsEmitName": "acquireDatabaseLock",
+          "metadataToken": 100665211,
+          "canonicalSignature": "():Microsoft.EntityFrameworkCore.Migrations.IMigrationsDatabaseLock",
+          "normalizedSignature": "AcquireDatabaseLock|():Microsoft.EntityFrameworkCore.Migrations.IMigrationsDatabaseLock|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository::AcquireDatabaseLockAsync(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Microsoft.EntityFrameworkCore.Migrations.IMigrationsDatabaseLock,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "AcquireDatabaseLockAsync",
+          "tsEmitName": "acquireDatabaseLockAsync",
+          "metadataToken": 100665212,
+          "canonicalSignature": "(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Microsoft.EntityFrameworkCore.Migrations.IMigrationsDatabaseLock,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "AcquireDatabaseLockAsync|(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Microsoft.EntityFrameworkCore.Migrations.IMigrationsDatabaseLock,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository::GetCreateIfNotExistsScript():System.String",
+          "clrName": "GetCreateIfNotExistsScript",
+          "tsEmitName": "getCreateIfNotExistsScript",
+          "metadataToken": 100665221,
+          "canonicalSignature": "():System.String",
+          "normalizedSignature": "GetCreateIfNotExistsScript|():System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository::GetBeginIfNotExistsScript(System.String):System.String",
+          "clrName": "GetBeginIfNotExistsScript",
+          "tsEmitName": "getBeginIfNotExistsScript",
+          "metadataToken": 100665222,
+          "canonicalSignature": "(System.String):System.String",
+          "normalizedSignature": "GetBeginIfNotExistsScript|(System.String):System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository::GetBeginIfExistsScript(System.String):System.String",
+          "clrName": "GetBeginIfExistsScript",
+          "tsEmitName": "getBeginIfExistsScript",
+          "metadataToken": 100665223,
+          "canonicalSignature": "(System.String):System.String",
+          "normalizedSignature": "GetBeginIfExistsScript|(System.String):System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository::GetEndIfScript():System.String",
+          "clrName": "GetEndIfScript",
+          "tsEmitName": "getEndIfScript",
+          "metadataToken": 100665224,
+          "canonicalSignature": "():System.String",
+          "normalizedSignature": "GetEndIfScript|():System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository::GetAppliedMigrations():System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Migrations.HistoryRow,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "GetAppliedMigrations",
+          "tsEmitName": "getAppliedMigrations",
+          "metadataToken": 100665225,
+          "canonicalSignature": "():System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Migrations.HistoryRow,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "GetAppliedMigrations|():System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Migrations.HistoryRow,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository::GetAppliedMigrationsAsync(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Migrations.HistoryRow,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "GetAppliedMigrationsAsync",
+          "tsEmitName": "getAppliedMigrationsAsync",
+          "metadataToken": 100665226,
+          "canonicalSignature": "(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Migrations.HistoryRow,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "GetAppliedMigrationsAsync|(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Migrations.HistoryRow,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository::Exists():System.Boolean",
+          "clrName": "Exists",
+          "tsEmitName": "exists",
+          "metadataToken": 100665227,
+          "canonicalSignature": "():System.Boolean",
+          "normalizedSignature": "Exists|():System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository::ExistsAsync(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "ExistsAsync",
+          "tsEmitName": "existsAsync",
+          "metadataToken": 100665228,
+          "canonicalSignature": "(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "ExistsAsync|(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository::LockReleaseBehavior:Microsoft.EntityFrameworkCore.Migrations.LockReleaseBehavior",
+          "clrName": "LockReleaseBehavior",
+          "tsEmitName": "lockReleaseBehavior",
+          "metadataToken": 385876138,
+          "canonicalSignature": ":Microsoft.EntityFrameworkCore.Migrations.LockReleaseBehavior",
+          "normalizedSignature": "LockReleaseBehavior|:Microsoft.EntityFrameworkCore.Migrations.LockReleaseBehavior|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository::.ctor(Microsoft.EntityFrameworkCore.Migrations.HistoryRepositoryDependencies):void",
+          "metadataToken": 100665209,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Migrations.HistoryRepositoryDependencies):void",
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Migrations.HistoryRepositoryDependencies):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "acquireDatabaseLock",
+          "isStatic": false,
+          "tsSignatureId": "AcquireDatabaseLock|():Microsoft.EntityFrameworkCore.Migrations.IMigrationsDatabaseLock|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100665211
+          }
+        },
+        {
+          "tsName": "acquireDatabaseLockAsync",
+          "isStatic": false,
+          "tsSignatureId": "AcquireDatabaseLockAsync|(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Microsoft.EntityFrameworkCore.Migrations.IMigrationsDatabaseLock,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100665212
+          }
+        },
+        {
+          "tsName": "getCreateIfNotExistsScript",
+          "isStatic": false,
+          "tsSignatureId": "GetCreateIfNotExistsScript|():System.String|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100665221
+          }
+        },
+        {
+          "tsName": "getBeginIfNotExistsScript",
+          "isStatic": false,
+          "tsSignatureId": "GetBeginIfNotExistsScript|(System.String):System.String|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100665222
+          }
+        },
+        {
+          "tsName": "getBeginIfExistsScript",
+          "isStatic": false,
+          "tsSignatureId": "GetBeginIfExistsScript|(System.String):System.String|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100665223
+          }
+        },
+        {
+          "tsName": "getEndIfScript",
+          "isStatic": false,
+          "tsSignatureId": "GetEndIfScript|():System.String|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100665224
+          }
+        },
+        {
+          "tsName": "getAppliedMigrations",
+          "isStatic": false,
+          "tsSignatureId": "GetAppliedMigrations|():System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Migrations.HistoryRow,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100665225
+          }
+        },
+        {
+          "tsName": "getAppliedMigrationsAsync",
+          "isStatic": false,
+          "tsSignatureId": "GetAppliedMigrationsAsync|(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Migrations.HistoryRow,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100665226
+          }
+        },
+        {
+          "tsName": "exists",
+          "isStatic": false,
+          "tsSignatureId": "Exists|():System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100665227
+          }
+        },
+        {
+          "tsName": "existsAsync",
+          "isStatic": false,
+          "tsSignatureId": "ExistsAsync|(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100665228
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "lockReleaseBehavior",
+          "isStatic": false,
+          "tsSignatureId": "LockReleaseBehavior|:Microsoft.EntityFrameworkCore.Migrations.LockReleaseBehavior|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 385876138
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Migrations.HistoryRepositoryDependencies):void|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100665209
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlMigrator",
+      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlMigrator",
+      "tsEmitName": "NpgsqlMigrator",
+      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlMigrator::Migrate(System.String):System.Void",
+          "clrName": "Migrate",
+          "tsEmitName": "migrate",
+          "metadataToken": 100665232,
+          "canonicalSignature": "(System.String):System.Void",
+          "normalizedSignature": "Migrate|(System.String):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlMigrator",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlMigrator::MigrateAsync(System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task",
+          "clrName": "MigrateAsync",
+          "tsEmitName": "migrateAsync",
+          "metadataToken": 100665233,
+          "canonicalSignature": "(System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task",
+          "normalizedSignature": "MigrateAsync|(System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlMigrator",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlMigrator::.ctor(Microsoft.EntityFrameworkCore.Migrations.IMigrationsAssembly,Microsoft.EntityFrameworkCore.Migrations.IHistoryRepository,Microsoft.EntityFrameworkCore.Storage.IDatabaseCreator,Microsoft.EntityFrameworkCore.Migrations.IMigrationsSqlGenerator,Microsoft.EntityFrameworkCore.Storage.IRawSqlCommandBuilder,Microsoft.EntityFrameworkCore.Migrations.IMigrationCommandExecutor,Microsoft.EntityFrameworkCore.Storage.IRelationalConnection,Microsoft.EntityFrameworkCore.Storage.ISqlGenerationHelper,Microsoft.EntityFrameworkCore.Infrastructure.ICurrentDbContext,Microsoft.EntityFrameworkCore.Infrastructure.IModelRuntimeInitializer,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BMigrations,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IRelationalCommandDiagnosticsLogger,Microsoft.EntityFrameworkCore.Storage.IDatabaseProvider,Microsoft.EntityFrameworkCore.Migrations.IMigrationsModelDiffer,Microsoft.EntityFrameworkCore.Metadata.IDesignTimeModel,Microsoft.EntityFrameworkCore.Infrastructure.IDbContextOptions,Microsoft.EntityFrameworkCore.Storage.IExecutionStrategy):void",
+          "metadataToken": 100665231,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Migrations.IMigrationsAssembly,Microsoft.EntityFrameworkCore.Migrations.IHistoryRepository,Microsoft.EntityFrameworkCore.Storage.IDatabaseCreator,Microsoft.EntityFrameworkCore.Migrations.IMigrationsSqlGenerator,Microsoft.EntityFrameworkCore.Storage.IRawSqlCommandBuilder,Microsoft.EntityFrameworkCore.Migrations.IMigrationCommandExecutor,Microsoft.EntityFrameworkCore.Storage.IRelationalConnection,Microsoft.EntityFrameworkCore.Storage.ISqlGenerationHelper,Microsoft.EntityFrameworkCore.Infrastructure.ICurrentDbContext,Microsoft.EntityFrameworkCore.Infrastructure.IModelRuntimeInitializer,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BMigrations,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IRelationalCommandDiagnosticsLogger,Microsoft.EntityFrameworkCore.Storage.IDatabaseProvider,Microsoft.EntityFrameworkCore.Migrations.IMigrationsModelDiffer,Microsoft.EntityFrameworkCore.Metadata.IDesignTimeModel,Microsoft.EntityFrameworkCore.Infrastructure.IDbContextOptions,Microsoft.EntityFrameworkCore.Storage.IExecutionStrategy):void",
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Migrations.IMigrationsAssembly,Microsoft.EntityFrameworkCore.Migrations.IHistoryRepository,Microsoft.EntityFrameworkCore.Storage.IDatabaseCreator,Microsoft.EntityFrameworkCore.Migrations.IMigrationsSqlGenerator,Microsoft.EntityFrameworkCore.Storage.IRawSqlCommandBuilder,Microsoft.EntityFrameworkCore.Migrations.IMigrationCommandExecutor,Microsoft.EntityFrameworkCore.Storage.IRelationalConnection,Microsoft.EntityFrameworkCore.Storage.ISqlGenerationHelper,Microsoft.EntityFrameworkCore.Infrastructure.ICurrentDbContext,Microsoft.EntityFrameworkCore.Infrastructure.IModelRuntimeInitializer,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BMigrations,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IRelationalCommandDiagnosticsLogger,Microsoft.EntityFrameworkCore.Storage.IDatabaseProvider,Microsoft.EntityFrameworkCore.Migrations.IMigrationsModelDiffer,Microsoft.EntityFrameworkCore.Metadata.IDesignTimeModel,Microsoft.EntityFrameworkCore.Infrastructure.IDbContextOptions,Microsoft.EntityFrameworkCore.Storage.IExecutionStrategy):void|static=false",
+          "isStatic": false,
+          "parameterCount": 17,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlMigrator",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "migrate",
+          "isStatic": false,
+          "tsSignatureId": "Migrate|(System.String):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlMigrator",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100665232
+          }
+        },
+        {
+          "tsName": "migrateAsync",
+          "isStatic": false,
+          "tsSignatureId": "MigrateAsync|(System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlMigrator",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100665233
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Migrations.IMigrationsAssembly,Microsoft.EntityFrameworkCore.Migrations.IHistoryRepository,Microsoft.EntityFrameworkCore.Storage.IDatabaseCreator,Microsoft.EntityFrameworkCore.Migrations.IMigrationsSqlGenerator,Microsoft.EntityFrameworkCore.Storage.IRawSqlCommandBuilder,Microsoft.EntityFrameworkCore.Migrations.IMigrationCommandExecutor,Microsoft.EntityFrameworkCore.Storage.IRelationalConnection,Microsoft.EntityFrameworkCore.Storage.ISqlGenerationHelper,Microsoft.EntityFrameworkCore.Infrastructure.ICurrentDbContext,Microsoft.EntityFrameworkCore.Infrastructure.IModelRuntimeInitializer,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BMigrations,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IRelationalCommandDiagnosticsLogger,Microsoft.EntityFrameworkCore.Storage.IDatabaseProvider,Microsoft.EntityFrameworkCore.Migrations.IMigrationsModelDiffer,Microsoft.EntityFrameworkCore.Metadata.IDesignTimeModel,Microsoft.EntityFrameworkCore.Infrastructure.IDbContextOptions,Microsoft.EntityFrameworkCore.Storage.IExecutionStrategy):void|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlMigrator",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100665231
+          }
+        }
+      ]
+    }
+  ]
+}

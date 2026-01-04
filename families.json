@@ -1,0 +1,23 @@
+{
+  "Npgsql.NpgsqlParameter": {
+    "stem": "NpgsqlParameter",
+    "namespace": "Npgsql",
+    "minArity": 0,
+    "maxArity": 1,
+    "isDelegate": false
+  },
+  "Npgsql.Internal.PgConverter": {
+    "stem": "PgConverter",
+    "namespace": "Npgsql.Internal",
+    "minArity": 0,
+    "maxArity": 1,
+    "isDelegate": false
+  },
+  "Npgsql.Internal.PgConverterResolver": {
+    "stem": "PgConverterResolver",
+    "namespace": "Npgsql.Internal",
+    "minArity": 0,
+    "maxArity": 1,
+    "isDelegate": false
+  }
+}

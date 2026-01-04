@@ -1,0 +1,267 @@
+{
+  "namespace": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json",
+  "types": [
+    {
+      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonBitArrayReaderWriter",
+      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonBitArrayReaderWriter",
+      "tsEmitName": "JsonBitArrayReaderWriter",
+      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonBitArrayReaderWriter::FromJsonTyped(Microsoft.EntityFrameworkCore.Storage.Json.Utf8JsonReaderManager\u0026,System.Object):System.Collections.BitArray",
+          "clrName": "FromJsonTyped",
+          "tsEmitName": "fromJsonTyped",
+          "metadataToken": 100664592,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.Json.Utf8JsonReaderManager\u0026,System.Object):System.Collections.BitArray",
+          "normalizedSignature": "FromJsonTyped|(Microsoft.EntityFrameworkCore.Storage.Json.Utf8JsonReaderManager\u0026,System.Object):System.Collections.BitArray|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonBitArrayReaderWriter",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false,
+          "parameterModifiers": [
+            {
+              "index": 0,
+              "modifier": "ref"
+            }
+          ]
+        },
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonBitArrayReaderWriter::ToJsonTyped(System.Text.Json.Utf8JsonWriter,System.Collections.BitArray):System.Void",
+          "clrName": "ToJsonTyped",
+          "tsEmitName": "toJsonTyped",
+          "metadataToken": 100664593,
+          "canonicalSignature": "(System.Text.Json.Utf8JsonWriter,System.Collections.BitArray):System.Void",
+          "normalizedSignature": "ToJsonTyped|(System.Text.Json.Utf8JsonWriter,System.Collections.BitArray):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonBitArrayReaderWriter",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonBitArrayReaderWriter::Instance:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonBitArrayReaderWriter",
+          "clrName": "Instance",
+          "tsEmitName": "instance",
+          "metadataToken": 385876072,
+          "canonicalSignature": ":Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonBitArrayReaderWriter",
+          "normalizedSignature": "Instance|:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonBitArrayReaderWriter|static=true|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonBitArrayReaderWriter",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        },
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonBitArrayReaderWriter::ConstructorExpression:System.Linq.Expressions.Expression",
+          "clrName": "ConstructorExpression",
+          "tsEmitName": "constructorExpression",
+          "metadataToken": 385876073,
+          "canonicalSignature": ":System.Linq.Expressions.Expression",
+          "normalizedSignature": "ConstructorExpression|:System.Linq.Expressions.Expression|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonBitArrayReaderWriter",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonBitArrayReaderWriter::.ctor():void",
+          "metadataToken": 100664595,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonBitArrayReaderWriter",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "fromJsonTyped",
+          "isStatic": false,
+          "tsSignatureId": "FromJsonTyped|(Microsoft.EntityFrameworkCore.Storage.Json.Utf8JsonReaderManager\u0026,System.Object):System.Collections.BitArray|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonBitArrayReaderWriter",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664592
+          }
+        },
+        {
+          "tsName": "toJsonTyped",
+          "isStatic": false,
+          "tsSignatureId": "ToJsonTyped|(System.Text.Json.Utf8JsonWriter,System.Collections.BitArray):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonBitArrayReaderWriter",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664593
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "instance",
+          "isStatic": true,
+          "tsSignatureId": "Instance|:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonBitArrayReaderWriter|static=true|accessor=get",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonBitArrayReaderWriter",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 385876072
+          }
+        },
+        {
+          "tsName": "constructorExpression",
+          "isStatic": false,
+          "tsSignatureId": "ConstructorExpression|:System.Linq.Expressions.Expression|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonBitArrayReaderWriter",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 385876073
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonBitArrayReaderWriter",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664595
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonMacaddrReaderWriter",
+      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonMacaddrReaderWriter",
+      "tsEmitName": "JsonMacaddrReaderWriter",
+      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonMacaddrReaderWriter::FromJsonTyped(Microsoft.EntityFrameworkCore.Storage.Json.Utf8JsonReaderManager\u0026,System.Object):System.Net.NetworkInformation.PhysicalAddress",
+          "clrName": "FromJsonTyped",
+          "tsEmitName": "fromJsonTyped",
+          "metadataToken": 100664599,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.Json.Utf8JsonReaderManager\u0026,System.Object):System.Net.NetworkInformation.PhysicalAddress",
+          "normalizedSignature": "FromJsonTyped|(Microsoft.EntityFrameworkCore.Storage.Json.Utf8JsonReaderManager\u0026,System.Object):System.Net.NetworkInformation.PhysicalAddress|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonMacaddrReaderWriter",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false,
+          "parameterModifiers": [
+            {
+              "index": 0,
+              "modifier": "ref"
+            }
+          ]
+        },
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonMacaddrReaderWriter::ToJsonTyped(System.Text.Json.Utf8JsonWriter,System.Net.NetworkInformation.PhysicalAddress):System.Void",
+          "clrName": "ToJsonTyped",
+          "tsEmitName": "toJsonTyped",
+          "metadataToken": 100664600,
+          "canonicalSignature": "(System.Text.Json.Utf8JsonWriter,System.Net.NetworkInformation.PhysicalAddress):System.Void",
+          "normalizedSignature": "ToJsonTyped|(System.Text.Json.Utf8JsonWriter,System.Net.NetworkInformation.PhysicalAddress):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonMacaddrReaderWriter",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonMacaddrReaderWriter::Instance:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonMacaddrReaderWriter",
+          "clrName": "Instance",
+          "tsEmitName": "instance",
+          "metadataToken": 385876074,
+          "canonicalSignature": ":Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonMacaddrReaderWriter",
+          "normalizedSignature": "Instance|:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonMacaddrReaderWriter|static=true|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonMacaddrReaderWriter",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        },
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonMacaddrReaderWriter::ConstructorExpression:System.Linq.Expressions.Expression",
+          "clrName": "ConstructorExpression",
+          "tsEmitName": "constructorExpression",
+          "metadataToken": 385876075,
+          "canonicalSignature": ":System.Linq.Expressions.Expression",
+          "normalizedSignature": "ConstructorExpression|:System.Linq.Expressions.Expression|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonMacaddrReaderWriter",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "fromJsonTyped",
+          "isStatic": false,
+          "tsSignatureId": "FromJsonTyped|(Microsoft.EntityFrameworkCore.Storage.Json.Utf8JsonReaderManager\u0026,System.Object):System.Net.NetworkInformation.PhysicalAddress|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonMacaddrReaderWriter",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664599
+          }
+        },
+        {
+          "tsName": "toJsonTyped",
+          "isStatic": false,
+          "tsSignatureId": "ToJsonTyped|(System.Text.Json.Utf8JsonWriter,System.Net.NetworkInformation.PhysicalAddress):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonMacaddrReaderWriter",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664600
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "instance",
+          "isStatic": true,
+          "tsSignatureId": "Instance|:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonMacaddrReaderWriter|static=true|accessor=get",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonMacaddrReaderWriter",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 385876074
+          }
+        },
+        {
+          "tsName": "constructorExpression",
+          "isStatic": false,
+          "tsSignatureId": "ConstructorExpression|:System.Linq.Expressions.Expression|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonMacaddrReaderWriter",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 385876075
+          }
+        }
+      ]
+    }
+  ]
+}

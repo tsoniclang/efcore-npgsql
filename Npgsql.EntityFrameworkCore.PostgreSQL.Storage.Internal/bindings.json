@@ -1,0 +1,1237 @@
+{
+  "namespace": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal",
+  "types": [
+    {
+      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection",
+      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection",
+      "tsEmitName": "INpgsqlRelationalConnection",
+      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection::CreateAdminConnection():Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection",
+          "clrName": "CreateAdminConnection",
+          "tsEmitName": "createAdminConnection",
+          "metadataToken": 100664116,
+          "canonicalSignature": "():Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection",
+          "normalizedSignature": "CreateAdminConnection|():Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection::CloneWith(System.String,System.Boolean,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection,Npgsql.EntityFrameworkCore.PostgreSQL,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]",
+          "clrName": "CloneWith",
+          "tsEmitName": "cloneWith",
+          "metadataToken": 100664117,
+          "canonicalSignature": "(System.String,System.Boolean,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection,Npgsql.EntityFrameworkCore.PostgreSQL,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]",
+          "normalizedSignature": "CloneWith|(System.String,System.Boolean,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection,Npgsql.EntityFrameworkCore.PostgreSQL,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 3,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection::DataSource:System.Data.Common.DbDataSource",
+          "clrName": "DataSource",
+          "tsEmitName": "dataSource",
+          "metadataToken": 385875993,
+          "canonicalSignature": ":System.Data.Common.DbDataSource",
+          "normalizedSignature": "DataSource|:System.Data.Common.DbDataSource|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "createAdminConnection",
+          "isStatic": false,
+          "tsSignatureId": "CreateAdminConnection|():Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664116
+          }
+        },
+        {
+          "tsName": "cloneWith",
+          "isStatic": false,
+          "tsSignatureId": "CloneWith|(System.String,System.Boolean,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection,Npgsql.EntityFrameworkCore.PostgreSQL,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664117
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "dataSource",
+          "isStatic": false,
+          "tsSignatureId": "DataSource|:System.Data.Common.DbDataSource|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 385875993
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator",
+      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator",
+      "tsEmitName": "NpgsqlDatabaseCreator",
+      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator::Create():System.Void",
+          "clrName": "Create",
+          "tsEmitName": "create",
+          "metadataToken": 100664123,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "Create|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator::CreateAsync(System.Threading.CancellationToken):System.Threading.Tasks.Task",
+          "clrName": "CreateAsync",
+          "tsEmitName": "createAsync",
+          "metadataToken": 100664124,
+          "canonicalSignature": "(System.Threading.CancellationToken):System.Threading.Tasks.Task",
+          "normalizedSignature": "CreateAsync|(System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator::HasTables():System.Boolean",
+          "clrName": "HasTables",
+          "tsEmitName": "hasTables",
+          "metadataToken": 100664125,
+          "canonicalSignature": "():System.Boolean",
+          "normalizedSignature": "HasTables|():System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator::HasTablesAsync(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "HasTablesAsync",
+          "tsEmitName": "hasTablesAsync",
+          "metadataToken": 100664126,
+          "canonicalSignature": "(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "HasTablesAsync|(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator::Exists():System.Boolean",
+          "clrName": "Exists",
+          "tsEmitName": "exists",
+          "metadataToken": 100664129,
+          "canonicalSignature": "():System.Boolean",
+          "normalizedSignature": "Exists|():System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator::ExistsAsync(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "ExistsAsync",
+          "tsEmitName": "existsAsync",
+          "metadataToken": 100664130,
+          "canonicalSignature": "(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "ExistsAsync|(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator::Delete():System.Void",
+          "clrName": "Delete",
+          "tsEmitName": "delete_",
+          "metadataToken": 100664132,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "Delete|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator::DeleteAsync(System.Threading.CancellationToken):System.Threading.Tasks.Task",
+          "clrName": "DeleteAsync",
+          "tsEmitName": "deleteAsync",
+          "metadataToken": 100664133,
+          "canonicalSignature": "(System.Threading.CancellationToken):System.Threading.Tasks.Task",
+          "normalizedSignature": "DeleteAsync|(System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator::CreateTables():System.Void",
+          "clrName": "CreateTables",
+          "tsEmitName": "createTables",
+          "metadataToken": 100664134,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "CreateTables|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator::CreateTablesAsync(System.Threading.CancellationToken):System.Threading.Tasks.Task",
+          "clrName": "CreateTablesAsync",
+          "tsEmitName": "createTablesAsync",
+          "metadataToken": 100664135,
+          "canonicalSignature": "(System.Threading.CancellationToken):System.Threading.Tasks.Task",
+          "normalizedSignature": "CreateTablesAsync|(System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator::RetryDelay:System.TimeSpan",
+          "clrName": "RetryDelay",
+          "tsEmitName": "retryDelay",
+          "metadataToken": 385875994,
+          "canonicalSignature": ":System.TimeSpan",
+          "normalizedSignature": "RetryDelay|:System.TimeSpan|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        },
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator::RetryTimeout:System.TimeSpan",
+          "clrName": "RetryTimeout",
+          "tsEmitName": "retryTimeout",
+          "metadataToken": 385875995,
+          "canonicalSignature": ":System.TimeSpan",
+          "normalizedSignature": "RetryTimeout|:System.TimeSpan|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalDatabaseCreatorDependencies,Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection,Microsoft.EntityFrameworkCore.Storage.IRawSqlCommandBuilder):void",
+          "metadataToken": 100664118,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalDatabaseCreatorDependencies,Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection,Microsoft.EntityFrameworkCore.Storage.IRawSqlCommandBuilder):void",
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalDatabaseCreatorDependencies,Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection,Microsoft.EntityFrameworkCore.Storage.IRawSqlCommandBuilder):void|static=false",
+          "isStatic": false,
+          "parameterCount": 3,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "create",
+          "isStatic": false,
+          "tsSignatureId": "Create|():System.Void|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664123
+          }
+        },
+        {
+          "tsName": "createAsync",
+          "isStatic": false,
+          "tsSignatureId": "CreateAsync|(System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664124
+          }
+        },
+        {
+          "tsName": "hasTables",
+          "isStatic": false,
+          "tsSignatureId": "HasTables|():System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664125
+          }
+        },
+        {
+          "tsName": "hasTablesAsync",
+          "isStatic": false,
+          "tsSignatureId": "HasTablesAsync|(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664126
+          }
+        },
+        {
+          "tsName": "exists",
+          "isStatic": false,
+          "tsSignatureId": "Exists|():System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664129
+          }
+        },
+        {
+          "tsName": "existsAsync",
+          "isStatic": false,
+          "tsSignatureId": "ExistsAsync|(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664130
+          }
+        },
+        {
+          "tsName": "delete_",
+          "isStatic": false,
+          "tsSignatureId": "Delete|():System.Void|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664132
+          }
+        },
+        {
+          "tsName": "deleteAsync",
+          "isStatic": false,
+          "tsSignatureId": "DeleteAsync|(System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664133
+          }
+        },
+        {
+          "tsName": "createTables",
+          "isStatic": false,
+          "tsSignatureId": "CreateTables|():System.Void|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664134
+          }
+        },
+        {
+          "tsName": "createTablesAsync",
+          "isStatic": false,
+          "tsSignatureId": "CreateTablesAsync|(System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664135
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "retryDelay",
+          "isStatic": false,
+          "tsSignatureId": "RetryDelay|:System.TimeSpan|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 385875994
+          }
+        },
+        {
+          "tsName": "retryTimeout",
+          "isStatic": false,
+          "tsSignatureId": "RetryTimeout|:System.TimeSpan|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 385875995
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalDatabaseCreatorDependencies,Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection,Microsoft.EntityFrameworkCore.Storage.IRawSqlCommandBuilder):void|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664118
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDataSourceManager",
+      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDataSourceManager",
+      "tsEmitName": "NpgsqlDataSourceManager",
+      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDataSourceManager::GetDataSource(Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.NpgsqlOptionsExtension,System.IServiceProvider):System.Data.Common.DbDataSource",
+          "clrName": "GetDataSource",
+          "tsEmitName": "getDataSource",
+          "metadataToken": 100664143,
+          "canonicalSignature": "(Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.NpgsqlOptionsExtension,System.IServiceProvider):System.Data.Common.DbDataSource",
+          "normalizedSignature": "GetDataSource|(Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.NpgsqlOptionsExtension,System.IServiceProvider):System.Data.Common.DbDataSource|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDataSourceManager",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDataSourceManager::Dispose():System.Void",
+          "clrName": "Dispose",
+          "tsEmitName": "dispose",
+          "metadataToken": 100664146,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "Dispose|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDataSourceManager",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDataSourceManager::DisposeAsync():System.Threading.Tasks.ValueTask",
+          "clrName": "DisposeAsync",
+          "tsEmitName": "disposeAsync",
+          "metadataToken": 100664147,
+          "canonicalSignature": "():System.Threading.Tasks.ValueTask",
+          "normalizedSignature": "DisposeAsync|():System.Threading.Tasks.ValueTask|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDataSourceManager",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDataSourceManager::.ctor(System.Collections.Generic.IEnumerable_1[[Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.INpgsqlDataSourceConfigurationPlugin,Npgsql.EntityFrameworkCore.PostgreSQL,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]):void",
+          "metadataToken": 100664142,
+          "canonicalSignature": "(System.Collections.Generic.IEnumerable_1[[Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.INpgsqlDataSourceConfigurationPlugin,Npgsql.EntityFrameworkCore.PostgreSQL,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]):void",
+          "normalizedSignature": "constructor|(System.Collections.Generic.IEnumerable_1[[Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.INpgsqlDataSourceConfigurationPlugin,Npgsql.EntityFrameworkCore.PostgreSQL,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDataSourceManager",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "getDataSource",
+          "isStatic": false,
+          "tsSignatureId": "GetDataSource|(Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.NpgsqlOptionsExtension,System.IServiceProvider):System.Data.Common.DbDataSource|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDataSourceManager",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664143
+          }
+        },
+        {
+          "tsName": "dispose",
+          "isStatic": false,
+          "tsSignatureId": "Dispose|():System.Void|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDataSourceManager",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664146
+          }
+        },
+        {
+          "tsName": "disposeAsync",
+          "isStatic": false,
+          "tsSignatureId": "DisposeAsync|():System.Threading.Tasks.ValueTask|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDataSourceManager",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664147
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.Collections.Generic.IEnumerable_1[[Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.INpgsqlDataSourceConfigurationPlugin,Npgsql.EntityFrameworkCore.PostgreSQL,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]):void|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDataSourceManager",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664142
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy",
+      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy",
+      "tsEmitName": "NpgsqlExecutionStrategy",
+      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy::Execute(TState,Func_3,Func_3):TResult",
+          "clrName": "Execute",
+          "tsEmitName": "execute",
+          "metadataToken": 100664151,
+          "canonicalSignature": "(TState,Func_3,Func_3):TResult",
+          "normalizedSignature": "Execute|(TState,Func_3,Func_3):TResult|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 2,
+          "parameterCount": 3,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy::ExecuteAsync(TState,Func_4,Func_4,System.Threading.CancellationToken):Task_1",
+          "clrName": "ExecuteAsync",
+          "tsEmitName": "executeAsync",
+          "metadataToken": 100664152,
+          "canonicalSignature": "(TState,Func_4,Func_4,System.Threading.CancellationToken):Task_1",
+          "normalizedSignature": "ExecuteAsync|(TState,Func_4,Func_4,System.Threading.CancellationToken):Task_1|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 2,
+          "parameterCount": 4,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy::RetriesOnFailure:System.Boolean",
+          "clrName": "RetriesOnFailure",
+          "tsEmitName": "retriesOnFailure",
+          "metadataToken": 385875997,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "RetriesOnFailure|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy::.ctor(Microsoft.EntityFrameworkCore.Storage.ExecutionStrategyDependencies):void",
+          "metadataToken": 100664149,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.ExecutionStrategyDependencies):void",
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.ExecutionStrategyDependencies):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "execute",
+          "isStatic": false,
+          "tsSignatureId": "Execute|(TState,Func_3,Func_3):TResult|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664151
+          }
+        },
+        {
+          "tsName": "executeAsync",
+          "isStatic": false,
+          "tsSignatureId": "ExecuteAsync|(TState,Func_4,Func_4,System.Threading.CancellationToken):Task_1|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664152
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "retriesOnFailure",
+          "isStatic": false,
+          "tsSignatureId": "RetriesOnFailure|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 385875997
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Storage.ExecutionStrategyDependencies):void|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664149
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategyFactory",
+      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategyFactory",
+      "tsEmitName": "NpgsqlExecutionStrategyFactory",
+      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategyFactory::.ctor(Microsoft.EntityFrameworkCore.Storage.ExecutionStrategyDependencies):void",
+          "metadataToken": 100664153,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.ExecutionStrategyDependencies):void",
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.ExecutionStrategyDependencies):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategyFactory",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Storage.ExecutionStrategyDependencies):void|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategyFactory",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664153
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlRelationalConnection",
+      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlRelationalConnection",
+      "tsEmitName": "NpgsqlRelationalConnection",
+      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlRelationalConnection::CreateAdminConnection():Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection",
+          "clrName": "CreateAdminConnection",
+          "tsEmitName": "createAdminConnection",
+          "metadataToken": 100664167,
+          "canonicalSignature": "():Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection",
+          "normalizedSignature": "CreateAdminConnection|():Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlRelationalConnection",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlRelationalConnection::CloneWith(System.String,System.Boolean,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection,Npgsql.EntityFrameworkCore.PostgreSQL,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]",
+          "clrName": "CloneWith",
+          "tsEmitName": "cloneWith",
+          "metadataToken": 100664169,
+          "canonicalSignature": "(System.String,System.Boolean,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection,Npgsql.EntityFrameworkCore.PostgreSQL,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]",
+          "normalizedSignature": "CloneWith|(System.String,System.Boolean,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection,Npgsql.EntityFrameworkCore.PostgreSQL,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 3,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlRelationalConnection",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection::CreateAdminConnection():Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection",
+          "clrName": "CreateAdminConnection",
+          "tsEmitName": "createAdminConnection$view",
+          "metadataToken": 100664116,
+          "canonicalSignature": "():Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection",
+          "normalizedSignature": "CreateAdminConnection|():Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection::CloneWith(System.String,System.Boolean,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection,Npgsql.EntityFrameworkCore.PostgreSQL,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]",
+          "clrName": "CloneWith",
+          "tsEmitName": "cloneWith$view",
+          "metadataToken": 100664117,
+          "canonicalSignature": "(System.String,System.Boolean,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection,Npgsql.EntityFrameworkCore.PostgreSQL,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]",
+          "normalizedSignature": "CloneWith|(System.String,System.Boolean,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection,Npgsql.EntityFrameworkCore.PostgreSQL,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 3,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlRelationalConnection::DataSource:System.Data.Common.DbDataSource",
+          "clrName": "DataSource",
+          "tsEmitName": "dataSource",
+          "metadataToken": 385875998,
+          "canonicalSignature": ":System.Data.Common.DbDataSource",
+          "normalizedSignature": "DataSource|:System.Data.Common.DbDataSource|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlRelationalConnection",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        },
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlRelationalConnection::ConnectionString:System.String",
+          "clrName": "ConnectionString",
+          "tsEmitName": "connectionString",
+          "metadataToken": 385876000,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "ConnectionString|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlRelationalConnection",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        },
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlRelationalConnection::DbConnection:Npgsql.NpgsqlConnection",
+          "clrName": "DbConnection",
+          "tsEmitName": "dbConnection",
+          "metadataToken": 385876001,
+          "canonicalSignature": ":Npgsql.NpgsqlConnection",
+          "normalizedSignature": "DbConnection|:Npgsql.NpgsqlConnection|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlRelationalConnection",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        },
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlRelationalConnection::DbDataSource:System.Data.Common.DbDataSource",
+          "clrName": "DbDataSource",
+          "tsEmitName": "dbDataSource",
+          "metadataToken": 385876002,
+          "canonicalSignature": ":System.Data.Common.DbDataSource",
+          "normalizedSignature": "DbDataSource|:System.Data.Common.DbDataSource|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlRelationalConnection",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        },
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlRelationalConnection::CurrentAmbientTransaction:System.Transactions.Transaction",
+          "clrName": "CurrentAmbientTransaction",
+          "tsEmitName": "currentAmbientTransaction",
+          "metadataToken": 385876003,
+          "canonicalSignature": ":System.Transactions.Transaction",
+          "normalizedSignature": "CurrentAmbientTransaction|:System.Transactions.Transaction|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlRelationalConnection",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        },
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection::DataSource:System.Data.Common.DbDataSource",
+          "clrName": "DataSource",
+          "tsEmitName": "dataSource$view",
+          "metadataToken": 385875993,
+          "canonicalSignature": ":System.Data.Common.DbDataSource",
+          "normalizedSignature": "DataSource|:System.Data.Common.DbDataSource|static=false|accessor=get",
+          "emitScope": "ViewOnly",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlRelationalConnection::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalConnectionDependencies,Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDataSourceManager,Microsoft.EntityFrameworkCore.Infrastructure.IDbContextOptions):void",
+          "metadataToken": 100664158,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalConnectionDependencies,Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDataSourceManager,Microsoft.EntityFrameworkCore.Infrastructure.IDbContextOptions):void",
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalConnectionDependencies,Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDataSourceManager,Microsoft.EntityFrameworkCore.Infrastructure.IDbContextOptions):void|static=false",
+          "isStatic": false,
+          "parameterCount": 3,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlRelationalConnection",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "createAdminConnection",
+          "isStatic": false,
+          "tsSignatureId": "CreateAdminConnection|():Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlRelationalConnection",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664167
+          }
+        },
+        {
+          "tsName": "cloneWith",
+          "isStatic": false,
+          "tsSignatureId": "CloneWith|(System.String,System.Boolean,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection,Npgsql.EntityFrameworkCore.PostgreSQL,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlRelationalConnection",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664169
+          }
+        },
+        {
+          "tsName": "createAdminConnection$view",
+          "isStatic": false,
+          "tsSignatureId": "CreateAdminConnection|():Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664116
+          }
+        },
+        {
+          "tsName": "cloneWith$view",
+          "isStatic": false,
+          "tsSignatureId": "CloneWith|(System.String,System.Boolean,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection,Npgsql.EntityFrameworkCore.PostgreSQL,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664117
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "dataSource",
+          "isStatic": false,
+          "tsSignatureId": "DataSource|:System.Data.Common.DbDataSource|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlRelationalConnection",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 385875998
+          }
+        },
+        {
+          "tsName": "connectionString",
+          "isStatic": false,
+          "tsSignatureId": "ConnectionString|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlRelationalConnection",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 385876000
+          }
+        },
+        {
+          "tsName": "dbConnection",
+          "isStatic": false,
+          "tsSignatureId": "DbConnection|:Npgsql.NpgsqlConnection|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlRelationalConnection",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 385876001
+          }
+        },
+        {
+          "tsName": "dbDataSource",
+          "isStatic": false,
+          "tsSignatureId": "DbDataSource|:System.Data.Common.DbDataSource|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlRelationalConnection",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 385876002
+          }
+        },
+        {
+          "tsName": "currentAmbientTransaction",
+          "isStatic": false,
+          "tsSignatureId": "CurrentAmbientTransaction|:System.Transactions.Transaction|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlRelationalConnection",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 385876003
+          }
+        },
+        {
+          "tsName": "dataSource$view",
+          "isStatic": false,
+          "tsSignatureId": "DataSource|:System.Data.Common.DbDataSource|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 385875993
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalConnectionDependencies,Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDataSourceManager,Microsoft.EntityFrameworkCore.Infrastructure.IDbContextOptions):void|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlRelationalConnection",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664158
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlSqlGenerationHelper",
+      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlSqlGenerationHelper",
+      "tsEmitName": "NpgsqlSqlGenerationHelper",
+      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlSqlGenerationHelper::DelimitIdentifier(System.String):System.String",
+          "clrName": "DelimitIdentifier",
+          "tsEmitName": "delimitIdentifier",
+          "metadataToken": 100664173,
+          "canonicalSignature": "(System.String):System.String",
+          "normalizedSignature": "DelimitIdentifier|(System.String):System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlSqlGenerationHelper",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlSqlGenerationHelper::DelimitIdentifier(System.Text.StringBuilder,System.String):System.Void",
+          "clrName": "DelimitIdentifier",
+          "tsEmitName": "delimitIdentifier",
+          "metadataToken": 100664174,
+          "canonicalSignature": "(System.Text.StringBuilder,System.String):System.Void",
+          "normalizedSignature": "DelimitIdentifier|(System.Text.StringBuilder,System.String):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlSqlGenerationHelper",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlSqlGenerationHelper::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalSqlGenerationHelperDependencies):void",
+          "metadataToken": 100664172,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalSqlGenerationHelperDependencies):void",
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalSqlGenerationHelperDependencies):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlSqlGenerationHelper",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "delimitIdentifier",
+          "isStatic": false,
+          "tsSignatureId": "DelimitIdentifier|(System.String):System.String|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlSqlGenerationHelper",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664173
+          }
+        },
+        {
+          "tsName": "delimitIdentifier",
+          "isStatic": false,
+          "tsSignatureId": "DelimitIdentifier|(System.Text.StringBuilder,System.String):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlSqlGenerationHelper",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664174
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalSqlGenerationHelperDependencies):void|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlSqlGenerationHelper",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664172
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlTransientExceptionDetector",
+      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlTransientExceptionDetector",
+      "tsEmitName": "NpgsqlTransientExceptionDetector",
+      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlTransientExceptionDetector::ShouldRetryOn(System.Exception):System.Boolean",
+          "clrName": "ShouldRetryOn",
+          "tsEmitName": "shouldRetryOn",
+          "metadataToken": 100664176,
+          "canonicalSignature": "(System.Exception):System.Boolean",
+          "normalizedSignature": "ShouldRetryOn|(System.Exception):System.Boolean|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlTransientExceptionDetector",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlTransientExceptionDetector::.ctor():void",
+          "metadataToken": 100664177,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlTransientExceptionDetector",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "shouldRetryOn",
+          "isStatic": true,
+          "tsSignatureId": "ShouldRetryOn|(System.Exception):System.Boolean|static=true",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlTransientExceptionDetector",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664176
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlTransientExceptionDetector",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664177
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlTypeMappingSource",
+      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlTypeMappingSource",
+      "tsEmitName": "NpgsqlTypeMappingSource",
+      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlTypeMappingSource::FindCollectionMapping(System.String,System.Type,System.Type,Microsoft.EntityFrameworkCore.Storage.CoreTypeMapping):Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping",
+          "clrName": "FindCollectionMapping",
+          "tsEmitName": "findCollectionMapping",
+          "metadataToken": 100664185,
+          "canonicalSignature": "(System.String,System.Type,System.Type,Microsoft.EntityFrameworkCore.Storage.CoreTypeMapping):Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping",
+          "normalizedSignature": "FindCollectionMapping|(System.String,System.Type,System.Type,Microsoft.EntityFrameworkCore.Storage.CoreTypeMapping):Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 4,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlTypeMappingSource",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlTypeMappingSource::FindContainerMapping(System.Type,Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping,Microsoft.EntityFrameworkCore.Metadata.IModel):Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping",
+          "clrName": "FindContainerMapping",
+          "tsEmitName": "findContainerMapping",
+          "metadataToken": 100664189,
+          "canonicalSignature": "(System.Type,Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping,Microsoft.EntityFrameworkCore.Metadata.IModel):Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping",
+          "normalizedSignature": "FindContainerMapping|(System.Type,Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping,Microsoft.EntityFrameworkCore.Metadata.IModel):Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 3,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlTypeMappingSource",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlTypeMappingSource::FindMapping(Microsoft.EntityFrameworkCore.Metadata.IProperty):Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping",
+          "clrName": "FindMapping",
+          "tsEmitName": "findMapping",
+          "metadataToken": 100664190,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IProperty):Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping",
+          "normalizedSignature": "FindMapping|(Microsoft.EntityFrameworkCore.Metadata.IProperty):Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlTypeMappingSource",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlTypeMappingSource::EStringTypeMappingNpgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlEStringTypeMapping",
+          "clrName": "EStringTypeMapping",
+          "tsEmitName": "eStringTypeMapping",
+          "metadataToken": 67109049,
+          "normalizedSignature": "EStringTypeMapping|Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlEStringTypeMapping|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": true,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlTypeMappingSource",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        }
+      ],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlTypeMappingSource::.ctor(Microsoft.EntityFrameworkCore.Storage.TypeMappingSourceDependencies,Microsoft.EntityFrameworkCore.Storage.RelationalTypeMappingSourceDependencies,Microsoft.EntityFrameworkCore.Storage.ISqlGenerationHelper,Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.INpgsqlSingletonOptions):void",
+          "metadataToken": 100664181,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.TypeMappingSourceDependencies,Microsoft.EntityFrameworkCore.Storage.RelationalTypeMappingSourceDependencies,Microsoft.EntityFrameworkCore.Storage.ISqlGenerationHelper,Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.INpgsqlSingletonOptions):void",
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.TypeMappingSourceDependencies,Microsoft.EntityFrameworkCore.Storage.RelationalTypeMappingSourceDependencies,Microsoft.EntityFrameworkCore.Storage.ISqlGenerationHelper,Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.INpgsqlSingletonOptions):void|static=false",
+          "isStatic": false,
+          "parameterCount": 4,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlTypeMappingSource",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "findCollectionMapping",
+          "isStatic": false,
+          "tsSignatureId": "FindCollectionMapping|(System.String,System.Type,System.Type,Microsoft.EntityFrameworkCore.Storage.CoreTypeMapping):Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlTypeMappingSource",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664185
+          }
+        },
+        {
+          "tsName": "findContainerMapping",
+          "isStatic": false,
+          "tsSignatureId": "FindContainerMapping|(System.Type,Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping,Microsoft.EntityFrameworkCore.Metadata.IModel):Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlTypeMappingSource",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664189
+          }
+        },
+        {
+          "tsName": "findMapping",
+          "isStatic": false,
+          "tsSignatureId": "FindMapping|(Microsoft.EntityFrameworkCore.Metadata.IProperty):Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlTypeMappingSource",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664190
+          }
+        }
+      ],
+      "exposedFields": [
+        {
+          "tsName": "eStringTypeMapping",
+          "isStatic": false,
+          "tsSignatureId": "EStringTypeMapping|Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlEStringTypeMapping|static=false|const=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlTypeMappingSource",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 67109049
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Storage.TypeMappingSourceDependencies,Microsoft.EntityFrameworkCore.Storage.RelationalTypeMappingSourceDependencies,Microsoft.EntityFrameworkCore.Storage.ISqlGenerationHelper,Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.INpgsqlSingletonOptions):void|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlTypeMappingSource",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664181
+          }
+        }
+      ]
+    }
+  ]
+}
