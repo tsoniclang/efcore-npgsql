@@ -53,6 +53,10 @@ export { TypeInfoMappingCollection as TypeInfoMappingCollection } from './Npgsql
 export { TypeInfoMappingHelpers$instance as TypeInfoMappingHelpers } from './Npgsql.Internal/internal/index.js';
 export { ValueMetadata as ValueMetadata } from './Npgsql.Internal/internal/index.js';
 
+// Multi-arity family value exports (arity-0 constructors/static namespaces)
+export const PgConverter: typeof Internal.PgConverter;
+export const PgConverterResolver: typeof Internal.PgConverterResolver;
+
 // Multi-arity family sentinel (detects unspecified type parameters)
 declare const __unspecified: unique symbol;
 export type __ = typeof __unspecified;

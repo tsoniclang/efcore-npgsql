@@ -84,6 +84,9 @@ export { PostgresNotice as PostgresNotice } from './Npgsql/internal/index.js';
 export { NpgsqlNoticeEventArgs as NpgsqlNoticeEventArgs } from './Npgsql/internal/index.js';
 export { TargetSessionAttributes as TargetSessionAttributes } from './Npgsql/internal/index.js';
 
+// Multi-arity family value exports (arity-0 constructors/static namespaces)
+export const NpgsqlParameter: typeof Internal.NpgsqlParameter;
+
 // Multi-arity family sentinel (detects unspecified type parameters)
 declare const __unspecified: unique symbol;
 export type __ = typeof __unspecified;
