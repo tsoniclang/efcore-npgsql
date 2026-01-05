@@ -1,0 +1,173 @@
+{
+  "namespace": "Npgsql.NameTranslation",
+  "contributingAssemblies": [
+    "Npgsql"
+  ],
+  "types": [
+    {
+      "stableId": "Npgsql:Npgsql.NameTranslation.NpgsqlNullNameTranslator",
+      "clrName": "Npgsql.NameTranslation.NpgsqlNullNameTranslator",
+      "tsEmitName": "NpgsqlNullNameTranslator",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Npgsql:Npgsql.NameTranslation.NpgsqlNullNameTranslator::TranslateTypeName(System.String):System.String",
+          "clrName": "TranslateTypeName",
+          "tsEmitName": "translateTypeName",
+          "normalizedSignature": "TranslateTypeName|(System.String):System.String|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql:Npgsql.NameTranslation.NpgsqlNullNameTranslator::TranslateMemberName(System.String):System.String",
+          "clrName": "TranslateMemberName",
+          "tsEmitName": "translateMemberName",
+          "normalizedSignature": "TranslateMemberName|(System.String):System.String|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql:Npgsql.INpgsqlNameTranslator::TranslateTypeName(System.String):System.String",
+          "clrName": "TranslateTypeName",
+          "tsEmitName": "translateTypeName$view",
+          "normalizedSignature": "TranslateTypeName|(System.String):System.String|static=false",
+          "provenance": "ExplicitView",
+          "emitScope": "ViewOnly",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "sourceInterface": "Npgsql.INpgsqlNameTranslator",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0
+        }
+      ]
+    },
+    {
+      "stableId": "Npgsql:Npgsql.NameTranslation.NpgsqlSnakeCaseNameTranslator",
+      "clrName": "Npgsql.NameTranslation.NpgsqlSnakeCaseNameTranslator",
+      "tsEmitName": "NpgsqlSnakeCaseNameTranslator",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Npgsql:Npgsql.NameTranslation.NpgsqlSnakeCaseNameTranslator::TranslateTypeName(System.String):System.String",
+          "clrName": "TranslateTypeName",
+          "tsEmitName": "translateTypeName",
+          "normalizedSignature": "TranslateTypeName|(System.String):System.String|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql:Npgsql.NameTranslation.NpgsqlSnakeCaseNameTranslator::TranslateMemberName(System.String):System.String",
+          "clrName": "TranslateMemberName",
+          "tsEmitName": "translateMemberName",
+          "normalizedSignature": "TranslateMemberName|(System.String):System.String|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql:Npgsql.NameTranslation.NpgsqlSnakeCaseNameTranslator::ConvertToSnakeCase(System.String,System.Globalization.CultureInfo):System.String",
+          "clrName": "ConvertToSnakeCase",
+          "tsEmitName": "convertToSnakeCase",
+          "normalizedSignature": "ConvertToSnakeCase|(System.String,System.Globalization.CultureInfo):System.String|static=true",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 2,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql:Npgsql.INpgsqlNameTranslator::TranslateTypeName(System.String):System.String",
+          "clrName": "TranslateTypeName",
+          "tsEmitName": "translateTypeName$view",
+          "normalizedSignature": "TranslateTypeName|(System.String):System.String|static=false",
+          "provenance": "ExplicitView",
+          "emitScope": "ViewOnly",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "sourceInterface": "Npgsql.INpgsqlNameTranslator",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|(System.Globalization.CultureInfo):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1
+        },
+        {
+          "normalizedSignature": "constructor|(System.Boolean,System.Globalization.CultureInfo):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2
+        }
+      ]
+    }
+  ]
+}

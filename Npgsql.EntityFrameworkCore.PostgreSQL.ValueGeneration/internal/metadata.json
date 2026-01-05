@@ -1,0 +1,118 @@
+{
+  "namespace": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration",
+  "contributingAssemblies": [
+    "Npgsql.EntityFrameworkCore.PostgreSQL"
+  ],
+  "types": [
+    {
+      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.NpgsqlSequentialGuidValueGenerator",
+      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.NpgsqlSequentialGuidValueGenerator",
+      "tsEmitName": "NpgsqlSequentialGuidValueGenerator",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.NpgsqlSequentialGuidValueGenerator::Next(Microsoft.EntityFrameworkCore.ChangeTracking.EntityEntry):System.Guid",
+          "clrName": "Next",
+          "tsEmitName": "next",
+          "normalizedSignature": "Next|(Microsoft.EntityFrameworkCore.ChangeTracking.EntityEntry):System.Guid|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.NpgsqlSequentialGuidValueGenerator::GeneratesTemporaryValues:System.Boolean",
+          "clrName": "GeneratesTemporaryValues",
+          "tsEmitName": "generatesTemporaryValues",
+          "normalizedSignature": "GeneratesTemporaryValues|:System.Boolean|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0
+        }
+      ]
+    },
+    {
+      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.NpgsqlSequentialStringValueGenerator",
+      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.NpgsqlSequentialStringValueGenerator",
+      "tsEmitName": "NpgsqlSequentialStringValueGenerator",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.NpgsqlSequentialStringValueGenerator::Next(Microsoft.EntityFrameworkCore.ChangeTracking.EntityEntry):System.String",
+          "clrName": "Next",
+          "tsEmitName": "next",
+          "normalizedSignature": "Next|(Microsoft.EntityFrameworkCore.ChangeTracking.EntityEntry):System.String|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.NpgsqlSequentialStringValueGenerator::GeneratesTemporaryValues:System.Boolean",
+          "clrName": "GeneratesTemporaryValues",
+          "tsEmitName": "generatesTemporaryValues",
+          "normalizedSignature": "GeneratesTemporaryValues|:System.Boolean|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0
+        }
+      ]
+    }
+  ]
+}

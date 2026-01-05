@@ -1,0 +1,181 @@
+{
+  "namespace": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration",
+  "types": [
+    {
+      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.NpgsqlSequentialGuidValueGenerator",
+      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.NpgsqlSequentialGuidValueGenerator",
+      "tsEmitName": "NpgsqlSequentialGuidValueGenerator",
+      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.NpgsqlSequentialGuidValueGenerator::Next(Microsoft.EntityFrameworkCore.ChangeTracking.EntityEntry):System.Guid",
+          "clrName": "Next",
+          "tsEmitName": "next",
+          "metadataToken": 100664057,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.ChangeTracking.EntityEntry):System.Guid",
+          "normalizedSignature": "Next|(Microsoft.EntityFrameworkCore.ChangeTracking.EntityEntry):System.Guid|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.NpgsqlSequentialGuidValueGenerator",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.NpgsqlSequentialGuidValueGenerator::GeneratesTemporaryValues:System.Boolean",
+          "clrName": "GeneratesTemporaryValues",
+          "tsEmitName": "generatesTemporaryValues",
+          "metadataToken": 385875986,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "GeneratesTemporaryValues|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.NpgsqlSequentialGuidValueGenerator",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.NpgsqlSequentialGuidValueGenerator::.ctor():void",
+          "metadataToken": 100664059,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.NpgsqlSequentialGuidValueGenerator",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "next",
+          "isStatic": false,
+          "tsSignatureId": "Next|(Microsoft.EntityFrameworkCore.ChangeTracking.EntityEntry):System.Guid|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.NpgsqlSequentialGuidValueGenerator",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664057
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "generatesTemporaryValues",
+          "isStatic": false,
+          "tsSignatureId": "GeneratesTemporaryValues|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.NpgsqlSequentialGuidValueGenerator",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 385875986
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.NpgsqlSequentialGuidValueGenerator",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664059
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.NpgsqlSequentialStringValueGenerator",
+      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.NpgsqlSequentialStringValueGenerator",
+      "tsEmitName": "NpgsqlSequentialStringValueGenerator",
+      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.NpgsqlSequentialStringValueGenerator::Next(Microsoft.EntityFrameworkCore.ChangeTracking.EntityEntry):System.String",
+          "clrName": "Next",
+          "tsEmitName": "next",
+          "metadataToken": 100664061,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.ChangeTracking.EntityEntry):System.String",
+          "normalizedSignature": "Next|(Microsoft.EntityFrameworkCore.ChangeTracking.EntityEntry):System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.NpgsqlSequentialStringValueGenerator",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.NpgsqlSequentialStringValueGenerator::GeneratesTemporaryValues:System.Boolean",
+          "clrName": "GeneratesTemporaryValues",
+          "tsEmitName": "generatesTemporaryValues",
+          "metadataToken": 385875987,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "GeneratesTemporaryValues|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.NpgsqlSequentialStringValueGenerator",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.NpgsqlSequentialStringValueGenerator::.ctor():void",
+          "metadataToken": 100664062,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.NpgsqlSequentialStringValueGenerator",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "next",
+          "isStatic": false,
+          "tsSignatureId": "Next|(Microsoft.EntityFrameworkCore.ChangeTracking.EntityEntry):System.String|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.NpgsqlSequentialStringValueGenerator",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664061
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "generatesTemporaryValues",
+          "isStatic": false,
+          "tsSignatureId": "GeneratesTemporaryValues|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.NpgsqlSequentialStringValueGenerator",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 385875987
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.NpgsqlSequentialStringValueGenerator",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664062
+          }
+        }
+      ]
+    }
+  ]
+}

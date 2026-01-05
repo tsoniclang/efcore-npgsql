@@ -1,0 +1,1277 @@
+{
+  "namespace": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal",
+  "types": [
+    {
+      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSqlTranslatingExpressionVisitor\u002BStartsEndsWithContains",
+      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSqlTranslatingExpressionVisitor\u002BStartsEndsWithContains",
+      "tsEmitName": "NpgsqlSqlTranslatingExpressionVisitor_StartsEndsWithContains",
+      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSqlTranslatingExpressionVisitor\u002BStartsEndsWithContains::value__System.Int32",
+          "clrName": "value__",
+          "tsEmitName": "value__",
+          "metadataToken": 67110027,
+          "normalizedSignature": "value__|System.Int32|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSqlTranslatingExpressionVisitor\u002BStartsEndsWithContains",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        },
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSqlTranslatingExpressionVisitor\u002BStartsEndsWithContains::StartsWithNpgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSqlTranslatingExpressionVisitor\u002BStartsEndsWithContains",
+          "clrName": "StartsWith",
+          "tsEmitName": "startsWith",
+          "metadataToken": 67110028,
+          "normalizedSignature": "StartsWith|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSqlTranslatingExpressionVisitor\u002BStartsEndsWithContains|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSqlTranslatingExpressionVisitor\u002BStartsEndsWithContains",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        },
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSqlTranslatingExpressionVisitor\u002BStartsEndsWithContains::EndsWithNpgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSqlTranslatingExpressionVisitor\u002BStartsEndsWithContains",
+          "clrName": "EndsWith",
+          "tsEmitName": "endsWith",
+          "metadataToken": 67110029,
+          "normalizedSignature": "EndsWith|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSqlTranslatingExpressionVisitor\u002BStartsEndsWithContains|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSqlTranslatingExpressionVisitor\u002BStartsEndsWithContains",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        },
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSqlTranslatingExpressionVisitor\u002BStartsEndsWithContains::ContainsNpgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSqlTranslatingExpressionVisitor\u002BStartsEndsWithContains",
+          "clrName": "Contains",
+          "tsEmitName": "contains",
+          "metadataToken": 67110030,
+          "normalizedSignature": "Contains|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSqlTranslatingExpressionVisitor\u002BStartsEndsWithContains|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSqlTranslatingExpressionVisitor\u002BStartsEndsWithContains",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        }
+      ],
+      "events": [],
+      "constructors": [],
+      "exposedFields": [
+        {
+          "tsName": "value__",
+          "isStatic": false,
+          "tsSignatureId": "value__|System.Int32|static=false|const=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSqlTranslatingExpressionVisitor\u002BStartsEndsWithContains",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 67110027
+          }
+        },
+        {
+          "tsName": "startsWith",
+          "isStatic": true,
+          "tsSignatureId": "StartsWith|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSqlTranslatingExpressionVisitor\u002BStartsEndsWithContains|static=true|const=true",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSqlTranslatingExpressionVisitor\u002BStartsEndsWithContains",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 67110028
+          }
+        },
+        {
+          "tsName": "endsWith",
+          "isStatic": true,
+          "tsSignatureId": "EndsWith|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSqlTranslatingExpressionVisitor\u002BStartsEndsWithContains|static=true|const=true",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSqlTranslatingExpressionVisitor\u002BStartsEndsWithContains",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 67110029
+          }
+        },
+        {
+          "tsName": "contains",
+          "isStatic": true,
+          "tsSignatureId": "Contains|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSqlTranslatingExpressionVisitor\u002BStartsEndsWithContains|static=true|const=true",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSqlTranslatingExpressionVisitor\u002BStartsEndsWithContains",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 67110030
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlCompiledQueryCacheKeyGenerator",
+      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlCompiledQueryCacheKeyGenerator",
+      "tsEmitName": "NpgsqlCompiledQueryCacheKeyGenerator",
+      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlCompiledQueryCacheKeyGenerator::GenerateCacheKey(System.Linq.Expressions.Expression,System.Boolean):System.Object",
+          "clrName": "GenerateCacheKey",
+          "tsEmitName": "generateCacheKey",
+          "metadataToken": 100664670,
+          "canonicalSignature": "(System.Linq.Expressions.Expression,System.Boolean):System.Object",
+          "normalizedSignature": "GenerateCacheKey|(System.Linq.Expressions.Expression,System.Boolean):System.Object|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlCompiledQueryCacheKeyGenerator",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlCompiledQueryCacheKeyGenerator::.ctor(Microsoft.EntityFrameworkCore.Query.CompiledQueryCacheKeyGeneratorDependencies,Microsoft.EntityFrameworkCore.Query.RelationalCompiledQueryCacheKeyGeneratorDependencies):void",
+          "metadataToken": 100664669,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.CompiledQueryCacheKeyGeneratorDependencies,Microsoft.EntityFrameworkCore.Query.RelationalCompiledQueryCacheKeyGeneratorDependencies):void",
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Query.CompiledQueryCacheKeyGeneratorDependencies,Microsoft.EntityFrameworkCore.Query.RelationalCompiledQueryCacheKeyGeneratorDependencies):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlCompiledQueryCacheKeyGenerator",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "generateCacheKey",
+          "isStatic": false,
+          "tsSignatureId": "GenerateCacheKey|(System.Linq.Expressions.Expression,System.Boolean):System.Object|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlCompiledQueryCacheKeyGenerator",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664670
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Query.CompiledQueryCacheKeyGeneratorDependencies,Microsoft.EntityFrameworkCore.Query.RelationalCompiledQueryCacheKeyGeneratorDependencies):void|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlCompiledQueryCacheKeyGenerator",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664669
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlDeleteConvertingExpressionVisitor",
+      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlDeleteConvertingExpressionVisitor",
+      "tsEmitName": "NpgsqlDeleteConvertingExpressionVisitor",
+      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlDeleteConvertingExpressionVisitor::Process(System.Linq.Expressions.Expression):System.Linq.Expressions.Expression",
+          "clrName": "Process",
+          "tsEmitName": "process",
+          "metadataToken": 100664671,
+          "canonicalSignature": "(System.Linq.Expressions.Expression):System.Linq.Expressions.Expression",
+          "normalizedSignature": "Process|(System.Linq.Expressions.Expression):System.Linq.Expressions.Expression|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlDeleteConvertingExpressionVisitor",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlDeleteConvertingExpressionVisitor::.ctor():void",
+          "metadataToken": 100664673,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlDeleteConvertingExpressionVisitor",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "process",
+          "isStatic": false,
+          "tsSignatureId": "Process|(System.Linq.Expressions.Expression):System.Linq.Expressions.Expression|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlDeleteConvertingExpressionVisitor",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664671
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlDeleteConvertingExpressionVisitor",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664673
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlEvaluatableExpressionFilter",
+      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlEvaluatableExpressionFilter",
+      "tsEmitName": "NpgsqlEvaluatableExpressionFilter",
+      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlEvaluatableExpressionFilter::IsEvaluatableExpression(System.Linq.Expressions.Expression,Microsoft.EntityFrameworkCore.Metadata.IModel):System.Boolean",
+          "clrName": "IsEvaluatableExpression",
+          "tsEmitName": "isEvaluatableExpression",
+          "metadataToken": 100664675,
+          "canonicalSignature": "(System.Linq.Expressions.Expression,Microsoft.EntityFrameworkCore.Metadata.IModel):System.Boolean",
+          "normalizedSignature": "IsEvaluatableExpression|(System.Linq.Expressions.Expression,Microsoft.EntityFrameworkCore.Metadata.IModel):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlEvaluatableExpressionFilter",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlEvaluatableExpressionFilter::.ctor(Microsoft.EntityFrameworkCore.Query.EvaluatableExpressionFilterDependencies,Microsoft.EntityFrameworkCore.Query.RelationalEvaluatableExpressionFilterDependencies,Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.INpgsqlSingletonOptions):void",
+          "metadataToken": 100664674,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.EvaluatableExpressionFilterDependencies,Microsoft.EntityFrameworkCore.Query.RelationalEvaluatableExpressionFilterDependencies,Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.INpgsqlSingletonOptions):void",
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Query.EvaluatableExpressionFilterDependencies,Microsoft.EntityFrameworkCore.Query.RelationalEvaluatableExpressionFilterDependencies,Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.INpgsqlSingletonOptions):void|static=false",
+          "isStatic": false,
+          "parameterCount": 3,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlEvaluatableExpressionFilter",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "isEvaluatableExpression",
+          "isStatic": false,
+          "tsSignatureId": "IsEvaluatableExpression|(System.Linq.Expressions.Expression,Microsoft.EntityFrameworkCore.Metadata.IModel):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlEvaluatableExpressionFilter",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664675
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Query.EvaluatableExpressionFilterDependencies,Microsoft.EntityFrameworkCore.Query.RelationalEvaluatableExpressionFilterDependencies,Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.INpgsqlSingletonOptions):void|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlEvaluatableExpressionFilter",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664674
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlParameterBasedSqlProcessor",
+      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlParameterBasedSqlProcessor",
+      "tsEmitName": "NpgsqlParameterBasedSqlProcessor",
+      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlParameterBasedSqlProcessor::Process(System.Linq.Expressions.Expression,Microsoft.EntityFrameworkCore.Query.ParametersCacheDecorator):System.Linq.Expressions.Expression",
+          "clrName": "Process",
+          "tsEmitName": "process",
+          "metadataToken": 100664678,
+          "canonicalSignature": "(System.Linq.Expressions.Expression,Microsoft.EntityFrameworkCore.Query.ParametersCacheDecorator):System.Linq.Expressions.Expression",
+          "normalizedSignature": "Process|(System.Linq.Expressions.Expression,Microsoft.EntityFrameworkCore.Query.ParametersCacheDecorator):System.Linq.Expressions.Expression|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlParameterBasedSqlProcessor",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlParameterBasedSqlProcessor::.ctor(Microsoft.EntityFrameworkCore.Query.RelationalParameterBasedSqlProcessorDependencies,Microsoft.EntityFrameworkCore.Query.RelationalParameterBasedSqlProcessorParameters):void",
+          "metadataToken": 100664677,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.RelationalParameterBasedSqlProcessorDependencies,Microsoft.EntityFrameworkCore.Query.RelationalParameterBasedSqlProcessorParameters):void",
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Query.RelationalParameterBasedSqlProcessorDependencies,Microsoft.EntityFrameworkCore.Query.RelationalParameterBasedSqlProcessorParameters):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlParameterBasedSqlProcessor",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "process",
+          "isStatic": false,
+          "tsSignatureId": "Process|(System.Linq.Expressions.Expression,Microsoft.EntityFrameworkCore.Query.ParametersCacheDecorator):System.Linq.Expressions.Expression|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlParameterBasedSqlProcessor",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664678
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Query.RelationalParameterBasedSqlProcessorDependencies,Microsoft.EntityFrameworkCore.Query.RelationalParameterBasedSqlProcessorParameters):void|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlParameterBasedSqlProcessor",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664677
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlParameterBasedSqlProcessorFactory",
+      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlParameterBasedSqlProcessorFactory",
+      "tsEmitName": "NpgsqlParameterBasedSqlProcessorFactory",
+      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlParameterBasedSqlProcessorFactory::Create(Microsoft.EntityFrameworkCore.Query.RelationalParameterBasedSqlProcessorParameters):Microsoft.EntityFrameworkCore.Query.RelationalParameterBasedSqlProcessor",
+          "clrName": "Create",
+          "tsEmitName": "create",
+          "metadataToken": 100664681,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.RelationalParameterBasedSqlProcessorParameters):Microsoft.EntityFrameworkCore.Query.RelationalParameterBasedSqlProcessor",
+          "normalizedSignature": "Create|(Microsoft.EntityFrameworkCore.Query.RelationalParameterBasedSqlProcessorParameters):Microsoft.EntityFrameworkCore.Query.RelationalParameterBasedSqlProcessor|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlParameterBasedSqlProcessorFactory",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlParameterBasedSqlProcessorFactory::.ctor(Microsoft.EntityFrameworkCore.Query.RelationalParameterBasedSqlProcessorDependencies):void",
+          "metadataToken": 100664680,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.RelationalParameterBasedSqlProcessorDependencies):void",
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Query.RelationalParameterBasedSqlProcessorDependencies):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlParameterBasedSqlProcessorFactory",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "create",
+          "isStatic": false,
+          "tsSignatureId": "Create|(Microsoft.EntityFrameworkCore.Query.RelationalParameterBasedSqlProcessorParameters):Microsoft.EntityFrameworkCore.Query.RelationalParameterBasedSqlProcessor|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlParameterBasedSqlProcessorFactory",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664681
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Query.RelationalParameterBasedSqlProcessorDependencies):void|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlParameterBasedSqlProcessorFactory",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664680
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQueryableMethodTranslatingExpressionVisitor",
+      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQueryableMethodTranslatingExpressionVisitor",
+      "tsEmitName": "NpgsqlQueryableMethodTranslatingExpressionVisitor",
+      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQueryableMethodTranslatingExpressionVisitor::.ctor(Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitorDependencies,Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitorDependencies,Microsoft.EntityFrameworkCore.Query.RelationalQueryCompilationContext,Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.INpgsqlSingletonOptions):void",
+          "metadataToken": 100664682,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitorDependencies,Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitorDependencies,Microsoft.EntityFrameworkCore.Query.RelationalQueryCompilationContext,Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.INpgsqlSingletonOptions):void",
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitorDependencies,Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitorDependencies,Microsoft.EntityFrameworkCore.Query.RelationalQueryCompilationContext,Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.INpgsqlSingletonOptions):void|static=false",
+          "isStatic": false,
+          "parameterCount": 4,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQueryableMethodTranslatingExpressionVisitor",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitorDependencies,Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitorDependencies,Microsoft.EntityFrameworkCore.Query.RelationalQueryCompilationContext,Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.INpgsqlSingletonOptions):void|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQueryableMethodTranslatingExpressionVisitor",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664682
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQueryableMethodTranslatingExpressionVisitorFactory",
+      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQueryableMethodTranslatingExpressionVisitorFactory",
+      "tsEmitName": "NpgsqlQueryableMethodTranslatingExpressionVisitorFactory",
+      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQueryableMethodTranslatingExpressionVisitorFactory::Create(Microsoft.EntityFrameworkCore.Query.QueryCompilationContext):Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor",
+          "clrName": "Create",
+          "tsEmitName": "create",
+          "metadataToken": 100664710,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.QueryCompilationContext):Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor",
+          "normalizedSignature": "Create|(Microsoft.EntityFrameworkCore.Query.QueryCompilationContext):Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQueryableMethodTranslatingExpressionVisitorFactory",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQueryableMethodTranslatingExpressionVisitorFactory::.ctor(Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitorDependencies,Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitorDependencies,Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.INpgsqlSingletonOptions):void",
+          "metadataToken": 100664707,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitorDependencies,Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitorDependencies,Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.INpgsqlSingletonOptions):void",
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitorDependencies,Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitorDependencies,Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.INpgsqlSingletonOptions):void|static=false",
+          "isStatic": false,
+          "parameterCount": 3,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQueryableMethodTranslatingExpressionVisitorFactory",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "create",
+          "isStatic": false,
+          "tsSignatureId": "Create|(Microsoft.EntityFrameworkCore.Query.QueryCompilationContext):Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQueryableMethodTranslatingExpressionVisitorFactory",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664710
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitorDependencies,Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitorDependencies,Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.INpgsqlSingletonOptions):void|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQueryableMethodTranslatingExpressionVisitorFactory",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664707
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQueryCompilationContext",
+      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQueryCompilationContext",
+      "tsEmitName": "NpgsqlQueryCompilationContext",
+      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQueryCompilationContext::IsBuffering:System.Boolean",
+          "clrName": "IsBuffering",
+          "tsEmitName": "isBuffering",
+          "metadataToken": 385876078,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "IsBuffering|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQueryCompilationContext",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        },
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQueryCompilationContext::SupportsPrecompiledQuery:System.Boolean",
+          "clrName": "SupportsPrecompiledQuery",
+          "tsEmitName": "supportsPrecompiledQuery",
+          "metadataToken": 385876079,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "SupportsPrecompiledQuery|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQueryCompilationContext",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQueryCompilationContext::.ctor(Microsoft.EntityFrameworkCore.Query.QueryCompilationContextDependencies,Microsoft.EntityFrameworkCore.Query.RelationalQueryCompilationContextDependencies,System.Boolean):void",
+          "metadataToken": 100664711,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.QueryCompilationContextDependencies,Microsoft.EntityFrameworkCore.Query.RelationalQueryCompilationContextDependencies,System.Boolean):void",
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Query.QueryCompilationContextDependencies,Microsoft.EntityFrameworkCore.Query.RelationalQueryCompilationContextDependencies,System.Boolean):void|static=false",
+          "isStatic": false,
+          "parameterCount": 3,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQueryCompilationContext",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        },
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQueryCompilationContext::.ctor(Microsoft.EntityFrameworkCore.Query.QueryCompilationContextDependencies,Microsoft.EntityFrameworkCore.Query.RelationalQueryCompilationContextDependencies,System.Boolean,System.Boolean):void",
+          "metadataToken": 100664712,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.QueryCompilationContextDependencies,Microsoft.EntityFrameworkCore.Query.RelationalQueryCompilationContextDependencies,System.Boolean,System.Boolean):void",
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Query.QueryCompilationContextDependencies,Microsoft.EntityFrameworkCore.Query.RelationalQueryCompilationContextDependencies,System.Boolean,System.Boolean):void|static=false",
+          "isStatic": false,
+          "parameterCount": 4,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQueryCompilationContext",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "isBuffering",
+          "isStatic": false,
+          "tsSignatureId": "IsBuffering|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQueryCompilationContext",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 385876078
+          }
+        },
+        {
+          "tsName": "supportsPrecompiledQuery",
+          "isStatic": false,
+          "tsSignatureId": "SupportsPrecompiledQuery|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQueryCompilationContext",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 385876079
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Query.QueryCompilationContextDependencies,Microsoft.EntityFrameworkCore.Query.RelationalQueryCompilationContextDependencies,System.Boolean):void|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQueryCompilationContext",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664711
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Query.QueryCompilationContextDependencies,Microsoft.EntityFrameworkCore.Query.RelationalQueryCompilationContextDependencies,System.Boolean,System.Boolean):void|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQueryCompilationContext",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664712
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQueryCompilationContextFactory",
+      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQueryCompilationContextFactory",
+      "tsEmitName": "NpgsqlQueryCompilationContextFactory",
+      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQueryCompilationContextFactory::Create(System.Boolean):Microsoft.EntityFrameworkCore.Query.QueryCompilationContext",
+          "clrName": "Create",
+          "tsEmitName": "create",
+          "metadataToken": 100664716,
+          "canonicalSignature": "(System.Boolean):Microsoft.EntityFrameworkCore.Query.QueryCompilationContext",
+          "normalizedSignature": "Create|(System.Boolean):Microsoft.EntityFrameworkCore.Query.QueryCompilationContext|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQueryCompilationContextFactory",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQueryCompilationContextFactory::CreatePrecompiled(System.Boolean):Microsoft.EntityFrameworkCore.Query.QueryCompilationContext",
+          "clrName": "CreatePrecompiled",
+          "tsEmitName": "createPrecompiled",
+          "metadataToken": 100664717,
+          "canonicalSignature": "(System.Boolean):Microsoft.EntityFrameworkCore.Query.QueryCompilationContext",
+          "normalizedSignature": "CreatePrecompiled|(System.Boolean):Microsoft.EntityFrameworkCore.Query.QueryCompilationContext|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQueryCompilationContextFactory",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQueryCompilationContextFactory::.ctor(Microsoft.EntityFrameworkCore.Query.QueryCompilationContextDependencies,Microsoft.EntityFrameworkCore.Query.RelationalQueryCompilationContextDependencies):void",
+          "metadataToken": 100664715,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.QueryCompilationContextDependencies,Microsoft.EntityFrameworkCore.Query.RelationalQueryCompilationContextDependencies):void",
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Query.QueryCompilationContextDependencies,Microsoft.EntityFrameworkCore.Query.RelationalQueryCompilationContextDependencies):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQueryCompilationContextFactory",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "create",
+          "isStatic": false,
+          "tsSignatureId": "Create|(System.Boolean):Microsoft.EntityFrameworkCore.Query.QueryCompilationContext|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQueryCompilationContextFactory",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664716
+          }
+        },
+        {
+          "tsName": "createPrecompiled",
+          "isStatic": false,
+          "tsSignatureId": "CreatePrecompiled|(System.Boolean):Microsoft.EntityFrameworkCore.Query.QueryCompilationContext|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQueryCompilationContextFactory",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664717
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Query.QueryCompilationContextDependencies,Microsoft.EntityFrameworkCore.Query.RelationalQueryCompilationContextDependencies):void|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQueryCompilationContextFactory",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664715
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQuerySqlGenerator",
+      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQuerySqlGenerator",
+      "tsEmitName": "NpgsqlQuerySqlGenerator",
+      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQuerySqlGenerator::.ctor(Microsoft.EntityFrameworkCore.Query.QuerySqlGeneratorDependencies,Microsoft.EntityFrameworkCore.Storage.IRelationalTypeMappingSource,System.Boolean,System.Version):void",
+          "metadataToken": 100664718,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.QuerySqlGeneratorDependencies,Microsoft.EntityFrameworkCore.Storage.IRelationalTypeMappingSource,System.Boolean,System.Version):void",
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Query.QuerySqlGeneratorDependencies,Microsoft.EntityFrameworkCore.Storage.IRelationalTypeMappingSource,System.Boolean,System.Version):void|static=false",
+          "isStatic": false,
+          "parameterCount": 4,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQuerySqlGenerator",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Query.QuerySqlGeneratorDependencies,Microsoft.EntityFrameworkCore.Storage.IRelationalTypeMappingSource,System.Boolean,System.Version):void|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQuerySqlGenerator",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664718
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQuerySqlGeneratorFactory",
+      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQuerySqlGeneratorFactory",
+      "tsEmitName": "NpgsqlQuerySqlGeneratorFactory",
+      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQuerySqlGeneratorFactory::Create():Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator",
+          "clrName": "Create",
+          "tsEmitName": "create",
+          "metadataToken": 100664764,
+          "canonicalSignature": "():Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator",
+          "normalizedSignature": "Create|():Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQuerySqlGeneratorFactory",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQuerySqlGeneratorFactory::.ctor(Microsoft.EntityFrameworkCore.Query.QuerySqlGeneratorDependencies,Microsoft.EntityFrameworkCore.Storage.IRelationalTypeMappingSource,Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.INpgsqlSingletonOptions):void",
+          "metadataToken": 100664763,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.QuerySqlGeneratorDependencies,Microsoft.EntityFrameworkCore.Storage.IRelationalTypeMappingSource,Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.INpgsqlSingletonOptions):void",
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Query.QuerySqlGeneratorDependencies,Microsoft.EntityFrameworkCore.Storage.IRelationalTypeMappingSource,Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.INpgsqlSingletonOptions):void|static=false",
+          "isStatic": false,
+          "parameterCount": 3,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQuerySqlGeneratorFactory",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "create",
+          "isStatic": false,
+          "tsSignatureId": "Create|():Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQuerySqlGeneratorFactory",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664764
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Query.QuerySqlGeneratorDependencies,Microsoft.EntityFrameworkCore.Storage.IRelationalTypeMappingSource,Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.INpgsqlSingletonOptions):void|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQuerySqlGeneratorFactory",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664763
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQueryTranslationPostprocessor",
+      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQueryTranslationPostprocessor",
+      "tsEmitName": "NpgsqlQueryTranslationPostprocessor",
+      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQueryTranslationPostprocessor::Process(System.Linq.Expressions.Expression):System.Linq.Expressions.Expression",
+          "clrName": "Process",
+          "tsEmitName": "process",
+          "metadataToken": 100664766,
+          "canonicalSignature": "(System.Linq.Expressions.Expression):System.Linq.Expressions.Expression",
+          "normalizedSignature": "Process|(System.Linq.Expressions.Expression):System.Linq.Expressions.Expression|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQueryTranslationPostprocessor",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQueryTranslationPostprocessor::.ctor(Microsoft.EntityFrameworkCore.Query.QueryTranslationPostprocessorDependencies,Microsoft.EntityFrameworkCore.Query.RelationalQueryTranslationPostprocessorDependencies,Microsoft.EntityFrameworkCore.Query.RelationalQueryCompilationContext):void",
+          "metadataToken": 100664765,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.QueryTranslationPostprocessorDependencies,Microsoft.EntityFrameworkCore.Query.RelationalQueryTranslationPostprocessorDependencies,Microsoft.EntityFrameworkCore.Query.RelationalQueryCompilationContext):void",
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Query.QueryTranslationPostprocessorDependencies,Microsoft.EntityFrameworkCore.Query.RelationalQueryTranslationPostprocessorDependencies,Microsoft.EntityFrameworkCore.Query.RelationalQueryCompilationContext):void|static=false",
+          "isStatic": false,
+          "parameterCount": 3,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQueryTranslationPostprocessor",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "process",
+          "isStatic": false,
+          "tsSignatureId": "Process|(System.Linq.Expressions.Expression):System.Linq.Expressions.Expression|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQueryTranslationPostprocessor",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664766
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Query.QueryTranslationPostprocessorDependencies,Microsoft.EntityFrameworkCore.Query.RelationalQueryTranslationPostprocessorDependencies,Microsoft.EntityFrameworkCore.Query.RelationalQueryCompilationContext):void|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQueryTranslationPostprocessor",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664765
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQueryTranslationPostprocessorFactory",
+      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQueryTranslationPostprocessorFactory",
+      "tsEmitName": "NpgsqlQueryTranslationPostprocessorFactory",
+      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQueryTranslationPostprocessorFactory::Create(Microsoft.EntityFrameworkCore.Query.QueryCompilationContext):Microsoft.EntityFrameworkCore.Query.QueryTranslationPostprocessor",
+          "clrName": "Create",
+          "tsEmitName": "create",
+          "metadataToken": 100664772,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.QueryCompilationContext):Microsoft.EntityFrameworkCore.Query.QueryTranslationPostprocessor",
+          "normalizedSignature": "Create|(Microsoft.EntityFrameworkCore.Query.QueryCompilationContext):Microsoft.EntityFrameworkCore.Query.QueryTranslationPostprocessor|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQueryTranslationPostprocessorFactory",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQueryTranslationPostprocessorFactory::.ctor(Microsoft.EntityFrameworkCore.Query.QueryTranslationPostprocessorDependencies,Microsoft.EntityFrameworkCore.Query.RelationalQueryTranslationPostprocessorDependencies):void",
+          "metadataToken": 100664769,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.QueryTranslationPostprocessorDependencies,Microsoft.EntityFrameworkCore.Query.RelationalQueryTranslationPostprocessorDependencies):void",
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Query.QueryTranslationPostprocessorDependencies,Microsoft.EntityFrameworkCore.Query.RelationalQueryTranslationPostprocessorDependencies):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQueryTranslationPostprocessorFactory",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "create",
+          "isStatic": false,
+          "tsSignatureId": "Create|(Microsoft.EntityFrameworkCore.Query.QueryCompilationContext):Microsoft.EntityFrameworkCore.Query.QueryTranslationPostprocessor|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQueryTranslationPostprocessorFactory",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664772
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Query.QueryTranslationPostprocessorDependencies,Microsoft.EntityFrameworkCore.Query.RelationalQueryTranslationPostprocessorDependencies):void|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQueryTranslationPostprocessorFactory",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664769
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSetOperationTypingInjector",
+      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSetOperationTypingInjector",
+      "tsEmitName": "NpgsqlSetOperationTypingInjector",
+      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSetOperationTypingInjector::.ctor():void",
+          "metadataToken": 100664775,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSetOperationTypingInjector",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSetOperationTypingInjector",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664775
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSqlNullabilityProcessor",
+      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSqlNullabilityProcessor",
+      "tsEmitName": "NpgsqlSqlNullabilityProcessor",
+      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSqlNullabilityProcessor::.ctor(Microsoft.EntityFrameworkCore.Query.RelationalParameterBasedSqlProcessorDependencies,Microsoft.EntityFrameworkCore.Query.RelationalParameterBasedSqlProcessorParameters):void",
+          "metadataToken": 100664776,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.RelationalParameterBasedSqlProcessorDependencies,Microsoft.EntityFrameworkCore.Query.RelationalParameterBasedSqlProcessorParameters):void",
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Query.RelationalParameterBasedSqlProcessorDependencies,Microsoft.EntityFrameworkCore.Query.RelationalParameterBasedSqlProcessorParameters):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSqlNullabilityProcessor",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Query.RelationalParameterBasedSqlProcessorDependencies,Microsoft.EntityFrameworkCore.Query.RelationalParameterBasedSqlProcessorParameters):void|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSqlNullabilityProcessor",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664776
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSqlTranslatingExpressionVisitor",
+      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSqlTranslatingExpressionVisitor",
+      "tsEmitName": "NpgsqlSqlTranslatingExpressionVisitor",
+      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSqlTranslatingExpressionVisitor::ConstructLikePatternParameter(Microsoft.EntityFrameworkCore.Query.QueryContext,System.String,Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSqlTranslatingExpressionVisitor\u002BStartsEndsWithContains):System.String",
+          "clrName": "ConstructLikePatternParameter",
+          "tsEmitName": "constructLikePatternParameter",
+          "metadataToken": 100664806,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.QueryContext,System.String,Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSqlTranslatingExpressionVisitor\u002BStartsEndsWithContains):System.String",
+          "normalizedSignature": "ConstructLikePatternParameter|(Microsoft.EntityFrameworkCore.Query.QueryContext,System.String,Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSqlTranslatingExpressionVisitor\u002BStartsEndsWithContains):System.String|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 3,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSqlTranslatingExpressionVisitor",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSqlTranslatingExpressionVisitor::GenerateGreatest(System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Type):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
+          "clrName": "GenerateGreatest",
+          "tsEmitName": "generateGreatest",
+          "metadataToken": 100664809,
+          "canonicalSignature": "(System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Type):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
+          "normalizedSignature": "GenerateGreatest|(System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Type):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSqlTranslatingExpressionVisitor",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSqlTranslatingExpressionVisitor::GenerateLeast(System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Type):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
+          "clrName": "GenerateLeast",
+          "tsEmitName": "generateLeast",
+          "metadataToken": 100664810,
+          "canonicalSignature": "(System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Type):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
+          "normalizedSignature": "GenerateLeast|(System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Type):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSqlTranslatingExpressionVisitor",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSqlTranslatingExpressionVisitor::.ctor(Microsoft.EntityFrameworkCore.Query.RelationalSqlTranslatingExpressionVisitorDependencies,Microsoft.EntityFrameworkCore.Query.QueryCompilationContext,Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor):void",
+          "metadataToken": 100664797,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.RelationalSqlTranslatingExpressionVisitorDependencies,Microsoft.EntityFrameworkCore.Query.QueryCompilationContext,Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor):void",
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Query.RelationalSqlTranslatingExpressionVisitorDependencies,Microsoft.EntityFrameworkCore.Query.QueryCompilationContext,Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor):void|static=false",
+          "isStatic": false,
+          "parameterCount": 3,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSqlTranslatingExpressionVisitor",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "constructLikePatternParameter",
+          "isStatic": true,
+          "tsSignatureId": "ConstructLikePatternParameter|(Microsoft.EntityFrameworkCore.Query.QueryContext,System.String,Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSqlTranslatingExpressionVisitor\u002BStartsEndsWithContains):System.String|static=true",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSqlTranslatingExpressionVisitor",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664806
+          }
+        },
+        {
+          "tsName": "generateGreatest",
+          "isStatic": false,
+          "tsSignatureId": "GenerateGreatest|(System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Type):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSqlTranslatingExpressionVisitor",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664809
+          }
+        },
+        {
+          "tsName": "generateLeast",
+          "isStatic": false,
+          "tsSignatureId": "GenerateLeast|(System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Type):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSqlTranslatingExpressionVisitor",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664810
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Query.RelationalSqlTranslatingExpressionVisitorDependencies,Microsoft.EntityFrameworkCore.Query.QueryCompilationContext,Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor):void|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSqlTranslatingExpressionVisitor",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664797
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSqlTranslatingExpressionVisitorFactory",
+      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSqlTranslatingExpressionVisitorFactory",
+      "tsEmitName": "NpgsqlSqlTranslatingExpressionVisitorFactory",
+      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSqlTranslatingExpressionVisitorFactory::Create(Microsoft.EntityFrameworkCore.Query.QueryCompilationContext,Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor):Microsoft.EntityFrameworkCore.Query.RelationalSqlTranslatingExpressionVisitor",
+          "clrName": "Create",
+          "tsEmitName": "create",
+          "metadataToken": 100664818,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.QueryCompilationContext,Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor):Microsoft.EntityFrameworkCore.Query.RelationalSqlTranslatingExpressionVisitor",
+          "normalizedSignature": "Create|(Microsoft.EntityFrameworkCore.Query.QueryCompilationContext,Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor):Microsoft.EntityFrameworkCore.Query.RelationalSqlTranslatingExpressionVisitor|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSqlTranslatingExpressionVisitorFactory",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSqlTranslatingExpressionVisitorFactory::.ctor(Microsoft.EntityFrameworkCore.Query.RelationalSqlTranslatingExpressionVisitorDependencies):void",
+          "metadataToken": 100664817,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.RelationalSqlTranslatingExpressionVisitorDependencies):void",
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Query.RelationalSqlTranslatingExpressionVisitorDependencies):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSqlTranslatingExpressionVisitorFactory",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "create",
+          "isStatic": false,
+          "tsSignatureId": "Create|(Microsoft.EntityFrameworkCore.Query.QueryCompilationContext,Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor):Microsoft.EntityFrameworkCore.Query.RelationalSqlTranslatingExpressionVisitor|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSqlTranslatingExpressionVisitorFactory",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664818
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Query.RelationalSqlTranslatingExpressionVisitorDependencies):void|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSqlTranslatingExpressionVisitorFactory",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664817
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSqlTreePruner",
+      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSqlTreePruner",
+      "tsEmitName": "NpgsqlSqlTreePruner",
+      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSqlTreePruner::.ctor():void",
+          "metadataToken": 100664820,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSqlTreePruner",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlSqlTreePruner",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664820
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlTypeMappingPostprocessor",
+      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlTypeMappingPostprocessor",
+      "tsEmitName": "NpgsqlTypeMappingPostprocessor",
+      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlTypeMappingPostprocessor::.ctor(Microsoft.EntityFrameworkCore.Query.QueryTranslationPostprocessorDependencies,Microsoft.EntityFrameworkCore.Query.RelationalQueryTranslationPostprocessorDependencies,Microsoft.EntityFrameworkCore.Query.RelationalQueryCompilationContext):void",
+          "metadataToken": 100664821,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.QueryTranslationPostprocessorDependencies,Microsoft.EntityFrameworkCore.Query.RelationalQueryTranslationPostprocessorDependencies,Microsoft.EntityFrameworkCore.Query.RelationalQueryCompilationContext):void",
+          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Query.QueryTranslationPostprocessorDependencies,Microsoft.EntityFrameworkCore.Query.RelationalQueryTranslationPostprocessorDependencies,Microsoft.EntityFrameworkCore.Query.RelationalQueryCompilationContext):void|static=false",
+          "isStatic": false,
+          "parameterCount": 3,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlTypeMappingPostprocessor",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Query.QueryTranslationPostprocessorDependencies,Microsoft.EntityFrameworkCore.Query.RelationalQueryTranslationPostprocessorDependencies,Microsoft.EntityFrameworkCore.Query.RelationalQueryCompilationContext):void|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlTypeMappingPostprocessor",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664821
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlUnnestPostprocessor",
+      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlUnnestPostprocessor",
+      "tsEmitName": "NpgsqlUnnestPostprocessor",
+      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlUnnestPostprocessor::Visit(System.Linq.Expressions.Expression):System.Linq.Expressions.Expression",
+          "clrName": "Visit",
+          "tsEmitName": "visit",
+          "metadataToken": 100664823,
+          "canonicalSignature": "(System.Linq.Expressions.Expression):System.Linq.Expressions.Expression",
+          "normalizedSignature": "Visit|(System.Linq.Expressions.Expression):System.Linq.Expressions.Expression|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlUnnestPostprocessor",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlUnnestPostprocessor::.ctor():void",
+          "metadataToken": 100664824,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlUnnestPostprocessor",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "visit",
+          "isStatic": false,
+          "tsSignatureId": "Visit|(System.Linq.Expressions.Expression):System.Linq.Expressions.Expression|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlUnnestPostprocessor",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664823
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlUnnestPostprocessor",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100664824
+          }
+        }
+      ]
+    }
+  ]
+}

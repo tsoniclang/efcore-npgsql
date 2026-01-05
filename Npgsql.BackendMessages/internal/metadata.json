@@ -1,0 +1,72 @@
+{
+  "namespace": "Npgsql.BackendMessages",
+  "contributingAssemblies": [
+    "Npgsql"
+  ],
+  "types": [
+    {
+      "stableId": "Npgsql:Npgsql.BackendMessages.FieldDescription",
+      "clrName": "Npgsql.BackendMessages.FieldDescription",
+      "tsEmitName": "FieldDescription",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Npgsql:Npgsql.BackendMessages.FieldDescription::ToString():System.String",
+          "clrName": "ToString",
+          "tsEmitName": "toString",
+          "normalizedSignature": "ToString|():System.String|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 0,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Npgsql:Npgsql.BackendMessages.FieldDescription::TypeSize:System.Int16",
+          "clrName": "TypeSize",
+          "tsEmitName": "typeSize",
+          "normalizedSignature": "TypeSize|:System.Int16|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        },
+        {
+          "stableId": "Npgsql:Npgsql.BackendMessages.FieldDescription::TypeModifier:System.Int32",
+          "clrName": "TypeModifier",
+          "tsEmitName": "typeModifier",
+          "normalizedSignature": "TypeModifier|:System.Int32|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": []
+    }
+  ]
+}

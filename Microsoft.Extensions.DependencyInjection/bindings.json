@@ -1,0 +1,68 @@
+{
+  "namespace": "Microsoft.Extensions.DependencyInjection",
+  "types": [
+    {
+      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Microsoft.Extensions.DependencyInjection.NpgsqlServiceCollectionExtensions",
+      "clrName": "Microsoft.Extensions.DependencyInjection.NpgsqlServiceCollectionExtensions",
+      "tsEmitName": "NpgsqlServiceCollectionExtensions",
+      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Microsoft.Extensions.DependencyInjection.NpgsqlServiceCollectionExtensions::AddNpgsql(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,System.Action_1[[Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.NpgsqlDbContextOptionsBuilder,Npgsql.EntityFrameworkCore.PostgreSQL,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]],System.Action_1[[Microsoft.EntityFrameworkCore.DbContextOptionsBuilder,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IServiceCollection",
+          "clrName": "AddNpgsql",
+          "tsEmitName": "addNpgsql",
+          "metadataToken": 100663410,
+          "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,System.Action_1[[Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.NpgsqlDbContextOptionsBuilder,Npgsql.EntityFrameworkCore.PostgreSQL,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]],System.Action_1[[Microsoft.EntityFrameworkCore.DbContextOptionsBuilder,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IServiceCollection",
+          "normalizedSignature": "AddNpgsql|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,System.Action_1[[Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.NpgsqlDbContextOptionsBuilder,Npgsql.EntityFrameworkCore.PostgreSQL,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]],System.Action_1[[Microsoft.EntityFrameworkCore.DbContextOptionsBuilder,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IServiceCollection|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 1,
+          "parameterCount": 4,
+          "declaringClrType": "Microsoft.Extensions.DependencyInjection.NpgsqlServiceCollectionExtensions",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": true
+        },
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Microsoft.Extensions.DependencyInjection.NpgsqlServiceCollectionExtensions::AddEntityFrameworkNpgsql(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.Extensions.DependencyInjection.IServiceCollection",
+          "clrName": "AddEntityFrameworkNpgsql",
+          "tsEmitName": "addEntityFrameworkNpgsql",
+          "metadataToken": 100663411,
+          "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.Extensions.DependencyInjection.IServiceCollection",
+          "normalizedSignature": "AddEntityFrameworkNpgsql|(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.Extensions.DependencyInjection.IServiceCollection|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Extensions.DependencyInjection.NpgsqlServiceCollectionExtensions",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": true
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "addNpgsql",
+          "isStatic": true,
+          "tsSignatureId": "AddNpgsql|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,System.Action_1[[Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.NpgsqlDbContextOptionsBuilder,Npgsql.EntityFrameworkCore.PostgreSQL,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]],System.Action_1[[Microsoft.EntityFrameworkCore.DbContextOptionsBuilder,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IServiceCollection|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyInjection.NpgsqlServiceCollectionExtensions",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100663410
+          }
+        },
+        {
+          "tsName": "addEntityFrameworkNpgsql",
+          "isStatic": true,
+          "tsSignatureId": "AddEntityFrameworkNpgsql|(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.Extensions.DependencyInjection.IServiceCollection|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.DependencyInjection.NpgsqlServiceCollectionExtensions",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100663411
+          }
+        }
+      ]
+    }
+  ]
+}

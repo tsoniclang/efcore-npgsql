@@ -1,0 +1,1909 @@
+{
+  "namespace": "Npgsql.Replication",
+  "types": [
+    {
+      "stableId": "Npgsql:Npgsql.Replication.LogicalSlotSnapshotInitMode",
+      "clrName": "Npgsql.Replication.LogicalSlotSnapshotInitMode",
+      "tsEmitName": "LogicalSlotSnapshotInitMode",
+      "assemblyName": "Npgsql",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [
+        {
+          "stableId": "Npgsql:Npgsql.Replication.LogicalSlotSnapshotInitMode::value__System.Int32",
+          "clrName": "value__",
+          "tsEmitName": "value__",
+          "metadataToken": 67110068,
+          "normalizedSignature": "value__|System.Int32|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "declaringClrType": "Npgsql.Replication.LogicalSlotSnapshotInitMode",
+          "declaringAssemblyName": "Npgsql"
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Replication.LogicalSlotSnapshotInitMode::ExportNpgsql.Replication.LogicalSlotSnapshotInitMode",
+          "clrName": "Export",
+          "tsEmitName": "export_",
+          "metadataToken": 67110069,
+          "normalizedSignature": "Export|Npgsql.Replication.LogicalSlotSnapshotInitMode|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Npgsql.Replication.LogicalSlotSnapshotInitMode",
+          "declaringAssemblyName": "Npgsql"
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Replication.LogicalSlotSnapshotInitMode::UseNpgsql.Replication.LogicalSlotSnapshotInitMode",
+          "clrName": "Use",
+          "tsEmitName": "use",
+          "metadataToken": 67110070,
+          "normalizedSignature": "Use|Npgsql.Replication.LogicalSlotSnapshotInitMode|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Npgsql.Replication.LogicalSlotSnapshotInitMode",
+          "declaringAssemblyName": "Npgsql"
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Replication.LogicalSlotSnapshotInitMode::NoExportNpgsql.Replication.LogicalSlotSnapshotInitMode",
+          "clrName": "NoExport",
+          "tsEmitName": "noExport",
+          "metadataToken": 67110071,
+          "normalizedSignature": "NoExport|Npgsql.Replication.LogicalSlotSnapshotInitMode|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Npgsql.Replication.LogicalSlotSnapshotInitMode",
+          "declaringAssemblyName": "Npgsql"
+        }
+      ],
+      "events": [],
+      "constructors": [],
+      "exposedFields": [
+        {
+          "tsName": "value__",
+          "isStatic": false,
+          "tsSignatureId": "value__|System.Int32|static=false|const=false",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.LogicalSlotSnapshotInitMode",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 67110068
+          }
+        },
+        {
+          "tsName": "export_",
+          "isStatic": true,
+          "tsSignatureId": "Export|Npgsql.Replication.LogicalSlotSnapshotInitMode|static=true|const=true",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.LogicalSlotSnapshotInitMode",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 67110069
+          }
+        },
+        {
+          "tsName": "use",
+          "isStatic": true,
+          "tsSignatureId": "Use|Npgsql.Replication.LogicalSlotSnapshotInitMode|static=true|const=true",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.LogicalSlotSnapshotInitMode",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 67110070
+          }
+        },
+        {
+          "tsName": "noExport",
+          "isStatic": true,
+          "tsSignatureId": "NoExport|Npgsql.Replication.LogicalSlotSnapshotInitMode|static=true|const=true",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.LogicalSlotSnapshotInitMode",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 67110071
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Npgsql:Npgsql.Replication.ReplicationSlotOptions",
+      "clrName": "Npgsql.Replication.ReplicationSlotOptions",
+      "tsEmitName": "ReplicationSlotOptions",
+      "assemblyName": "Npgsql",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Npgsql:Npgsql.Replication.ReplicationSlotOptions::SlotName:System.String",
+          "clrName": "SlotName",
+          "tsEmitName": "slotName",
+          "metadataToken": 385876568,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "SlotName|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Npgsql.Replication.ReplicationSlotOptions",
+          "declaringAssemblyName": "Npgsql"
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Replication.ReplicationSlotOptions::ConsistentPoint:NpgsqlTypes.NpgsqlLogSequenceNumber",
+          "clrName": "ConsistentPoint",
+          "tsEmitName": "consistentPoint",
+          "metadataToken": 385876569,
+          "canonicalSignature": ":NpgsqlTypes.NpgsqlLogSequenceNumber",
+          "normalizedSignature": "ConsistentPoint|:NpgsqlTypes.NpgsqlLogSequenceNumber|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Npgsql.Replication.ReplicationSlotOptions",
+          "declaringAssemblyName": "Npgsql"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Npgsql:Npgsql.Replication.ReplicationSlotOptions::.ctor(System.String,System.String):void",
+          "metadataToken": 100665891,
+          "canonicalSignature": "(System.String,System.String):void",
+          "normalizedSignature": "constructor|(System.String,System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "declaringClrType": "Npgsql.Replication.ReplicationSlotOptions",
+          "declaringAssemblyName": "Npgsql"
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Replication.ReplicationSlotOptions::.ctor(System.String,NpgsqlTypes.NpgsqlLogSequenceNumber):void",
+          "metadataToken": 100665892,
+          "canonicalSignature": "(System.String,NpgsqlTypes.NpgsqlLogSequenceNumber):void",
+          "normalizedSignature": "constructor|(System.String,NpgsqlTypes.NpgsqlLogSequenceNumber):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "declaringClrType": "Npgsql.Replication.ReplicationSlotOptions",
+          "declaringAssemblyName": "Npgsql"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "slotName",
+          "isStatic": false,
+          "tsSignatureId": "SlotName|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationSlotOptions",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 385876568
+          }
+        },
+        {
+          "tsName": "consistentPoint",
+          "isStatic": false,
+          "tsSignatureId": "ConsistentPoint|:NpgsqlTypes.NpgsqlLogSequenceNumber|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationSlotOptions",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 385876569
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.String):void|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationSlotOptions",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 100665891
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,NpgsqlTypes.NpgsqlLogSequenceNumber):void|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationSlotOptions",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 100665892
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Npgsql:Npgsql.Replication.TimelineHistoryFile",
+      "clrName": "Npgsql.Replication.TimelineHistoryFile",
+      "tsEmitName": "TimelineHistoryFile",
+      "assemblyName": "Npgsql",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Npgsql:Npgsql.Replication.TimelineHistoryFile::FileName:System.String",
+          "clrName": "FileName",
+          "tsEmitName": "fileName",
+          "metadataToken": 385876575,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "FileName|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Npgsql.Replication.TimelineHistoryFile",
+          "declaringAssemblyName": "Npgsql"
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Replication.TimelineHistoryFile::Content:System.Byte[]",
+          "clrName": "Content",
+          "tsEmitName": "content",
+          "metadataToken": 385876576,
+          "canonicalSignature": ":System.Byte[]",
+          "normalizedSignature": "Content|:System.Byte[]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Npgsql.Replication.TimelineHistoryFile",
+          "declaringAssemblyName": "Npgsql"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedProperties": [
+        {
+          "tsName": "fileName",
+          "isStatic": false,
+          "tsSignatureId": "FileName|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.TimelineHistoryFile",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 385876575
+          }
+        },
+        {
+          "tsName": "content",
+          "isStatic": false,
+          "tsSignatureId": "Content|:System.Byte[]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.TimelineHistoryFile",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 385876576
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Npgsql:Npgsql.Replication.LogicalReplicationConnection",
+      "clrName": "Npgsql.Replication.LogicalReplicationConnection",
+      "tsEmitName": "LogicalReplicationConnection",
+      "assemblyName": "Npgsql",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Npgsql:Npgsql.Replication.LogicalReplicationConnection::.ctor():void",
+          "metadataToken": 100665815,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Npgsql.Replication.LogicalReplicationConnection",
+          "declaringAssemblyName": "Npgsql"
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Replication.LogicalReplicationConnection::.ctor(System.String):void",
+          "metadataToken": 100665816,
+          "canonicalSignature": "(System.String):void",
+          "normalizedSignature": "constructor|(System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Npgsql.Replication.LogicalReplicationConnection",
+          "declaringAssemblyName": "Npgsql"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "open",
+          "isStatic": false,
+          "tsSignatureId": "Open|(System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 100665857
+          }
+        },
+        {
+          "tsName": "disposeAsync",
+          "isStatic": false,
+          "tsSignatureId": "DisposeAsync|():System.Threading.Tasks.ValueTask|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 100665858
+          }
+        },
+        {
+          "tsName": "identifySystem",
+          "isStatic": false,
+          "tsSignatureId": "IdentifySystem|(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Npgsql.Replication.ReplicationSystemIdentification,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 100665859
+          }
+        },
+        {
+          "tsName": "show",
+          "isStatic": false,
+          "tsSignatureId": "Show|(System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 100665860
+          }
+        },
+        {
+          "tsName": "timelineHistory",
+          "isStatic": false,
+          "tsSignatureId": "TimelineHistory|(System.UInt32,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Npgsql.Replication.TimelineHistoryFile,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 100665861
+          }
+        },
+        {
+          "tsName": "setReplicationStatus",
+          "isStatic": false,
+          "tsSignatureId": "SetReplicationStatus|(NpgsqlTypes.NpgsqlLogSequenceNumber):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 100665866
+          }
+        },
+        {
+          "tsName": "sendStatusUpdate",
+          "isStatic": false,
+          "tsSignatureId": "SendStatusUpdate|(System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 100665867
+          }
+        },
+        {
+          "tsName": "dropReplicationSlot",
+          "isStatic": false,
+          "tsSignatureId": "DropReplicationSlot|(System.String,System.Boolean,System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 100665871
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "connectionString",
+          "isStatic": false,
+          "tsSignatureId": "ConnectionString|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 385876551
+          }
+        },
+        {
+          "tsName": "lastReceivedLsn",
+          "isStatic": false,
+          "tsSignatureId": "LastReceivedLsn|:NpgsqlTypes.NpgsqlLogSequenceNumber|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 385876552
+          }
+        },
+        {
+          "tsName": "lastFlushedLsn",
+          "isStatic": false,
+          "tsSignatureId": "LastFlushedLsn|:NpgsqlTypes.NpgsqlLogSequenceNumber|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 385876553
+          }
+        },
+        {
+          "tsName": "lastAppliedLsn",
+          "isStatic": false,
+          "tsSignatureId": "LastAppliedLsn|:NpgsqlTypes.NpgsqlLogSequenceNumber|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 385876554
+          }
+        },
+        {
+          "tsName": "walReceiverStatusInterval",
+          "isStatic": false,
+          "tsSignatureId": "WalReceiverStatusInterval|:System.TimeSpan|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 385876555
+          }
+        },
+        {
+          "tsName": "walReceiverTimeout",
+          "isStatic": false,
+          "tsSignatureId": "WalReceiverTimeout|:System.TimeSpan|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 385876556
+          }
+        },
+        {
+          "tsName": "postgreSqlVersion",
+          "isStatic": false,
+          "tsSignatureId": "PostgreSqlVersion|:System.Version|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 385876558
+          }
+        },
+        {
+          "tsName": "serverVersion",
+          "isStatic": false,
+          "tsSignatureId": "ServerVersion|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 385876559
+          }
+        },
+        {
+          "tsName": "commandTimeout",
+          "isStatic": false,
+          "tsSignatureId": "CommandTimeout|:System.TimeSpan|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 385876561
+          }
+        },
+        {
+          "tsName": "encoding",
+          "isStatic": false,
+          "tsSignatureId": "Encoding|:System.Text.Encoding|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 385876562
+          }
+        },
+        {
+          "tsName": "processID",
+          "isStatic": false,
+          "tsSignatureId": "ProcessID|:System.Int32|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 385876563
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.LogicalReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 100665815
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String):void|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.LogicalReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 100665816
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Npgsql:Npgsql.Replication.PhysicalReplicationConnection",
+      "clrName": "Npgsql.Replication.PhysicalReplicationConnection",
+      "tsEmitName": "PhysicalReplicationConnection",
+      "assemblyName": "Npgsql",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Npgsql:Npgsql.Replication.PhysicalReplicationConnection::CreateReplicationSlot(System.String,System.Boolean,System.Boolean,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Npgsql.Replication.PhysicalReplicationSlot,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]",
+          "clrName": "CreateReplicationSlot",
+          "tsEmitName": "createReplicationSlot",
+          "metadataToken": 100665824,
+          "canonicalSignature": "(System.String,System.Boolean,System.Boolean,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Npgsql.Replication.PhysicalReplicationSlot,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]",
+          "normalizedSignature": "CreateReplicationSlot|(System.String,System.Boolean,System.Boolean,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Npgsql.Replication.PhysicalReplicationSlot,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 4,
+          "declaringClrType": "Npgsql.Replication.PhysicalReplicationConnection",
+          "declaringAssemblyName": "Npgsql",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Replication.PhysicalReplicationConnection::ReadReplicationSlot(System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Npgsql.Replication.PhysicalReplicationSlot,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]",
+          "clrName": "ReadReplicationSlot",
+          "tsEmitName": "readReplicationSlot",
+          "metadataToken": 100665825,
+          "canonicalSignature": "(System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Npgsql.Replication.PhysicalReplicationSlot,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]",
+          "normalizedSignature": "ReadReplicationSlot|(System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Npgsql.Replication.PhysicalReplicationSlot,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Npgsql.Replication.PhysicalReplicationConnection",
+          "declaringAssemblyName": "Npgsql",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Replication.PhysicalReplicationConnection::StartReplication(Npgsql.Replication.PhysicalReplicationSlot,NpgsqlTypes.NpgsqlLogSequenceNumber,System.Threading.CancellationToken,System.UInt32):System.Collections.Generic.IAsyncEnumerable_1[[Npgsql.Replication.XLogDataMessage,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]",
+          "clrName": "StartReplication",
+          "tsEmitName": "startReplication",
+          "metadataToken": 100665826,
+          "canonicalSignature": "(Npgsql.Replication.PhysicalReplicationSlot,NpgsqlTypes.NpgsqlLogSequenceNumber,System.Threading.CancellationToken,System.UInt32):System.Collections.Generic.IAsyncEnumerable_1[[Npgsql.Replication.XLogDataMessage,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]",
+          "normalizedSignature": "StartReplication|(Npgsql.Replication.PhysicalReplicationSlot,NpgsqlTypes.NpgsqlLogSequenceNumber,System.Threading.CancellationToken,System.UInt32):System.Collections.Generic.IAsyncEnumerable_1[[Npgsql.Replication.XLogDataMessage,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 4,
+          "declaringClrType": "Npgsql.Replication.PhysicalReplicationConnection",
+          "declaringAssemblyName": "Npgsql",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Replication.PhysicalReplicationConnection::StartReplication(NpgsqlTypes.NpgsqlLogSequenceNumber,System.Threading.CancellationToken,System.UInt32):System.Collections.Generic.IAsyncEnumerable_1[[Npgsql.Replication.XLogDataMessage,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]",
+          "clrName": "StartReplication",
+          "tsEmitName": "startReplication",
+          "metadataToken": 100665827,
+          "canonicalSignature": "(NpgsqlTypes.NpgsqlLogSequenceNumber,System.Threading.CancellationToken,System.UInt32):System.Collections.Generic.IAsyncEnumerable_1[[Npgsql.Replication.XLogDataMessage,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]",
+          "normalizedSignature": "StartReplication|(NpgsqlTypes.NpgsqlLogSequenceNumber,System.Threading.CancellationToken,System.UInt32):System.Collections.Generic.IAsyncEnumerable_1[[Npgsql.Replication.XLogDataMessage,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 3,
+          "declaringClrType": "Npgsql.Replication.PhysicalReplicationConnection",
+          "declaringAssemblyName": "Npgsql",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Replication.PhysicalReplicationConnection::StartReplication(Npgsql.Replication.PhysicalReplicationSlot,System.Threading.CancellationToken):System.Collections.Generic.IAsyncEnumerable_1[[Npgsql.Replication.XLogDataMessage,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]",
+          "clrName": "StartReplication",
+          "tsEmitName": "startReplication",
+          "metadataToken": 100665828,
+          "canonicalSignature": "(Npgsql.Replication.PhysicalReplicationSlot,System.Threading.CancellationToken):System.Collections.Generic.IAsyncEnumerable_1[[Npgsql.Replication.XLogDataMessage,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]",
+          "normalizedSignature": "StartReplication|(Npgsql.Replication.PhysicalReplicationSlot,System.Threading.CancellationToken):System.Collections.Generic.IAsyncEnumerable_1[[Npgsql.Replication.XLogDataMessage,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Npgsql.Replication.PhysicalReplicationConnection",
+          "declaringAssemblyName": "Npgsql",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Npgsql:Npgsql.Replication.PhysicalReplicationConnection::.ctor():void",
+          "metadataToken": 100665822,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Npgsql.Replication.PhysicalReplicationConnection",
+          "declaringAssemblyName": "Npgsql"
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Replication.PhysicalReplicationConnection::.ctor(System.String):void",
+          "metadataToken": 100665823,
+          "canonicalSignature": "(System.String):void",
+          "normalizedSignature": "constructor|(System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Npgsql.Replication.PhysicalReplicationConnection",
+          "declaringAssemblyName": "Npgsql"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "createReplicationSlot",
+          "isStatic": false,
+          "tsSignatureId": "CreateReplicationSlot|(System.String,System.Boolean,System.Boolean,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Npgsql.Replication.PhysicalReplicationSlot,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.PhysicalReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 100665824
+          }
+        },
+        {
+          "tsName": "readReplicationSlot",
+          "isStatic": false,
+          "tsSignatureId": "ReadReplicationSlot|(System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Npgsql.Replication.PhysicalReplicationSlot,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.PhysicalReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 100665825
+          }
+        },
+        {
+          "tsName": "startReplication",
+          "isStatic": false,
+          "tsSignatureId": "StartReplication|(Npgsql.Replication.PhysicalReplicationSlot,NpgsqlTypes.NpgsqlLogSequenceNumber,System.Threading.CancellationToken,System.UInt32):System.Collections.Generic.IAsyncEnumerable_1[[Npgsql.Replication.XLogDataMessage,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.PhysicalReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 100665826
+          }
+        },
+        {
+          "tsName": "startReplication",
+          "isStatic": false,
+          "tsSignatureId": "StartReplication|(NpgsqlTypes.NpgsqlLogSequenceNumber,System.Threading.CancellationToken,System.UInt32):System.Collections.Generic.IAsyncEnumerable_1[[Npgsql.Replication.XLogDataMessage,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.PhysicalReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 100665827
+          }
+        },
+        {
+          "tsName": "startReplication",
+          "isStatic": false,
+          "tsSignatureId": "StartReplication|(Npgsql.Replication.PhysicalReplicationSlot,System.Threading.CancellationToken):System.Collections.Generic.IAsyncEnumerable_1[[Npgsql.Replication.XLogDataMessage,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.PhysicalReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 100665828
+          }
+        },
+        {
+          "tsName": "open",
+          "isStatic": false,
+          "tsSignatureId": "Open|(System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 100665857
+          }
+        },
+        {
+          "tsName": "disposeAsync",
+          "isStatic": false,
+          "tsSignatureId": "DisposeAsync|():System.Threading.Tasks.ValueTask|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 100665858
+          }
+        },
+        {
+          "tsName": "identifySystem",
+          "isStatic": false,
+          "tsSignatureId": "IdentifySystem|(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Npgsql.Replication.ReplicationSystemIdentification,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 100665859
+          }
+        },
+        {
+          "tsName": "show",
+          "isStatic": false,
+          "tsSignatureId": "Show|(System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 100665860
+          }
+        },
+        {
+          "tsName": "timelineHistory",
+          "isStatic": false,
+          "tsSignatureId": "TimelineHistory|(System.UInt32,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Npgsql.Replication.TimelineHistoryFile,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 100665861
+          }
+        },
+        {
+          "tsName": "setReplicationStatus",
+          "isStatic": false,
+          "tsSignatureId": "SetReplicationStatus|(NpgsqlTypes.NpgsqlLogSequenceNumber):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 100665866
+          }
+        },
+        {
+          "tsName": "sendStatusUpdate",
+          "isStatic": false,
+          "tsSignatureId": "SendStatusUpdate|(System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 100665867
+          }
+        },
+        {
+          "tsName": "dropReplicationSlot",
+          "isStatic": false,
+          "tsSignatureId": "DropReplicationSlot|(System.String,System.Boolean,System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 100665871
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "connectionString",
+          "isStatic": false,
+          "tsSignatureId": "ConnectionString|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 385876551
+          }
+        },
+        {
+          "tsName": "lastReceivedLsn",
+          "isStatic": false,
+          "tsSignatureId": "LastReceivedLsn|:NpgsqlTypes.NpgsqlLogSequenceNumber|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 385876552
+          }
+        },
+        {
+          "tsName": "lastFlushedLsn",
+          "isStatic": false,
+          "tsSignatureId": "LastFlushedLsn|:NpgsqlTypes.NpgsqlLogSequenceNumber|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 385876553
+          }
+        },
+        {
+          "tsName": "lastAppliedLsn",
+          "isStatic": false,
+          "tsSignatureId": "LastAppliedLsn|:NpgsqlTypes.NpgsqlLogSequenceNumber|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 385876554
+          }
+        },
+        {
+          "tsName": "walReceiverStatusInterval",
+          "isStatic": false,
+          "tsSignatureId": "WalReceiverStatusInterval|:System.TimeSpan|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 385876555
+          }
+        },
+        {
+          "tsName": "walReceiverTimeout",
+          "isStatic": false,
+          "tsSignatureId": "WalReceiverTimeout|:System.TimeSpan|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 385876556
+          }
+        },
+        {
+          "tsName": "postgreSqlVersion",
+          "isStatic": false,
+          "tsSignatureId": "PostgreSqlVersion|:System.Version|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 385876558
+          }
+        },
+        {
+          "tsName": "serverVersion",
+          "isStatic": false,
+          "tsSignatureId": "ServerVersion|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 385876559
+          }
+        },
+        {
+          "tsName": "commandTimeout",
+          "isStatic": false,
+          "tsSignatureId": "CommandTimeout|:System.TimeSpan|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 385876561
+          }
+        },
+        {
+          "tsName": "encoding",
+          "isStatic": false,
+          "tsSignatureId": "Encoding|:System.Text.Encoding|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 385876562
+          }
+        },
+        {
+          "tsName": "processID",
+          "isStatic": false,
+          "tsSignatureId": "ProcessID|:System.Int32|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 385876563
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.PhysicalReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 100665822
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String):void|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.PhysicalReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 100665823
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Npgsql:Npgsql.Replication.PhysicalReplicationSlot",
+      "clrName": "Npgsql.Replication.PhysicalReplicationSlot",
+      "tsEmitName": "PhysicalReplicationSlot",
+      "assemblyName": "Npgsql",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Npgsql:Npgsql.Replication.PhysicalReplicationSlot::RestartLsn:System.Nullable_1[[NpgsqlTypes.NpgsqlLogSequenceNumber,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]",
+          "clrName": "RestartLsn",
+          "tsEmitName": "restartLsn",
+          "metadataToken": 385876548,
+          "canonicalSignature": ":System.Nullable_1[[NpgsqlTypes.NpgsqlLogSequenceNumber,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]",
+          "normalizedSignature": "RestartLsn|:System.Nullable_1[[NpgsqlTypes.NpgsqlLogSequenceNumber,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Npgsql.Replication.PhysicalReplicationSlot",
+          "declaringAssemblyName": "Npgsql"
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Replication.PhysicalReplicationSlot::RestartTimeline:System.Nullable_1[[System.UInt32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "RestartTimeline",
+          "tsEmitName": "restartTimeline",
+          "metadataToken": 385876549,
+          "canonicalSignature": ":System.Nullable_1[[System.UInt32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "RestartTimeline|:System.Nullable_1[[System.UInt32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Npgsql.Replication.PhysicalReplicationSlot",
+          "declaringAssemblyName": "Npgsql"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Npgsql:Npgsql.Replication.PhysicalReplicationSlot::.ctor(System.String,System.Nullable_1[[NpgsqlTypes.NpgsqlLogSequenceNumber,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]],System.Nullable_1[[System.UInt32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void",
+          "metadataToken": 100665830,
+          "canonicalSignature": "(System.String,System.Nullable_1[[NpgsqlTypes.NpgsqlLogSequenceNumber,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]],System.Nullable_1[[System.UInt32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void",
+          "normalizedSignature": "constructor|(System.String,System.Nullable_1[[NpgsqlTypes.NpgsqlLogSequenceNumber,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]],System.Nullable_1[[System.UInt32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 3,
+          "declaringClrType": "Npgsql.Replication.PhysicalReplicationSlot",
+          "declaringAssemblyName": "Npgsql"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "restartLsn",
+          "isStatic": false,
+          "tsSignatureId": "RestartLsn|:System.Nullable_1[[NpgsqlTypes.NpgsqlLogSequenceNumber,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.PhysicalReplicationSlot",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 385876548
+          }
+        },
+        {
+          "tsName": "restartTimeline",
+          "isStatic": false,
+          "tsSignatureId": "RestartTimeline|:System.Nullable_1[[System.UInt32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.PhysicalReplicationSlot",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 385876549
+          }
+        },
+        {
+          "tsName": "name",
+          "isStatic": false,
+          "tsSignatureId": "Name|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationSlot",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 385876567
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.Nullable_1[[NpgsqlTypes.NpgsqlLogSequenceNumber,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]],System.Nullable_1[[System.UInt32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.PhysicalReplicationSlot",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 100665830
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Npgsql:Npgsql.Replication.ReplicationConnection",
+      "clrName": "Npgsql.Replication.ReplicationConnection",
+      "tsEmitName": "ReplicationConnection",
+      "assemblyName": "Npgsql",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Npgsql:Npgsql.Replication.ReplicationConnection::Open(System.Threading.CancellationToken):System.Threading.Tasks.Task",
+          "clrName": "Open",
+          "tsEmitName": "open",
+          "metadataToken": 100665857,
+          "canonicalSignature": "(System.Threading.CancellationToken):System.Threading.Tasks.Task",
+          "normalizedSignature": "Open|(System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+          "declaringAssemblyName": "Npgsql",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Replication.ReplicationConnection::DisposeAsync():System.Threading.Tasks.ValueTask",
+          "clrName": "DisposeAsync",
+          "tsEmitName": "disposeAsync",
+          "metadataToken": 100665858,
+          "canonicalSignature": "():System.Threading.Tasks.ValueTask",
+          "normalizedSignature": "DisposeAsync|():System.Threading.Tasks.ValueTask|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+          "declaringAssemblyName": "Npgsql",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Replication.ReplicationConnection::IdentifySystem(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Npgsql.Replication.ReplicationSystemIdentification,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]",
+          "clrName": "IdentifySystem",
+          "tsEmitName": "identifySystem",
+          "metadataToken": 100665859,
+          "canonicalSignature": "(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Npgsql.Replication.ReplicationSystemIdentification,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]",
+          "normalizedSignature": "IdentifySystem|(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Npgsql.Replication.ReplicationSystemIdentification,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+          "declaringAssemblyName": "Npgsql",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Replication.ReplicationConnection::Show(System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "Show",
+          "tsEmitName": "show",
+          "metadataToken": 100665860,
+          "canonicalSignature": "(System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "Show|(System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+          "declaringAssemblyName": "Npgsql",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Replication.ReplicationConnection::TimelineHistory(System.UInt32,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Npgsql.Replication.TimelineHistoryFile,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]",
+          "clrName": "TimelineHistory",
+          "tsEmitName": "timelineHistory",
+          "metadataToken": 100665861,
+          "canonicalSignature": "(System.UInt32,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Npgsql.Replication.TimelineHistoryFile,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]",
+          "normalizedSignature": "TimelineHistory|(System.UInt32,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Npgsql.Replication.TimelineHistoryFile,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+          "declaringAssemblyName": "Npgsql",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Replication.ReplicationConnection::SetReplicationStatus(NpgsqlTypes.NpgsqlLogSequenceNumber):System.Void",
+          "clrName": "SetReplicationStatus",
+          "tsEmitName": "setReplicationStatus",
+          "metadataToken": 100665866,
+          "canonicalSignature": "(NpgsqlTypes.NpgsqlLogSequenceNumber):System.Void",
+          "normalizedSignature": "SetReplicationStatus|(NpgsqlTypes.NpgsqlLogSequenceNumber):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+          "declaringAssemblyName": "Npgsql",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Replication.ReplicationConnection::SendStatusUpdate(System.Threading.CancellationToken):System.Threading.Tasks.Task",
+          "clrName": "SendStatusUpdate",
+          "tsEmitName": "sendStatusUpdate",
+          "metadataToken": 100665867,
+          "canonicalSignature": "(System.Threading.CancellationToken):System.Threading.Tasks.Task",
+          "normalizedSignature": "SendStatusUpdate|(System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+          "declaringAssemblyName": "Npgsql",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Replication.ReplicationConnection::DropReplicationSlot(System.String,System.Boolean,System.Threading.CancellationToken):System.Threading.Tasks.Task",
+          "clrName": "DropReplicationSlot",
+          "tsEmitName": "dropReplicationSlot",
+          "metadataToken": 100665871,
+          "canonicalSignature": "(System.String,System.Boolean,System.Threading.CancellationToken):System.Threading.Tasks.Task",
+          "normalizedSignature": "DropReplicationSlot|(System.String,System.Boolean,System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 3,
+          "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+          "declaringAssemblyName": "Npgsql",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Npgsql:Npgsql.Replication.ReplicationConnection::ConnectionString:System.String",
+          "clrName": "ConnectionString",
+          "tsEmitName": "connectionString",
+          "metadataToken": 385876551,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "ConnectionString|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+          "declaringAssemblyName": "Npgsql"
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Replication.ReplicationConnection::LastReceivedLsn:NpgsqlTypes.NpgsqlLogSequenceNumber",
+          "clrName": "LastReceivedLsn",
+          "tsEmitName": "lastReceivedLsn",
+          "metadataToken": 385876552,
+          "canonicalSignature": ":NpgsqlTypes.NpgsqlLogSequenceNumber",
+          "normalizedSignature": "LastReceivedLsn|:NpgsqlTypes.NpgsqlLogSequenceNumber|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+          "declaringAssemblyName": "Npgsql"
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Replication.ReplicationConnection::LastFlushedLsn:NpgsqlTypes.NpgsqlLogSequenceNumber",
+          "clrName": "LastFlushedLsn",
+          "tsEmitName": "lastFlushedLsn",
+          "metadataToken": 385876553,
+          "canonicalSignature": ":NpgsqlTypes.NpgsqlLogSequenceNumber",
+          "normalizedSignature": "LastFlushedLsn|:NpgsqlTypes.NpgsqlLogSequenceNumber|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+          "declaringAssemblyName": "Npgsql"
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Replication.ReplicationConnection::LastAppliedLsn:NpgsqlTypes.NpgsqlLogSequenceNumber",
+          "clrName": "LastAppliedLsn",
+          "tsEmitName": "lastAppliedLsn",
+          "metadataToken": 385876554,
+          "canonicalSignature": ":NpgsqlTypes.NpgsqlLogSequenceNumber",
+          "normalizedSignature": "LastAppliedLsn|:NpgsqlTypes.NpgsqlLogSequenceNumber|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+          "declaringAssemblyName": "Npgsql"
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Replication.ReplicationConnection::WalReceiverStatusInterval:System.TimeSpan",
+          "clrName": "WalReceiverStatusInterval",
+          "tsEmitName": "walReceiverStatusInterval",
+          "metadataToken": 385876555,
+          "canonicalSignature": ":System.TimeSpan",
+          "normalizedSignature": "WalReceiverStatusInterval|:System.TimeSpan|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+          "declaringAssemblyName": "Npgsql"
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Replication.ReplicationConnection::WalReceiverTimeout:System.TimeSpan",
+          "clrName": "WalReceiverTimeout",
+          "tsEmitName": "walReceiverTimeout",
+          "metadataToken": 385876556,
+          "canonicalSignature": ":System.TimeSpan",
+          "normalizedSignature": "WalReceiverTimeout|:System.TimeSpan|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+          "declaringAssemblyName": "Npgsql"
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Replication.ReplicationConnection::PostgreSqlVersion:System.Version",
+          "clrName": "PostgreSqlVersion",
+          "tsEmitName": "postgreSqlVersion",
+          "metadataToken": 385876558,
+          "canonicalSignature": ":System.Version",
+          "normalizedSignature": "PostgreSqlVersion|:System.Version|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+          "declaringAssemblyName": "Npgsql"
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Replication.ReplicationConnection::ServerVersion:System.String",
+          "clrName": "ServerVersion",
+          "tsEmitName": "serverVersion",
+          "metadataToken": 385876559,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "ServerVersion|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+          "declaringAssemblyName": "Npgsql"
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Replication.ReplicationConnection::CommandTimeout:System.TimeSpan",
+          "clrName": "CommandTimeout",
+          "tsEmitName": "commandTimeout",
+          "metadataToken": 385876561,
+          "canonicalSignature": ":System.TimeSpan",
+          "normalizedSignature": "CommandTimeout|:System.TimeSpan|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+          "declaringAssemblyName": "Npgsql"
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Replication.ReplicationConnection::Encoding:System.Text.Encoding",
+          "clrName": "Encoding",
+          "tsEmitName": "encoding",
+          "metadataToken": 385876562,
+          "canonicalSignature": ":System.Text.Encoding",
+          "normalizedSignature": "Encoding|:System.Text.Encoding|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+          "declaringAssemblyName": "Npgsql"
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Replication.ReplicationConnection::ProcessID:System.Int32",
+          "clrName": "ProcessID",
+          "tsEmitName": "processID",
+          "metadataToken": 385876563,
+          "canonicalSignature": ":System.Int32",
+          "normalizedSignature": "ProcessID|:System.Int32|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+          "declaringAssemblyName": "Npgsql"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "open",
+          "isStatic": false,
+          "tsSignatureId": "Open|(System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 100665857
+          }
+        },
+        {
+          "tsName": "disposeAsync",
+          "isStatic": false,
+          "tsSignatureId": "DisposeAsync|():System.Threading.Tasks.ValueTask|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 100665858
+          }
+        },
+        {
+          "tsName": "identifySystem",
+          "isStatic": false,
+          "tsSignatureId": "IdentifySystem|(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Npgsql.Replication.ReplicationSystemIdentification,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 100665859
+          }
+        },
+        {
+          "tsName": "show",
+          "isStatic": false,
+          "tsSignatureId": "Show|(System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 100665860
+          }
+        },
+        {
+          "tsName": "timelineHistory",
+          "isStatic": false,
+          "tsSignatureId": "TimelineHistory|(System.UInt32,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Npgsql.Replication.TimelineHistoryFile,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 100665861
+          }
+        },
+        {
+          "tsName": "setReplicationStatus",
+          "isStatic": false,
+          "tsSignatureId": "SetReplicationStatus|(NpgsqlTypes.NpgsqlLogSequenceNumber):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 100665866
+          }
+        },
+        {
+          "tsName": "sendStatusUpdate",
+          "isStatic": false,
+          "tsSignatureId": "SendStatusUpdate|(System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 100665867
+          }
+        },
+        {
+          "tsName": "dropReplicationSlot",
+          "isStatic": false,
+          "tsSignatureId": "DropReplicationSlot|(System.String,System.Boolean,System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 100665871
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "connectionString",
+          "isStatic": false,
+          "tsSignatureId": "ConnectionString|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 385876551
+          }
+        },
+        {
+          "tsName": "lastReceivedLsn",
+          "isStatic": false,
+          "tsSignatureId": "LastReceivedLsn|:NpgsqlTypes.NpgsqlLogSequenceNumber|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 385876552
+          }
+        },
+        {
+          "tsName": "lastFlushedLsn",
+          "isStatic": false,
+          "tsSignatureId": "LastFlushedLsn|:NpgsqlTypes.NpgsqlLogSequenceNumber|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 385876553
+          }
+        },
+        {
+          "tsName": "lastAppliedLsn",
+          "isStatic": false,
+          "tsSignatureId": "LastAppliedLsn|:NpgsqlTypes.NpgsqlLogSequenceNumber|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 385876554
+          }
+        },
+        {
+          "tsName": "walReceiverStatusInterval",
+          "isStatic": false,
+          "tsSignatureId": "WalReceiverStatusInterval|:System.TimeSpan|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 385876555
+          }
+        },
+        {
+          "tsName": "walReceiverTimeout",
+          "isStatic": false,
+          "tsSignatureId": "WalReceiverTimeout|:System.TimeSpan|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 385876556
+          }
+        },
+        {
+          "tsName": "postgreSqlVersion",
+          "isStatic": false,
+          "tsSignatureId": "PostgreSqlVersion|:System.Version|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 385876558
+          }
+        },
+        {
+          "tsName": "serverVersion",
+          "isStatic": false,
+          "tsSignatureId": "ServerVersion|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 385876559
+          }
+        },
+        {
+          "tsName": "commandTimeout",
+          "isStatic": false,
+          "tsSignatureId": "CommandTimeout|:System.TimeSpan|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 385876561
+          }
+        },
+        {
+          "tsName": "encoding",
+          "isStatic": false,
+          "tsSignatureId": "Encoding|:System.Text.Encoding|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 385876562
+          }
+        },
+        {
+          "tsName": "processID",
+          "isStatic": false,
+          "tsSignatureId": "ProcessID|:System.Int32|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationConnection",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 385876563
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Npgsql:Npgsql.Replication.ReplicationMessage",
+      "clrName": "Npgsql.Replication.ReplicationMessage",
+      "tsEmitName": "ReplicationMessage",
+      "assemblyName": "Npgsql",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Npgsql:Npgsql.Replication.ReplicationMessage::WalStart:NpgsqlTypes.NpgsqlLogSequenceNumber",
+          "clrName": "WalStart",
+          "tsEmitName": "walStart",
+          "metadataToken": 385876564,
+          "canonicalSignature": ":NpgsqlTypes.NpgsqlLogSequenceNumber",
+          "normalizedSignature": "WalStart|:NpgsqlTypes.NpgsqlLogSequenceNumber|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Npgsql.Replication.ReplicationMessage",
+          "declaringAssemblyName": "Npgsql"
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Replication.ReplicationMessage::WalEnd:NpgsqlTypes.NpgsqlLogSequenceNumber",
+          "clrName": "WalEnd",
+          "tsEmitName": "walEnd",
+          "metadataToken": 385876565,
+          "canonicalSignature": ":NpgsqlTypes.NpgsqlLogSequenceNumber",
+          "normalizedSignature": "WalEnd|:NpgsqlTypes.NpgsqlLogSequenceNumber|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Npgsql.Replication.ReplicationMessage",
+          "declaringAssemblyName": "Npgsql"
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Replication.ReplicationMessage::ServerClock:System.DateTime",
+          "clrName": "ServerClock",
+          "tsEmitName": "serverClock",
+          "metadataToken": 385876566,
+          "canonicalSignature": ":System.DateTime",
+          "normalizedSignature": "ServerClock|:System.DateTime|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Npgsql.Replication.ReplicationMessage",
+          "declaringAssemblyName": "Npgsql"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedProperties": [
+        {
+          "tsName": "walStart",
+          "isStatic": false,
+          "tsSignatureId": "WalStart|:NpgsqlTypes.NpgsqlLogSequenceNumber|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationMessage",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 385876564
+          }
+        },
+        {
+          "tsName": "walEnd",
+          "isStatic": false,
+          "tsSignatureId": "WalEnd|:NpgsqlTypes.NpgsqlLogSequenceNumber|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationMessage",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 385876565
+          }
+        },
+        {
+          "tsName": "serverClock",
+          "isStatic": false,
+          "tsSignatureId": "ServerClock|:System.DateTime|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationMessage",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 385876566
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Npgsql:Npgsql.Replication.ReplicationSlot",
+      "clrName": "Npgsql.Replication.ReplicationSlot",
+      "tsEmitName": "ReplicationSlot",
+      "assemblyName": "Npgsql",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Npgsql:Npgsql.Replication.ReplicationSlot::Name:System.String",
+          "clrName": "Name",
+          "tsEmitName": "name",
+          "metadataToken": 385876567,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Name|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Npgsql.Replication.ReplicationSlot",
+          "declaringAssemblyName": "Npgsql"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedProperties": [
+        {
+          "tsName": "name",
+          "isStatic": false,
+          "tsSignatureId": "Name|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationSlot",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 385876567
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Npgsql:Npgsql.Replication.ReplicationSystemIdentification",
+      "clrName": "Npgsql.Replication.ReplicationSystemIdentification",
+      "tsEmitName": "ReplicationSystemIdentification",
+      "assemblyName": "Npgsql",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Npgsql:Npgsql.Replication.ReplicationSystemIdentification::SystemId:System.String",
+          "clrName": "SystemId",
+          "tsEmitName": "systemId",
+          "metadataToken": 385876571,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "SystemId|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Npgsql.Replication.ReplicationSystemIdentification",
+          "declaringAssemblyName": "Npgsql"
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Replication.ReplicationSystemIdentification::Timeline:System.UInt32",
+          "clrName": "Timeline",
+          "tsEmitName": "timeline",
+          "metadataToken": 385876572,
+          "canonicalSignature": ":System.UInt32",
+          "normalizedSignature": "Timeline|:System.UInt32|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Npgsql.Replication.ReplicationSystemIdentification",
+          "declaringAssemblyName": "Npgsql"
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Replication.ReplicationSystemIdentification::XLogPos:NpgsqlTypes.NpgsqlLogSequenceNumber",
+          "clrName": "XLogPos",
+          "tsEmitName": "xLogPos",
+          "metadataToken": 385876573,
+          "canonicalSignature": ":NpgsqlTypes.NpgsqlLogSequenceNumber",
+          "normalizedSignature": "XLogPos|:NpgsqlTypes.NpgsqlLogSequenceNumber|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Npgsql.Replication.ReplicationSystemIdentification",
+          "declaringAssemblyName": "Npgsql"
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Replication.ReplicationSystemIdentification::DbName:System.String",
+          "clrName": "DbName",
+          "tsEmitName": "dbName",
+          "metadataToken": 385876574,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "DbName|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Npgsql.Replication.ReplicationSystemIdentification",
+          "declaringAssemblyName": "Npgsql"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedProperties": [
+        {
+          "tsName": "systemId",
+          "isStatic": false,
+          "tsSignatureId": "SystemId|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationSystemIdentification",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 385876571
+          }
+        },
+        {
+          "tsName": "timeline",
+          "isStatic": false,
+          "tsSignatureId": "Timeline|:System.UInt32|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationSystemIdentification",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 385876572
+          }
+        },
+        {
+          "tsName": "xLogPos",
+          "isStatic": false,
+          "tsSignatureId": "XLogPos|:NpgsqlTypes.NpgsqlLogSequenceNumber|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationSystemIdentification",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 385876573
+          }
+        },
+        {
+          "tsName": "dbName",
+          "isStatic": false,
+          "tsSignatureId": "DbName|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationSystemIdentification",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 385876574
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Npgsql:Npgsql.Replication.XLogDataMessage",
+      "clrName": "Npgsql.Replication.XLogDataMessage",
+      "tsEmitName": "XLogDataMessage",
+      "assemblyName": "Npgsql",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Npgsql:Npgsql.Replication.XLogDataMessage::Data:System.IO.Stream",
+          "clrName": "Data",
+          "tsEmitName": "data",
+          "metadataToken": 385876577,
+          "canonicalSignature": ":System.IO.Stream",
+          "normalizedSignature": "Data|:System.IO.Stream|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Npgsql.Replication.XLogDataMessage",
+          "declaringAssemblyName": "Npgsql"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Npgsql:Npgsql.Replication.XLogDataMessage::.ctor():void",
+          "metadataToken": 100665910,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Npgsql.Replication.XLogDataMessage",
+          "declaringAssemblyName": "Npgsql"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "data",
+          "isStatic": false,
+          "tsSignatureId": "Data|:System.IO.Stream|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.XLogDataMessage",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 385876577
+          }
+        },
+        {
+          "tsName": "walStart",
+          "isStatic": false,
+          "tsSignatureId": "WalStart|:NpgsqlTypes.NpgsqlLogSequenceNumber|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationMessage",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 385876564
+          }
+        },
+        {
+          "tsName": "walEnd",
+          "isStatic": false,
+          "tsSignatureId": "WalEnd|:NpgsqlTypes.NpgsqlLogSequenceNumber|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationMessage",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 385876565
+          }
+        },
+        {
+          "tsName": "serverClock",
+          "isStatic": false,
+          "tsSignatureId": "ServerClock|:System.DateTime|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.ReplicationMessage",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 385876566
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.XLogDataMessage",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 100665910
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Npgsql:Npgsql.Replication.PgOutputConnectionExtensions",
+      "clrName": "Npgsql.Replication.PgOutputConnectionExtensions",
+      "tsEmitName": "PgOutputConnectionExtensions",
+      "assemblyName": "Npgsql",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Npgsql:Npgsql.Replication.PgOutputConnectionExtensions::CreatePgOutputReplicationSlot(Npgsql.Replication.LogicalReplicationConnection,System.String,System.Boolean,System.Nullable_1[[Npgsql.Replication.LogicalSlotSnapshotInitMode,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]],System.Boolean,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Npgsql.Replication.PgOutput.PgOutputReplicationSlot,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]",
+          "clrName": "CreatePgOutputReplicationSlot",
+          "tsEmitName": "createPgOutputReplicationSlot",
+          "metadataToken": 100665819,
+          "canonicalSignature": "(Npgsql.Replication.LogicalReplicationConnection,System.String,System.Boolean,System.Nullable_1[[Npgsql.Replication.LogicalSlotSnapshotInitMode,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]],System.Boolean,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Npgsql.Replication.PgOutput.PgOutputReplicationSlot,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]",
+          "normalizedSignature": "CreatePgOutputReplicationSlot|(Npgsql.Replication.LogicalReplicationConnection,System.String,System.Boolean,System.Nullable_1[[Npgsql.Replication.LogicalSlotSnapshotInitMode,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]],System.Boolean,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Npgsql.Replication.PgOutput.PgOutputReplicationSlot,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 6,
+          "declaringClrType": "Npgsql.Replication.PgOutputConnectionExtensions",
+          "declaringAssemblyName": "Npgsql",
+          "isExtensionMethod": true
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Replication.PgOutputConnectionExtensions::StartReplication(Npgsql.Replication.LogicalReplicationConnection,Npgsql.Replication.PgOutput.PgOutputReplicationSlot,Npgsql.Replication.PgOutput.PgOutputReplicationOptions,System.Threading.CancellationToken,System.Nullable_1[[NpgsqlTypes.NpgsqlLogSequenceNumber,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]):System.Collections.Generic.IAsyncEnumerable_1[[Npgsql.Replication.PgOutput.Messages.PgOutputReplicationMessage,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]",
+          "clrName": "StartReplication",
+          "tsEmitName": "startReplication",
+          "metadataToken": 100665820,
+          "canonicalSignature": "(Npgsql.Replication.LogicalReplicationConnection,Npgsql.Replication.PgOutput.PgOutputReplicationSlot,Npgsql.Replication.PgOutput.PgOutputReplicationOptions,System.Threading.CancellationToken,System.Nullable_1[[NpgsqlTypes.NpgsqlLogSequenceNumber,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]):System.Collections.Generic.IAsyncEnumerable_1[[Npgsql.Replication.PgOutput.Messages.PgOutputReplicationMessage,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]",
+          "normalizedSignature": "StartReplication|(Npgsql.Replication.LogicalReplicationConnection,Npgsql.Replication.PgOutput.PgOutputReplicationSlot,Npgsql.Replication.PgOutput.PgOutputReplicationOptions,System.Threading.CancellationToken,System.Nullable_1[[NpgsqlTypes.NpgsqlLogSequenceNumber,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]):System.Collections.Generic.IAsyncEnumerable_1[[Npgsql.Replication.PgOutput.Messages.PgOutputReplicationMessage,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Npgsql.Replication.PgOutputConnectionExtensions",
+          "declaringAssemblyName": "Npgsql",
+          "isExtensionMethod": true
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "createPgOutputReplicationSlot",
+          "isStatic": true,
+          "tsSignatureId": "CreatePgOutputReplicationSlot|(Npgsql.Replication.LogicalReplicationConnection,System.String,System.Boolean,System.Nullable_1[[Npgsql.Replication.LogicalSlotSnapshotInitMode,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]],System.Boolean,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Npgsql.Replication.PgOutput.PgOutputReplicationSlot,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]|static=true",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.PgOutputConnectionExtensions",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 100665819
+          }
+        },
+        {
+          "tsName": "startReplication",
+          "isStatic": true,
+          "tsSignatureId": "StartReplication|(Npgsql.Replication.LogicalReplicationConnection,Npgsql.Replication.PgOutput.PgOutputReplicationSlot,Npgsql.Replication.PgOutput.PgOutputReplicationOptions,System.Threading.CancellationToken,System.Nullable_1[[NpgsqlTypes.NpgsqlLogSequenceNumber,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]):System.Collections.Generic.IAsyncEnumerable_1[[Npgsql.Replication.PgOutput.Messages.PgOutputReplicationMessage,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]|static=true",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.PgOutputConnectionExtensions",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 100665820
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Npgsql:Npgsql.Replication.TestDecodingConnectionExtensions",
+      "clrName": "Npgsql.Replication.TestDecodingConnectionExtensions",
+      "tsEmitName": "TestDecodingConnectionExtensions",
+      "assemblyName": "Npgsql",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Npgsql:Npgsql.Replication.TestDecodingConnectionExtensions::CreateTestDecodingReplicationSlot(Npgsql.Replication.LogicalReplicationConnection,System.String,System.Boolean,System.Nullable_1[[Npgsql.Replication.LogicalSlotSnapshotInitMode,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]],System.Boolean,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Npgsql.Replication.TestDecoding.TestDecodingReplicationSlot,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]",
+          "clrName": "CreateTestDecodingReplicationSlot",
+          "tsEmitName": "createTestDecodingReplicationSlot",
+          "metadataToken": 100665902,
+          "canonicalSignature": "(Npgsql.Replication.LogicalReplicationConnection,System.String,System.Boolean,System.Nullable_1[[Npgsql.Replication.LogicalSlotSnapshotInitMode,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]],System.Boolean,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Npgsql.Replication.TestDecoding.TestDecodingReplicationSlot,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]",
+          "normalizedSignature": "CreateTestDecodingReplicationSlot|(Npgsql.Replication.LogicalReplicationConnection,System.String,System.Boolean,System.Nullable_1[[Npgsql.Replication.LogicalSlotSnapshotInitMode,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]],System.Boolean,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Npgsql.Replication.TestDecoding.TestDecodingReplicationSlot,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 6,
+          "declaringClrType": "Npgsql.Replication.TestDecodingConnectionExtensions",
+          "declaringAssemblyName": "Npgsql",
+          "isExtensionMethod": true
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Replication.TestDecodingConnectionExtensions::StartReplication(Npgsql.Replication.LogicalReplicationConnection,Npgsql.Replication.TestDecoding.TestDecodingReplicationSlot,System.Threading.CancellationToken,Npgsql.Replication.TestDecoding.TestDecodingOptions,System.Nullable_1[[NpgsqlTypes.NpgsqlLogSequenceNumber,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]):System.Collections.Generic.IAsyncEnumerable_1[[Npgsql.Replication.TestDecoding.TestDecodingData,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]",
+          "clrName": "StartReplication",
+          "tsEmitName": "startReplication",
+          "metadataToken": 100665903,
+          "canonicalSignature": "(Npgsql.Replication.LogicalReplicationConnection,Npgsql.Replication.TestDecoding.TestDecodingReplicationSlot,System.Threading.CancellationToken,Npgsql.Replication.TestDecoding.TestDecodingOptions,System.Nullable_1[[NpgsqlTypes.NpgsqlLogSequenceNumber,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]):System.Collections.Generic.IAsyncEnumerable_1[[Npgsql.Replication.TestDecoding.TestDecodingData,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]",
+          "normalizedSignature": "StartReplication|(Npgsql.Replication.LogicalReplicationConnection,Npgsql.Replication.TestDecoding.TestDecodingReplicationSlot,System.Threading.CancellationToken,Npgsql.Replication.TestDecoding.TestDecodingOptions,System.Nullable_1[[NpgsqlTypes.NpgsqlLogSequenceNumber,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]):System.Collections.Generic.IAsyncEnumerable_1[[Npgsql.Replication.TestDecoding.TestDecodingData,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 5,
+          "declaringClrType": "Npgsql.Replication.TestDecodingConnectionExtensions",
+          "declaringAssemblyName": "Npgsql",
+          "isExtensionMethod": true
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "createTestDecodingReplicationSlot",
+          "isStatic": true,
+          "tsSignatureId": "CreateTestDecodingReplicationSlot|(Npgsql.Replication.LogicalReplicationConnection,System.String,System.Boolean,System.Nullable_1[[Npgsql.Replication.LogicalSlotSnapshotInitMode,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]],System.Boolean,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Npgsql.Replication.TestDecoding.TestDecodingReplicationSlot,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]|static=true",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.TestDecodingConnectionExtensions",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 100665902
+          }
+        },
+        {
+          "tsName": "startReplication",
+          "isStatic": true,
+          "tsSignatureId": "StartReplication|(Npgsql.Replication.LogicalReplicationConnection,Npgsql.Replication.TestDecoding.TestDecodingReplicationSlot,System.Threading.CancellationToken,Npgsql.Replication.TestDecoding.TestDecodingOptions,System.Nullable_1[[NpgsqlTypes.NpgsqlLogSequenceNumber,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]):System.Collections.Generic.IAsyncEnumerable_1[[Npgsql.Replication.TestDecoding.TestDecodingData,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]|static=true",
+          "target": {
+            "declaringClrType": "Npgsql.Replication.TestDecodingConnectionExtensions",
+            "declaringAssemblyName": "Npgsql",
+            "metadataToken": 100665903
+          }
+        }
+      ]
+    }
+  ]
+}

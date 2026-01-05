@@ -1,0 +1,175 @@
+{
+  "namespace": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations",
+  "types": [
+    {
+      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlCreateDatabaseOperation",
+      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlCreateDatabaseOperation",
+      "tsEmitName": "NpgsqlCreateDatabaseOperation",
+      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlCreateDatabaseOperation::Name:System.String",
+          "clrName": "Name",
+          "tsEmitName": "name",
+          "metadataToken": 385876134,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Name|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlCreateDatabaseOperation",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        },
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlCreateDatabaseOperation::Template:System.String",
+          "clrName": "Template",
+          "tsEmitName": "template",
+          "metadataToken": 385876135,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Template|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlCreateDatabaseOperation",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        },
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlCreateDatabaseOperation::Tablespace:System.String",
+          "clrName": "Tablespace",
+          "tsEmitName": "tablespace",
+          "metadataToken": 385876136,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Tablespace|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlCreateDatabaseOperation",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlCreateDatabaseOperation::.ctor():void",
+          "metadataToken": 100665205,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlCreateDatabaseOperation",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "name",
+          "isStatic": false,
+          "tsSignatureId": "Name|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlCreateDatabaseOperation",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 385876134
+          }
+        },
+        {
+          "tsName": "template",
+          "isStatic": false,
+          "tsSignatureId": "Template|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlCreateDatabaseOperation",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 385876135
+          }
+        },
+        {
+          "tsName": "tablespace",
+          "isStatic": false,
+          "tsSignatureId": "Tablespace|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlCreateDatabaseOperation",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 385876136
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlCreateDatabaseOperation",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100665205
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlDropDatabaseOperation",
+      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlDropDatabaseOperation",
+      "tsEmitName": "NpgsqlDropDatabaseOperation",
+      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlDropDatabaseOperation::Name:System.String",
+          "clrName": "Name",
+          "tsEmitName": "name",
+          "metadataToken": 385876137,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Name|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlDropDatabaseOperation",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlDropDatabaseOperation::.ctor():void",
+          "metadataToken": 100665208,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlDropDatabaseOperation",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "name",
+          "isStatic": false,
+          "tsSignatureId": "Name|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlDropDatabaseOperation",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 385876137
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlDropDatabaseOperation",
+            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "metadataToken": 100665208
+          }
+        }
+      ]
+    }
+  ]
+}
