@@ -92,7 +92,7 @@
         {
           "stableId": "Npgsql:NpgsqlTypes.NpgsqlDbType::BooleanNpgsqlTypes.NpgsqlDbType",
           "clrName": "Boolean",
-          "tsEmitName": "boolean_",
+          "tsEmitName": "boolean",
           "normalizedSignature": "Boolean|NpgsqlTypes.NpgsqlDbType|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -524,7 +524,7 @@
         {
           "stableId": "Npgsql:NpgsqlTypes.NpgsqlDbType::UnknownNpgsqlTypes.NpgsqlDbType",
           "clrName": "Unknown",
-          "tsEmitName": "unknown_",
+          "tsEmitName": "unknown",
           "normalizedSignature": "Unknown|NpgsqlTypes.NpgsqlDbType|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,

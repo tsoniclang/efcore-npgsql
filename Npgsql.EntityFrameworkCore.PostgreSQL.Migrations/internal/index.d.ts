@@ -19,8 +19,8 @@ import type { MigrationOperation } from "@tsonic/efcore/Microsoft.EntityFramewor
 export interface NpgsqlMigrationsSqlGenerator$instance extends MigrationsSqlGenerator {
     generate(operations: IReadOnlyList<MigrationOperation>, model?: IModel, options?: MigrationsSqlGenerationOptions): IReadOnlyList<MigrationCommand>;
     generate(operation: NpgsqlDropDatabaseOperation, model: IModel, builder: MigrationCommandListBuilder): void;
-    rename(schema: string, name: string, newName: string, type_: string, builder: MigrationCommandListBuilder): void;
-    transfer(newSchema: string, schema: string, name: string, type_: string, builder: MigrationCommandListBuilder): void;
+    rename(schema: string, name: string, newName: string, type: string, builder: MigrationCommandListBuilder): void;
+    transfer(newSchema: string, schema: string, name: string, type: string, builder: MigrationCommandListBuilder): void;
 }
 
 

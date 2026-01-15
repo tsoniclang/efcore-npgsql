@@ -42,7 +42,7 @@ import type { Transaction } from "@tsonic/dotnet/System.Transactions.js";
 import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
 
 export enum ArrayNullabilityMode {
-    never_ = 0,
+    never = 0,
     always = 1,
     perInstance = 2
 }
@@ -86,10 +86,10 @@ export enum SslNegotiation {
 
 
 export enum StatementType {
-    unknown_ = 0,
+    unknown = 0,
     select = 1,
     insert = 2,
-    delete_ = 3,
+    delete = 3,
     update = 4,
     createTableAs = 5,
     move = 6,
@@ -102,7 +102,7 @@ export enum StatementType {
 
 
 export enum TargetSessionAttributes {
-    any_ = 0,
+    any = 0,
     readWrite = 1,
     readOnly = 2,
     primary = 3,
@@ -227,9 +227,9 @@ export interface NpgsqlBinaryExporter$instance {
     dispose(): void;
     disposeAsync(): ValueTask;
     read<T>(): T;
-    read<T>(type_: NpgsqlDbType): T;
+    read<T>(type: NpgsqlDbType): T;
     readAsync<T>(cancellationToken?: CancellationToken): ValueTask<T>;
-    readAsync<T>(type_: NpgsqlDbType, cancellationToken?: CancellationToken): ValueTask<T>;
+    readAsync<T>(type: NpgsqlDbType, cancellationToken?: CancellationToken): ValueTask<T>;
     skip(): void;
     skipAsync(cancellationToken?: CancellationToken): Task;
     startRow(): int;

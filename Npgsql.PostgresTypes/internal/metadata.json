@@ -131,7 +131,7 @@
         {
           "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresCompositeType\u002BField::Type:Npgsql.PostgresTypes.PostgresType",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "normalizedSignature": "Type|:Npgsql.PostgresTypes.PostgresType|static=false|accessor=get",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -353,7 +353,7 @@
         {
           "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresType::Namespace:System.String",
           "clrName": "Namespace",
-          "tsEmitName": "namespace_",
+          "tsEmitName": "namespace",
           "normalizedSignature": "Namespace|:System.String|static=false|accessor=get",
           "provenance": "Original",
           "emitScope": "ClassSurface",

@@ -19,7 +19,7 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
 import type { Task, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export enum LogicalSlotSnapshotInitMode {
-    export_ = 0,
+    export = 0,
     use = 1,
     noExport = 2
 }

@@ -24,7 +24,7 @@
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Microsoft.EntityFrameworkCore.NpgsqlTsRankingNormalization::DefaultMicrosoft.EntityFrameworkCore.NpgsqlTsRankingNormalization",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "metadataToken": 67108900,
           "normalizedSignature": "Default|Microsoft.EntityFrameworkCore.NpgsqlTsRankingNormalization|static=true|const=true",
           "isStatic": true,
@@ -113,7 +113,7 @@
           }
         },
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|Microsoft.EntityFrameworkCore.NpgsqlTsRankingNormalization|static=true|const=true",
           "target": {
@@ -4158,7 +4158,7 @@
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Microsoft.EntityFrameworkCore.NpgsqlFullTextSearchLinqExtensions::Delete(NpgsqlTypes.NpgsqlTsVector,System.String):NpgsqlTypes.NpgsqlTsVector",
           "clrName": "Delete",
-          "tsEmitName": "delete_",
+          "tsEmitName": "delete",
           "metadataToken": 100663630,
           "canonicalSignature": "(NpgsqlTypes.NpgsqlTsVector,System.String):NpgsqlTypes.NpgsqlTsVector",
           "normalizedSignature": "Delete|(NpgsqlTypes.NpgsqlTsVector,System.String):NpgsqlTypes.NpgsqlTsVector|static=true",
@@ -4172,7 +4172,7 @@
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Microsoft.EntityFrameworkCore.NpgsqlFullTextSearchLinqExtensions::Delete(NpgsqlTypes.NpgsqlTsVector,System.String[]):NpgsqlTypes.NpgsqlTsVector",
           "clrName": "Delete",
-          "tsEmitName": "delete_",
+          "tsEmitName": "delete",
           "metadataToken": 100663631,
           "canonicalSignature": "(NpgsqlTypes.NpgsqlTsVector,System.String[]):NpgsqlTypes.NpgsqlTsVector",
           "normalizedSignature": "Delete|(NpgsqlTypes.NpgsqlTsVector,System.String[]):NpgsqlTypes.NpgsqlTsVector|static=true",
@@ -4554,7 +4554,7 @@
           }
         },
         {
-          "tsName": "delete_",
+          "tsName": "delete",
           "isStatic": true,
           "tsSignatureId": "Delete|(NpgsqlTypes.NpgsqlTsVector,System.String):NpgsqlTypes.NpgsqlTsVector|static=true",
           "target": {
@@ -4564,7 +4564,7 @@
           }
         },
         {
-          "tsName": "delete_",
+          "tsName": "delete",
           "isStatic": true,
           "tsSignatureId": "Delete|(NpgsqlTypes.NpgsqlTsVector,System.String[]):NpgsqlTypes.NpgsqlTsVector|static=true",
           "target": {

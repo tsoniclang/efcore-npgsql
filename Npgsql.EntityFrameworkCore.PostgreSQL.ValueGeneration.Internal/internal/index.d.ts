@@ -46,7 +46,7 @@ export const NpgsqlSequenceHiLoValueGenerator_1: {
 export type NpgsqlSequenceHiLoValueGenerator_1<TValue> = NpgsqlSequenceHiLoValueGenerator_1$instance<TValue>;
 
 export interface NpgsqlSequenceValueGeneratorFactory$instance {
-    tryCreate(property: IProperty, type_: Type, generatorState: NpgsqlSequenceValueGeneratorState, connection: INpgsqlRelationalConnection, rawSqlCommandBuilder: IRawSqlCommandBuilder, commandLogger: IRelationalCommandDiagnosticsLogger): ValueGenerator | undefined;
+    tryCreate(property: IProperty, type: Type, generatorState: NpgsqlSequenceValueGeneratorState, connection: INpgsqlRelationalConnection, rawSqlCommandBuilder: IRawSqlCommandBuilder, commandLogger: IRelationalCommandDiagnosticsLogger): ValueGenerator | undefined;
 }
 
 

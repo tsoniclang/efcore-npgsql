@@ -37,7 +37,7 @@ export enum RelationMessage_Column_ColumnFlags {
 
 
 export enum RelationMessage_ReplicaIdentitySetting {
-    default_ = 100,
+    default = 100,
     nothing = 110,
     allColumns = 102,
     indexWithIndIsReplIdent = 105
@@ -321,7 +321,7 @@ export type PrepareMessageBase = PrepareMessageBase$instance;
 
 export interface RelationMessage$instance extends TransactionalMessage {
     readonly columns: IReadOnlyList<RelationMessage_Column>;
-    readonly namespace_: string;
+    readonly namespace: string;
     readonly relationId: uint;
     readonly relationName: string;
     readonly replicaIdentity: RelationMessage_ReplicaIdentitySetting;
@@ -450,7 +450,7 @@ export type TruncateMessage = TruncateMessage$instance;
 
 export interface TypeMessage$instance extends TransactionalMessage {
     readonly name: string;
-    readonly namespace_: string;
+    readonly namespace: string;
     readonly typeId: uint;
 }
 

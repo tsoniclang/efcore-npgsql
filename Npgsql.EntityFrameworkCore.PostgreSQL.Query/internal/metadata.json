@@ -34,7 +34,7 @@
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.NpgsqlSqlExpressionFactory::Any(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.Internal.PgAnyOperatorType):Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.Internal.PgAnyExpression",
           "clrName": "Any",
-          "tsEmitName": "any_",
+          "tsEmitName": "any",
           "normalizedSignature": "Any|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.Internal.PgAnyOperatorType):Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.Internal.PgAnyExpression|static=false",
           "provenance": "Original",
           "emitScope": "ClassSurface",

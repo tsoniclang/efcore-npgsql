@@ -35,7 +35,7 @@ export enum PgOutputStreamingMode {
 
 
 export enum TupleDataKind {
-    null_ = 110,
+    null = 110,
     unchangedToastedValue = 117,
     textValue = 116,
     binaryValue = 98
@@ -95,8 +95,8 @@ export interface ReplicationValue$instance {
     readonly isUnchangedToastedValue: boolean;
     readonly kind: TupleDataKind;
     readonly length: int;
-    get_<T>(cancellationToken?: CancellationToken): ValueTask<T>;
-    get_(cancellationToken?: CancellationToken): ValueTask<unknown>;
+    get<T>(cancellationToken?: CancellationToken): ValueTask<T>;
+    get(cancellationToken?: CancellationToken): ValueTask<unknown>;
     getDataTypeName(): string;
     getFieldName(): string;
     getFieldType(): Type;

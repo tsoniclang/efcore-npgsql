@@ -273,7 +273,7 @@
         {
           "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BReplicaIdentitySetting::DefaultNpgsql.Replication.PgOutput.Messages.RelationMessage\u002BReplicaIdentitySetting",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "metadataToken": 67112482,
           "normalizedSignature": "Default|Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BReplicaIdentitySetting|static=true|const=true",
           "isStatic": true,
@@ -329,7 +329,7 @@
           }
         },
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BReplicaIdentitySetting|static=true|const=true",
           "target": {
@@ -2971,7 +2971,7 @@
         {
           "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.RelationMessage::Namespace:System.String",
           "clrName": "Namespace",
-          "tsEmitName": "namespace_",
+          "tsEmitName": "namespace",
           "metadataToken": 385876633,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Namespace|:System.String|static=false|accessor=get",
@@ -3052,7 +3052,7 @@
           }
         },
         {
-          "tsName": "namespace_",
+          "tsName": "namespace",
           "isStatic": false,
           "tsSignatureId": "Namespace|:System.String|static=false|accessor=get",
           "target": {
@@ -4164,7 +4164,7 @@
         {
           "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.TypeMessage::Namespace:System.String",
           "clrName": "Namespace",
-          "tsEmitName": "namespace_",
+          "tsEmitName": "namespace",
           "metadataToken": 385876662,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Namespace|:System.String|static=false|accessor=get",
@@ -4217,7 +4217,7 @@
           }
         },
         {
-          "tsName": "namespace_",
+          "tsName": "namespace",
           "isStatic": false,
           "tsSignatureId": "Namespace|:System.String|static=false|accessor=get",
           "target": {

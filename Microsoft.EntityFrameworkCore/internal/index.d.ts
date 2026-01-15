@@ -31,7 +31,7 @@ import type { DatabaseModel } from "@tsonic/efcore/Microsoft.EntityFrameworkCore
 import type { ValueConverter } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.ValueConversion.js";
 
 export enum NpgsqlTsRankingNormalization {
-    default_ = 0,
+    default = 0,
     divideBy1PlusLogLength = 1,
     divideByLength = 2,
     divideByMeanHarmonicDistanceBetweenExtents = 4,
@@ -261,8 +261,8 @@ export abstract class NpgsqlFullTextSearchLinqExtensions$instance {
     static and(query1: NpgsqlTsQuery, query2: NpgsqlTsQuery): NpgsqlTsQuery;
     static concat(vector1: NpgsqlTsVector, vector2: NpgsqlTsVector): NpgsqlTsVector;
     static contains(query1: NpgsqlTsQuery, query2: NpgsqlTsQuery): boolean;
-    static delete_(vector: NpgsqlTsVector, lexeme: string): NpgsqlTsVector;
-    static delete_(vector: NpgsqlTsVector, lexemes: string[]): NpgsqlTsVector;
+    static delete(vector: NpgsqlTsVector, lexeme: string): NpgsqlTsVector;
+    static delete(vector: NpgsqlTsVector, lexemes: string[]): NpgsqlTsVector;
     static filter(vector: NpgsqlTsVector, weights: char[]): NpgsqlTsVector;
     static getLength(vector: NpgsqlTsVector): int;
     static getNodeCount(query: NpgsqlTsQuery): int;

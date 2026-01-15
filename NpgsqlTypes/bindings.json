@@ -101,7 +101,7 @@
         {
           "stableId": "Npgsql:NpgsqlTypes.NpgsqlDbType::BooleanNpgsqlTypes.NpgsqlDbType",
           "clrName": "Boolean",
-          "tsEmitName": "boolean_",
+          "tsEmitName": "boolean",
           "metadataToken": 67108876,
           "normalizedSignature": "Boolean|NpgsqlTypes.NpgsqlDbType|static=true|const=true",
           "isStatic": true,
@@ -629,7 +629,7 @@
         {
           "stableId": "Npgsql:NpgsqlTypes.NpgsqlDbType::UnknownNpgsqlTypes.NpgsqlDbType",
           "clrName": "Unknown",
-          "tsEmitName": "unknown_",
+          "tsEmitName": "unknown",
           "metadataToken": 67108924,
           "normalizedSignature": "Unknown|NpgsqlTypes.NpgsqlDbType|static=true|const=true",
           "isStatic": true,
@@ -942,7 +942,7 @@
           }
         },
         {
-          "tsName": "boolean_",
+          "tsName": "boolean",
           "isStatic": true,
           "tsSignatureId": "Boolean|NpgsqlTypes.NpgsqlDbType|static=true|const=true",
           "target": {
@@ -1422,7 +1422,7 @@
           }
         },
         {
-          "tsName": "unknown_",
+          "tsName": "unknown",
           "isStatic": true,
           "tsSignatureId": "Unknown|NpgsqlTypes.NpgsqlDbType|static=true|const=true",
           "target": {

@@ -29,7 +29,7 @@
         {
           "stableId": "Npgsql:Npgsql.Replication.LogicalSlotSnapshotInitMode::ExportNpgsql.Replication.LogicalSlotSnapshotInitMode",
           "clrName": "Export",
-          "tsEmitName": "export_",
+          "tsEmitName": "export",
           "normalizedSignature": "Export|Npgsql.Replication.LogicalSlotSnapshotInitMode|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,

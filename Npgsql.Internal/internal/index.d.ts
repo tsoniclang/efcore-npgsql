@@ -40,7 +40,7 @@ export enum MatchRequirement {
 
 
 export enum SizeKind {
-    unknown_ = 0,
+    unknown = 0,
     exact = 1,
     upperBound = 2
 }
@@ -50,7 +50,7 @@ export type TypeInfoFactory = (options: PgSerializerOptions, mapping: TypeInfoMa
 
 
 export interface IDbTypeResolver$instance {
-    getDataTypeName(dbType: DbType, type_: Type): string | undefined;
+    getDataTypeName(dbType: DbType, type: Type): string | undefined;
     getDbType(dataTypeName: DataTypeName): Nullable<DbType>;
 }
 
@@ -58,14 +58,14 @@ export interface IDbTypeResolver$instance {
 export type IDbTypeResolver = IDbTypeResolver$instance;
 
 export interface INpgsqlDatabaseInfoFactory$instance {
-    load(conn: NpgsqlConnector, timeout: NpgsqlTimeout, async_: boolean): Task<NpgsqlDatabaseInfo | undefined>;
+    load(conn: NpgsqlConnector, timeout: NpgsqlTimeout, async: boolean): Task<NpgsqlDatabaseInfo | undefined>;
 }
 
 
 export type INpgsqlDatabaseInfoFactory = INpgsqlDatabaseInfoFactory$instance;
 
 export interface IPgTypeInfoResolver$instance {
-    getTypeInfo(type_: Type, dataTypeName: Nullable<DataTypeName>, options: PgSerializerOptions): PgTypeInfo | undefined;
+    getTypeInfo(type: Type, dataTypeName: Nullable<DataTypeName>, options: PgSerializerOptions): PgTypeInfo | undefined;
 }
 
 
@@ -148,7 +148,7 @@ export interface Size$instance {
 
 export const Size: {
     new(): Size;
-    readonly unknown_: Size;
+    readonly unknown: Size;
     readonly zero: Size;
     create(byteCount: int): Size;
     createUpperBound(byteCount: int): Size;
@@ -174,16 +174,16 @@ export interface TypeInfoMapping$instance {
     dataTypeName: string;
     factory: TypeInfoFactory;
     matchRequirement: MatchRequirement;
-    type_: Type;
+    type: Type;
     get typeMatchPredicate(): Func<Type | undefined, System_Internal.Boolean> | undefined;
     set typeMatchPredicate(value: Func<Type | undefined, System_Internal.Boolean>);
     dataTypeNameEquals(dataTypeName: string): boolean;
-    typeEquals(type_: Type): boolean;
+    typeEquals(type: Type): boolean;
 }
 
 
 export const TypeInfoMapping: {
-    new(type_: Type, dataTypeName: string, factory: TypeInfoFactory): TypeInfoMapping;
+    new(type: Type, dataTypeName: string, factory: TypeInfoFactory): TypeInfoMapping;
 };
 
 
@@ -217,7 +217,7 @@ export const DbTypeResolverFactory: {
 export type DbTypeResolverFactory = DbTypeResolverFactory$instance;
 
 export interface DynamicTypeInfoResolver$instance {
-    getTypeInfo(type_: Type, dataTypeName: Nullable<DataTypeName>, options: PgSerializerOptions): PgTypeInfo | undefined;
+    getTypeInfo(type: Type, dataTypeName: Nullable<DataTypeName>, options: PgSerializerOptions): PgTypeInfo | undefined;
 }
 
 
@@ -325,7 +325,7 @@ export const PgConverter_1: {
 export type PgConverter_1<T> = PgConverter_1$instance<T>;
 
 export interface PgConverterResolver$instance {
-    get_(field: Field): PgConverterResolution;
+    get(field: Field): PgConverterResolution;
     getDefault(pgTypeId: Nullable<PgTypeId>): PgConverterResolution;
 }
 
@@ -337,8 +337,8 @@ export const PgConverterResolver: {
 export type PgConverterResolver = PgConverterResolver$instance;
 
 export interface PgConverterResolver_1$instance<T> extends PgConverterResolver {
-    get_(value: T, expectedPgTypeId: Nullable<PgTypeId>): Nullable<PgConverterResolution>;
-    get_(field: Field): PgConverterResolution;
+    get(value: T, expectedPgTypeId: Nullable<PgTypeId>): Nullable<PgConverterResolution>;
+    get(field: Field): PgConverterResolution;
 }
 
 
@@ -421,20 +421,20 @@ export interface PgSerializerOptions$instance {
     getArrayElementTypeId(arrayTypeId: PgTypeId): PgTypeId;
     getArrayTypeId(elementTypeId: PgTypeId): PgTypeId;
     getDataTypeName(pgTypeId: PgTypeId): DataTypeName;
-    getDefaultTypeInfo(type_: Type): PgTypeInfo | undefined;
+    getDefaultTypeInfo(type: Type): PgTypeInfo | undefined;
     getDefaultTypeInfo(pgTypeId: PgTypeId): PgTypeInfo | undefined;
     getMultirangeElementTypeId(multirangeTypeId: PgTypeId): PgTypeId;
     getMultirangeTypeId(rangeTypeId: PgTypeId): PgTypeId;
     getRangeSubtypeTypeId(rangeTypeId: PgTypeId): PgTypeId;
     getRangeTypeId(subtypeTypeId: PgTypeId): PgTypeId;
-    getTypeInfo(type_: Type, pgTypeId: PgTypeId): PgTypeInfo | undefined;
+    getTypeInfo(type: Type, pgTypeId: PgTypeId): PgTypeInfo | undefined;
     tryGetDataTypeName(pgTypeId: PgTypeId, dataTypeName: DataTypeName): boolean;
 }
 
 
 export const PgSerializerOptions: {
     new(): PgSerializerOptions;
-    isWellKnownTextType(type_: Type): boolean;
+    isWellKnownTextType(type: Type): boolean;
 };
 
 
@@ -457,7 +457,7 @@ export interface PgTypeInfo$instance {
     preferredFormat: Nullable<DataFormat>;
     supportsReading: boolean;
     supportsWriting: boolean;
-    readonly type_: Type;
+    readonly type: Type;
     getBufferRequirements(converter: PgConverter, format: DataFormat): Nullable<BufferRequirements>;
     getObjectResolution(value: unknown): PgConverterResolution;
     getResolution<T>(value: T): PgConverterResolution;
@@ -554,7 +554,7 @@ export interface TypeInfoMappingCollection$instance {
     addType<T>(dataTypeName: string, createInfo: TypeInfoFactory, isDefault?: boolean): void;
     addType<T>(dataTypeName: string, createInfo: TypeInfoFactory, matchRequirement: MatchRequirement): void;
     addType<T>(dataTypeName: string, createInfo: TypeInfoFactory, configure: Func<TypeInfoMapping, TypeInfoMapping>): void;
-    find(type_: Type, dataTypeName: Nullable<DataTypeName>, options: PgSerializerOptions): PgTypeInfo | undefined;
+    find(type: Type, dataTypeName: Nullable<DataTypeName>, options: PgSerializerOptions): PgTypeInfo | undefined;
 }
 
 
@@ -563,7 +563,7 @@ export const TypeInfoMappingCollection: {
     new(): TypeInfoMappingCollection;
     new(baseCollection: TypeInfoMappingCollection): TypeInfoMappingCollection;
     new(items: IEnumerable<TypeInfoMapping>): TypeInfoMappingCollection;
-    isArrayLikeType(type_: Type, elementType: Type): boolean;
+    isArrayLikeType(type: Type, elementType: Type): boolean;
 };
 
 

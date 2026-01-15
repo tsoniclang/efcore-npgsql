@@ -27,7 +27,7 @@ import type { CoreTypeMapping, ExecutionResult, ExecutionStrategyDependencies, I
 
 export interface INpgsqlRelationalConnection$instance extends IRelationalConnection, IRelationalTransactionManager, IDbContextTransactionManager, IResettableService, IDisposable, IAsyncDisposable {
     readonly dataSource: DbDataSource | undefined;
-    cloneWith(connectionString: string, async_: boolean, cancellationToken?: CancellationToken): ValueTask<INpgsqlRelationalConnection>;
+    cloneWith(connectionString: string, async: boolean, cancellationToken?: CancellationToken): ValueTask<INpgsqlRelationalConnection>;
     createAdminConnection(): INpgsqlRelationalConnection;
 }
 
@@ -41,7 +41,7 @@ export interface NpgsqlDatabaseCreator$instance extends RelationalDatabaseCreato
     createAsync(cancellationToken?: CancellationToken): Task;
     createTables(): void;
     createTablesAsync(cancellationToken?: CancellationToken): Task;
-    delete_(): void;
+    delete(): void;
     deleteAsync(cancellationToken?: CancellationToken): Task;
     exists(): boolean;
     existsAsync(cancellationToken?: CancellationToken): Task<System_Internal.Boolean>;
@@ -103,7 +103,7 @@ export interface NpgsqlRelationalConnection$instance extends RelationalConnectio
     dbConnection: NpgsqlConnection;
     get dbDataSource(): DbDataSource | undefined;
     set dbDataSource(value: DbDataSource);
-    cloneWith(connectionString: string, async_: boolean, cancellationToken?: CancellationToken): ValueTask<INpgsqlRelationalConnection>;
+    cloneWith(connectionString: string, async: boolean, cancellationToken?: CancellationToken): ValueTask<INpgsqlRelationalConnection>;
     createAdminConnection(): INpgsqlRelationalConnection;
 }
 

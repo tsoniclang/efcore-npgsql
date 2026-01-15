@@ -144,7 +144,7 @@
         {
           "stableId": "Npgsql:Npgsql.Replication.PgOutput.TupleDataKind::NullNpgsql.Replication.PgOutput.TupleDataKind",
           "clrName": "Null",
-          "tsEmitName": "null_",
+          "tsEmitName": "null",
           "normalizedSignature": "Null|Npgsql.Replication.PgOutput.TupleDataKind|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -512,7 +512,7 @@
         {
           "stableId": "Npgsql:Npgsql.Replication.PgOutput.ReplicationValue::Get(System.Threading.CancellationToken):ValueTask_1",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "normalizedSignature": "Get|(System.Threading.CancellationToken):ValueTask_1|static=false",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -528,7 +528,7 @@
         {
           "stableId": "Npgsql:Npgsql.Replication.PgOutput.ReplicationValue::Get(System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "normalizedSignature": "Get|(System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
           "provenance": "Original",
           "emitScope": "ClassSurface",

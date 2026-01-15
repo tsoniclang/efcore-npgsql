@@ -24,7 +24,7 @@
         {
           "stableId": "Npgsql:Npgsql.ArrayNullabilityMode::NeverNpgsql.ArrayNullabilityMode",
           "clrName": "Never",
-          "tsEmitName": "never_",
+          "tsEmitName": "never",
           "metadataToken": 67109289,
           "normalizedSignature": "Never|Npgsql.ArrayNullabilityMode|static=true|const=true",
           "isStatic": true,
@@ -69,7 +69,7 @@
           }
         },
         {
-          "tsName": "never_",
+          "tsName": "never",
           "isStatic": true,
           "tsSignatureId": "Never|Npgsql.ArrayNullabilityMode|static=true|const=true",
           "target": {
@@ -660,7 +660,7 @@
         {
           "stableId": "Npgsql:Npgsql.StatementType::UnknownNpgsql.StatementType",
           "clrName": "Unknown",
-          "tsEmitName": "unknown_",
+          "tsEmitName": "unknown",
           "metadataToken": 67109052,
           "normalizedSignature": "Unknown|Npgsql.StatementType|static=true|const=true",
           "isStatic": true,
@@ -693,7 +693,7 @@
         {
           "stableId": "Npgsql:Npgsql.StatementType::DeleteNpgsql.StatementType",
           "clrName": "Delete",
-          "tsEmitName": "delete_",
+          "tsEmitName": "delete",
           "metadataToken": 67109055,
           "normalizedSignature": "Delete|Npgsql.StatementType|static=true|const=true",
           "isStatic": true,
@@ -804,7 +804,7 @@
           }
         },
         {
-          "tsName": "unknown_",
+          "tsName": "unknown",
           "isStatic": true,
           "tsSignatureId": "Unknown|Npgsql.StatementType|static=true|const=true",
           "target": {
@@ -834,7 +834,7 @@
           }
         },
         {
-          "tsName": "delete_",
+          "tsName": "delete",
           "isStatic": true,
           "tsSignatureId": "Delete|Npgsql.StatementType|static=true|const=true",
           "target": {
@@ -948,7 +948,7 @@
         {
           "stableId": "Npgsql:Npgsql.TargetSessionAttributes::AnyNpgsql.TargetSessionAttributes",
           "clrName": "Any",
-          "tsEmitName": "any_",
+          "tsEmitName": "any",
           "metadataToken": 67110000,
           "normalizedSignature": "Any|Npgsql.TargetSessionAttributes|static=true|const=true",
           "isStatic": true,
@@ -1037,7 +1037,7 @@
           }
         },
         {
-          "tsName": "any_",
+          "tsName": "any",
           "isStatic": true,
           "tsSignatureId": "Any|Npgsql.TargetSessionAttributes|static=true|const=true",
           "target": {
