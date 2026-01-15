@@ -24,7 +24,7 @@
         {
           "stableId": "Npgsql:Npgsql.Replication.LogicalSlotSnapshotInitMode::ExportNpgsql.Replication.LogicalSlotSnapshotInitMode",
           "clrName": "Export",
-          "tsEmitName": "export_",
+          "tsEmitName": "export",
           "metadataToken": 67110069,
           "normalizedSignature": "Export|Npgsql.Replication.LogicalSlotSnapshotInitMode|static=true|const=true",
           "isStatic": true,
@@ -69,7 +69,7 @@
           }
         },
         {
-          "tsName": "export_",
+          "tsName": "export",
           "isStatic": true,
           "tsSignatureId": "Export|Npgsql.Replication.LogicalSlotSnapshotInitMode|static=true|const=true",
           "target": {

@@ -201,7 +201,7 @@
         {
           "stableId": "Npgsql:Npgsql.Internal.SizeKind::UnknownNpgsql.Internal.SizeKind",
           "clrName": "Unknown",
-          "tsEmitName": "unknown_",
+          "tsEmitName": "unknown",
           "metadataToken": 67110561,
           "normalizedSignature": "Unknown|Npgsql.Internal.SizeKind|static=true|const=true",
           "isStatic": true,
@@ -246,7 +246,7 @@
           }
         },
         {
-          "tsName": "unknown_",
+          "tsName": "unknown",
           "isStatic": true,
           "tsSignatureId": "Unknown|Npgsql.Internal.SizeKind|static=true|const=true",
           "target": {
@@ -1229,7 +1229,7 @@
         {
           "stableId": "Npgsql:Npgsql.Internal.Size::Unknown:Npgsql.Internal.Size",
           "clrName": "Unknown",
-          "tsEmitName": "unknown_",
+          "tsEmitName": "unknown",
           "metadataToken": 385876907,
           "canonicalSignature": ":Npgsql.Internal.Size",
           "normalizedSignature": "Unknown|:Npgsql.Internal.Size|static=true|accessor=get",
@@ -1362,7 +1362,7 @@
           }
         },
         {
-          "tsName": "unknown_",
+          "tsName": "unknown",
           "isStatic": true,
           "tsSignatureId": "Unknown|:Npgsql.Internal.Size|static=true|accessor=get",
           "target": {
@@ -1522,7 +1522,7 @@
         {
           "stableId": "Npgsql:Npgsql.Internal.TypeInfoMapping::Type:System.Type",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "metadataToken": 385876915,
           "canonicalSignature": ":System.Type",
           "normalizedSignature": "Type|:System.Type|static=false|accessor=getset",
@@ -1624,7 +1624,7 @@
           }
         },
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:System.Type|static=false|accessor=getset",
           "target": {
@@ -3017,7 +3017,7 @@
         {
           "stableId": "Npgsql:Npgsql.Internal.PgConverterResolver::Get(Npgsql.Internal.Postgres.Field):Npgsql.Internal.PgConverterResolution",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "metadataToken": 100666766,
           "canonicalSignature": "(Npgsql.Internal.Postgres.Field):Npgsql.Internal.PgConverterResolution",
           "normalizedSignature": "Get|(Npgsql.Internal.Postgres.Field):Npgsql.Internal.PgConverterResolution|static=false",
@@ -3045,7 +3045,7 @@
           }
         },
         {
-          "tsName": "get_",
+          "tsName": "get",
           "isStatic": false,
           "tsSignatureId": "Get|(Npgsql.Internal.Postgres.Field):Npgsql.Internal.PgConverterResolution|static=false",
           "target": {
@@ -3066,7 +3066,7 @@
         {
           "stableId": "Npgsql:Npgsql.Internal.PgConverterResolver\u00601::Get(T,System.Nullable_1[[Npgsql.Internal.Postgres.PgTypeId,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]):System.Nullable_1[[Npgsql.Internal.PgConverterResolution,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]",
           "clrName": "Get",
-          "tsEmitName": "get_2",
+          "tsEmitName": "get2",
           "metadataToken": 100666773,
           "canonicalSignature": "(T,System.Nullable_1[[Npgsql.Internal.Postgres.PgTypeId,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]):System.Nullable_1[[Npgsql.Internal.PgConverterResolution,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]",
           "normalizedSignature": "Get|(T,System.Nullable_1[[Npgsql.Internal.Postgres.PgTypeId,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]):System.Nullable_1[[Npgsql.Internal.PgConverterResolution,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]|static=false",
@@ -3080,7 +3080,7 @@
         {
           "stableId": "Npgsql:Npgsql.Internal.PgConverterResolver\u00601::Get(Npgsql.Internal.Postgres.Field):Npgsql.Internal.PgConverterResolution",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "metadataToken": 0,
           "canonicalSignature": "(Npgsql.Internal.Postgres.Field):Npgsql.Internal.PgConverterResolution",
           "normalizedSignature": "Get|(Npgsql.Internal.Postgres.Field):Npgsql.Internal.PgConverterResolution|static=false",
@@ -3098,7 +3098,7 @@
       "constructors": [],
       "exposedMethods": [
         {
-          "tsName": "get_2",
+          "tsName": "get2",
           "isStatic": false,
           "tsSignatureId": "Get|(T,System.Nullable_1[[Npgsql.Internal.Postgres.PgTypeId,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]):System.Nullable_1[[Npgsql.Internal.PgConverterResolution,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]|static=false",
           "target": {
@@ -3108,7 +3108,7 @@
           }
         },
         {
-          "tsName": "get_",
+          "tsName": "get",
           "isStatic": false,
           "tsSignatureId": "Get|(Npgsql.Internal.Postgres.Field):Npgsql.Internal.PgConverterResolution|static=false",
           "target": {
@@ -4190,7 +4190,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:System.Type|static=false|accessor=get",
           "target": {
@@ -4889,7 +4889,7 @@
         {
           "stableId": "Npgsql:Npgsql.Internal.PgTypeInfo::Type:System.Type",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "metadataToken": 385876878,
           "canonicalSignature": ":System.Type",
           "normalizedSignature": "Type|:System.Type|static=false|accessor=get",
@@ -5019,7 +5019,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:System.Type|static=false|accessor=get",
           "target": {

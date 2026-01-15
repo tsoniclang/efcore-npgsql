@@ -47,7 +47,7 @@ export type PostgresCompositeType = PostgresCompositeType$instance;
 
 export interface PostgresCompositeType_Field$instance {
     readonly name: string;
-    readonly type_: PostgresType;
+    readonly type: PostgresType;
     toString(): string;
 }
 
@@ -115,7 +115,7 @@ export interface PostgresType$instance {
     readonly fullName: string;
     readonly internalName: string;
     readonly name: string;
-    readonly namespace_: string;
+    readonly namespace: string;
     readonly OID: uint;
     readonly range: PostgresRangeType | undefined;
     toString(): string;

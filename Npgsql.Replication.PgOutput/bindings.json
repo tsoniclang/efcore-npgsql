@@ -243,7 +243,7 @@
         {
           "stableId": "Npgsql:Npgsql.Replication.PgOutput.TupleDataKind::NullNpgsql.Replication.PgOutput.TupleDataKind",
           "clrName": "Null",
-          "tsEmitName": "null_",
+          "tsEmitName": "null",
           "metadataToken": 67110188,
           "normalizedSignature": "Null|Npgsql.Replication.PgOutput.TupleDataKind|static=true|const=true",
           "isStatic": true,
@@ -299,7 +299,7 @@
           }
         },
         {
-          "tsName": "null_",
+          "tsName": "null",
           "isStatic": true,
           "tsSignatureId": "Null|Npgsql.Replication.PgOutput.TupleDataKind|static=true|const=true",
           "target": {
@@ -880,7 +880,7 @@
         {
           "stableId": "Npgsql:Npgsql.Replication.PgOutput.ReplicationValue::Get(System.Threading.CancellationToken):ValueTask_1",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "metadataToken": 100665982,
           "canonicalSignature": "(System.Threading.CancellationToken):ValueTask_1",
           "normalizedSignature": "Get|(System.Threading.CancellationToken):ValueTask_1|static=false",
@@ -894,7 +894,7 @@
         {
           "stableId": "Npgsql:Npgsql.Replication.PgOutput.ReplicationValue::Get(System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "metadataToken": 100665983,
           "canonicalSignature": "(System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "Get|(System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
@@ -1037,7 +1037,7 @@
           }
         },
         {
-          "tsName": "get_",
+          "tsName": "get",
           "isStatic": false,
           "tsSignatureId": "Get|(System.Threading.CancellationToken):ValueTask_1|static=false",
           "target": {
@@ -1047,7 +1047,7 @@
           }
         },
         {
-          "tsName": "get_",
+          "tsName": "get",
           "isStatic": false,
           "tsSignatureId": "Get|(System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
           "target": {

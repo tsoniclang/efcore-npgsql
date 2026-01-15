@@ -57,7 +57,7 @@ export interface NpgsqlArrayTypeMapping_3$instance<TCollection, TConcreteCollect
 export const NpgsqlArrayTypeMapping_3: {
     new<TCollection, TConcreteCollection, TElement>(elementTypeMapping: RelationalTypeMapping): NpgsqlArrayTypeMapping_3<TCollection, TConcreteCollection, TElement>;
     new<TCollection, TConcreteCollection, TElement>(storeType: string, elementTypeMapping: RelationalTypeMapping): NpgsqlArrayTypeMapping_3<TCollection, TConcreteCollection, TElement>;
-    readonly default_: unknown;
+    readonly default: unknown;
 };
 
 
@@ -69,7 +69,7 @@ export interface NpgsqlBigIntegerTypeMapping$instance extends NpgsqlTypeMapping$
 
 export const NpgsqlBigIntegerTypeMapping: {
     new(): NpgsqlBigIntegerTypeMapping;
-    readonly default_: NpgsqlBigIntegerTypeMapping;
+    readonly default: NpgsqlBigIntegerTypeMapping;
 };
 
 
@@ -104,7 +104,7 @@ export interface NpgsqlBitTypeMapping$instance extends NpgsqlTypeMapping$instanc
 
 export const NpgsqlBitTypeMapping: {
     new(): NpgsqlBitTypeMapping;
-    readonly default_: NpgsqlBitTypeMapping;
+    readonly default: NpgsqlBitTypeMapping;
 };
 
 
@@ -123,7 +123,7 @@ export interface NpgsqlBoolTypeMapping$instance extends BoolTypeMapping {
 
 export const NpgsqlBoolTypeMapping: {
     new(): NpgsqlBoolTypeMapping;
-    readonly default_: NpgsqlBoolTypeMapping;
+    readonly default: NpgsqlBoolTypeMapping;
 };
 
 
@@ -136,7 +136,7 @@ export interface NpgsqlBoxTypeMapping$instance extends NpgsqlTypeMapping$instanc
 
 export const NpgsqlBoxTypeMapping: {
     new(): NpgsqlBoxTypeMapping;
-    readonly default_: NpgsqlBoxTypeMapping;
+    readonly default: NpgsqlBoxTypeMapping;
 };
 
 
@@ -155,7 +155,7 @@ export interface NpgsqlByteArrayTypeMapping$instance extends RelationalTypeMappi
 
 export const NpgsqlByteArrayTypeMapping: {
     new(): NpgsqlByteArrayTypeMapping;
-    readonly default_: NpgsqlByteArrayTypeMapping;
+    readonly default: NpgsqlByteArrayTypeMapping;
 };
 
 
@@ -168,7 +168,7 @@ export interface NpgsqlCharacterCharTypeMapping$instance extends CharTypeMapping
 
 export const NpgsqlCharacterCharTypeMapping: {
     new(storeType: string): NpgsqlCharacterCharTypeMapping;
-    readonly default_: NpgsqlCharacterCharTypeMapping;
+    readonly default: NpgsqlCharacterCharTypeMapping;
 };
 
 
@@ -210,7 +210,7 @@ export interface NpgsqlCidrTypeMapping$instance extends NpgsqlTypeMapping$instan
 
 export const NpgsqlCidrTypeMapping: {
     new(): NpgsqlCidrTypeMapping;
-    readonly default_: NpgsqlCidrTypeMapping;
+    readonly default: NpgsqlCidrTypeMapping;
 };
 
 
@@ -245,7 +245,7 @@ export interface NpgsqlCircleTypeMapping$instance extends NpgsqlTypeMapping$inst
 
 export const NpgsqlCircleTypeMapping: {
     new(): NpgsqlCircleTypeMapping;
-    readonly default_: NpgsqlCircleTypeMapping;
+    readonly default: NpgsqlCircleTypeMapping;
 };
 
 
@@ -265,7 +265,7 @@ export interface NpgsqlCubeTypeMapping$instance extends NpgsqlTypeMapping$instan
 
 export const NpgsqlCubeTypeMapping: {
     new(): NpgsqlCubeTypeMapping;
-    readonly default_: NpgsqlCubeTypeMapping;
+    readonly default: NpgsqlCubeTypeMapping;
 };
 
 
@@ -284,7 +284,7 @@ export interface NpgsqlDateOnlyTypeMapping$instance extends NpgsqlTypeMapping$in
 
 export const NpgsqlDateOnlyTypeMapping: {
     new(): NpgsqlDateOnlyTypeMapping;
-    readonly default_: NpgsqlDateOnlyTypeMapping;
+    readonly default: NpgsqlDateOnlyTypeMapping;
 };
 
 
@@ -318,7 +318,7 @@ export interface NpgsqlDateTimeDateTypeMapping$instance extends NpgsqlTypeMappin
 
 export const NpgsqlDateTimeDateTypeMapping: {
     new(): NpgsqlDateTimeDateTypeMapping;
-    readonly default_: NpgsqlDateTimeDateTypeMapping;
+    readonly default: NpgsqlDateTimeDateTypeMapping;
 };
 
 
@@ -352,7 +352,7 @@ export interface NpgsqlDecimalTypeMapping$instance extends NpgsqlTypeMapping$ins
 
 export const NpgsqlDecimalTypeMapping: {
     new(clrType: Type): NpgsqlDecimalTypeMapping;
-    readonly default_: NpgsqlDecimalTypeMapping;
+    readonly default: NpgsqlDecimalTypeMapping;
 };
 
 
@@ -371,7 +371,7 @@ export interface NpgsqlDoubleTypeMapping$instance extends DoubleTypeMapping {
 
 export const NpgsqlDoubleTypeMapping: {
     new(): NpgsqlDoubleTypeMapping;
-    readonly default_: NpgsqlDoubleTypeMapping;
+    readonly default: NpgsqlDoubleTypeMapping;
 };
 
 
@@ -386,7 +386,7 @@ export interface NpgsqlEnumTypeMapping$instance extends RelationalTypeMapping {
 
 export const NpgsqlEnumTypeMapping: {
     new(quotedStoreType: string, unquotedStoreType: string, enumType: Type, labels: IReadOnlyDictionary<unknown, System_Internal.String>): NpgsqlEnumTypeMapping;
-    readonly default_: NpgsqlEnumTypeMapping;
+    readonly default: NpgsqlEnumTypeMapping;
 };
 
 
@@ -413,7 +413,7 @@ export interface NpgsqlEStringTypeMapping$instance extends StringTypeMapping {
 
 export const NpgsqlEStringTypeMapping: {
     new(): NpgsqlEStringTypeMapping;
-    readonly default_: NpgsqlEStringTypeMapping;
+    readonly default: NpgsqlEStringTypeMapping;
 };
 
 
@@ -425,7 +425,7 @@ export interface NpgsqlFloatTypeMapping$instance extends FloatTypeMapping {
 
 export const NpgsqlFloatTypeMapping: {
     new(): NpgsqlFloatTypeMapping;
-    readonly default_: NpgsqlFloatTypeMapping;
+    readonly default: NpgsqlFloatTypeMapping;
 };
 
 
@@ -437,7 +437,7 @@ export interface NpgsqlHstoreTypeMapping$instance extends NpgsqlTypeMapping$inst
 
 export const NpgsqlHstoreTypeMapping: {
     new(clrType: Type): NpgsqlHstoreTypeMapping;
-    readonly default_: NpgsqlHstoreTypeMapping;
+    readonly default: NpgsqlHstoreTypeMapping;
 };
 
 
@@ -457,7 +457,7 @@ export interface NpgsqlInetTypeMapping$instance extends NpgsqlTypeMapping$instan
 
 export const NpgsqlInetTypeMapping: {
     new(clrType: Type): NpgsqlInetTypeMapping;
-    readonly default_: NpgsqlInetTypeMapping;
+    readonly default: NpgsqlInetTypeMapping;
 };
 
 
@@ -506,7 +506,7 @@ export interface NpgsqlIntervalTypeMapping$instance extends NpgsqlTypeMapping$in
 
 export const NpgsqlIntervalTypeMapping: {
     new(): NpgsqlIntervalTypeMapping;
-    readonly default_: NpgsqlIntervalTypeMapping;
+    readonly default: NpgsqlIntervalTypeMapping;
     formatTimeSpanAsInterval(ts: TimeSpan): string;
     parseIntervalAsTimeSpan(s: ReadOnlySpan<System_Internal.Char>): TimeSpan;
 };
@@ -544,7 +544,7 @@ export interface NpgsqlJsonTypeMapping$instance extends NpgsqlTypeMapping$instan
 
 export const NpgsqlJsonTypeMapping: {
     new(storeType: string, clrType: Type, elementTypeMapping: CoreTypeMapping): NpgsqlJsonTypeMapping;
-    readonly default_: NpgsqlJsonTypeMapping;
+    readonly default: NpgsqlJsonTypeMapping;
 };
 
 
@@ -564,7 +564,7 @@ export interface NpgsqlLegacyCidrTypeMapping$instance extends NpgsqlTypeMapping$
 
 export const NpgsqlLegacyCidrTypeMapping: {
     new(): NpgsqlLegacyCidrTypeMapping;
-    readonly default_: NpgsqlLegacyCidrTypeMapping;
+    readonly default: NpgsqlLegacyCidrTypeMapping;
 };
 
 
@@ -599,7 +599,7 @@ export interface NpgsqlLineSegmentTypeMapping$instance extends NpgsqlTypeMapping
 
 export const NpgsqlLineSegmentTypeMapping: {
     new(): NpgsqlLineSegmentTypeMapping;
-    readonly default_: NpgsqlLineSegmentTypeMapping;
+    readonly default: NpgsqlLineSegmentTypeMapping;
 };
 
 
@@ -619,7 +619,7 @@ export interface NpgsqlLineTypeMapping$instance extends NpgsqlTypeMapping$instan
 
 export const NpgsqlLineTypeMapping: {
     new(): NpgsqlLineTypeMapping;
-    readonly default_: NpgsqlLineTypeMapping;
+    readonly default: NpgsqlLineTypeMapping;
 };
 
 
@@ -673,7 +673,7 @@ export interface NpgsqlMacaddr8TypeMapping$instance extends NpgsqlTypeMapping$in
 
 export const NpgsqlMacaddr8TypeMapping: {
     new(): NpgsqlMacaddr8TypeMapping;
-    readonly default_: NpgsqlMacaddr8TypeMapping;
+    readonly default: NpgsqlMacaddr8TypeMapping;
 };
 
 
@@ -693,7 +693,7 @@ export interface NpgsqlMacaddrTypeMapping$instance extends NpgsqlTypeMapping$ins
 
 export const NpgsqlMacaddrTypeMapping: {
     new(): NpgsqlMacaddrTypeMapping;
-    readonly default_: NpgsqlMacaddrTypeMapping;
+    readonly default: NpgsqlMacaddrTypeMapping;
 };
 
 
@@ -712,7 +712,7 @@ export interface NpgsqlMoneyTypeMapping$instance extends DecimalTypeMapping {
 
 export const NpgsqlMoneyTypeMapping: {
     new(): NpgsqlMoneyTypeMapping;
-    readonly default_: NpgsqlMoneyTypeMapping;
+    readonly default: NpgsqlMoneyTypeMapping;
 };
 
 
@@ -741,7 +741,7 @@ export interface NpgsqlPathTypeMapping$instance extends NpgsqlTypeMapping$instan
 
 export const NpgsqlPathTypeMapping: {
     new(): NpgsqlPathTypeMapping;
-    readonly default_: NpgsqlPathTypeMapping;
+    readonly default: NpgsqlPathTypeMapping;
 };
 
 
@@ -761,7 +761,7 @@ export interface NpgsqlPgLsnTypeMapping$instance extends NpgsqlTypeMapping$insta
 
 export const NpgsqlPgLsnTypeMapping: {
     new(): NpgsqlPgLsnTypeMapping;
-    readonly default_: NpgsqlPgLsnTypeMapping;
+    readonly default: NpgsqlPgLsnTypeMapping;
 };
 
 
@@ -796,7 +796,7 @@ export interface NpgsqlPointTypeMapping$instance extends NpgsqlTypeMapping$insta
 
 export const NpgsqlPointTypeMapping: {
     new(): NpgsqlPointTypeMapping;
-    readonly default_: NpgsqlPointTypeMapping;
+    readonly default: NpgsqlPointTypeMapping;
 };
 
 
@@ -816,7 +816,7 @@ export interface NpgsqlPolygonTypeMapping$instance extends NpgsqlTypeMapping$ins
 
 export const NpgsqlPolygonTypeMapping: {
     new(): NpgsqlPolygonTypeMapping;
-    readonly default_: NpgsqlPolygonTypeMapping;
+    readonly default: NpgsqlPolygonTypeMapping;
 };
 
 
@@ -839,7 +839,7 @@ export interface NpgsqlRangeTypeMapping$instance extends NpgsqlTypeMapping$insta
 
 export const NpgsqlRangeTypeMapping: {
     new(): NpgsqlRangeTypeMapping;
-    readonly default_: NpgsqlRangeTypeMapping;
+    readonly default: NpgsqlRangeTypeMapping;
     creatBuiltInRangeMapping(rangeStoreType: string, rangeClrType: Type, rangeNpgsqlDbType: NpgsqlDbType, subtypeMapping: RelationalTypeMapping): NpgsqlRangeTypeMapping;
     creatUserDefinedRangeMapping(quotedRangeStoreType: string, unquotedRangeStoreType: string, rangeClrType: Type, subtypeMapping: RelationalTypeMapping): NpgsqlRangeTypeMapping;
 };
@@ -860,7 +860,7 @@ export interface NpgsqlRegconfigTypeMapping$instance extends NpgsqlTypeMapping$i
 
 export const NpgsqlRegconfigTypeMapping: {
     new(): NpgsqlRegconfigTypeMapping;
-    readonly default_: NpgsqlRegconfigTypeMapping;
+    readonly default: NpgsqlRegconfigTypeMapping;
 };
 
 
@@ -879,7 +879,7 @@ export interface NpgsqlRegdictionaryTypeMapping$instance extends NpgsqlTypeMappi
 
 export const NpgsqlRegdictionaryTypeMapping: {
     new(): NpgsqlRegdictionaryTypeMapping;
-    readonly default_: NpgsqlRegdictionaryTypeMapping;
+    readonly default: NpgsqlRegdictionaryTypeMapping;
 };
 
 
@@ -911,7 +911,7 @@ export interface NpgsqlStringTypeMapping$instance extends StringTypeMapping {
 
 export const NpgsqlStringTypeMapping: {
     new(storeType: string, npgsqlDbType: NpgsqlDbType): NpgsqlStringTypeMapping;
-    readonly default_: NpgsqlStringTypeMapping;
+    readonly default: NpgsqlStringTypeMapping;
 };
 
 
@@ -945,7 +945,7 @@ export interface NpgsqlTidTypeMapping$instance extends NpgsqlTypeMapping$instanc
 
 export const NpgsqlTidTypeMapping: {
     new(): NpgsqlTidTypeMapping;
-    readonly default_: NpgsqlTidTypeMapping;
+    readonly default: NpgsqlTidTypeMapping;
 };
 
 
@@ -964,7 +964,7 @@ export interface NpgsqlTimestampTypeMapping$instance extends NpgsqlTypeMapping$i
 
 export const NpgsqlTimestampTypeMapping: {
     new(): NpgsqlTimestampTypeMapping;
-    readonly default_: NpgsqlTimestampTypeMapping;
+    readonly default: NpgsqlTimestampTypeMapping;
 };
 
 
@@ -998,7 +998,7 @@ export interface NpgsqlTimestampTzTypeMapping$instance extends NpgsqlTypeMapping
 
 export const NpgsqlTimestampTzTypeMapping: {
     new(clrType: Type): NpgsqlTimestampTzTypeMapping;
-    readonly default_: NpgsqlTimestampTzTypeMapping;
+    readonly default: NpgsqlTimestampTzTypeMapping;
 };
 
 
@@ -1047,7 +1047,7 @@ export interface NpgsqlTimeTypeMapping$instance extends NpgsqlTypeMapping$instan
 
 export const NpgsqlTimeTypeMapping: {
     new(clrType: Type): NpgsqlTimeTypeMapping;
-    readonly default_: NpgsqlTimeTypeMapping;
+    readonly default: NpgsqlTimeTypeMapping;
 };
 
 
@@ -1066,7 +1066,7 @@ export interface NpgsqlTimeTzTypeMapping$instance extends NpgsqlTypeMapping$inst
 
 export const NpgsqlTimeTzTypeMapping: {
     new(): NpgsqlTimeTzTypeMapping;
-    readonly default_: NpgsqlTimeTzTypeMapping;
+    readonly default: NpgsqlTimeTzTypeMapping;
 };
 
 
@@ -1100,7 +1100,7 @@ export interface NpgsqlTsQueryTypeMapping$instance extends NpgsqlTypeMapping$ins
 
 export const NpgsqlTsQueryTypeMapping: {
     new(): NpgsqlTsQueryTypeMapping;
-    readonly default_: NpgsqlTsQueryTypeMapping;
+    readonly default: NpgsqlTsQueryTypeMapping;
 };
 
 
@@ -1119,7 +1119,7 @@ export interface NpgsqlTsRankingNormalizationTypeMapping$instance extends IntTyp
 
 export const NpgsqlTsRankingNormalizationTypeMapping: {
     new(): NpgsqlTsRankingNormalizationTypeMapping;
-    readonly default_: NpgsqlTsRankingNormalizationTypeMapping;
+    readonly default: NpgsqlTsRankingNormalizationTypeMapping;
 };
 
 
@@ -1131,7 +1131,7 @@ export interface NpgsqlTsVectorTypeMapping$instance extends NpgsqlTypeMapping$in
 
 export const NpgsqlTsVectorTypeMapping: {
     new(): NpgsqlTsVectorTypeMapping;
-    readonly default_: NpgsqlTsVectorTypeMapping;
+    readonly default: NpgsqlTsVectorTypeMapping;
 };
 
 
@@ -1171,7 +1171,7 @@ export interface NpgsqlUIntTypeMapping$instance extends NpgsqlTypeMapping$instan
 
 export const NpgsqlUIntTypeMapping: {
     new(storeType: string, npgsqlDbType: NpgsqlDbType): NpgsqlUIntTypeMapping;
-    readonly default_: NpgsqlUIntTypeMapping;
+    readonly default: NpgsqlUIntTypeMapping;
 };
 
 
@@ -1190,7 +1190,7 @@ export interface NpgsqlULongTypeMapping$instance extends NpgsqlTypeMapping$insta
 
 export const NpgsqlULongTypeMapping: {
     new(storeType: string, npgsqlDbType: NpgsqlDbType): NpgsqlULongTypeMapping;
-    readonly default_: NpgsqlULongTypeMapping;
+    readonly default: NpgsqlULongTypeMapping;
 };
 
 
@@ -1210,7 +1210,7 @@ export interface NpgsqlVarbitTypeMapping$instance extends NpgsqlTypeMapping$inst
 
 export const NpgsqlVarbitTypeMapping: {
     new(): NpgsqlVarbitTypeMapping;
-    readonly default_: NpgsqlVarbitTypeMapping;
+    readonly default: NpgsqlVarbitTypeMapping;
 };
 
 

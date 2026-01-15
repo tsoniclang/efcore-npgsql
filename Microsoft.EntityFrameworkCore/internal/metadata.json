@@ -32,7 +32,7 @@
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Microsoft.EntityFrameworkCore.NpgsqlTsRankingNormalization::DefaultMicrosoft.EntityFrameworkCore.NpgsqlTsRankingNormalization",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "normalizedSignature": "Default|Microsoft.EntityFrameworkCore.NpgsqlTsRankingNormalization|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -2959,7 +2959,7 @@
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Microsoft.EntityFrameworkCore.NpgsqlFullTextSearchLinqExtensions::Delete(NpgsqlTypes.NpgsqlTsVector,System.String):NpgsqlTypes.NpgsqlTsVector",
           "clrName": "Delete",
-          "tsEmitName": "delete_",
+          "tsEmitName": "delete",
           "normalizedSignature": "Delete|(NpgsqlTypes.NpgsqlTsVector,System.String):NpgsqlTypes.NpgsqlTsVector|static=true",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -2975,7 +2975,7 @@
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Microsoft.EntityFrameworkCore.NpgsqlFullTextSearchLinqExtensions::Delete(NpgsqlTypes.NpgsqlTsVector,System.String[]):NpgsqlTypes.NpgsqlTsVector",
           "clrName": "Delete",
-          "tsEmitName": "delete_",
+          "tsEmitName": "delete",
           "normalizedSignature": "Delete|(NpgsqlTypes.NpgsqlTsVector,System.String[]):NpgsqlTypes.NpgsqlTsVector|static=true",
           "provenance": "Original",
           "emitScope": "ClassSurface",

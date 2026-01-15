@@ -80,8 +80,8 @@ export interface __Ext_Microsoft_EntityFrameworkCore_NpgsqlTsVector {
   setWeight(weight: NpgsqlTypes.NpgsqlTsVector_Lexeme_Weight, lexemes: string[]): ExtensionMethods_Microsoft_EntityFrameworkCore<NpgsqlTypes.NpgsqlTsVector>;
   setWeight(weight: char): ExtensionMethods_Microsoft_EntityFrameworkCore<NpgsqlTypes.NpgsqlTsVector>;
   setWeight(weight: char, lexemes: string[]): ExtensionMethods_Microsoft_EntityFrameworkCore<NpgsqlTypes.NpgsqlTsVector>;
-  delete_(lexeme: string): ExtensionMethods_Microsoft_EntityFrameworkCore<NpgsqlTypes.NpgsqlTsVector>;
-  delete_(lexemes: string[]): ExtensionMethods_Microsoft_EntityFrameworkCore<NpgsqlTypes.NpgsqlTsVector>;
+  delete(lexeme: string): ExtensionMethods_Microsoft_EntityFrameworkCore<NpgsqlTypes.NpgsqlTsVector>;
+  delete(lexemes: string[]): ExtensionMethods_Microsoft_EntityFrameworkCore<NpgsqlTypes.NpgsqlTsVector>;
   filter(weights: char[]): ExtensionMethods_Microsoft_EntityFrameworkCore<NpgsqlTypes.NpgsqlTsVector>;
   getLength(): ExtensionMethods_Microsoft_EntityFrameworkCore<int>;
   toStripped(): ExtensionMethods_Microsoft_EntityFrameworkCore<NpgsqlTypes.NpgsqlTsVector>;

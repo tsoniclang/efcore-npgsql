@@ -178,7 +178,7 @@
         {
           "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BReplicaIdentitySetting::DefaultNpgsql.Replication.PgOutput.Messages.RelationMessage\u002BReplicaIdentitySetting",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "normalizedSignature": "Default|Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BReplicaIdentitySetting|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -1338,7 +1338,7 @@
         {
           "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.RelationMessage::Namespace:System.String",
           "clrName": "Namespace",
-          "tsEmitName": "namespace_",
+          "tsEmitName": "namespace",
           "normalizedSignature": "Namespace|:System.String|static=false|accessor=get",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -1822,7 +1822,7 @@
         {
           "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.TypeMessage::Namespace:System.String",
           "clrName": "Namespace",
-          "tsEmitName": "namespace_",
+          "tsEmitName": "namespace",
           "normalizedSignature": "Namespace|:System.String|static=false|accessor=get",
           "provenance": "Original",
           "emitScope": "ClassSurface",

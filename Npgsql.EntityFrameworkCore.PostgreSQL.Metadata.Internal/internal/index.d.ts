@@ -31,17 +31,17 @@ export const IdentitySequenceOptionsData: {
     new(): IdentitySequenceOptionsData;
     readonly empty: IdentitySequenceOptionsData;
     deserialize(value: string): IdentitySequenceOptionsData;
-    get_(annotatable: IReadOnlyAnnotatable): IdentitySequenceOptionsData;
+    get(annotatable: IReadOnlyAnnotatable): IdentitySequenceOptionsData;
 };
 
 
 export type IdentitySequenceOptionsData = IdentitySequenceOptionsData$instance;
 
 export interface NpgsqlAnnotationProvider$instance extends RelationalAnnotationProvider {
-    for_(table: ITable, designTime: boolean): IEnumerable<IAnnotation>;
-    for_(column: IColumn, designTime: boolean): IEnumerable<IAnnotation>;
-    for_(index: ITableIndex, designTime: boolean): IEnumerable<IAnnotation>;
-    for_(model: IRelationalModel, designTime: boolean): IEnumerable<IAnnotation>;
+    for(table: ITable, designTime: boolean): IEnumerable<IAnnotation>;
+    for(column: IColumn, designTime: boolean): IEnumerable<IAnnotation>;
+    for(index: ITableIndex, designTime: boolean): IEnumerable<IAnnotation>;
+    for(model: IRelationalModel, designTime: boolean): IEnumerable<IAnnotation>;
 }
 
 

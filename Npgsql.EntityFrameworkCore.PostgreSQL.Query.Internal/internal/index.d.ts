@@ -26,7 +26,7 @@ export enum NpgsqlSqlTranslatingExpressionVisitor_StartsEndsWithContains {
 
 
 export interface NpgsqlCompiledQueryCacheKeyGenerator$instance extends RelationalCompiledQueryCacheKeyGenerator {
-    generateCacheKey(query: Expression, async_: boolean): unknown;
+    generateCacheKey(query: Expression, async: boolean): unknown;
 }
 
 
@@ -115,16 +115,16 @@ export interface NpgsqlQueryCompilationContext$instance extends RelationalQueryC
 
 
 export const NpgsqlQueryCompilationContext: {
-    new(dependencies: QueryCompilationContextDependencies, relationalDependencies: RelationalQueryCompilationContextDependencies, async_: boolean): NpgsqlQueryCompilationContext;
-    new(dependencies: QueryCompilationContextDependencies, relationalDependencies: RelationalQueryCompilationContextDependencies, async_: boolean, precompiling: boolean): NpgsqlQueryCompilationContext;
+    new(dependencies: QueryCompilationContextDependencies, relationalDependencies: RelationalQueryCompilationContextDependencies, async: boolean): NpgsqlQueryCompilationContext;
+    new(dependencies: QueryCompilationContextDependencies, relationalDependencies: RelationalQueryCompilationContextDependencies, async: boolean, precompiling: boolean): NpgsqlQueryCompilationContext;
 };
 
 
 export type NpgsqlQueryCompilationContext = NpgsqlQueryCompilationContext$instance;
 
 export interface NpgsqlQueryCompilationContextFactory$instance {
-    create(async_: boolean): QueryCompilationContext;
-    createPrecompiled(async_: boolean): QueryCompilationContext;
+    create(async: boolean): QueryCompilationContext;
+    createPrecompiled(async: boolean): QueryCompilationContext;
 }
 
 

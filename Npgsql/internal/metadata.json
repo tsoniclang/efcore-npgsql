@@ -29,7 +29,7 @@
         {
           "stableId": "Npgsql:Npgsql.ArrayNullabilityMode::NeverNpgsql.ArrayNullabilityMode",
           "clrName": "Never",
-          "tsEmitName": "never_",
+          "tsEmitName": "never",
           "normalizedSignature": "Never|Npgsql.ArrayNullabilityMode|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -365,7 +365,7 @@
         {
           "stableId": "Npgsql:Npgsql.StatementType::UnknownNpgsql.StatementType",
           "clrName": "Unknown",
-          "tsEmitName": "unknown_",
+          "tsEmitName": "unknown",
           "normalizedSignature": "Unknown|Npgsql.StatementType|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -392,7 +392,7 @@
         {
           "stableId": "Npgsql:Npgsql.StatementType::DeleteNpgsql.StatementType",
           "clrName": "Delete",
-          "tsEmitName": "delete_",
+          "tsEmitName": "delete",
           "normalizedSignature": "Delete|Npgsql.StatementType|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -499,7 +499,7 @@
         {
           "stableId": "Npgsql:Npgsql.TargetSessionAttributes::AnyNpgsql.TargetSessionAttributes",
           "clrName": "Any",
-          "tsEmitName": "any_",
+          "tsEmitName": "any",
           "normalizedSignature": "Any|Npgsql.TargetSessionAttributes|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
