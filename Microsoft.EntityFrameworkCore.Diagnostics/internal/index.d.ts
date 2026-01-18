@@ -11,22 +11,22 @@ import type { Object as ClrObject } from "@tsonic/dotnet/System.js";
 import type { EventId } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
 
 export abstract class NpgsqlEfEventId$instance {
-    static readonly columnFound: EventId;
-    static readonly missingSchemaWarning: EventId;
-    static readonly collationFound: EventId;
-    static readonly missingTableWarning: EventId;
-    static readonly foreignKeyReferencesMissingPrincipalTableWarning: EventId;
-    static readonly tableFound: EventId;
-    static readonly sequenceFound: EventId;
-    static readonly primaryKeyFound: EventId;
-    static readonly uniqueConstraintFound: EventId;
-    static readonly indexFound: EventId;
-    static readonly foreignKeyFound: EventId;
-    static readonly foreignKeyPrincipalColumnMissingWarning: EventId;
-    static readonly enumColumnSkippedWarning: EventId;
-    static readonly expressionIndexSkippedWarning: EventId;
-    static readonly unsupportedColumnIndexSkippedWarning: EventId;
-    static readonly unsupportedColumnConstraintSkippedWarning: EventId;
+    static readonly ColumnFound: EventId;
+    static readonly MissingSchemaWarning: EventId;
+    static readonly CollationFound: EventId;
+    static readonly MissingTableWarning: EventId;
+    static readonly ForeignKeyReferencesMissingPrincipalTableWarning: EventId;
+    static readonly TableFound: EventId;
+    static readonly SequenceFound: EventId;
+    static readonly PrimaryKeyFound: EventId;
+    static readonly UniqueConstraintFound: EventId;
+    static readonly IndexFound: EventId;
+    static readonly ForeignKeyFound: EventId;
+    static readonly ForeignKeyPrincipalColumnMissingWarning: EventId;
+    static readonly EnumColumnSkippedWarning: EventId;
+    static readonly ExpressionIndexSkippedWarning: EventId;
+    static readonly UnsupportedColumnIndexSkippedWarning: EventId;
+    static readonly UnsupportedColumnConstraintSkippedWarning: EventId;
 }
 
 

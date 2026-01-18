@@ -13,8 +13,8 @@ import * as Microsoft_EntityFrameworkCore_ValueGeneration_Internal from "@tsonic
 import type { ValueGenerator } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.ValueGeneration.js";
 
 export interface NpgsqlSequentialGuidValueGenerator$instance extends ValueGenerator<Guid> {
-    readonly generatesTemporaryValues: boolean;
-    next(entry: EntityEntry): Guid;
+    readonly GeneratesTemporaryValues: boolean;
+    Next(entry: EntityEntry): Guid;
 }
 
 
@@ -26,8 +26,8 @@ export const NpgsqlSequentialGuidValueGenerator: {
 export type NpgsqlSequentialGuidValueGenerator = NpgsqlSequentialGuidValueGenerator$instance;
 
 export interface NpgsqlSequentialStringValueGenerator$instance extends ValueGenerator<System_Internal.String> {
-    readonly generatesTemporaryValues: boolean;
-    next(entry: EntityEntry): string;
+    readonly GeneratesTemporaryValues: boolean;
+    Next(entry: EntityEntry): string;
 }
 
 

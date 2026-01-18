@@ -24,21 +24,21 @@ import type { IConventionAnnotation, IReadOnlyProperty, StoreObjectIdentifier, V
 import type { IRelationalTypeMappingSource } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
 
 export interface NpgsqlConventionSetBuilder$instance extends RelationalConventionSetBuilder {
-    createConventionSet(): ConventionSet;
+    CreateConventionSet(): ConventionSet;
 }
 
 
 export const NpgsqlConventionSetBuilder: {
     new(dependencies: ProviderConventionSetBuilderDependencies, relationalDependencies: RelationalConventionSetBuilderDependencies, typeMappingSource: IRelationalTypeMappingSource, npgsqlSingletonOptions: INpgsqlSingletonOptions): NpgsqlConventionSetBuilder;
-    build(): ConventionSet;
-    createModelBuilder(): ModelBuilder;
+    Build(): ConventionSet;
+    CreateModelBuilder(): ModelBuilder;
 };
 
 
 export type NpgsqlConventionSetBuilder = NpgsqlConventionSetBuilder$instance;
 
 export interface NpgsqlPostgresModelFinalizingConvention$instance {
-    processModelFinalizing(modelBuilder: IConventionModelBuilder, context: IConventionContext<IConventionModelBuilder>): void;
+    ProcessModelFinalizing(modelBuilder: IConventionModelBuilder, context: IConventionContext<IConventionModelBuilder>): void;
 }
 
 
@@ -72,7 +72,7 @@ export const NpgsqlSharedTableConvention: {
 export type NpgsqlSharedTableConvention = NpgsqlSharedTableConvention$instance;
 
 export interface NpgsqlStoreGenerationConvention$instance extends StoreGenerationConvention {
-    processPropertyAnnotationChanged(propertyBuilder: IConventionPropertyBuilder, name: string, annotation: IConventionAnnotation, oldAnnotation: IConventionAnnotation, context: IConventionContext<IConventionAnnotation>): void;
+    ProcessPropertyAnnotationChanged(propertyBuilder: IConventionPropertyBuilder, name: string, annotation: IConventionAnnotation, oldAnnotation: IConventionAnnotation, context: IConventionContext<IConventionAnnotation>): void;
 }
 
 
@@ -84,21 +84,21 @@ export const NpgsqlStoreGenerationConvention: {
 export type NpgsqlStoreGenerationConvention = NpgsqlStoreGenerationConvention$instance;
 
 export interface NpgsqlValueGenerationConvention$instance extends RelationalValueGenerationConvention {
-    processPropertyAnnotationChanged(propertyBuilder: IConventionPropertyBuilder, name: string, annotation: IConventionAnnotation, oldAnnotation: IConventionAnnotation, context: IConventionContext<IConventionAnnotation>): void;
+    ProcessPropertyAnnotationChanged(propertyBuilder: IConventionPropertyBuilder, name: string, annotation: IConventionAnnotation, oldAnnotation: IConventionAnnotation, context: IConventionContext<IConventionAnnotation>): void;
 }
 
 
 export const NpgsqlValueGenerationConvention: {
     new(dependencies: ProviderConventionSetBuilderDependencies, relationalDependencies: RelationalConventionSetBuilderDependencies): NpgsqlValueGenerationConvention;
-    getValueGenerated(property: IReadOnlyProperty, storeObject: StoreObjectIdentifier): Nullable<ValueGenerated>;
+    GetValueGenerated(property: IReadOnlyProperty, storeObject: StoreObjectIdentifier): Nullable<ValueGenerated>;
 };
 
 
 export type NpgsqlValueGenerationConvention = NpgsqlValueGenerationConvention$instance;
 
 export interface NpgsqlValueGenerationStrategyConvention$instance {
-    processModelFinalizing(modelBuilder: IConventionModelBuilder, context: IConventionContext<IConventionModelBuilder>): void;
-    processModelInitialized(modelBuilder: IConventionModelBuilder, context: IConventionContext<IConventionModelBuilder>): void;
+    ProcessModelFinalizing(modelBuilder: IConventionModelBuilder, context: IConventionContext<IConventionModelBuilder>): void;
+    ProcessModelInitialized(modelBuilder: IConventionModelBuilder, context: IConventionContext<IConventionModelBuilder>): void;
 }
 
 

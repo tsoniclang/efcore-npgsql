@@ -1,23 +1,36 @@
 {
   "namespace": "Npgsql.TypeMapping",
+  "contributingAssemblies": [
+    "Npgsql"
+  ],
   "types": [
     {
       "stableId": "Npgsql:Npgsql.TypeMapping.INpgsqlTypeMapper",
       "clrName": "Npgsql.TypeMapping.INpgsqlTypeMapper",
-      "tsEmitName": "INpgsqlTypeMapper",
       "assemblyName": "Npgsql",
       "metadataToken": 0,
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Npgsql:Npgsql.TypeMapping.INpgsqlTypeMapper::MapEnum(System.String,Npgsql.INpgsqlNameTranslator):Npgsql.TypeMapping.INpgsqlTypeMapper",
           "clrName": "MapEnum",
-          "tsEmitName": "mapEnum",
           "metadataToken": 100665710,
           "canonicalSignature": "(System.String,Npgsql.INpgsqlNameTranslator):Npgsql.TypeMapping.INpgsqlTypeMapper",
           "normalizedSignature": "MapEnum|(System.String,Npgsql.INpgsqlNameTranslator):Npgsql.TypeMapping.INpgsqlTypeMapper|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 1,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Npgsql.TypeMapping.INpgsqlTypeMapper",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -25,13 +38,18 @@
         {
           "stableId": "Npgsql:Npgsql.TypeMapping.INpgsqlTypeMapper::UnmapEnum(System.String,Npgsql.INpgsqlNameTranslator):System.Boolean",
           "clrName": "UnmapEnum",
-          "tsEmitName": "unmapEnum",
           "metadataToken": 100665711,
           "canonicalSignature": "(System.String,Npgsql.INpgsqlNameTranslator):System.Boolean",
           "normalizedSignature": "UnmapEnum|(System.String,Npgsql.INpgsqlNameTranslator):System.Boolean|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 1,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Npgsql.TypeMapping.INpgsqlTypeMapper",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -39,13 +57,18 @@
         {
           "stableId": "Npgsql:Npgsql.TypeMapping.INpgsqlTypeMapper::MapEnum(System.Type,System.String,Npgsql.INpgsqlNameTranslator):Npgsql.TypeMapping.INpgsqlTypeMapper",
           "clrName": "MapEnum",
-          "tsEmitName": "mapEnum",
           "metadataToken": 100665712,
           "canonicalSignature": "(System.Type,System.String,Npgsql.INpgsqlNameTranslator):Npgsql.TypeMapping.INpgsqlTypeMapper",
           "normalizedSignature": "MapEnum|(System.Type,System.String,Npgsql.INpgsqlNameTranslator):Npgsql.TypeMapping.INpgsqlTypeMapper|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 3,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Npgsql.TypeMapping.INpgsqlTypeMapper",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -53,13 +76,18 @@
         {
           "stableId": "Npgsql:Npgsql.TypeMapping.INpgsqlTypeMapper::UnmapEnum(System.Type,System.String,Npgsql.INpgsqlNameTranslator):System.Boolean",
           "clrName": "UnmapEnum",
-          "tsEmitName": "unmapEnum",
           "metadataToken": 100665713,
           "canonicalSignature": "(System.Type,System.String,Npgsql.INpgsqlNameTranslator):System.Boolean",
           "normalizedSignature": "UnmapEnum|(System.Type,System.String,Npgsql.INpgsqlNameTranslator):System.Boolean|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 3,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Npgsql.TypeMapping.INpgsqlTypeMapper",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -67,13 +95,18 @@
         {
           "stableId": "Npgsql:Npgsql.TypeMapping.INpgsqlTypeMapper::AddTypeInfoResolverFactory(Npgsql.Internal.PgTypeInfoResolverFactory):System.Void",
           "clrName": "AddTypeInfoResolverFactory",
-          "tsEmitName": "addTypeInfoResolverFactory",
           "metadataToken": 100665718,
           "canonicalSignature": "(Npgsql.Internal.PgTypeInfoResolverFactory):System.Void",
           "normalizedSignature": "AddTypeInfoResolverFactory|(Npgsql.Internal.PgTypeInfoResolverFactory):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Npgsql.TypeMapping.INpgsqlTypeMapper",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -81,13 +114,18 @@
         {
           "stableId": "Npgsql:Npgsql.TypeMapping.INpgsqlTypeMapper::AddDbTypeResolverFactory(Npgsql.Internal.DbTypeResolverFactory):System.Void",
           "clrName": "AddDbTypeResolverFactory",
-          "tsEmitName": "addDbTypeResolverFactory",
           "metadataToken": 100665719,
           "canonicalSignature": "(Npgsql.Internal.DbTypeResolverFactory):System.Void",
           "normalizedSignature": "AddDbTypeResolverFactory|(Npgsql.Internal.DbTypeResolverFactory):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Npgsql.TypeMapping.INpgsqlTypeMapper",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -95,13 +133,18 @@
         {
           "stableId": "Npgsql:Npgsql.TypeMapping.INpgsqlTypeMapper::ConfigureJsonOptions(System.Text.Json.JsonSerializerOptions):Npgsql.TypeMapping.INpgsqlTypeMapper",
           "clrName": "ConfigureJsonOptions",
-          "tsEmitName": "configureJsonOptions",
           "metadataToken": 100665720,
           "canonicalSignature": "(System.Text.Json.JsonSerializerOptions):Npgsql.TypeMapping.INpgsqlTypeMapper",
           "normalizedSignature": "ConfigureJsonOptions|(System.Text.Json.JsonSerializerOptions):Npgsql.TypeMapping.INpgsqlTypeMapper|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Npgsql.TypeMapping.INpgsqlTypeMapper",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -109,13 +152,18 @@
         {
           "stableId": "Npgsql:Npgsql.TypeMapping.INpgsqlTypeMapper::EnableDynamicJson(System.Type[],System.Type[]):Npgsql.TypeMapping.INpgsqlTypeMapper",
           "clrName": "EnableDynamicJson",
-          "tsEmitName": "enableDynamicJson",
           "metadataToken": 100665721,
           "canonicalSignature": "(System.Type[],System.Type[]):Npgsql.TypeMapping.INpgsqlTypeMapper",
           "normalizedSignature": "EnableDynamicJson|(System.Type[],System.Type[]):Npgsql.TypeMapping.INpgsqlTypeMapper|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Npgsql.TypeMapping.INpgsqlTypeMapper",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -123,13 +171,18 @@
         {
           "stableId": "Npgsql:Npgsql.TypeMapping.INpgsqlTypeMapper::EnableRecordsAsTuples():Npgsql.TypeMapping.INpgsqlTypeMapper",
           "clrName": "EnableRecordsAsTuples",
-          "tsEmitName": "enableRecordsAsTuples",
           "metadataToken": 100665722,
           "canonicalSignature": "():Npgsql.TypeMapping.INpgsqlTypeMapper",
           "normalizedSignature": "EnableRecordsAsTuples|():Npgsql.TypeMapping.INpgsqlTypeMapper|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Npgsql.TypeMapping.INpgsqlTypeMapper",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -137,13 +190,18 @@
         {
           "stableId": "Npgsql:Npgsql.TypeMapping.INpgsqlTypeMapper::Reset():System.Void",
           "clrName": "Reset",
-          "tsEmitName": "reset",
           "metadataToken": 100665724,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Reset|():System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Npgsql.TypeMapping.INpgsqlTypeMapper",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -153,198 +211,79 @@
         {
           "stableId": "Npgsql:Npgsql.TypeMapping.INpgsqlTypeMapper::DefaultNameTranslator:Npgsql.INpgsqlNameTranslator",
           "clrName": "DefaultNameTranslator",
-          "tsEmitName": "defaultNameTranslator",
           "metadataToken": 385876513,
           "canonicalSignature": ":Npgsql.INpgsqlNameTranslator",
           "normalizedSignature": "DefaultNameTranslator|:Npgsql.INpgsqlNameTranslator|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Npgsql.TypeMapping.INpgsqlTypeMapper",
           "declaringAssemblyName": "Npgsql"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "mapEnum",
-          "isStatic": false,
-          "tsSignatureId": "MapEnum|(System.String,Npgsql.INpgsqlNameTranslator):Npgsql.TypeMapping.INpgsqlTypeMapper|static=false",
-          "target": {
-            "declaringClrType": "Npgsql.TypeMapping.INpgsqlTypeMapper",
-            "declaringAssemblyName": "Npgsql",
-            "metadataToken": 100665710
-          }
-        },
-        {
-          "tsName": "unmapEnum",
-          "isStatic": false,
-          "tsSignatureId": "UnmapEnum|(System.String,Npgsql.INpgsqlNameTranslator):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Npgsql.TypeMapping.INpgsqlTypeMapper",
-            "declaringAssemblyName": "Npgsql",
-            "metadataToken": 100665711
-          }
-        },
-        {
-          "tsName": "mapEnum",
-          "isStatic": false,
-          "tsSignatureId": "MapEnum|(System.Type,System.String,Npgsql.INpgsqlNameTranslator):Npgsql.TypeMapping.INpgsqlTypeMapper|static=false",
-          "target": {
-            "declaringClrType": "Npgsql.TypeMapping.INpgsqlTypeMapper",
-            "declaringAssemblyName": "Npgsql",
-            "metadataToken": 100665712
-          }
-        },
-        {
-          "tsName": "unmapEnum",
-          "isStatic": false,
-          "tsSignatureId": "UnmapEnum|(System.Type,System.String,Npgsql.INpgsqlNameTranslator):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Npgsql.TypeMapping.INpgsqlTypeMapper",
-            "declaringAssemblyName": "Npgsql",
-            "metadataToken": 100665713
-          }
-        },
-        {
-          "tsName": "addTypeInfoResolverFactory",
-          "isStatic": false,
-          "tsSignatureId": "AddTypeInfoResolverFactory|(Npgsql.Internal.PgTypeInfoResolverFactory):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Npgsql.TypeMapping.INpgsqlTypeMapper",
-            "declaringAssemblyName": "Npgsql",
-            "metadataToken": 100665718
-          }
-        },
-        {
-          "tsName": "addDbTypeResolverFactory",
-          "isStatic": false,
-          "tsSignatureId": "AddDbTypeResolverFactory|(Npgsql.Internal.DbTypeResolverFactory):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Npgsql.TypeMapping.INpgsqlTypeMapper",
-            "declaringAssemblyName": "Npgsql",
-            "metadataToken": 100665719
-          }
-        },
-        {
-          "tsName": "configureJsonOptions",
-          "isStatic": false,
-          "tsSignatureId": "ConfigureJsonOptions|(System.Text.Json.JsonSerializerOptions):Npgsql.TypeMapping.INpgsqlTypeMapper|static=false",
-          "target": {
-            "declaringClrType": "Npgsql.TypeMapping.INpgsqlTypeMapper",
-            "declaringAssemblyName": "Npgsql",
-            "metadataToken": 100665720
-          }
-        },
-        {
-          "tsName": "enableDynamicJson",
-          "isStatic": false,
-          "tsSignatureId": "EnableDynamicJson|(System.Type[],System.Type[]):Npgsql.TypeMapping.INpgsqlTypeMapper|static=false",
-          "target": {
-            "declaringClrType": "Npgsql.TypeMapping.INpgsqlTypeMapper",
-            "declaringAssemblyName": "Npgsql",
-            "metadataToken": 100665721
-          }
-        },
-        {
-          "tsName": "enableRecordsAsTuples",
-          "isStatic": false,
-          "tsSignatureId": "EnableRecordsAsTuples|():Npgsql.TypeMapping.INpgsqlTypeMapper|static=false",
-          "target": {
-            "declaringClrType": "Npgsql.TypeMapping.INpgsqlTypeMapper",
-            "declaringAssemblyName": "Npgsql",
-            "metadataToken": 100665722
-          }
-        },
-        {
-          "tsName": "reset",
-          "isStatic": false,
-          "tsSignatureId": "Reset|():System.Void|static=false",
-          "target": {
-            "declaringClrType": "Npgsql.TypeMapping.INpgsqlTypeMapper",
-            "declaringAssemblyName": "Npgsql",
-            "metadataToken": 100665724
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "defaultNameTranslator",
-          "isStatic": false,
-          "tsSignatureId": "DefaultNameTranslator|:Npgsql.INpgsqlNameTranslator|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Npgsql.TypeMapping.INpgsqlTypeMapper",
-            "declaringAssemblyName": "Npgsql",
-            "metadataToken": 385876513
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Npgsql:Npgsql.TypeMapping.UserTypeMapping",
       "clrName": "Npgsql.TypeMapping.UserTypeMapping",
-      "tsEmitName": "UserTypeMapping",
       "assemblyName": "Npgsql",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Npgsql:Npgsql.TypeMapping.UserTypeMapping::PgTypeName:System.String",
           "clrName": "PgTypeName",
-          "tsEmitName": "pgTypeName",
           "metadataToken": 385876514,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "PgTypeName|:System.String|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Npgsql.TypeMapping.UserTypeMapping",
           "declaringAssemblyName": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.TypeMapping.UserTypeMapping::ClrType:System.Type",
           "clrName": "ClrType",
-          "tsEmitName": "clrType",
           "metadataToken": 385876515,
           "canonicalSignature": ":System.Type",
           "normalizedSignature": "ClrType|:System.Type|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Npgsql.TypeMapping.UserTypeMapping",
           "declaringAssemblyName": "Npgsql"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedProperties": [
-        {
-          "tsName": "pgTypeName",
-          "isStatic": false,
-          "tsSignatureId": "PgTypeName|:System.String|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Npgsql.TypeMapping.UserTypeMapping",
-            "declaringAssemblyName": "Npgsql",
-            "metadataToken": 385876514
-          }
-        },
-        {
-          "tsName": "clrType",
-          "isStatic": false,
-          "tsSignatureId": "ClrType|:System.Type|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Npgsql.TypeMapping.UserTypeMapping",
-            "declaringAssemblyName": "Npgsql",
-            "metadataToken": 385876515
-          }
-        }
-      ]
+      "constructors": []
     }
   ]
 }

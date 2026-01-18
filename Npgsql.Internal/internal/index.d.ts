@@ -27,22 +27,22 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
 import type { Task, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export enum DataFormat {
-    binary = 0,
-    text = 1
+    Binary = 0,
+    Text = 1
 }
 
 
 export enum MatchRequirement {
-    all = 0,
-    single = 1,
-    dataTypeName = 2
+    All = 0,
+    Single = 1,
+    DataTypeName = 2
 }
 
 
 export enum SizeKind {
-    unknown = 0,
-    exact = 1,
-    upperBound = 2
+    Unknown = 0,
+    Exact = 1,
+    UpperBound = 2
 }
 
 
@@ -50,54 +50,54 @@ export type TypeInfoFactory = (options: PgSerializerOptions, mapping: TypeInfoMa
 
 
 export interface IDbTypeResolver$instance {
-    getDataTypeName(dbType: DbType, type: Type): string | undefined;
-    getDbType(dataTypeName: DataTypeName): Nullable<DbType>;
+    GetDataTypeName(dbType: DbType, type: Type): string | undefined;
+    GetDbType(dataTypeName: DataTypeName): Nullable<DbType>;
 }
 
 
 export type IDbTypeResolver = IDbTypeResolver$instance;
 
 export interface INpgsqlDatabaseInfoFactory$instance {
-    load(conn: NpgsqlConnector, timeout: NpgsqlTimeout, async: boolean): Task<NpgsqlDatabaseInfo | undefined>;
+    Load(conn: NpgsqlConnector, timeout: NpgsqlTimeout, async: boolean): Task<NpgsqlDatabaseInfo | undefined>;
 }
 
 
 export type INpgsqlDatabaseInfoFactory = INpgsqlDatabaseInfoFactory$instance;
 
 export interface IPgTypeInfoResolver$instance {
-    getTypeInfo(type: Type, dataTypeName: Nullable<DataTypeName>, options: PgSerializerOptions): PgTypeInfo | undefined;
+    GetTypeInfo(type: Type, dataTypeName: Nullable<DataTypeName>, options: PgSerializerOptions): PgTypeInfo | undefined;
 }
 
 
 export type IPgTypeInfoResolver = IPgTypeInfoResolver$instance;
 
 export interface BufferRequirements$instance {
-    readonly read: Size;
-    readonly write: Size;
-    combine(read: Size, write: Size): BufferRequirements;
-    combine(other: BufferRequirements): BufferRequirements;
-    combine(byteCount: int): BufferRequirements;
-    equals(other: BufferRequirements): boolean;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
+    readonly Read: Size;
+    readonly Write: Size;
+    Combine(read: Size, write: Size): BufferRequirements;
+    Combine(other: BufferRequirements): BufferRequirements;
+    Combine(byteCount: int): BufferRequirements;
+    Equals(other: BufferRequirements): boolean;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
 }
 
 
 export const BufferRequirements: {
     new(): BufferRequirements;
-    readonly none: BufferRequirements;
-    readonly value: BufferRequirements;
-    create(read: Size, write: Size): BufferRequirements;
-    create(value: Size): BufferRequirements;
-    createFixedSize(byteCount: int): BufferRequirements;
+    readonly None: BufferRequirements;
+    readonly Value: BufferRequirements;
+    Create(read: Size, write: Size): BufferRequirements;
+    Create(value: Size): BufferRequirements;
+    CreateFixedSize(byteCount: int): BufferRequirements;
 };
 
 
 export type BufferRequirements = BufferRequirements$instance;
 
 export interface NestedReadScope$instance {
-    dispose(): void;
-    disposeAsync(): ValueTask;
+    Dispose(): void;
+    DisposeAsync(): ValueTask;
 }
 
 
@@ -109,7 +109,7 @@ export const NestedReadScope: {
 export type NestedReadScope = NestedReadScope$instance;
 
 export interface NestedWriteScope$instance {
-    dispose(): void;
+    Dispose(): void;
 }
 
 
@@ -121,9 +121,9 @@ export const NestedWriteScope: {
 export type NestedWriteScope = NestedWriteScope$instance;
 
 export interface PgConverterResolution$instance {
-    readonly converter: PgConverter;
-    readonly pgTypeId: PgTypeId;
-    getConverter<T>(): PgConverter_1<T>;
+    readonly Converter: PgConverter;
+    readonly PgTypeId: PgTypeId;
+    GetConverter<T>(): PgConverter_1<T>;
 }
 
 
@@ -135,31 +135,31 @@ export const PgConverterResolution: {
 export type PgConverterResolution = PgConverterResolution$instance;
 
 export interface Size$instance {
-    readonly kind: SizeKind;
-    readonly value: int;
-    combine(other: Size): Size;
-    equals(other: Size): boolean;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
-    toString(): string;
-    tryCombine(other: Size, result: Size): boolean;
+    readonly Kind: SizeKind;
+    readonly Value: int;
+    Combine(other: Size): Size;
+    Equals(other: Size): boolean;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
+    ToString(): string;
+    TryCombine(other: Size, result: Size): boolean;
 }
 
 
 export const Size: {
     new(): Size;
-    readonly unknown: Size;
-    readonly zero: Size;
-    create(byteCount: int): Size;
-    createUpperBound(byteCount: int): Size;
+    readonly Unknown: Size;
+    readonly Zero: Size;
+    Create(byteCount: int): Size;
+    CreateUpperBound(byteCount: int): Size;
 };
 
 
 export type Size = Size$instance;
 
 export interface SizeContext$instance {
-    bufferRequirement: Size;
-    readonly format: DataFormat;
+    BufferRequirement: Size;
+    readonly Format: DataFormat;
 }
 
 
@@ -171,14 +171,14 @@ export const SizeContext: {
 export type SizeContext = SizeContext$instance;
 
 export interface TypeInfoMapping$instance {
-    dataTypeName: string;
-    factory: TypeInfoFactory;
-    matchRequirement: MatchRequirement;
-    type: Type;
-    get typeMatchPredicate(): Func<Type | undefined, System_Internal.Boolean> | undefined;
-    set typeMatchPredicate(value: Func<Type | undefined, System_Internal.Boolean>);
-    dataTypeNameEquals(dataTypeName: string): boolean;
-    typeEquals(type: Type): boolean;
+    DataTypeName: string;
+    Factory: TypeInfoFactory;
+    MatchRequirement: MatchRequirement;
+    Type: Type;
+    get TypeMatchPredicate(): Func<Type | undefined, System_Internal.Boolean> | undefined;
+    set TypeMatchPredicate(value: Func<Type | undefined, System_Internal.Boolean>);
+    DataTypeNameEquals(dataTypeName: string): boolean;
+    TypeEquals(type: Type): boolean;
 }
 
 
@@ -190,11 +190,11 @@ export const TypeInfoMapping: {
 export type TypeInfoMapping = TypeInfoMapping$instance;
 
 export interface ValueMetadata$instance {
-    bufferRequirement: Size;
-    format: DataFormat;
-    size: Size;
-    get writeState(): unknown | undefined;
-    set writeState(value: unknown);
+    BufferRequirement: Size;
+    Format: DataFormat;
+    Size: Size;
+    get WriteState(): unknown | undefined;
+    set WriteState(value: unknown);
 }
 
 
@@ -206,7 +206,7 @@ export const ValueMetadata: {
 export type ValueMetadata = ValueMetadata$instance;
 
 export interface DbTypeResolverFactory$instance {
-    createDbTypeResolver(databaseInfo: NpgsqlDatabaseInfo): IDbTypeResolver;
+    CreateDbTypeResolver(databaseInfo: NpgsqlDatabaseInfo): IDbTypeResolver;
 }
 
 
@@ -217,7 +217,7 @@ export const DbTypeResolverFactory: {
 export type DbTypeResolverFactory = DbTypeResolverFactory$instance;
 
 export interface DynamicTypeInfoResolver$instance {
-    getTypeInfo(type: Type, dataTypeName: Nullable<DataTypeName>, options: PgSerializerOptions): PgTypeInfo | undefined;
+    GetTypeInfo(type: Type, dataTypeName: Nullable<DataTypeName>, options: PgSerializerOptions): PgTypeInfo | undefined;
 }
 
 
@@ -235,11 +235,11 @@ export type DynamicTypeInfoResolver = DynamicTypeInfoResolver$instance & __Dynam
 
 
 export interface NpgsqlConnector$instance {
-    readonly databaseInfo: NpgsqlDatabaseInfo;
-    readonly settings: NpgsqlConnectionStringBuilder;
-    readonly textEncoding: Encoding;
-    createBatch(): NpgsqlBatch;
-    createCommand(cmdText?: string): NpgsqlCommand;
+    readonly DatabaseInfo: NpgsqlDatabaseInfo;
+    readonly Settings: NpgsqlConnectionStringBuilder;
+    readonly TextEncoding: Encoding;
+    CreateBatch(): NpgsqlBatch;
+    CreateCommand(cmdText?: string): NpgsqlCommand;
 }
 
 
@@ -251,42 +251,42 @@ export const NpgsqlConnector: {
 export type NpgsqlConnector = NpgsqlConnector$instance;
 
 export interface NpgsqlDatabaseInfo$instance {
-    readonly hasIntegerDateTimes: boolean;
-    readonly host: string;
-    readonly name: string;
-    readonly port: int;
-    readonly serverVersion: string;
-    readonly supportsAdvisoryLocks: boolean;
-    readonly supportsCloseAll: boolean;
-    readonly supportsDiscard: boolean;
-    readonly supportsDiscardSequences: boolean;
-    readonly supportsDiscardTemp: boolean;
-    readonly supportsEnumTypes: boolean;
-    readonly supportsMultirangeTypes: boolean;
-    readonly supportsRangeTypes: boolean;
-    readonly supportsTransactions: boolean;
-    readonly supportsUnlisten: boolean;
-    readonly version: Version;
-    getPostgresType(oid: uint): PostgresType;
-    getPostgresType(pgName: string): PostgresType;
-    tryGetPostgresTypeByName(pgName: string, pgType: PostgresType): boolean;
+    readonly HasIntegerDateTimes: boolean;
+    readonly Host: string;
+    readonly Name: string;
+    readonly Port: int;
+    readonly ServerVersion: string;
+    readonly SupportsAdvisoryLocks: boolean;
+    readonly SupportsCloseAll: boolean;
+    readonly SupportsDiscard: boolean;
+    readonly SupportsDiscardSequences: boolean;
+    readonly SupportsDiscardTemp: boolean;
+    readonly SupportsEnumTypes: boolean;
+    readonly SupportsMultirangeTypes: boolean;
+    readonly SupportsRangeTypes: boolean;
+    readonly SupportsTransactions: boolean;
+    readonly SupportsUnlisten: boolean;
+    readonly Version: Version;
+    GetPostgresType(oid: uint): PostgresType;
+    GetPostgresType(pgName: string): PostgresType;
+    TryGetPostgresTypeByName(pgName: string, pgType: PostgresType): boolean;
 }
 
 
 export const NpgsqlDatabaseInfo: {
-    registerFactory(factory: INpgsqlDatabaseInfoFactory): void;
+    RegisterFactory(factory: INpgsqlDatabaseInfoFactory): void;
 };
 
 
 export type NpgsqlDatabaseInfo = NpgsqlDatabaseInfo$instance;
 
 export interface PgBufferedConverter_1$instance<T> extends PgConverter_1<T> {
-    getSize(context: SizeContext, value: T, writeState: unknown): Size;
-    read(reader: PgReader): T;
-    readAsync(reader: PgReader, cancellationToken?: CancellationToken): ValueTask<T>;
-    readAsync(reader: PgReader, cancellationToken?: CancellationToken): ValueTask<T>;
-    write(writer: PgWriter, value: T): void;
-    writeAsync(writer: PgWriter, value: T, cancellationToken?: CancellationToken): ValueTask;
+    GetSize(context: SizeContext, value: T, writeState: unknown): Size;
+    Read(reader: PgReader): T;
+    ReadAsync(reader: PgReader, cancellationToken?: CancellationToken): ValueTask<T>;
+    ReadAsync(reader: PgReader, cancellationToken?: CancellationToken): ValueTask<T>;
+    Write(writer: PgWriter, value: T): void;
+    WriteAsync(writer: PgWriter, value: T, cancellationToken?: CancellationToken): ValueTask;
 }
 
 
@@ -297,8 +297,8 @@ export const PgBufferedConverter_1: {
 export type PgBufferedConverter_1<T> = PgBufferedConverter_1$instance<T>;
 
 export interface PgConverter$instance {
-    readonly isDbNullable: boolean;
-    canConvert(format: DataFormat, bufferRequirements: BufferRequirements): boolean;
+    readonly IsDbNullable: boolean;
+    CanConvert(format: DataFormat, bufferRequirements: BufferRequirements): boolean;
 }
 
 
@@ -309,12 +309,12 @@ export const PgConverter: {
 export type PgConverter = PgConverter$instance;
 
 export interface PgConverter_1$instance<T> extends PgConverter {
-    getSize(context: SizeContext, value: T, writeState: unknown): Size;
-    isDbNull(value: T, writeState: unknown): boolean;
-    read(reader: PgReader): T;
-    readAsync(reader: PgReader, cancellationToken?: CancellationToken): ValueTask<T>;
-    write(writer: PgWriter, value: T): void;
-    writeAsync(writer: PgWriter, value: T, cancellationToken?: CancellationToken): ValueTask;
+    GetSize(context: SizeContext, value: T, writeState: unknown): Size;
+    IsDbNull(value: T, writeState: unknown): boolean;
+    Read(reader: PgReader): T;
+    ReadAsync(reader: PgReader, cancellationToken?: CancellationToken): ValueTask<T>;
+    Write(writer: PgWriter, value: T): void;
+    WriteAsync(writer: PgWriter, value: T, cancellationToken?: CancellationToken): ValueTask;
 }
 
 
@@ -325,8 +325,8 @@ export const PgConverter_1: {
 export type PgConverter_1<T> = PgConverter_1$instance<T>;
 
 export interface PgConverterResolver$instance {
-    get(field: Field): PgConverterResolution;
-    getDefault(pgTypeId: Nullable<PgTypeId>): PgConverterResolution;
+    Get(field: Field): PgConverterResolution;
+    GetDefault(pgTypeId: Nullable<PgTypeId>): PgConverterResolution;
 }
 
 
@@ -337,8 +337,8 @@ export const PgConverterResolver: {
 export type PgConverterResolver = PgConverterResolver$instance;
 
 export interface PgConverterResolver_1$instance<T> extends PgConverterResolver {
-    get(value: T, expectedPgTypeId: Nullable<PgTypeId>): Nullable<PgConverterResolution>;
-    get(field: Field): PgConverterResolution;
+    Get(value: T, expectedPgTypeId: Nullable<PgTypeId>): Nullable<PgConverterResolution>;
+    Get(field: Field): PgConverterResolution;
 }
 
 
@@ -349,41 +349,41 @@ export const PgConverterResolver_1: {
 export type PgConverterResolver_1<T> = PgConverterResolver_1$instance<T>;
 
 export interface PgReader$instance {
-    readonly current: ValueMetadata;
-    readonly currentRemaining: int;
-    readonly isResumed: boolean;
-    beginNestedRead(size: int, bufferRequirement: Size): NestedReadScope;
-    beginNestedReadAsync(size: int, bufferRequirement: Size, cancellationToken?: CancellationToken): ValueTask<NestedReadScope>;
-    buffer(bufferRequirement: Size): void;
-    buffer(byteCount: int): void;
-    bufferAsync(bufferRequirement: Size, cancellationToken: CancellationToken): ValueTask;
-    bufferAsync(byteCount: int, cancellationToken: CancellationToken): ValueTask;
-    consume(count?: Nullable<System_Internal.Int32>): void;
-    consumeAsync(count?: Nullable<System_Internal.Int32>, cancellationToken?: CancellationToken): ValueTask;
-    getStream(length?: Nullable<System_Internal.Int32>): Stream;
-    getTextReader(encoding: Encoding): TextReader;
-    getTextReaderAsync(encoding: Encoding, cancellationToken: CancellationToken): ValueTask<TextReader>;
-    read(destination: Span<System_Internal.Byte>): void;
-    readByte(): byte;
-    readBytes(buffer: Span<System_Internal.Byte>): void;
-    readBytes(count: int): ReadOnlySequence<System_Internal.Byte>;
-    readBytesAsync(buffer: Memory<System_Internal.Byte>, cancellationToken?: CancellationToken): ValueTask;
-    readBytesAsync(count: int, cancellationToken?: CancellationToken): ValueTask<ReadOnlySequence<System_Internal.Byte>>;
-    readDouble(): double;
-    readFloat(): float;
-    readInt16(): short;
-    readInt32(): int;
-    readInt64(): long;
-    readNullTerminatedString(encoding: Encoding): string;
-    readNullTerminatedStringAsync(encoding: Encoding, cancellationToken?: CancellationToken): ValueTask<System_Internal.String>;
-    readUInt16(): ushort;
-    readUInt32(): uint;
-    readUInt64(): ulong;
-    rewind(count: int): void;
-    shouldBuffer(bufferRequirement: Size): boolean;
-    shouldBuffer(byteCount: int): boolean;
-    tryReadBytes(count: int, bytes: ReadOnlySpan<System_Internal.Byte>): boolean;
-    tryReadBytes(count: int, bytes: ReadOnlyMemory<System_Internal.Byte>): boolean;
+    readonly Current: ValueMetadata;
+    readonly CurrentRemaining: int;
+    readonly IsResumed: boolean;
+    BeginNestedRead(size: int, bufferRequirement: Size): NestedReadScope;
+    BeginNestedReadAsync(size: int, bufferRequirement: Size, cancellationToken?: CancellationToken): ValueTask<NestedReadScope>;
+    Buffer(bufferRequirement: Size): void;
+    Buffer(byteCount: int): void;
+    BufferAsync(bufferRequirement: Size, cancellationToken: CancellationToken): ValueTask;
+    BufferAsync(byteCount: int, cancellationToken: CancellationToken): ValueTask;
+    Consume(count?: Nullable<System_Internal.Int32>): void;
+    ConsumeAsync(count?: Nullable<System_Internal.Int32>, cancellationToken?: CancellationToken): ValueTask;
+    GetStream(length?: Nullable<System_Internal.Int32>): Stream;
+    GetTextReader(encoding: Encoding): TextReader;
+    GetTextReaderAsync(encoding: Encoding, cancellationToken: CancellationToken): ValueTask<TextReader>;
+    Read(destination: Span<System_Internal.Byte>): void;
+    ReadByte(): byte;
+    ReadBytes(buffer: Span<System_Internal.Byte>): void;
+    ReadBytes(count: int): ReadOnlySequence<System_Internal.Byte>;
+    ReadBytesAsync(buffer: Memory<System_Internal.Byte>, cancellationToken?: CancellationToken): ValueTask;
+    ReadBytesAsync(count: int, cancellationToken?: CancellationToken): ValueTask<ReadOnlySequence<System_Internal.Byte>>;
+    ReadDouble(): double;
+    ReadFloat(): float;
+    ReadInt16(): short;
+    ReadInt32(): int;
+    ReadInt64(): long;
+    ReadNullTerminatedString(encoding: Encoding): string;
+    ReadNullTerminatedStringAsync(encoding: Encoding, cancellationToken?: CancellationToken): ValueTask<System_Internal.String>;
+    ReadUInt16(): ushort;
+    ReadUInt32(): uint;
+    ReadUInt64(): ulong;
+    Rewind(count: int): void;
+    ShouldBuffer(bufferRequirement: Size): boolean;
+    ShouldBuffer(byteCount: int): boolean;
+    TryReadBytes(count: int, bytes: ReadOnlySpan<System_Internal.Byte>): boolean;
+    TryReadBytes(count: int, bytes: ReadOnlyMemory<System_Internal.Byte>): boolean;
 }
 
 
@@ -395,12 +395,12 @@ export const PgReader: {
 export type PgReader = PgReader$instance;
 
 export interface PgResolverTypeInfo$instance extends PgTypeInfo {
-    getConverterResolver(): PgConverterResolver;
-    getDefaultResolution(expectedPgTypeId: Nullable<PgTypeId>): PgConverterResolution;
-    getResolution<T>(value: T, expectedPgTypeId: Nullable<PgTypeId>): Nullable<PgConverterResolution>;
-    getResolution(field: Field): PgConverterResolution;
-    getResolution<T>(value: T): PgConverterResolution;
-    getResolutionAsObject(value: unknown, expectedPgTypeId: Nullable<PgTypeId>): Nullable<PgConverterResolution>;
+    GetConverterResolver(): PgConverterResolver;
+    GetDefaultResolution(expectedPgTypeId: Nullable<PgTypeId>): PgConverterResolution;
+    GetResolution<T>(value: T, expectedPgTypeId: Nullable<PgTypeId>): Nullable<PgConverterResolution>;
+    GetResolution(field: Field): PgConverterResolution;
+    GetResolution<T>(value: T): PgConverterResolution;
+    GetResolutionAsObject(value: unknown, expectedPgTypeId: Nullable<PgTypeId>): Nullable<PgConverterResolution>;
 }
 
 
@@ -412,36 +412,36 @@ export const PgResolverTypeInfo: {
 export type PgResolverTypeInfo = PgResolverTypeInfo$instance;
 
 export interface PgSerializerOptions$instance {
-    arrayNullabilityMode: ArrayNullabilityMode;
-    defaultNameTranslator: INpgsqlNameTranslator;
-    enableDateTimeInfinityConversions: boolean;
-    textEncoding: Encoding;
-    readonly timeZone: string;
-    readonly typeInfoResolver: IPgTypeInfoResolver;
-    getArrayElementTypeId(arrayTypeId: PgTypeId): PgTypeId;
-    getArrayTypeId(elementTypeId: PgTypeId): PgTypeId;
-    getDataTypeName(pgTypeId: PgTypeId): DataTypeName;
-    getDefaultTypeInfo(type: Type): PgTypeInfo | undefined;
-    getDefaultTypeInfo(pgTypeId: PgTypeId): PgTypeInfo | undefined;
-    getMultirangeElementTypeId(multirangeTypeId: PgTypeId): PgTypeId;
-    getMultirangeTypeId(rangeTypeId: PgTypeId): PgTypeId;
-    getRangeSubtypeTypeId(rangeTypeId: PgTypeId): PgTypeId;
-    getRangeTypeId(subtypeTypeId: PgTypeId): PgTypeId;
-    getTypeInfo(type: Type, pgTypeId: PgTypeId): PgTypeInfo | undefined;
-    tryGetDataTypeName(pgTypeId: PgTypeId, dataTypeName: DataTypeName): boolean;
+    ArrayNullabilityMode: ArrayNullabilityMode;
+    DefaultNameTranslator: INpgsqlNameTranslator;
+    EnableDateTimeInfinityConversions: boolean;
+    TextEncoding: Encoding;
+    readonly TimeZone: string;
+    readonly TypeInfoResolver: IPgTypeInfoResolver;
+    GetArrayElementTypeId(arrayTypeId: PgTypeId): PgTypeId;
+    GetArrayTypeId(elementTypeId: PgTypeId): PgTypeId;
+    GetDataTypeName(pgTypeId: PgTypeId): DataTypeName;
+    GetDefaultTypeInfo(type: Type): PgTypeInfo | undefined;
+    GetDefaultTypeInfo(pgTypeId: PgTypeId): PgTypeInfo | undefined;
+    GetMultirangeElementTypeId(multirangeTypeId: PgTypeId): PgTypeId;
+    GetMultirangeTypeId(rangeTypeId: PgTypeId): PgTypeId;
+    GetRangeSubtypeTypeId(rangeTypeId: PgTypeId): PgTypeId;
+    GetRangeTypeId(subtypeTypeId: PgTypeId): PgTypeId;
+    GetTypeInfo(type: Type, pgTypeId: PgTypeId): PgTypeInfo | undefined;
+    TryGetDataTypeName(pgTypeId: PgTypeId, dataTypeName: DataTypeName): boolean;
 }
 
 
 export const PgSerializerOptions: {
     new(): PgSerializerOptions;
-    isWellKnownTextType(type: Type): boolean;
+    IsWellKnownTextType(type: Type): boolean;
 };
 
 
 export type PgSerializerOptions = PgSerializerOptions$instance;
 
 export interface PgStreamingConverter_1$instance<T> extends PgConverter_1<T> {
-    canConvert(format: DataFormat, bufferRequirements: BufferRequirements): boolean;
+    CanConvert(format: DataFormat, bufferRequirements: BufferRequirements): boolean;
 }
 
 
@@ -452,15 +452,15 @@ export const PgStreamingConverter_1: {
 export type PgStreamingConverter_1<T> = PgStreamingConverter_1$instance<T>;
 
 export interface PgTypeInfo$instance {
-    readonly options: PgSerializerOptions;
-    readonly pgTypeId: Nullable<PgTypeId>;
-    preferredFormat: Nullable<DataFormat>;
-    supportsReading: boolean;
-    supportsWriting: boolean;
-    readonly type: Type;
-    getBufferRequirements(converter: PgConverter, format: DataFormat): Nullable<BufferRequirements>;
-    getObjectResolution(value: unknown): PgConverterResolution;
-    getResolution<T>(value: T): PgConverterResolution;
+    readonly Options: PgSerializerOptions;
+    readonly PgTypeId: Nullable<PgTypeId>;
+    PreferredFormat: Nullable<DataFormat>;
+    SupportsReading: boolean;
+    SupportsWriting: boolean;
+    readonly Type: Type;
+    GetBufferRequirements(converter: PgConverter, format: DataFormat): Nullable<BufferRequirements>;
+    GetObjectResolution(value: unknown): PgConverterResolution;
+    GetResolution<T>(value: T): PgConverterResolution;
 }
 
 
@@ -472,12 +472,12 @@ export const PgTypeInfo: {
 export type PgTypeInfo = PgTypeInfo$instance;
 
 export interface PgTypeInfoResolverFactory$instance {
-    createArrayResolver(): IPgTypeInfoResolver | undefined;
-    createMultirangeArrayResolver(): IPgTypeInfoResolver | undefined;
-    createMultirangeResolver(): IPgTypeInfoResolver | undefined;
-    createRangeArrayResolver(): IPgTypeInfoResolver | undefined;
-    createRangeResolver(): IPgTypeInfoResolver | undefined;
-    createResolver(): IPgTypeInfoResolver;
+    CreateArrayResolver(): IPgTypeInfoResolver | undefined;
+    CreateMultirangeArrayResolver(): IPgTypeInfoResolver | undefined;
+    CreateMultirangeResolver(): IPgTypeInfoResolver | undefined;
+    CreateRangeArrayResolver(): IPgTypeInfoResolver | undefined;
+    CreateRangeResolver(): IPgTypeInfoResolver | undefined;
+    CreateResolver(): IPgTypeInfoResolver;
 }
 
 
@@ -488,28 +488,28 @@ export const PgTypeInfoResolverFactory: {
 export type PgTypeInfoResolverFactory = PgTypeInfoResolverFactory$instance;
 
 export interface PgWriter$instance {
-    readonly current: ValueMetadata;
-    beginNestedWrite(bufferRequirement: Size, byteCount: int, state: unknown): NestedWriteScope;
-    beginNestedWriteAsync(bufferRequirement: Size, byteCount: int, state: unknown, cancellationToken?: CancellationToken): ValueTask<NestedWriteScope>;
-    flush(timeout?: TimeSpan): void;
-    flushAsync(cancellationToken?: CancellationToken): ValueTask;
-    getStream(allowMixedIO?: boolean): Stream;
-    shouldFlush(bufferRequirement: Size): boolean;
-    shouldFlush(byteCount: int): boolean;
-    writeAsOid(pgTypeId: PgTypeId): void;
-    writeByte(value: byte): void;
-    writeBytes(buffer: ReadOnlySpan<System_Internal.Byte>): void;
-    writeBytesAsync(buffer: ReadOnlyMemory<System_Internal.Byte>, cancellationToken?: CancellationToken): ValueTask;
-    writeChars(data: ReadOnlySpan<System_Internal.Char>, encoding: Encoding): void;
-    writeCharsAsync(data: ReadOnlyMemory<System_Internal.Char>, encoding: Encoding, cancellationToken?: CancellationToken): ValueTask;
-    writeDouble(value: double): void;
-    writeFloat(value: float): void;
-    writeInt16(value: short): void;
-    writeInt32(value: int): void;
-    writeInt64(value: long): void;
-    writeUInt16(value: ushort): void;
-    writeUInt32(value: uint): void;
-    writeUInt64(value: ulong): void;
+    readonly Current: ValueMetadata;
+    BeginNestedWrite(bufferRequirement: Size, byteCount: int, state: unknown): NestedWriteScope;
+    BeginNestedWriteAsync(bufferRequirement: Size, byteCount: int, state: unknown, cancellationToken?: CancellationToken): ValueTask<NestedWriteScope>;
+    Flush(timeout?: TimeSpan): void;
+    FlushAsync(cancellationToken?: CancellationToken): ValueTask;
+    GetStream(allowMixedIO?: boolean): Stream;
+    ShouldFlush(bufferRequirement: Size): boolean;
+    ShouldFlush(byteCount: int): boolean;
+    WriteAsOid(pgTypeId: PgTypeId): void;
+    WriteByte(value: byte): void;
+    WriteBytes(buffer: ReadOnlySpan<System_Internal.Byte>): void;
+    WriteBytesAsync(buffer: ReadOnlyMemory<System_Internal.Byte>, cancellationToken?: CancellationToken): ValueTask;
+    WriteChars(data: ReadOnlySpan<System_Internal.Char>, encoding: Encoding): void;
+    WriteCharsAsync(data: ReadOnlyMemory<System_Internal.Char>, encoding: Encoding, cancellationToken?: CancellationToken): ValueTask;
+    WriteDouble(value: double): void;
+    WriteFloat(value: float): void;
+    WriteInt16(value: short): void;
+    WriteInt32(value: int): void;
+    WriteInt64(value: long): void;
+    WriteUInt16(value: ushort): void;
+    WriteUInt32(value: uint): void;
+    WriteUInt64(value: ulong): void;
 }
 
 
@@ -521,40 +521,40 @@ export const PgWriter: {
 export type PgWriter = PgWriter$instance;
 
 export interface TypeInfoMappingCollection$instance {
-    readonly items: IReadOnlyList<TypeInfoMapping>;
-    add(mapping: TypeInfoMapping): void;
-    addArrayType<TElement>(elementDataTypeName: string): void;
-    addArrayType<TElement>(elementDataTypeName: string, suppressObjectMapping: boolean): void;
-    addArrayType<TElement>(elementMapping: TypeInfoMapping): void;
-    addArrayType<TElement>(elementMapping: TypeInfoMapping, suppressObjectMapping: boolean): void;
-    addPolymorphicResolverArrayType(elementDataTypeName: string, elementToArrayConverterFactory: Func<PgSerializerOptions, Func<PgConverterResolution, PgConverter>>): void;
-    addPolymorphicResolverArrayType(elementMapping: TypeInfoMapping, elementToArrayConverterFactory: Func<PgSerializerOptions, Func<PgConverterResolution, PgConverter>>): void;
-    addRange(collection: TypeInfoMappingCollection): void;
-    addResolverArrayType<TElement>(elementDataTypeName: string): void;
-    addResolverArrayType<TElement>(elementDataTypeName: string, suppressObjectMapping: boolean): void;
-    addResolverArrayType<TElement>(elementMapping: TypeInfoMapping): void;
-    addResolverArrayType<TElement>(elementMapping: TypeInfoMapping, suppressObjectMapping: boolean): void;
-    addResolverStructArrayType<TElement extends unknown>(elementDataTypeName: string): void;
-    addResolverStructArrayType<TElement extends unknown>(elementDataTypeName: string, suppressObjectMapping: boolean): void;
-    addResolverStructArrayType<TElement extends unknown>(elementMapping: TypeInfoMapping, nullableElementMapping: TypeInfoMapping): void;
-    addResolverStructArrayType<TElement extends unknown>(elementMapping: TypeInfoMapping, nullableElementMapping: TypeInfoMapping, suppressObjectMapping: boolean): void;
-    addResolverStructType<T extends unknown>(dataTypeName: string, createInfo: TypeInfoFactory, isDefault?: boolean): void;
-    addResolverStructType<T extends unknown>(dataTypeName: string, createInfo: TypeInfoFactory, matchRequirement: MatchRequirement): void;
-    addResolverStructType<T extends unknown>(dataTypeName: string, createInfo: TypeInfoFactory, configure: Func<TypeInfoMapping, TypeInfoMapping>): void;
-    addResolverType<T>(dataTypeName: string, createInfo: TypeInfoFactory, isDefault?: boolean): void;
-    addResolverType<T>(dataTypeName: string, createInfo: TypeInfoFactory, matchRequirement: MatchRequirement): void;
-    addResolverType<T>(dataTypeName: string, createInfo: TypeInfoFactory, configure: Func<TypeInfoMapping, TypeInfoMapping>): void;
-    addStructArrayType<TElement extends unknown>(elementDataTypeName: string): void;
-    addStructArrayType<TElement extends unknown>(elementDataTypeName: string, suppressObjectMapping: boolean): void;
-    addStructArrayType<TElement extends unknown>(elementMapping: TypeInfoMapping, nullableElementMapping: TypeInfoMapping): void;
-    addStructArrayType<TElement extends unknown>(elementMapping: TypeInfoMapping, nullableElementMapping: TypeInfoMapping, suppressObjectMapping: boolean): void;
-    addStructType<T extends unknown>(dataTypeName: string, createInfo: TypeInfoFactory, isDefault?: boolean): void;
-    addStructType<T extends unknown>(dataTypeName: string, createInfo: TypeInfoFactory, matchRequirement: MatchRequirement): void;
-    addStructType<T extends unknown>(dataTypeName: string, createInfo: TypeInfoFactory, configure: Func<TypeInfoMapping, TypeInfoMapping>): void;
-    addType<T>(dataTypeName: string, createInfo: TypeInfoFactory, isDefault?: boolean): void;
-    addType<T>(dataTypeName: string, createInfo: TypeInfoFactory, matchRequirement: MatchRequirement): void;
-    addType<T>(dataTypeName: string, createInfo: TypeInfoFactory, configure: Func<TypeInfoMapping, TypeInfoMapping>): void;
-    find(type: Type, dataTypeName: Nullable<DataTypeName>, options: PgSerializerOptions): PgTypeInfo | undefined;
+    readonly Items: IReadOnlyList<TypeInfoMapping>;
+    Add(mapping: TypeInfoMapping): void;
+    AddArrayType<TElement>(elementDataTypeName: string): void;
+    AddArrayType<TElement>(elementDataTypeName: string, suppressObjectMapping: boolean): void;
+    AddArrayType<TElement>(elementMapping: TypeInfoMapping): void;
+    AddArrayType<TElement>(elementMapping: TypeInfoMapping, suppressObjectMapping: boolean): void;
+    AddPolymorphicResolverArrayType(elementDataTypeName: string, elementToArrayConverterFactory: Func<PgSerializerOptions, Func<PgConverterResolution, PgConverter>>): void;
+    AddPolymorphicResolverArrayType(elementMapping: TypeInfoMapping, elementToArrayConverterFactory: Func<PgSerializerOptions, Func<PgConverterResolution, PgConverter>>): void;
+    AddRange(collection: TypeInfoMappingCollection): void;
+    AddResolverArrayType<TElement>(elementDataTypeName: string): void;
+    AddResolverArrayType<TElement>(elementDataTypeName: string, suppressObjectMapping: boolean): void;
+    AddResolverArrayType<TElement>(elementMapping: TypeInfoMapping): void;
+    AddResolverArrayType<TElement>(elementMapping: TypeInfoMapping, suppressObjectMapping: boolean): void;
+    AddResolverStructArrayType<TElement extends unknown>(elementDataTypeName: string): void;
+    AddResolverStructArrayType<TElement extends unknown>(elementDataTypeName: string, suppressObjectMapping: boolean): void;
+    AddResolverStructArrayType<TElement extends unknown>(elementMapping: TypeInfoMapping, nullableElementMapping: TypeInfoMapping): void;
+    AddResolverStructArrayType<TElement extends unknown>(elementMapping: TypeInfoMapping, nullableElementMapping: TypeInfoMapping, suppressObjectMapping: boolean): void;
+    AddResolverStructType<T extends unknown>(dataTypeName: string, createInfo: TypeInfoFactory, isDefault?: boolean): void;
+    AddResolverStructType<T extends unknown>(dataTypeName: string, createInfo: TypeInfoFactory, matchRequirement: MatchRequirement): void;
+    AddResolverStructType<T extends unknown>(dataTypeName: string, createInfo: TypeInfoFactory, configure: Func<TypeInfoMapping, TypeInfoMapping>): void;
+    AddResolverType<T>(dataTypeName: string, createInfo: TypeInfoFactory, isDefault?: boolean): void;
+    AddResolverType<T>(dataTypeName: string, createInfo: TypeInfoFactory, matchRequirement: MatchRequirement): void;
+    AddResolverType<T>(dataTypeName: string, createInfo: TypeInfoFactory, configure: Func<TypeInfoMapping, TypeInfoMapping>): void;
+    AddStructArrayType<TElement extends unknown>(elementDataTypeName: string): void;
+    AddStructArrayType<TElement extends unknown>(elementDataTypeName: string, suppressObjectMapping: boolean): void;
+    AddStructArrayType<TElement extends unknown>(elementMapping: TypeInfoMapping, nullableElementMapping: TypeInfoMapping): void;
+    AddStructArrayType<TElement extends unknown>(elementMapping: TypeInfoMapping, nullableElementMapping: TypeInfoMapping, suppressObjectMapping: boolean): void;
+    AddStructType<T extends unknown>(dataTypeName: string, createInfo: TypeInfoFactory, isDefault?: boolean): void;
+    AddStructType<T extends unknown>(dataTypeName: string, createInfo: TypeInfoFactory, matchRequirement: MatchRequirement): void;
+    AddStructType<T extends unknown>(dataTypeName: string, createInfo: TypeInfoFactory, configure: Func<TypeInfoMapping, TypeInfoMapping>): void;
+    AddType<T>(dataTypeName: string, createInfo: TypeInfoFactory, isDefault?: boolean): void;
+    AddType<T>(dataTypeName: string, createInfo: TypeInfoFactory, matchRequirement: MatchRequirement): void;
+    AddType<T>(dataTypeName: string, createInfo: TypeInfoFactory, configure: Func<TypeInfoMapping, TypeInfoMapping>): void;
+    Find(type: Type, dataTypeName: Nullable<DataTypeName>, options: PgSerializerOptions): PgTypeInfo | undefined;
 }
 
 
@@ -563,27 +563,27 @@ export const TypeInfoMappingCollection: {
     new(): TypeInfoMappingCollection;
     new(baseCollection: TypeInfoMappingCollection): TypeInfoMappingCollection;
     new(items: IEnumerable<TypeInfoMapping>): TypeInfoMappingCollection;
-    isArrayLikeType(type: Type, elementType: Type): boolean;
+    IsArrayLikeType(type: Type, elementType: Type): boolean;
 };
 
 
 export type TypeInfoMappingCollection = TypeInfoMappingCollection$instance;
 
 export abstract class PgConverterFactory$instance {
-    static createArrayMultirangeConverter<T>(rangeConverter: PgConverter_1<T>, options: PgSerializerOptions): PgConverter_1<T[]>;
-    static createListMultirangeConverter<T>(rangeConverter: PgConverter_1<T>, options: PgSerializerOptions): PgConverter_1<List<T>>;
-    static createPolymorphicArrayConverter<TBase>(arrayConverterFactory: Func<PgConverter_1<TBase>>, nullableArrayConverterFactory: Func<PgConverter_1<TBase>>, options: PgSerializerOptions): PgConverter_1<TBase>;
-    static createRangeConverter<T>(subTypeConverter: PgConverter_1<T>, options: PgSerializerOptions): PgConverter_1<NpgsqlRange_1<T>>;
+    static CreateArrayMultirangeConverter<T>(rangeConverter: PgConverter_1<T>, options: PgSerializerOptions): PgConverter_1<T[]>;
+    static CreateListMultirangeConverter<T>(rangeConverter: PgConverter_1<T>, options: PgSerializerOptions): PgConverter_1<List<T>>;
+    static CreatePolymorphicArrayConverter<TBase>(arrayConverterFactory: Func<PgConverter_1<TBase>>, nullableArrayConverterFactory: Func<PgConverter_1<TBase>>, options: PgSerializerOptions): PgConverter_1<TBase>;
+    static CreateRangeConverter<T>(subTypeConverter: PgConverter_1<T>, options: PgSerializerOptions): PgConverter_1<NpgsqlRange_1<T>>;
 }
 
 
 export type PgConverterFactory = PgConverterFactory$instance;
 
 export abstract class TypeInfoMappingHelpers$instance {
-    static createInfo(mapping: TypeInfoMapping, options: PgSerializerOptions, converter: PgConverter, preferredFormat?: Nullable<DataFormat>, supportsWriting?: boolean): PgTypeInfo;
-    static createInfo(mapping: TypeInfoMapping, options: PgSerializerOptions, converter: PgConverter): PgTypeInfo;
-    static createInfo(mapping: TypeInfoMapping, options: PgSerializerOptions, resolver: PgConverterResolver, includeDataTypeName: boolean, preferredFormat?: Nullable<DataFormat>, supportsWriting?: boolean): PgResolverTypeInfo;
-    static createInfo(mapping: TypeInfoMapping, options: PgSerializerOptions, resolver: PgConverterResolver, includeDataTypeName: boolean): PgResolverTypeInfo;
+    static CreateInfo(mapping: TypeInfoMapping, options: PgSerializerOptions, converter: PgConverter, preferredFormat?: Nullable<DataFormat>, supportsWriting?: boolean): PgTypeInfo;
+    static CreateInfo(mapping: TypeInfoMapping, options: PgSerializerOptions, converter: PgConverter): PgTypeInfo;
+    static CreateInfo(mapping: TypeInfoMapping, options: PgSerializerOptions, resolver: PgConverterResolver, includeDataTypeName: boolean, preferredFormat?: Nullable<DataFormat>, supportsWriting?: boolean): PgResolverTypeInfo;
+    static CreateInfo(mapping: TypeInfoMapping, options: PgSerializerOptions, resolver: PgConverterResolver, includeDataTypeName: boolean): PgResolverTypeInfo;
 }
 
 

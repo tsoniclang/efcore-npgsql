@@ -22,97 +22,97 @@ import type { IPAddress } from "@tsonic/dotnet/System.Net.js";
 import type { StringBuilder } from "@tsonic/dotnet/System.Text.js";
 
 export enum NpgsqlDbType {
-    bigint = 1,
-    double = 8,
-    integer = 9,
-    numeric = 13,
-    real = 17,
-    smallint = 18,
-    money = 12,
-    boolean = 2,
-    box = 3,
-    circle = 5,
-    line = 10,
-    lSeg = 11,
-    path = 14,
-    point = 15,
-    polygon = 16,
-    cube = 63,
-    char = 6,
-    text = 19,
-    varchar = 22,
-    name = 32,
-    citext = 51,
-    internalChar = 38,
-    bytea = 4,
-    date = 7,
-    time = 20,
-    timestamp = 21,
-    timestampTz = 26,
-    interval = 30,
-    timeTz = 31,
-    abstime = 33,
-    inet = 24,
-    cidr = 44,
-    macAddr = 34,
-    macAddr8 = 54,
-    bit = 25,
-    varbit = 39,
-    tsVector = 45,
-    tsQuery = 46,
-    regconfig = 56,
-    uuid = 27,
-    xml = 28,
-    json = 35,
-    jsonb = 36,
-    jsonPath = 57,
-    hstore = 37,
-    refcursor = 23,
-    oidvector = 29,
-    int2Vector = 52,
-    oid = 41,
-    xid = 42,
-    xid8 = 64,
-    cid = 43,
-    regtype = 49,
-    tid = 53,
-    pgLsn = 59,
-    unknown = 40,
-    geometry = 50,
-    geography = 55,
-    lTree = 60,
-    lQuery = 61,
-    lTxtQuery = 62,
-    integerRange = 1073741833,
-    bigIntRange = 1073741825,
-    numericRange = 1073741837,
-    timestampRange = 1073741845,
-    timestampTzRange = 1073741850,
-    dateRange = 1073741831,
-    integerMultirange = 536870921,
-    bigIntMultirange = 536870913,
-    numericMultirange = 536870925,
-    timestampMultirange = 536870933,
-    timestampTzMultirange = 536870938,
-    dateMultirange = 536870919,
-    array = -2147483648,
-    range = 1073741824,
-    multirange = 536870912
+    Bigint = 1,
+    Double = 8,
+    Integer = 9,
+    Numeric = 13,
+    Real = 17,
+    Smallint = 18,
+    Money = 12,
+    Boolean = 2,
+    Box = 3,
+    Circle = 5,
+    Line = 10,
+    LSeg = 11,
+    Path = 14,
+    Point = 15,
+    Polygon = 16,
+    Cube = 63,
+    Char = 6,
+    Text = 19,
+    Varchar = 22,
+    Name = 32,
+    Citext = 51,
+    InternalChar = 38,
+    Bytea = 4,
+    Date = 7,
+    Time = 20,
+    Timestamp = 21,
+    TimestampTz = 26,
+    Interval = 30,
+    TimeTz = 31,
+    Abstime = 33,
+    Inet = 24,
+    Cidr = 44,
+    MacAddr = 34,
+    MacAddr8 = 54,
+    Bit = 25,
+    Varbit = 39,
+    TsVector = 45,
+    TsQuery = 46,
+    Regconfig = 56,
+    Uuid = 27,
+    Xml = 28,
+    Json = 35,
+    Jsonb = 36,
+    JsonPath = 57,
+    Hstore = 37,
+    Refcursor = 23,
+    Oidvector = 29,
+    Int2Vector = 52,
+    Oid = 41,
+    Xid = 42,
+    Xid8 = 64,
+    Cid = 43,
+    Regtype = 49,
+    Tid = 53,
+    PgLsn = 59,
+    Unknown = 40,
+    Geometry = 50,
+    Geography = 55,
+    LTree = 60,
+    LQuery = 61,
+    LTxtQuery = 62,
+    IntegerRange = 1073741833,
+    BigIntRange = 1073741825,
+    NumericRange = 1073741837,
+    TimestampRange = 1073741845,
+    TimestampTzRange = 1073741850,
+    DateRange = 1073741831,
+    IntegerMultirange = 536870921,
+    BigIntMultirange = 536870913,
+    NumericMultirange = 536870925,
+    TimestampMultirange = 536870933,
+    TimestampTzMultirange = 536870938,
+    DateMultirange = 536870919,
+    Array = -2147483648,
+    Range = 1073741824,
+    Multirange = 536870912
 }
 
 
 export enum NpgsqlTsQuery_NodeKind {
-    empty = -1,
-    lexeme = 0,
-    not = 1,
-    and = 2,
-    or = 3,
-    phrase = 4
+    Empty = -1,
+    Lexeme = 0,
+    Not = 1,
+    And = 2,
+    Or = 3,
+    Phrase = 4
 }
 
 
 export enum NpgsqlTsQueryLexeme_Weight {
-    none = 0,
+    None = 0,
     D = 1,
     C = 2,
     B = 4,
@@ -129,22 +129,22 @@ export enum NpgsqlTsVector_Lexeme_Weight {
 
 
 export interface NpgsqlBox$instance {
-    readonly bottom: double;
-    readonly height: double;
-    readonly isEmpty: boolean;
-    readonly left: double;
-    lowerLeft: NpgsqlPoint;
-    readonly right: double;
-    readonly top: double;
-    upperRight: NpgsqlPoint;
-    readonly width: double;
-    deconstruct(lowerLeft: NpgsqlPoint, upperRight: NpgsqlPoint): void;
-    deconstruct(left: double, right: double, bottom: double, top: double): void;
-    deconstruct(left: double, right: double, bottom: double, top: double, width: double, height: double): void;
-    equals(other: NpgsqlBox): boolean;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
-    toString(): string;
+    readonly Bottom: double;
+    readonly Height: double;
+    readonly IsEmpty: boolean;
+    readonly Left: double;
+    LowerLeft: NpgsqlPoint;
+    readonly Right: double;
+    readonly Top: double;
+    UpperRight: NpgsqlPoint;
+    readonly Width: double;
+    Deconstruct(lowerLeft: NpgsqlPoint, upperRight: NpgsqlPoint): void;
+    Deconstruct(left: double, right: double, bottom: double, top: double): void;
+    Deconstruct(left: double, right: double, bottom: double, top: double, width: double, height: double): void;
+    Equals(other: NpgsqlBox): boolean;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
+    ToString(): string;
 }
 
 
@@ -157,13 +157,13 @@ export const NpgsqlBox: {
 export type NpgsqlBox = NpgsqlBox$instance;
 
 export interface NpgsqlCidr$instance {
-    readonly address: IPAddress;
-    readonly netmask: byte;
-    deconstruct(address: IPAddress, netmask: byte): void;
-    equals(obj: unknown): boolean;
-    equals(other: NpgsqlCidr): boolean;
-    getHashCode(): int;
-    toString(): string;
+    readonly Address: IPAddress;
+    readonly Netmask: byte;
+    Deconstruct(address: IPAddress, netmask: byte): void;
+    Equals(obj: unknown): boolean;
+    Equals(other: NpgsqlCidr): boolean;
+    GetHashCode(): int;
+    ToString(): string;
 }
 
 
@@ -176,16 +176,16 @@ export const NpgsqlCidr: {
 export type NpgsqlCidr = NpgsqlCidr$instance;
 
 export interface NpgsqlCircle$instance {
-    center: NpgsqlPoint;
-    radius: double;
+    Center: NpgsqlPoint;
+    Radius: double;
     X: double;
     Y: double;
-    deconstruct(x: double, y: double, radius: double): void;
-    deconstruct(center: NpgsqlPoint, radius: double): void;
-    equals(other: NpgsqlCircle): boolean;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
-    toString(): string;
+    Deconstruct(x: double, y: double, radius: double): void;
+    Deconstruct(center: NpgsqlPoint, radius: double): void;
+    Equals(other: NpgsqlCircle): boolean;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
+    ToString(): string;
 }
 
 
@@ -198,15 +198,15 @@ export const NpgsqlCircle: {
 export type NpgsqlCircle = NpgsqlCircle$instance;
 
 export interface NpgsqlCube$instance {
-    readonly dimensions: int;
-    readonly isPoint: boolean;
-    readonly lowerLeft: IReadOnlyList<System_Internal.Double>;
-    readonly upperRight: IReadOnlyList<System_Internal.Double>;
-    equals(other: NpgsqlCube): boolean;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
-    toString(): string;
-    toSubset(...indexes: int[]): NpgsqlCube;
+    readonly Dimensions: int;
+    readonly IsPoint: boolean;
+    readonly LowerLeft: IReadOnlyList<System_Internal.Double>;
+    readonly UpperRight: IReadOnlyList<System_Internal.Double>;
+    Equals(other: NpgsqlCube): boolean;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
+    ToString(): string;
+    ToSubset(...indexes: int[]): NpgsqlCube;
 }
 
 
@@ -223,13 +223,13 @@ export const NpgsqlCube: {
 export type NpgsqlCube = NpgsqlCube$instance;
 
 export interface NpgsqlInet$instance {
-    readonly address: IPAddress;
-    readonly netmask: byte;
-    deconstruct(address: IPAddress, netmask: byte): void;
-    equals(obj: unknown): boolean;
-    equals(other: NpgsqlInet): boolean;
-    getHashCode(): int;
-    toString(): string;
+    readonly Address: IPAddress;
+    readonly Netmask: byte;
+    Deconstruct(address: IPAddress, netmask: byte): void;
+    Equals(obj: unknown): boolean;
+    Equals(other: NpgsqlInet): boolean;
+    GetHashCode(): int;
+    ToString(): string;
 }
 
 
@@ -243,12 +243,12 @@ export const NpgsqlInet: {
 export type NpgsqlInet = NpgsqlInet$instance;
 
 export interface NpgsqlInterval$instance {
-    readonly days: int;
-    readonly months: int;
-    readonly time: long;
-    equals(other: NpgsqlInterval): boolean;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
+    readonly Days: int;
+    readonly Months: int;
+    readonly Time: long;
+    Equals(other: NpgsqlInterval): boolean;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
 }
 
 
@@ -263,11 +263,11 @@ export interface NpgsqlLine$instance {
     A: double;
     B: double;
     C: double;
-    deconstruct(a: double, b: double, c: double): void;
-    equals(other: NpgsqlLine): boolean;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
-    toString(): string;
+    Deconstruct(a: double, b: double, c: double): void;
+    Equals(other: NpgsqlLine): boolean;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
+    ToString(): string;
 }
 
 
@@ -279,36 +279,36 @@ export const NpgsqlLine: {
 export type NpgsqlLine = NpgsqlLine$instance;
 
 export interface NpgsqlLogSequenceNumber$instance {
-    compareTo(value: NpgsqlLogSequenceNumber): int;
-    equals(other: NpgsqlLogSequenceNumber): boolean;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
-    toString(): string;
+    CompareTo(value: NpgsqlLogSequenceNumber): int;
+    Equals(other: NpgsqlLogSequenceNumber): boolean;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
+    ToString(): string;
 }
 
 
 export const NpgsqlLogSequenceNumber: {
     new(value: ulong): NpgsqlLogSequenceNumber;
-    readonly invalid: NpgsqlLogSequenceNumber;
-    larger(value1: NpgsqlLogSequenceNumber, value2: NpgsqlLogSequenceNumber): NpgsqlLogSequenceNumber;
-    parse(s: ReadOnlySpan<System_Internal.Char>): NpgsqlLogSequenceNumber;
-    parse(s: string): NpgsqlLogSequenceNumber;
-    smaller(value1: NpgsqlLogSequenceNumber, value2: NpgsqlLogSequenceNumber): NpgsqlLogSequenceNumber;
-    tryParse(s: ReadOnlySpan<System_Internal.Char>, result: NpgsqlLogSequenceNumber): boolean;
-    tryParse(s: string, result: NpgsqlLogSequenceNumber): boolean;
+    readonly Invalid: NpgsqlLogSequenceNumber;
+    Larger(value1: NpgsqlLogSequenceNumber, value2: NpgsqlLogSequenceNumber): NpgsqlLogSequenceNumber;
+    Parse(s: ReadOnlySpan<System_Internal.Char>): NpgsqlLogSequenceNumber;
+    Parse(s: string): NpgsqlLogSequenceNumber;
+    Smaller(value1: NpgsqlLogSequenceNumber, value2: NpgsqlLogSequenceNumber): NpgsqlLogSequenceNumber;
+    TryParse(s: ReadOnlySpan<System_Internal.Char>, result: NpgsqlLogSequenceNumber): boolean;
+    TryParse(s: string, result: NpgsqlLogSequenceNumber): boolean;
 };
 
 
 export type NpgsqlLogSequenceNumber = NpgsqlLogSequenceNumber$instance;
 
 export interface NpgsqlLSeg$instance {
-    end: NpgsqlPoint;
-    start: NpgsqlPoint;
-    deconstruct(start: NpgsqlPoint, end: NpgsqlPoint): void;
-    equals(other: NpgsqlLSeg): boolean;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
-    toString(): string;
+    End: NpgsqlPoint;
+    Start: NpgsqlPoint;
+    Deconstruct(start: NpgsqlPoint, end: NpgsqlPoint): void;
+    Equals(other: NpgsqlLSeg): boolean;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
+    ToString(): string;
 }
 
 
@@ -321,24 +321,24 @@ export const NpgsqlLSeg: {
 export type NpgsqlLSeg = NpgsqlLSeg$instance;
 
 export interface NpgsqlPath$instance {
-    readonly capacity: int;
-    readonly count: int;
-    readonly isReadOnly: boolean;
-    item: NpgsqlPoint;
-    open: boolean;
-    add(item: NpgsqlPoint): void;
-    clear(): void;
-    contains(item: NpgsqlPoint): boolean;
-    copyTo(array: NpgsqlPoint[], arrayIndex: int): void;
-    equals(other: NpgsqlPath): boolean;
-    equals(obj: unknown): boolean;
-    getEnumerator(): IEnumerator<NpgsqlPoint>;
-    getHashCode(): int;
-    indexOf(item: NpgsqlPoint): int;
-    insert(index: int, item: NpgsqlPoint): void;
-    remove(item: NpgsqlPoint): boolean;
-    removeAt(index: int): void;
-    toString(): string;
+    readonly Capacity: int;
+    readonly Count: int;
+    readonly IsReadOnly: boolean;
+    Item: NpgsqlPoint;
+    Open: boolean;
+    Add(item: NpgsqlPoint): void;
+    Clear(): void;
+    Contains(item: NpgsqlPoint): boolean;
+    CopyTo(array: NpgsqlPoint[], arrayIndex: int): void;
+    Equals(other: NpgsqlPath): boolean;
+    Equals(obj: unknown): boolean;
+    GetEnumerator(): IEnumerator<NpgsqlPoint>;
+    GetHashCode(): int;
+    IndexOf(item: NpgsqlPoint): int;
+    Insert(index: int, item: NpgsqlPoint): void;
+    Remove(item: NpgsqlPoint): boolean;
+    RemoveAt(index: int): void;
+    ToString(): string;
 }
 
 
@@ -358,11 +358,11 @@ export type NpgsqlPath = NpgsqlPath$instance;
 export interface NpgsqlPoint$instance {
     X: double;
     Y: double;
-    deconstruct(x: double, y: double): void;
-    equals(other: NpgsqlPoint): boolean;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
-    toString(): string;
+    Deconstruct(x: double, y: double): void;
+    Equals(other: NpgsqlPoint): boolean;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
+    ToString(): string;
 }
 
 
@@ -374,23 +374,23 @@ export const NpgsqlPoint: {
 export type NpgsqlPoint = NpgsqlPoint$instance;
 
 export interface NpgsqlPolygon$instance {
-    readonly capacity: int;
-    readonly count: int;
-    readonly isReadOnly: boolean;
-    item: NpgsqlPoint;
-    add(item: NpgsqlPoint): void;
-    clear(): void;
-    contains(item: NpgsqlPoint): boolean;
-    copyTo(array: NpgsqlPoint[], arrayIndex: int): void;
-    equals(other: NpgsqlPolygon): boolean;
-    equals(obj: unknown): boolean;
-    getEnumerator(): IEnumerator<NpgsqlPoint>;
-    getHashCode(): int;
-    indexOf(item: NpgsqlPoint): int;
-    insert(index: int, item: NpgsqlPoint): void;
-    remove(item: NpgsqlPoint): boolean;
-    removeAt(index: int): void;
-    toString(): string;
+    readonly Capacity: int;
+    readonly Count: int;
+    readonly IsReadOnly: boolean;
+    Item: NpgsqlPoint;
+    Add(item: NpgsqlPoint): void;
+    Clear(): void;
+    Contains(item: NpgsqlPoint): boolean;
+    CopyTo(array: NpgsqlPoint[], arrayIndex: int): void;
+    Equals(other: NpgsqlPolygon): boolean;
+    Equals(obj: unknown): boolean;
+    GetEnumerator(): IEnumerator<NpgsqlPoint>;
+    GetHashCode(): int;
+    IndexOf(item: NpgsqlPoint): int;
+    Insert(index: int, item: NpgsqlPoint): void;
+    Remove(item: NpgsqlPoint): boolean;
+    RemoveAt(index: int): void;
+    ToString(): string;
 }
 
 
@@ -405,17 +405,17 @@ export const NpgsqlPolygon: {
 export type NpgsqlPolygon = NpgsqlPolygon$instance;
 
 export interface NpgsqlRange_1$instance<T> {
-    readonly isEmpty: boolean;
-    readonly lowerBound: T;
-    readonly lowerBoundInfinite: boolean;
-    readonly lowerBoundIsInclusive: boolean;
-    readonly upperBound: T;
-    readonly upperBoundInfinite: boolean;
-    readonly upperBoundIsInclusive: boolean;
-    equals(o: unknown): boolean;
-    equals(other: NpgsqlRange_1<T>): boolean;
-    getHashCode(): int;
-    toString(): string;
+    readonly IsEmpty: boolean;
+    readonly LowerBound: T;
+    readonly LowerBoundInfinite: boolean;
+    readonly LowerBoundIsInclusive: boolean;
+    readonly UpperBound: T;
+    readonly UpperBoundInfinite: boolean;
+    readonly UpperBoundIsInclusive: boolean;
+    Equals(o: unknown): boolean;
+    Equals(other: NpgsqlRange_1<T>): boolean;
+    GetHashCode(): int;
+    ToString(): string;
 }
 
 
@@ -423,21 +423,21 @@ export const NpgsqlRange_1: {
     new<T>(lowerBound: T, upperBound: T): NpgsqlRange_1<T>;
     new<T>(lowerBound: T, lowerBoundIsInclusive: boolean, upperBound: T, upperBoundIsInclusive: boolean): NpgsqlRange_1<T>;
     new<T>(lowerBound: T, lowerBoundIsInclusive: boolean, lowerBoundInfinite: boolean, upperBound: T, upperBoundIsInclusive: boolean, upperBoundInfinite: boolean): NpgsqlRange_1<T>;
-    readonly empty: unknown;
-    parse<T>(value: string): NpgsqlRange_1<T>;
+    readonly Empty: unknown;
+    Parse<T>(value: string): NpgsqlRange_1<T>;
 };
 
 
 export type NpgsqlRange_1<T> = NpgsqlRange_1$instance<T>;
 
 export interface NpgsqlTid$instance {
-    readonly blockNumber: uint;
-    readonly offsetNumber: ushort;
-    deconstruct(blockNumber: uint, offsetNumber: ushort): void;
-    equals(other: NpgsqlTid): boolean;
-    equals(o: unknown): boolean;
-    getHashCode(): int;
-    toString(): string;
+    readonly BlockNumber: uint;
+    readonly OffsetNumber: ushort;
+    Deconstruct(blockNumber: uint, offsetNumber: ushort): void;
+    Equals(other: NpgsqlTid): boolean;
+    Equals(o: unknown): boolean;
+    GetHashCode(): int;
+    ToString(): string;
 }
 
 
@@ -449,13 +449,13 @@ export const NpgsqlTid: {
 export type NpgsqlTid = NpgsqlTid$instance;
 
 export interface NpgsqlTsVector_Lexeme$instance {
-    readonly count: int;
-    readonly item: NpgsqlTsVector_Lexeme_WordEntryPos;
-    text: string;
-    equals(o: NpgsqlTsVector_Lexeme): boolean;
-    equals(o: unknown): boolean;
-    getHashCode(): int;
-    toString(): string;
+    readonly Count: int;
+    readonly Item: NpgsqlTsVector_Lexeme_WordEntryPos;
+    Text: string;
+    Equals(o: NpgsqlTsVector_Lexeme): boolean;
+    Equals(o: unknown): boolean;
+    GetHashCode(): int;
+    ToString(): string;
 }
 
 
@@ -468,12 +468,12 @@ export const NpgsqlTsVector_Lexeme: {
 export type NpgsqlTsVector_Lexeme = NpgsqlTsVector_Lexeme$instance;
 
 export interface NpgsqlTsVector_Lexeme_WordEntryPos$instance {
-    readonly pos: int;
-    readonly weight: NpgsqlTsVector_Lexeme_Weight;
-    equals(o: NpgsqlTsVector_Lexeme_WordEntryPos): boolean;
-    equals(o: unknown): boolean;
-    getHashCode(): int;
-    toString(): string;
+    readonly Pos: int;
+    readonly Weight: NpgsqlTsVector_Lexeme_Weight;
+    Equals(o: NpgsqlTsVector_Lexeme_WordEntryPos): boolean;
+    Equals(o: unknown): boolean;
+    GetHashCode(): int;
+    ToString(): string;
 }
 
 
@@ -485,42 +485,42 @@ export const NpgsqlTsVector_Lexeme_WordEntryPos: {
 export type NpgsqlTsVector_Lexeme_WordEntryPos = NpgsqlTsVector_Lexeme_WordEntryPos$instance;
 
 export interface NpgsqlRange_1_RangeTypeConverter$instance<T> extends TypeConverter {
-    canConvertFrom(context: ITypeDescriptorContext, sourceType: Type): boolean;
-    canConvertTo(context: ITypeDescriptorContext, destinationType: Type): boolean;
-    convertFrom(context: ITypeDescriptorContext, culture: CultureInfo, value: unknown): unknown | undefined;
-    convertTo(context: ITypeDescriptorContext, culture: CultureInfo, value: unknown, destinationType: Type): unknown | undefined;
+    CanConvertFrom(context: ITypeDescriptorContext, sourceType: Type): boolean;
+    CanConvertTo(context: ITypeDescriptorContext, destinationType: Type): boolean;
+    ConvertFrom(context: ITypeDescriptorContext, culture: CultureInfo, value: unknown): unknown | undefined;
+    ConvertTo(context: ITypeDescriptorContext, culture: CultureInfo, value: unknown, destinationType: Type): unknown | undefined;
 }
 
 
 export const NpgsqlRange_1_RangeTypeConverter: {
     new<T>(): NpgsqlRange_1_RangeTypeConverter<T>;
-    register<T>(): void;
+    Register<T>(): void;
 };
 
 
 export type NpgsqlRange_1_RangeTypeConverter<T> = NpgsqlRange_1_RangeTypeConverter$instance<T>;
 
 export interface NpgsqlTsQuery$instance {
-    readonly kind: NpgsqlTsQuery_NodeKind;
-    equals(obj: unknown): boolean;
-    equals(other: NpgsqlTsQuery): boolean;
-    getHashCode(): int;
-    toString(): string;
-    write(stringBuilder: StringBuilder): void;
+    readonly Kind: NpgsqlTsQuery_NodeKind;
+    Equals(obj: unknown): boolean;
+    Equals(other: NpgsqlTsQuery): boolean;
+    GetHashCode(): int;
+    ToString(): string;
+    Write(stringBuilder: StringBuilder): void;
 }
 
 
 export const NpgsqlTsQuery: {
-    parse(value: string): NpgsqlTsQuery;
+    Parse(value: string): NpgsqlTsQuery;
 };
 
 
 export type NpgsqlTsQuery = NpgsqlTsQuery$instance;
 
 export interface NpgsqlTsQueryAnd$instance extends NpgsqlTsQueryBinOp {
-    equals(other: NpgsqlTsQuery): boolean;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
+    Equals(other: NpgsqlTsQuery): boolean;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
 }
 
 
@@ -532,8 +532,8 @@ export const NpgsqlTsQueryAnd: {
 export type NpgsqlTsQueryAnd = NpgsqlTsQueryAnd$instance;
 
 export interface NpgsqlTsQueryBinOp$instance extends NpgsqlTsQuery {
-    left: NpgsqlTsQuery;
-    right: NpgsqlTsQuery;
+    Left: NpgsqlTsQuery;
+    Right: NpgsqlTsQuery;
 }
 
 
@@ -544,9 +544,9 @@ export const NpgsqlTsQueryBinOp: {
 export type NpgsqlTsQueryBinOp = NpgsqlTsQueryBinOp$instance;
 
 export interface NpgsqlTsQueryEmpty$instance extends NpgsqlTsQuery {
-    equals(other: NpgsqlTsQuery): boolean;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
+    Equals(other: NpgsqlTsQuery): boolean;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
 }
 
 
@@ -558,10 +558,10 @@ export const NpgsqlTsQueryEmpty: {
 export type NpgsqlTsQueryEmpty = NpgsqlTsQueryEmpty$instance;
 
 export interface NpgsqlTsQueryFollowedBy$instance extends NpgsqlTsQueryBinOp {
-    distance: short;
-    equals(other: NpgsqlTsQuery): boolean;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
+    Distance: short;
+    Equals(other: NpgsqlTsQuery): boolean;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
 }
 
 
@@ -573,12 +573,12 @@ export const NpgsqlTsQueryFollowedBy: {
 export type NpgsqlTsQueryFollowedBy = NpgsqlTsQueryFollowedBy$instance;
 
 export interface NpgsqlTsQueryLexeme$instance extends NpgsqlTsQuery {
-    isPrefixSearch: boolean;
-    text: string;
-    weights: NpgsqlTsQueryLexeme_Weight;
-    equals(other: NpgsqlTsQuery): boolean;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
+    IsPrefixSearch: boolean;
+    Text: string;
+    Weights: NpgsqlTsQueryLexeme_Weight;
+    Equals(other: NpgsqlTsQuery): boolean;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
 }
 
 
@@ -592,10 +592,10 @@ export const NpgsqlTsQueryLexeme: {
 export type NpgsqlTsQueryLexeme = NpgsqlTsQueryLexeme$instance;
 
 export interface NpgsqlTsQueryNot$instance extends NpgsqlTsQuery {
-    child: NpgsqlTsQuery;
-    equals(other: NpgsqlTsQuery): boolean;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
+    Child: NpgsqlTsQuery;
+    Equals(other: NpgsqlTsQuery): boolean;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
 }
 
 
@@ -607,9 +607,9 @@ export const NpgsqlTsQueryNot: {
 export type NpgsqlTsQueryNot = NpgsqlTsQueryNot$instance;
 
 export interface NpgsqlTsQueryOr$instance extends NpgsqlTsQueryBinOp {
-    equals(other: NpgsqlTsQuery): boolean;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
+    Equals(other: NpgsqlTsQuery): boolean;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
 }
 
 
@@ -621,27 +621,27 @@ export const NpgsqlTsQueryOr: {
 export type NpgsqlTsQueryOr = NpgsqlTsQueryOr$instance;
 
 export interface NpgsqlTsVector$instance {
-    readonly count: int;
-    readonly item: NpgsqlTsVector_Lexeme;
-    equals(other: NpgsqlTsVector): boolean;
-    equals(obj: unknown): boolean;
-    getEnumerator(): IEnumerator<NpgsqlTsVector_Lexeme>;
-    getHashCode(): int;
-    toString(): string;
+    readonly Count: int;
+    readonly Item: NpgsqlTsVector_Lexeme;
+    Equals(other: NpgsqlTsVector): boolean;
+    Equals(obj: unknown): boolean;
+    GetEnumerator(): IEnumerator<NpgsqlTsVector_Lexeme>;
+    GetHashCode(): int;
+    ToString(): string;
 }
 
 
 export const NpgsqlTsVector: {
     new(): NpgsqlTsVector;
-    readonly empty: NpgsqlTsVector;
-    parse(value: string): NpgsqlTsVector;
+    readonly Empty: NpgsqlTsVector;
+    Parse(value: string): NpgsqlTsVector;
 };
 
 
 export type NpgsqlTsVector = NpgsqlTsVector$instance;
 
 export interface PgNameAttribute$instance extends Attribute {
-    readonly pgName: string;
+    readonly PgName: string;
 }
 
 

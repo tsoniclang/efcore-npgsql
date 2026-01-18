@@ -13,34 +13,34 @@ import type { Annotatable, IReadOnlyAnnotatable } from "@tsonic/efcore/Microsoft
 import type { IConventionAnnotatable, IMutableAnnotatable } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js";
 
 export enum NpgsqlValueGenerationStrategy {
-    none = 0,
-    sequenceHiLo = 1,
-    serialColumn = 2,
-    identityAlwaysColumn = 3,
-    identityByDefaultColumn = 4,
-    sequence = 5
+    None = 0,
+    SequenceHiLo = 1,
+    SerialColumn = 2,
+    IdentityAlwaysColumn = 3,
+    IdentityByDefaultColumn = 4,
+    Sequence = 5
 }
 
 
 export enum NullSortOrder {
-    unspecified = 0,
-    nullsFirst = 1,
-    nullsLast = 2
+    Unspecified = 0,
+    NullsFirst = 1,
+    NullsLast = 2
 }
 
 
 export enum SortOrder {
-    ascending = 0,
-    descending = 1
+    Ascending = 0,
+    Descending = 1
 }
 
 
 export interface CockroachDbInterleaveInParent$instance {
-    readonly annotatable: Annotatable;
-    interleavePrefix: List<System_Internal.String>;
-    parentTableName: string;
-    get parentTableSchema(): string | undefined;
-    set parentTableSchema(value: string);
+    readonly Annotatable: Annotatable;
+    InterleavePrefix: List<System_Internal.String>;
+    ParentTableName: string;
+    get ParentTableSchema(): string | undefined;
+    set ParentTableSchema(value: string);
 }
 
 
@@ -52,96 +52,96 @@ export const CockroachDbInterleaveInParent: {
 export type CockroachDbInterleaveInParent = CockroachDbInterleaveInParent$instance;
 
 export interface PostgresCollation$instance {
-    readonly annotatable: Annotatable;
-    isDeterministic: Nullable<System_Internal.Boolean>;
-    lcCollate: string;
-    lcCtype: string;
-    readonly name: string;
-    get provider(): string | undefined;
-    set provider(value: string);
-    readonly schema: string | undefined;
+    readonly Annotatable: Annotatable;
+    IsDeterministic: Nullable<System_Internal.Boolean>;
+    LcCollate: string;
+    LcCtype: string;
+    readonly Name: string;
+    get Provider(): string | undefined;
+    set Provider(value: string);
+    readonly Schema: string | undefined;
 }
 
 
 export const PostgresCollation: {
     new(): PostgresCollation;
-    findCollation(annotatable: IReadOnlyAnnotatable, schema: string, name: string): PostgresCollation | undefined;
-    getCollations(annotatable: IReadOnlyAnnotatable): IEnumerable<PostgresCollation>;
-    getOrAddCollation(annotatable: IMutableAnnotatable, schema: string, name: string, lcCollate: string, lcCtype: string, provider?: string, deterministic?: Nullable<System_Internal.Boolean>): PostgresCollation;
+    FindCollation(annotatable: IReadOnlyAnnotatable, schema: string, name: string): PostgresCollation | undefined;
+    GetCollations(annotatable: IReadOnlyAnnotatable): IEnumerable<PostgresCollation>;
+    GetOrAddCollation(annotatable: IMutableAnnotatable, schema: string, name: string, lcCollate: string, lcCtype: string, provider?: string, deterministic?: Nullable<System_Internal.Boolean>): PostgresCollation;
 };
 
 
 export type PostgresCollation = PostgresCollation$instance;
 
 export interface PostgresEnum$instance {
-    readonly annotatable: Annotatable;
-    labels: IReadOnlyList<System_Internal.String>;
-    readonly name: string;
-    readonly schema: string | undefined;
+    readonly Annotatable: Annotatable;
+    Labels: IReadOnlyList<System_Internal.String>;
+    readonly Name: string;
+    readonly Schema: string | undefined;
 }
 
 
 export const PostgresEnum: {
     new(): PostgresEnum;
-    findPostgresEnum(annotatable: IReadOnlyAnnotatable, schema: string, name: string): PostgresEnum | undefined;
-    getOrAddPostgresEnum(annotatable: IConventionAnnotatable, schema: string, name: string, labels: string[]): PostgresEnum;
-    getOrAddPostgresEnum(annotatable: IMutableAnnotatable, schema: string, name: string, labels: string[]): PostgresEnum;
-    getOrAddPostgresEnum(annotatable: IMutableAnnotatable, name: string, labels: string[]): PostgresEnum;
-    getPostgresEnums(annotatable: IReadOnlyAnnotatable): IEnumerable<PostgresEnum>;
+    FindPostgresEnum(annotatable: IReadOnlyAnnotatable, schema: string, name: string): PostgresEnum | undefined;
+    GetOrAddPostgresEnum(annotatable: IConventionAnnotatable, schema: string, name: string, labels: string[]): PostgresEnum;
+    GetOrAddPostgresEnum(annotatable: IMutableAnnotatable, schema: string, name: string, labels: string[]): PostgresEnum;
+    GetOrAddPostgresEnum(annotatable: IMutableAnnotatable, name: string, labels: string[]): PostgresEnum;
+    GetPostgresEnums(annotatable: IReadOnlyAnnotatable): IEnumerable<PostgresEnum>;
 };
 
 
 export type PostgresEnum = PostgresEnum$instance;
 
 export interface PostgresExtension$instance {
-    readonly annotatable: Annotatable;
-    readonly name: string;
-    readonly schema: string | undefined;
-    version: string;
+    readonly Annotatable: Annotatable;
+    readonly Name: string;
+    readonly Schema: string | undefined;
+    Version: string;
 }
 
 
 export const PostgresExtension: {
     new(): PostgresExtension;
-    findPostgresExtension(annotatable: IReadOnlyAnnotatable, schema: string, name: string): PostgresExtension | undefined;
-    getOrAddPostgresExtension(annotatable: IConventionAnnotatable, schema: string, name: string, version: string): PostgresExtension;
-    getOrAddPostgresExtension(annotatable: IMutableAnnotatable, schema: string, name: string, version: string): PostgresExtension;
-    getOrAddPostgresExtension(annotatable: IMutableAnnotatable, name: string, version: string): PostgresExtension;
-    getPostgresExtensions(annotatable: IReadOnlyAnnotatable): IEnumerable<PostgresExtension>;
+    FindPostgresExtension(annotatable: IReadOnlyAnnotatable, schema: string, name: string): PostgresExtension | undefined;
+    GetOrAddPostgresExtension(annotatable: IConventionAnnotatable, schema: string, name: string, version: string): PostgresExtension;
+    GetOrAddPostgresExtension(annotatable: IMutableAnnotatable, schema: string, name: string, version: string): PostgresExtension;
+    GetOrAddPostgresExtension(annotatable: IMutableAnnotatable, name: string, version: string): PostgresExtension;
+    GetPostgresExtensions(annotatable: IReadOnlyAnnotatable): IEnumerable<PostgresExtension>;
 };
 
 
 export type PostgresExtension = PostgresExtension$instance;
 
 export interface PostgresRange$instance {
-    readonly annotatable: Annotatable;
-    get canonicalFunction(): string | undefined;
-    set canonicalFunction(value: string);
-    get collation(): string | undefined;
-    set collation(value: string);
-    readonly name: string;
-    readonly schema: string | undefined;
-    subtype: string;
-    get subtypeDiff(): string | undefined;
-    set subtypeDiff(value: string);
-    get subtypeOpClass(): string | undefined;
-    set subtypeOpClass(value: string);
+    readonly Annotatable: Annotatable;
+    get CanonicalFunction(): string | undefined;
+    set CanonicalFunction(value: string);
+    get Collation(): string | undefined;
+    set Collation(value: string);
+    readonly Name: string;
+    readonly Schema: string | undefined;
+    Subtype: string;
+    get SubtypeDiff(): string | undefined;
+    set SubtypeDiff(value: string);
+    get SubtypeOpClass(): string | undefined;
+    set SubtypeOpClass(value: string);
 }
 
 
 export const PostgresRange: {
     new(): PostgresRange;
-    findPostgresRange(annotatable: IReadOnlyAnnotatable, schema: string, name: string): PostgresRange | undefined;
-    getOrAddPostgresRange(annotatable: IMutableAnnotatable, schema: string, name: string, subtype: string, canonicalFunction?: string, subtypeOpClass?: string, collation?: string, subtypeDiff?: string): PostgresRange;
-    getPostgresRanges(annotatable: IReadOnlyAnnotatable): IEnumerable<PostgresRange>;
+    FindPostgresRange(annotatable: IReadOnlyAnnotatable, schema: string, name: string): PostgresRange | undefined;
+    GetOrAddPostgresRange(annotatable: IMutableAnnotatable, schema: string, name: string, subtype: string, canonicalFunction?: string, subtypeOpClass?: string, collation?: string, subtypeDiff?: string): PostgresRange;
+    GetPostgresRanges(annotatable: IReadOnlyAnnotatable): IEnumerable<PostgresRange>;
 };
 
 
 export type PostgresRange = PostgresRange$instance;
 
 export abstract class NpgsqlValueGenerationStrategyExtensions$instance {
-    static isIdentity(strategy: NpgsqlValueGenerationStrategy): boolean;
-    static isIdentity(strategy: Nullable<NpgsqlValueGenerationStrategy>): boolean;
+    static IsIdentity(strategy: NpgsqlValueGenerationStrategy): boolean;
+    static IsIdentity(strategy: Nullable<NpgsqlValueGenerationStrategy>): boolean;
 }
 
 

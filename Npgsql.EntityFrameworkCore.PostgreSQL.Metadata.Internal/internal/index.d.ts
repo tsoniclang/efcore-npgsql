@@ -14,34 +14,34 @@ import * as Microsoft_EntityFrameworkCore_Metadata_Internal from "@tsonic/efcore
 import type { IColumn, IRelationalAnnotationProvider, IRelationalModel, ITable, ITableIndex, RelationalAnnotationProvider, RelationalAnnotationProviderDependencies } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js";
 
 export interface IdentitySequenceOptionsData$instance {
-    incrementBy: long;
-    isCyclic: boolean;
-    maxValue: Nullable<System_Internal.Int64>;
-    minValue: Nullable<System_Internal.Int64>;
-    numbersToCache: long;
-    startValue: Nullable<System_Internal.Int64>;
-    equals(other: IdentitySequenceOptionsData): boolean;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
-    serialize(): string;
+    IncrementBy: long;
+    IsCyclic: boolean;
+    MaxValue: Nullable<System_Internal.Int64>;
+    MinValue: Nullable<System_Internal.Int64>;
+    NumbersToCache: long;
+    StartValue: Nullable<System_Internal.Int64>;
+    Equals(other: IdentitySequenceOptionsData): boolean;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
+    Serialize(): string;
 }
 
 
 export const IdentitySequenceOptionsData: {
     new(): IdentitySequenceOptionsData;
-    readonly empty: IdentitySequenceOptionsData;
-    deserialize(value: string): IdentitySequenceOptionsData;
-    get(annotatable: IReadOnlyAnnotatable): IdentitySequenceOptionsData;
+    readonly Empty: IdentitySequenceOptionsData;
+    Deserialize(value: string): IdentitySequenceOptionsData;
+    Get(annotatable: IReadOnlyAnnotatable): IdentitySequenceOptionsData;
 };
 
 
 export type IdentitySequenceOptionsData = IdentitySequenceOptionsData$instance;
 
 export interface NpgsqlAnnotationProvider$instance extends RelationalAnnotationProvider {
-    for(table: ITable, designTime: boolean): IEnumerable<IAnnotation>;
-    for(column: IColumn, designTime: boolean): IEnumerable<IAnnotation>;
-    for(index: ITableIndex, designTime: boolean): IEnumerable<IAnnotation>;
-    for(model: IRelationalModel, designTime: boolean): IEnumerable<IAnnotation>;
+    For(table: ITable, designTime: boolean): IEnumerable<IAnnotation>;
+    For(column: IColumn, designTime: boolean): IEnumerable<IAnnotation>;
+    For(index: ITableIndex, designTime: boolean): IEnumerable<IAnnotation>;
+    For(model: IRelationalModel, designTime: boolean): IEnumerable<IAnnotation>;
 }
 
 
@@ -53,47 +53,47 @@ export const NpgsqlAnnotationProvider: {
 export type NpgsqlAnnotationProvider = NpgsqlAnnotationProvider$instance;
 
 export abstract class CockroachDbAnnotationNames$instance {
-    static readonly prefix: string;
-    static readonly interleaveInParent: string;
+    static readonly Prefix: string;
+    static readonly InterleaveInParent: string;
 }
 
 
 export type CockroachDbAnnotationNames = CockroachDbAnnotationNames$instance;
 
 export abstract class NpgsqlAnnotationNames$instance {
-    static readonly prefix: string;
-    static readonly compressionMethod: string;
-    static readonly createdConcurrently: string;
-    static readonly databaseTemplate: string;
-    static readonly hiLoSequenceName: string;
-    static readonly hiLoSequenceSchema: string;
-    static readonly identityOptions: string;
-    static readonly indexMethod: string;
-    static readonly indexOperators: string;
-    static readonly indexNullSortOrder: string;
-    static readonly indexInclude: string;
-    static readonly nullsDistinct: string;
-    static readonly tablespace: string;
-    static readonly tsVectorConfig: string;
-    static readonly tsVectorProperties: string;
-    static readonly unloggedTable: string;
-    static readonly valueGenerationStrategy: string;
-    static readonly sequenceNameSuffix: string;
-    static readonly sequenceName: string;
-    static readonly sequenceSchema: string;
-    static readonly collationDefinitionPrefix: string;
-    static readonly enumPrefix: string;
-    static readonly postgresExtensionPrefix: string;
-    static readonly rangePrefix: string;
-    static readonly storageParameterPrefix: string;
-    static readonly postgresTypeType: string;
-    static readonly elementDataType: string;
-    static readonly indexExpression: string;
-    static readonly defaultColumnCollation: string;
-    static readonly valueGeneratedOnAdd: string;
-    static readonly comment: string;
-    static readonly indexCollation: string;
-    static readonly indexSortOrder: string;
+    static readonly Prefix: string;
+    static readonly CompressionMethod: string;
+    static readonly CreatedConcurrently: string;
+    static readonly DatabaseTemplate: string;
+    static readonly HiLoSequenceName: string;
+    static readonly HiLoSequenceSchema: string;
+    static readonly IdentityOptions: string;
+    static readonly IndexMethod: string;
+    static readonly IndexOperators: string;
+    static readonly IndexNullSortOrder: string;
+    static readonly IndexInclude: string;
+    static readonly NullsDistinct: string;
+    static readonly Tablespace: string;
+    static readonly TsVectorConfig: string;
+    static readonly TsVectorProperties: string;
+    static readonly UnloggedTable: string;
+    static readonly ValueGenerationStrategy: string;
+    static readonly SequenceNameSuffix: string;
+    static readonly SequenceName: string;
+    static readonly SequenceSchema: string;
+    static readonly CollationDefinitionPrefix: string;
+    static readonly EnumPrefix: string;
+    static readonly PostgresExtensionPrefix: string;
+    static readonly RangePrefix: string;
+    static readonly StorageParameterPrefix: string;
+    static readonly PostgresTypeType: string;
+    static readonly ElementDataType: string;
+    static readonly IndexExpression: string;
+    static readonly DefaultColumnCollation: string;
+    static readonly ValueGeneratedOnAdd: string;
+    static readonly Comment: string;
+    static readonly IndexCollation: string;
+    static readonly IndexSortOrder: string;
 }
 
 

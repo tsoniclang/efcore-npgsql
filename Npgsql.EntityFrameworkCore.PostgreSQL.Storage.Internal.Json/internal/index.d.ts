@@ -21,30 +21,30 @@ import * as Microsoft_EntityFrameworkCore_Storage_Json_Internal from "@tsonic/ef
 import type { JsonValueReaderWriter, Utf8JsonReaderManager } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.Json.js";
 
 export interface JsonBitArrayReaderWriter$instance extends JsonValueReaderWriter<BitArray> {
-    readonly constructorExpression: Expression;
-    fromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): BitArray;
-    toJsonTyped(writer: Utf8JsonWriter, value: BitArray): void;
+    readonly ConstructorExpression: Expression;
+    FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): BitArray;
+    ToJsonTyped(writer: Utf8JsonWriter, value: BitArray): void;
 }
 
 
 export const JsonBitArrayReaderWriter: {
     new(): JsonBitArrayReaderWriter;
-    readonly instance: JsonBitArrayReaderWriter;
+    readonly Instance: JsonBitArrayReaderWriter;
 };
 
 
 export type JsonBitArrayReaderWriter = JsonBitArrayReaderWriter$instance;
 
 export interface JsonMacaddrReaderWriter$instance extends JsonValueReaderWriter<PhysicalAddress> {
-    readonly constructorExpression: Expression;
-    fromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): PhysicalAddress;
-    toJsonTyped(writer: Utf8JsonWriter, value: PhysicalAddress): void;
+    readonly ConstructorExpression: Expression;
+    FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): PhysicalAddress;
+    ToJsonTyped(writer: Utf8JsonWriter, value: PhysicalAddress): void;
 }
 
 
 export const JsonMacaddrReaderWriter: {
     new(): JsonMacaddrReaderWriter;
-    readonly instance: JsonMacaddrReaderWriter;
+    readonly Instance: JsonMacaddrReaderWriter;
 };
 
 

@@ -13,8 +13,8 @@ import type { DbContext, DbContextOptionsBuilder } from "@tsonic/efcore/Microsof
 import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection.js";
 
 export abstract class NpgsqlServiceCollectionExtensions$instance {
-    static addEntityFrameworkNpgsql(serviceCollection: IServiceCollection): IServiceCollection;
-    static addNpgsql<TContext extends DbContext>(serviceCollection: IServiceCollection, connectionString: string, npgsqlOptionsAction?: Action<NpgsqlDbContextOptionsBuilder>, optionsAction?: Action<DbContextOptionsBuilder>): IServiceCollection;
+    static AddEntityFrameworkNpgsql(serviceCollection: IServiceCollection): IServiceCollection;
+    static AddNpgsql<TContext extends DbContext>(serviceCollection: IServiceCollection, connectionString: string, npgsqlOptionsAction?: Action<NpgsqlDbContextOptionsBuilder>, optionsAction?: Action<DbContextOptionsBuilder>): IServiceCollection;
 }
 
 

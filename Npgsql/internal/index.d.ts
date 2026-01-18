@@ -42,73 +42,73 @@ import type { Transaction } from "@tsonic/dotnet/System.Transactions.js";
 import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging.js";
 
 export enum ArrayNullabilityMode {
-    never = 0,
-    always = 1,
-    perInstance = 2
+    Never = 0,
+    Always = 1,
+    PerInstance = 2
 }
 
 
 export enum ChannelBinding {
-    disable = 0,
-    prefer = 1,
-    require = 2
+    Disable = 0,
+    Prefer = 1,
+    Require = 2
 }
 
 
 export enum GssEncryptionMode {
-    disable = 0,
-    prefer = 1,
-    require = 2
+    Disable = 0,
+    Prefer = 1,
+    Require = 2
 }
 
 
 export enum ServerCompatibilityMode {
-    none = 0,
-    redshift = 1,
-    noTypeLoading = 2
+    None = 0,
+    Redshift = 1,
+    NoTypeLoading = 2
 }
 
 
 export enum SslMode {
-    disable = 0,
-    allow = 1,
-    prefer = 2,
-    require = 3,
-    verifyCA = 4,
-    verifyFull = 5
+    Disable = 0,
+    Allow = 1,
+    Prefer = 2,
+    Require = 3,
+    VerifyCA = 4,
+    VerifyFull = 5
 }
 
 
 export enum SslNegotiation {
-    postgres = 0,
-    direct = 1
+    Postgres = 0,
+    Direct = 1
 }
 
 
 export enum StatementType {
-    unknown = 0,
-    select = 1,
-    insert = 2,
-    delete = 3,
-    update = 4,
-    createTableAs = 5,
-    move = 6,
-    fetch = 7,
-    copy = 8,
-    other = 9,
-    merge = 10,
-    call = 11
+    Unknown = 0,
+    Select = 1,
+    Insert = 2,
+    Delete = 3,
+    Update = 4,
+    CreateTableAs = 5,
+    Move = 6,
+    Fetch = 7,
+    Copy = 8,
+    Other = 9,
+    Merge = 10,
+    Call = 11
 }
 
 
 export enum TargetSessionAttributes {
-    any = 0,
-    readWrite = 1,
-    readOnly = 2,
-    primary = 3,
-    standby = 4,
-    preferPrimary = 5,
-    preferStandby = 6
+    Any = 0,
+    ReadWrite = 1,
+    ReadOnly = 2,
+    Primary = 3,
+    Standby = 4,
+    PreferPrimary = 5,
+    PreferStandby = 6
 }
 
 
@@ -131,32 +131,32 @@ export type ProvidePasswordCallback = (host: string, port: int, database: string
 
 
 export interface INpgsqlNameTranslator$instance {
-    translateTypeName(clrName: string): string;
+    TranslateTypeName(clrName: string): string;
 }
 
 
 export type INpgsqlNameTranslator = INpgsqlNameTranslator$instance;
 
 export interface NpgsqlBatch$instance extends DbBatch {
-    readonly batchCommands: NpgsqlBatchCommandCollection;
-    get connection(): NpgsqlConnection | undefined;
-    set connection(value: NpgsqlConnection);
-    enableErrorBarriers: boolean;
-    timeout: int;
-    get transaction(): NpgsqlTransaction | undefined;
-    set transaction(value: NpgsqlTransaction);
-    cancel(): void;
-    createBatchCommand(): NpgsqlBatchCommand;
-    dispose(): void;
-    executeNonQuery(): int;
-    executeNonQueryAsync(cancellationToken?: CancellationToken): Task<System_Internal.Int32>;
-    executeReader(behavior?: CommandBehavior): NpgsqlDataReader;
-    executeReaderAsync(cancellationToken?: CancellationToken): Task<NpgsqlDataReader>;
-    executeReaderAsync(behavior: CommandBehavior, cancellationToken?: CancellationToken): Task<NpgsqlDataReader>;
-    executeScalar(): unknown | undefined;
-    executeScalarAsync(cancellationToken?: CancellationToken): Task<unknown | undefined>;
-    prepare(): void;
-    prepareAsync(cancellationToken?: CancellationToken): Task;
+    readonly BatchCommands: NpgsqlBatchCommandCollection;
+    get Connection(): NpgsqlConnection | undefined;
+    set Connection(value: NpgsqlConnection);
+    EnableErrorBarriers: boolean;
+    Timeout: int;
+    get Transaction(): NpgsqlTransaction | undefined;
+    set Transaction(value: NpgsqlTransaction);
+    Cancel(): void;
+    CreateBatchCommand(): NpgsqlBatchCommand;
+    Dispose(): void;
+    ExecuteNonQuery(): int;
+    ExecuteNonQueryAsync(cancellationToken?: CancellationToken): Task<System_Internal.Int32>;
+    ExecuteReader(behavior?: CommandBehavior): NpgsqlDataReader;
+    ExecuteReaderAsync(cancellationToken?: CancellationToken): Task<NpgsqlDataReader>;
+    ExecuteReaderAsync(behavior: CommandBehavior, cancellationToken?: CancellationToken): Task<NpgsqlDataReader>;
+    ExecuteScalar(): unknown | undefined;
+    ExecuteScalarAsync(cancellationToken?: CancellationToken): Task<unknown | undefined>;
+    Prepare(): void;
+    PrepareAsync(cancellationToken?: CancellationToken): Task;
 }
 
 
@@ -168,17 +168,17 @@ export const NpgsqlBatch: {
 export type NpgsqlBatch = NpgsqlBatch$instance;
 
 export interface NpgsqlBatchCommand$instance extends DbBatchCommand {
-    appendErrorBarrier: Nullable<System_Internal.Boolean>;
-    readonly canCreateParameter: boolean;
-    commandText: string;
-    commandType: CommandType;
+    AppendErrorBarrier: Nullable<System_Internal.Boolean>;
+    readonly CanCreateParameter: boolean;
+    CommandText: string;
+    CommandType: CommandType;
     readonly OID: uint;
-    readonly parameters: NpgsqlParameterCollection;
-    readonly recordsAffected: int;
-    readonly rows: ulong;
-    readonly statementType: StatementType;
-    createParameter(): NpgsqlParameter;
-    toString(): string;
+    readonly Parameters: NpgsqlParameterCollection;
+    readonly RecordsAffected: int;
+    readonly Rows: ulong;
+    readonly StatementType: StatementType;
+    CreateParameter(): NpgsqlParameter;
+    ToString(): string;
 }
 
 
@@ -191,24 +191,24 @@ export const NpgsqlBatchCommand: {
 export type NpgsqlBatchCommand = NpgsqlBatchCommand$instance;
 
 export interface NpgsqlBatchCommandCollection$instance extends DbBatchCommandCollection {
-    readonly count: int;
-    readonly isReadOnly: boolean;
-    item: NpgsqlBatchCommand;
-    add(item: NpgsqlBatchCommand): void;
-    add(item: DbBatchCommand): void;
-    clear(): void;
-    contains(item: NpgsqlBatchCommand): boolean;
-    contains(item: DbBatchCommand): boolean;
-    copyTo(array: NpgsqlBatchCommand[], arrayIndex: int): void;
-    copyTo(array: DbBatchCommand[], arrayIndex: int): void;
-    getEnumerator(): IEnumerator__System_Collections_Generic<DbBatchCommand>;
-    indexOf(item: NpgsqlBatchCommand): int;
-    indexOf(item: DbBatchCommand): int;
-    insert(index: int, item: NpgsqlBatchCommand): void;
-    insert(index: int, item: DbBatchCommand): void;
-    remove(item: NpgsqlBatchCommand): boolean;
-    remove(item: DbBatchCommand): boolean;
-    removeAt(index: int): void;
+    readonly Count: int;
+    readonly IsReadOnly: boolean;
+    Item: NpgsqlBatchCommand;
+    Add(item: NpgsqlBatchCommand): void;
+    Add(item: DbBatchCommand): void;
+    Clear(): void;
+    Contains(item: NpgsqlBatchCommand): boolean;
+    Contains(item: DbBatchCommand): boolean;
+    CopyTo(array: NpgsqlBatchCommand[], arrayIndex: int): void;
+    CopyTo(array: DbBatchCommand[], arrayIndex: int): void;
+    GetEnumerator(): IEnumerator__System_Collections_Generic<DbBatchCommand>;
+    IndexOf(item: NpgsqlBatchCommand): int;
+    IndexOf(item: DbBatchCommand): int;
+    Insert(index: int, item: NpgsqlBatchCommand): void;
+    Insert(index: int, item: DbBatchCommand): void;
+    Remove(item: NpgsqlBatchCommand): boolean;
+    Remove(item: DbBatchCommand): boolean;
+    RemoveAt(index: int): void;
 }
 
 
@@ -220,20 +220,20 @@ export const NpgsqlBatchCommandCollection: {
 export type NpgsqlBatchCommandCollection = NpgsqlBatchCommandCollection$instance;
 
 export interface NpgsqlBinaryExporter$instance {
-    readonly isNull: boolean;
-    timeout: TimeSpan;
-    cancel(): void;
-    cancelAsync(): Task;
-    dispose(): void;
-    disposeAsync(): ValueTask;
-    read<T>(): T;
-    read<T>(type: NpgsqlDbType): T;
-    readAsync<T>(cancellationToken?: CancellationToken): ValueTask<T>;
-    readAsync<T>(type: NpgsqlDbType, cancellationToken?: CancellationToken): ValueTask<T>;
-    skip(): void;
-    skipAsync(cancellationToken?: CancellationToken): Task;
-    startRow(): int;
-    startRowAsync(cancellationToken?: CancellationToken): ValueTask<System_Internal.Int32>;
+    readonly IsNull: boolean;
+    Timeout: TimeSpan;
+    Cancel(): void;
+    CancelAsync(): Task;
+    Dispose(): void;
+    DisposeAsync(): ValueTask;
+    Read<T>(): T;
+    Read<T>(type: NpgsqlDbType): T;
+    ReadAsync<T>(cancellationToken?: CancellationToken): ValueTask<T>;
+    ReadAsync<T>(type: NpgsqlDbType, cancellationToken?: CancellationToken): ValueTask<T>;
+    Skip(): void;
+    SkipAsync(cancellationToken?: CancellationToken): Task;
+    StartRow(): int;
+    StartRowAsync(cancellationToken?: CancellationToken): ValueTask<System_Internal.Int32>;
 }
 
 
@@ -245,25 +245,25 @@ export const NpgsqlBinaryExporter: {
 export type NpgsqlBinaryExporter = NpgsqlBinaryExporter$instance;
 
 export interface NpgsqlBinaryImporter$instance {
-    timeout: TimeSpan;
-    close(): void;
-    closeAsync(cancellationToken?: CancellationToken): ValueTask;
-    complete(): ulong;
-    completeAsync(cancellationToken?: CancellationToken): ValueTask<System_Internal.UInt64>;
-    dispose(): void;
-    disposeAsync(): ValueTask;
-    startRow(): void;
-    startRowAsync(cancellationToken?: CancellationToken): Task;
-    write<T>(value: T): void;
-    write<T>(value: T, npgsqlDbType: NpgsqlDbType): void;
-    write<T>(value: T, dataTypeName: string): void;
-    writeAsync<T>(value: T, cancellationToken?: CancellationToken): Task;
-    writeAsync<T>(value: T, npgsqlDbType: NpgsqlDbType, cancellationToken?: CancellationToken): Task;
-    writeAsync<T>(value: T, dataTypeName: string, cancellationToken?: CancellationToken): Task;
-    writeNull(): void;
-    writeNullAsync(cancellationToken?: CancellationToken): Task;
-    writeRow(...values: unknown[]): void;
-    writeRowAsync(cancellationToken?: CancellationToken, ...values: unknown[]): Task;
+    Timeout: TimeSpan;
+    Close(): void;
+    CloseAsync(cancellationToken?: CancellationToken): ValueTask;
+    Complete(): ulong;
+    CompleteAsync(cancellationToken?: CancellationToken): ValueTask<System_Internal.UInt64>;
+    Dispose(): void;
+    DisposeAsync(): ValueTask;
+    StartRow(): void;
+    StartRowAsync(cancellationToken?: CancellationToken): Task;
+    Write<T>(value: T): void;
+    Write<T>(value: T, npgsqlDbType: NpgsqlDbType): void;
+    Write<T>(value: T, dataTypeName: string): void;
+    WriteAsync<T>(value: T, cancellationToken?: CancellationToken): Task;
+    WriteAsync<T>(value: T, npgsqlDbType: NpgsqlDbType, cancellationToken?: CancellationToken): Task;
+    WriteAsync<T>(value: T, dataTypeName: string, cancellationToken?: CancellationToken): Task;
+    WriteNull(): void;
+    WriteNullAsync(cancellationToken?: CancellationToken): Task;
+    WriteRow(...values: unknown[]): void;
+    WriteRowAsync(cancellationToken?: CancellationToken, ...values: unknown[]): Task;
 }
 
 
@@ -275,35 +275,35 @@ export const NpgsqlBinaryImporter: {
 export type NpgsqlBinaryImporter = NpgsqlBinaryImporter$instance;
 
 export interface NpgsqlCommand$instance extends DbCommand {
-    allResultTypesAreUnknown: boolean;
-    commandText: string;
-    commandTimeout: int;
-    commandType: CommandType;
-    get connection(): NpgsqlConnection | undefined;
-    set connection(value: NpgsqlConnection);
-    designTimeVisible: boolean;
-    readonly isPrepared: boolean;
-    readonly parameters: NpgsqlParameterCollection;
-    readonly statements: IReadOnlyList<NpgsqlBatchCommand>;
-    get transaction(): NpgsqlTransaction | undefined;
-    set transaction(value: NpgsqlTransaction);
-    get unknownResultTypeList(): boolean[] | undefined;
-    set unknownResultTypeList(value: boolean[]);
-    updatedRowSource: UpdateRowSource;
-    cancel(): void;
-    clone(): NpgsqlCommand;
-    createParameter(): NpgsqlParameter;
-    executeNonQuery(): int;
-    executeNonQueryAsync(cancellationToken: CancellationToken): Task<System_Internal.Int32>;
-    executeReader(behavior?: CommandBehavior): NpgsqlDataReader;
-    executeReaderAsync(cancellationToken?: CancellationToken): Task<NpgsqlDataReader>;
-    executeReaderAsync(behavior: CommandBehavior, cancellationToken?: CancellationToken): Task<NpgsqlDataReader>;
-    executeScalar(): unknown | undefined;
-    executeScalarAsync(cancellationToken: CancellationToken): Task<unknown | undefined>;
-    prepare(): void;
-    prepareAsync(cancellationToken?: CancellationToken): Task;
-    unprepare(): void;
-    unprepareAsync(cancellationToken?: CancellationToken): Task;
+    AllResultTypesAreUnknown: boolean;
+    CommandText: string;
+    CommandTimeout: int;
+    CommandType: CommandType;
+    get Connection(): NpgsqlConnection | undefined;
+    set Connection(value: NpgsqlConnection);
+    DesignTimeVisible: boolean;
+    readonly IsPrepared: boolean;
+    readonly Parameters: NpgsqlParameterCollection;
+    readonly Statements: IReadOnlyList<NpgsqlBatchCommand>;
+    get Transaction(): NpgsqlTransaction | undefined;
+    set Transaction(value: NpgsqlTransaction);
+    get UnknownResultTypeList(): boolean[] | undefined;
+    set UnknownResultTypeList(value: boolean[]);
+    UpdatedRowSource: UpdateRowSource;
+    Cancel(): void;
+    Clone(): NpgsqlCommand;
+    CreateParameter(): NpgsqlParameter;
+    ExecuteNonQuery(): int;
+    ExecuteNonQueryAsync(cancellationToken: CancellationToken): Task<System_Internal.Int32>;
+    ExecuteReader(behavior?: CommandBehavior): NpgsqlDataReader;
+    ExecuteReaderAsync(cancellationToken?: CancellationToken): Task<NpgsqlDataReader>;
+    ExecuteReaderAsync(behavior: CommandBehavior, cancellationToken?: CancellationToken): Task<NpgsqlDataReader>;
+    ExecuteScalar(): unknown | undefined;
+    ExecuteScalarAsync(cancellationToken: CancellationToken): Task<unknown | undefined>;
+    Prepare(): void;
+    PrepareAsync(cancellationToken?: CancellationToken): Task;
+    Unprepare(): void;
+    UnprepareAsync(cancellationToken?: CancellationToken): Task;
 }
 
 
@@ -318,200 +318,200 @@ export const NpgsqlCommand: {
 export type NpgsqlCommand = NpgsqlCommand$instance;
 
 export interface NpgsqlCommandBuilder$instance extends DbCommandBuilder {
-    quotePrefix: string;
-    quoteSuffix: string;
-    getDeleteCommand(): NpgsqlCommand;
-    getDeleteCommand(useColumnsForParameterNames: boolean): NpgsqlCommand;
-    getInsertCommand(): NpgsqlCommand;
-    getInsertCommand(useColumnsForParameterNames: boolean): NpgsqlCommand;
-    getUpdateCommand(): NpgsqlCommand;
-    getUpdateCommand(useColumnsForParameterNames: boolean): NpgsqlCommand;
-    quoteIdentifier(unquotedIdentifier: string): string;
-    unquoteIdentifier(quotedIdentifier: string): string;
+    QuotePrefix: string;
+    QuoteSuffix: string;
+    GetDeleteCommand(): NpgsqlCommand;
+    GetDeleteCommand(useColumnsForParameterNames: boolean): NpgsqlCommand;
+    GetInsertCommand(): NpgsqlCommand;
+    GetInsertCommand(useColumnsForParameterNames: boolean): NpgsqlCommand;
+    GetUpdateCommand(): NpgsqlCommand;
+    GetUpdateCommand(useColumnsForParameterNames: boolean): NpgsqlCommand;
+    QuoteIdentifier(unquotedIdentifier: string): string;
+    UnquoteIdentifier(quotedIdentifier: string): string;
 }
 
 
 export const NpgsqlCommandBuilder: {
     new(): NpgsqlCommandBuilder;
     new(adapter: NpgsqlDataAdapter): NpgsqlCommandBuilder;
-    deriveParameters(command: NpgsqlCommand): void;
+    DeriveParameters(command: NpgsqlCommand): void;
 };
 
 
 export type NpgsqlCommandBuilder = NpgsqlCommandBuilder$instance;
 
 export interface NpgsqlConnection$instance extends DbConnection {
-    readonly canCreateBatch: boolean;
-    readonly commandTimeout: int;
-    connectionString: string;
-    readonly connectionTimeout: int;
-    readonly database: string;
-    readonly dataSource: string;
-    readonly fullState: ConnectionState;
-    readonly hasIntegerDateTimes: boolean;
-    readonly host: string | undefined;
-    readonly port: int;
-    readonly postgresParameters: IReadOnlyDictionary<System_Internal.String, System_Internal.String>;
-    readonly postgreSqlVersion: Version;
-    readonly processID: int;
-    get provideClientCertificatesCallback(): ProvideClientCertificatesCallback | undefined;
-    set provideClientCertificatesCallback(value: ProvideClientCertificatesCallback);
-    get providePasswordCallback(): ProvidePasswordCallback | undefined;
-    set providePasswordCallback(value: ProvidePasswordCallback);
-    readonly serverVersion: string;
-    get sslClientAuthenticationOptionsCallback(): Action<SslClientAuthenticationOptions> | undefined;
-    set sslClientAuthenticationOptionsCallback(value: Action<SslClientAuthenticationOptions>);
-    readonly state: ConnectionState;
-    readonly timezone: string;
-    readonly typeMapper: INpgsqlTypeMapper;
-    get userCertificateValidationCallback(): RemoteCertificateValidationCallback | undefined;
-    set userCertificateValidationCallback(value: RemoteCertificateValidationCallback);
-    readonly userName: string | undefined;
-    beginBinaryExport(copyToCommand: string): NpgsqlBinaryExporter;
-    beginBinaryExportAsync(copyToCommand: string, cancellationToken?: CancellationToken): Task<NpgsqlBinaryExporter>;
-    beginBinaryImport(copyFromCommand: string): NpgsqlBinaryImporter;
-    beginBinaryImportAsync(copyFromCommand: string, cancellationToken?: CancellationToken): Task<NpgsqlBinaryImporter>;
-    beginRawBinaryCopy(copyCommand: string): NpgsqlRawCopyStream;
-    beginRawBinaryCopyAsync(copyCommand: string, cancellationToken?: CancellationToken): Task<NpgsqlRawCopyStream>;
-    beginTextExport(copyToCommand: string): NpgsqlCopyTextReader;
-    beginTextExportAsync(copyToCommand: string, cancellationToken?: CancellationToken): Task<NpgsqlCopyTextReader>;
-    beginTextImport(copyFromCommand: string): NpgsqlCopyTextWriter;
-    beginTextImportAsync(copyFromCommand: string, cancellationToken?: CancellationToken): Task<NpgsqlCopyTextWriter>;
-    beginTransaction(): NpgsqlTransaction;
-    beginTransaction(level: IsolationLevel): NpgsqlTransaction;
-    beginTransactionAsync(cancellationToken?: CancellationToken): ValueTask<NpgsqlTransaction>;
-    beginTransactionAsync(level: IsolationLevel, cancellationToken?: CancellationToken): ValueTask<NpgsqlTransaction>;
-    changeDatabase(dbName: string): void;
-    cloneWith(connectionString: string): NpgsqlConnection;
-    cloneWithAsync(connectionString: string, cancellationToken?: CancellationToken): ValueTask<NpgsqlConnection>;
-    close(): void;
-    closeAsync(): Task;
-    createBatch(): NpgsqlBatch;
-    createCommand(): NpgsqlCommand;
-    disposeAsync(): ValueTask;
-    enlistTransaction(transaction: Transaction): void;
-    getSchema(): DataTable;
-    getSchema(collectionName: string): DataTable;
-    getSchema(collectionName: string, restrictions: string[]): DataTable;
-    getSchemaAsync(cancellationToken?: CancellationToken): Task<DataTable>;
-    getSchemaAsync(collectionName: string, cancellationToken?: CancellationToken): Task<DataTable>;
-    getSchemaAsync(collectionName: string, restrictions: string[], cancellationToken?: CancellationToken): Task<DataTable>;
-    open(): void;
-    openAsync(cancellationToken: CancellationToken): Task;
-    reloadTypes(): void;
-    reloadTypesAsync(cancellationToken?: CancellationToken): Task;
-    unprepareAll(): void;
-    wait(timeout: int): boolean;
-    wait(timeout: TimeSpan): boolean;
-    wait(): void;
-    waitAsync(timeout: int, cancellationToken?: CancellationToken): Task<System_Internal.Boolean>;
-    waitAsync(timeout: TimeSpan, cancellationToken?: CancellationToken): Task<System_Internal.Boolean>;
-    waitAsync(cancellationToken?: CancellationToken): Task;
+    readonly CanCreateBatch: boolean;
+    readonly CommandTimeout: int;
+    ConnectionString: string;
+    readonly ConnectionTimeout: int;
+    readonly Database: string;
+    readonly DataSource: string;
+    readonly FullState: ConnectionState;
+    readonly HasIntegerDateTimes: boolean;
+    readonly Host: string | undefined;
+    readonly Port: int;
+    readonly PostgresParameters: IReadOnlyDictionary<System_Internal.String, System_Internal.String>;
+    readonly PostgreSqlVersion: Version;
+    readonly ProcessID: int;
+    get ProvideClientCertificatesCallback(): ProvideClientCertificatesCallback | undefined;
+    set ProvideClientCertificatesCallback(value: ProvideClientCertificatesCallback);
+    get ProvidePasswordCallback(): ProvidePasswordCallback | undefined;
+    set ProvidePasswordCallback(value: ProvidePasswordCallback);
+    readonly ServerVersion: string;
+    get SslClientAuthenticationOptionsCallback(): Action<SslClientAuthenticationOptions> | undefined;
+    set SslClientAuthenticationOptionsCallback(value: Action<SslClientAuthenticationOptions>);
+    readonly State: ConnectionState;
+    readonly Timezone: string;
+    readonly TypeMapper: INpgsqlTypeMapper;
+    get UserCertificateValidationCallback(): RemoteCertificateValidationCallback | undefined;
+    set UserCertificateValidationCallback(value: RemoteCertificateValidationCallback);
+    readonly UserName: string | undefined;
+    BeginBinaryExport(copyToCommand: string): NpgsqlBinaryExporter;
+    BeginBinaryExportAsync(copyToCommand: string, cancellationToken?: CancellationToken): Task<NpgsqlBinaryExporter>;
+    BeginBinaryImport(copyFromCommand: string): NpgsqlBinaryImporter;
+    BeginBinaryImportAsync(copyFromCommand: string, cancellationToken?: CancellationToken): Task<NpgsqlBinaryImporter>;
+    BeginRawBinaryCopy(copyCommand: string): NpgsqlRawCopyStream;
+    BeginRawBinaryCopyAsync(copyCommand: string, cancellationToken?: CancellationToken): Task<NpgsqlRawCopyStream>;
+    BeginTextExport(copyToCommand: string): NpgsqlCopyTextReader;
+    BeginTextExportAsync(copyToCommand: string, cancellationToken?: CancellationToken): Task<NpgsqlCopyTextReader>;
+    BeginTextImport(copyFromCommand: string): NpgsqlCopyTextWriter;
+    BeginTextImportAsync(copyFromCommand: string, cancellationToken?: CancellationToken): Task<NpgsqlCopyTextWriter>;
+    BeginTransaction(): NpgsqlTransaction;
+    BeginTransaction(level: IsolationLevel): NpgsqlTransaction;
+    BeginTransactionAsync(cancellationToken?: CancellationToken): ValueTask<NpgsqlTransaction>;
+    BeginTransactionAsync(level: IsolationLevel, cancellationToken?: CancellationToken): ValueTask<NpgsqlTransaction>;
+    ChangeDatabase(dbName: string): void;
+    CloneWith(connectionString: string): NpgsqlConnection;
+    CloneWithAsync(connectionString: string, cancellationToken?: CancellationToken): ValueTask<NpgsqlConnection>;
+    Close(): void;
+    CloseAsync(): Task;
+    CreateBatch(): NpgsqlBatch;
+    CreateCommand(): NpgsqlCommand;
+    DisposeAsync(): ValueTask;
+    EnlistTransaction(transaction: Transaction): void;
+    GetSchema(): DataTable;
+    GetSchema(collectionName: string): DataTable;
+    GetSchema(collectionName: string, restrictions: string[]): DataTable;
+    GetSchemaAsync(cancellationToken?: CancellationToken): Task<DataTable>;
+    GetSchemaAsync(collectionName: string, cancellationToken?: CancellationToken): Task<DataTable>;
+    GetSchemaAsync(collectionName: string, restrictions: string[], cancellationToken?: CancellationToken): Task<DataTable>;
+    Open(): void;
+    OpenAsync(cancellationToken: CancellationToken): Task;
+    ReloadTypes(): void;
+    ReloadTypesAsync(cancellationToken?: CancellationToken): Task;
+    UnprepareAll(): void;
+    Wait(timeout: int): boolean;
+    Wait(timeout: TimeSpan): boolean;
+    Wait(): void;
+    WaitAsync(timeout: int, cancellationToken?: CancellationToken): Task<System_Internal.Boolean>;
+    WaitAsync(timeout: TimeSpan, cancellationToken?: CancellationToken): Task<System_Internal.Boolean>;
+    WaitAsync(cancellationToken?: CancellationToken): Task;
 }
 
 
 export const NpgsqlConnection: {
     new(): NpgsqlConnection;
     new(connectionString: string): NpgsqlConnection;
-    readonly defaultPort: int;
-    readonly globalTypeMapper: INpgsqlTypeMapper;
-    clearAllPools(): void;
-    clearPool(connection: NpgsqlConnection): void;
+    readonly DefaultPort: int;
+    readonly GlobalTypeMapper: INpgsqlTypeMapper;
+    ClearAllPools(): void;
+    ClearPool(connection: NpgsqlConnection): void;
 };
 
 
 export type NpgsqlConnection = NpgsqlConnection$instance;
 
 export interface NpgsqlConnectionStringBuilder$instance extends DbConnectionStringBuilder {
-    get applicationName(): string | undefined;
-    set applicationName(value: string);
-    arrayNullabilityMode: ArrayNullabilityMode;
-    autoPrepareMinUsages: int;
-    cancellationTimeout: int;
-    channelBinding: ChannelBinding;
-    checkCertificateRevocation: boolean;
-    get clientEncoding(): string | undefined;
-    set clientEncoding(value: string);
-    commandTimeout: int;
-    connectionIdleLifetime: int;
-    connectionLifetime: int;
-    connectionPruningInterval: int;
-    get database(): string | undefined;
-    set database(value: string);
-    encoding: string;
-    enlist: boolean;
-    gssEncryptionMode: GssEncryptionMode;
-    get host(): string | undefined;
-    set host(value: string);
-    hostRecheckSeconds: int;
-    includeErrorDetail: boolean;
-    includeFailedBatchedCommand: boolean;
-    includeRealm: boolean;
-    internalCommandTimeout: int;
-    item: unknown;
-    keepAlive: int;
-    kerberosServiceName: string;
-    readonly keys: ICollection__System_Collections_Generic<System_Internal.String>;
-    loadBalanceHosts: boolean;
-    loadTableComposites: boolean;
-    logParameters: boolean;
-    maxAutoPrepare: int;
-    maxPoolSize: int;
-    minPoolSize: int;
-    multiplexing: boolean;
-    noResetOnClose: boolean;
-    get options(): string | undefined;
-    set options(value: string);
-    get passfile(): string | undefined;
-    set passfile(value: string);
-    get password(): string | undefined;
-    set password(value: string);
-    persistSecurityInfo: boolean;
-    pooling: boolean;
-    port: int;
-    readBufferSize: int;
-    get requireAuth(): string | undefined;
-    set requireAuth(value: string);
-    get rootCertificate(): string | undefined;
-    set rootCertificate(value: string);
-    get searchPath(): string | undefined;
-    set searchPath(value: string);
-    serverCompatibilityMode: ServerCompatibilityMode;
-    socketReceiveBufferSize: int;
-    socketSendBufferSize: int;
-    get sslCertificate(): string | undefined;
-    set sslCertificate(value: string);
-    get sslKey(): string | undefined;
-    set sslKey(value: string);
-    sslMode: SslMode;
-    sslNegotiation: SslNegotiation;
-    get sslPassword(): string | undefined;
-    set sslPassword(value: string);
-    get targetSessionAttributes(): string | undefined;
-    set targetSessionAttributes(value: string);
-    tcpKeepAlive: boolean;
-    tcpKeepAliveInterval: int;
-    tcpKeepAliveTime: int;
-    timeout: int;
-    get timezone(): string | undefined;
-    set timezone(value: string);
-    trustServerCertificate: boolean;
-    get username(): string | undefined;
-    set username(value: string);
-    readonly values: ICollection__System_Collections_Generic<unknown | undefined>;
-    writeBufferSize: int;
-    writeCoalescingBufferThresholdBytes: int;
-    add(item: KeyValuePair<System_Internal.String, unknown>): void;
-    clear(): void;
-    contains(item: KeyValuePair<System_Internal.String, unknown>): boolean;
-    containsKey(keyword: string): boolean;
-    copyTo(array: KeyValuePair<System_Internal.String, unknown>[], arrayIndex: int): void;
-    equals(obj: unknown): boolean;
-    getEnumerator(): IEnumerator__System_Collections_Generic<KeyValuePair<System_Internal.String, unknown>>;
-    getHashCode(): int;
-    remove(keyword: string): boolean;
-    remove(item: KeyValuePair<System_Internal.String, unknown>): boolean;
-    tryGetValue(keyword: string, value: unknown): boolean;
+    get ApplicationName(): string | undefined;
+    set ApplicationName(value: string);
+    ArrayNullabilityMode: ArrayNullabilityMode;
+    AutoPrepareMinUsages: int;
+    CancellationTimeout: int;
+    ChannelBinding: ChannelBinding;
+    CheckCertificateRevocation: boolean;
+    get ClientEncoding(): string | undefined;
+    set ClientEncoding(value: string);
+    CommandTimeout: int;
+    ConnectionIdleLifetime: int;
+    ConnectionLifetime: int;
+    ConnectionPruningInterval: int;
+    get Database(): string | undefined;
+    set Database(value: string);
+    Encoding: string;
+    Enlist: boolean;
+    GssEncryptionMode: GssEncryptionMode;
+    get Host(): string | undefined;
+    set Host(value: string);
+    HostRecheckSeconds: int;
+    IncludeErrorDetail: boolean;
+    IncludeFailedBatchedCommand: boolean;
+    IncludeRealm: boolean;
+    InternalCommandTimeout: int;
+    Item: unknown;
+    KeepAlive: int;
+    KerberosServiceName: string;
+    readonly Keys: ICollection__System_Collections_Generic<System_Internal.String>;
+    LoadBalanceHosts: boolean;
+    LoadTableComposites: boolean;
+    LogParameters: boolean;
+    MaxAutoPrepare: int;
+    MaxPoolSize: int;
+    MinPoolSize: int;
+    Multiplexing: boolean;
+    NoResetOnClose: boolean;
+    get Options(): string | undefined;
+    set Options(value: string);
+    get Passfile(): string | undefined;
+    set Passfile(value: string);
+    get Password(): string | undefined;
+    set Password(value: string);
+    PersistSecurityInfo: boolean;
+    Pooling: boolean;
+    Port: int;
+    ReadBufferSize: int;
+    get RequireAuth(): string | undefined;
+    set RequireAuth(value: string);
+    get RootCertificate(): string | undefined;
+    set RootCertificate(value: string);
+    get SearchPath(): string | undefined;
+    set SearchPath(value: string);
+    ServerCompatibilityMode: ServerCompatibilityMode;
+    SocketReceiveBufferSize: int;
+    SocketSendBufferSize: int;
+    get SslCertificate(): string | undefined;
+    set SslCertificate(value: string);
+    get SslKey(): string | undefined;
+    set SslKey(value: string);
+    SslMode: SslMode;
+    SslNegotiation: SslNegotiation;
+    get SslPassword(): string | undefined;
+    set SslPassword(value: string);
+    get TargetSessionAttributes(): string | undefined;
+    set TargetSessionAttributes(value: string);
+    TcpKeepAlive: boolean;
+    TcpKeepAliveInterval: int;
+    TcpKeepAliveTime: int;
+    Timeout: int;
+    get Timezone(): string | undefined;
+    set Timezone(value: string);
+    TrustServerCertificate: boolean;
+    get Username(): string | undefined;
+    set Username(value: string);
+    readonly Values: ICollection__System_Collections_Generic<unknown | undefined>;
+    WriteBufferSize: int;
+    WriteCoalescingBufferThresholdBytes: int;
+    Add(item: KeyValuePair<System_Internal.String, unknown>): void;
+    Clear(): void;
+    Contains(item: KeyValuePair<System_Internal.String, unknown>): boolean;
+    ContainsKey(keyword: string): boolean;
+    CopyTo(array: KeyValuePair<System_Internal.String, unknown>[], arrayIndex: int): void;
+    Equals(obj: unknown): boolean;
+    GetEnumerator(): IEnumerator__System_Collections_Generic<KeyValuePair<System_Internal.String, unknown>>;
+    GetHashCode(): int;
+    Remove(keyword: string): boolean;
+    Remove(item: KeyValuePair<System_Internal.String, unknown>): boolean;
+    TryGetValue(keyword: string, value: unknown): boolean;
 }
 
 
@@ -525,10 +525,10 @@ export const NpgsqlConnectionStringBuilder: {
 export type NpgsqlConnectionStringBuilder = NpgsqlConnectionStringBuilder$instance;
 
 export interface NpgsqlCopyTextReader$instance extends StreamReader {
-    timeout: int;
-    cancel(): void;
-    cancelAsync(): Task;
-    disposeAsync(): ValueTask;
+    Timeout: int;
+    Cancel(): void;
+    CancelAsync(): Task;
+    DisposeAsync(): ValueTask;
 }
 
 
@@ -540,9 +540,9 @@ export const NpgsqlCopyTextReader: {
 export type NpgsqlCopyTextReader = NpgsqlCopyTextReader$instance;
 
 export interface NpgsqlCopyTextWriter$instance extends StreamWriter {
-    timeout: int;
-    cancel(): void;
-    cancelAsync(): Task;
+    Timeout: int;
+    Cancel(): void;
+    CancelAsync(): Task;
 }
 
 
@@ -554,14 +554,14 @@ export const NpgsqlCopyTextWriter: {
 export type NpgsqlCopyTextWriter = NpgsqlCopyTextWriter$instance;
 
 export interface NpgsqlDataAdapter$instance extends DbDataAdapter {
-    get deleteCommand(): NpgsqlCommand | undefined;
-    set deleteCommand(value: NpgsqlCommand);
-    get insertCommand(): NpgsqlCommand | undefined;
-    set insertCommand(value: NpgsqlCommand);
-    get selectCommand(): NpgsqlCommand | undefined;
-    set selectCommand(value: NpgsqlCommand);
-    get updateCommand(): NpgsqlCommand | undefined;
-    set updateCommand(value: NpgsqlCommand);
+    get DeleteCommand(): NpgsqlCommand | undefined;
+    set DeleteCommand(value: NpgsqlCommand);
+    get InsertCommand(): NpgsqlCommand | undefined;
+    set InsertCommand(value: NpgsqlCommand);
+    get SelectCommand(): NpgsqlCommand | undefined;
+    set SelectCommand(value: NpgsqlCommand);
+    get UpdateCommand(): NpgsqlCommand | undefined;
+    set UpdateCommand(value: NpgsqlCommand);
 }
 
 
@@ -576,60 +576,60 @@ export const NpgsqlDataAdapter: {
 export type NpgsqlDataAdapter = NpgsqlDataAdapter$instance;
 
 export interface NpgsqlDataReader$instance extends DbDataReader {
-    readonly depth: int;
-    readonly fieldCount: int;
-    readonly hasRows: boolean;
-    readonly isClosed: boolean;
-    readonly isOnRow: boolean;
-    readonly recordsAffected: int;
-    readonly rows: ulong;
-    readonly statements: IReadOnlyList<NpgsqlBatchCommand>;
-    close(): void;
-    closeAsync(): Task;
-    disposeAsync(): ValueTask;
+    readonly Depth: int;
+    readonly FieldCount: int;
+    readonly HasRows: boolean;
+    readonly IsClosed: boolean;
+    readonly IsOnRow: boolean;
+    readonly RecordsAffected: int;
+    readonly Rows: ulong;
+    readonly Statements: IReadOnlyList<NpgsqlBatchCommand>;
+    Close(): void;
+    CloseAsync(): Task;
+    DisposeAsync(): ValueTask;
     get_Item(ordinal: int): unknown;
     get_Item(name: string): unknown;
-    getBoolean(ordinal: int): boolean;
-    getByte(ordinal: int): byte;
-    getBytes(ordinal: int, dataOffset: long, buffer: byte[], bufferOffset: int, length: int): long;
-    getChar(ordinal: int): char;
-    getChars(ordinal: int, dataOffset: long, buffer: char[], bufferOffset: int, length: int): long;
-    getColumnSchema(): ReadOnlyCollection<NpgsqlDbColumn>;
-    getColumnSchemaAsync(cancellationToken?: CancellationToken): Task<ReadOnlyCollection<DbColumn>>;
-    getData(ordinal: int): NpgsqlNestedDataReader;
-    getDataTypeName(ordinal: int): string;
-    getDataTypeOID(ordinal: int): uint;
-    getDateTime(ordinal: int): DateTime;
-    getDecimal(ordinal: int): decimal;
-    getDouble(ordinal: int): double;
-    getEnumerator(): IEnumerator;
-    getFieldType(ordinal: int): Type;
-    getFieldValue<T>(ordinal: int): T;
-    getFieldValueAsync<T>(ordinal: int, cancellationToken: CancellationToken): Task<T>;
-    getFloat(ordinal: int): float;
-    getGuid(ordinal: int): Guid;
-    getInt16(ordinal: int): short;
-    getInt32(ordinal: int): int;
-    getInt64(ordinal: int): long;
-    getName(ordinal: int): string;
-    getOrdinal(name: string): int;
-    getPostgresType(ordinal: int): PostgresType;
-    getSchemaTable(): DataTable | undefined;
-    getSchemaTableAsync(cancellationToken?: CancellationToken): Task<DataTable | undefined>;
-    getStream(ordinal: int): Stream;
-    getStreamAsync(ordinal: int, cancellationToken?: CancellationToken): Task<Stream>;
-    getString(ordinal: int): string;
-    getTextReader(ordinal: int): TextReader;
-    getTextReaderAsync(ordinal: int, cancellationToken?: CancellationToken): Task<TextReader>;
-    getTimeSpan(ordinal: int): TimeSpan;
-    getValue(ordinal: int): unknown;
-    getValues(values: unknown[]): int;
-    isDBNull(ordinal: int): boolean;
-    isDBNullAsync(ordinal: int, cancellationToken: CancellationToken): Task<System_Internal.Boolean>;
-    nextResult(): boolean;
-    nextResultAsync(cancellationToken: CancellationToken): Task<System_Internal.Boolean>;
-    read(): boolean;
-    readAsync(cancellationToken: CancellationToken): Task<System_Internal.Boolean>;
+    GetBoolean(ordinal: int): boolean;
+    GetByte(ordinal: int): byte;
+    GetBytes(ordinal: int, dataOffset: long, buffer: byte[], bufferOffset: int, length: int): long;
+    GetChar(ordinal: int): char;
+    GetChars(ordinal: int, dataOffset: long, buffer: char[], bufferOffset: int, length: int): long;
+    GetColumnSchema(): ReadOnlyCollection<NpgsqlDbColumn>;
+    GetColumnSchemaAsync(cancellationToken?: CancellationToken): Task<ReadOnlyCollection<DbColumn>>;
+    GetData(ordinal: int): NpgsqlNestedDataReader;
+    GetDataTypeName(ordinal: int): string;
+    GetDataTypeOID(ordinal: int): uint;
+    GetDateTime(ordinal: int): DateTime;
+    GetDecimal(ordinal: int): decimal;
+    GetDouble(ordinal: int): double;
+    GetEnumerator(): IEnumerator;
+    GetFieldType(ordinal: int): Type;
+    GetFieldValue<T>(ordinal: int): T;
+    GetFieldValueAsync<T>(ordinal: int, cancellationToken: CancellationToken): Task<T>;
+    GetFloat(ordinal: int): float;
+    GetGuid(ordinal: int): Guid;
+    GetInt16(ordinal: int): short;
+    GetInt32(ordinal: int): int;
+    GetInt64(ordinal: int): long;
+    GetName(ordinal: int): string;
+    GetOrdinal(name: string): int;
+    GetPostgresType(ordinal: int): PostgresType;
+    GetSchemaTable(): DataTable | undefined;
+    GetSchemaTableAsync(cancellationToken?: CancellationToken): Task<DataTable | undefined>;
+    GetStream(ordinal: int): Stream;
+    GetStreamAsync(ordinal: int, cancellationToken?: CancellationToken): Task<Stream>;
+    GetString(ordinal: int): string;
+    GetTextReader(ordinal: int): TextReader;
+    GetTextReaderAsync(ordinal: int, cancellationToken?: CancellationToken): Task<TextReader>;
+    GetTimeSpan(ordinal: int): TimeSpan;
+    GetValue(ordinal: int): unknown;
+    GetValues(values: unknown[]): int;
+    IsDBNull(ordinal: int): boolean;
+    IsDBNullAsync(ordinal: int, cancellationToken: CancellationToken): Task<System_Internal.Boolean>;
+    NextResult(): boolean;
+    NextResultAsync(cancellationToken: CancellationToken): Task<System_Internal.Boolean>;
+    Read(): boolean;
+    ReadAsync(cancellationToken: CancellationToken): Task<System_Internal.Boolean>;
 }
 
 
@@ -641,64 +641,64 @@ export const NpgsqlDataReader: {
 export type NpgsqlDataReader = NpgsqlDataReader$instance;
 
 export interface NpgsqlDataSource$instance extends DbDataSource {
-    readonly connectionString: string;
-    password: string;
-    clear(): void;
-    createBatch(): NpgsqlBatch;
-    createCommand(commandText?: string): NpgsqlCommand;
-    createConnection(): NpgsqlConnection;
-    openConnection(): NpgsqlConnection;
-    openConnectionAsync(cancellationToken?: CancellationToken): ValueTask<NpgsqlConnection>;
-    reloadTypes(): void;
-    reloadTypesAsync(cancellationToken?: CancellationToken): Task;
+    readonly ConnectionString: string;
+    Password: string;
+    Clear(): void;
+    CreateBatch(): NpgsqlBatch;
+    CreateCommand(commandText?: string): NpgsqlCommand;
+    CreateConnection(): NpgsqlConnection;
+    OpenConnection(): NpgsqlConnection;
+    OpenConnectionAsync(cancellationToken?: CancellationToken): ValueTask<NpgsqlConnection>;
+    ReloadTypes(): void;
+    ReloadTypesAsync(cancellationToken?: CancellationToken): Task;
 }
 
 
 export const NpgsqlDataSource: {
-    create(connectionStringBuilder: NpgsqlConnectionStringBuilder): NpgsqlDataSource;
-    create(connectionString: string): NpgsqlDataSource;
+    Create(connectionStringBuilder: NpgsqlConnectionStringBuilder): NpgsqlDataSource;
+    Create(connectionString: string): NpgsqlDataSource;
 };
 
 
 export type NpgsqlDataSource = NpgsqlDataSource$instance;
 
 export interface NpgsqlDataSourceBuilder$instance {
-    readonly connectionString: string;
-    readonly connectionStringBuilder: NpgsqlConnectionStringBuilder;
-    defaultNameTranslator: INpgsqlNameTranslator;
-    name: string;
-    addTypeInfoResolverFactory(factory: PgTypeInfoResolverFactory): void;
-    build(): NpgsqlDataSource;
-    buildMultiHost(): NpgsqlMultiHostDataSource;
-    configureJsonOptions(serializerOptions: JsonSerializerOptions): NpgsqlDataSourceBuilder;
-    configureTracing(configureAction: Action<NpgsqlTracingOptionsBuilder>): NpgsqlDataSourceBuilder;
-    configureTypeLoading(configureAction: Action<NpgsqlTypeLoadingOptionsBuilder>): NpgsqlDataSourceBuilder;
-    enableDynamicJson(jsonbClrTypes?: Type[], jsonClrTypes?: Type[]): NpgsqlDataSourceBuilder;
-    enableParameterLogging(parameterLoggingEnabled?: boolean): NpgsqlDataSourceBuilder;
-    enableRecordsAsTuples(): NpgsqlDataSourceBuilder;
-    enableUnmappedTypes(): NpgsqlDataSourceBuilder;
-    mapComposite<T>(pgName?: string, nameTranslator?: INpgsqlNameTranslator): NpgsqlDataSourceBuilder;
-    mapComposite(clrType: Type, pgName?: string, nameTranslator?: INpgsqlNameTranslator): NpgsqlDataSourceBuilder;
-    mapEnum<TEnum extends number>(pgName?: string, nameTranslator?: INpgsqlNameTranslator): NpgsqlDataSourceBuilder;
-    mapEnum(clrType: Type, pgName?: string, nameTranslator?: INpgsqlNameTranslator): NpgsqlDataSourceBuilder;
-    unmapComposite<T>(pgName?: string, nameTranslator?: INpgsqlNameTranslator): boolean;
-    unmapComposite(clrType: Type, pgName?: string, nameTranslator?: INpgsqlNameTranslator): boolean;
-    unmapEnum<TEnum extends number>(pgName?: string, nameTranslator?: INpgsqlNameTranslator): boolean;
-    unmapEnum(clrType: Type, pgName?: string, nameTranslator?: INpgsqlNameTranslator): boolean;
-    useClientCertificate(clientCertificate: X509Certificate): NpgsqlDataSourceBuilder;
-    useClientCertificates(clientCertificates: X509CertificateCollection): NpgsqlDataSourceBuilder;
-    useClientCertificatesCallback(clientCertificatesCallback: Action<X509CertificateCollection>): NpgsqlDataSourceBuilder;
-    useLoggerFactory(loggerFactory: ILoggerFactory): NpgsqlDataSourceBuilder;
-    useNegotiateOptionsCallback(negotiateOptionsCallback: Action<NegotiateAuthenticationClientOptions>): NpgsqlDataSourceBuilder;
-    usePasswordProvider(passwordProvider: Func<NpgsqlConnectionStringBuilder, System_Internal.String>, passwordProviderAsync: Func<NpgsqlConnectionStringBuilder, CancellationToken, ValueTask<System_Internal.String>>): NpgsqlDataSourceBuilder;
-    usePeriodicPasswordProvider(passwordProvider: Func<NpgsqlConnectionStringBuilder, CancellationToken, ValueTask<System_Internal.String>>, successRefreshInterval: TimeSpan, failureRefreshInterval: TimeSpan): NpgsqlDataSourceBuilder;
-    usePhysicalConnectionInitializer(connectionInitializer: Action<NpgsqlConnection>, connectionInitializerAsync: Func<NpgsqlConnection, Task>): NpgsqlDataSourceBuilder;
-    useRootCertificate(rootCertificate: X509Certificate2): NpgsqlDataSourceBuilder;
-    useRootCertificateCallback(rootCertificateCallback: Func<X509Certificate2>): NpgsqlDataSourceBuilder;
-    useRootCertificates(rootCertificates: X509Certificate2Collection): NpgsqlDataSourceBuilder;
-    useRootCertificatesCallback(rootCertificateCallback: Func<X509Certificate2Collection>): NpgsqlDataSourceBuilder;
-    useSslClientAuthenticationOptionsCallback(sslClientAuthenticationOptionsCallback: Action<SslClientAuthenticationOptions>): NpgsqlDataSourceBuilder;
-    useUserCertificateValidationCallback(userCertificateValidationCallback: RemoteCertificateValidationCallback): NpgsqlDataSourceBuilder;
+    readonly ConnectionString: string;
+    readonly ConnectionStringBuilder: NpgsqlConnectionStringBuilder;
+    DefaultNameTranslator: INpgsqlNameTranslator;
+    Name: string;
+    AddTypeInfoResolverFactory(factory: PgTypeInfoResolverFactory): void;
+    Build(): NpgsqlDataSource;
+    BuildMultiHost(): NpgsqlMultiHostDataSource;
+    ConfigureJsonOptions(serializerOptions: JsonSerializerOptions): NpgsqlDataSourceBuilder;
+    ConfigureTracing(configureAction: Action<NpgsqlTracingOptionsBuilder>): NpgsqlDataSourceBuilder;
+    ConfigureTypeLoading(configureAction: Action<NpgsqlTypeLoadingOptionsBuilder>): NpgsqlDataSourceBuilder;
+    EnableDynamicJson(jsonbClrTypes?: Type[], jsonClrTypes?: Type[]): NpgsqlDataSourceBuilder;
+    EnableParameterLogging(parameterLoggingEnabled?: boolean): NpgsqlDataSourceBuilder;
+    EnableRecordsAsTuples(): NpgsqlDataSourceBuilder;
+    EnableUnmappedTypes(): NpgsqlDataSourceBuilder;
+    MapComposite<T>(pgName?: string, nameTranslator?: INpgsqlNameTranslator): NpgsqlDataSourceBuilder;
+    MapComposite(clrType: Type, pgName?: string, nameTranslator?: INpgsqlNameTranslator): NpgsqlDataSourceBuilder;
+    MapEnum<TEnum extends number>(pgName?: string, nameTranslator?: INpgsqlNameTranslator): NpgsqlDataSourceBuilder;
+    MapEnum(clrType: Type, pgName?: string, nameTranslator?: INpgsqlNameTranslator): NpgsqlDataSourceBuilder;
+    UnmapComposite<T>(pgName?: string, nameTranslator?: INpgsqlNameTranslator): boolean;
+    UnmapComposite(clrType: Type, pgName?: string, nameTranslator?: INpgsqlNameTranslator): boolean;
+    UnmapEnum<TEnum extends number>(pgName?: string, nameTranslator?: INpgsqlNameTranslator): boolean;
+    UnmapEnum(clrType: Type, pgName?: string, nameTranslator?: INpgsqlNameTranslator): boolean;
+    UseClientCertificate(clientCertificate: X509Certificate): NpgsqlDataSourceBuilder;
+    UseClientCertificates(clientCertificates: X509CertificateCollection): NpgsqlDataSourceBuilder;
+    UseClientCertificatesCallback(clientCertificatesCallback: Action<X509CertificateCollection>): NpgsqlDataSourceBuilder;
+    UseLoggerFactory(loggerFactory: ILoggerFactory): NpgsqlDataSourceBuilder;
+    UseNegotiateOptionsCallback(negotiateOptionsCallback: Action<NegotiateAuthenticationClientOptions>): NpgsqlDataSourceBuilder;
+    UsePasswordProvider(passwordProvider: Func<NpgsqlConnectionStringBuilder, System_Internal.String>, passwordProviderAsync: Func<NpgsqlConnectionStringBuilder, CancellationToken, ValueTask<System_Internal.String>>): NpgsqlDataSourceBuilder;
+    UsePeriodicPasswordProvider(passwordProvider: Func<NpgsqlConnectionStringBuilder, CancellationToken, ValueTask<System_Internal.String>>, successRefreshInterval: TimeSpan, failureRefreshInterval: TimeSpan): NpgsqlDataSourceBuilder;
+    UsePhysicalConnectionInitializer(connectionInitializer: Action<NpgsqlConnection>, connectionInitializerAsync: Func<NpgsqlConnection, Task>): NpgsqlDataSourceBuilder;
+    UseRootCertificate(rootCertificate: X509Certificate2): NpgsqlDataSourceBuilder;
+    UseRootCertificateCallback(rootCertificateCallback: Func<X509Certificate2>): NpgsqlDataSourceBuilder;
+    UseRootCertificates(rootCertificates: X509Certificate2Collection): NpgsqlDataSourceBuilder;
+    UseRootCertificatesCallback(rootCertificateCallback: Func<X509Certificate2Collection>): NpgsqlDataSourceBuilder;
+    UseSslClientAuthenticationOptionsCallback(sslClientAuthenticationOptionsCallback: Action<SslClientAuthenticationOptions>): NpgsqlDataSourceBuilder;
+    UseUserCertificateValidationCallback(userCertificateValidationCallback: RemoteCertificateValidationCallback): NpgsqlDataSourceBuilder;
 }
 
 
@@ -715,9 +715,9 @@ export type NpgsqlDataSourceBuilder = NpgsqlDataSourceBuilder$instance & __Npgsq
 
 
 export interface NpgsqlException$instance extends DbException {
-    get batchCommand(): NpgsqlBatchCommand | undefined;
-    set batchCommand(value: NpgsqlBatchCommand);
-    readonly isTransient: boolean;
+    get BatchCommand(): NpgsqlBatchCommand | undefined;
+    set BatchCommand(value: NpgsqlBatchCommand);
+    readonly IsTransient: boolean;
 }
 
 
@@ -731,45 +731,45 @@ export const NpgsqlException: {
 export type NpgsqlException = NpgsqlException$instance;
 
 export interface NpgsqlFactory$instance extends DbProviderFactory {
-    readonly canCreateBatch: boolean;
-    readonly canCreateCommandBuilder: boolean;
-    readonly canCreateDataAdapter: boolean;
-    createBatch(): DbBatch;
-    createBatchCommand(): DbBatchCommand;
-    createCommand(): DbCommand;
-    createCommandBuilder(): DbCommandBuilder;
-    createConnection(): DbConnection;
-    createConnectionStringBuilder(): DbConnectionStringBuilder;
-    createDataAdapter(): DbDataAdapter;
-    createDataSource(connectionString: string): DbDataSource;
-    createParameter(): DbParameter;
-    getService(serviceType: Type): unknown | undefined;
+    readonly CanCreateBatch: boolean;
+    readonly CanCreateCommandBuilder: boolean;
+    readonly CanCreateDataAdapter: boolean;
+    CreateBatch(): DbBatch;
+    CreateBatchCommand(): DbBatchCommand;
+    CreateCommand(): DbCommand;
+    CreateCommandBuilder(): DbCommandBuilder;
+    CreateConnection(): DbConnection;
+    CreateConnectionStringBuilder(): DbConnectionStringBuilder;
+    CreateDataAdapter(): DbDataAdapter;
+    CreateDataSource(connectionString: string): DbDataSource;
+    CreateParameter(): DbParameter;
+    GetService(serviceType: Type): unknown | undefined;
 }
 
 
 export const NpgsqlFactory: {
     new(): NpgsqlFactory;
-    readonly instance: NpgsqlFactory;
+    readonly Instance: NpgsqlFactory;
 };
 
 
 export type NpgsqlFactory = NpgsqlFactory$instance;
 
 export interface NpgsqlLargeObjectManager$instance {
-    readonly has64BitSupport: boolean;
-    maxTransferBlockSize: int;
-    create(preferredOid?: uint): uint;
-    createAsync(preferredOid: uint, cancellationToken?: CancellationToken): Task<System_Internal.UInt32>;
-    exportRemote(oid: uint, path: string): void;
-    exportRemoteAsync(oid: uint, path: string, cancellationToken?: CancellationToken): Task;
-    importRemote(path: string, oid?: uint): void;
-    importRemoteAsync(path: string, oid: uint, cancellationToken?: CancellationToken): Task;
-    openRead(oid: uint): NpgsqlLargeObjectStream;
-    openReadAsync(oid: uint, cancellationToken?: CancellationToken): Task<NpgsqlLargeObjectStream>;
-    openReadWrite(oid: uint): NpgsqlLargeObjectStream;
-    openReadWriteAsync(oid: uint, cancellationToken?: CancellationToken): Task<NpgsqlLargeObjectStream>;
-    unlink(oid: uint): void;
-    unlinkAsync(oid: uint, cancellationToken?: CancellationToken): Task;
+    readonly Has64BitSupport: boolean;
+    MaxTransferBlockSize: int;
+    Create(preferredOid?: uint): uint;
+    CreateAsync(preferredOid: uint, cancellationToken?: CancellationToken): Task<System_Internal.UInt32>;
+    ExportRemote(oid: uint, path: string): void;
+    ExportRemoteAsync(oid: uint, path: string, cancellationToken?: CancellationToken): Task;
+    ImportRemote(path: string, oid?: uint): void;
+    ImportRemoteAsync(path: string, oid: uint, cancellationToken?: CancellationToken): Task;
+    OpenRead(oid: uint): NpgsqlLargeObjectStream;
+    OpenReadAsync(oid: uint, cancellationToken?: CancellationToken): Task<NpgsqlLargeObjectStream>;
+    OpenReadWrite(oid: uint): NpgsqlLargeObjectStream;
+    OpenReadWriteAsync(oid: uint, cancellationToken?: CancellationToken): Task<NpgsqlLargeObjectStream>;
+    Unlink(oid: uint): void;
+    UnlinkAsync(oid: uint, cancellationToken?: CancellationToken): Task;
 }
 
 
@@ -781,24 +781,24 @@ export const NpgsqlLargeObjectManager: {
 export type NpgsqlLargeObjectManager = NpgsqlLargeObjectManager$instance;
 
 export interface NpgsqlLargeObjectStream$instance extends Stream {
-    readonly canRead: boolean;
-    readonly canSeek: boolean;
-    readonly canTimeout: boolean;
-    readonly canWrite: boolean;
-    readonly has64BitSupport: boolean;
-    readonly length: long;
-    position: long;
-    close(): void;
-    flush(): void;
-    getLengthAsync(cancellationToken?: CancellationToken): Task<System_Internal.Int64>;
-    read(buffer: byte[], offset: int, count: int): int;
-    readAsync(buffer: byte[], offset: int, count: int, cancellationToken: CancellationToken): Task<System_Internal.Int32>;
-    seek(offset: long, origin: SeekOrigin): long;
-    seekAsync(offset: long, origin: SeekOrigin, cancellationToken?: CancellationToken): Task<System_Internal.Int64>;
-    setLength(value: long): void;
-    setLength(value: long, cancellationToken: CancellationToken): Task;
-    write(buffer: byte[], offset: int, count: int): void;
-    writeAsync(buffer: byte[], offset: int, count: int, cancellationToken: CancellationToken): Task;
+    readonly CanRead: boolean;
+    readonly CanSeek: boolean;
+    readonly CanTimeout: boolean;
+    readonly CanWrite: boolean;
+    readonly Has64BitSupport: boolean;
+    readonly Length: long;
+    Position: long;
+    Close(): void;
+    Flush(): void;
+    GetLengthAsync(cancellationToken?: CancellationToken): Task<System_Internal.Int64>;
+    Read(buffer: byte[], offset: int, count: int): int;
+    ReadAsync(buffer: byte[], offset: int, count: int, cancellationToken: CancellationToken): Task<System_Internal.Int32>;
+    Seek(offset: long, origin: SeekOrigin): long;
+    SeekAsync(offset: long, origin: SeekOrigin, cancellationToken?: CancellationToken): Task<System_Internal.Int64>;
+    SetLength(value: long): void;
+    SetLength(value: long, cancellationToken: CancellationToken): Task;
+    Write(buffer: byte[], offset: int, count: int): void;
+    WriteAsync(buffer: byte[], offset: int, count: int, cancellationToken: CancellationToken): Task;
 }
 
 
@@ -815,7 +815,7 @@ export interface NpgsqlLoggingConfiguration$instance {
 
 export const NpgsqlLoggingConfiguration: {
     new(): NpgsqlLoggingConfiguration;
-    initializeLogging(loggerFactory: ILoggerFactory, parameterLoggingEnabled?: boolean): void;
+    InitializeLogging(loggerFactory: ILoggerFactory, parameterLoggingEnabled?: boolean): void;
 };
 
 
@@ -833,15 +833,15 @@ export const NpgsqlMetricsOptions: {
 export type NpgsqlMetricsOptions = NpgsqlMetricsOptions$instance;
 
 export interface NpgsqlMultiHostDataSource$instance extends NpgsqlDataSource {
-    clear(): void;
-    clearDatabaseStates(): void;
-    createConnection(targetSessionAttributes: TargetSessionAttributes): NpgsqlConnection;
-    createConnection(): NpgsqlConnection;
-    openConnection(targetSessionAttributes: TargetSessionAttributes): NpgsqlConnection;
-    openConnection(): NpgsqlConnection;
-    openConnectionAsync(targetSessionAttributes: TargetSessionAttributes, cancellationToken?: CancellationToken): ValueTask<NpgsqlConnection>;
-    openConnectionAsync(cancellationToken?: CancellationToken): ValueTask<NpgsqlConnection>;
-    withTargetSession(targetSessionAttributes: TargetSessionAttributes): NpgsqlDataSource;
+    Clear(): void;
+    ClearDatabaseStates(): void;
+    CreateConnection(targetSessionAttributes: TargetSessionAttributes): NpgsqlConnection;
+    CreateConnection(): NpgsqlConnection;
+    OpenConnection(targetSessionAttributes: TargetSessionAttributes): NpgsqlConnection;
+    OpenConnection(): NpgsqlConnection;
+    OpenConnectionAsync(targetSessionAttributes: TargetSessionAttributes, cancellationToken?: CancellationToken): ValueTask<NpgsqlConnection>;
+    OpenConnectionAsync(cancellationToken?: CancellationToken): ValueTask<NpgsqlConnection>;
+    WithTargetSession(targetSessionAttributes: TargetSessionAttributes): NpgsqlDataSource;
 }
 
 
@@ -853,40 +853,40 @@ export const NpgsqlMultiHostDataSource: {
 export type NpgsqlMultiHostDataSource = NpgsqlMultiHostDataSource$instance;
 
 export interface NpgsqlNestedDataReader$instance extends DbDataReader {
-    readonly depth: int;
-    readonly fieldCount: int;
-    readonly hasRows: boolean;
-    readonly isClosed: boolean;
-    readonly recordsAffected: int;
-    close(): void;
+    readonly Depth: int;
+    readonly FieldCount: int;
+    readonly HasRows: boolean;
+    readonly IsClosed: boolean;
+    readonly RecordsAffected: int;
+    Close(): void;
     get_Item(ordinal: int): unknown;
     get_Item(name: string): unknown;
-    getBoolean(ordinal: int): boolean;
-    getByte(ordinal: int): byte;
-    getBytes(ordinal: int, dataOffset: long, buffer: byte[], bufferOffset: int, length: int): long;
-    getChar(ordinal: int): char;
-    getChars(ordinal: int, dataOffset: long, buffer: char[], bufferOffset: int, length: int): long;
-    getData(ordinal: int): NpgsqlNestedDataReader;
-    getDataTypeName(ordinal: int): string;
-    getDateTime(ordinal: int): DateTime;
-    getDecimal(ordinal: int): decimal;
-    getDouble(ordinal: int): double;
-    getEnumerator(): IEnumerator;
-    getFieldType(ordinal: int): Type;
-    getFieldValue<T>(ordinal: int): T;
-    getFloat(ordinal: int): float;
-    getGuid(ordinal: int): Guid;
-    getInt16(ordinal: int): short;
-    getInt32(ordinal: int): int;
-    getInt64(ordinal: int): long;
-    getName(ordinal: int): string;
-    getOrdinal(name: string): int;
-    getString(ordinal: int): string;
-    getValue(ordinal: int): unknown;
-    getValues(values: unknown[]): int;
-    isDBNull(ordinal: int): boolean;
-    nextResult(): boolean;
-    read(): boolean;
+    GetBoolean(ordinal: int): boolean;
+    GetByte(ordinal: int): byte;
+    GetBytes(ordinal: int, dataOffset: long, buffer: byte[], bufferOffset: int, length: int): long;
+    GetChar(ordinal: int): char;
+    GetChars(ordinal: int, dataOffset: long, buffer: char[], bufferOffset: int, length: int): long;
+    GetData(ordinal: int): NpgsqlNestedDataReader;
+    GetDataTypeName(ordinal: int): string;
+    GetDateTime(ordinal: int): DateTime;
+    GetDecimal(ordinal: int): decimal;
+    GetDouble(ordinal: int): double;
+    GetEnumerator(): IEnumerator;
+    GetFieldType(ordinal: int): Type;
+    GetFieldValue<T>(ordinal: int): T;
+    GetFloat(ordinal: int): float;
+    GetGuid(ordinal: int): Guid;
+    GetInt16(ordinal: int): short;
+    GetInt32(ordinal: int): int;
+    GetInt64(ordinal: int): long;
+    GetName(ordinal: int): string;
+    GetOrdinal(name: string): int;
+    GetString(ordinal: int): string;
+    GetValue(ordinal: int): unknown;
+    GetValues(values: unknown[]): int;
+    IsDBNull(ordinal: int): boolean;
+    NextResult(): boolean;
+    Read(): boolean;
 }
 
 
@@ -898,7 +898,7 @@ export const NpgsqlNestedDataReader: {
 export type NpgsqlNestedDataReader = NpgsqlNestedDataReader$instance;
 
 export interface NpgsqlNoticeEventArgs$instance extends EventArgs {
-    readonly notice: PostgresNotice;
+    readonly Notice: PostgresNotice;
 }
 
 
@@ -910,8 +910,8 @@ export const NpgsqlNoticeEventArgs: {
 export type NpgsqlNoticeEventArgs = NpgsqlNoticeEventArgs$instance;
 
 export interface NpgsqlNotificationEventArgs$instance extends EventArgs {
-    readonly channel: string;
-    readonly payload: string;
+    readonly Channel: string;
+    readonly Payload: string;
     readonly PID: int;
 }
 
@@ -924,7 +924,7 @@ export const NpgsqlNotificationEventArgs: {
 export type NpgsqlNotificationEventArgs = NpgsqlNotificationEventArgs$instance;
 
 export interface NpgsqlOperationInProgressException$instance extends NpgsqlException {
-    readonly commandInProgress: NpgsqlCommand | undefined;
+    readonly CommandInProgress: NpgsqlCommand | undefined;
 }
 
 
@@ -936,28 +936,28 @@ export const NpgsqlOperationInProgressException: {
 export type NpgsqlOperationInProgressException = NpgsqlOperationInProgressException$instance;
 
 export interface NpgsqlParameter$instance extends DbParameter {
-    get collection(): NpgsqlParameterCollection | undefined;
-    set collection(value: NpgsqlParameterCollection);
-    get dataTypeName(): string | undefined;
-    set dataTypeName(value: string);
-    dbType: DbType;
-    direction: ParameterDirection;
-    isNullable: boolean;
-    npgsqlDbType: NpgsqlDbType;
-    get npgsqlValue(): unknown | undefined;
-    set npgsqlValue(value: unknown);
-    parameterName: string;
-    readonly postgresType: PostgresType | undefined;
-    precision: byte;
-    scale: byte;
-    size: int;
-    sourceColumn: string;
-    sourceColumnNullMapping: boolean;
-    sourceVersion: DataRowVersion;
-    get value(): unknown | undefined;
-    set value(value: unknown);
-    clone(): NpgsqlParameter;
-    resetDbType(): void;
+    get Collection(): NpgsqlParameterCollection | undefined;
+    set Collection(value: NpgsqlParameterCollection);
+    get DataTypeName(): string | undefined;
+    set DataTypeName(value: string);
+    DbType: DbType;
+    Direction: ParameterDirection;
+    IsNullable: boolean;
+    NpgsqlDbType: NpgsqlDbType;
+    get NpgsqlValue(): unknown | undefined;
+    set NpgsqlValue(value: unknown);
+    ParameterName: string;
+    readonly PostgresType: PostgresType | undefined;
+    Precision: byte;
+    Scale: byte;
+    Size: int;
+    SourceColumn: string;
+    SourceColumnNullMapping: boolean;
+    SourceVersion: DataRowVersion;
+    get Value(): unknown | undefined;
+    set Value(value: unknown);
+    Clone(): NpgsqlParameter;
+    ResetDbType(): void;
 }
 
 
@@ -978,9 +978,9 @@ export const NpgsqlParameter: {
 export type NpgsqlParameter = NpgsqlParameter$instance;
 
 export interface NpgsqlParameter_1$instance<T> extends NpgsqlParameter {
-    typedValue: T | undefined;
-    get value(): unknown | undefined;
-    set value(value: unknown);
+    TypedValue: T | undefined;
+    get Value(): unknown | undefined;
+    set Value(value: unknown);
 }
 
 
@@ -995,46 +995,46 @@ export const NpgsqlParameter_1: {
 export type NpgsqlParameter_1<T> = NpgsqlParameter_1$instance<T>;
 
 export interface NpgsqlParameterCollection$instance extends DbParameterCollection {
-    readonly count: int;
-    readonly isFixedSize: boolean;
-    readonly isReadOnly: boolean;
-    readonly isSynchronized: boolean;
-    readonly syncRoot: unknown;
-    add(value: NpgsqlParameter): NpgsqlParameter;
-    add(parameterName: string, parameterType: NpgsqlDbType): NpgsqlParameter;
-    add(parameterName: string, parameterType: NpgsqlDbType, size: int): NpgsqlParameter;
-    add(parameterName: string, parameterType: NpgsqlDbType, size: int, sourceColumn: string): NpgsqlParameter;
-    add(value: unknown): int;
-    addRange(values: ClrArray): void;
-    addWithValue(parameterName: string, value: unknown): NpgsqlParameter;
-    addWithValue(parameterName: string, parameterType: NpgsqlDbType, value: unknown): NpgsqlParameter;
-    addWithValue(parameterName: string, parameterType: NpgsqlDbType, size: int, value: unknown): NpgsqlParameter;
-    addWithValue(parameterName: string, parameterType: NpgsqlDbType, size: int, sourceColumn: string, value: unknown): NpgsqlParameter;
-    addWithValue(value: unknown): NpgsqlParameter;
-    addWithValue(parameterType: NpgsqlDbType, value: unknown): NpgsqlParameter;
-    clear(): void;
-    contains(parameterName: string): boolean;
-    contains(value: unknown): boolean;
-    contains(item: NpgsqlParameter): boolean;
-    copyTo(array: ClrArray, index: int): void;
-    copyTo(array: NpgsqlParameter[], arrayIndex: int): void;
+    readonly Count: int;
+    readonly IsFixedSize: boolean;
+    readonly IsReadOnly: boolean;
+    readonly IsSynchronized: boolean;
+    readonly SyncRoot: unknown;
+    Add(value: NpgsqlParameter): NpgsqlParameter;
+    Add(parameterName: string, parameterType: NpgsqlDbType): NpgsqlParameter;
+    Add(parameterName: string, parameterType: NpgsqlDbType, size: int): NpgsqlParameter;
+    Add(parameterName: string, parameterType: NpgsqlDbType, size: int, sourceColumn: string): NpgsqlParameter;
+    Add(value: unknown): int;
+    AddRange(values: ClrArray): void;
+    AddWithValue(parameterName: string, value: unknown): NpgsqlParameter;
+    AddWithValue(parameterName: string, parameterType: NpgsqlDbType, value: unknown): NpgsqlParameter;
+    AddWithValue(parameterName: string, parameterType: NpgsqlDbType, size: int, value: unknown): NpgsqlParameter;
+    AddWithValue(parameterName: string, parameterType: NpgsqlDbType, size: int, sourceColumn: string, value: unknown): NpgsqlParameter;
+    AddWithValue(value: unknown): NpgsqlParameter;
+    AddWithValue(parameterType: NpgsqlDbType, value: unknown): NpgsqlParameter;
+    Clear(): void;
+    Contains(parameterName: string): boolean;
+    Contains(value: unknown): boolean;
+    Contains(item: NpgsqlParameter): boolean;
+    CopyTo(array: ClrArray, index: int): void;
+    CopyTo(array: NpgsqlParameter[], arrayIndex: int): void;
     get_Item(parameterName: string): NpgsqlParameter;
     get_Item(index: int): NpgsqlParameter;
-    getEnumerator(): IEnumerator;
-    indexOf(parameterName: string): int;
-    indexOf(value: unknown): int;
-    indexOf(item: NpgsqlParameter): int;
-    insert(index: int, value: unknown): void;
-    insert(index: int, item: NpgsqlParameter): void;
-    remove(parameterName: string): void;
-    remove(value: unknown): void;
-    remove(item: NpgsqlParameter): boolean;
-    removeAt(parameterName: string): void;
-    removeAt(index: int): void;
+    GetEnumerator(): IEnumerator;
+    IndexOf(parameterName: string): int;
+    IndexOf(value: unknown): int;
+    IndexOf(item: NpgsqlParameter): int;
+    Insert(index: int, value: unknown): void;
+    Insert(index: int, item: NpgsqlParameter): void;
+    Remove(parameterName: string): void;
+    Remove(value: unknown): void;
+    Remove(item: NpgsqlParameter): boolean;
+    RemoveAt(parameterName: string): void;
+    RemoveAt(index: int): void;
     set_Item(parameterName: string, value: NpgsqlParameter): void;
     set_Item(index: int, value: NpgsqlParameter): void;
-    toArray(): NpgsqlParameter[];
-    tryGetValue(parameterName: string, parameter: NpgsqlParameter): boolean;
+    ToArray(): NpgsqlParameter[];
+    TryGetValue(parameterName: string, parameter: NpgsqlParameter): boolean;
 }
 
 
@@ -1046,29 +1046,29 @@ export const NpgsqlParameterCollection: {
 export type NpgsqlParameterCollection = NpgsqlParameterCollection$instance;
 
 export interface NpgsqlRawCopyStream$instance extends Stream {
-    readonly canRead: boolean;
-    readonly canSeek: boolean;
-    readonly canTimeout: boolean;
-    readonly canWrite: boolean;
-    readonly length: long;
-    position: long;
-    readTimeout: int;
-    writeTimeout: int;
-    cancel(): void;
-    cancelAsync(): Task;
-    disposeAsync(): ValueTask;
-    flush(): void;
-    flushAsync(cancellationToken: CancellationToken): Task;
-    read(buffer: byte[], offset: int, count: int): int;
-    read(span: Span<System_Internal.Byte>): int;
-    readAsync(buffer: byte[], offset: int, count: int, cancellationToken: CancellationToken): Task<System_Internal.Int32>;
-    readAsync(buffer: Memory<System_Internal.Byte>, cancellationToken: CancellationToken): ValueTask<System_Internal.Int32>;
-    seek(offset: long, origin: SeekOrigin): long;
-    setLength(value: long): void;
-    write(buffer: byte[], offset: int, count: int): void;
-    write(buffer: ReadOnlySpan<System_Internal.Byte>): void;
-    writeAsync(buffer: byte[], offset: int, count: int, cancellationToken: CancellationToken): Task;
-    writeAsync(buffer: ReadOnlyMemory<System_Internal.Byte>, cancellationToken?: CancellationToken): ValueTask;
+    readonly CanRead: boolean;
+    readonly CanSeek: boolean;
+    readonly CanTimeout: boolean;
+    readonly CanWrite: boolean;
+    readonly Length: long;
+    Position: long;
+    ReadTimeout: int;
+    WriteTimeout: int;
+    Cancel(): void;
+    CancelAsync(): Task;
+    DisposeAsync(): ValueTask;
+    Flush(): void;
+    FlushAsync(cancellationToken: CancellationToken): Task;
+    Read(buffer: byte[], offset: int, count: int): int;
+    Read(span: Span<System_Internal.Byte>): int;
+    ReadAsync(buffer: byte[], offset: int, count: int, cancellationToken: CancellationToken): Task<System_Internal.Int32>;
+    ReadAsync(buffer: Memory<System_Internal.Byte>, cancellationToken: CancellationToken): ValueTask<System_Internal.Int32>;
+    Seek(offset: long, origin: SeekOrigin): long;
+    SetLength(value: long): void;
+    Write(buffer: byte[], offset: int, count: int): void;
+    Write(buffer: ReadOnlySpan<System_Internal.Byte>): void;
+    WriteAsync(buffer: byte[], offset: int, count: int, cancellationToken: CancellationToken): Task;
+    WriteAsync(buffer: ReadOnlyMemory<System_Internal.Byte>, cancellationToken?: CancellationToken): ValueTask;
 }
 
 
@@ -1102,55 +1102,55 @@ export const NpgsqlRowUpdatingEventArgs: {
 export type NpgsqlRowUpdatingEventArgs = NpgsqlRowUpdatingEventArgs$instance;
 
 export interface NpgsqlSlimDataSourceBuilder$instance {
-    readonly connectionString: string;
-    readonly connectionStringBuilder: NpgsqlConnectionStringBuilder;
-    defaultNameTranslator: INpgsqlNameTranslator;
-    name: string;
-    addTypeInfoResolverFactory(factory: PgTypeInfoResolverFactory): void;
-    build(): NpgsqlDataSource;
-    buildMultiHost(): NpgsqlMultiHostDataSource;
-    configureJsonOptions(serializerOptions: JsonSerializerOptions): NpgsqlSlimDataSourceBuilder;
-    configureTracing(configureAction: Action<NpgsqlTracingOptionsBuilder>): NpgsqlSlimDataSourceBuilder;
-    configureTypeLoading(configureAction: Action<NpgsqlTypeLoadingOptionsBuilder>): NpgsqlSlimDataSourceBuilder;
-    enableArrays(): NpgsqlSlimDataSourceBuilder;
-    enableCube(): NpgsqlSlimDataSourceBuilder;
-    enableDynamicJson(jsonbClrTypes?: Type[], jsonClrTypes?: Type[]): NpgsqlSlimDataSourceBuilder;
-    enableExtraConversions(): NpgsqlSlimDataSourceBuilder;
-    enableFullTextSearch(): NpgsqlSlimDataSourceBuilder;
-    enableGeometricTypes(): NpgsqlSlimDataSourceBuilder;
-    enableIntegratedSecurity(): NpgsqlSlimDataSourceBuilder;
-    enableJsonTypes(): NpgsqlSlimDataSourceBuilder;
-    enableLTree(): NpgsqlSlimDataSourceBuilder;
-    enableMultiranges(): NpgsqlSlimDataSourceBuilder;
-    enableNetworkTypes(): NpgsqlSlimDataSourceBuilder;
-    enableParameterLogging(parameterLoggingEnabled?: boolean): NpgsqlSlimDataSourceBuilder;
-    enableRanges(): NpgsqlSlimDataSourceBuilder;
-    enableRecords(): NpgsqlSlimDataSourceBuilder;
-    enableRecordsAsTuples(): NpgsqlSlimDataSourceBuilder;
-    enableTransportSecurity(): NpgsqlSlimDataSourceBuilder;
-    enableUnmappedTypes(): NpgsqlSlimDataSourceBuilder;
-    mapComposite<T>(pgName?: string, nameTranslator?: INpgsqlNameTranslator): NpgsqlSlimDataSourceBuilder;
-    mapComposite(clrType: Type, pgName?: string, nameTranslator?: INpgsqlNameTranslator): NpgsqlSlimDataSourceBuilder;
-    mapEnum<TEnum extends number>(pgName?: string, nameTranslator?: INpgsqlNameTranslator): NpgsqlSlimDataSourceBuilder;
-    mapEnum(clrType: Type, pgName?: string, nameTranslator?: INpgsqlNameTranslator): NpgsqlSlimDataSourceBuilder;
-    unmapComposite<T>(pgName?: string, nameTranslator?: INpgsqlNameTranslator): boolean;
-    unmapComposite(clrType: Type, pgName?: string, nameTranslator?: INpgsqlNameTranslator): boolean;
-    unmapEnum<TEnum extends number>(pgName?: string, nameTranslator?: INpgsqlNameTranslator): boolean;
-    unmapEnum(clrType: Type, pgName?: string, nameTranslator?: INpgsqlNameTranslator): boolean;
-    useClientCertificate(clientCertificate: X509Certificate): NpgsqlSlimDataSourceBuilder;
-    useClientCertificates(clientCertificates: X509CertificateCollection): NpgsqlSlimDataSourceBuilder;
-    useClientCertificatesCallback(clientCertificatesCallback: Action<X509CertificateCollection>): NpgsqlSlimDataSourceBuilder;
-    useLoggerFactory(loggerFactory: ILoggerFactory): NpgsqlSlimDataSourceBuilder;
-    useNegotiateOptionsCallback(negotiateOptionsCallback: Action<NegotiateAuthenticationClientOptions>): NpgsqlSlimDataSourceBuilder;
-    usePasswordProvider(passwordProvider: Func<NpgsqlConnectionStringBuilder, System_Internal.String>, passwordProviderAsync: Func<NpgsqlConnectionStringBuilder, CancellationToken, ValueTask<System_Internal.String>>): NpgsqlSlimDataSourceBuilder;
-    usePeriodicPasswordProvider(passwordProvider: Func<NpgsqlConnectionStringBuilder, CancellationToken, ValueTask<System_Internal.String>>, successRefreshInterval: TimeSpan, failureRefreshInterval: TimeSpan): NpgsqlSlimDataSourceBuilder;
-    usePhysicalConnectionInitializer(connectionInitializer: Action<NpgsqlConnection>, connectionInitializerAsync: Func<NpgsqlConnection, Task>): NpgsqlSlimDataSourceBuilder;
-    useRootCertificate(rootCertificate: X509Certificate2): NpgsqlSlimDataSourceBuilder;
-    useRootCertificateCallback(rootCertificateCallback: Func<X509Certificate2>): NpgsqlSlimDataSourceBuilder;
-    useRootCertificates(rootCertificates: X509Certificate2Collection): NpgsqlSlimDataSourceBuilder;
-    useRootCertificatesCallback(rootCertificateCallback: Func<X509Certificate2Collection>): NpgsqlSlimDataSourceBuilder;
-    useSslClientAuthenticationOptionsCallback(sslClientAuthenticationOptionsCallback: Action<SslClientAuthenticationOptions>): NpgsqlSlimDataSourceBuilder;
-    useUserCertificateValidationCallback(userCertificateValidationCallback: RemoteCertificateValidationCallback): NpgsqlSlimDataSourceBuilder;
+    readonly ConnectionString: string;
+    readonly ConnectionStringBuilder: NpgsqlConnectionStringBuilder;
+    DefaultNameTranslator: INpgsqlNameTranslator;
+    Name: string;
+    AddTypeInfoResolverFactory(factory: PgTypeInfoResolverFactory): void;
+    Build(): NpgsqlDataSource;
+    BuildMultiHost(): NpgsqlMultiHostDataSource;
+    ConfigureJsonOptions(serializerOptions: JsonSerializerOptions): NpgsqlSlimDataSourceBuilder;
+    ConfigureTracing(configureAction: Action<NpgsqlTracingOptionsBuilder>): NpgsqlSlimDataSourceBuilder;
+    ConfigureTypeLoading(configureAction: Action<NpgsqlTypeLoadingOptionsBuilder>): NpgsqlSlimDataSourceBuilder;
+    EnableArrays(): NpgsqlSlimDataSourceBuilder;
+    EnableCube(): NpgsqlSlimDataSourceBuilder;
+    EnableDynamicJson(jsonbClrTypes?: Type[], jsonClrTypes?: Type[]): NpgsqlSlimDataSourceBuilder;
+    EnableExtraConversions(): NpgsqlSlimDataSourceBuilder;
+    EnableFullTextSearch(): NpgsqlSlimDataSourceBuilder;
+    EnableGeometricTypes(): NpgsqlSlimDataSourceBuilder;
+    EnableIntegratedSecurity(): NpgsqlSlimDataSourceBuilder;
+    EnableJsonTypes(): NpgsqlSlimDataSourceBuilder;
+    EnableLTree(): NpgsqlSlimDataSourceBuilder;
+    EnableMultiranges(): NpgsqlSlimDataSourceBuilder;
+    EnableNetworkTypes(): NpgsqlSlimDataSourceBuilder;
+    EnableParameterLogging(parameterLoggingEnabled?: boolean): NpgsqlSlimDataSourceBuilder;
+    EnableRanges(): NpgsqlSlimDataSourceBuilder;
+    EnableRecords(): NpgsqlSlimDataSourceBuilder;
+    EnableRecordsAsTuples(): NpgsqlSlimDataSourceBuilder;
+    EnableTransportSecurity(): NpgsqlSlimDataSourceBuilder;
+    EnableUnmappedTypes(): NpgsqlSlimDataSourceBuilder;
+    MapComposite<T>(pgName?: string, nameTranslator?: INpgsqlNameTranslator): NpgsqlSlimDataSourceBuilder;
+    MapComposite(clrType: Type, pgName?: string, nameTranslator?: INpgsqlNameTranslator): NpgsqlSlimDataSourceBuilder;
+    MapEnum<TEnum extends number>(pgName?: string, nameTranslator?: INpgsqlNameTranslator): NpgsqlSlimDataSourceBuilder;
+    MapEnum(clrType: Type, pgName?: string, nameTranslator?: INpgsqlNameTranslator): NpgsqlSlimDataSourceBuilder;
+    UnmapComposite<T>(pgName?: string, nameTranslator?: INpgsqlNameTranslator): boolean;
+    UnmapComposite(clrType: Type, pgName?: string, nameTranslator?: INpgsqlNameTranslator): boolean;
+    UnmapEnum<TEnum extends number>(pgName?: string, nameTranslator?: INpgsqlNameTranslator): boolean;
+    UnmapEnum(clrType: Type, pgName?: string, nameTranslator?: INpgsqlNameTranslator): boolean;
+    UseClientCertificate(clientCertificate: X509Certificate): NpgsqlSlimDataSourceBuilder;
+    UseClientCertificates(clientCertificates: X509CertificateCollection): NpgsqlSlimDataSourceBuilder;
+    UseClientCertificatesCallback(clientCertificatesCallback: Action<X509CertificateCollection>): NpgsqlSlimDataSourceBuilder;
+    UseLoggerFactory(loggerFactory: ILoggerFactory): NpgsqlSlimDataSourceBuilder;
+    UseNegotiateOptionsCallback(negotiateOptionsCallback: Action<NegotiateAuthenticationClientOptions>): NpgsqlSlimDataSourceBuilder;
+    UsePasswordProvider(passwordProvider: Func<NpgsqlConnectionStringBuilder, System_Internal.String>, passwordProviderAsync: Func<NpgsqlConnectionStringBuilder, CancellationToken, ValueTask<System_Internal.String>>): NpgsqlSlimDataSourceBuilder;
+    UsePeriodicPasswordProvider(passwordProvider: Func<NpgsqlConnectionStringBuilder, CancellationToken, ValueTask<System_Internal.String>>, successRefreshInterval: TimeSpan, failureRefreshInterval: TimeSpan): NpgsqlSlimDataSourceBuilder;
+    UsePhysicalConnectionInitializer(connectionInitializer: Action<NpgsqlConnection>, connectionInitializerAsync: Func<NpgsqlConnection, Task>): NpgsqlSlimDataSourceBuilder;
+    UseRootCertificate(rootCertificate: X509Certificate2): NpgsqlSlimDataSourceBuilder;
+    UseRootCertificateCallback(rootCertificateCallback: Func<X509Certificate2>): NpgsqlSlimDataSourceBuilder;
+    UseRootCertificates(rootCertificates: X509Certificate2Collection): NpgsqlSlimDataSourceBuilder;
+    UseRootCertificatesCallback(rootCertificateCallback: Func<X509Certificate2Collection>): NpgsqlSlimDataSourceBuilder;
+    UseSslClientAuthenticationOptionsCallback(sslClientAuthenticationOptionsCallback: Action<SslClientAuthenticationOptions>): NpgsqlSlimDataSourceBuilder;
+    UseUserCertificateValidationCallback(userCertificateValidationCallback: RemoteCertificateValidationCallback): NpgsqlSlimDataSourceBuilder;
 }
 
 
@@ -1167,17 +1167,17 @@ export type NpgsqlSlimDataSourceBuilder = NpgsqlSlimDataSourceBuilder$instance &
 
 
 export interface NpgsqlTracingOptionsBuilder$instance {
-    configureBatchEnrichmentCallback(batchEnrichmentCallback: Action<Activity, NpgsqlBatch>): NpgsqlTracingOptionsBuilder;
-    configureBatchFilter(batchFilter: Func<NpgsqlBatch, System_Internal.Boolean>): NpgsqlTracingOptionsBuilder;
-    configureBatchSpanNameProvider(batchSpanNameProvider: Func<NpgsqlBatch, System_Internal.String>): NpgsqlTracingOptionsBuilder;
-    configureCommandEnrichmentCallback(commandEnrichmentCallback: Action<Activity, NpgsqlCommand>): NpgsqlTracingOptionsBuilder;
-    configureCommandFilter(commandFilter: Func<NpgsqlCommand, System_Internal.Boolean>): NpgsqlTracingOptionsBuilder;
-    configureCommandSpanNameProvider(commandSpanNameProvider: Func<NpgsqlCommand, System_Internal.String>): NpgsqlTracingOptionsBuilder;
-    configureCopyOperationEnrichmentCallback(copyOperationEnrichmentCallback: Action<Activity, System_Internal.String>): NpgsqlTracingOptionsBuilder;
-    configureCopyOperationFilter(copyOperationFilter: Func<System_Internal.String, System_Internal.Boolean>): NpgsqlTracingOptionsBuilder;
-    configureCopyOperationSpanNameProvider(copyOperationSpanNameProvider: Func<System_Internal.String, System_Internal.String>): NpgsqlTracingOptionsBuilder;
-    enableFirstResponseEvent(enable?: boolean): NpgsqlTracingOptionsBuilder;
-    enablePhysicalOpenTracing(enable?: boolean): NpgsqlTracingOptionsBuilder;
+    ConfigureBatchEnrichmentCallback(batchEnrichmentCallback: Action<Activity, NpgsqlBatch>): NpgsqlTracingOptionsBuilder;
+    ConfigureBatchFilter(batchFilter: Func<NpgsqlBatch, System_Internal.Boolean>): NpgsqlTracingOptionsBuilder;
+    ConfigureBatchSpanNameProvider(batchSpanNameProvider: Func<NpgsqlBatch, System_Internal.String>): NpgsqlTracingOptionsBuilder;
+    ConfigureCommandEnrichmentCallback(commandEnrichmentCallback: Action<Activity, NpgsqlCommand>): NpgsqlTracingOptionsBuilder;
+    ConfigureCommandFilter(commandFilter: Func<NpgsqlCommand, System_Internal.Boolean>): NpgsqlTracingOptionsBuilder;
+    ConfigureCommandSpanNameProvider(commandSpanNameProvider: Func<NpgsqlCommand, System_Internal.String>): NpgsqlTracingOptionsBuilder;
+    ConfigureCopyOperationEnrichmentCallback(copyOperationEnrichmentCallback: Action<Activity, System_Internal.String>): NpgsqlTracingOptionsBuilder;
+    ConfigureCopyOperationFilter(copyOperationFilter: Func<System_Internal.String, System_Internal.Boolean>): NpgsqlTracingOptionsBuilder;
+    ConfigureCopyOperationSpanNameProvider(copyOperationSpanNameProvider: Func<System_Internal.String, System_Internal.String>): NpgsqlTracingOptionsBuilder;
+    EnableFirstResponseEvent(enable?: boolean): NpgsqlTracingOptionsBuilder;
+    EnablePhysicalOpenTracing(enable?: boolean): NpgsqlTracingOptionsBuilder;
 }
 
 
@@ -1189,20 +1189,20 @@ export const NpgsqlTracingOptionsBuilder: {
 export type NpgsqlTracingOptionsBuilder = NpgsqlTracingOptionsBuilder$instance;
 
 export interface NpgsqlTransaction$instance extends DbTransaction {
-    readonly connection: NpgsqlConnection | undefined;
-    readonly isolationLevel: IsolationLevel;
-    readonly supportsSavepoints: boolean;
-    commit(): void;
-    commitAsync(cancellationToken?: CancellationToken): Task;
-    disposeAsync(): ValueTask;
-    release(name: string): void;
-    releaseAsync(name: string, cancellationToken?: CancellationToken): Task;
-    rollback(): void;
-    rollback(name: string): void;
-    rollbackAsync(cancellationToken?: CancellationToken): Task;
-    rollbackAsync(name: string, cancellationToken?: CancellationToken): Task;
-    save(name: string): void;
-    saveAsync(name: string, cancellationToken?: CancellationToken): Task;
+    readonly Connection: NpgsqlConnection | undefined;
+    readonly IsolationLevel: IsolationLevel;
+    readonly SupportsSavepoints: boolean;
+    Commit(): void;
+    CommitAsync(cancellationToken?: CancellationToken): Task;
+    DisposeAsync(): ValueTask;
+    Release(name: string): void;
+    ReleaseAsync(name: string, cancellationToken?: CancellationToken): Task;
+    Rollback(): void;
+    Rollback(name: string): void;
+    RollbackAsync(cancellationToken?: CancellationToken): Task;
+    RollbackAsync(name: string, cancellationToken?: CancellationToken): Task;
+    Save(name: string): void;
+    SaveAsync(name: string, cancellationToken?: CancellationToken): Task;
 }
 
 
@@ -1214,9 +1214,9 @@ export const NpgsqlTransaction: {
 export type NpgsqlTransaction = NpgsqlTransaction$instance;
 
 export interface NpgsqlTypeLoadingOptionsBuilder$instance {
-    enableTableCompositesLoading(enable?: boolean): NpgsqlTypeLoadingOptionsBuilder;
-    enableTypeLoading(enable?: boolean): NpgsqlTypeLoadingOptionsBuilder;
-    setTypeLoadingSchemas(schemas: IEnumerable__System_Collections_Generic<System_Internal.String>): NpgsqlTypeLoadingOptionsBuilder;
+    EnableTableCompositesLoading(enable?: boolean): NpgsqlTypeLoadingOptionsBuilder;
+    EnableTypeLoading(enable?: boolean): NpgsqlTypeLoadingOptionsBuilder;
+    SetTypeLoadingSchemas(schemas: IEnumerable__System_Collections_Generic<System_Internal.String>): NpgsqlTypeLoadingOptionsBuilder;
 }
 
 
@@ -1228,27 +1228,27 @@ export const NpgsqlTypeLoadingOptionsBuilder: {
 export type NpgsqlTypeLoadingOptionsBuilder = NpgsqlTypeLoadingOptionsBuilder$instance;
 
 export interface PostgresException$instance extends NpgsqlException {
-    readonly columnName: string | undefined;
-    readonly constraintName: string | undefined;
-    readonly dataTypeName: string | undefined;
-    readonly detail: string | undefined;
-    readonly file: string | undefined;
-    readonly hint: string | undefined;
-    readonly internalPosition: int;
-    readonly internalQuery: string | undefined;
-    readonly invariantSeverity: string;
-    readonly isTransient: boolean;
-    readonly line: string | undefined;
-    readonly messageText: string;
-    readonly position: int;
-    readonly routine: string | undefined;
-    readonly schemaName: string | undefined;
-    readonly severity: string;
-    readonly sqlState: string;
-    readonly tableName: string | undefined;
-    readonly where: string | undefined;
-    getObjectData(info: SerializationInfo, context: StreamingContext): void;
-    toString(): string;
+    readonly ColumnName: string | undefined;
+    readonly ConstraintName: string | undefined;
+    readonly DataTypeName: string | undefined;
+    readonly Detail: string | undefined;
+    readonly File: string | undefined;
+    readonly Hint: string | undefined;
+    readonly InternalPosition: int;
+    readonly InternalQuery: string | undefined;
+    readonly InvariantSeverity: string;
+    readonly IsTransient: boolean;
+    readonly Line: string | undefined;
+    readonly MessageText: string;
+    readonly Position: int;
+    readonly Routine: string | undefined;
+    readonly SchemaName: string | undefined;
+    readonly Severity: string;
+    readonly SqlState: string;
+    readonly TableName: string | undefined;
+    readonly Where: string | undefined;
+    GetObjectData(info: SerializationInfo, context: StreamingContext): void;
+    ToString(): string;
 }
 
 
@@ -1261,36 +1261,36 @@ export const PostgresException: {
 export type PostgresException = PostgresException$instance;
 
 export interface PostgresNotice$instance {
-    get columnName(): string | undefined;
-    set columnName(value: string);
-    get constraintName(): string | undefined;
-    set constraintName(value: string);
-    get dataTypeName(): string | undefined;
-    set dataTypeName(value: string);
-    get detail(): string | undefined;
-    set detail(value: string);
-    get file(): string | undefined;
-    set file(value: string);
-    get hint(): string | undefined;
-    set hint(value: string);
-    internalPosition: int;
-    get internalQuery(): string | undefined;
-    set internalQuery(value: string);
-    readonly invariantSeverity: string;
-    get line(): string | undefined;
-    set line(value: string);
-    messageText: string;
-    position: int;
-    get routine(): string | undefined;
-    set routine(value: string);
-    get schemaName(): string | undefined;
-    set schemaName(value: string);
-    severity: string;
-    sqlState: string;
-    get tableName(): string | undefined;
-    set tableName(value: string);
-    get where(): string | undefined;
-    set where(value: string);
+    get ColumnName(): string | undefined;
+    set ColumnName(value: string);
+    get ConstraintName(): string | undefined;
+    set ConstraintName(value: string);
+    get DataTypeName(): string | undefined;
+    set DataTypeName(value: string);
+    get Detail(): string | undefined;
+    set Detail(value: string);
+    get File(): string | undefined;
+    set File(value: string);
+    get Hint(): string | undefined;
+    set Hint(value: string);
+    InternalPosition: int;
+    get InternalQuery(): string | undefined;
+    set InternalQuery(value: string);
+    readonly InvariantSeverity: string;
+    get Line(): string | undefined;
+    set Line(value: string);
+    MessageText: string;
+    Position: int;
+    get Routine(): string | undefined;
+    set Routine(value: string);
+    get SchemaName(): string | undefined;
+    set SchemaName(value: string);
+    Severity: string;
+    SqlState: string;
+    get TableName(): string | undefined;
+    set TableName(value: string);
+    get Where(): string | undefined;
+    set Where(value: string);
 }
 
 
@@ -1303,315 +1303,315 @@ export const PostgresNotice: {
 export type PostgresNotice = PostgresNotice$instance;
 
 export abstract class NpgsqlEventId$instance {
-    static readonly openingConnection: int;
-    static readonly openedConnection: int;
-    static readonly closingConnection: int;
-    static readonly closedConnection: int;
-    static readonly openingPhysicalConnection: int;
-    static readonly openedPhysicalConnection: int;
-    static readonly closingPhysicalConnection: int;
-    static readonly closedPhysicalConnection: int;
-    static readonly startingWait: int;
-    static readonly receivedNotice: int;
-    static readonly connectionExceededMaximumLifetime: int;
-    static readonly sendingKeepalive: int;
-    static readonly completedKeepalive: int;
-    static readonly keepaliveFailed: int;
-    static readonly breakingConnection: int;
-    static readonly caughtUserExceptionInNoticeEventHandler: int;
-    static readonly caughtUserExceptionInNotificationEventHandler: int;
-    static readonly exceptionWhenClosingPhysicalConnection: int;
-    static readonly exceptionWhenOpeningConnectionForMultiplexing: int;
-    static readonly executingCommand: int;
-    static readonly commandExecutionCompleted: int;
-    static readonly cancellingCommand: int;
-    static readonly executingInternalCommand: int;
-    static readonly preparingCommandExplicitly: int;
-    static readonly commandPreparedExplicitly: int;
-    static readonly autoPreparingStatement: int;
-    static readonly unpreparingCommand: int;
-    static readonly derivingParameters: int;
-    static readonly exceptionWhenWritingMultiplexedCommands: int;
-    static readonly startedTransaction: int;
-    static readonly committedTransaction: int;
-    static readonly rolledBackTransaction: int;
-    static readonly creatingSavepoint: int;
-    static readonly rolledBackToSavepoint: int;
-    static readonly releasedSavepoint: int;
-    static readonly exceptionDuringTransactionDispose: int;
-    static readonly enlistedVolatileResourceManager: int;
-    static readonly committingSinglePhaseTransaction: int;
-    static readonly rollingBackSinglePhaseTransaction: int;
-    static readonly singlePhaseTransactionRollbackFailed: int;
-    static readonly preparingTwoPhaseTransaction: int;
-    static readonly committingTwoPhaseTransaction: int;
-    static readonly twoPhaseTransactionCommitFailed: int;
-    static readonly rollingBackTwoPhaseTransaction: int;
-    static readonly twoPhaseTransactionRollbackFailed: int;
-    static readonly twoPhaseTransactionInDoubt: int;
-    static readonly connectionInUseWhenRollingBack: int;
-    static readonly cleaningUpResourceManager: int;
-    static readonly startingBinaryExport: int;
-    static readonly startingBinaryImport: int;
-    static readonly startingTextExport: int;
-    static readonly startingTextImport: int;
-    static readonly startingRawCopy: int;
-    static readonly copyOperationCompleted: int;
-    static readonly copyOperationCancelled: int;
-    static readonly exceptionWhenDisposingCopyOperation: int;
-    static readonly creatingReplicationSlot: int;
-    static readonly droppingReplicationSlot: int;
-    static readonly startingLogicalReplication: int;
-    static readonly startingPhysicalReplication: int;
-    static readonly executingReplicationCommand: int;
-    static readonly receivedReplicationPrimaryKeepalive: int;
-    static readonly sendingReplicationStandbyStatusUpdate: int;
-    static readonly sentReplicationFeedbackMessage: int;
-    static readonly replicationFeedbackMessageSendingFailed: int;
+    static readonly OpeningConnection: int;
+    static readonly OpenedConnection: int;
+    static readonly ClosingConnection: int;
+    static readonly ClosedConnection: int;
+    static readonly OpeningPhysicalConnection: int;
+    static readonly OpenedPhysicalConnection: int;
+    static readonly ClosingPhysicalConnection: int;
+    static readonly ClosedPhysicalConnection: int;
+    static readonly StartingWait: int;
+    static readonly ReceivedNotice: int;
+    static readonly ConnectionExceededMaximumLifetime: int;
+    static readonly SendingKeepalive: int;
+    static readonly CompletedKeepalive: int;
+    static readonly KeepaliveFailed: int;
+    static readonly BreakingConnection: int;
+    static readonly CaughtUserExceptionInNoticeEventHandler: int;
+    static readonly CaughtUserExceptionInNotificationEventHandler: int;
+    static readonly ExceptionWhenClosingPhysicalConnection: int;
+    static readonly ExceptionWhenOpeningConnectionForMultiplexing: int;
+    static readonly ExecutingCommand: int;
+    static readonly CommandExecutionCompleted: int;
+    static readonly CancellingCommand: int;
+    static readonly ExecutingInternalCommand: int;
+    static readonly PreparingCommandExplicitly: int;
+    static readonly CommandPreparedExplicitly: int;
+    static readonly AutoPreparingStatement: int;
+    static readonly UnpreparingCommand: int;
+    static readonly DerivingParameters: int;
+    static readonly ExceptionWhenWritingMultiplexedCommands: int;
+    static readonly StartedTransaction: int;
+    static readonly CommittedTransaction: int;
+    static readonly RolledBackTransaction: int;
+    static readonly CreatingSavepoint: int;
+    static readonly RolledBackToSavepoint: int;
+    static readonly ReleasedSavepoint: int;
+    static readonly ExceptionDuringTransactionDispose: int;
+    static readonly EnlistedVolatileResourceManager: int;
+    static readonly CommittingSinglePhaseTransaction: int;
+    static readonly RollingBackSinglePhaseTransaction: int;
+    static readonly SinglePhaseTransactionRollbackFailed: int;
+    static readonly PreparingTwoPhaseTransaction: int;
+    static readonly CommittingTwoPhaseTransaction: int;
+    static readonly TwoPhaseTransactionCommitFailed: int;
+    static readonly RollingBackTwoPhaseTransaction: int;
+    static readonly TwoPhaseTransactionRollbackFailed: int;
+    static readonly TwoPhaseTransactionInDoubt: int;
+    static readonly ConnectionInUseWhenRollingBack: int;
+    static readonly CleaningUpResourceManager: int;
+    static readonly StartingBinaryExport: int;
+    static readonly StartingBinaryImport: int;
+    static readonly StartingTextExport: int;
+    static readonly StartingTextImport: int;
+    static readonly StartingRawCopy: int;
+    static readonly CopyOperationCompleted: int;
+    static readonly CopyOperationCancelled: int;
+    static readonly ExceptionWhenDisposingCopyOperation: int;
+    static readonly CreatingReplicationSlot: int;
+    static readonly DroppingReplicationSlot: int;
+    static readonly StartingLogicalReplication: int;
+    static readonly StartingPhysicalReplication: int;
+    static readonly ExecutingReplicationCommand: int;
+    static readonly ReceivedReplicationPrimaryKeepalive: int;
+    static readonly SendingReplicationStandbyStatusUpdate: int;
+    static readonly SentReplicationFeedbackMessage: int;
+    static readonly ReplicationFeedbackMessageSendingFailed: int;
 }
 
 
 export type NpgsqlEventId = NpgsqlEventId$instance;
 
 export abstract class PostgresErrorCodes$instance {
-    static readonly successfulCompletion: string;
-    static readonly warning: string;
-    static readonly dynamicResultSetsReturnedWarning: string;
-    static readonly implicitZeroBitPaddingWarning: string;
-    static readonly nullValueEliminatedInSetFunctionWarning: string;
-    static readonly privilegeNotGrantedWarning: string;
-    static readonly privilegeNotRevokedWarning: string;
-    static readonly stringDataRightTruncationWarning: string;
-    static readonly deprecatedFeatureWarning: string;
-    static readonly noData: string;
-    static readonly noAdditionalDynamicResultSetsReturned: string;
-    static readonly sqlStatementNotYetComplete: string;
-    static readonly connectionException: string;
-    static readonly connectionDoesNotExist: string;
-    static readonly connectionFailure: string;
-    static readonly sqlClientUnableToEstablishSqlConnection: string;
-    static readonly sqlServerRejectedEstablishmentOfSqlConnection: string;
-    static readonly transactionResolutionUnknown: string;
-    static readonly protocolViolation: string;
-    static readonly triggeredActionException: string;
-    static readonly featureNotSupported: string;
-    static readonly invalidTransactionInitiation: string;
-    static readonly locatorException: string;
-    static readonly invalidLocatorSpecification: string;
-    static readonly invalidGrantor: string;
-    static readonly invalidGrantOperation: string;
-    static readonly invalidRoleSpecification: string;
-    static readonly diagnosticsException: string;
-    static readonly stackedDiagnosticsAccessedWithoutActiveHandler: string;
-    static readonly caseNotFound: string;
-    static readonly cardinalityViolation: string;
-    static readonly dataException: string;
-    static readonly arraySubscriptError: string;
-    static readonly characterNotInRepertoire: string;
-    static readonly datetimeFieldOverflow: string;
-    static readonly divisionByZero: string;
-    static readonly errorInAssignment: string;
-    static readonly escapeCharacterConflict: string;
-    static readonly indicatorOverflow: string;
-    static readonly intervalFieldOverflow: string;
-    static readonly invalidArgumentForLogarithm: string;
-    static readonly invalidArgumentForNtileFunction: string;
-    static readonly invalidArgumentForNthValueFunction: string;
-    static readonly invalidArgumentForPowerFunction: string;
-    static readonly invalidArgumentForWidthBucketFunction: string;
-    static readonly invalidCharacterValueForCast: string;
-    static readonly invalidDatetimeFormat: string;
-    static readonly invalidEscapeCharacter: string;
-    static readonly invalidEscapeOctet: string;
-    static readonly invalidEscapeSequence: string;
-    static readonly nonstandardUseOfEscapeCharacter: string;
-    static readonly invalidIndicatorParameterValue: string;
-    static readonly invalidParameterValue: string;
-    static readonly invalidRegularExpression: string;
-    static readonly invalidRowCountInLimitClause: string;
-    static readonly invalidRowCountInResultOffsetClause: string;
-    static readonly invalidTablesampleArgument: string;
-    static readonly invalidTablesampleRepeat: string;
-    static readonly invalidTimeZoneDisplacementValue: string;
-    static readonly invalidUseOfEscapeCharacter: string;
-    static readonly mostSpecificTypeMismatch: string;
-    static readonly nullValueNotAllowed: string;
-    static readonly nullValueNoIndicatorParameter: string;
-    static readonly numericValueOutOfRange: string;
-    static readonly stringDataLengthMismatch: string;
-    static readonly stringDataRightTruncation: string;
-    static readonly substringError: string;
-    static readonly trimError: string;
-    static readonly unterminatedCString: string;
-    static readonly zeroLengthCharacterString: string;
-    static readonly floatingPointException: string;
-    static readonly invalidTextRepresentation: string;
-    static readonly invalidBinaryRepresentation: string;
-    static readonly badCopyFileFormat: string;
-    static readonly untranslatableCharacter: string;
-    static readonly notAnXmlDocument: string;
-    static readonly invalidXmlDocument: string;
-    static readonly invalidXmlContent: string;
-    static readonly invalidXmlComment: string;
-    static readonly invalidXmlProcessingInstruction: string;
-    static readonly integrityConstraintViolation: string;
-    static readonly restrictViolation: string;
-    static readonly notNullViolation: string;
-    static readonly foreignKeyViolation: string;
-    static readonly uniqueViolation: string;
-    static readonly checkViolation: string;
-    static readonly exclusionViolation: string;
-    static readonly invalidCursorState: string;
-    static readonly invalidTransactionState: string;
-    static readonly activeSqlTransaction: string;
-    static readonly branchTransactionAlreadyActive: string;
-    static readonly heldCursorRequiresSameIsolationLevel: string;
-    static readonly inappropriateAccessModeForBranchTransaction: string;
-    static readonly inappropriateIsolationLevelForBranchTransaction: string;
-    static readonly noActiveSqlTransactionForBranchTransaction: string;
-    static readonly readOnlySqlTransaction: string;
-    static readonly schemaAndDataStatementMixingNotSupported: string;
-    static readonly noActiveSqlTransaction: string;
-    static readonly inFailedSqlTransaction: string;
-    static readonly invalidSqlStatementName: string;
-    static readonly triggeredDataChangeViolation: string;
-    static readonly invalidAuthorizationSpecification: string;
-    static readonly invalidPassword: string;
-    static readonly dependentPrivilegeDescriptorsStillExist: string;
-    static readonly dependentObjectsStillExist: string;
-    static readonly invalidTransactionTermination: string;
-    static readonly sqlRoutineException: string;
-    static readonly functionExecutedNoReturnStatementSqlRoutineException: string;
-    static readonly modifyingSqlDataNotPermittedSqlRoutineException: string;
-    static readonly prohibitedSqlStatementAttemptedSqlRoutineException: string;
-    static readonly readingSqlDataNotPermittedSqlRoutineException: string;
-    static readonly invalidCursorName: string;
-    static readonly externalRoutineException: string;
-    static readonly containingSqlNotPermittedExternalRoutineException: string;
-    static readonly modifyingSqlDataNotPermittedExternalRoutineException: string;
-    static readonly prohibitedSqlStatementAttemptedExternalRoutineException: string;
-    static readonly readingSqlDataNotPermittedExternalRoutineException: string;
-    static readonly externalRoutineInvocationException: string;
-    static readonly invalidSqlstateReturnedExternalRoutineInvocationException: string;
-    static readonly nullValueNotAllowedExternalRoutineInvocationException: string;
-    static readonly triggerProtocolViolatedExternalRoutineInvocationException: string;
-    static readonly srfProtocolViolatedExternalRoutineInvocationException: string;
-    static readonly eventTriggerProtocolViolatedExternalRoutineInvocationException: string;
-    static readonly savepointException: string;
-    static readonly invalidSavepointSpecification: string;
-    static readonly invalidCatalogName: string;
-    static readonly invalidSchemaName: string;
-    static readonly transactionRollback: string;
-    static readonly transactionIntegrityConstraintViolation: string;
-    static readonly serializationFailure: string;
-    static readonly statementCompletionUnknown: string;
-    static readonly deadlockDetected: string;
-    static readonly syntaxErrorOrAccessRuleViolation: string;
-    static readonly syntaxError: string;
-    static readonly insufficientPrivilege: string;
-    static readonly cannotCoerce: string;
-    static readonly groupingError: string;
-    static readonly windowingError: string;
-    static readonly invalidRecursion: string;
-    static readonly invalidForeignKey: string;
-    static readonly invalidName: string;
-    static readonly nameTooLong: string;
-    static readonly reservedName: string;
-    static readonly datatypeMismatch: string;
-    static readonly indeterminateDatatype: string;
-    static readonly collationMismatch: string;
-    static readonly indeterminateCollation: string;
-    static readonly wrongObjectType: string;
-    static readonly undefinedColumn: string;
-    static readonly undefinedFunction: string;
-    static readonly undefinedTable: string;
-    static readonly undefinedParameter: string;
-    static readonly undefinedObject: string;
-    static readonly duplicateColumn: string;
-    static readonly duplicateCursor: string;
-    static readonly duplicateDatabase: string;
-    static readonly duplicateFunction: string;
-    static readonly duplicatePreparedStatement: string;
-    static readonly duplicateSchema: string;
-    static readonly duplicateTable: string;
-    static readonly duplicateAlias: string;
-    static readonly duplicateObject: string;
-    static readonly ambiguousColumn: string;
-    static readonly ambiguousFunction: string;
-    static readonly ambiguousParameter: string;
-    static readonly ambiguousAlias: string;
-    static readonly invalidColumnReference: string;
-    static readonly invalidColumnDefinition: string;
-    static readonly invalidCursorDefinition: string;
-    static readonly invalidDatabaseDefinition: string;
-    static readonly invalidFunctionDefinition: string;
-    static readonly invalidPreparedStatementDefinition: string;
-    static readonly invalidSchemaDefinition: string;
-    static readonly invalidTableDefinition: string;
-    static readonly invalidObjectDefinition: string;
-    static readonly withCheckOptionViolation: string;
-    static readonly insufficientResources: string;
-    static readonly diskFull: string;
-    static readonly outOfMemory: string;
-    static readonly tooManyConnections: string;
-    static readonly configurationLimitExceeded: string;
-    static readonly programLimitExceeded: string;
-    static readonly statementTooComplex: string;
-    static readonly tooManyColumns: string;
-    static readonly tooManyArguments: string;
-    static readonly objectNotInPrerequisiteState: string;
-    static readonly objectInUse: string;
-    static readonly cantChangeRuntimeParam: string;
-    static readonly lockNotAvailable: string;
-    static readonly operatorIntervention: string;
-    static readonly queryCanceled: string;
-    static readonly adminShutdown: string;
-    static readonly crashShutdown: string;
-    static readonly cannotConnectNow: string;
-    static readonly databaseDropped: string;
-    static readonly idleSessionTimeout: string;
-    static readonly systemError: string;
-    static readonly ioError: string;
-    static readonly undefinedFile: string;
-    static readonly duplicateFile: string;
-    static readonly snapshotFailure: string;
-    static readonly configFileError: string;
-    static readonly lockFileExists: string;
-    static readonly fdwError: string;
-    static readonly fdwColumnNameNotFound: string;
-    static readonly fdwDynamicParameterValueNeeded: string;
-    static readonly fdwFunctionSequenceError: string;
-    static readonly fdwInconsistentDescriptorInformation: string;
-    static readonly fdwInvalidAttributeValue: string;
-    static readonly fdwInvalidColumnName: string;
-    static readonly fdwInvalidColumnNumber: string;
-    static readonly fdwInvalidDataType: string;
-    static readonly fdwInvalidDataTypeDescriptors: string;
-    static readonly fdwInvalidDescriptorFieldIdentifier: string;
-    static readonly fdwInvalidHandle: string;
-    static readonly fdwInvalidOptionIndex: string;
-    static readonly fdwInvalidOptionName: string;
-    static readonly fdwInvalidStringLengthOrBufferLength: string;
-    static readonly fdwInvalidStringFormat: string;
-    static readonly fdwInvalidUseOfNullPointer: string;
-    static readonly fdwTooManyHandles: string;
-    static readonly fdwOutOfMemory: string;
-    static readonly fdwNoSchemas: string;
-    static readonly fdwOptionNameNotFound: string;
-    static readonly fdwReplyHandle: string;
-    static readonly fdwSchemaNotFound: string;
-    static readonly fdwTableNotFound: string;
-    static readonly fdwUnableToCreateExecution: string;
-    static readonly fdwUnableToCreateReply: string;
-    static readonly fdwUnableToEstablishConnection: string;
-    static readonly plpgsqlError: string;
-    static readonly raiseException: string;
-    static readonly noDataFound: string;
-    static readonly tooManyRows: string;
-    static readonly assertFailure: string;
-    static readonly internalError: string;
-    static readonly dataCorrupted: string;
-    static readonly indexCorrupted: string;
+    static readonly SuccessfulCompletion: string;
+    static readonly Warning: string;
+    static readonly DynamicResultSetsReturnedWarning: string;
+    static readonly ImplicitZeroBitPaddingWarning: string;
+    static readonly NullValueEliminatedInSetFunctionWarning: string;
+    static readonly PrivilegeNotGrantedWarning: string;
+    static readonly PrivilegeNotRevokedWarning: string;
+    static readonly StringDataRightTruncationWarning: string;
+    static readonly DeprecatedFeatureWarning: string;
+    static readonly NoData: string;
+    static readonly NoAdditionalDynamicResultSetsReturned: string;
+    static readonly SqlStatementNotYetComplete: string;
+    static readonly ConnectionException: string;
+    static readonly ConnectionDoesNotExist: string;
+    static readonly ConnectionFailure: string;
+    static readonly SqlClientUnableToEstablishSqlConnection: string;
+    static readonly SqlServerRejectedEstablishmentOfSqlConnection: string;
+    static readonly TransactionResolutionUnknown: string;
+    static readonly ProtocolViolation: string;
+    static readonly TriggeredActionException: string;
+    static readonly FeatureNotSupported: string;
+    static readonly InvalidTransactionInitiation: string;
+    static readonly LocatorException: string;
+    static readonly InvalidLocatorSpecification: string;
+    static readonly InvalidGrantor: string;
+    static readonly InvalidGrantOperation: string;
+    static readonly InvalidRoleSpecification: string;
+    static readonly DiagnosticsException: string;
+    static readonly StackedDiagnosticsAccessedWithoutActiveHandler: string;
+    static readonly CaseNotFound: string;
+    static readonly CardinalityViolation: string;
+    static readonly DataException: string;
+    static readonly ArraySubscriptError: string;
+    static readonly CharacterNotInRepertoire: string;
+    static readonly DatetimeFieldOverflow: string;
+    static readonly DivisionByZero: string;
+    static readonly ErrorInAssignment: string;
+    static readonly EscapeCharacterConflict: string;
+    static readonly IndicatorOverflow: string;
+    static readonly IntervalFieldOverflow: string;
+    static readonly InvalidArgumentForLogarithm: string;
+    static readonly InvalidArgumentForNtileFunction: string;
+    static readonly InvalidArgumentForNthValueFunction: string;
+    static readonly InvalidArgumentForPowerFunction: string;
+    static readonly InvalidArgumentForWidthBucketFunction: string;
+    static readonly InvalidCharacterValueForCast: string;
+    static readonly InvalidDatetimeFormat: string;
+    static readonly InvalidEscapeCharacter: string;
+    static readonly InvalidEscapeOctet: string;
+    static readonly InvalidEscapeSequence: string;
+    static readonly NonstandardUseOfEscapeCharacter: string;
+    static readonly InvalidIndicatorParameterValue: string;
+    static readonly InvalidParameterValue: string;
+    static readonly InvalidRegularExpression: string;
+    static readonly InvalidRowCountInLimitClause: string;
+    static readonly InvalidRowCountInResultOffsetClause: string;
+    static readonly InvalidTablesampleArgument: string;
+    static readonly InvalidTablesampleRepeat: string;
+    static readonly InvalidTimeZoneDisplacementValue: string;
+    static readonly InvalidUseOfEscapeCharacter: string;
+    static readonly MostSpecificTypeMismatch: string;
+    static readonly NullValueNotAllowed: string;
+    static readonly NullValueNoIndicatorParameter: string;
+    static readonly NumericValueOutOfRange: string;
+    static readonly StringDataLengthMismatch: string;
+    static readonly StringDataRightTruncation: string;
+    static readonly SubstringError: string;
+    static readonly TrimError: string;
+    static readonly UnterminatedCString: string;
+    static readonly ZeroLengthCharacterString: string;
+    static readonly FloatingPointException: string;
+    static readonly InvalidTextRepresentation: string;
+    static readonly InvalidBinaryRepresentation: string;
+    static readonly BadCopyFileFormat: string;
+    static readonly UntranslatableCharacter: string;
+    static readonly NotAnXmlDocument: string;
+    static readonly InvalidXmlDocument: string;
+    static readonly InvalidXmlContent: string;
+    static readonly InvalidXmlComment: string;
+    static readonly InvalidXmlProcessingInstruction: string;
+    static readonly IntegrityConstraintViolation: string;
+    static readonly RestrictViolation: string;
+    static readonly NotNullViolation: string;
+    static readonly ForeignKeyViolation: string;
+    static readonly UniqueViolation: string;
+    static readonly CheckViolation: string;
+    static readonly ExclusionViolation: string;
+    static readonly InvalidCursorState: string;
+    static readonly InvalidTransactionState: string;
+    static readonly ActiveSqlTransaction: string;
+    static readonly BranchTransactionAlreadyActive: string;
+    static readonly HeldCursorRequiresSameIsolationLevel: string;
+    static readonly InappropriateAccessModeForBranchTransaction: string;
+    static readonly InappropriateIsolationLevelForBranchTransaction: string;
+    static readonly NoActiveSqlTransactionForBranchTransaction: string;
+    static readonly ReadOnlySqlTransaction: string;
+    static readonly SchemaAndDataStatementMixingNotSupported: string;
+    static readonly NoActiveSqlTransaction: string;
+    static readonly InFailedSqlTransaction: string;
+    static readonly InvalidSqlStatementName: string;
+    static readonly TriggeredDataChangeViolation: string;
+    static readonly InvalidAuthorizationSpecification: string;
+    static readonly InvalidPassword: string;
+    static readonly DependentPrivilegeDescriptorsStillExist: string;
+    static readonly DependentObjectsStillExist: string;
+    static readonly InvalidTransactionTermination: string;
+    static readonly SqlRoutineException: string;
+    static readonly FunctionExecutedNoReturnStatementSqlRoutineException: string;
+    static readonly ModifyingSqlDataNotPermittedSqlRoutineException: string;
+    static readonly ProhibitedSqlStatementAttemptedSqlRoutineException: string;
+    static readonly ReadingSqlDataNotPermittedSqlRoutineException: string;
+    static readonly InvalidCursorName: string;
+    static readonly ExternalRoutineException: string;
+    static readonly ContainingSqlNotPermittedExternalRoutineException: string;
+    static readonly ModifyingSqlDataNotPermittedExternalRoutineException: string;
+    static readonly ProhibitedSqlStatementAttemptedExternalRoutineException: string;
+    static readonly ReadingSqlDataNotPermittedExternalRoutineException: string;
+    static readonly ExternalRoutineInvocationException: string;
+    static readonly InvalidSqlstateReturnedExternalRoutineInvocationException: string;
+    static readonly NullValueNotAllowedExternalRoutineInvocationException: string;
+    static readonly TriggerProtocolViolatedExternalRoutineInvocationException: string;
+    static readonly SrfProtocolViolatedExternalRoutineInvocationException: string;
+    static readonly EventTriggerProtocolViolatedExternalRoutineInvocationException: string;
+    static readonly SavepointException: string;
+    static readonly InvalidSavepointSpecification: string;
+    static readonly InvalidCatalogName: string;
+    static readonly InvalidSchemaName: string;
+    static readonly TransactionRollback: string;
+    static readonly TransactionIntegrityConstraintViolation: string;
+    static readonly SerializationFailure: string;
+    static readonly StatementCompletionUnknown: string;
+    static readonly DeadlockDetected: string;
+    static readonly SyntaxErrorOrAccessRuleViolation: string;
+    static readonly SyntaxError: string;
+    static readonly InsufficientPrivilege: string;
+    static readonly CannotCoerce: string;
+    static readonly GroupingError: string;
+    static readonly WindowingError: string;
+    static readonly InvalidRecursion: string;
+    static readonly InvalidForeignKey: string;
+    static readonly InvalidName: string;
+    static readonly NameTooLong: string;
+    static readonly ReservedName: string;
+    static readonly DatatypeMismatch: string;
+    static readonly IndeterminateDatatype: string;
+    static readonly CollationMismatch: string;
+    static readonly IndeterminateCollation: string;
+    static readonly WrongObjectType: string;
+    static readonly UndefinedColumn: string;
+    static readonly UndefinedFunction: string;
+    static readonly UndefinedTable: string;
+    static readonly UndefinedParameter: string;
+    static readonly UndefinedObject: string;
+    static readonly DuplicateColumn: string;
+    static readonly DuplicateCursor: string;
+    static readonly DuplicateDatabase: string;
+    static readonly DuplicateFunction: string;
+    static readonly DuplicatePreparedStatement: string;
+    static readonly DuplicateSchema: string;
+    static readonly DuplicateTable: string;
+    static readonly DuplicateAlias: string;
+    static readonly DuplicateObject: string;
+    static readonly AmbiguousColumn: string;
+    static readonly AmbiguousFunction: string;
+    static readonly AmbiguousParameter: string;
+    static readonly AmbiguousAlias: string;
+    static readonly InvalidColumnReference: string;
+    static readonly InvalidColumnDefinition: string;
+    static readonly InvalidCursorDefinition: string;
+    static readonly InvalidDatabaseDefinition: string;
+    static readonly InvalidFunctionDefinition: string;
+    static readonly InvalidPreparedStatementDefinition: string;
+    static readonly InvalidSchemaDefinition: string;
+    static readonly InvalidTableDefinition: string;
+    static readonly InvalidObjectDefinition: string;
+    static readonly WithCheckOptionViolation: string;
+    static readonly InsufficientResources: string;
+    static readonly DiskFull: string;
+    static readonly OutOfMemory: string;
+    static readonly TooManyConnections: string;
+    static readonly ConfigurationLimitExceeded: string;
+    static readonly ProgramLimitExceeded: string;
+    static readonly StatementTooComplex: string;
+    static readonly TooManyColumns: string;
+    static readonly TooManyArguments: string;
+    static readonly ObjectNotInPrerequisiteState: string;
+    static readonly ObjectInUse: string;
+    static readonly CantChangeRuntimeParam: string;
+    static readonly LockNotAvailable: string;
+    static readonly OperatorIntervention: string;
+    static readonly QueryCanceled: string;
+    static readonly AdminShutdown: string;
+    static readonly CrashShutdown: string;
+    static readonly CannotConnectNow: string;
+    static readonly DatabaseDropped: string;
+    static readonly IdleSessionTimeout: string;
+    static readonly SystemError: string;
+    static readonly IoError: string;
+    static readonly UndefinedFile: string;
+    static readonly DuplicateFile: string;
+    static readonly SnapshotFailure: string;
+    static readonly ConfigFileError: string;
+    static readonly LockFileExists: string;
+    static readonly FdwError: string;
+    static readonly FdwColumnNameNotFound: string;
+    static readonly FdwDynamicParameterValueNeeded: string;
+    static readonly FdwFunctionSequenceError: string;
+    static readonly FdwInconsistentDescriptorInformation: string;
+    static readonly FdwInvalidAttributeValue: string;
+    static readonly FdwInvalidColumnName: string;
+    static readonly FdwInvalidColumnNumber: string;
+    static readonly FdwInvalidDataType: string;
+    static readonly FdwInvalidDataTypeDescriptors: string;
+    static readonly FdwInvalidDescriptorFieldIdentifier: string;
+    static readonly FdwInvalidHandle: string;
+    static readonly FdwInvalidOptionIndex: string;
+    static readonly FdwInvalidOptionName: string;
+    static readonly FdwInvalidStringLengthOrBufferLength: string;
+    static readonly FdwInvalidStringFormat: string;
+    static readonly FdwInvalidUseOfNullPointer: string;
+    static readonly FdwTooManyHandles: string;
+    static readonly FdwOutOfMemory: string;
+    static readonly FdwNoSchemas: string;
+    static readonly FdwOptionNameNotFound: string;
+    static readonly FdwReplyHandle: string;
+    static readonly FdwSchemaNotFound: string;
+    static readonly FdwTableNotFound: string;
+    static readonly FdwUnableToCreateExecution: string;
+    static readonly FdwUnableToCreateReply: string;
+    static readonly FdwUnableToEstablishConnection: string;
+    static readonly PlpgsqlError: string;
+    static readonly RaiseException: string;
+    static readonly NoDataFound: string;
+    static readonly TooManyRows: string;
+    static readonly AssertFailure: string;
+    static readonly InternalError: string;
+    static readonly DataCorrupted: string;
+    static readonly IndexCorrupted: string;
 }
 
 

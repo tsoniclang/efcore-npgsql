@@ -17,14 +17,14 @@ import type { IDbContextOptions, ISingletonOptions } from "@tsonic/efcore/Micros
 import type { DbLoggerCategory$Scaffolding } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.js";
 
 export interface NpgsqlSingletonOptions$instance {
-    readonly enumDefinitions: IReadOnlyList<EnumDefinition>;
-    readonly isPostgresVersionSet: boolean;
-    readonly postgresVersion: Version;
-    readonly reverseNullOrderingEnabled: boolean;
-    readonly useRedshift: boolean;
-    readonly userRangeDefinitions: IReadOnlyList<UserRangeDefinition>;
-    initialize(options: IDbContextOptions): void;
-    validate(options: IDbContextOptions): void;
+    readonly EnumDefinitions: IReadOnlyList<EnumDefinition>;
+    readonly IsPostgresVersionSet: boolean;
+    readonly PostgresVersion: Version;
+    readonly ReverseNullOrderingEnabled: boolean;
+    readonly UseRedshift: boolean;
+    readonly UserRangeDefinitions: IReadOnlyList<UserRangeDefinition>;
+    Initialize(options: IDbContextOptions): void;
+    Validate(options: IDbContextOptions): void;
 }
 
 
@@ -43,66 +43,66 @@ export type NpgsqlSingletonOptions = NpgsqlSingletonOptions$instance & __NpgsqlS
 
 
 export abstract class NpgsqlLoggerExtensions$instance {
-    static collationFound(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, schema: string, collationName: string, lcCollate: string, lcCtype: string, provider: string, deterministic: boolean): void;
-    static columnFound(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, tableName: string, columnName: string, dataTypeName: string, nullable: boolean, identity: boolean, defaultValue: string, computedValue: string): void;
-    static enumColumnSkippedWarning(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, columnName: string): void;
-    static expressionIndexSkippedWarning(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, indexName: string, tableName: string): void;
-    static foreignKeyReferencesMissingPrincipalTableWarning(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, foreignKeyName: string, tableName: string, principalTableName: string): void;
-    static missingSchemaWarning(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, schemaName: string): void;
-    static missingTableWarning(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, tableName: string): void;
-    static uniqueConstraintFound(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, uniqueConstraintName: string, tableName: string): void;
-    static unsupportedColumnConstraintSkippedWarning(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, indexName: string, tableName: string): void;
-    static unsupportedColumnIndexSkippedWarning(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, indexName: string, tableName: string): void;
+    static CollationFound(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, schema: string, collationName: string, lcCollate: string, lcCtype: string, provider: string, deterministic: boolean): void;
+    static ColumnFound(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, tableName: string, columnName: string, dataTypeName: string, nullable: boolean, identity: boolean, defaultValue: string, computedValue: string): void;
+    static EnumColumnSkippedWarning(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, columnName: string): void;
+    static ExpressionIndexSkippedWarning(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, indexName: string, tableName: string): void;
+    static ForeignKeyReferencesMissingPrincipalTableWarning(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, foreignKeyName: string, tableName: string, principalTableName: string): void;
+    static MissingSchemaWarning(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, schemaName: string): void;
+    static MissingTableWarning(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, tableName: string): void;
+    static UniqueConstraintFound(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, uniqueConstraintName: string, tableName: string): void;
+    static UnsupportedColumnConstraintSkippedWarning(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, indexName: string, tableName: string): void;
+    static UnsupportedColumnIndexSkippedWarning(diagnostics: IDiagnosticsLogger<DbLoggerCategory$Scaffolding>, indexName: string, tableName: string): void;
 }
 
 
 export type NpgsqlLoggerExtensions = NpgsqlLoggerExtensions$instance;
 
 export abstract class NpgsqlResources$instance {
-    static logEnumColumnSkipped(logger: IDiagnosticsLogger): EventDefinition<System_Internal.String>;
-    static logExpressionIndexSkipped(logger: IDiagnosticsLogger): EventDefinition<System_Internal.String, System_Internal.String>;
-    static logFoundCollation(logger: IDiagnosticsLogger): EventDefinition<System_Internal.String, System_Internal.String, System_Internal.String, System_Internal.String, string | undefined, System_Internal.Boolean>;
-    static logFoundColumn(logger: IDiagnosticsLogger): FallbackEventDefinition;
-    static logFoundForeignKey(logger: IDiagnosticsLogger): EventDefinition<System_Internal.String, System_Internal.String, System_Internal.String, System_Internal.String>;
-    static logFoundIndex(logger: IDiagnosticsLogger): EventDefinition<System_Internal.String, System_Internal.String, System_Internal.Boolean>;
-    static logFoundPrimaryKey(logger: IDiagnosticsLogger): EventDefinition<System_Internal.String, System_Internal.String>;
-    static logFoundSequence(logger: IDiagnosticsLogger): FallbackEventDefinition;
-    static logFoundTable(logger: IDiagnosticsLogger): EventDefinition<System_Internal.String>;
-    static logFoundUniqueConstraint(logger: IDiagnosticsLogger): EventDefinition<string | undefined, System_Internal.String>;
-    static logMissingSchema(logger: IDiagnosticsLogger): EventDefinition<string | undefined>;
-    static logMissingTable(logger: IDiagnosticsLogger): EventDefinition<string | undefined>;
-    static logPrincipalColumnNotFound(logger: IDiagnosticsLogger): EventDefinition<System_Internal.String, System_Internal.String, System_Internal.String, System_Internal.String>;
-    static logPrincipalTableNotInSelectionSet(logger: IDiagnosticsLogger): EventDefinition<string | undefined, string | undefined, string | undefined>;
-    static logUnsupportedColumnConstraintSkipped(logger: IDiagnosticsLogger): EventDefinition<string | undefined, System_Internal.String>;
-    static logUnsupportedColumnIndexSkipped(logger: IDiagnosticsLogger): EventDefinition<System_Internal.String, System_Internal.String>;
+    static LogEnumColumnSkipped(logger: IDiagnosticsLogger): EventDefinition<System_Internal.String>;
+    static LogExpressionIndexSkipped(logger: IDiagnosticsLogger): EventDefinition<System_Internal.String, System_Internal.String>;
+    static LogFoundCollation(logger: IDiagnosticsLogger): EventDefinition<System_Internal.String, System_Internal.String, System_Internal.String, System_Internal.String, string | undefined, System_Internal.Boolean>;
+    static LogFoundColumn(logger: IDiagnosticsLogger): FallbackEventDefinition;
+    static LogFoundForeignKey(logger: IDiagnosticsLogger): EventDefinition<System_Internal.String, System_Internal.String, System_Internal.String, System_Internal.String>;
+    static LogFoundIndex(logger: IDiagnosticsLogger): EventDefinition<System_Internal.String, System_Internal.String, System_Internal.Boolean>;
+    static LogFoundPrimaryKey(logger: IDiagnosticsLogger): EventDefinition<System_Internal.String, System_Internal.String>;
+    static LogFoundSequence(logger: IDiagnosticsLogger): FallbackEventDefinition;
+    static LogFoundTable(logger: IDiagnosticsLogger): EventDefinition<System_Internal.String>;
+    static LogFoundUniqueConstraint(logger: IDiagnosticsLogger): EventDefinition<string | undefined, System_Internal.String>;
+    static LogMissingSchema(logger: IDiagnosticsLogger): EventDefinition<string | undefined>;
+    static LogMissingTable(logger: IDiagnosticsLogger): EventDefinition<string | undefined>;
+    static LogPrincipalColumnNotFound(logger: IDiagnosticsLogger): EventDefinition<System_Internal.String, System_Internal.String, System_Internal.String, System_Internal.String>;
+    static LogPrincipalTableNotInSelectionSet(logger: IDiagnosticsLogger): EventDefinition<string | undefined, string | undefined, string | undefined>;
+    static LogUnsupportedColumnConstraintSkipped(logger: IDiagnosticsLogger): EventDefinition<string | undefined, System_Internal.String>;
+    static LogUnsupportedColumnIndexSkipped(logger: IDiagnosticsLogger): EventDefinition<System_Internal.String, System_Internal.String>;
 }
 
 
 export type NpgsqlResources = NpgsqlResources$instance;
 
 export abstract class NpgsqlStrings$instance {
-    static readonly dataSourceAndConfigNotSupported: string;
-    static readonly ef7JsonMappingNotSupported: string;
-    static readonly freeTextFunctionOnClient: string;
-    static readonly rowValueComparisonRequiresTuplesOfSameLength: string;
-    static readonly cannotUseDataSourceWithAuthCallbacks: string;
-    static readonly transientExceptionDetected: string;
-    static duplicateColumnCompressionMethodMismatch(entityType1: unknown, property1: unknown, entityType2: unknown, property2: unknown, columnName: unknown, table: unknown): string;
-    static duplicateColumnNameValueGenerationStrategyMismatch(entityType1: unknown, property1: unknown, entityType2: unknown, property2: unknown, columnName: unknown, table: unknown): string;
-    static duplicateIndexCollationMismatch(index1: unknown, entityType1: unknown, index2: unknown, entityType2: unknown, table: unknown, indexName: unknown): string;
-    static duplicateIndexConcurrentCreationMismatch(index1: unknown, entityType1: unknown, index2: unknown, entityType2: unknown, table: unknown, indexName: unknown): string;
-    static duplicateIndexIncludedMismatch(index1: unknown, entityType1: unknown, index2: unknown, entityType2: unknown, table: unknown, indexName: unknown, includedColumns1: unknown, includedColumns2: unknown): string;
-    static heterogeneousTypesInNewArray(type1: unknown, type2: unknown): string;
-    static identityBadType(property: unknown, entityType: unknown, propertyType: unknown): string;
-    static includePropertyDuplicated(entityType: unknown, property: unknown): string;
-    static includePropertyInIndex(entityType: unknown, property: unknown): string;
-    static includePropertyNotFound(entityType: unknown, property: unknown): string;
-    static invalidTableToIncludeInScaffolding(table: unknown): string;
-    static nonKeyValueGeneration(property: unknown, entityType: unknown): string;
-    static sequenceBadType(property: unknown, entityType: unknown, propertyType: unknown): string;
-    static storedProcedureResultColumnsNotSupported(entityType: unknown, sproc: unknown): string;
-    static storedProcedureReturnValueNotSupported(entityType: unknown, sproc: unknown): string;
-    static twoDataSourcesInSameServiceProvider(useInternalServiceProvider: unknown): string;
+    static readonly DataSourceAndConfigNotSupported: string;
+    static readonly Ef7JsonMappingNotSupported: string;
+    static readonly FreeTextFunctionOnClient: string;
+    static readonly RowValueComparisonRequiresTuplesOfSameLength: string;
+    static readonly CannotUseDataSourceWithAuthCallbacks: string;
+    static readonly TransientExceptionDetected: string;
+    static DuplicateColumnCompressionMethodMismatch(entityType1: unknown, property1: unknown, entityType2: unknown, property2: unknown, columnName: unknown, table: unknown): string;
+    static DuplicateColumnNameValueGenerationStrategyMismatch(entityType1: unknown, property1: unknown, entityType2: unknown, property2: unknown, columnName: unknown, table: unknown): string;
+    static DuplicateIndexCollationMismatch(index1: unknown, entityType1: unknown, index2: unknown, entityType2: unknown, table: unknown, indexName: unknown): string;
+    static DuplicateIndexConcurrentCreationMismatch(index1: unknown, entityType1: unknown, index2: unknown, entityType2: unknown, table: unknown, indexName: unknown): string;
+    static DuplicateIndexIncludedMismatch(index1: unknown, entityType1: unknown, index2: unknown, entityType2: unknown, table: unknown, indexName: unknown, includedColumns1: unknown, includedColumns2: unknown): string;
+    static HeterogeneousTypesInNewArray(type1: unknown, type2: unknown): string;
+    static IdentityBadType(property: unknown, entityType: unknown, propertyType: unknown): string;
+    static IncludePropertyDuplicated(entityType: unknown, property: unknown): string;
+    static IncludePropertyInIndex(entityType: unknown, property: unknown): string;
+    static IncludePropertyNotFound(entityType: unknown, property: unknown): string;
+    static InvalidTableToIncludeInScaffolding(table: unknown): string;
+    static NonKeyValueGeneration(property: unknown, entityType: unknown): string;
+    static SequenceBadType(property: unknown, entityType: unknown, propertyType: unknown): string;
+    static StoredProcedureResultColumnsNotSupported(entityType: unknown, sproc: unknown): string;
+    static StoredProcedureReturnValueNotSupported(entityType: unknown, sproc: unknown): string;
+    static TwoDataSourcesInSameServiceProvider(useInternalServiceProvider: unknown): string;
 }
 
 

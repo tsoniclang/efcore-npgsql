@@ -10,9 +10,9 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Int16, Int32, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
 
 export interface FieldDescription$instance {
-    typeModifier: int;
-    typeSize: short;
-    toString(): string;
+    TypeModifier: int;
+    TypeSize: short;
+    ToString(): string;
 }
 
 

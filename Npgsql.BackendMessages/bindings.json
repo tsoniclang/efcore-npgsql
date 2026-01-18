@@ -1,23 +1,36 @@
 {
   "namespace": "Npgsql.BackendMessages",
+  "contributingAssemblies": [
+    "Npgsql"
+  ],
   "types": [
     {
       "stableId": "Npgsql:Npgsql.BackendMessages.FieldDescription",
       "clrName": "Npgsql.BackendMessages.FieldDescription",
-      "tsEmitName": "FieldDescription",
       "assemblyName": "Npgsql",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Npgsql:Npgsql.BackendMessages.FieldDescription::ToString():System.String",
           "clrName": "ToString",
-          "tsEmitName": "toString",
           "metadataToken": 100668174,
           "canonicalSignature": "():System.String",
           "normalizedSignature": "ToString|():System.String|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Npgsql.BackendMessages.FieldDescription",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -27,69 +40,43 @@
         {
           "stableId": "Npgsql:Npgsql.BackendMessages.FieldDescription::TypeSize:System.Int16",
           "clrName": "TypeSize",
-          "tsEmitName": "typeSize",
           "metadataToken": 385877116,
           "canonicalSignature": ":System.Int16",
           "normalizedSignature": "TypeSize|:System.Int16|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Npgsql.BackendMessages.FieldDescription",
           "declaringAssemblyName": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.BackendMessages.FieldDescription::TypeModifier:System.Int32",
           "clrName": "TypeModifier",
-          "tsEmitName": "typeModifier",
           "metadataToken": 385877117,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "TypeModifier|:System.Int32|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Npgsql.BackendMessages.FieldDescription",
           "declaringAssemblyName": "Npgsql"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "toString",
-          "isStatic": false,
-          "tsSignatureId": "ToString|():System.String|static=false",
-          "target": {
-            "declaringClrType": "Npgsql.BackendMessages.FieldDescription",
-            "declaringAssemblyName": "Npgsql",
-            "metadataToken": 100668174
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "typeSize",
-          "isStatic": false,
-          "tsSignatureId": "TypeSize|:System.Int16|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Npgsql.BackendMessages.FieldDescription",
-            "declaringAssemblyName": "Npgsql",
-            "metadataToken": 385877116
-          }
-        },
-        {
-          "tsName": "typeModifier",
-          "isStatic": false,
-          "tsSignatureId": "TypeModifier|:System.Int32|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Npgsql.BackendMessages.FieldDescription",
-            "declaringAssemblyName": "Npgsql",
-            "metadataToken": 385877117
-          }
-        }
-      ]
+      "constructors": []
     }
   ]
 }

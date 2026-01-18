@@ -26,27 +26,27 @@ import * as Microsoft_EntityFrameworkCore_Storage_Internal from "@tsonic/efcore/
 import type { CoreTypeMapping, ExecutionResult, ExecutionStrategyDependencies, IDatabaseCreator, IDbContextTransactionManager, IExecutionStrategy, IExecutionStrategyFactory, IRawSqlCommandBuilder, IRelationalConnection, IRelationalDatabaseCreator, IRelationalTransactionManager, IRelationalTypeMappingSource, ISqlGenerationHelper, ITransactionEnlistmentManager, ITypeMappingSource, RelationalConnection, RelationalConnectionDependencies, RelationalDatabaseCreator, RelationalDatabaseCreatorDependencies, RelationalExecutionStrategyFactory, RelationalSqlGenerationHelper, RelationalSqlGenerationHelperDependencies, RelationalTypeMapping, RelationalTypeMappingSource, RelationalTypeMappingSourceDependencies, TypeMappingSourceDependencies } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
 
 export interface INpgsqlRelationalConnection$instance extends IRelationalConnection, IRelationalTransactionManager, IDbContextTransactionManager, IResettableService, IDisposable, IAsyncDisposable {
-    readonly dataSource: DbDataSource | undefined;
-    cloneWith(connectionString: string, async: boolean, cancellationToken?: CancellationToken): ValueTask<INpgsqlRelationalConnection>;
-    createAdminConnection(): INpgsqlRelationalConnection;
+    readonly DataSource: DbDataSource | undefined;
+    CloneWith(connectionString: string, async: boolean, cancellationToken?: CancellationToken): ValueTask<INpgsqlRelationalConnection>;
+    CreateAdminConnection(): INpgsqlRelationalConnection;
 }
 
 
 export type INpgsqlRelationalConnection = INpgsqlRelationalConnection$instance;
 
 export interface NpgsqlDatabaseCreator$instance extends RelationalDatabaseCreator {
-    retryDelay: TimeSpan;
-    retryTimeout: TimeSpan;
-    create(): void;
-    createAsync(cancellationToken?: CancellationToken): Task;
-    createTables(): void;
-    createTablesAsync(cancellationToken?: CancellationToken): Task;
-    delete(): void;
-    deleteAsync(cancellationToken?: CancellationToken): Task;
-    exists(): boolean;
-    existsAsync(cancellationToken?: CancellationToken): Task<System_Internal.Boolean>;
-    hasTables(): boolean;
-    hasTablesAsync(cancellationToken?: CancellationToken): Task<System_Internal.Boolean>;
+    RetryDelay: TimeSpan;
+    RetryTimeout: TimeSpan;
+    Create(): void;
+    CreateAsync(cancellationToken?: CancellationToken): Task;
+    CreateTables(): void;
+    CreateTablesAsync(cancellationToken?: CancellationToken): Task;
+    Delete(): void;
+    DeleteAsync(cancellationToken?: CancellationToken): Task;
+    Exists(): boolean;
+    ExistsAsync(cancellationToken?: CancellationToken): Task<System_Internal.Boolean>;
+    HasTables(): boolean;
+    HasTablesAsync(cancellationToken?: CancellationToken): Task<System_Internal.Boolean>;
 }
 
 
@@ -58,9 +58,9 @@ export const NpgsqlDatabaseCreator: {
 export type NpgsqlDatabaseCreator = NpgsqlDatabaseCreator$instance;
 
 export interface NpgsqlDataSourceManager$instance {
-    dispose(): void;
-    disposeAsync(): ValueTask;
-    getDataSource(npgsqlOptionsExtension: NpgsqlOptionsExtension, applicationServiceProvider: IServiceProvider): DbDataSource | undefined;
+    Dispose(): void;
+    DisposeAsync(): ValueTask;
+    GetDataSource(npgsqlOptionsExtension: NpgsqlOptionsExtension, applicationServiceProvider: IServiceProvider): DbDataSource | undefined;
 }
 
 
@@ -72,9 +72,9 @@ export const NpgsqlDataSourceManager: {
 export type NpgsqlDataSourceManager = NpgsqlDataSourceManager$instance;
 
 export interface NpgsqlExecutionStrategy$instance {
-    readonly retriesOnFailure: boolean;
-    execute<TState, TResult>(state: TState, operation: Func<DbContext, TState, TResult>, verifySucceeded: Func<DbContext, TState, ExecutionResult<TResult>>): TResult;
-    executeAsync<TState, TResult>(state: TState, operation: Func<DbContext, TState, CancellationToken, Task<TResult>>, verifySucceeded: Func<DbContext, TState, CancellationToken, Task<ExecutionResult<TResult>>>, cancellationToken: CancellationToken): Task<TResult>;
+    readonly RetriesOnFailure: boolean;
+    Execute<TState, TResult>(state: TState, operation: Func<DbContext, TState, TResult>, verifySucceeded: Func<DbContext, TState, ExecutionResult<TResult>>): TResult;
+    ExecuteAsync<TState, TResult>(state: TState, operation: Func<DbContext, TState, CancellationToken, Task<TResult>>, verifySucceeded: Func<DbContext, TState, CancellationToken, Task<ExecutionResult<TResult>>>, cancellationToken: CancellationToken): Task<TResult>;
 }
 
 
@@ -97,14 +97,14 @@ export const NpgsqlExecutionStrategyFactory: {
 export type NpgsqlExecutionStrategyFactory = NpgsqlExecutionStrategyFactory$instance;
 
 export interface NpgsqlRelationalConnection$instance extends RelationalConnection {
-    connectionString: string;
-    readonly currentAmbientTransaction: Transaction | undefined;
-    readonly dataSource: DbDataSource | undefined;
-    dbConnection: NpgsqlConnection;
-    get dbDataSource(): DbDataSource | undefined;
-    set dbDataSource(value: DbDataSource);
-    cloneWith(connectionString: string, async: boolean, cancellationToken?: CancellationToken): ValueTask<INpgsqlRelationalConnection>;
-    createAdminConnection(): INpgsqlRelationalConnection;
+    ConnectionString: string;
+    readonly CurrentAmbientTransaction: Transaction | undefined;
+    readonly DataSource: DbDataSource | undefined;
+    DbConnection: NpgsqlConnection;
+    get DbDataSource(): DbDataSource | undefined;
+    set DbDataSource(value: DbDataSource);
+    CloneWith(connectionString: string, async: boolean, cancellationToken?: CancellationToken): ValueTask<INpgsqlRelationalConnection>;
+    CreateAdminConnection(): INpgsqlRelationalConnection;
 }
 
 
@@ -123,8 +123,8 @@ export type NpgsqlRelationalConnection = NpgsqlRelationalConnection$instance & _
 
 
 export interface NpgsqlSqlGenerationHelper$instance extends RelationalSqlGenerationHelper {
-    delimitIdentifier(identifier: string): string;
-    delimitIdentifier(builder: StringBuilder, identifier: string): void;
+    DelimitIdentifier(identifier: string): string;
+    DelimitIdentifier(builder: StringBuilder, identifier: string): void;
 }
 
 
@@ -141,17 +141,17 @@ export interface NpgsqlTransientExceptionDetector$instance {
 
 export const NpgsqlTransientExceptionDetector: {
     new(): NpgsqlTransientExceptionDetector;
-    shouldRetryOn(ex: Exception): boolean;
+    ShouldRetryOn(ex: Exception): boolean;
 };
 
 
 export type NpgsqlTransientExceptionDetector = NpgsqlTransientExceptionDetector$instance;
 
 export interface NpgsqlTypeMappingSource$instance extends RelationalTypeMappingSource {
-    readonly eStringTypeMapping: NpgsqlEStringTypeMapping;
-    findCollectionMapping(storeType: string, modelClrType: Type, providerClrType: Type, elementMapping: CoreTypeMapping): RelationalTypeMapping | undefined;
-    findContainerMapping(containerClrType: Type, containeeTypeMapping: RelationalTypeMapping, model: IModel): RelationalTypeMapping | undefined;
-    findMapping(property: IProperty): RelationalTypeMapping | undefined;
+    readonly EStringTypeMapping: NpgsqlEStringTypeMapping;
+    FindCollectionMapping(storeType: string, modelClrType: Type, providerClrType: Type, elementMapping: CoreTypeMapping): RelationalTypeMapping | undefined;
+    FindContainerMapping(containerClrType: Type, containeeTypeMapping: RelationalTypeMapping, model: IModel): RelationalTypeMapping | undefined;
+    FindMapping(property: IProperty): RelationalTypeMapping | undefined;
 }
 
 

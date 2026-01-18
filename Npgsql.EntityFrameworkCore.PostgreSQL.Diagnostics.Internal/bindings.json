@@ -1,199 +1,207 @@
 {
   "namespace": "Npgsql.EntityFrameworkCore.PostgreSQL.Diagnostics.Internal",
+  "contributingAssemblies": [
+    "Npgsql.EntityFrameworkCore.PostgreSQL"
+  ],
   "types": [
     {
       "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Diagnostics.Internal.NpgsqlLoggingDefinitions",
       "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Diagnostics.Internal.NpgsqlLoggingDefinitions",
-      "tsEmitName": "NpgsqlLoggingDefinitions",
       "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [],
       "fields": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Diagnostics.Internal.NpgsqlLoggingDefinitions::LogFoundDefaultSchemaMicrosoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase",
           "clrName": "LogFoundDefaultSchema",
-          "tsEmitName": "logFoundDefaultSchema",
           "metadataToken": 67109619,
           "normalizedSignature": "LogFoundDefaultSchema|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
+          "isLiteral": false,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Diagnostics.Internal.NpgsqlLoggingDefinitions",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Diagnostics.Internal.NpgsqlLoggingDefinitions::LogFoundColumnMicrosoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase",
           "clrName": "LogFoundColumn",
-          "tsEmitName": "logFoundColumn",
           "metadataToken": 67109620,
           "normalizedSignature": "LogFoundColumn|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
+          "isLiteral": false,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Diagnostics.Internal.NpgsqlLoggingDefinitions",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Diagnostics.Internal.NpgsqlLoggingDefinitions::LogFoundForeignKeyMicrosoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase",
           "clrName": "LogFoundForeignKey",
-          "tsEmitName": "logFoundForeignKey",
           "metadataToken": 67109621,
           "normalizedSignature": "LogFoundForeignKey|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
+          "isLiteral": false,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Diagnostics.Internal.NpgsqlLoggingDefinitions",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Diagnostics.Internal.NpgsqlLoggingDefinitions::LogFoundCollationMicrosoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase",
           "clrName": "LogFoundCollation",
-          "tsEmitName": "logFoundCollation",
           "metadataToken": 67109622,
           "normalizedSignature": "LogFoundCollation|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
+          "isLiteral": false,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Diagnostics.Internal.NpgsqlLoggingDefinitions",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Diagnostics.Internal.NpgsqlLoggingDefinitions::LogPrincipalTableNotInSelectionSetMicrosoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase",
           "clrName": "LogPrincipalTableNotInSelectionSet",
-          "tsEmitName": "logPrincipalTableNotInSelectionSet",
           "metadataToken": 67109623,
           "normalizedSignature": "LogPrincipalTableNotInSelectionSet|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
+          "isLiteral": false,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Diagnostics.Internal.NpgsqlLoggingDefinitions",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Diagnostics.Internal.NpgsqlLoggingDefinitions::LogMissingSchemaMicrosoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase",
           "clrName": "LogMissingSchema",
-          "tsEmitName": "logMissingSchema",
           "metadataToken": 67109624,
           "normalizedSignature": "LogMissingSchema|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
+          "isLiteral": false,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Diagnostics.Internal.NpgsqlLoggingDefinitions",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Diagnostics.Internal.NpgsqlLoggingDefinitions::LogMissingTableMicrosoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase",
           "clrName": "LogMissingTable",
-          "tsEmitName": "logMissingTable",
           "metadataToken": 67109625,
           "normalizedSignature": "LogMissingTable|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
+          "isLiteral": false,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Diagnostics.Internal.NpgsqlLoggingDefinitions",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Diagnostics.Internal.NpgsqlLoggingDefinitions::LogFoundSequenceMicrosoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase",
           "clrName": "LogFoundSequence",
-          "tsEmitName": "logFoundSequence",
           "metadataToken": 67109626,
           "normalizedSignature": "LogFoundSequence|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
+          "isLiteral": false,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Diagnostics.Internal.NpgsqlLoggingDefinitions",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Diagnostics.Internal.NpgsqlLoggingDefinitions::LogFoundTableMicrosoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase",
           "clrName": "LogFoundTable",
-          "tsEmitName": "logFoundTable",
           "metadataToken": 67109627,
           "normalizedSignature": "LogFoundTable|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
+          "isLiteral": false,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Diagnostics.Internal.NpgsqlLoggingDefinitions",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Diagnostics.Internal.NpgsqlLoggingDefinitions::LogFoundIndexMicrosoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase",
           "clrName": "LogFoundIndex",
-          "tsEmitName": "logFoundIndex",
           "metadataToken": 67109628,
           "normalizedSignature": "LogFoundIndex|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
+          "isLiteral": false,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Diagnostics.Internal.NpgsqlLoggingDefinitions",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Diagnostics.Internal.NpgsqlLoggingDefinitions::LogFoundPrimaryKeyMicrosoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase",
           "clrName": "LogFoundPrimaryKey",
-          "tsEmitName": "logFoundPrimaryKey",
           "metadataToken": 67109629,
           "normalizedSignature": "LogFoundPrimaryKey|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
+          "isLiteral": false,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Diagnostics.Internal.NpgsqlLoggingDefinitions",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Diagnostics.Internal.NpgsqlLoggingDefinitions::LogFoundUniqueConstraintMicrosoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase",
           "clrName": "LogFoundUniqueConstraint",
-          "tsEmitName": "logFoundUniqueConstraint",
           "metadataToken": 67109630,
           "normalizedSignature": "LogFoundUniqueConstraint|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
+          "isLiteral": false,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Diagnostics.Internal.NpgsqlLoggingDefinitions",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Diagnostics.Internal.NpgsqlLoggingDefinitions::LogPrincipalColumnNotFoundMicrosoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase",
           "clrName": "LogPrincipalColumnNotFound",
-          "tsEmitName": "logPrincipalColumnNotFound",
           "metadataToken": 67109631,
           "normalizedSignature": "LogPrincipalColumnNotFound|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
+          "isLiteral": false,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Diagnostics.Internal.NpgsqlLoggingDefinitions",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Diagnostics.Internal.NpgsqlLoggingDefinitions::LogEnumColumnSkippedMicrosoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase",
           "clrName": "LogEnumColumnSkipped",
-          "tsEmitName": "logEnumColumnSkipped",
           "metadataToken": 67109632,
           "normalizedSignature": "LogEnumColumnSkipped|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
+          "isLiteral": false,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Diagnostics.Internal.NpgsqlLoggingDefinitions",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Diagnostics.Internal.NpgsqlLoggingDefinitions::LogExpressionIndexSkippedMicrosoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase",
           "clrName": "LogExpressionIndexSkipped",
-          "tsEmitName": "logExpressionIndexSkipped",
           "metadataToken": 67109633,
           "normalizedSignature": "LogExpressionIndexSkipped|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
+          "isLiteral": false,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Diagnostics.Internal.NpgsqlLoggingDefinitions",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Diagnostics.Internal.NpgsqlLoggingDefinitions::LogUnsupportedColumnConstraintSkippedMicrosoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase",
           "clrName": "LogUnsupportedColumnConstraintSkipped",
-          "tsEmitName": "logUnsupportedColumnConstraintSkipped",
           "metadataToken": 67109634,
           "normalizedSignature": "LogUnsupportedColumnConstraintSkipped|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
+          "isLiteral": false,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Diagnostics.Internal.NpgsqlLoggingDefinitions",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Diagnostics.Internal.NpgsqlLoggingDefinitions::LogUnsupportedColumnIndexSkippedMicrosoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase",
           "clrName": "LogUnsupportedColumnIndexSkipped",
-          "tsEmitName": "logUnsupportedColumnIndexSkipped",
           "metadataToken": 67109635,
           "normalizedSignature": "LogUnsupportedColumnIndexSkipped|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
+          "isLiteral": false,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Diagnostics.Internal.NpgsqlLoggingDefinitions",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
@@ -209,189 +217,6 @@
           "parameterCount": 0,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Diagnostics.Internal.NpgsqlLoggingDefinitions",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
-        }
-      ],
-      "exposedFields": [
-        {
-          "tsName": "logFoundDefaultSchema",
-          "isStatic": false,
-          "tsSignatureId": "LogFoundDefaultSchema|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Diagnostics.Internal.NpgsqlLoggingDefinitions",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 67109619
-          }
-        },
-        {
-          "tsName": "logFoundColumn",
-          "isStatic": false,
-          "tsSignatureId": "LogFoundColumn|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Diagnostics.Internal.NpgsqlLoggingDefinitions",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 67109620
-          }
-        },
-        {
-          "tsName": "logFoundForeignKey",
-          "isStatic": false,
-          "tsSignatureId": "LogFoundForeignKey|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Diagnostics.Internal.NpgsqlLoggingDefinitions",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 67109621
-          }
-        },
-        {
-          "tsName": "logFoundCollation",
-          "isStatic": false,
-          "tsSignatureId": "LogFoundCollation|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Diagnostics.Internal.NpgsqlLoggingDefinitions",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 67109622
-          }
-        },
-        {
-          "tsName": "logPrincipalTableNotInSelectionSet",
-          "isStatic": false,
-          "tsSignatureId": "LogPrincipalTableNotInSelectionSet|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Diagnostics.Internal.NpgsqlLoggingDefinitions",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 67109623
-          }
-        },
-        {
-          "tsName": "logMissingSchema",
-          "isStatic": false,
-          "tsSignatureId": "LogMissingSchema|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Diagnostics.Internal.NpgsqlLoggingDefinitions",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 67109624
-          }
-        },
-        {
-          "tsName": "logMissingTable",
-          "isStatic": false,
-          "tsSignatureId": "LogMissingTable|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Diagnostics.Internal.NpgsqlLoggingDefinitions",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 67109625
-          }
-        },
-        {
-          "tsName": "logFoundSequence",
-          "isStatic": false,
-          "tsSignatureId": "LogFoundSequence|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Diagnostics.Internal.NpgsqlLoggingDefinitions",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 67109626
-          }
-        },
-        {
-          "tsName": "logFoundTable",
-          "isStatic": false,
-          "tsSignatureId": "LogFoundTable|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Diagnostics.Internal.NpgsqlLoggingDefinitions",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 67109627
-          }
-        },
-        {
-          "tsName": "logFoundIndex",
-          "isStatic": false,
-          "tsSignatureId": "LogFoundIndex|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Diagnostics.Internal.NpgsqlLoggingDefinitions",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 67109628
-          }
-        },
-        {
-          "tsName": "logFoundPrimaryKey",
-          "isStatic": false,
-          "tsSignatureId": "LogFoundPrimaryKey|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Diagnostics.Internal.NpgsqlLoggingDefinitions",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 67109629
-          }
-        },
-        {
-          "tsName": "logFoundUniqueConstraint",
-          "isStatic": false,
-          "tsSignatureId": "LogFoundUniqueConstraint|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Diagnostics.Internal.NpgsqlLoggingDefinitions",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 67109630
-          }
-        },
-        {
-          "tsName": "logPrincipalColumnNotFound",
-          "isStatic": false,
-          "tsSignatureId": "LogPrincipalColumnNotFound|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Diagnostics.Internal.NpgsqlLoggingDefinitions",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 67109631
-          }
-        },
-        {
-          "tsName": "logEnumColumnSkipped",
-          "isStatic": false,
-          "tsSignatureId": "LogEnumColumnSkipped|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Diagnostics.Internal.NpgsqlLoggingDefinitions",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 67109632
-          }
-        },
-        {
-          "tsName": "logExpressionIndexSkipped",
-          "isStatic": false,
-          "tsSignatureId": "LogExpressionIndexSkipped|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Diagnostics.Internal.NpgsqlLoggingDefinitions",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 67109633
-          }
-        },
-        {
-          "tsName": "logUnsupportedColumnConstraintSkipped",
-          "isStatic": false,
-          "tsSignatureId": "LogUnsupportedColumnConstraintSkipped|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Diagnostics.Internal.NpgsqlLoggingDefinitions",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 67109634
-          }
-        },
-        {
-          "tsName": "logUnsupportedColumnIndexSkipped",
-          "isStatic": false,
-          "tsSignatureId": "LogUnsupportedColumnIndexSkipped|Microsoft.EntityFrameworkCore.Diagnostics.EventDefinitionBase|static=false|const=false",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Diagnostics.Internal.NpgsqlLoggingDefinitions",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 67109635
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Diagnostics.Internal.NpgsqlLoggingDefinitions",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 100665571
-          }
         }
       ]
     }
