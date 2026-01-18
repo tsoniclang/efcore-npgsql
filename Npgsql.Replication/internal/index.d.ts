@@ -19,15 +19,15 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
 import type { Task, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export enum LogicalSlotSnapshotInitMode {
-    export = 0,
-    use = 1,
-    noExport = 2
+    Export = 0,
+    Use = 1,
+    NoExport = 2
 }
 
 
 export interface ReplicationSlotOptions$instance {
-    readonly consistentPoint: NpgsqlLogSequenceNumber;
-    readonly slotName: string;
+    readonly ConsistentPoint: NpgsqlLogSequenceNumber;
+    readonly SlotName: string;
 }
 
 
@@ -40,8 +40,8 @@ export const ReplicationSlotOptions: {
 export type ReplicationSlotOptions = ReplicationSlotOptions$instance;
 
 export interface TimelineHistoryFile$instance {
-    readonly content: byte[];
-    readonly fileName: string;
+    readonly Content: byte[];
+    readonly FileName: string;
 }
 
 
@@ -65,11 +65,11 @@ export const LogicalReplicationConnection: {
 export type LogicalReplicationConnection = LogicalReplicationConnection$instance;
 
 export interface PhysicalReplicationConnection$instance extends ReplicationConnection {
-    createReplicationSlot(slotName: string, isTemporary?: boolean, reserveWal?: boolean, cancellationToken?: CancellationToken): Task<PhysicalReplicationSlot>;
-    readReplicationSlot(slotName: string, cancellationToken?: CancellationToken): Task<PhysicalReplicationSlot | undefined>;
-    startReplication(slot: PhysicalReplicationSlot, walLocation: NpgsqlLogSequenceNumber, cancellationToken: CancellationToken, timeline?: uint): IAsyncEnumerable<XLogDataMessage>;
-    startReplication(walLocation: NpgsqlLogSequenceNumber, cancellationToken: CancellationToken, timeline?: uint): IAsyncEnumerable<XLogDataMessage>;
-    startReplication(slot: PhysicalReplicationSlot, cancellationToken: CancellationToken): IAsyncEnumerable<XLogDataMessage>;
+    CreateReplicationSlot(slotName: string, isTemporary?: boolean, reserveWal?: boolean, cancellationToken?: CancellationToken): Task<PhysicalReplicationSlot>;
+    ReadReplicationSlot(slotName: string, cancellationToken?: CancellationToken): Task<PhysicalReplicationSlot | undefined>;
+    StartReplication(slot: PhysicalReplicationSlot, walLocation: NpgsqlLogSequenceNumber, cancellationToken: CancellationToken, timeline?: uint): IAsyncEnumerable<XLogDataMessage>;
+    StartReplication(walLocation: NpgsqlLogSequenceNumber, cancellationToken: CancellationToken, timeline?: uint): IAsyncEnumerable<XLogDataMessage>;
+    StartReplication(slot: PhysicalReplicationSlot, cancellationToken: CancellationToken): IAsyncEnumerable<XLogDataMessage>;
 }
 
 
@@ -82,8 +82,8 @@ export const PhysicalReplicationConnection: {
 export type PhysicalReplicationConnection = PhysicalReplicationConnection$instance;
 
 export interface PhysicalReplicationSlot$instance extends ReplicationSlot {
-    readonly restartLsn: Nullable<NpgsqlLogSequenceNumber>;
-    readonly restartTimeline: Nullable<System_Internal.UInt32>;
+    readonly RestartLsn: Nullable<NpgsqlLogSequenceNumber>;
+    readonly RestartTimeline: Nullable<System_Internal.UInt32>;
 }
 
 
@@ -95,25 +95,25 @@ export const PhysicalReplicationSlot: {
 export type PhysicalReplicationSlot = PhysicalReplicationSlot$instance;
 
 export interface ReplicationConnection$instance {
-    commandTimeout: TimeSpan;
-    connectionString: string;
-    readonly encoding: Encoding;
-    lastAppliedLsn: NpgsqlLogSequenceNumber;
-    lastFlushedLsn: NpgsqlLogSequenceNumber;
-    readonly lastReceivedLsn: NpgsqlLogSequenceNumber;
-    readonly postgreSqlVersion: Version;
-    readonly processID: int;
-    readonly serverVersion: string;
-    walReceiverStatusInterval: TimeSpan;
-    walReceiverTimeout: TimeSpan;
-    disposeAsync(): ValueTask;
-    dropReplicationSlot(slotName: string, wait?: boolean, cancellationToken?: CancellationToken): Task;
-    identifySystem(cancellationToken?: CancellationToken): Task<ReplicationSystemIdentification>;
-    open(cancellationToken?: CancellationToken): Task;
-    sendStatusUpdate(cancellationToken?: CancellationToken): Task;
-    setReplicationStatus(lastAppliedAndFlushedLsn: NpgsqlLogSequenceNumber): void;
-    show(parameterName: string, cancellationToken?: CancellationToken): Task<System_Internal.String>;
-    timelineHistory(tli: uint, cancellationToken?: CancellationToken): Task<TimelineHistoryFile>;
+    CommandTimeout: TimeSpan;
+    ConnectionString: string;
+    readonly Encoding: Encoding;
+    LastAppliedLsn: NpgsqlLogSequenceNumber;
+    LastFlushedLsn: NpgsqlLogSequenceNumber;
+    readonly LastReceivedLsn: NpgsqlLogSequenceNumber;
+    readonly PostgreSqlVersion: Version;
+    readonly ProcessID: int;
+    readonly ServerVersion: string;
+    WalReceiverStatusInterval: TimeSpan;
+    WalReceiverTimeout: TimeSpan;
+    DisposeAsync(): ValueTask;
+    DropReplicationSlot(slotName: string, wait?: boolean, cancellationToken?: CancellationToken): Task;
+    IdentifySystem(cancellationToken?: CancellationToken): Task<ReplicationSystemIdentification>;
+    Open(cancellationToken?: CancellationToken): Task;
+    SendStatusUpdate(cancellationToken?: CancellationToken): Task;
+    SetReplicationStatus(lastAppliedAndFlushedLsn: NpgsqlLogSequenceNumber): void;
+    Show(parameterName: string, cancellationToken?: CancellationToken): Task<System_Internal.String>;
+    TimelineHistory(tli: uint, cancellationToken?: CancellationToken): Task<TimelineHistoryFile>;
 }
 
 
@@ -124,9 +124,9 @@ export const ReplicationConnection: {
 export type ReplicationConnection = ReplicationConnection$instance;
 
 export interface ReplicationMessage$instance {
-    readonly serverClock: DateTime;
-    readonly walEnd: NpgsqlLogSequenceNumber;
-    readonly walStart: NpgsqlLogSequenceNumber;
+    readonly ServerClock: DateTime;
+    readonly WalEnd: NpgsqlLogSequenceNumber;
+    readonly WalStart: NpgsqlLogSequenceNumber;
 }
 
 
@@ -137,7 +137,7 @@ export const ReplicationMessage: {
 export type ReplicationMessage = ReplicationMessage$instance;
 
 export interface ReplicationSlot$instance {
-    readonly name: string;
+    readonly Name: string;
 }
 
 
@@ -148,10 +148,10 @@ export const ReplicationSlot: {
 export type ReplicationSlot = ReplicationSlot$instance;
 
 export interface ReplicationSystemIdentification$instance {
-    readonly dbName: string | undefined;
-    readonly systemId: string;
-    readonly timeline: uint;
-    readonly xLogPos: NpgsqlLogSequenceNumber;
+    readonly DbName: string | undefined;
+    readonly SystemId: string;
+    readonly Timeline: uint;
+    readonly XLogPos: NpgsqlLogSequenceNumber;
 }
 
 
@@ -163,7 +163,7 @@ export const ReplicationSystemIdentification: {
 export type ReplicationSystemIdentification = ReplicationSystemIdentification$instance;
 
 export interface XLogDataMessage$instance extends ReplicationMessage {
-    readonly data: Stream;
+    readonly Data: Stream;
 }
 
 
@@ -175,16 +175,16 @@ export const XLogDataMessage: {
 export type XLogDataMessage = XLogDataMessage$instance;
 
 export abstract class PgOutputConnectionExtensions$instance {
-    static createPgOutputReplicationSlot(connection: LogicalReplicationConnection, slotName: string, temporarySlot?: boolean, slotSnapshotInitMode?: Nullable<LogicalSlotSnapshotInitMode>, twoPhase?: boolean, cancellationToken?: CancellationToken): Task<PgOutputReplicationSlot>;
-    static startReplication(connection: LogicalReplicationConnection, slot: PgOutputReplicationSlot, options: PgOutputReplicationOptions, cancellationToken: CancellationToken, walLocation?: Nullable<NpgsqlLogSequenceNumber>): IAsyncEnumerable<PgOutputReplicationMessage>;
+    static CreatePgOutputReplicationSlot(connection: LogicalReplicationConnection, slotName: string, temporarySlot?: boolean, slotSnapshotInitMode?: Nullable<LogicalSlotSnapshotInitMode>, twoPhase?: boolean, cancellationToken?: CancellationToken): Task<PgOutputReplicationSlot>;
+    static StartReplication(connection: LogicalReplicationConnection, slot: PgOutputReplicationSlot, options: PgOutputReplicationOptions, cancellationToken: CancellationToken, walLocation?: Nullable<NpgsqlLogSequenceNumber>): IAsyncEnumerable<PgOutputReplicationMessage>;
 }
 
 
 export type PgOutputConnectionExtensions = PgOutputConnectionExtensions$instance;
 
 export abstract class TestDecodingConnectionExtensions$instance {
-    static createTestDecodingReplicationSlot(connection: LogicalReplicationConnection, slotName: string, temporarySlot?: boolean, slotSnapshotInitMode?: Nullable<LogicalSlotSnapshotInitMode>, twoPhase?: boolean, cancellationToken?: CancellationToken): Task<TestDecodingReplicationSlot>;
-    static startReplication(connection: LogicalReplicationConnection, slot: TestDecodingReplicationSlot, cancellationToken: CancellationToken, options?: TestDecodingOptions, walLocation?: Nullable<NpgsqlLogSequenceNumber>): IAsyncEnumerable<TestDecodingData>;
+    static CreateTestDecodingReplicationSlot(connection: LogicalReplicationConnection, slotName: string, temporarySlot?: boolean, slotSnapshotInitMode?: Nullable<LogicalSlotSnapshotInitMode>, twoPhase?: boolean, cancellationToken?: CancellationToken): Task<TestDecodingReplicationSlot>;
+    static StartReplication(connection: LogicalReplicationConnection, slot: TestDecodingReplicationSlot, cancellationToken: CancellationToken, options?: TestDecodingOptions, walLocation?: Nullable<NpgsqlLogSequenceNumber>): IAsyncEnumerable<TestDecodingData>;
 }
 
 

@@ -16,11 +16,11 @@ import * as Microsoft_EntityFrameworkCore_Migrations_Operations_Internal from "@
 import type { DatabaseOperation, MigrationOperation } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Migrations.Operations.js";
 
 export interface NpgsqlCreateDatabaseOperation$instance extends DatabaseOperation {
-    name: string;
-    get tablespace(): string | undefined;
-    set tablespace(value: string);
-    get template(): string | undefined;
-    set template(value: string);
+    Name: string;
+    get Tablespace(): string | undefined;
+    set Tablespace(value: string);
+    get Template(): string | undefined;
+    set Template(value: string);
 }
 
 
@@ -32,7 +32,7 @@ export const NpgsqlCreateDatabaseOperation: {
 export type NpgsqlCreateDatabaseOperation = NpgsqlCreateDatabaseOperation$instance;
 
 export interface NpgsqlDropDatabaseOperation$instance extends MigrationOperation {
-    name: string;
+    Name: string;
 }
 
 

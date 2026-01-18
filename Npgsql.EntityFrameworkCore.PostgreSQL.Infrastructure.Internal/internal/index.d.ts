@@ -20,26 +20,26 @@ import type { IModel } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metada
 import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection.js";
 
 export interface INpgsqlSingletonOptions$instance extends ISingletonOptions {
-    readonly postgresVersion: Version;
-    readonly isPostgresVersionSet: boolean;
-    readonly useRedshift: boolean;
-    readonly reverseNullOrderingEnabled: boolean;
-    readonly enumDefinitions: IReadOnlyList<EnumDefinition>;
-    readonly userRangeDefinitions: IReadOnlyList<UserRangeDefinition>;
+    readonly PostgresVersion: Version;
+    readonly IsPostgresVersionSet: boolean;
+    readonly UseRedshift: boolean;
+    readonly ReverseNullOrderingEnabled: boolean;
+    readonly EnumDefinitions: IReadOnlyList<EnumDefinition>;
+    readonly UserRangeDefinitions: IReadOnlyList<UserRangeDefinition>;
 }
 
 
 export type INpgsqlSingletonOptions = INpgsqlSingletonOptions$instance;
 
 export interface EnumDefinition$instance {
-    readonly clrType: Type;
-    readonly labels: IReadOnlyDictionary<unknown, System_Internal.String>;
-    readonly nameTranslator: INpgsqlNameTranslator;
-    readonly storeTypeName: string;
-    readonly storeTypeSchema: string | undefined;
-    equals(obj: unknown): boolean;
-    equals(other: EnumDefinition): boolean;
-    getHashCode(): int;
+    readonly ClrType: Type;
+    readonly Labels: IReadOnlyDictionary<unknown, System_Internal.String>;
+    readonly NameTranslator: INpgsqlNameTranslator;
+    readonly StoreTypeName: string;
+    readonly StoreTypeSchema: string | undefined;
+    Equals(obj: unknown): boolean;
+    Equals(other: EnumDefinition): boolean;
+    GetHashCode(): int;
 }
 
 
@@ -51,7 +51,7 @@ export const EnumDefinition: {
 export type EnumDefinition = EnumDefinition$instance;
 
 export interface NpgsqlModelValidator$instance extends RelationalModelValidator {
-    validate(model: IModel, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
+    Validate(model: IModel, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
 }
 
 
@@ -63,59 +63,59 @@ export const NpgsqlModelValidator: {
 export type NpgsqlModelValidator = NpgsqlModelValidator$instance;
 
 export interface NpgsqlOptionsExtension$instance extends RelationalOptionsExtension {
-    readonly adminDatabase: string | undefined;
-    readonly dataSource: DbDataSource | undefined;
-    readonly dataSourceBuilderAction: Action<NpgsqlDataSourceBuilder> | undefined;
-    readonly enumDefinitions: IReadOnlyList<EnumDefinition>;
-    readonly info: DbContextOptionsExtensionInfo;
-    readonly isPostgresVersionSet: boolean;
-    readonly minBatchSize: Nullable<System_Internal.Int32>;
-    readonly parameterizedCollectionMode: ParameterTranslationMode;
-    readonly postgresVersion: Version;
-    readonly provideClientCertificatesCallback: ProvideClientCertificatesCallback | undefined;
-    readonly providePasswordCallback: ProvidePasswordCallback | undefined;
-    readonly remoteCertificateValidationCallback: RemoteCertificateValidationCallback | undefined;
-    readonly reverseNullOrdering: boolean;
-    readonly useRedshift: boolean;
-    readonly userRangeDefinitions: IReadOnlyList<UserRangeDefinition>;
-    applyServices(services: IServiceCollection): void;
-    validate(options: IDbContextOptions): void;
-    withAdminDatabase(adminDatabase: string): NpgsqlOptionsExtension;
-    withConnection(connection: DbConnection): RelationalOptionsExtension;
-    withConnectionString(connectionString: string): RelationalOptionsExtension;
-    withDataSource(dataSource: DbDataSource): RelationalOptionsExtension;
-    withDataSourceConfiguration(dataSourceBuilderAction: Action<NpgsqlDataSourceBuilder>): NpgsqlOptionsExtension;
-    withEnumMapping(clrType: Type, enumName: string, schemaName: string, nameTranslator: INpgsqlNameTranslator): NpgsqlOptionsExtension;
-    withPostgresVersion(postgresVersion: Version): NpgsqlOptionsExtension;
-    withProvideClientCertificatesCallback(callback: ProvideClientCertificatesCallback): NpgsqlOptionsExtension;
-    withProvidePasswordCallback(callback: ProvidePasswordCallback): NpgsqlOptionsExtension;
-    withRedshift(useRedshift: boolean): NpgsqlOptionsExtension;
-    withRemoteCertificateValidationCallback(callback: RemoteCertificateValidationCallback): NpgsqlOptionsExtension;
-    withUseParameterizedCollectionMode(parameterizedCollectionMode: ParameterTranslationMode): RelationalOptionsExtension;
-    withUserRangeDefinition<TSubtype>(rangeName: string, schemaName?: string, subtypeName?: string): NpgsqlOptionsExtension;
-    withUserRangeDefinition(rangeName: string, schemaName: string, subtypeClrType: Type, subtypeName: string): NpgsqlOptionsExtension;
+    readonly AdminDatabase: string | undefined;
+    readonly DataSource: DbDataSource | undefined;
+    readonly DataSourceBuilderAction: Action<NpgsqlDataSourceBuilder> | undefined;
+    readonly EnumDefinitions: IReadOnlyList<EnumDefinition>;
+    readonly Info: DbContextOptionsExtensionInfo;
+    readonly IsPostgresVersionSet: boolean;
+    readonly MinBatchSize: Nullable<System_Internal.Int32>;
+    readonly ParameterizedCollectionMode: ParameterTranslationMode;
+    readonly PostgresVersion: Version;
+    readonly ProvideClientCertificatesCallback: ProvideClientCertificatesCallback | undefined;
+    readonly ProvidePasswordCallback: ProvidePasswordCallback | undefined;
+    readonly RemoteCertificateValidationCallback: RemoteCertificateValidationCallback | undefined;
+    readonly ReverseNullOrdering: boolean;
+    readonly UseRedshift: boolean;
+    readonly UserRangeDefinitions: IReadOnlyList<UserRangeDefinition>;
+    ApplyServices(services: IServiceCollection): void;
+    Validate(options: IDbContextOptions): void;
+    WithAdminDatabase(adminDatabase: string): NpgsqlOptionsExtension;
+    WithConnection(connection: DbConnection): RelationalOptionsExtension;
+    WithConnectionString(connectionString: string): RelationalOptionsExtension;
+    WithDataSource(dataSource: DbDataSource): RelationalOptionsExtension;
+    WithDataSourceConfiguration(dataSourceBuilderAction: Action<NpgsqlDataSourceBuilder>): NpgsqlOptionsExtension;
+    WithEnumMapping(clrType: Type, enumName: string, schemaName: string, nameTranslator: INpgsqlNameTranslator): NpgsqlOptionsExtension;
+    WithPostgresVersion(postgresVersion: Version): NpgsqlOptionsExtension;
+    WithProvideClientCertificatesCallback(callback: ProvideClientCertificatesCallback): NpgsqlOptionsExtension;
+    WithProvidePasswordCallback(callback: ProvidePasswordCallback): NpgsqlOptionsExtension;
+    WithRedshift(useRedshift: boolean): NpgsqlOptionsExtension;
+    WithRemoteCertificateValidationCallback(callback: RemoteCertificateValidationCallback): NpgsqlOptionsExtension;
+    WithUseParameterizedCollectionMode(parameterizedCollectionMode: ParameterTranslationMode): RelationalOptionsExtension;
+    WithUserRangeDefinition<TSubtype>(rangeName: string, schemaName?: string, subtypeName?: string): NpgsqlOptionsExtension;
+    WithUserRangeDefinition(rangeName: string, schemaName: string, subtypeClrType: Type, subtypeName: string): NpgsqlOptionsExtension;
 }
 
 
 export const NpgsqlOptionsExtension: {
     new(): NpgsqlOptionsExtension;
     new(copyFrom: NpgsqlOptionsExtension): NpgsqlOptionsExtension;
-    readonly defaultPostgresVersion: Version;
+    readonly DefaultPostgresVersion: Version;
 };
 
 
 export type NpgsqlOptionsExtension = NpgsqlOptionsExtension$instance;
 
 export interface UserRangeDefinition$instance {
-    readonly storeTypeName: string;
-    readonly storeTypeSchema: string | undefined;
-    readonly subtypeClrType: Type;
-    readonly subtypeName: string | undefined;
+    readonly StoreTypeName: string;
+    readonly StoreTypeSchema: string | undefined;
+    readonly SubtypeClrType: Type;
+    readonly SubtypeName: string | undefined;
     _Clone_$(): UserRangeDefinition;
-    equals(obj: unknown): boolean;
-    equals(other: UserRangeDefinition): boolean;
-    getHashCode(): int;
-    toString(): string;
+    Equals(obj: unknown): boolean;
+    Equals(other: UserRangeDefinition): boolean;
+    GetHashCode(): int;
+    ToString(): string;
 }
 
 

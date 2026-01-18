@@ -19,14 +19,14 @@ import type { SqlExpression } from "@tsonic/efcore/Microsoft.EntityFrameworkCore
 import type { IRelationalTypeMappingSource } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
 
 export enum NpgsqlSqlTranslatingExpressionVisitor_StartsEndsWithContains {
-    startsWith = 0,
-    endsWith = 1,
-    contains = 2
+    StartsWith = 0,
+    EndsWith = 1,
+    Contains = 2
 }
 
 
 export interface NpgsqlCompiledQueryCacheKeyGenerator$instance extends RelationalCompiledQueryCacheKeyGenerator {
-    generateCacheKey(query: Expression, async: boolean): unknown;
+    GenerateCacheKey(query: Expression, async: boolean): unknown;
 }
 
 
@@ -38,7 +38,7 @@ export const NpgsqlCompiledQueryCacheKeyGenerator: {
 export type NpgsqlCompiledQueryCacheKeyGenerator = NpgsqlCompiledQueryCacheKeyGenerator$instance;
 
 export interface NpgsqlDeleteConvertingExpressionVisitor$instance extends ExpressionVisitor {
-    process(node: Expression): Expression;
+    Process(node: Expression): Expression;
 }
 
 
@@ -50,7 +50,7 @@ export const NpgsqlDeleteConvertingExpressionVisitor: {
 export type NpgsqlDeleteConvertingExpressionVisitor = NpgsqlDeleteConvertingExpressionVisitor$instance;
 
 export interface NpgsqlEvaluatableExpressionFilter$instance extends RelationalEvaluatableExpressionFilter {
-    isEvaluatableExpression(expression: Expression, model: IModel): boolean;
+    IsEvaluatableExpression(expression: Expression, model: IModel): boolean;
 }
 
 
@@ -62,7 +62,7 @@ export const NpgsqlEvaluatableExpressionFilter: {
 export type NpgsqlEvaluatableExpressionFilter = NpgsqlEvaluatableExpressionFilter$instance;
 
 export interface NpgsqlParameterBasedSqlProcessor$instance extends RelationalParameterBasedSqlProcessor {
-    process(queryExpression: Expression, parametersDecorator: ParametersCacheDecorator): Expression;
+    Process(queryExpression: Expression, parametersDecorator: ParametersCacheDecorator): Expression;
 }
 
 
@@ -74,7 +74,7 @@ export const NpgsqlParameterBasedSqlProcessor: {
 export type NpgsqlParameterBasedSqlProcessor = NpgsqlParameterBasedSqlProcessor$instance;
 
 export interface NpgsqlParameterBasedSqlProcessorFactory$instance {
-    create(parameters: RelationalParameterBasedSqlProcessorParameters): RelationalParameterBasedSqlProcessor;
+    Create(parameters: RelationalParameterBasedSqlProcessorParameters): RelationalParameterBasedSqlProcessor;
 }
 
 
@@ -97,7 +97,7 @@ export const NpgsqlQueryableMethodTranslatingExpressionVisitor: {
 export type NpgsqlQueryableMethodTranslatingExpressionVisitor = NpgsqlQueryableMethodTranslatingExpressionVisitor$instance;
 
 export interface NpgsqlQueryableMethodTranslatingExpressionVisitorFactory$instance {
-    create(queryCompilationContext: QueryCompilationContext): QueryableMethodTranslatingExpressionVisitor;
+    Create(queryCompilationContext: QueryCompilationContext): QueryableMethodTranslatingExpressionVisitor;
 }
 
 
@@ -109,8 +109,8 @@ export const NpgsqlQueryableMethodTranslatingExpressionVisitorFactory: {
 export type NpgsqlQueryableMethodTranslatingExpressionVisitorFactory = NpgsqlQueryableMethodTranslatingExpressionVisitorFactory$instance;
 
 export interface NpgsqlQueryCompilationContext$instance extends RelationalQueryCompilationContext {
-    readonly isBuffering: boolean;
-    readonly supportsPrecompiledQuery: boolean;
+    readonly IsBuffering: boolean;
+    readonly SupportsPrecompiledQuery: boolean;
 }
 
 
@@ -123,8 +123,8 @@ export const NpgsqlQueryCompilationContext: {
 export type NpgsqlQueryCompilationContext = NpgsqlQueryCompilationContext$instance;
 
 export interface NpgsqlQueryCompilationContextFactory$instance {
-    create(async: boolean): QueryCompilationContext;
-    createPrecompiled(async: boolean): QueryCompilationContext;
+    Create(async: boolean): QueryCompilationContext;
+    CreatePrecompiled(async: boolean): QueryCompilationContext;
 }
 
 
@@ -147,7 +147,7 @@ export const NpgsqlQuerySqlGenerator: {
 export type NpgsqlQuerySqlGenerator = NpgsqlQuerySqlGenerator$instance;
 
 export interface NpgsqlQuerySqlGeneratorFactory$instance {
-    create(): QuerySqlGenerator;
+    Create(): QuerySqlGenerator;
 }
 
 
@@ -159,7 +159,7 @@ export const NpgsqlQuerySqlGeneratorFactory: {
 export type NpgsqlQuerySqlGeneratorFactory = NpgsqlQuerySqlGeneratorFactory$instance;
 
 export interface NpgsqlQueryTranslationPostprocessor$instance extends RelationalQueryTranslationPostprocessor {
-    process(query: Expression): Expression;
+    Process(query: Expression): Expression;
 }
 
 
@@ -171,7 +171,7 @@ export const NpgsqlQueryTranslationPostprocessor: {
 export type NpgsqlQueryTranslationPostprocessor = NpgsqlQueryTranslationPostprocessor$instance;
 
 export interface NpgsqlQueryTranslationPostprocessorFactory$instance {
-    create(queryCompilationContext: QueryCompilationContext): QueryTranslationPostprocessor;
+    Create(queryCompilationContext: QueryCompilationContext): QueryTranslationPostprocessor;
 }
 
 
@@ -205,21 +205,21 @@ export const NpgsqlSqlNullabilityProcessor: {
 export type NpgsqlSqlNullabilityProcessor = NpgsqlSqlNullabilityProcessor$instance;
 
 export interface NpgsqlSqlTranslatingExpressionVisitor$instance extends RelationalSqlTranslatingExpressionVisitor {
-    generateGreatest(expressions: IReadOnlyList<SqlExpression>, resultType: Type): SqlExpression;
-    generateLeast(expressions: IReadOnlyList<SqlExpression>, resultType: Type): SqlExpression;
+    GenerateGreatest(expressions: IReadOnlyList<SqlExpression>, resultType: Type): SqlExpression;
+    GenerateLeast(expressions: IReadOnlyList<SqlExpression>, resultType: Type): SqlExpression;
 }
 
 
 export const NpgsqlSqlTranslatingExpressionVisitor: {
     new(dependencies: RelationalSqlTranslatingExpressionVisitorDependencies, queryCompilationContext: QueryCompilationContext, queryableMethodTranslatingExpressionVisitor: QueryableMethodTranslatingExpressionVisitor): NpgsqlSqlTranslatingExpressionVisitor;
-    constructLikePatternParameter(queryContext: QueryContext, baseParameterName: string, methodType: NpgsqlSqlTranslatingExpressionVisitor_StartsEndsWithContains): string | undefined;
+    ConstructLikePatternParameter(queryContext: QueryContext, baseParameterName: string, methodType: NpgsqlSqlTranslatingExpressionVisitor_StartsEndsWithContains): string | undefined;
 };
 
 
 export type NpgsqlSqlTranslatingExpressionVisitor = NpgsqlSqlTranslatingExpressionVisitor$instance;
 
 export interface NpgsqlSqlTranslatingExpressionVisitorFactory$instance {
-    create(queryCompilationContext: QueryCompilationContext, queryableMethodTranslatingExpressionVisitor: QueryableMethodTranslatingExpressionVisitor): RelationalSqlTranslatingExpressionVisitor;
+    Create(queryCompilationContext: QueryCompilationContext, queryableMethodTranslatingExpressionVisitor: QueryableMethodTranslatingExpressionVisitor): RelationalSqlTranslatingExpressionVisitor;
 }
 
 
@@ -253,7 +253,7 @@ export const NpgsqlTypeMappingPostprocessor: {
 export type NpgsqlTypeMappingPostprocessor = NpgsqlTypeMappingPostprocessor$instance;
 
 export interface NpgsqlUnnestPostprocessor$instance extends ExpressionVisitor {
-    visit(expression: Expression): Expression | undefined;
+    Visit(expression: Expression): Expression | undefined;
 }
 
 

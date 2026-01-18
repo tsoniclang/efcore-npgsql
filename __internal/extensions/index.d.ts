@@ -24,98 +24,98 @@ import * as System_Internal from "../../System/internal/index.js";
 import type { ptr } from '@tsonic/core/types.js';
 
 export interface __Ext_Microsoft_EntityFrameworkCore_NpgsqlCube {
-  overlaps(other: NpgsqlTypes.NpgsqlCube): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
-  contains(other: NpgsqlTypes.NpgsqlCube): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
-  containedBy(other: NpgsqlTypes.NpgsqlCube): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
-  nthCoordinate(index: int): ExtensionMethods_Microsoft_EntityFrameworkCore<double>;
-  nthCoordinateKnn(index: int): ExtensionMethods_Microsoft_EntityFrameworkCore<double>;
-  distance(other: NpgsqlTypes.NpgsqlCube): ExtensionMethods_Microsoft_EntityFrameworkCore<double>;
-  distanceTaxicab(other: NpgsqlTypes.NpgsqlCube): ExtensionMethods_Microsoft_EntityFrameworkCore<double>;
-  distanceChebyshev(other: NpgsqlTypes.NpgsqlCube): ExtensionMethods_Microsoft_EntityFrameworkCore<double>;
-  union(other: NpgsqlTypes.NpgsqlCube): ExtensionMethods_Microsoft_EntityFrameworkCore<NpgsqlTypes.NpgsqlCube>;
-  intersect(other: NpgsqlTypes.NpgsqlCube): ExtensionMethods_Microsoft_EntityFrameworkCore<NpgsqlTypes.NpgsqlCube>;
-  enlarge(radius: double, dimensions: int): ExtensionMethods_Microsoft_EntityFrameworkCore<NpgsqlTypes.NpgsqlCube>;
+  Overlaps(other: NpgsqlTypes.NpgsqlCube): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+  Contains(other: NpgsqlTypes.NpgsqlCube): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+  ContainedBy(other: NpgsqlTypes.NpgsqlCube): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+  NthCoordinate(index: int): ExtensionMethods_Microsoft_EntityFrameworkCore<double>;
+  NthCoordinateKnn(index: int): ExtensionMethods_Microsoft_EntityFrameworkCore<double>;
+  Distance(other: NpgsqlTypes.NpgsqlCube): ExtensionMethods_Microsoft_EntityFrameworkCore<double>;
+  DistanceTaxicab(other: NpgsqlTypes.NpgsqlCube): ExtensionMethods_Microsoft_EntityFrameworkCore<double>;
+  DistanceChebyshev(other: NpgsqlTypes.NpgsqlCube): ExtensionMethods_Microsoft_EntityFrameworkCore<double>;
+  Union(other: NpgsqlTypes.NpgsqlCube): ExtensionMethods_Microsoft_EntityFrameworkCore<NpgsqlTypes.NpgsqlCube>;
+  Intersect(other: NpgsqlTypes.NpgsqlCube): ExtensionMethods_Microsoft_EntityFrameworkCore<NpgsqlTypes.NpgsqlCube>;
+  Enlarge(radius: double, dimensions: int): ExtensionMethods_Microsoft_EntityFrameworkCore<NpgsqlTypes.NpgsqlCube>;
 }
 
 export interface __Ext_Microsoft_EntityFrameworkCore_NpgsqlRange_1<T> {
-  containedBy(multirange: NpgsqlTypes.NpgsqlRange_1<T>[]): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
-  containedBy(multirange: List_1<NpgsqlTypes.NpgsqlRange_1<T>>): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
-  contains(value: T): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
-  contains(b: NpgsqlTypes.NpgsqlRange_1<T>): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
-  containedBy(b: NpgsqlTypes.NpgsqlRange_1<T>): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
-  overlaps(b: NpgsqlTypes.NpgsqlRange_1<T>): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
-  isStrictlyLeftOf(b: NpgsqlTypes.NpgsqlRange_1<T>): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
-  isStrictlyRightOf(b: NpgsqlTypes.NpgsqlRange_1<T>): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
-  doesNotExtendLeftOf(b: NpgsqlTypes.NpgsqlRange_1<T>): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
-  doesNotExtendRightOf(b: NpgsqlTypes.NpgsqlRange_1<T>): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
-  isAdjacentTo(b: NpgsqlTypes.NpgsqlRange_1<T>): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
-  union(b: NpgsqlTypes.NpgsqlRange_1<T>): ExtensionMethods_Microsoft_EntityFrameworkCore<NpgsqlTypes.NpgsqlRange_1<T>>;
-  intersect(b: NpgsqlTypes.NpgsqlRange_1<T>): ExtensionMethods_Microsoft_EntityFrameworkCore<NpgsqlTypes.NpgsqlRange_1<T>>;
-  except(b: NpgsqlTypes.NpgsqlRange_1<T>): ExtensionMethods_Microsoft_EntityFrameworkCore<NpgsqlTypes.NpgsqlRange_1<T>>;
-  merge(b: NpgsqlTypes.NpgsqlRange_1<T>): ExtensionMethods_Microsoft_EntityFrameworkCore<NpgsqlTypes.NpgsqlRange_1<T>>;
+  ContainedBy(multirange: NpgsqlTypes.NpgsqlRange_1<T>[]): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+  ContainedBy(multirange: List_1<NpgsqlTypes.NpgsqlRange_1<T>>): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+  Contains(value: T): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+  Contains(b: NpgsqlTypes.NpgsqlRange_1<T>): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+  ContainedBy(b: NpgsqlTypes.NpgsqlRange_1<T>): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+  Overlaps(b: NpgsqlTypes.NpgsqlRange_1<T>): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+  IsStrictlyLeftOf(b: NpgsqlTypes.NpgsqlRange_1<T>): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+  IsStrictlyRightOf(b: NpgsqlTypes.NpgsqlRange_1<T>): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+  DoesNotExtendLeftOf(b: NpgsqlTypes.NpgsqlRange_1<T>): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+  DoesNotExtendRightOf(b: NpgsqlTypes.NpgsqlRange_1<T>): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+  IsAdjacentTo(b: NpgsqlTypes.NpgsqlRange_1<T>): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+  Union(b: NpgsqlTypes.NpgsqlRange_1<T>): ExtensionMethods_Microsoft_EntityFrameworkCore<NpgsqlTypes.NpgsqlRange_1<T>>;
+  Intersect(b: NpgsqlTypes.NpgsqlRange_1<T>): ExtensionMethods_Microsoft_EntityFrameworkCore<NpgsqlTypes.NpgsqlRange_1<T>>;
+  Except(b: NpgsqlTypes.NpgsqlRange_1<T>): ExtensionMethods_Microsoft_EntityFrameworkCore<NpgsqlTypes.NpgsqlRange_1<T>>;
+  Merge(b: NpgsqlTypes.NpgsqlRange_1<T>): ExtensionMethods_Microsoft_EntityFrameworkCore<NpgsqlTypes.NpgsqlRange_1<T>>;
 }
 
 export interface __Ext_Microsoft_EntityFrameworkCore_NpgsqlTsQuery {
-  and(query2: NpgsqlTypes.NpgsqlTsQuery): ExtensionMethods_Microsoft_EntityFrameworkCore<NpgsqlTypes.NpgsqlTsQuery>;
-  or(query2: NpgsqlTypes.NpgsqlTsQuery): ExtensionMethods_Microsoft_EntityFrameworkCore<NpgsqlTypes.NpgsqlTsQuery>;
-  toNegative(): ExtensionMethods_Microsoft_EntityFrameworkCore<NpgsqlTypes.NpgsqlTsQuery>;
-  contains(query2: NpgsqlTypes.NpgsqlTsQuery): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
-  isContainedIn(query2: NpgsqlTypes.NpgsqlTsQuery): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
-  getNodeCount(): ExtensionMethods_Microsoft_EntityFrameworkCore<int>;
-  getQueryTree(): ExtensionMethods_Microsoft_EntityFrameworkCore<string>;
-  getResultHeadline(document: string): ExtensionMethods_Microsoft_EntityFrameworkCore<string>;
-  getResultHeadline(document: string, options: string): ExtensionMethods_Microsoft_EntityFrameworkCore<string>;
-  getResultHeadline(config: string, document: string, options: string): ExtensionMethods_Microsoft_EntityFrameworkCore<string>;
-  rewrite(target: NpgsqlTypes.NpgsqlTsQuery, substitute: NpgsqlTypes.NpgsqlTsQuery): ExtensionMethods_Microsoft_EntityFrameworkCore<NpgsqlTypes.NpgsqlTsQuery>;
-  rewrite(select: string): ExtensionMethods_Microsoft_EntityFrameworkCore<NpgsqlTypes.NpgsqlTsQuery>;
-  toPhrase(query2: NpgsqlTypes.NpgsqlTsQuery): ExtensionMethods_Microsoft_EntityFrameworkCore<NpgsqlTypes.NpgsqlTsQuery>;
-  toPhrase(query2: NpgsqlTypes.NpgsqlTsQuery, distance: int): ExtensionMethods_Microsoft_EntityFrameworkCore<NpgsqlTypes.NpgsqlTsQuery>;
+  And(query2: NpgsqlTypes.NpgsqlTsQuery): ExtensionMethods_Microsoft_EntityFrameworkCore<NpgsqlTypes.NpgsqlTsQuery>;
+  Or(query2: NpgsqlTypes.NpgsqlTsQuery): ExtensionMethods_Microsoft_EntityFrameworkCore<NpgsqlTypes.NpgsqlTsQuery>;
+  ToNegative(): ExtensionMethods_Microsoft_EntityFrameworkCore<NpgsqlTypes.NpgsqlTsQuery>;
+  Contains(query2: NpgsqlTypes.NpgsqlTsQuery): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+  IsContainedIn(query2: NpgsqlTypes.NpgsqlTsQuery): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+  GetNodeCount(): ExtensionMethods_Microsoft_EntityFrameworkCore<int>;
+  GetQueryTree(): ExtensionMethods_Microsoft_EntityFrameworkCore<string>;
+  GetResultHeadline(document: string): ExtensionMethods_Microsoft_EntityFrameworkCore<string>;
+  GetResultHeadline(document: string, options: string): ExtensionMethods_Microsoft_EntityFrameworkCore<string>;
+  GetResultHeadline(config: string, document: string, options: string): ExtensionMethods_Microsoft_EntityFrameworkCore<string>;
+  Rewrite(target: NpgsqlTypes.NpgsqlTsQuery, substitute: NpgsqlTypes.NpgsqlTsQuery): ExtensionMethods_Microsoft_EntityFrameworkCore<NpgsqlTypes.NpgsqlTsQuery>;
+  Rewrite(select: string): ExtensionMethods_Microsoft_EntityFrameworkCore<NpgsqlTypes.NpgsqlTsQuery>;
+  ToPhrase(query2: NpgsqlTypes.NpgsqlTsQuery): ExtensionMethods_Microsoft_EntityFrameworkCore<NpgsqlTypes.NpgsqlTsQuery>;
+  ToPhrase(query2: NpgsqlTypes.NpgsqlTsQuery, distance: int): ExtensionMethods_Microsoft_EntityFrameworkCore<NpgsqlTypes.NpgsqlTsQuery>;
 }
 
 export interface __Ext_Microsoft_EntityFrameworkCore_NpgsqlTsVector {
-  matches(query: string): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
-  matches(query: NpgsqlTypes.NpgsqlTsQuery): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
-  concat(vector2: NpgsqlTypes.NpgsqlTsVector): ExtensionMethods_Microsoft_EntityFrameworkCore<NpgsqlTypes.NpgsqlTsVector>;
-  setWeight(weight: NpgsqlTypes.NpgsqlTsVector_Lexeme_Weight): ExtensionMethods_Microsoft_EntityFrameworkCore<NpgsqlTypes.NpgsqlTsVector>;
-  setWeight(weight: NpgsqlTypes.NpgsqlTsVector_Lexeme_Weight, lexemes: string[]): ExtensionMethods_Microsoft_EntityFrameworkCore<NpgsqlTypes.NpgsqlTsVector>;
-  setWeight(weight: char): ExtensionMethods_Microsoft_EntityFrameworkCore<NpgsqlTypes.NpgsqlTsVector>;
-  setWeight(weight: char, lexemes: string[]): ExtensionMethods_Microsoft_EntityFrameworkCore<NpgsqlTypes.NpgsqlTsVector>;
-  delete(lexeme: string): ExtensionMethods_Microsoft_EntityFrameworkCore<NpgsqlTypes.NpgsqlTsVector>;
-  delete(lexemes: string[]): ExtensionMethods_Microsoft_EntityFrameworkCore<NpgsqlTypes.NpgsqlTsVector>;
-  filter(weights: char[]): ExtensionMethods_Microsoft_EntityFrameworkCore<NpgsqlTypes.NpgsqlTsVector>;
-  getLength(): ExtensionMethods_Microsoft_EntityFrameworkCore<int>;
-  toStripped(): ExtensionMethods_Microsoft_EntityFrameworkCore<NpgsqlTypes.NpgsqlTsVector>;
-  rank(query: NpgsqlTypes.NpgsqlTsQuery): ExtensionMethods_Microsoft_EntityFrameworkCore<float>;
-  rank(query: NpgsqlTypes.NpgsqlTsQuery, normalization: Microsoft_EntityFrameworkCore.NpgsqlTsRankingNormalization): ExtensionMethods_Microsoft_EntityFrameworkCore<float>;
-  rank(weights: float[], query: NpgsqlTypes.NpgsqlTsQuery): ExtensionMethods_Microsoft_EntityFrameworkCore<float>;
-  rank(weights: float[], query: NpgsqlTypes.NpgsqlTsQuery, normalization: Microsoft_EntityFrameworkCore.NpgsqlTsRankingNormalization): ExtensionMethods_Microsoft_EntityFrameworkCore<float>;
-  rankCoverDensity(query: NpgsqlTypes.NpgsqlTsQuery): ExtensionMethods_Microsoft_EntityFrameworkCore<float>;
-  rankCoverDensity(query: NpgsqlTypes.NpgsqlTsQuery, normalization: Microsoft_EntityFrameworkCore.NpgsqlTsRankingNormalization): ExtensionMethods_Microsoft_EntityFrameworkCore<float>;
-  rankCoverDensity(weights: float[], query: NpgsqlTypes.NpgsqlTsQuery): ExtensionMethods_Microsoft_EntityFrameworkCore<float>;
-  rankCoverDensity(weights: float[], query: NpgsqlTypes.NpgsqlTsQuery, normalization: Microsoft_EntityFrameworkCore.NpgsqlTsRankingNormalization): ExtensionMethods_Microsoft_EntityFrameworkCore<float>;
+  Matches(query: string): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+  Matches(query: NpgsqlTypes.NpgsqlTsQuery): ExtensionMethods_Microsoft_EntityFrameworkCore<boolean>;
+  Concat(vector2: NpgsqlTypes.NpgsqlTsVector): ExtensionMethods_Microsoft_EntityFrameworkCore<NpgsqlTypes.NpgsqlTsVector>;
+  SetWeight(weight: NpgsqlTypes.NpgsqlTsVector_Lexeme_Weight): ExtensionMethods_Microsoft_EntityFrameworkCore<NpgsqlTypes.NpgsqlTsVector>;
+  SetWeight(weight: NpgsqlTypes.NpgsqlTsVector_Lexeme_Weight, lexemes: string[]): ExtensionMethods_Microsoft_EntityFrameworkCore<NpgsqlTypes.NpgsqlTsVector>;
+  SetWeight(weight: char): ExtensionMethods_Microsoft_EntityFrameworkCore<NpgsqlTypes.NpgsqlTsVector>;
+  SetWeight(weight: char, lexemes: string[]): ExtensionMethods_Microsoft_EntityFrameworkCore<NpgsqlTypes.NpgsqlTsVector>;
+  Delete(lexeme: string): ExtensionMethods_Microsoft_EntityFrameworkCore<NpgsqlTypes.NpgsqlTsVector>;
+  Delete(lexemes: string[]): ExtensionMethods_Microsoft_EntityFrameworkCore<NpgsqlTypes.NpgsqlTsVector>;
+  Filter(weights: char[]): ExtensionMethods_Microsoft_EntityFrameworkCore<NpgsqlTypes.NpgsqlTsVector>;
+  GetLength(): ExtensionMethods_Microsoft_EntityFrameworkCore<int>;
+  ToStripped(): ExtensionMethods_Microsoft_EntityFrameworkCore<NpgsqlTypes.NpgsqlTsVector>;
+  Rank(query: NpgsqlTypes.NpgsqlTsQuery): ExtensionMethods_Microsoft_EntityFrameworkCore<float>;
+  Rank(query: NpgsqlTypes.NpgsqlTsQuery, normalization: Microsoft_EntityFrameworkCore.NpgsqlTsRankingNormalization): ExtensionMethods_Microsoft_EntityFrameworkCore<float>;
+  Rank(weights: float[], query: NpgsqlTypes.NpgsqlTsQuery): ExtensionMethods_Microsoft_EntityFrameworkCore<float>;
+  Rank(weights: float[], query: NpgsqlTypes.NpgsqlTsQuery, normalization: Microsoft_EntityFrameworkCore.NpgsqlTsRankingNormalization): ExtensionMethods_Microsoft_EntityFrameworkCore<float>;
+  RankCoverDensity(query: NpgsqlTypes.NpgsqlTsQuery): ExtensionMethods_Microsoft_EntityFrameworkCore<float>;
+  RankCoverDensity(query: NpgsqlTypes.NpgsqlTsQuery, normalization: Microsoft_EntityFrameworkCore.NpgsqlTsRankingNormalization): ExtensionMethods_Microsoft_EntityFrameworkCore<float>;
+  RankCoverDensity(weights: float[], query: NpgsqlTypes.NpgsqlTsQuery): ExtensionMethods_Microsoft_EntityFrameworkCore<float>;
+  RankCoverDensity(weights: float[], query: NpgsqlTypes.NpgsqlTsQuery, normalization: Microsoft_EntityFrameworkCore.NpgsqlTsRankingNormalization): ExtensionMethods_Microsoft_EntityFrameworkCore<float>;
 }
 
 export interface __Ext_Npgsql_EntityFrameworkCore_PostgreSQL_Metadata_NpgsqlValueGenerationStrategy {
-  isIdentity(): ExtensionMethods_Npgsql_EntityFrameworkCore_PostgreSQL_Metadata<boolean>;
+  IsIdentity(): ExtensionMethods_Npgsql_EntityFrameworkCore_PostgreSQL_Metadata<boolean>;
 }
 
 export interface __Ext_Npgsql_Internal_TypeInfoMapping {
-  createInfo(options: Npgsql_Internal.PgSerializerOptions, converter: Npgsql_Internal.PgConverter): ExtensionMethods_Npgsql_Internal<Npgsql_Internal.PgTypeInfo>;
-  createInfo(options: Npgsql_Internal.PgSerializerOptions, converter: Npgsql_Internal.PgConverter, preferredFormat: Nullable_1<Npgsql_Internal.DataFormat>, supportsWriting: boolean): ExtensionMethods_Npgsql_Internal<Npgsql_Internal.PgTypeInfo>;
-  createInfo(options: Npgsql_Internal.PgSerializerOptions, resolver: Npgsql_Internal.PgConverterResolver, includeDataTypeName: boolean): ExtensionMethods_Npgsql_Internal<Npgsql_Internal.PgResolverTypeInfo>;
-  createInfo(options: Npgsql_Internal.PgSerializerOptions, resolver: Npgsql_Internal.PgConverterResolver, includeDataTypeName: boolean, preferredFormat: Nullable_1<Npgsql_Internal.DataFormat>, supportsWriting: boolean): ExtensionMethods_Npgsql_Internal<Npgsql_Internal.PgResolverTypeInfo>;
+  CreateInfo(options: Npgsql_Internal.PgSerializerOptions, converter: Npgsql_Internal.PgConverter): ExtensionMethods_Npgsql_Internal<Npgsql_Internal.PgTypeInfo>;
+  CreateInfo(options: Npgsql_Internal.PgSerializerOptions, converter: Npgsql_Internal.PgConverter, preferredFormat: Nullable_1<Npgsql_Internal.DataFormat>, supportsWriting: boolean): ExtensionMethods_Npgsql_Internal<Npgsql_Internal.PgTypeInfo>;
+  CreateInfo(options: Npgsql_Internal.PgSerializerOptions, resolver: Npgsql_Internal.PgConverterResolver, includeDataTypeName: boolean): ExtensionMethods_Npgsql_Internal<Npgsql_Internal.PgResolverTypeInfo>;
+  CreateInfo(options: Npgsql_Internal.PgSerializerOptions, resolver: Npgsql_Internal.PgConverterResolver, includeDataTypeName: boolean, preferredFormat: Nullable_1<Npgsql_Internal.DataFormat>, supportsWriting: boolean): ExtensionMethods_Npgsql_Internal<Npgsql_Internal.PgResolverTypeInfo>;
 }
 
 export interface __Ext_Npgsql_Replication_LogicalReplicationConnection {
-  createPgOutputReplicationSlot(slotName: string, temporarySlot: boolean, slotSnapshotInitMode: Nullable_1<Npgsql_Replication.LogicalSlotSnapshotInitMode>, twoPhase: boolean, cancellationToken: CancellationToken): ExtensionMethods_Npgsql_Replication<Task_1<Npgsql_Replication_PgOutput.PgOutputReplicationSlot>>;
-  startReplication(slot: Npgsql_Replication_PgOutput.PgOutputReplicationSlot, options: Npgsql_Replication_PgOutput.PgOutputReplicationOptions, cancellationToken: CancellationToken, walLocation: Nullable_1<NpgsqlTypes.NpgsqlLogSequenceNumber>): ExtensionMethods_Npgsql_Replication<IAsyncEnumerable_1<Npgsql_Replication_PgOutput_Messages.PgOutputReplicationMessage>>;
-  createTestDecodingReplicationSlot(slotName: string, temporarySlot: boolean, slotSnapshotInitMode: Nullable_1<Npgsql_Replication.LogicalSlotSnapshotInitMode>, twoPhase: boolean, cancellationToken: CancellationToken): ExtensionMethods_Npgsql_Replication<Task_1<Npgsql_Replication_TestDecoding.TestDecodingReplicationSlot>>;
-  startReplication(slot: Npgsql_Replication_TestDecoding.TestDecodingReplicationSlot, cancellationToken: CancellationToken, options: Npgsql_Replication_TestDecoding.TestDecodingOptions, walLocation: Nullable_1<NpgsqlTypes.NpgsqlLogSequenceNumber>): ExtensionMethods_Npgsql_Replication<IAsyncEnumerable_1<Npgsql_Replication_TestDecoding.TestDecodingData>>;
+  CreatePgOutputReplicationSlot(slotName: string, temporarySlot: boolean, slotSnapshotInitMode: Nullable_1<Npgsql_Replication.LogicalSlotSnapshotInitMode>, twoPhase: boolean, cancellationToken: CancellationToken): ExtensionMethods_Npgsql_Replication<Task_1<Npgsql_Replication_PgOutput.PgOutputReplicationSlot>>;
+  StartReplication(slot: Npgsql_Replication_PgOutput.PgOutputReplicationSlot, options: Npgsql_Replication_PgOutput.PgOutputReplicationOptions, cancellationToken: CancellationToken, walLocation: Nullable_1<NpgsqlTypes.NpgsqlLogSequenceNumber>): ExtensionMethods_Npgsql_Replication<IAsyncEnumerable_1<Npgsql_Replication_PgOutput_Messages.PgOutputReplicationMessage>>;
+  CreateTestDecodingReplicationSlot(slotName: string, temporarySlot: boolean, slotSnapshotInitMode: Nullable_1<Npgsql_Replication.LogicalSlotSnapshotInitMode>, twoPhase: boolean, cancellationToken: CancellationToken): ExtensionMethods_Npgsql_Replication<Task_1<Npgsql_Replication_TestDecoding.TestDecodingReplicationSlot>>;
+  StartReplication(slot: Npgsql_Replication_TestDecoding.TestDecodingReplicationSlot, cancellationToken: CancellationToken, options: Npgsql_Replication_TestDecoding.TestDecodingOptions, walLocation: Nullable_1<NpgsqlTypes.NpgsqlLogSequenceNumber>): ExtensionMethods_Npgsql_Replication<IAsyncEnumerable_1<Npgsql_Replication_TestDecoding.TestDecodingData>>;
 }
 
 export interface __Ext_Npgsql_Replication_Internal_LogicalReplicationConnection {
-  createLogicalReplicationSlot(slotName: string, outputPlugin: string, isTemporary: boolean, slotSnapshotInitMode: Nullable_1<Npgsql_Replication.LogicalSlotSnapshotInitMode>, twoPhase: boolean, cancellationToken: CancellationToken): ExtensionMethods_Npgsql_Replication_Internal<Task_1<Npgsql_Replication.ReplicationSlotOptions>>;
-  startLogicalReplication(slot: Npgsql_Replication_Internal.LogicalReplicationSlot, cancellationToken: CancellationToken, walLocation: Nullable_1<NpgsqlTypes.NpgsqlLogSequenceNumber>, options: IEnumerable_1<KeyValuePair_2<System_Internal.String, System_Internal.String>>, bypassingStream: boolean): ExtensionMethods_Npgsql_Replication_Internal<IAsyncEnumerable_1<Npgsql_Replication.XLogDataMessage>>;
+  CreateLogicalReplicationSlot(slotName: string, outputPlugin: string, isTemporary: boolean, slotSnapshotInitMode: Nullable_1<Npgsql_Replication.LogicalSlotSnapshotInitMode>, twoPhase: boolean, cancellationToken: CancellationToken): ExtensionMethods_Npgsql_Replication_Internal<Task_1<Npgsql_Replication.ReplicationSlotOptions>>;
+  StartLogicalReplication(slot: Npgsql_Replication_Internal.LogicalReplicationSlot, cancellationToken: CancellationToken, walLocation: Nullable_1<NpgsqlTypes.NpgsqlLogSequenceNumber>, options: IEnumerable_1<KeyValuePair_2<System_Internal.String, System_Internal.String>>, bypassingStream: boolean): ExtensionMethods_Npgsql_Replication_Internal<IAsyncEnumerable_1<Npgsql_Replication.XLogDataMessage>>;
 }
 
 // Generic helper type for extension methods in namespace: Microsoft.EntityFrameworkCore

@@ -17,10 +17,10 @@ import type { IMigrationsSqlGenerator, MigrationCommand, MigrationCommandListBui
 import type { MigrationOperation } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Migrations.Operations.js";
 
 export interface NpgsqlMigrationsSqlGenerator$instance extends MigrationsSqlGenerator {
-    generate(operations: IReadOnlyList<MigrationOperation>, model?: IModel, options?: MigrationsSqlGenerationOptions): IReadOnlyList<MigrationCommand>;
-    generate(operation: NpgsqlDropDatabaseOperation, model: IModel, builder: MigrationCommandListBuilder): void;
-    rename(schema: string, name: string, newName: string, type: string, builder: MigrationCommandListBuilder): void;
-    transfer(newSchema: string, schema: string, name: string, type: string, builder: MigrationCommandListBuilder): void;
+    Generate(operations: IReadOnlyList<MigrationOperation>, model?: IModel, options?: MigrationsSqlGenerationOptions): IReadOnlyList<MigrationCommand>;
+    Generate(operation: NpgsqlDropDatabaseOperation, model: IModel, builder: MigrationCommandListBuilder): void;
+    Rename(schema: string, name: string, newName: string, type: string, builder: MigrationCommandListBuilder): void;
+    Transfer(newSchema: string, schema: string, name: string, type: string, builder: MigrationCommandListBuilder): void;
 }
 
 

@@ -31,14 +31,14 @@ import type { BoolTypeMapping, CharTypeMapping, CoreTypeMapping, DecimalTypeMapp
 import type { JsonValueReaderWriter, Utf8JsonReaderManager } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.Json.js";
 
 export interface INpgsqlTypeMapping$instance {
-    readonly npgsqlDbType: NpgsqlDbType;
+    readonly NpgsqlDbType: NpgsqlDbType;
 }
 
 
 export type INpgsqlTypeMapping = INpgsqlTypeMapping$instance;
 
 export interface NpgsqlArrayTypeMapping$instance extends RelationalTypeMapping {
-    readonly elementTypeMapping: RelationalTypeMapping;
+    readonly ElementTypeMapping: RelationalTypeMapping;
 }
 
 
@@ -49,15 +49,15 @@ export const NpgsqlArrayTypeMapping: {
 export type NpgsqlArrayTypeMapping = NpgsqlArrayTypeMapping$instance;
 
 export interface NpgsqlArrayTypeMapping_3$instance<TCollection, TConcreteCollection, TElement> extends NpgsqlArrayTypeMapping {
-    readonly npgsqlDbType: Nullable<NpgsqlDbType>;
-    createParameter(command: DbCommand, name: string, value: unknown, nullable?: Nullable<System_Internal.Boolean>, direction?: ParameterDirection): DbParameter;
+    readonly NpgsqlDbType: Nullable<NpgsqlDbType>;
+    CreateParameter(command: DbCommand, name: string, value: unknown, nullable?: Nullable<System_Internal.Boolean>, direction?: ParameterDirection): DbParameter;
 }
 
 
 export const NpgsqlArrayTypeMapping_3: {
     new<TCollection, TConcreteCollection, TElement>(elementTypeMapping: RelationalTypeMapping): NpgsqlArrayTypeMapping_3<TCollection, TConcreteCollection, TElement>;
     new<TCollection, TConcreteCollection, TElement>(storeType: string, elementTypeMapping: RelationalTypeMapping): NpgsqlArrayTypeMapping_3<TCollection, TConcreteCollection, TElement>;
-    readonly default: unknown;
+    readonly Default: unknown;
 };
 
 
@@ -69,7 +69,7 @@ export interface NpgsqlBigIntegerTypeMapping$instance extends NpgsqlTypeMapping$
 
 export const NpgsqlBigIntegerTypeMapping: {
     new(): NpgsqlBigIntegerTypeMapping;
-    readonly default: NpgsqlBigIntegerTypeMapping;
+    readonly Default: NpgsqlBigIntegerTypeMapping;
 };
 
 
@@ -83,28 +83,28 @@ export type NpgsqlBigIntegerTypeMapping = NpgsqlBigIntegerTypeMapping$instance &
 
 
 export interface NpgsqlBigIntegerTypeMapping_JsonBigIntegerReaderWriter$instance extends JsonValueReaderWriter<BigInteger> {
-    readonly constructorExpression: Expression;
-    fromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): BigInteger;
-    toJsonTyped(writer: Utf8JsonWriter, value: BigInteger): void;
+    readonly ConstructorExpression: Expression;
+    FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): BigInteger;
+    ToJsonTyped(writer: Utf8JsonWriter, value: BigInteger): void;
 }
 
 
 export const NpgsqlBigIntegerTypeMapping_JsonBigIntegerReaderWriter: {
     new(): NpgsqlBigIntegerTypeMapping_JsonBigIntegerReaderWriter;
-    readonly instance: NpgsqlBigIntegerTypeMapping_JsonBigIntegerReaderWriter;
+    readonly Instance: NpgsqlBigIntegerTypeMapping_JsonBigIntegerReaderWriter;
 };
 
 
 export type NpgsqlBigIntegerTypeMapping_JsonBigIntegerReaderWriter = NpgsqlBigIntegerTypeMapping_JsonBigIntegerReaderWriter$instance;
 
 export interface NpgsqlBitTypeMapping$instance extends NpgsqlTypeMapping$instance {
-    generateCodeLiteral(value: unknown): Expression;
+    GenerateCodeLiteral(value: unknown): Expression;
 }
 
 
 export const NpgsqlBitTypeMapping: {
     new(): NpgsqlBitTypeMapping;
-    readonly default: NpgsqlBitTypeMapping;
+    readonly Default: NpgsqlBitTypeMapping;
 };
 
 
@@ -123,20 +123,20 @@ export interface NpgsqlBoolTypeMapping$instance extends BoolTypeMapping {
 
 export const NpgsqlBoolTypeMapping: {
     new(): NpgsqlBoolTypeMapping;
-    readonly default: NpgsqlBoolTypeMapping;
+    readonly Default: NpgsqlBoolTypeMapping;
 };
 
 
 export type NpgsqlBoolTypeMapping = NpgsqlBoolTypeMapping$instance;
 
 export interface NpgsqlBoxTypeMapping$instance extends NpgsqlTypeMapping$instance {
-    generateCodeLiteral(value: unknown): Expression;
+    GenerateCodeLiteral(value: unknown): Expression;
 }
 
 
 export const NpgsqlBoxTypeMapping: {
     new(): NpgsqlBoxTypeMapping;
-    readonly default: NpgsqlBoxTypeMapping;
+    readonly Default: NpgsqlBoxTypeMapping;
 };
 
 
@@ -155,20 +155,20 @@ export interface NpgsqlByteArrayTypeMapping$instance extends RelationalTypeMappi
 
 export const NpgsqlByteArrayTypeMapping: {
     new(): NpgsqlByteArrayTypeMapping;
-    readonly default: NpgsqlByteArrayTypeMapping;
+    readonly Default: NpgsqlByteArrayTypeMapping;
 };
 
 
 export type NpgsqlByteArrayTypeMapping = NpgsqlByteArrayTypeMapping$instance;
 
 export interface NpgsqlCharacterCharTypeMapping$instance extends CharTypeMapping {
-    readonly npgsqlDbType: NpgsqlDbType;
+    readonly NpgsqlDbType: NpgsqlDbType;
 }
 
 
 export const NpgsqlCharacterCharTypeMapping: {
     new(storeType: string): NpgsqlCharacterCharTypeMapping;
-    readonly default: NpgsqlCharacterCharTypeMapping;
+    readonly Default: NpgsqlCharacterCharTypeMapping;
 };
 
 
@@ -182,15 +182,15 @@ export type NpgsqlCharacterCharTypeMapping = NpgsqlCharacterCharTypeMapping$inst
 
 
 export interface NpgsqlCharacterStringTypeMapping$instance extends NpgsqlStringTypeMapping$instance {
-    readonly comparer: ValueComparer;
-    readonly keyComparer: ValueComparer;
+    readonly Comparer: ValueComparer;
+    readonly KeyComparer: ValueComparer;
 }
 
 
 export const NpgsqlCharacterStringTypeMapping: {
     new(storeType: string, size: int): NpgsqlCharacterStringTypeMapping;
-    equalsWithoutTrailingWhitespace(a: string, b: string): boolean;
-    getHashCodeWithoutTrailingWhitespace(a: string): int;
+    EqualsWithoutTrailingWhitespace(a: string, b: string): boolean;
+    GetHashCodeWithoutTrailingWhitespace(a: string): int;
 };
 
 
@@ -204,13 +204,13 @@ export type NpgsqlCharacterStringTypeMapping = NpgsqlCharacterStringTypeMapping$
 
 
 export interface NpgsqlCidrTypeMapping$instance extends NpgsqlTypeMapping$instance {
-    generateCodeLiteral(value: unknown): Expression;
+    GenerateCodeLiteral(value: unknown): Expression;
 }
 
 
 export const NpgsqlCidrTypeMapping: {
     new(): NpgsqlCidrTypeMapping;
-    readonly default: NpgsqlCidrTypeMapping;
+    readonly Default: NpgsqlCidrTypeMapping;
 };
 
 
@@ -224,28 +224,28 @@ export type NpgsqlCidrTypeMapping = NpgsqlCidrTypeMapping$instance & __NpgsqlCid
 
 
 export interface NpgsqlCidrTypeMapping_JsonCidrReaderWriter$instance extends JsonValueReaderWriter<IPNetwork> {
-    readonly constructorExpression: Expression;
-    fromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): IPNetwork;
-    toJsonTyped(writer: Utf8JsonWriter, ipNetwork: IPNetwork): void;
+    readonly ConstructorExpression: Expression;
+    FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): IPNetwork;
+    ToJsonTyped(writer: Utf8JsonWriter, ipNetwork: IPNetwork): void;
 }
 
 
 export const NpgsqlCidrTypeMapping_JsonCidrReaderWriter: {
     new(): NpgsqlCidrTypeMapping_JsonCidrReaderWriter;
-    readonly instance: NpgsqlCidrTypeMapping_JsonCidrReaderWriter;
+    readonly Instance: NpgsqlCidrTypeMapping_JsonCidrReaderWriter;
 };
 
 
 export type NpgsqlCidrTypeMapping_JsonCidrReaderWriter = NpgsqlCidrTypeMapping_JsonCidrReaderWriter$instance;
 
 export interface NpgsqlCircleTypeMapping$instance extends NpgsqlTypeMapping$instance {
-    generateCodeLiteral(value: unknown): Expression;
+    GenerateCodeLiteral(value: unknown): Expression;
 }
 
 
 export const NpgsqlCircleTypeMapping: {
     new(): NpgsqlCircleTypeMapping;
-    readonly default: NpgsqlCircleTypeMapping;
+    readonly Default: NpgsqlCircleTypeMapping;
 };
 
 
@@ -259,13 +259,13 @@ export type NpgsqlCircleTypeMapping = NpgsqlCircleTypeMapping$instance & __Npgsq
 
 
 export interface NpgsqlCubeTypeMapping$instance extends NpgsqlTypeMapping$instance {
-    generateCodeLiteral(value: unknown): Expression;
+    GenerateCodeLiteral(value: unknown): Expression;
 }
 
 
 export const NpgsqlCubeTypeMapping: {
     new(): NpgsqlCubeTypeMapping;
-    readonly default: NpgsqlCubeTypeMapping;
+    readonly Default: NpgsqlCubeTypeMapping;
 };
 
 
@@ -284,7 +284,7 @@ export interface NpgsqlDateOnlyTypeMapping$instance extends NpgsqlTypeMapping$in
 
 export const NpgsqlDateOnlyTypeMapping: {
     new(): NpgsqlDateOnlyTypeMapping;
-    readonly default: NpgsqlDateOnlyTypeMapping;
+    readonly Default: NpgsqlDateOnlyTypeMapping;
 };
 
 
@@ -298,15 +298,15 @@ export type NpgsqlDateOnlyTypeMapping = NpgsqlDateOnlyTypeMapping$instance & __N
 
 
 export interface NpgsqlDateOnlyTypeMapping_NpgsqlJsonDateOnlyReaderWriter$instance extends JsonValueReaderWriter<DateOnly> {
-    readonly constructorExpression: Expression;
-    fromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): DateOnly;
-    toJsonTyped(writer: Utf8JsonWriter, value: DateOnly): void;
+    readonly ConstructorExpression: Expression;
+    FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): DateOnly;
+    ToJsonTyped(writer: Utf8JsonWriter, value: DateOnly): void;
 }
 
 
 export const NpgsqlDateOnlyTypeMapping_NpgsqlJsonDateOnlyReaderWriter: {
     new(): NpgsqlDateOnlyTypeMapping_NpgsqlJsonDateOnlyReaderWriter;
-    readonly instance: NpgsqlDateOnlyTypeMapping_NpgsqlJsonDateOnlyReaderWriter;
+    readonly Instance: NpgsqlDateOnlyTypeMapping_NpgsqlJsonDateOnlyReaderWriter;
 };
 
 
@@ -318,7 +318,7 @@ export interface NpgsqlDateTimeDateTypeMapping$instance extends NpgsqlTypeMappin
 
 export const NpgsqlDateTimeDateTypeMapping: {
     new(): NpgsqlDateTimeDateTypeMapping;
-    readonly default: NpgsqlDateTimeDateTypeMapping;
+    readonly Default: NpgsqlDateTimeDateTypeMapping;
 };
 
 
@@ -332,15 +332,15 @@ export type NpgsqlDateTimeDateTypeMapping = NpgsqlDateTimeDateTypeMapping$instan
 
 
 export interface NpgsqlDateTimeDateTypeMapping_NpgsqlJsonDateTimeReaderWriter$instance extends JsonValueReaderWriter<DateTime> {
-    readonly constructorExpression: Expression;
-    fromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): DateTime;
-    toJsonTyped(writer: Utf8JsonWriter, value: DateTime): void;
+    readonly ConstructorExpression: Expression;
+    FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): DateTime;
+    ToJsonTyped(writer: Utf8JsonWriter, value: DateTime): void;
 }
 
 
 export const NpgsqlDateTimeDateTypeMapping_NpgsqlJsonDateTimeReaderWriter: {
     new(): NpgsqlDateTimeDateTypeMapping_NpgsqlJsonDateTimeReaderWriter;
-    readonly instance: NpgsqlDateTimeDateTypeMapping_NpgsqlJsonDateTimeReaderWriter;
+    readonly Instance: NpgsqlDateTimeDateTypeMapping_NpgsqlJsonDateTimeReaderWriter;
 };
 
 
@@ -352,7 +352,7 @@ export interface NpgsqlDecimalTypeMapping$instance extends NpgsqlTypeMapping$ins
 
 export const NpgsqlDecimalTypeMapping: {
     new(clrType: Type): NpgsqlDecimalTypeMapping;
-    readonly default: NpgsqlDecimalTypeMapping;
+    readonly Default: NpgsqlDecimalTypeMapping;
 };
 
 
@@ -371,37 +371,37 @@ export interface NpgsqlDoubleTypeMapping$instance extends DoubleTypeMapping {
 
 export const NpgsqlDoubleTypeMapping: {
     new(): NpgsqlDoubleTypeMapping;
-    readonly default: NpgsqlDoubleTypeMapping;
+    readonly Default: NpgsqlDoubleTypeMapping;
 };
 
 
 export type NpgsqlDoubleTypeMapping = NpgsqlDoubleTypeMapping$instance;
 
 export interface NpgsqlEnumTypeMapping$instance extends RelationalTypeMapping {
-    readonly labels: IReadOnlyDictionary<unknown, System_Internal.String>;
-    readonly unquotedStoreType: string;
-    clone(unquotedStoreType: string, labels: IReadOnlyDictionary<unknown, System_Internal.String>): NpgsqlEnumTypeMapping;
+    readonly Labels: IReadOnlyDictionary<unknown, System_Internal.String>;
+    readonly UnquotedStoreType: string;
+    Clone(unquotedStoreType: string, labels: IReadOnlyDictionary<unknown, System_Internal.String>): NpgsqlEnumTypeMapping;
 }
 
 
 export const NpgsqlEnumTypeMapping: {
     new(quotedStoreType: string, unquotedStoreType: string, enumType: Type, labels: IReadOnlyDictionary<unknown, System_Internal.String>): NpgsqlEnumTypeMapping;
-    readonly default: NpgsqlEnumTypeMapping;
+    readonly Default: NpgsqlEnumTypeMapping;
 };
 
 
 export type NpgsqlEnumTypeMapping = NpgsqlEnumTypeMapping$instance;
 
 export interface NpgsqlEnumTypeMapping_JsonPgEnumReaderWriter_1$instance<T extends number> extends JsonValueReaderWriter<T> {
-    readonly constructorExpression: Expression;
-    fromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): T;
-    toJsonTyped(writer: Utf8JsonWriter, value: T): void;
+    readonly ConstructorExpression: Expression;
+    FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): T;
+    ToJsonTyped(writer: Utf8JsonWriter, value: T): void;
 }
 
 
 export const NpgsqlEnumTypeMapping_JsonPgEnumReaderWriter_1: {
     new<T extends number>(): NpgsqlEnumTypeMapping_JsonPgEnumReaderWriter_1<T>;
-    readonly instance: unknown;
+    readonly Instance: unknown;
 };
 
 
@@ -413,7 +413,7 @@ export interface NpgsqlEStringTypeMapping$instance extends StringTypeMapping {
 
 export const NpgsqlEStringTypeMapping: {
     new(): NpgsqlEStringTypeMapping;
-    readonly default: NpgsqlEStringTypeMapping;
+    readonly Default: NpgsqlEStringTypeMapping;
 };
 
 
@@ -425,7 +425,7 @@ export interface NpgsqlFloatTypeMapping$instance extends FloatTypeMapping {
 
 export const NpgsqlFloatTypeMapping: {
     new(): NpgsqlFloatTypeMapping;
-    readonly default: NpgsqlFloatTypeMapping;
+    readonly Default: NpgsqlFloatTypeMapping;
 };
 
 
@@ -437,7 +437,7 @@ export interface NpgsqlHstoreTypeMapping$instance extends NpgsqlTypeMapping$inst
 
 export const NpgsqlHstoreTypeMapping: {
     new(clrType: Type): NpgsqlHstoreTypeMapping;
-    readonly default: NpgsqlHstoreTypeMapping;
+    readonly Default: NpgsqlHstoreTypeMapping;
 };
 
 
@@ -451,13 +451,13 @@ export type NpgsqlHstoreTypeMapping = NpgsqlHstoreTypeMapping$instance & __Npgsq
 
 
 export interface NpgsqlInetTypeMapping$instance extends NpgsqlTypeMapping$instance {
-    generateCodeLiteral(value: unknown): Expression;
+    GenerateCodeLiteral(value: unknown): Expression;
 }
 
 
 export const NpgsqlInetTypeMapping: {
     new(clrType: Type): NpgsqlInetTypeMapping;
-    readonly default: NpgsqlInetTypeMapping;
+    readonly Default: NpgsqlInetTypeMapping;
 };
 
 
@@ -471,30 +471,30 @@ export type NpgsqlInetTypeMapping = NpgsqlInetTypeMapping$instance & __NpgsqlIne
 
 
 export interface NpgsqlInetTypeMapping_JsonIPAddressReaderWriter$instance extends JsonValueReaderWriter<IPAddress> {
-    readonly constructorExpression: Expression;
-    fromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): IPAddress;
-    toJsonTyped(writer: Utf8JsonWriter, value: IPAddress): void;
+    readonly ConstructorExpression: Expression;
+    FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): IPAddress;
+    ToJsonTyped(writer: Utf8JsonWriter, value: IPAddress): void;
 }
 
 
 export const NpgsqlInetTypeMapping_JsonIPAddressReaderWriter: {
     new(): NpgsqlInetTypeMapping_JsonIPAddressReaderWriter;
-    readonly instance: NpgsqlInetTypeMapping_JsonIPAddressReaderWriter;
+    readonly Instance: NpgsqlInetTypeMapping_JsonIPAddressReaderWriter;
 };
 
 
 export type NpgsqlInetTypeMapping_JsonIPAddressReaderWriter = NpgsqlInetTypeMapping_JsonIPAddressReaderWriter$instance;
 
 export interface NpgsqlInetTypeMapping_JsonNpgsqlInetReaderWriter$instance extends JsonValueReaderWriter<NpgsqlInet> {
-    readonly constructorExpression: Expression;
-    fromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): NpgsqlInet;
-    toJsonTyped(writer: Utf8JsonWriter, value: NpgsqlInet): void;
+    readonly ConstructorExpression: Expression;
+    FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): NpgsqlInet;
+    ToJsonTyped(writer: Utf8JsonWriter, value: NpgsqlInet): void;
 }
 
 
 export const NpgsqlInetTypeMapping_JsonNpgsqlInetReaderWriter: {
     new(): NpgsqlInetTypeMapping_JsonNpgsqlInetReaderWriter;
-    readonly instance: NpgsqlInetTypeMapping_JsonNpgsqlInetReaderWriter;
+    readonly Instance: NpgsqlInetTypeMapping_JsonNpgsqlInetReaderWriter;
 };
 
 
@@ -506,9 +506,9 @@ export interface NpgsqlIntervalTypeMapping$instance extends NpgsqlTypeMapping$in
 
 export const NpgsqlIntervalTypeMapping: {
     new(): NpgsqlIntervalTypeMapping;
-    readonly default: NpgsqlIntervalTypeMapping;
-    formatTimeSpanAsInterval(ts: TimeSpan): string;
-    parseIntervalAsTimeSpan(s: ReadOnlySpan<System_Internal.Char>): TimeSpan;
+    readonly Default: NpgsqlIntervalTypeMapping;
+    FormatTimeSpanAsInterval(ts: TimeSpan): string;
+    ParseIntervalAsTimeSpan(s: ReadOnlySpan<System_Internal.Char>): TimeSpan;
 };
 
 
@@ -522,29 +522,29 @@ export type NpgsqlIntervalTypeMapping = NpgsqlIntervalTypeMapping$instance & __N
 
 
 export interface NpgsqlIntervalTypeMapping_NpgsqlJsonTimeSpanReaderWriter$instance extends JsonValueReaderWriter<TimeSpan> {
-    readonly constructorExpression: Expression;
-    fromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): TimeSpan;
-    toJsonTyped(writer: Utf8JsonWriter, value: TimeSpan): void;
+    readonly ConstructorExpression: Expression;
+    FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): TimeSpan;
+    ToJsonTyped(writer: Utf8JsonWriter, value: TimeSpan): void;
 }
 
 
 export const NpgsqlIntervalTypeMapping_NpgsqlJsonTimeSpanReaderWriter: {
     new(): NpgsqlIntervalTypeMapping_NpgsqlJsonTimeSpanReaderWriter;
-    readonly instance: NpgsqlIntervalTypeMapping_NpgsqlJsonTimeSpanReaderWriter;
+    readonly Instance: NpgsqlIntervalTypeMapping_NpgsqlJsonTimeSpanReaderWriter;
 };
 
 
 export type NpgsqlIntervalTypeMapping_NpgsqlJsonTimeSpanReaderWriter = NpgsqlIntervalTypeMapping_NpgsqlJsonTimeSpanReaderWriter$instance;
 
 export interface NpgsqlJsonTypeMapping$instance extends NpgsqlTypeMapping$instance {
-    readonly isJsonb: boolean;
-    generateCodeLiteral(value: unknown): Expression;
+    readonly IsJsonb: boolean;
+    GenerateCodeLiteral(value: unknown): Expression;
 }
 
 
 export const NpgsqlJsonTypeMapping: {
     new(storeType: string, clrType: Type, elementTypeMapping: CoreTypeMapping): NpgsqlJsonTypeMapping;
-    readonly default: NpgsqlJsonTypeMapping;
+    readonly Default: NpgsqlJsonTypeMapping;
 };
 
 
@@ -558,13 +558,13 @@ export type NpgsqlJsonTypeMapping = NpgsqlJsonTypeMapping$instance & __NpgsqlJso
 
 
 export interface NpgsqlLegacyCidrTypeMapping$instance extends NpgsqlTypeMapping$instance {
-    generateCodeLiteral(value: unknown): Expression;
+    GenerateCodeLiteral(value: unknown): Expression;
 }
 
 
 export const NpgsqlLegacyCidrTypeMapping: {
     new(): NpgsqlLegacyCidrTypeMapping;
-    readonly default: NpgsqlLegacyCidrTypeMapping;
+    readonly Default: NpgsqlLegacyCidrTypeMapping;
 };
 
 
@@ -578,28 +578,28 @@ export type NpgsqlLegacyCidrTypeMapping = NpgsqlLegacyCidrTypeMapping$instance &
 
 
 export interface NpgsqlLegacyCidrTypeMapping_JsonCidrLegacyReaderWriter$instance extends JsonValueReaderWriter<NpgsqlCidr> {
-    readonly constructorExpression: Expression;
-    fromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): NpgsqlCidr;
-    toJsonTyped(writer: Utf8JsonWriter, value: NpgsqlCidr): void;
+    readonly ConstructorExpression: Expression;
+    FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): NpgsqlCidr;
+    ToJsonTyped(writer: Utf8JsonWriter, value: NpgsqlCidr): void;
 }
 
 
 export const NpgsqlLegacyCidrTypeMapping_JsonCidrLegacyReaderWriter: {
     new(): NpgsqlLegacyCidrTypeMapping_JsonCidrLegacyReaderWriter;
-    readonly instance: NpgsqlLegacyCidrTypeMapping_JsonCidrLegacyReaderWriter;
+    readonly Instance: NpgsqlLegacyCidrTypeMapping_JsonCidrLegacyReaderWriter;
 };
 
 
 export type NpgsqlLegacyCidrTypeMapping_JsonCidrLegacyReaderWriter = NpgsqlLegacyCidrTypeMapping_JsonCidrLegacyReaderWriter$instance;
 
 export interface NpgsqlLineSegmentTypeMapping$instance extends NpgsqlTypeMapping$instance {
-    generateCodeLiteral(value: unknown): Expression;
+    GenerateCodeLiteral(value: unknown): Expression;
 }
 
 
 export const NpgsqlLineSegmentTypeMapping: {
     new(): NpgsqlLineSegmentTypeMapping;
-    readonly default: NpgsqlLineSegmentTypeMapping;
+    readonly Default: NpgsqlLineSegmentTypeMapping;
 };
 
 
@@ -613,13 +613,13 @@ export type NpgsqlLineSegmentTypeMapping = NpgsqlLineSegmentTypeMapping$instance
 
 
 export interface NpgsqlLineTypeMapping$instance extends NpgsqlTypeMapping$instance {
-    generateCodeLiteral(value: unknown): Expression;
+    GenerateCodeLiteral(value: unknown): Expression;
 }
 
 
 export const NpgsqlLineTypeMapping: {
     new(): NpgsqlLineTypeMapping;
-    readonly default: NpgsqlLineTypeMapping;
+    readonly Default: NpgsqlLineTypeMapping;
 };
 
 
@@ -633,7 +633,7 @@ export type NpgsqlLineTypeMapping = NpgsqlLineTypeMapping$instance & __NpgsqlLin
 
 
 export interface NpgsqlLTreeTypeMapping$instance extends NpgsqlStringTypeMapping$instance {
-    generateCodeLiteral(value: unknown): Expression;
+    GenerateCodeLiteral(value: unknown): Expression;
 }
 
 
@@ -652,28 +652,28 @@ export type NpgsqlLTreeTypeMapping = NpgsqlLTreeTypeMapping$instance & __NpgsqlL
 
 
 export interface NpgsqlLTreeTypeMapping_JsonLTreeReaderWriter$instance extends JsonValueReaderWriter<LTree> {
-    readonly constructorExpression: Expression;
-    fromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): LTree;
-    toJsonTyped(writer: Utf8JsonWriter, value: LTree): void;
+    readonly ConstructorExpression: Expression;
+    FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): LTree;
+    ToJsonTyped(writer: Utf8JsonWriter, value: LTree): void;
 }
 
 
 export const NpgsqlLTreeTypeMapping_JsonLTreeReaderWriter: {
     new(): NpgsqlLTreeTypeMapping_JsonLTreeReaderWriter;
-    readonly instance: NpgsqlLTreeTypeMapping_JsonLTreeReaderWriter;
+    readonly Instance: NpgsqlLTreeTypeMapping_JsonLTreeReaderWriter;
 };
 
 
 export type NpgsqlLTreeTypeMapping_JsonLTreeReaderWriter = NpgsqlLTreeTypeMapping_JsonLTreeReaderWriter$instance;
 
 export interface NpgsqlMacaddr8TypeMapping$instance extends NpgsqlTypeMapping$instance {
-    generateCodeLiteral(value: unknown): Expression;
+    GenerateCodeLiteral(value: unknown): Expression;
 }
 
 
 export const NpgsqlMacaddr8TypeMapping: {
     new(): NpgsqlMacaddr8TypeMapping;
-    readonly default: NpgsqlMacaddr8TypeMapping;
+    readonly Default: NpgsqlMacaddr8TypeMapping;
 };
 
 
@@ -687,13 +687,13 @@ export type NpgsqlMacaddr8TypeMapping = NpgsqlMacaddr8TypeMapping$instance & __N
 
 
 export interface NpgsqlMacaddrTypeMapping$instance extends NpgsqlTypeMapping$instance {
-    generateCodeLiteral(value: unknown): Expression;
+    GenerateCodeLiteral(value: unknown): Expression;
 }
 
 
 export const NpgsqlMacaddrTypeMapping: {
     new(): NpgsqlMacaddrTypeMapping;
-    readonly default: NpgsqlMacaddrTypeMapping;
+    readonly Default: NpgsqlMacaddrTypeMapping;
 };
 
 
@@ -712,36 +712,36 @@ export interface NpgsqlMoneyTypeMapping$instance extends DecimalTypeMapping {
 
 export const NpgsqlMoneyTypeMapping: {
     new(): NpgsqlMoneyTypeMapping;
-    readonly default: NpgsqlMoneyTypeMapping;
+    readonly Default: NpgsqlMoneyTypeMapping;
 };
 
 
 export type NpgsqlMoneyTypeMapping = NpgsqlMoneyTypeMapping$instance;
 
 export interface NpgsqlMultirangeTypeMapping$instance extends RelationalTypeMapping {
-    readonly npgsqlDbType: NpgsqlDbType;
-    readonly rangeMapping: NpgsqlRangeTypeMapping;
-    readonly subtypeMapping: RelationalTypeMapping;
-    generateCodeLiteral(value: unknown): Expression;
+    readonly NpgsqlDbType: NpgsqlDbType;
+    readonly RangeMapping: NpgsqlRangeTypeMapping;
+    readonly SubtypeMapping: RelationalTypeMapping;
+    GenerateCodeLiteral(value: unknown): Expression;
 }
 
 
 export const NpgsqlMultirangeTypeMapping: {
     new(storeType: string, clrType: Type, rangeMapping: NpgsqlRangeTypeMapping): NpgsqlMultirangeTypeMapping;
-    generateNonNullSqlLiteral(value: unknown, rangeMapping: RelationalTypeMapping, multirangeStoreType: string): string;
+    GenerateNonNullSqlLiteral(value: unknown, rangeMapping: RelationalTypeMapping, multirangeStoreType: string): string;
 };
 
 
 export type NpgsqlMultirangeTypeMapping = NpgsqlMultirangeTypeMapping$instance;
 
 export interface NpgsqlPathTypeMapping$instance extends NpgsqlTypeMapping$instance {
-    generateCodeLiteral(value: unknown): Expression;
+    GenerateCodeLiteral(value: unknown): Expression;
 }
 
 
 export const NpgsqlPathTypeMapping: {
     new(): NpgsqlPathTypeMapping;
-    readonly default: NpgsqlPathTypeMapping;
+    readonly Default: NpgsqlPathTypeMapping;
 };
 
 
@@ -755,13 +755,13 @@ export type NpgsqlPathTypeMapping = NpgsqlPathTypeMapping$instance & __NpgsqlPat
 
 
 export interface NpgsqlPgLsnTypeMapping$instance extends NpgsqlTypeMapping$instance {
-    generateCodeLiteral(value: unknown): Expression;
+    GenerateCodeLiteral(value: unknown): Expression;
 }
 
 
 export const NpgsqlPgLsnTypeMapping: {
     new(): NpgsqlPgLsnTypeMapping;
-    readonly default: NpgsqlPgLsnTypeMapping;
+    readonly Default: NpgsqlPgLsnTypeMapping;
 };
 
 
@@ -775,28 +775,28 @@ export type NpgsqlPgLsnTypeMapping = NpgsqlPgLsnTypeMapping$instance & __NpgsqlP
 
 
 export interface NpgsqlPgLsnTypeMapping_JsonLogSequenceNumberReaderWriter$instance extends JsonValueReaderWriter<NpgsqlLogSequenceNumber> {
-    readonly constructorExpression: Expression;
-    fromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): NpgsqlLogSequenceNumber;
-    toJsonTyped(writer: Utf8JsonWriter, value: NpgsqlLogSequenceNumber): void;
+    readonly ConstructorExpression: Expression;
+    FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): NpgsqlLogSequenceNumber;
+    ToJsonTyped(writer: Utf8JsonWriter, value: NpgsqlLogSequenceNumber): void;
 }
 
 
 export const NpgsqlPgLsnTypeMapping_JsonLogSequenceNumberReaderWriter: {
     new(): NpgsqlPgLsnTypeMapping_JsonLogSequenceNumberReaderWriter;
-    readonly instance: NpgsqlPgLsnTypeMapping_JsonLogSequenceNumberReaderWriter;
+    readonly Instance: NpgsqlPgLsnTypeMapping_JsonLogSequenceNumberReaderWriter;
 };
 
 
 export type NpgsqlPgLsnTypeMapping_JsonLogSequenceNumberReaderWriter = NpgsqlPgLsnTypeMapping_JsonLogSequenceNumberReaderWriter$instance;
 
 export interface NpgsqlPointTypeMapping$instance extends NpgsqlTypeMapping$instance {
-    generateCodeLiteral(value: unknown): Expression;
+    GenerateCodeLiteral(value: unknown): Expression;
 }
 
 
 export const NpgsqlPointTypeMapping: {
     new(): NpgsqlPointTypeMapping;
-    readonly default: NpgsqlPointTypeMapping;
+    readonly Default: NpgsqlPointTypeMapping;
 };
 
 
@@ -810,13 +810,13 @@ export type NpgsqlPointTypeMapping = NpgsqlPointTypeMapping$instance & __NpgsqlP
 
 
 export interface NpgsqlPolygonTypeMapping$instance extends NpgsqlTypeMapping$instance {
-    generateCodeLiteral(value: unknown): Expression;
+    GenerateCodeLiteral(value: unknown): Expression;
 }
 
 
 export const NpgsqlPolygonTypeMapping: {
     new(): NpgsqlPolygonTypeMapping;
-    readonly default: NpgsqlPolygonTypeMapping;
+    readonly Default: NpgsqlPolygonTypeMapping;
 };
 
 
@@ -830,18 +830,18 @@ export type NpgsqlPolygonTypeMapping = NpgsqlPolygonTypeMapping$instance & __Npg
 
 
 export interface NpgsqlRangeTypeMapping$instance extends NpgsqlTypeMapping$instance {
-    readonly subtypeMapping: RelationalTypeMapping;
-    unquotedStoreType: string;
-    clone(npgsqlDbType: NpgsqlDbType, subtypeTypeMapping: RelationalTypeMapping): NpgsqlRangeTypeMapping;
-    generateCodeLiteral(value: unknown): Expression;
+    readonly SubtypeMapping: RelationalTypeMapping;
+    UnquotedStoreType: string;
+    Clone(npgsqlDbType: NpgsqlDbType, subtypeTypeMapping: RelationalTypeMapping): NpgsqlRangeTypeMapping;
+    GenerateCodeLiteral(value: unknown): Expression;
 }
 
 
 export const NpgsqlRangeTypeMapping: {
     new(): NpgsqlRangeTypeMapping;
-    readonly default: NpgsqlRangeTypeMapping;
-    creatBuiltInRangeMapping(rangeStoreType: string, rangeClrType: Type, rangeNpgsqlDbType: NpgsqlDbType, subtypeMapping: RelationalTypeMapping): NpgsqlRangeTypeMapping;
-    creatUserDefinedRangeMapping(quotedRangeStoreType: string, unquotedRangeStoreType: string, rangeClrType: Type, subtypeMapping: RelationalTypeMapping): NpgsqlRangeTypeMapping;
+    readonly Default: NpgsqlRangeTypeMapping;
+    CreatBuiltInRangeMapping(rangeStoreType: string, rangeClrType: Type, rangeNpgsqlDbType: NpgsqlDbType, subtypeMapping: RelationalTypeMapping): NpgsqlRangeTypeMapping;
+    CreatUserDefinedRangeMapping(quotedRangeStoreType: string, unquotedRangeStoreType: string, rangeClrType: Type, subtypeMapping: RelationalTypeMapping): NpgsqlRangeTypeMapping;
 };
 
 
@@ -860,7 +860,7 @@ export interface NpgsqlRegconfigTypeMapping$instance extends NpgsqlTypeMapping$i
 
 export const NpgsqlRegconfigTypeMapping: {
     new(): NpgsqlRegconfigTypeMapping;
-    readonly default: NpgsqlRegconfigTypeMapping;
+    readonly Default: NpgsqlRegconfigTypeMapping;
 };
 
 
@@ -879,7 +879,7 @@ export interface NpgsqlRegdictionaryTypeMapping$instance extends NpgsqlTypeMappi
 
 export const NpgsqlRegdictionaryTypeMapping: {
     new(): NpgsqlRegdictionaryTypeMapping;
-    readonly default: NpgsqlRegdictionaryTypeMapping;
+    readonly Default: NpgsqlRegdictionaryTypeMapping;
 };
 
 
@@ -904,14 +904,14 @@ export const NpgsqlRowValueTypeMapping: {
 export type NpgsqlRowValueTypeMapping = NpgsqlRowValueTypeMapping$instance;
 
 export interface NpgsqlStringTypeMapping$instance extends StringTypeMapping {
-    readonly npgsqlDbType: NpgsqlDbType;
-    clone(npgsqlDbType: NpgsqlDbType): NpgsqlStringTypeMapping;
+    readonly NpgsqlDbType: NpgsqlDbType;
+    Clone(npgsqlDbType: NpgsqlDbType): NpgsqlStringTypeMapping;
 }
 
 
 export const NpgsqlStringTypeMapping: {
     new(storeType: string, npgsqlDbType: NpgsqlDbType): NpgsqlStringTypeMapping;
-    readonly default: NpgsqlStringTypeMapping;
+    readonly Default: NpgsqlStringTypeMapping;
 };
 
 
@@ -925,9 +925,9 @@ export type NpgsqlStringTypeMapping = NpgsqlStringTypeMapping$instance & __Npgsq
 
 
 export interface NpgsqlStructuralJsonTypeMapping$instance extends JsonTypeMapping {
-    readonly npgsqlDbType: NpgsqlDbType;
-    customizeDataReaderExpression(expression: Expression): Expression;
-    getDataReaderMethod(): MethodInfo;
+    readonly NpgsqlDbType: NpgsqlDbType;
+    CustomizeDataReaderExpression(expression: Expression): Expression;
+    GetDataReaderMethod(): MethodInfo;
 }
 
 
@@ -939,13 +939,13 @@ export const NpgsqlStructuralJsonTypeMapping: {
 export type NpgsqlStructuralJsonTypeMapping = NpgsqlStructuralJsonTypeMapping$instance;
 
 export interface NpgsqlTidTypeMapping$instance extends NpgsqlTypeMapping$instance {
-    generateCodeLiteral(value: unknown): Expression;
+    GenerateCodeLiteral(value: unknown): Expression;
 }
 
 
 export const NpgsqlTidTypeMapping: {
     new(): NpgsqlTidTypeMapping;
-    readonly default: NpgsqlTidTypeMapping;
+    readonly Default: NpgsqlTidTypeMapping;
 };
 
 
@@ -964,7 +964,7 @@ export interface NpgsqlTimestampTypeMapping$instance extends NpgsqlTypeMapping$i
 
 export const NpgsqlTimestampTypeMapping: {
     new(): NpgsqlTimestampTypeMapping;
-    readonly default: NpgsqlTimestampTypeMapping;
+    readonly Default: NpgsqlTimestampTypeMapping;
 };
 
 
@@ -978,15 +978,15 @@ export type NpgsqlTimestampTypeMapping = NpgsqlTimestampTypeMapping$instance & _
 
 
 export interface NpgsqlTimestampTypeMapping_NpgsqlJsonTimestampReaderWriter$instance extends JsonValueReaderWriter<DateTime> {
-    readonly constructorExpression: Expression;
-    fromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): DateTime;
-    toJsonTyped(writer: Utf8JsonWriter, value: DateTime): void;
+    readonly ConstructorExpression: Expression;
+    FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): DateTime;
+    ToJsonTyped(writer: Utf8JsonWriter, value: DateTime): void;
 }
 
 
 export const NpgsqlTimestampTypeMapping_NpgsqlJsonTimestampReaderWriter: {
     new(): NpgsqlTimestampTypeMapping_NpgsqlJsonTimestampReaderWriter;
-    readonly instance: NpgsqlTimestampTypeMapping_NpgsqlJsonTimestampReaderWriter;
+    readonly Instance: NpgsqlTimestampTypeMapping_NpgsqlJsonTimestampReaderWriter;
 };
 
 
@@ -998,7 +998,7 @@ export interface NpgsqlTimestampTzTypeMapping$instance extends NpgsqlTypeMapping
 
 export const NpgsqlTimestampTzTypeMapping: {
     new(clrType: Type): NpgsqlTimestampTzTypeMapping;
-    readonly default: NpgsqlTimestampTzTypeMapping;
+    readonly Default: NpgsqlTimestampTzTypeMapping;
 };
 
 
@@ -1012,30 +1012,30 @@ export type NpgsqlTimestampTzTypeMapping = NpgsqlTimestampTzTypeMapping$instance
 
 
 export interface NpgsqlTimestampTzTypeMapping_NpgsqlJsonTimestampTzDateTimeOffsetReaderWriter$instance extends JsonValueReaderWriter<DateTimeOffset> {
-    readonly constructorExpression: Expression;
-    fromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): DateTimeOffset;
-    toJsonTyped(writer: Utf8JsonWriter, value: DateTimeOffset): void;
+    readonly ConstructorExpression: Expression;
+    FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): DateTimeOffset;
+    ToJsonTyped(writer: Utf8JsonWriter, value: DateTimeOffset): void;
 }
 
 
 export const NpgsqlTimestampTzTypeMapping_NpgsqlJsonTimestampTzDateTimeOffsetReaderWriter: {
     new(): NpgsqlTimestampTzTypeMapping_NpgsqlJsonTimestampTzDateTimeOffsetReaderWriter;
-    readonly instance: NpgsqlTimestampTzTypeMapping_NpgsqlJsonTimestampTzDateTimeOffsetReaderWriter;
+    readonly Instance: NpgsqlTimestampTzTypeMapping_NpgsqlJsonTimestampTzDateTimeOffsetReaderWriter;
 };
 
 
 export type NpgsqlTimestampTzTypeMapping_NpgsqlJsonTimestampTzDateTimeOffsetReaderWriter = NpgsqlTimestampTzTypeMapping_NpgsqlJsonTimestampTzDateTimeOffsetReaderWriter$instance;
 
 export interface NpgsqlTimestampTzTypeMapping_NpgsqlJsonTimestampTzDateTimeReaderWriter$instance extends JsonValueReaderWriter<DateTime> {
-    readonly constructorExpression: Expression;
-    fromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): DateTime;
-    toJsonTyped(writer: Utf8JsonWriter, value: DateTime): void;
+    readonly ConstructorExpression: Expression;
+    FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): DateTime;
+    ToJsonTyped(writer: Utf8JsonWriter, value: DateTime): void;
 }
 
 
 export const NpgsqlTimestampTzTypeMapping_NpgsqlJsonTimestampTzDateTimeReaderWriter: {
     new(): NpgsqlTimestampTzTypeMapping_NpgsqlJsonTimestampTzDateTimeReaderWriter;
-    readonly instance: NpgsqlTimestampTzTypeMapping_NpgsqlJsonTimestampTzDateTimeReaderWriter;
+    readonly Instance: NpgsqlTimestampTzTypeMapping_NpgsqlJsonTimestampTzDateTimeReaderWriter;
 };
 
 
@@ -1047,7 +1047,7 @@ export interface NpgsqlTimeTypeMapping$instance extends NpgsqlTypeMapping$instan
 
 export const NpgsqlTimeTypeMapping: {
     new(clrType: Type): NpgsqlTimeTypeMapping;
-    readonly default: NpgsqlTimeTypeMapping;
+    readonly Default: NpgsqlTimeTypeMapping;
 };
 
 
@@ -1066,7 +1066,7 @@ export interface NpgsqlTimeTzTypeMapping$instance extends NpgsqlTypeMapping$inst
 
 export const NpgsqlTimeTzTypeMapping: {
     new(): NpgsqlTimeTzTypeMapping;
-    readonly default: NpgsqlTimeTzTypeMapping;
+    readonly Default: NpgsqlTimeTzTypeMapping;
 };
 
 
@@ -1080,15 +1080,15 @@ export type NpgsqlTimeTzTypeMapping = NpgsqlTimeTzTypeMapping$instance & __Npgsq
 
 
 export interface NpgsqlTimeTzTypeMapping_JsonTimeTzReaderWriter$instance extends JsonValueReaderWriter<DateTimeOffset> {
-    readonly constructorExpression: Expression;
-    fromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): DateTimeOffset;
-    toJsonTyped(writer: Utf8JsonWriter, value: DateTimeOffset): void;
+    readonly ConstructorExpression: Expression;
+    FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): DateTimeOffset;
+    ToJsonTyped(writer: Utf8JsonWriter, value: DateTimeOffset): void;
 }
 
 
 export const NpgsqlTimeTzTypeMapping_JsonTimeTzReaderWriter: {
     new(): NpgsqlTimeTzTypeMapping_JsonTimeTzReaderWriter;
-    readonly instance: NpgsqlTimeTzTypeMapping_JsonTimeTzReaderWriter;
+    readonly Instance: NpgsqlTimeTzTypeMapping_JsonTimeTzReaderWriter;
 };
 
 
@@ -1100,7 +1100,7 @@ export interface NpgsqlTsQueryTypeMapping$instance extends NpgsqlTypeMapping$ins
 
 export const NpgsqlTsQueryTypeMapping: {
     new(): NpgsqlTsQueryTypeMapping;
-    readonly default: NpgsqlTsQueryTypeMapping;
+    readonly Default: NpgsqlTsQueryTypeMapping;
 };
 
 
@@ -1119,7 +1119,7 @@ export interface NpgsqlTsRankingNormalizationTypeMapping$instance extends IntTyp
 
 export const NpgsqlTsRankingNormalizationTypeMapping: {
     new(): NpgsqlTsRankingNormalizationTypeMapping;
-    readonly default: NpgsqlTsRankingNormalizationTypeMapping;
+    readonly Default: NpgsqlTsRankingNormalizationTypeMapping;
 };
 
 
@@ -1131,7 +1131,7 @@ export interface NpgsqlTsVectorTypeMapping$instance extends NpgsqlTypeMapping$in
 
 export const NpgsqlTsVectorTypeMapping: {
     new(): NpgsqlTsVectorTypeMapping;
-    readonly default: NpgsqlTsVectorTypeMapping;
+    readonly Default: NpgsqlTsVectorTypeMapping;
 };
 
 
@@ -1145,9 +1145,9 @@ export type NpgsqlTsVectorTypeMapping = NpgsqlTsVectorTypeMapping$instance & __N
 
 
 export interface NpgsqlTypeMapping$instance extends RelationalTypeMapping {
-    readonly npgsqlDbType: NpgsqlDbType;
-    generateEmbeddedProviderValueSqlLiteral(value: unknown): string;
-    generateEmbeddedSqlLiteral(value: unknown): string;
+    readonly NpgsqlDbType: NpgsqlDbType;
+    GenerateEmbeddedProviderValueSqlLiteral(value: unknown): string;
+    GenerateEmbeddedSqlLiteral(value: unknown): string;
 }
 
 
@@ -1171,7 +1171,7 @@ export interface NpgsqlUIntTypeMapping$instance extends NpgsqlTypeMapping$instan
 
 export const NpgsqlUIntTypeMapping: {
     new(storeType: string, npgsqlDbType: NpgsqlDbType): NpgsqlUIntTypeMapping;
-    readonly default: NpgsqlUIntTypeMapping;
+    readonly Default: NpgsqlUIntTypeMapping;
 };
 
 
@@ -1190,7 +1190,7 @@ export interface NpgsqlULongTypeMapping$instance extends NpgsqlTypeMapping$insta
 
 export const NpgsqlULongTypeMapping: {
     new(storeType: string, npgsqlDbType: NpgsqlDbType): NpgsqlULongTypeMapping;
-    readonly default: NpgsqlULongTypeMapping;
+    readonly Default: NpgsqlULongTypeMapping;
 };
 
 
@@ -1204,13 +1204,13 @@ export type NpgsqlULongTypeMapping = NpgsqlULongTypeMapping$instance & __NpgsqlU
 
 
 export interface NpgsqlVarbitTypeMapping$instance extends NpgsqlTypeMapping$instance {
-    generateCodeLiteral(value: unknown): Expression;
+    GenerateCodeLiteral(value: unknown): Expression;
 }
 
 
 export const NpgsqlVarbitTypeMapping: {
     new(): NpgsqlVarbitTypeMapping;
-    readonly default: NpgsqlVarbitTypeMapping;
+    readonly Default: NpgsqlVarbitTypeMapping;
 };
 
 

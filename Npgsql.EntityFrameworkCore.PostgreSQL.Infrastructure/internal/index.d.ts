@@ -19,7 +19,7 @@ import type { DbContextOptionsBuilder } from "@tsonic/efcore/Microsoft.EntityFra
 import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection.js";
 
 export interface INpgsqlDataSourceConfigurationPlugin$instance {
-    configure(npgsqlDataSourceBuilder: NpgsqlDataSourceBuilder): void;
+    Configure(npgsqlDataSourceBuilder: NpgsqlDataSourceBuilder): void;
 }
 
 
@@ -37,22 +37,22 @@ export const EntityFrameworkNpgsqlServicesBuilder: {
 export type EntityFrameworkNpgsqlServicesBuilder = EntityFrameworkNpgsqlServicesBuilder$instance;
 
 export interface NpgsqlDbContextOptionsBuilder$instance extends RelationalDbContextOptionsBuilder<NpgsqlDbContextOptionsBuilder, NpgsqlOptionsExtension> {
-    configureDataSource(dataSourceBuilderAction: Action<NpgsqlDataSourceBuilder>): NpgsqlDbContextOptionsBuilder;
-    enableRetryOnFailure(): NpgsqlDbContextOptionsBuilder;
-    enableRetryOnFailure(maxRetryCount: int): NpgsqlDbContextOptionsBuilder;
-    enableRetryOnFailure(errorCodesToAdd: ICollection<System_Internal.String>): NpgsqlDbContextOptionsBuilder;
-    enableRetryOnFailure(maxRetryCount: int, maxRetryDelay: TimeSpan, errorCodesToAdd: ICollection<System_Internal.String>): NpgsqlDbContextOptionsBuilder;
-    mapEnum<T extends number>(enumName?: string, schemaName?: string, nameTranslator?: INpgsqlNameTranslator): NpgsqlDbContextOptionsBuilder;
-    mapEnum(clrType: Type, enumName?: string, schemaName?: string, nameTranslator?: INpgsqlNameTranslator): NpgsqlDbContextOptionsBuilder;
-    mapRange<TSubtype>(rangeName: string, schemaName?: string, subtypeName?: string): NpgsqlDbContextOptionsBuilder;
-    mapRange(rangeName: string, subtypeClrType: Type, schemaName?: string, subtypeName?: string): NpgsqlDbContextOptionsBuilder;
-    provideClientCertificatesCallback(callback: ProvideClientCertificatesCallback): NpgsqlDbContextOptionsBuilder;
-    providePasswordCallback(callback: ProvidePasswordCallback): NpgsqlDbContextOptionsBuilder;
-    remoteCertificateValidationCallback(callback: RemoteCertificateValidationCallback): NpgsqlDbContextOptionsBuilder;
-    setPostgresVersion(postgresVersion: Version): NpgsqlDbContextOptionsBuilder;
-    setPostgresVersion(major: int, minor: int): NpgsqlDbContextOptionsBuilder;
-    useAdminDatabase(dbName: string): NpgsqlDbContextOptionsBuilder;
-    useRedshift(useRedshift?: boolean): NpgsqlDbContextOptionsBuilder;
+    ConfigureDataSource(dataSourceBuilderAction: Action<NpgsqlDataSourceBuilder>): NpgsqlDbContextOptionsBuilder;
+    EnableRetryOnFailure(): NpgsqlDbContextOptionsBuilder;
+    EnableRetryOnFailure(maxRetryCount: int): NpgsqlDbContextOptionsBuilder;
+    EnableRetryOnFailure(errorCodesToAdd: ICollection<System_Internal.String>): NpgsqlDbContextOptionsBuilder;
+    EnableRetryOnFailure(maxRetryCount: int, maxRetryDelay: TimeSpan, errorCodesToAdd: ICollection<System_Internal.String>): NpgsqlDbContextOptionsBuilder;
+    MapEnum<T extends number>(enumName?: string, schemaName?: string, nameTranslator?: INpgsqlNameTranslator): NpgsqlDbContextOptionsBuilder;
+    MapEnum(clrType: Type, enumName?: string, schemaName?: string, nameTranslator?: INpgsqlNameTranslator): NpgsqlDbContextOptionsBuilder;
+    MapRange<TSubtype>(rangeName: string, schemaName?: string, subtypeName?: string): NpgsqlDbContextOptionsBuilder;
+    MapRange(rangeName: string, subtypeClrType: Type, schemaName?: string, subtypeName?: string): NpgsqlDbContextOptionsBuilder;
+    ProvideClientCertificatesCallback(callback: ProvideClientCertificatesCallback): NpgsqlDbContextOptionsBuilder;
+    ProvidePasswordCallback(callback: ProvidePasswordCallback): NpgsqlDbContextOptionsBuilder;
+    RemoteCertificateValidationCallback(callback: RemoteCertificateValidationCallback): NpgsqlDbContextOptionsBuilder;
+    SetPostgresVersion(postgresVersion: Version): NpgsqlDbContextOptionsBuilder;
+    SetPostgresVersion(major: int, minor: int): NpgsqlDbContextOptionsBuilder;
+    UseAdminDatabase(dbName: string): NpgsqlDbContextOptionsBuilder;
+    UseRedshift(useRedshift?: boolean): NpgsqlDbContextOptionsBuilder;
 }
 
 

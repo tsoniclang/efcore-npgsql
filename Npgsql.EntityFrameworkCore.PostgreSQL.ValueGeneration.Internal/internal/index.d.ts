@@ -20,21 +20,21 @@ import * as Microsoft_EntityFrameworkCore_ValueGeneration_Internal from "@tsonic
 import type { HiLoValueGenerator, HiLoValueGeneratorState, IValueGeneratorCache, IValueGeneratorSelector, RelationalValueGeneratorSelector, ValueGenerator, ValueGeneratorCache, ValueGeneratorCacheDependencies, ValueGeneratorSelectorDependencies } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.ValueGeneration.js";
 
 export interface INpgsqlSequenceValueGeneratorFactory$instance {
-    tryCreate(property: IProperty, clrType: Type, generatorState: NpgsqlSequenceValueGeneratorState, connection: INpgsqlRelationalConnection, rawSqlCommandBuilder: IRawSqlCommandBuilder, commandLogger: IRelationalCommandDiagnosticsLogger): ValueGenerator | undefined;
+    TryCreate(property: IProperty, clrType: Type, generatorState: NpgsqlSequenceValueGeneratorState, connection: INpgsqlRelationalConnection, rawSqlCommandBuilder: IRawSqlCommandBuilder, commandLogger: IRelationalCommandDiagnosticsLogger): ValueGenerator | undefined;
 }
 
 
 export type INpgsqlSequenceValueGeneratorFactory = INpgsqlSequenceValueGeneratorFactory$instance;
 
 export interface INpgsqlValueGeneratorCache$instance extends IValueGeneratorCache {
-    getOrAddSequenceState(property: IProperty, connection: IRelationalConnection): NpgsqlSequenceValueGeneratorState;
+    GetOrAddSequenceState(property: IProperty, connection: IRelationalConnection): NpgsqlSequenceValueGeneratorState;
 }
 
 
 export type INpgsqlValueGeneratorCache = INpgsqlValueGeneratorCache$instance;
 
 export interface NpgsqlSequenceHiLoValueGenerator_1$instance<TValue> extends HiLoValueGenerator<TValue> {
-    readonly generatesTemporaryValues: boolean;
+    readonly GeneratesTemporaryValues: boolean;
 }
 
 
@@ -46,7 +46,7 @@ export const NpgsqlSequenceHiLoValueGenerator_1: {
 export type NpgsqlSequenceHiLoValueGenerator_1<TValue> = NpgsqlSequenceHiLoValueGenerator_1$instance<TValue>;
 
 export interface NpgsqlSequenceValueGeneratorFactory$instance {
-    tryCreate(property: IProperty, type: Type, generatorState: NpgsqlSequenceValueGeneratorState, connection: INpgsqlRelationalConnection, rawSqlCommandBuilder: IRawSqlCommandBuilder, commandLogger: IRelationalCommandDiagnosticsLogger): ValueGenerator | undefined;
+    TryCreate(property: IProperty, type: Type, generatorState: NpgsqlSequenceValueGeneratorState, connection: INpgsqlRelationalConnection, rawSqlCommandBuilder: IRawSqlCommandBuilder, commandLogger: IRelationalCommandDiagnosticsLogger): ValueGenerator | undefined;
 }
 
 
@@ -65,7 +65,7 @@ export type NpgsqlSequenceValueGeneratorFactory = NpgsqlSequenceValueGeneratorFa
 
 
 export interface NpgsqlSequenceValueGeneratorState$instance extends HiLoValueGeneratorState {
-    readonly sequence: ISequence;
+    readonly Sequence: ISequence;
 }
 
 
@@ -77,7 +77,7 @@ export const NpgsqlSequenceValueGeneratorState: {
 export type NpgsqlSequenceValueGeneratorState = NpgsqlSequenceValueGeneratorState$instance;
 
 export interface NpgsqlValueGeneratorCache$instance extends ValueGeneratorCache {
-    getOrAddSequenceState(property: IProperty, connection: IRelationalConnection): NpgsqlSequenceValueGeneratorState;
+    GetOrAddSequenceState(property: IProperty, connection: IRelationalConnection): NpgsqlSequenceValueGeneratorState;
 }
 
 
@@ -96,8 +96,8 @@ export type NpgsqlValueGeneratorCache = NpgsqlValueGeneratorCache$instance & __N
 
 
 export interface NpgsqlValueGeneratorSelector$instance extends RelationalValueGeneratorSelector {
-    readonly cache: INpgsqlValueGeneratorCache;
-    trySelect(property: IProperty, typeBase: ITypeBase, valueGenerator: ValueGenerator): boolean;
+    readonly Cache: INpgsqlValueGeneratorCache;
+    TrySelect(property: IProperty, typeBase: ITypeBase, valueGenerator: ValueGenerator): boolean;
 }
 
 

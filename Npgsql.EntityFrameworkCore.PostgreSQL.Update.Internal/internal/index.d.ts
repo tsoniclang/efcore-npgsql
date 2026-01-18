@@ -18,7 +18,7 @@ import * as Microsoft_EntityFrameworkCore_Update_Internal from "@tsonic/efcore/M
 import type { IModificationCommand, IModificationCommandBatchFactory, IModificationCommandFactory, INonTrackedModificationCommand, IReadOnlyModificationCommand, IUpdateSqlGenerator, ModificationCommand, ModificationCommandBatch, ModificationCommandBatchFactoryDependencies, ModificationCommandParameters, NonTrackedModificationCommandParameters, ReaderModificationCommandBatch, ResultSetMapping, UpdateSqlGenerator, UpdateSqlGeneratorDependencies } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Update.js";
 
 export interface NpgsqlModificationCommand$instance extends ModificationCommand {
-    propagateResults(relationalReader: RelationalDataReader): void;
+    PropagateResults(relationalReader: RelationalDataReader): void;
 }
 
 
@@ -42,7 +42,7 @@ export const NpgsqlModificationCommandBatch: {
 export type NpgsqlModificationCommandBatch = NpgsqlModificationCommandBatch$instance;
 
 export interface NpgsqlModificationCommandBatchFactory$instance {
-    create(): ModificationCommandBatch;
+    Create(): ModificationCommandBatch;
 }
 
 
@@ -54,8 +54,8 @@ export const NpgsqlModificationCommandBatchFactory: {
 export type NpgsqlModificationCommandBatchFactory = NpgsqlModificationCommandBatchFactory$instance;
 
 export interface NpgsqlModificationCommandFactory$instance {
-    createModificationCommand(modificationCommandParameters: ModificationCommandParameters): IModificationCommand;
-    createNonTrackedModificationCommand(modificationCommandParameters: NonTrackedModificationCommandParameters): INonTrackedModificationCommand;
+    CreateModificationCommand(modificationCommandParameters: ModificationCommandParameters): IModificationCommand;
+    CreateNonTrackedModificationCommand(modificationCommandParameters: NonTrackedModificationCommandParameters): INonTrackedModificationCommand;
 }
 
 
@@ -67,12 +67,12 @@ export const NpgsqlModificationCommandFactory: {
 export type NpgsqlModificationCommandFactory = NpgsqlModificationCommandFactory$instance;
 
 export interface NpgsqlUpdateSqlGenerator$instance extends UpdateSqlGenerator {
-    appendDeleteOperation(commandStringBuilder: StringBuilder, command: IReadOnlyModificationCommand, commandPosition: int, requiresTransaction: boolean): ResultSetMapping;
-    appendInsertOperation(commandStringBuilder: StringBuilder, command: IReadOnlyModificationCommand, commandPosition: int, requiresTransaction: boolean): ResultSetMapping;
-    appendInsertOperation(commandStringBuilder: StringBuilder, command: IReadOnlyModificationCommand, commandPosition: int, overridingSystemValue: boolean, requiresTransaction: boolean): ResultSetMapping;
-    appendObtainNextSequenceValueOperation(commandStringBuilder: StringBuilder, name: string, schema: string): void;
-    appendStoredProcedureCall(commandStringBuilder: StringBuilder, command: IReadOnlyModificationCommand, commandPosition: int, requiresTransaction: boolean): ResultSetMapping;
-    appendUpdateOperation(commandStringBuilder: StringBuilder, command: IReadOnlyModificationCommand, commandPosition: int, requiresTransaction: boolean): ResultSetMapping;
+    AppendDeleteOperation(commandStringBuilder: StringBuilder, command: IReadOnlyModificationCommand, commandPosition: int, requiresTransaction: boolean): ResultSetMapping;
+    AppendInsertOperation(commandStringBuilder: StringBuilder, command: IReadOnlyModificationCommand, commandPosition: int, requiresTransaction: boolean): ResultSetMapping;
+    AppendInsertOperation(commandStringBuilder: StringBuilder, command: IReadOnlyModificationCommand, commandPosition: int, overridingSystemValue: boolean, requiresTransaction: boolean): ResultSetMapping;
+    AppendObtainNextSequenceValueOperation(commandStringBuilder: StringBuilder, name: string, schema: string): void;
+    AppendStoredProcedureCall(commandStringBuilder: StringBuilder, command: IReadOnlyModificationCommand, commandPosition: int, requiresTransaction: boolean): ResultSetMapping;
+    AppendUpdateOperation(commandStringBuilder: StringBuilder, command: IReadOnlyModificationCommand, commandPosition: int, requiresTransaction: boolean): ResultSetMapping;
 }
 
 

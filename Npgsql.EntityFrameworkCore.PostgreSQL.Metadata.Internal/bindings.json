@@ -1,23 +1,36 @@
 {
   "namespace": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal",
+  "contributingAssemblies": [
+    "Npgsql.EntityFrameworkCore.PostgreSQL"
+  ],
   "types": [
     {
       "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.IdentitySequenceOptionsData",
       "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.IdentitySequenceOptionsData",
-      "tsEmitName": "IdentitySequenceOptionsData",
       "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.IdentitySequenceOptionsData::Serialize():System.String",
           "clrName": "Serialize",
-          "tsEmitName": "serialize",
           "metadataToken": 100665333,
           "canonicalSignature": "():System.String",
           "normalizedSignature": "Serialize|():System.String|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.IdentitySequenceOptionsData",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
@@ -25,13 +38,18 @@
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.IdentitySequenceOptionsData::Get(Microsoft.EntityFrameworkCore.Infrastructure.IReadOnlyAnnotatable):Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.IdentitySequenceOptionsData",
           "clrName": "Get",
-          "tsEmitName": "get",
           "metadataToken": 100665334,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Infrastructure.IReadOnlyAnnotatable):Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.IdentitySequenceOptionsData",
           "normalizedSignature": "Get|(Microsoft.EntityFrameworkCore.Infrastructure.IReadOnlyAnnotatable):Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.IdentitySequenceOptionsData|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.IdentitySequenceOptionsData",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
@@ -39,13 +57,18 @@
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.IdentitySequenceOptionsData::Deserialize(System.String):Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.IdentitySequenceOptionsData",
           "clrName": "Deserialize",
-          "tsEmitName": "deserialize",
           "metadataToken": 100665335,
           "canonicalSignature": "(System.String):Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.IdentitySequenceOptionsData",
           "normalizedSignature": "Deserialize|(System.String):Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.IdentitySequenceOptionsData|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.IdentitySequenceOptionsData",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
@@ -53,13 +76,18 @@
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.IdentitySequenceOptionsData::Equals(Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.IdentitySequenceOptionsData):System.Boolean",
           "clrName": "Equals",
-          "tsEmitName": "equals",
           "metadataToken": 100665340,
           "canonicalSignature": "(Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.IdentitySequenceOptionsData):System.Boolean",
           "normalizedSignature": "Equals|(Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.IdentitySequenceOptionsData):System.Boolean|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.IdentitySequenceOptionsData",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
@@ -67,13 +95,18 @@
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.IdentitySequenceOptionsData::Equals(System.Object):System.Boolean",
           "clrName": "Equals",
-          "tsEmitName": "equals",
           "metadataToken": 100665341,
           "canonicalSignature": "(System.Object):System.Boolean",
           "normalizedSignature": "Equals|(System.Object):System.Boolean|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.IdentitySequenceOptionsData",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
@@ -81,13 +114,18 @@
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.IdentitySequenceOptionsData::GetHashCode():System.Int32",
           "clrName": "GetHashCode",
-          "tsEmitName": "getHashCode",
           "metadataToken": 100665342,
           "canonicalSignature": "():System.Int32",
           "normalizedSignature": "GetHashCode|():System.Int32|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.IdentitySequenceOptionsData",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
@@ -97,84 +135,108 @@
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.IdentitySequenceOptionsData::StartValue:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "StartValue",
-          "tsEmitName": "startValue",
           "metadataToken": 385876167,
           "canonicalSignature": ":System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "StartValue|:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.IdentitySequenceOptionsData",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.IdentitySequenceOptionsData::IncrementBy:System.Int64",
           "clrName": "IncrementBy",
-          "tsEmitName": "incrementBy",
           "metadataToken": 385876168,
           "canonicalSignature": ":System.Int64",
           "normalizedSignature": "IncrementBy|:System.Int64|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.IdentitySequenceOptionsData",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.IdentitySequenceOptionsData::MinValue:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "MinValue",
-          "tsEmitName": "minValue",
           "metadataToken": 385876169,
           "canonicalSignature": ":System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "MinValue|:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.IdentitySequenceOptionsData",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.IdentitySequenceOptionsData::MaxValue:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "MaxValue",
-          "tsEmitName": "maxValue",
           "metadataToken": 385876170,
           "canonicalSignature": ":System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "MaxValue|:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.IdentitySequenceOptionsData",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.IdentitySequenceOptionsData::IsCyclic:System.Boolean",
           "clrName": "IsCyclic",
-          "tsEmitName": "isCyclic",
           "metadataToken": 385876171,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "IsCyclic|:System.Boolean|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.IdentitySequenceOptionsData",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.IdentitySequenceOptionsData::NumbersToCache:System.Int64",
           "clrName": "NumbersToCache",
-          "tsEmitName": "numbersToCache",
           "metadataToken": 385876172,
           "canonicalSignature": ":System.Int64",
           "normalizedSignature": "NumbersToCache|:System.Int64|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.IdentitySequenceOptionsData",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
@@ -183,11 +245,11 @@
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.IdentitySequenceOptionsData::EmptyNpgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.IdentitySequenceOptionsData",
           "clrName": "Empty",
-          "tsEmitName": "empty",
           "metadataToken": 67109533,
           "normalizedSignature": "Empty|Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.IdentitySequenceOptionsData|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
+          "isLiteral": false,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.IdentitySequenceOptionsData",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
@@ -204,172 +266,35 @@
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.IdentitySequenceOptionsData",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "serialize",
-          "isStatic": false,
-          "tsSignatureId": "Serialize|():System.String|static=false",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.IdentitySequenceOptionsData",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 100665333
-          }
-        },
-        {
-          "tsName": "get",
-          "isStatic": true,
-          "tsSignatureId": "Get|(Microsoft.EntityFrameworkCore.Infrastructure.IReadOnlyAnnotatable):Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.IdentitySequenceOptionsData|static=true",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.IdentitySequenceOptionsData",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 100665334
-          }
-        },
-        {
-          "tsName": "deserialize",
-          "isStatic": true,
-          "tsSignatureId": "Deserialize|(System.String):Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.IdentitySequenceOptionsData|static=true",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.IdentitySequenceOptionsData",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 100665335
-          }
-        },
-        {
-          "tsName": "equals",
-          "isStatic": false,
-          "tsSignatureId": "Equals|(Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.IdentitySequenceOptionsData):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.IdentitySequenceOptionsData",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 100665340
-          }
-        },
-        {
-          "tsName": "equals",
-          "isStatic": false,
-          "tsSignatureId": "Equals|(System.Object):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.IdentitySequenceOptionsData",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 100665341
-          }
-        },
-        {
-          "tsName": "getHashCode",
-          "isStatic": false,
-          "tsSignatureId": "GetHashCode|():System.Int32|static=false",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.IdentitySequenceOptionsData",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 100665342
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "startValue",
-          "isStatic": false,
-          "tsSignatureId": "StartValue|:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.IdentitySequenceOptionsData",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 385876167
-          }
-        },
-        {
-          "tsName": "incrementBy",
-          "isStatic": false,
-          "tsSignatureId": "IncrementBy|:System.Int64|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.IdentitySequenceOptionsData",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 385876168
-          }
-        },
-        {
-          "tsName": "minValue",
-          "isStatic": false,
-          "tsSignatureId": "MinValue|:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.IdentitySequenceOptionsData",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 385876169
-          }
-        },
-        {
-          "tsName": "maxValue",
-          "isStatic": false,
-          "tsSignatureId": "MaxValue|:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.IdentitySequenceOptionsData",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 385876170
-          }
-        },
-        {
-          "tsName": "isCyclic",
-          "isStatic": false,
-          "tsSignatureId": "IsCyclic|:System.Boolean|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.IdentitySequenceOptionsData",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 385876171
-          }
-        },
-        {
-          "tsName": "numbersToCache",
-          "isStatic": false,
-          "tsSignatureId": "NumbersToCache|:System.Int64|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.IdentitySequenceOptionsData",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 385876172
-          }
-        }
-      ],
-      "exposedFields": [
-        {
-          "tsName": "empty",
-          "isStatic": true,
-          "tsSignatureId": "Empty|Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.IdentitySequenceOptionsData|static=true|const=false",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.IdentitySequenceOptionsData",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 67109533
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.IdentitySequenceOptionsData",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 100665343
-          }
-        }
       ]
     },
     {
       "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationProvider",
       "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationProvider",
-      "tsEmitName": "NpgsqlAnnotationProvider",
       "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationProvider::For(Microsoft.EntityFrameworkCore.Metadata.ITable,System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "clrName": "For",
-          "tsEmitName": "for",
           "metadataToken": 100665346,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.ITable,System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "For|(Microsoft.EntityFrameworkCore.Metadata.ITable,System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationProvider",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
@@ -377,13 +302,18 @@
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationProvider::For(Microsoft.EntityFrameworkCore.Metadata.IColumn,System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "clrName": "For",
-          "tsEmitName": "for",
           "metadataToken": 100665347,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IColumn,System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "For|(Microsoft.EntityFrameworkCore.Metadata.IColumn,System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationProvider",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
@@ -391,13 +321,18 @@
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationProvider::For(Microsoft.EntityFrameworkCore.Metadata.ITableIndex,System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "clrName": "For",
-          "tsEmitName": "for",
           "metadataToken": 100665348,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.ITableIndex,System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "For|(Microsoft.EntityFrameworkCore.Metadata.ITableIndex,System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationProvider",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
@@ -405,13 +340,18 @@
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationProvider::For(Microsoft.EntityFrameworkCore.Metadata.IRelationalModel,System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "clrName": "For",
-          "tsEmitName": "for",
           "metadataToken": 100665349,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IRelationalModel,System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "For|(Microsoft.EntityFrameworkCore.Metadata.IRelationalModel,System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationProvider",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
@@ -431,825 +371,428 @@
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationProvider",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "for",
-          "isStatic": false,
-          "tsSignatureId": "For|(Microsoft.EntityFrameworkCore.Metadata.ITable,System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationProvider",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 100665346
-          }
-        },
-        {
-          "tsName": "for",
-          "isStatic": false,
-          "tsSignatureId": "For|(Microsoft.EntityFrameworkCore.Metadata.IColumn,System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationProvider",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 100665347
-          }
-        },
-        {
-          "tsName": "for",
-          "isStatic": false,
-          "tsSignatureId": "For|(Microsoft.EntityFrameworkCore.Metadata.ITableIndex,System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationProvider",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 100665348
-          }
-        },
-        {
-          "tsName": "for",
-          "isStatic": false,
-          "tsSignatureId": "For|(Microsoft.EntityFrameworkCore.Metadata.IRelationalModel,System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.EntityFrameworkCore.Infrastructure.IAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationProvider",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 100665349
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.EntityFrameworkCore.Metadata.RelationalAnnotationProviderDependencies):void|static=false",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationProvider",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 100665345
-          }
-        }
       ]
     },
     {
       "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.CockroachDbAnnotationNames",
       "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.CockroachDbAnnotationNames",
-      "tsEmitName": "CockroachDbAnnotationNames",
       "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
       "metadataToken": 0,
+      "kind": "StaticNamespace",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": true,
+      "isStatic": true,
+      "arity": 0,
       "methods": [],
       "properties": [],
       "fields": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.CockroachDbAnnotationNames::PrefixSystem.String",
           "clrName": "Prefix",
-          "tsEmitName": "prefix",
           "metadataToken": 67109531,
           "normalizedSignature": "Prefix|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.CockroachDbAnnotationNames",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.CockroachDbAnnotationNames::InterleaveInParentSystem.String",
           "clrName": "InterleaveInParent",
-          "tsEmitName": "interleaveInParent",
           "metadataToken": 67109532,
           "normalizedSignature": "InterleaveInParent|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.CockroachDbAnnotationNames",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
       ],
       "events": [],
-      "constructors": [],
-      "exposedFields": [
-        {
-          "tsName": "prefix",
-          "isStatic": true,
-          "tsSignatureId": "Prefix|System.String|static=true|const=true",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.CockroachDbAnnotationNames",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 67109531
-          }
-        },
-        {
-          "tsName": "interleaveInParent",
-          "isStatic": true,
-          "tsSignatureId": "InterleaveInParent|System.String|static=true|const=true",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.CockroachDbAnnotationNames",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 67109532
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
       "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
-      "tsEmitName": "NpgsqlAnnotationNames",
       "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
       "metadataToken": 0,
+      "kind": "StaticNamespace",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": true,
+      "isStatic": true,
+      "arity": 0,
       "methods": [],
       "properties": [],
       "fields": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames::PrefixSystem.String",
           "clrName": "Prefix",
-          "tsEmitName": "prefix",
           "metadataToken": 67109540,
           "normalizedSignature": "Prefix|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames::CompressionMethodSystem.String",
           "clrName": "CompressionMethod",
-          "tsEmitName": "compressionMethod",
           "metadataToken": 67109541,
           "normalizedSignature": "CompressionMethod|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames::CreatedConcurrentlySystem.String",
           "clrName": "CreatedConcurrently",
-          "tsEmitName": "createdConcurrently",
           "metadataToken": 67109542,
           "normalizedSignature": "CreatedConcurrently|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames::DatabaseTemplateSystem.String",
           "clrName": "DatabaseTemplate",
-          "tsEmitName": "databaseTemplate",
           "metadataToken": 67109543,
           "normalizedSignature": "DatabaseTemplate|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames::HiLoSequenceNameSystem.String",
           "clrName": "HiLoSequenceName",
-          "tsEmitName": "hiLoSequenceName",
           "metadataToken": 67109544,
           "normalizedSignature": "HiLoSequenceName|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames::HiLoSequenceSchemaSystem.String",
           "clrName": "HiLoSequenceSchema",
-          "tsEmitName": "hiLoSequenceSchema",
           "metadataToken": 67109545,
           "normalizedSignature": "HiLoSequenceSchema|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames::IdentityOptionsSystem.String",
           "clrName": "IdentityOptions",
-          "tsEmitName": "identityOptions",
           "metadataToken": 67109546,
           "normalizedSignature": "IdentityOptions|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames::IndexMethodSystem.String",
           "clrName": "IndexMethod",
-          "tsEmitName": "indexMethod",
           "metadataToken": 67109547,
           "normalizedSignature": "IndexMethod|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames::IndexOperatorsSystem.String",
           "clrName": "IndexOperators",
-          "tsEmitName": "indexOperators",
           "metadataToken": 67109548,
           "normalizedSignature": "IndexOperators|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames::IndexNullSortOrderSystem.String",
           "clrName": "IndexNullSortOrder",
-          "tsEmitName": "indexNullSortOrder",
           "metadataToken": 67109549,
           "normalizedSignature": "IndexNullSortOrder|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames::IndexIncludeSystem.String",
           "clrName": "IndexInclude",
-          "tsEmitName": "indexInclude",
           "metadataToken": 67109550,
           "normalizedSignature": "IndexInclude|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames::NullsDistinctSystem.String",
           "clrName": "NullsDistinct",
-          "tsEmitName": "nullsDistinct",
           "metadataToken": 67109551,
           "normalizedSignature": "NullsDistinct|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames::TablespaceSystem.String",
           "clrName": "Tablespace",
-          "tsEmitName": "tablespace",
           "metadataToken": 67109552,
           "normalizedSignature": "Tablespace|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames::TsVectorConfigSystem.String",
           "clrName": "TsVectorConfig",
-          "tsEmitName": "tsVectorConfig",
           "metadataToken": 67109553,
           "normalizedSignature": "TsVectorConfig|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames::TsVectorPropertiesSystem.String",
           "clrName": "TsVectorProperties",
-          "tsEmitName": "tsVectorProperties",
           "metadataToken": 67109554,
           "normalizedSignature": "TsVectorProperties|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames::UnloggedTableSystem.String",
           "clrName": "UnloggedTable",
-          "tsEmitName": "unloggedTable",
           "metadataToken": 67109555,
           "normalizedSignature": "UnloggedTable|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames::ValueGenerationStrategySystem.String",
           "clrName": "ValueGenerationStrategy",
-          "tsEmitName": "valueGenerationStrategy",
           "metadataToken": 67109556,
           "normalizedSignature": "ValueGenerationStrategy|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames::SequenceNameSuffixSystem.String",
           "clrName": "SequenceNameSuffix",
-          "tsEmitName": "sequenceNameSuffix",
           "metadataToken": 67109557,
           "normalizedSignature": "SequenceNameSuffix|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames::SequenceNameSystem.String",
           "clrName": "SequenceName",
-          "tsEmitName": "sequenceName",
           "metadataToken": 67109558,
           "normalizedSignature": "SequenceName|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames::SequenceSchemaSystem.String",
           "clrName": "SequenceSchema",
-          "tsEmitName": "sequenceSchema",
           "metadataToken": 67109559,
           "normalizedSignature": "SequenceSchema|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames::CollationDefinitionPrefixSystem.String",
           "clrName": "CollationDefinitionPrefix",
-          "tsEmitName": "collationDefinitionPrefix",
           "metadataToken": 67109560,
           "normalizedSignature": "CollationDefinitionPrefix|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames::EnumPrefixSystem.String",
           "clrName": "EnumPrefix",
-          "tsEmitName": "enumPrefix",
           "metadataToken": 67109561,
           "normalizedSignature": "EnumPrefix|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames::PostgresExtensionPrefixSystem.String",
           "clrName": "PostgresExtensionPrefix",
-          "tsEmitName": "postgresExtensionPrefix",
           "metadataToken": 67109562,
           "normalizedSignature": "PostgresExtensionPrefix|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames::RangePrefixSystem.String",
           "clrName": "RangePrefix",
-          "tsEmitName": "rangePrefix",
           "metadataToken": 67109563,
           "normalizedSignature": "RangePrefix|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames::StorageParameterPrefixSystem.String",
           "clrName": "StorageParameterPrefix",
-          "tsEmitName": "storageParameterPrefix",
           "metadataToken": 67109564,
           "normalizedSignature": "StorageParameterPrefix|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames::PostgresTypeTypeSystem.String",
           "clrName": "PostgresTypeType",
-          "tsEmitName": "postgresTypeType",
           "metadataToken": 67109565,
           "normalizedSignature": "PostgresTypeType|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames::ElementDataTypeSystem.String",
           "clrName": "ElementDataType",
-          "tsEmitName": "elementDataType",
           "metadataToken": 67109566,
           "normalizedSignature": "ElementDataType|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames::IndexExpressionSystem.String",
           "clrName": "IndexExpression",
-          "tsEmitName": "indexExpression",
           "metadataToken": 67109567,
           "normalizedSignature": "IndexExpression|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames::DefaultColumnCollationSystem.String",
           "clrName": "DefaultColumnCollation",
-          "tsEmitName": "defaultColumnCollation",
           "metadataToken": 67109568,
           "normalizedSignature": "DefaultColumnCollation|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames::ValueGeneratedOnAddSystem.String",
           "clrName": "ValueGeneratedOnAdd",
-          "tsEmitName": "valueGeneratedOnAdd",
           "metadataToken": 67109569,
           "normalizedSignature": "ValueGeneratedOnAdd|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames::CommentSystem.String",
           "clrName": "Comment",
-          "tsEmitName": "comment",
           "metadataToken": 67109570,
           "normalizedSignature": "Comment|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames::IndexCollationSystem.String",
           "clrName": "IndexCollation",
-          "tsEmitName": "indexCollation",
           "metadataToken": 67109571,
           "normalizedSignature": "IndexCollation|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames::IndexSortOrderSystem.String",
           "clrName": "IndexSortOrder",
-          "tsEmitName": "indexSortOrder",
           "metadataToken": 67109572,
           "normalizedSignature": "IndexSortOrder|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
       ],
       "events": [],
-      "constructors": [],
-      "exposedFields": [
-        {
-          "tsName": "prefix",
-          "isStatic": true,
-          "tsSignatureId": "Prefix|System.String|static=true|const=true",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 67109540
-          }
-        },
-        {
-          "tsName": "compressionMethod",
-          "isStatic": true,
-          "tsSignatureId": "CompressionMethod|System.String|static=true|const=true",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 67109541
-          }
-        },
-        {
-          "tsName": "createdConcurrently",
-          "isStatic": true,
-          "tsSignatureId": "CreatedConcurrently|System.String|static=true|const=true",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 67109542
-          }
-        },
-        {
-          "tsName": "databaseTemplate",
-          "isStatic": true,
-          "tsSignatureId": "DatabaseTemplate|System.String|static=true|const=true",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 67109543
-          }
-        },
-        {
-          "tsName": "hiLoSequenceName",
-          "isStatic": true,
-          "tsSignatureId": "HiLoSequenceName|System.String|static=true|const=true",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 67109544
-          }
-        },
-        {
-          "tsName": "hiLoSequenceSchema",
-          "isStatic": true,
-          "tsSignatureId": "HiLoSequenceSchema|System.String|static=true|const=true",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 67109545
-          }
-        },
-        {
-          "tsName": "identityOptions",
-          "isStatic": true,
-          "tsSignatureId": "IdentityOptions|System.String|static=true|const=true",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 67109546
-          }
-        },
-        {
-          "tsName": "indexMethod",
-          "isStatic": true,
-          "tsSignatureId": "IndexMethod|System.String|static=true|const=true",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 67109547
-          }
-        },
-        {
-          "tsName": "indexOperators",
-          "isStatic": true,
-          "tsSignatureId": "IndexOperators|System.String|static=true|const=true",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 67109548
-          }
-        },
-        {
-          "tsName": "indexNullSortOrder",
-          "isStatic": true,
-          "tsSignatureId": "IndexNullSortOrder|System.String|static=true|const=true",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 67109549
-          }
-        },
-        {
-          "tsName": "indexInclude",
-          "isStatic": true,
-          "tsSignatureId": "IndexInclude|System.String|static=true|const=true",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 67109550
-          }
-        },
-        {
-          "tsName": "nullsDistinct",
-          "isStatic": true,
-          "tsSignatureId": "NullsDistinct|System.String|static=true|const=true",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 67109551
-          }
-        },
-        {
-          "tsName": "tablespace",
-          "isStatic": true,
-          "tsSignatureId": "Tablespace|System.String|static=true|const=true",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 67109552
-          }
-        },
-        {
-          "tsName": "tsVectorConfig",
-          "isStatic": true,
-          "tsSignatureId": "TsVectorConfig|System.String|static=true|const=true",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 67109553
-          }
-        },
-        {
-          "tsName": "tsVectorProperties",
-          "isStatic": true,
-          "tsSignatureId": "TsVectorProperties|System.String|static=true|const=true",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 67109554
-          }
-        },
-        {
-          "tsName": "unloggedTable",
-          "isStatic": true,
-          "tsSignatureId": "UnloggedTable|System.String|static=true|const=true",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 67109555
-          }
-        },
-        {
-          "tsName": "valueGenerationStrategy",
-          "isStatic": true,
-          "tsSignatureId": "ValueGenerationStrategy|System.String|static=true|const=true",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 67109556
-          }
-        },
-        {
-          "tsName": "sequenceNameSuffix",
-          "isStatic": true,
-          "tsSignatureId": "SequenceNameSuffix|System.String|static=true|const=true",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 67109557
-          }
-        },
-        {
-          "tsName": "sequenceName",
-          "isStatic": true,
-          "tsSignatureId": "SequenceName|System.String|static=true|const=true",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 67109558
-          }
-        },
-        {
-          "tsName": "sequenceSchema",
-          "isStatic": true,
-          "tsSignatureId": "SequenceSchema|System.String|static=true|const=true",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 67109559
-          }
-        },
-        {
-          "tsName": "collationDefinitionPrefix",
-          "isStatic": true,
-          "tsSignatureId": "CollationDefinitionPrefix|System.String|static=true|const=true",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 67109560
-          }
-        },
-        {
-          "tsName": "enumPrefix",
-          "isStatic": true,
-          "tsSignatureId": "EnumPrefix|System.String|static=true|const=true",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 67109561
-          }
-        },
-        {
-          "tsName": "postgresExtensionPrefix",
-          "isStatic": true,
-          "tsSignatureId": "PostgresExtensionPrefix|System.String|static=true|const=true",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 67109562
-          }
-        },
-        {
-          "tsName": "rangePrefix",
-          "isStatic": true,
-          "tsSignatureId": "RangePrefix|System.String|static=true|const=true",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 67109563
-          }
-        },
-        {
-          "tsName": "storageParameterPrefix",
-          "isStatic": true,
-          "tsSignatureId": "StorageParameterPrefix|System.String|static=true|const=true",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 67109564
-          }
-        },
-        {
-          "tsName": "postgresTypeType",
-          "isStatic": true,
-          "tsSignatureId": "PostgresTypeType|System.String|static=true|const=true",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 67109565
-          }
-        },
-        {
-          "tsName": "elementDataType",
-          "isStatic": true,
-          "tsSignatureId": "ElementDataType|System.String|static=true|const=true",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 67109566
-          }
-        },
-        {
-          "tsName": "indexExpression",
-          "isStatic": true,
-          "tsSignatureId": "IndexExpression|System.String|static=true|const=true",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 67109567
-          }
-        },
-        {
-          "tsName": "defaultColumnCollation",
-          "isStatic": true,
-          "tsSignatureId": "DefaultColumnCollation|System.String|static=true|const=true",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 67109568
-          }
-        },
-        {
-          "tsName": "valueGeneratedOnAdd",
-          "isStatic": true,
-          "tsSignatureId": "ValueGeneratedOnAdd|System.String|static=true|const=true",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 67109569
-          }
-        },
-        {
-          "tsName": "comment",
-          "isStatic": true,
-          "tsSignatureId": "Comment|System.String|static=true|const=true",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 67109570
-          }
-        },
-        {
-          "tsName": "indexCollation",
-          "isStatic": true,
-          "tsSignatureId": "IndexCollation|System.String|static=true|const=true",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 67109571
-          }
-        },
-        {
-          "tsName": "indexSortOrder",
-          "isStatic": true,
-          "tsSignatureId": "IndexSortOrder|System.String|static=true|const=true",
-          "target": {
-            "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal.NpgsqlAnnotationNames",
-            "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
-            "metadataToken": 67109572
-          }
-        }
-      ]
+      "constructors": []
     }
   ]
 }

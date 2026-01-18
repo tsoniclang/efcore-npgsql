@@ -20,8 +20,8 @@ import type { CoreTypeMapping } from "@tsonic/efcore/Microsoft.EntityFrameworkCo
 import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection.js";
 
 export interface NpgsqlAnnotationCodeGenerator$instance extends AnnotationCodeGenerator {
-    generateFluentApiCalls(model: IModel, annotations: IDictionary<System_Internal.String, IAnnotation>): IReadOnlyList<MethodCallCodeFragment>;
-    generateFluentApiCalls(property: IProperty, annotations: IDictionary<System_Internal.String, IAnnotation>): IReadOnlyList<MethodCallCodeFragment>;
+    GenerateFluentApiCalls(model: IModel, annotations: IDictionary<System_Internal.String, IAnnotation>): IReadOnlyList<MethodCallCodeFragment>;
+    GenerateFluentApiCalls(property: IProperty, annotations: IDictionary<System_Internal.String, IAnnotation>): IReadOnlyList<MethodCallCodeFragment>;
 }
 
 
@@ -33,15 +33,15 @@ export const NpgsqlAnnotationCodeGenerator: {
 export type NpgsqlAnnotationCodeGenerator = NpgsqlAnnotationCodeGenerator$instance;
 
 export interface NpgsqlCSharpRuntimeAnnotationCodeGenerator$instance extends RelationalCSharpRuntimeAnnotationCodeGenerator {
-    create(typeMapping: CoreTypeMapping, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters, valueComparer?: ValueComparer, keyValueComparer?: ValueComparer, providerValueComparer?: ValueComparer): boolean;
-    generate(model: IModel, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
-    generate(model: IRelationalModel, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
-    generate(property: IProperty, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
-    generate(column: IColumn, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
-    generate(index: IIndex, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
-    generate(index: ITableIndex, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
-    generate(entityType: IEntityType, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
-    generate(table: ITable, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
+    Create(typeMapping: CoreTypeMapping, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters, valueComparer?: ValueComparer, keyValueComparer?: ValueComparer, providerValueComparer?: ValueComparer): boolean;
+    Generate(model: IModel, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
+    Generate(model: IRelationalModel, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
+    Generate(property: IProperty, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
+    Generate(column: IColumn, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
+    Generate(index: IIndex, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
+    Generate(index: ITableIndex, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
+    Generate(entityType: IEntityType, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
+    Generate(table: ITable, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
 }
 
 
@@ -53,7 +53,7 @@ export const NpgsqlCSharpRuntimeAnnotationCodeGenerator: {
 export type NpgsqlCSharpRuntimeAnnotationCodeGenerator = NpgsqlCSharpRuntimeAnnotationCodeGenerator$instance;
 
 export interface NpgsqlDesignTimeServices$instance {
-    configureDesignTimeServices(serviceCollection: IServiceCollection): void;
+    ConfigureDesignTimeServices(serviceCollection: IServiceCollection): void;
 }
 
 

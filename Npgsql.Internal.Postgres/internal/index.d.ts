@@ -10,36 +10,36 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Boolean as ClrBoolean, IEquatable, Int32, Object as ClrObject, String as ClrString, UInt32, ValueType } from "@tsonic/dotnet/System.js";
 
 export interface DataTypeName$instance {
-    readonly displayName: string;
-    readonly isArray: boolean;
-    readonly isUnqualified: boolean;
-    readonly schema: string;
-    readonly unqualifiedDisplayName: string;
-    readonly unqualifiedName: string;
-    readonly value: string;
-    equals(other: DataTypeName): boolean;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
-    toArrayName(): DataTypeName;
-    toDefaultMultirangeName(): DataTypeName;
-    toString(): string;
+    readonly DisplayName: string;
+    readonly IsArray: boolean;
+    readonly IsUnqualified: boolean;
+    readonly Schema: string;
+    readonly UnqualifiedDisplayName: string;
+    readonly UnqualifiedName: string;
+    readonly Value: string;
+    Equals(other: DataTypeName): boolean;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
+    ToArrayName(): DataTypeName;
+    ToDefaultMultirangeName(): DataTypeName;
+    ToString(): string;
 }
 
 
 export const DataTypeName: {
     new(fullyQualifiedDataTypeName: string): DataTypeName;
-    readonly unspecified: DataTypeName;
-    fromDisplayName(displayName: string, schema?: string): DataTypeName;
-    getUnqualifiedName(dataTypeName: string): string;
+    readonly Unspecified: DataTypeName;
+    FromDisplayName(displayName: string, schema?: string): DataTypeName;
+    GetUnqualifiedName(dataTypeName: string): string;
 };
 
 
 export type DataTypeName = DataTypeName$instance;
 
 export interface Field$instance {
-    name: string;
-    pgTypeId: PgTypeId;
-    typeModifier: int;
+    Name: string;
+    PgTypeId: PgTypeId;
+    TypeModifier: int;
 }
 
 
@@ -51,31 +51,31 @@ export const Field: {
 export type Field = Field$instance;
 
 export interface Oid$instance {
-    value: uint;
-    equals(other: Oid): boolean;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
-    toString(): string;
+    Value: uint;
+    Equals(other: Oid): boolean;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
+    ToString(): string;
 }
 
 
 export const Oid: {
     new(value: uint): Oid;
-    readonly unspecified: Oid;
+    readonly Unspecified: Oid;
 };
 
 
 export type Oid = Oid$instance;
 
 export interface PgTypeId$instance {
-    readonly dataTypeName: DataTypeName;
-    readonly isDataTypeName: boolean;
-    readonly isOid: boolean;
-    readonly oid: Oid;
-    equals(other: PgTypeId): boolean;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
-    toString(): string;
+    readonly DataTypeName: DataTypeName;
+    readonly IsDataTypeName: boolean;
+    readonly IsOid: boolean;
+    readonly Oid: Oid;
+    Equals(other: PgTypeId): boolean;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
+    ToString(): string;
 }
 
 

@@ -15,10 +15,10 @@ import type { ShapedQueryExpression } from "@tsonic/efcore/Microsoft.EntityFrame
 import type { ColumnExpression, SqlExpression } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Query.SqlExpressions.js";
 
 export abstract class NpgsqlShapedQueryExpressionExtensions$instance {
-    static tryConvertToArray(source: ShapedQueryExpression, array: SqlExpression, ignoreOrderings?: boolean, ignorePredicate?: boolean): boolean;
-    static tryExtractArray(source: ShapedQueryExpression, array: SqlExpression, projectedColumn: ColumnExpression, ignoreOrderings?: boolean, ignorePredicate?: boolean): boolean;
-    static tryExtractArray(source: ShapedQueryExpression, array: SqlExpression, ignoreOrderings?: boolean, ignorePredicate?: boolean): boolean;
-    static tryExtractJsonArray(source: ShapedQueryExpression, jsonArray: SqlExpression, projectedElement: SqlExpression, isElementNullable: boolean, ignoreOrderings?: boolean, ignorePredicate?: boolean): boolean;
+    static TryConvertToArray(source: ShapedQueryExpression, array: SqlExpression, ignoreOrderings?: boolean, ignorePredicate?: boolean): boolean;
+    static TryExtractArray(source: ShapedQueryExpression, array: SqlExpression, projectedColumn: ColumnExpression, ignoreOrderings?: boolean, ignorePredicate?: boolean): boolean;
+    static TryExtractArray(source: ShapedQueryExpression, array: SqlExpression, ignoreOrderings?: boolean, ignorePredicate?: boolean): boolean;
+    static TryExtractJsonArray(source: ShapedQueryExpression, jsonArray: SqlExpression, projectedElement: SqlExpression, isElementNullable: boolean, ignoreOrderings?: boolean, ignorePredicate?: boolean): boolean;
 }
 
 

@@ -11,7 +11,7 @@ import type { IEnumerable } from "@tsonic/dotnet/System.Collections.js";
 import type { ValueConverter } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.ValueConversion.js";
 
 export interface NpgsqlArrayConverter_3$instance<TModelCollection extends IEnumerable, TConcreteModelCollection extends IEnumerable, TProviderCollection extends IEnumerable> extends ValueConverter<TModelCollection, TProviderCollection> {
-    readonly elementConverter: ValueConverter | undefined;
+    readonly ElementConverter: ValueConverter | undefined;
 }
 
 

@@ -22,17 +22,17 @@ import type { HistoryRepository, HistoryRepositoryDependencies, HistoryRow, IHis
 import type { IDatabaseCreator, IDatabaseProvider, IExecutionStrategy, IRawSqlCommandBuilder, IRelationalConnection, ISqlGenerationHelper } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
 
 export interface NpgsqlHistoryRepository$instance extends HistoryRepository {
-    readonly lockReleaseBehavior: LockReleaseBehavior;
-    acquireDatabaseLock(): IMigrationsDatabaseLock;
-    acquireDatabaseLockAsync(cancellationToken?: CancellationToken): Task<IMigrationsDatabaseLock>;
-    exists(): boolean;
-    existsAsync(cancellationToken?: CancellationToken): Task<System_Internal.Boolean>;
-    getAppliedMigrations(): IReadOnlyList<HistoryRow>;
-    getAppliedMigrationsAsync(cancellationToken?: CancellationToken): Task<IReadOnlyList<HistoryRow>>;
-    getBeginIfExistsScript(migrationId: string): string;
-    getBeginIfNotExistsScript(migrationId: string): string;
-    getCreateIfNotExistsScript(): string;
-    getEndIfScript(): string;
+    readonly LockReleaseBehavior: LockReleaseBehavior;
+    AcquireDatabaseLock(): IMigrationsDatabaseLock;
+    AcquireDatabaseLockAsync(cancellationToken?: CancellationToken): Task<IMigrationsDatabaseLock>;
+    Exists(): boolean;
+    ExistsAsync(cancellationToken?: CancellationToken): Task<System_Internal.Boolean>;
+    GetAppliedMigrations(): IReadOnlyList<HistoryRow>;
+    GetAppliedMigrationsAsync(cancellationToken?: CancellationToken): Task<IReadOnlyList<HistoryRow>>;
+    GetBeginIfExistsScript(migrationId: string): string;
+    GetBeginIfNotExistsScript(migrationId: string): string;
+    GetCreateIfNotExistsScript(): string;
+    GetEndIfScript(): string;
 }
 
 
@@ -44,8 +44,8 @@ export const NpgsqlHistoryRepository: {
 export type NpgsqlHistoryRepository = NpgsqlHistoryRepository$instance;
 
 export interface NpgsqlMigrator$instance extends Migrator {
-    migrate(targetMigration: string): void;
-    migrateAsync(targetMigration: string, cancellationToken?: CancellationToken): Task;
+    Migrate(targetMigration: string): void;
+    MigrateAsync(targetMigration: string, cancellationToken?: CancellationToken): Task;
 }
 
 

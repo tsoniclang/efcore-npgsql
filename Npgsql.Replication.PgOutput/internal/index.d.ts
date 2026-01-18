@@ -28,30 +28,30 @@ export enum PgOutputProtocolVersion {
 
 
 export enum PgOutputStreamingMode {
-    off = 0,
-    on = 1,
-    parallel = 2
+    Off = 0,
+    On = 1,
+    Parallel = 2
 }
 
 
 export enum TupleDataKind {
-    null = 110,
-    unchangedToastedValue = 117,
-    textValue = 116,
-    binaryValue = 98
+    Null = 110,
+    UnchangedToastedValue = 117,
+    TextValue = 116,
+    BinaryValue = 98
 }
 
 
 export interface PgOutputReplicationOptions$instance {
-    readonly binary: Nullable<System_Internal.Boolean>;
-    readonly messages: Nullable<System_Internal.Boolean>;
-    readonly protocolVersion: PgOutputProtocolVersion;
-    readonly publicationNames: List<System_Internal.String>;
-    readonly streamingMode: Nullable<PgOutputStreamingMode>;
-    readonly twoPhase: Nullable<System_Internal.Boolean>;
-    equals(other: PgOutputReplicationOptions): boolean;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
+    readonly Binary: Nullable<System_Internal.Boolean>;
+    readonly Messages: Nullable<System_Internal.Boolean>;
+    readonly ProtocolVersion: PgOutputProtocolVersion;
+    readonly PublicationNames: List<System_Internal.String>;
+    readonly StreamingMode: Nullable<PgOutputStreamingMode>;
+    readonly TwoPhase: Nullable<System_Internal.Boolean>;
+    Equals(other: PgOutputReplicationOptions): boolean;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
 }
 
 
@@ -78,8 +78,8 @@ export const PgOutputReplicationSlot: {
 export type PgOutputReplicationSlot = PgOutputReplicationSlot$instance;
 
 export interface ReplicationTuple$instance {
-    readonly numColumns: ushort;
-    getAsyncEnumerator(cancellationToken?: CancellationToken): IAsyncEnumerator<ReplicationValue>;
+    readonly NumColumns: ushort;
+    GetAsyncEnumerator(cancellationToken?: CancellationToken): IAsyncEnumerator<ReplicationValue>;
 }
 
 
@@ -91,18 +91,18 @@ export const ReplicationTuple: {
 export type ReplicationTuple = ReplicationTuple$instance;
 
 export interface ReplicationValue$instance {
-    readonly isDBNull: boolean;
-    readonly isUnchangedToastedValue: boolean;
-    readonly kind: TupleDataKind;
-    readonly length: int;
-    get<T>(cancellationToken?: CancellationToken): ValueTask<T>;
-    get(cancellationToken?: CancellationToken): ValueTask<unknown>;
-    getDataTypeName(): string;
-    getFieldName(): string;
-    getFieldType(): Type;
-    getPostgresType(): PostgresType;
-    getStream(): Stream;
-    getTextReader(): TextReader;
+    readonly IsDBNull: boolean;
+    readonly IsUnchangedToastedValue: boolean;
+    readonly Kind: TupleDataKind;
+    readonly Length: int;
+    Get<T>(cancellationToken?: CancellationToken): ValueTask<T>;
+    Get(cancellationToken?: CancellationToken): ValueTask<unknown>;
+    GetDataTypeName(): string;
+    GetFieldName(): string;
+    GetFieldType(): Type;
+    GetPostgresType(): PostgresType;
+    GetStream(): Stream;
+    GetTextReader(): TextReader;
 }
 
 

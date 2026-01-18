@@ -14,7 +14,7 @@ import type { Boolean as ClrBoolean, Object as ClrObject } from "@tsonic/dotnet/
 import type { IReadOnlyIndex, StoreObjectIdentifier } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js";
 
 export abstract class NpgsqlIndexExtensions$instance {
-    static areCompatibleForNpgsql(index: IReadOnlyIndex, duplicateIndex: IReadOnlyIndex, storeObject: StoreObjectIdentifier, shouldThrow: boolean): boolean;
+    static AreCompatibleForNpgsql(index: IReadOnlyIndex, duplicateIndex: IReadOnlyIndex, storeObject: StoreObjectIdentifier, shouldThrow: boolean): boolean;
 }
 
 

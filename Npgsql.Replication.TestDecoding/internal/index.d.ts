@@ -15,9 +15,9 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Boolean as ClrBoolean, DateTime, IEquatable, Int32, Nullable, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
 
 export interface TestDecodingData$instance extends ReplicationMessage {
-    readonly data: string;
-    clone(): TestDecodingData;
-    toString(): string;
+    readonly Data: string;
+    Clone(): TestDecodingData;
+    ToString(): string;
 }
 
 
@@ -29,16 +29,16 @@ export const TestDecodingData: {
 export type TestDecodingData = TestDecodingData$instance;
 
 export interface TestDecodingOptions$instance {
-    readonly forceBinary: Nullable<System_Internal.Boolean>;
-    readonly includeRewrites: Nullable<System_Internal.Boolean>;
-    readonly includeTimestamp: Nullable<System_Internal.Boolean>;
-    readonly includeXids: Nullable<System_Internal.Boolean>;
-    readonly onlyLocal: Nullable<System_Internal.Boolean>;
-    readonly skipEmptyXacts: Nullable<System_Internal.Boolean>;
-    readonly streamChanges: Nullable<System_Internal.Boolean>;
-    equals(other: TestDecodingOptions): boolean;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
+    readonly ForceBinary: Nullable<System_Internal.Boolean>;
+    readonly IncludeRewrites: Nullable<System_Internal.Boolean>;
+    readonly IncludeTimestamp: Nullable<System_Internal.Boolean>;
+    readonly IncludeXids: Nullable<System_Internal.Boolean>;
+    readonly OnlyLocal: Nullable<System_Internal.Boolean>;
+    readonly SkipEmptyXacts: Nullable<System_Internal.Boolean>;
+    readonly StreamChanges: Nullable<System_Internal.Boolean>;
+    Equals(other: TestDecodingOptions): boolean;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
 }
 
 

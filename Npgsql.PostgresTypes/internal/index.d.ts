@@ -11,7 +11,7 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString, UInt32 } from "@tsonic/dotnet/System.js";
 
 export interface PostgresArrayType$instance extends PostgresType {
-    readonly element: PostgresType;
+    readonly Element: PostgresType;
 }
 
 
@@ -34,7 +34,7 @@ export const PostgresBaseType: {
 export type PostgresBaseType = PostgresBaseType$instance;
 
 export interface PostgresCompositeType$instance extends PostgresType {
-    readonly fields: IReadOnlyList<PostgresCompositeType_Field>;
+    readonly Fields: IReadOnlyList<PostgresCompositeType_Field>;
 }
 
 
@@ -46,9 +46,9 @@ export const PostgresCompositeType: {
 export type PostgresCompositeType = PostgresCompositeType$instance;
 
 export interface PostgresCompositeType_Field$instance {
-    readonly name: string;
-    readonly type: PostgresType;
-    toString(): string;
+    readonly Name: string;
+    readonly Type: PostgresType;
+    ToString(): string;
 }
 
 
@@ -60,8 +60,8 @@ export const PostgresCompositeType_Field: {
 export type PostgresCompositeType_Field = PostgresCompositeType_Field$instance;
 
 export interface PostgresDomainType$instance extends PostgresType {
-    readonly baseType: PostgresType;
-    readonly notNull: boolean;
+    readonly BaseType: PostgresType;
+    readonly NotNull: boolean;
 }
 
 
@@ -73,7 +73,7 @@ export const PostgresDomainType: {
 export type PostgresDomainType = PostgresDomainType$instance;
 
 export interface PostgresEnumType$instance extends PostgresType {
-    readonly labels: IReadOnlyList<System_Internal.String>;
+    readonly Labels: IReadOnlyList<System_Internal.String>;
 }
 
 
@@ -85,7 +85,7 @@ export const PostgresEnumType: {
 export type PostgresEnumType = PostgresEnumType$instance;
 
 export interface PostgresMultirangeType$instance extends PostgresType {
-    readonly subrange: PostgresRangeType;
+    readonly Subrange: PostgresRangeType;
 }
 
 
@@ -97,8 +97,8 @@ export const PostgresMultirangeType: {
 export type PostgresMultirangeType = PostgresMultirangeType$instance;
 
 export interface PostgresRangeType$instance extends PostgresType {
-    readonly multirange: PostgresMultirangeType | undefined;
-    readonly subtype: PostgresType;
+    readonly Multirange: PostgresMultirangeType | undefined;
+    readonly Subtype: PostgresType;
 }
 
 
@@ -110,15 +110,15 @@ export const PostgresRangeType: {
 export type PostgresRangeType = PostgresRangeType$instance;
 
 export interface PostgresType$instance {
-    readonly array: PostgresArrayType | undefined;
-    readonly displayName: string;
-    readonly fullName: string;
-    readonly internalName: string;
-    readonly name: string;
-    readonly namespace: string;
+    readonly Array: PostgresArrayType | undefined;
+    readonly DisplayName: string;
+    readonly FullName: string;
+    readonly InternalName: string;
+    readonly Name: string;
+    readonly Namespace: string;
     readonly OID: uint;
-    readonly range: PostgresRangeType | undefined;
-    toString(): string;
+    readonly Range: PostgresRangeType | undefined;
+    ToString(): string;
 }
 
 

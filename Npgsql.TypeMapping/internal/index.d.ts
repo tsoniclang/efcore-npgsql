@@ -13,25 +13,25 @@ import type { Boolean as ClrBoolean, Enum, Object as ClrObject, String as ClrStr
 import type { JsonSerializerOptions } from "@tsonic/dotnet/System.Text.Json.js";
 
 export interface INpgsqlTypeMapper$instance {
-    defaultNameTranslator: INpgsqlNameTranslator;
-    addDbTypeResolverFactory(factory: DbTypeResolverFactory): void;
-    addTypeInfoResolverFactory(factory: PgTypeInfoResolverFactory): void;
-    configureJsonOptions(serializerOptions: JsonSerializerOptions): INpgsqlTypeMapper;
-    enableDynamicJson(jsonbClrTypes?: Type[], jsonClrTypes?: Type[]): INpgsqlTypeMapper;
-    enableRecordsAsTuples(): INpgsqlTypeMapper;
-    mapEnum<TEnum extends number>(pgName?: string, nameTranslator?: INpgsqlNameTranslator): INpgsqlTypeMapper;
-    mapEnum(clrType: Type, pgName?: string, nameTranslator?: INpgsqlNameTranslator): INpgsqlTypeMapper;
-    reset(): void;
-    unmapEnum<TEnum extends number>(pgName?: string, nameTranslator?: INpgsqlNameTranslator): boolean;
-    unmapEnum(clrType: Type, pgName?: string, nameTranslator?: INpgsqlNameTranslator): boolean;
+    DefaultNameTranslator: INpgsqlNameTranslator;
+    AddDbTypeResolverFactory(factory: DbTypeResolverFactory): void;
+    AddTypeInfoResolverFactory(factory: PgTypeInfoResolverFactory): void;
+    ConfigureJsonOptions(serializerOptions: JsonSerializerOptions): INpgsqlTypeMapper;
+    EnableDynamicJson(jsonbClrTypes?: Type[], jsonClrTypes?: Type[]): INpgsqlTypeMapper;
+    EnableRecordsAsTuples(): INpgsqlTypeMapper;
+    MapEnum<TEnum extends number>(pgName?: string, nameTranslator?: INpgsqlNameTranslator): INpgsqlTypeMapper;
+    MapEnum(clrType: Type, pgName?: string, nameTranslator?: INpgsqlNameTranslator): INpgsqlTypeMapper;
+    Reset(): void;
+    UnmapEnum<TEnum extends number>(pgName?: string, nameTranslator?: INpgsqlNameTranslator): boolean;
+    UnmapEnum(clrType: Type, pgName?: string, nameTranslator?: INpgsqlNameTranslator): boolean;
 }
 
 
 export type INpgsqlTypeMapper = INpgsqlTypeMapper$instance;
 
 export interface UserTypeMapping$instance {
-    readonly clrType: Type;
-    readonly pgTypeName: string;
+    readonly ClrType: Type;
+    readonly PgTypeName: string;
 }
 
 

@@ -19,26 +19,26 @@ import type { AtTimeZoneExpression, SqlExpression } from "@tsonic/efcore/Microso
 import type { RelationalTypeMapping } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
 
 export interface NpgsqlSqlExpressionFactory$instance extends SqlExpressionFactory {
-    aggregateFunction(name: string, arguments: IEnumerable<SqlExpression>, aggregateEnumerableExpression: EnumerableExpression, nullable: boolean, argumentsPropagateNullability: IEnumerable<System_Internal.Boolean>, returnType: Type, typeMapping?: RelationalTypeMapping): PgFunctionExpression;
-    all(item: SqlExpression, array: SqlExpression, operatorType: PgAllOperatorType): PgAllExpression;
-    any(item: SqlExpression, array: SqlExpression, operatorType: PgAnyOperatorType): PgAnyExpression;
-    applyTypeMapping(sqlExpression: SqlExpression, typeMapping: RelationalTypeMapping): SqlExpression | undefined;
-    arrayIndex(array: SqlExpression, index: SqlExpression, nullable: boolean, typeMapping?: RelationalTypeMapping): PgArrayIndexExpression;
-    arraySlice(array: SqlExpression, lowerBound: SqlExpression, upperBound: SqlExpression, nullable: boolean, typeMapping?: RelationalTypeMapping): PgArraySliceExpression;
-    atTimeZone(timestamp: SqlExpression, timeZone: SqlExpression, type: Type, typeMapping?: RelationalTypeMapping): AtTimeZoneExpression;
-    atUtc(timestamp: SqlExpression, typeMapping?: RelationalTypeMapping): AtTimeZoneExpression;
-    containedBy(left: SqlExpression, right: SqlExpression): SqlExpression;
-    contains(left: SqlExpression, right: SqlExpression): SqlExpression;
-    generateOneBasedIndexExpression(expression: SqlExpression): SqlExpression;
-    iLike(match: SqlExpression, pattern: SqlExpression, escapeChar?: SqlExpression): PgILikeExpression;
-    jsonTraversal(expression: SqlExpression, returnsText: boolean, type: Type, typeMapping?: RelationalTypeMapping): PgJsonTraversalExpression;
-    jsonTraversal(expression: SqlExpression, path: IEnumerable<SqlExpression>, returnsText: boolean, type: Type, typeMapping?: RelationalTypeMapping): PgJsonTraversalExpression;
-    makeBinary(operatorType: ExpressionType, left: SqlExpression, right: SqlExpression, typeMapping: RelationalTypeMapping, existingExpr?: SqlExpression): SqlExpression | undefined;
-    makePostgresBinary(operatorType: PgExpressionType, left: SqlExpression, right: SqlExpression, typeMapping?: RelationalTypeMapping): SqlExpression;
-    newArray(expressions: IReadOnlyList<SqlExpression>, type: Type, typeMapping?: RelationalTypeMapping): PgNewArrayExpression;
-    newArrayOrConstant(elements: IReadOnlyList<SqlExpression>, type: Type, typeMapping?: RelationalTypeMapping): SqlExpression;
-    overlaps(left: SqlExpression, right: SqlExpression): SqlExpression;
-    regexMatch(match: SqlExpression, pattern: SqlExpression, options: RegexOptions): PgRegexMatchExpression;
+    AggregateFunction(name: string, arguments: IEnumerable<SqlExpression>, aggregateEnumerableExpression: EnumerableExpression, nullable: boolean, argumentsPropagateNullability: IEnumerable<System_Internal.Boolean>, returnType: Type, typeMapping?: RelationalTypeMapping): PgFunctionExpression;
+    All(item: SqlExpression, array: SqlExpression, operatorType: PgAllOperatorType): PgAllExpression;
+    Any(item: SqlExpression, array: SqlExpression, operatorType: PgAnyOperatorType): PgAnyExpression;
+    ApplyTypeMapping(sqlExpression: SqlExpression, typeMapping: RelationalTypeMapping): SqlExpression | undefined;
+    ArrayIndex(array: SqlExpression, index: SqlExpression, nullable: boolean, typeMapping?: RelationalTypeMapping): PgArrayIndexExpression;
+    ArraySlice(array: SqlExpression, lowerBound: SqlExpression, upperBound: SqlExpression, nullable: boolean, typeMapping?: RelationalTypeMapping): PgArraySliceExpression;
+    AtTimeZone(timestamp: SqlExpression, timeZone: SqlExpression, type: Type, typeMapping?: RelationalTypeMapping): AtTimeZoneExpression;
+    AtUtc(timestamp: SqlExpression, typeMapping?: RelationalTypeMapping): AtTimeZoneExpression;
+    ContainedBy(left: SqlExpression, right: SqlExpression): SqlExpression;
+    Contains(left: SqlExpression, right: SqlExpression): SqlExpression;
+    GenerateOneBasedIndexExpression(expression: SqlExpression): SqlExpression;
+    ILike(match: SqlExpression, pattern: SqlExpression, escapeChar?: SqlExpression): PgILikeExpression;
+    JsonTraversal(expression: SqlExpression, returnsText: boolean, type: Type, typeMapping?: RelationalTypeMapping): PgJsonTraversalExpression;
+    JsonTraversal(expression: SqlExpression, path: IEnumerable<SqlExpression>, returnsText: boolean, type: Type, typeMapping?: RelationalTypeMapping): PgJsonTraversalExpression;
+    MakeBinary(operatorType: ExpressionType, left: SqlExpression, right: SqlExpression, typeMapping: RelationalTypeMapping, existingExpr?: SqlExpression): SqlExpression | undefined;
+    MakePostgresBinary(operatorType: PgExpressionType, left: SqlExpression, right: SqlExpression, typeMapping?: RelationalTypeMapping): SqlExpression;
+    NewArray(expressions: IReadOnlyList<SqlExpression>, type: Type, typeMapping?: RelationalTypeMapping): PgNewArrayExpression;
+    NewArrayOrConstant(elements: IReadOnlyList<SqlExpression>, type: Type, typeMapping?: RelationalTypeMapping): SqlExpression;
+    Overlaps(left: SqlExpression, right: SqlExpression): SqlExpression;
+    RegexMatch(match: SqlExpression, pattern: SqlExpression, options: RegexOptions): PgRegexMatchExpression;
 }
 
 

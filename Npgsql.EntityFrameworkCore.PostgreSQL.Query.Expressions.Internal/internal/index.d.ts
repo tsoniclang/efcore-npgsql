@@ -23,27 +23,27 @@ import type { ITableBasedExpression, OrderingExpression, SqlExpression, SqlFunct
 import type { RelationalTypeMapping } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
 
 export enum PgAllOperatorType {
-    like = 0,
-    iLike = 1
+    Like = 0,
+    ILike = 1
 }
 
 
 export enum PgAnyOperatorType {
-    equal = 0,
-    like = 1,
-    iLike = 2
+    Equal = 0,
+    Like = 1,
+    ILike = 2
 }
 
 
 export interface PgTableValuedFunctionExpression_ColumnInfo$instance {
-    name: string;
-    get typeMapping(): RelationalTypeMapping | undefined;
-    set typeMapping(value: RelationalTypeMapping);
-    deconstruct(Name: string, TypeMapping: RelationalTypeMapping): void;
-    equals(obj: unknown): boolean;
-    equals(other: PgTableValuedFunctionExpression_ColumnInfo): boolean;
-    getHashCode(): int;
-    toString(): string;
+    Name: string;
+    get TypeMapping(): RelationalTypeMapping | undefined;
+    set TypeMapping(value: RelationalTypeMapping);
+    Deconstruct(Name: string, TypeMapping: RelationalTypeMapping): void;
+    Equals(obj: unknown): boolean;
+    Equals(other: PgTableValuedFunctionExpression_ColumnInfo): boolean;
+    GetHashCode(): int;
+    ToString(): string;
 }
 
 
@@ -55,16 +55,16 @@ export const PgTableValuedFunctionExpression_ColumnInfo: {
 export type PgTableValuedFunctionExpression_ColumnInfo = PgTableValuedFunctionExpression_ColumnInfo$instance;
 
 export interface PgAllExpression$instance extends SqlExpression {
-    readonly array: SqlExpression;
-    readonly item: SqlExpression;
-    readonly operatorType: PgAllOperatorType;
-    readonly type: Type;
-    equals(obj: unknown): boolean;
-    equals(other: PgAllExpression): boolean;
-    getHashCode(): int;
-    quote(): Expression;
-    toString(): string;
-    update(item: SqlExpression, array: SqlExpression): PgAllExpression;
+    readonly Array: SqlExpression;
+    readonly Item: SqlExpression;
+    readonly OperatorType: PgAllOperatorType;
+    readonly Type: Type;
+    Equals(obj: unknown): boolean;
+    Equals(other: PgAllExpression): boolean;
+    GetHashCode(): int;
+    Quote(): Expression;
+    ToString(): string;
+    Update(item: SqlExpression, array: SqlExpression): PgAllExpression;
 }
 
 
@@ -76,16 +76,16 @@ export const PgAllExpression: {
 export type PgAllExpression = PgAllExpression$instance;
 
 export interface PgAnyExpression$instance extends SqlExpression {
-    readonly array: SqlExpression;
-    readonly item: SqlExpression;
-    readonly operatorType: PgAnyOperatorType;
-    readonly type: Type;
-    equals(obj: unknown): boolean;
-    equals(other: PgAnyExpression): boolean;
-    getHashCode(): int;
-    quote(): Expression;
-    toString(): string;
-    update(item: SqlExpression, array: SqlExpression): PgAnyExpression;
+    readonly Array: SqlExpression;
+    readonly Item: SqlExpression;
+    readonly OperatorType: PgAnyOperatorType;
+    readonly Type: Type;
+    Equals(obj: unknown): boolean;
+    Equals(other: PgAnyExpression): boolean;
+    GetHashCode(): int;
+    Quote(): Expression;
+    ToString(): string;
+    Update(item: SqlExpression, array: SqlExpression): PgAnyExpression;
 }
 
 
@@ -97,15 +97,15 @@ export const PgAnyExpression: {
 export type PgAnyExpression = PgAnyExpression$instance;
 
 export interface PgArrayIndexExpression$instance extends SqlExpression {
-    readonly array: SqlExpression;
-    readonly index: SqlExpression;
-    readonly isNullable: boolean;
-    equals(other: PgArrayIndexExpression): boolean;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
-    quote(): Expression;
-    toString(): string;
-    update(array: SqlExpression, index: SqlExpression): PgArrayIndexExpression;
+    readonly Array: SqlExpression;
+    readonly Index: SqlExpression;
+    readonly IsNullable: boolean;
+    Equals(other: PgArrayIndexExpression): boolean;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
+    Quote(): Expression;
+    ToString(): string;
+    Update(array: SqlExpression, index: SqlExpression): PgArrayIndexExpression;
 }
 
 
@@ -117,16 +117,16 @@ export const PgArrayIndexExpression: {
 export type PgArrayIndexExpression = PgArrayIndexExpression$instance;
 
 export interface PgArraySliceExpression$instance extends SqlExpression {
-    readonly array: SqlExpression;
-    readonly isNullable: boolean;
-    readonly lowerBound: SqlExpression;
-    readonly upperBound: SqlExpression;
-    equals(other: PgArraySliceExpression): boolean;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
-    quote(): Expression;
-    toString(): string;
-    update(array: SqlExpression, lowerBound: SqlExpression, upperBound: SqlExpression): PgArraySliceExpression;
+    readonly Array: SqlExpression;
+    readonly IsNullable: boolean;
+    readonly LowerBound: SqlExpression;
+    readonly UpperBound: SqlExpression;
+    Equals(other: PgArraySliceExpression): boolean;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
+    Quote(): Expression;
+    ToString(): string;
+    Update(array: SqlExpression, lowerBound: SqlExpression, upperBound: SqlExpression): PgArraySliceExpression;
 }
 
 
@@ -138,13 +138,13 @@ export const PgArraySliceExpression: {
 export type PgArraySliceExpression = PgArraySliceExpression$instance;
 
 export interface PgBinaryExpression$instance extends SqlExpression {
-    readonly left: SqlExpression;
-    readonly operatorType: PgExpressionType;
-    readonly right: SqlExpression;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
-    quote(): Expression;
-    update(left: SqlExpression, right: SqlExpression): PgBinaryExpression;
+    readonly Left: SqlExpression;
+    readonly OperatorType: PgExpressionType;
+    readonly Right: SqlExpression;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
+    Quote(): Expression;
+    Update(left: SqlExpression, right: SqlExpression): PgBinaryExpression;
 }
 
 
@@ -156,16 +156,16 @@ export const PgBinaryExpression: {
 export type PgBinaryExpression = PgBinaryExpression$instance;
 
 export interface PgDeleteExpression$instance extends Expression {
-    readonly fromItems: IReadOnlyList<TableExpressionBase>;
-    readonly nodeType: ExpressionType;
-    readonly predicate: SqlExpression | undefined;
-    readonly table: TableExpression;
-    readonly tags: ISet<System_Internal.String>;
-    readonly type: Type;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
-    print(expressionPrinter: ExpressionPrinter): void;
-    update(predicate: SqlExpression): PgDeleteExpression;
+    readonly FromItems: IReadOnlyList<TableExpressionBase>;
+    readonly NodeType: ExpressionType;
+    readonly Predicate: SqlExpression | undefined;
+    readonly Table: TableExpression;
+    readonly Tags: ISet<System_Internal.String>;
+    readonly Type: Type;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
+    Print(expressionPrinter: ExpressionPrinter): void;
+    Update(predicate: SqlExpression): PgDeleteExpression;
 }
 
 
@@ -177,41 +177,41 @@ export const PgDeleteExpression: {
 export type PgDeleteExpression = PgDeleteExpression$instance;
 
 export interface PgFunctionExpression$instance extends SqlFunctionExpression {
-    readonly aggregateOrderings: IReadOnlyList<OrderingExpression>;
-    readonly aggregatePredicate: SqlExpression | undefined;
-    readonly argumentNames: IReadOnlyList<string | undefined>;
-    readonly arguments: IReadOnlyList<SqlExpression>;
-    readonly argumentSeparators: IReadOnlyList<string | undefined>;
-    readonly argumentsPropagateNullability: IReadOnlyList<System_Internal.Boolean>;
-    readonly isAggregateDistinct: boolean;
-    applyTypeMapping(typeMapping: RelationalTypeMapping): SqlFunctionExpression;
-    equals(obj: unknown): boolean;
-    equals(other: PgFunctionExpression): boolean;
-    getHashCode(): int;
-    update(instance: SqlExpression, arguments: IReadOnlyList<SqlExpression>): SqlFunctionExpression;
-    updateAggregateComponents(predicate: SqlExpression, orderings: IReadOnlyList<OrderingExpression>): PgFunctionExpression;
+    readonly AggregateOrderings: IReadOnlyList<OrderingExpression>;
+    readonly AggregatePredicate: SqlExpression | undefined;
+    readonly ArgumentNames: IReadOnlyList<string | undefined>;
+    readonly Arguments: IReadOnlyList<SqlExpression>;
+    readonly ArgumentSeparators: IReadOnlyList<string | undefined>;
+    readonly ArgumentsPropagateNullability: IReadOnlyList<System_Internal.Boolean>;
+    readonly IsAggregateDistinct: boolean;
+    ApplyTypeMapping(typeMapping: RelationalTypeMapping): SqlFunctionExpression;
+    Equals(obj: unknown): boolean;
+    Equals(other: PgFunctionExpression): boolean;
+    GetHashCode(): int;
+    Update(instance: SqlExpression, arguments: IReadOnlyList<SqlExpression>): SqlFunctionExpression;
+    UpdateAggregateComponents(predicate: SqlExpression, orderings: IReadOnlyList<OrderingExpression>): PgFunctionExpression;
 }
 
 
 export const PgFunctionExpression: {
     new(name: string, arguments: IEnumerable<SqlExpression>, argumentNames: IEnumerable<System_Internal.String>, argumentSeparators: IEnumerable<System_Internal.String>, aggregateDistinct: boolean, aggregatePredicate: SqlExpression, aggregateOrderings: IReadOnlyList<OrderingExpression>, nullable: boolean, argumentsPropagateNullability: IEnumerable<System_Internal.Boolean>, type: Type, typeMapping: RelationalTypeMapping): PgFunctionExpression;
-    createWithArgumentSeparators(name: string, arguments: IEnumerable<SqlExpression>, argumentSeparators: IEnumerable<System_Internal.String>, nullable: boolean, argumentsPropagateNullability: IEnumerable<System_Internal.Boolean>, builtIn: boolean, type: Type, typeMapping: RelationalTypeMapping): PgFunctionExpression;
-    createWithNamedArguments(name: string, arguments: IEnumerable<SqlExpression>, argumentNames: IEnumerable<System_Internal.String>, nullable: boolean, argumentsPropagateNullability: IEnumerable<System_Internal.Boolean>, builtIn: boolean, type: Type, typeMapping: RelationalTypeMapping): PgFunctionExpression;
+    CreateWithArgumentSeparators(name: string, arguments: IEnumerable<SqlExpression>, argumentSeparators: IEnumerable<System_Internal.String>, nullable: boolean, argumentsPropagateNullability: IEnumerable<System_Internal.Boolean>, builtIn: boolean, type: Type, typeMapping: RelationalTypeMapping): PgFunctionExpression;
+    CreateWithNamedArguments(name: string, arguments: IEnumerable<SqlExpression>, argumentNames: IEnumerable<System_Internal.String>, nullable: boolean, argumentsPropagateNullability: IEnumerable<System_Internal.Boolean>, builtIn: boolean, type: Type, typeMapping: RelationalTypeMapping): PgFunctionExpression;
 };
 
 
 export type PgFunctionExpression = PgFunctionExpression$instance;
 
 export interface PgILikeExpression$instance extends SqlExpression {
-    readonly escapeChar: SqlExpression | undefined;
-    readonly match: SqlExpression;
-    readonly pattern: SqlExpression;
-    equals(obj: unknown): boolean;
-    equals(other: PgILikeExpression): boolean;
-    getHashCode(): int;
-    quote(): Expression;
-    toString(): string;
-    update(match: SqlExpression, pattern: SqlExpression, escapeChar: SqlExpression): PgILikeExpression;
+    readonly EscapeChar: SqlExpression | undefined;
+    readonly Match: SqlExpression;
+    readonly Pattern: SqlExpression;
+    Equals(obj: unknown): boolean;
+    Equals(other: PgILikeExpression): boolean;
+    GetHashCode(): int;
+    Quote(): Expression;
+    ToString(): string;
+    Update(match: SqlExpression, pattern: SqlExpression, escapeChar: SqlExpression): PgILikeExpression;
 }
 
 
@@ -223,16 +223,16 @@ export const PgILikeExpression: {
 export type PgILikeExpression = PgILikeExpression$instance;
 
 export interface PgJsonTraversalExpression$instance extends SqlExpression {
-    readonly expression: SqlExpression;
-    readonly path: IReadOnlyList<SqlExpression>;
-    readonly returnsText: boolean;
-    append(pathComponent: SqlExpression): PgJsonTraversalExpression;
-    equals(obj: unknown): boolean;
-    equals(other: PgJsonTraversalExpression): boolean;
-    getHashCode(): int;
-    quote(): Expression;
-    toString(): string;
-    update(expression: SqlExpression, path: IReadOnlyList<SqlExpression>): PgJsonTraversalExpression;
+    readonly Expression: SqlExpression;
+    readonly Path: IReadOnlyList<SqlExpression>;
+    readonly ReturnsText: boolean;
+    Append(pathComponent: SqlExpression): PgJsonTraversalExpression;
+    Equals(obj: unknown): boolean;
+    Equals(other: PgJsonTraversalExpression): boolean;
+    GetHashCode(): int;
+    Quote(): Expression;
+    ToString(): string;
+    Update(expression: SqlExpression, path: IReadOnlyList<SqlExpression>): PgJsonTraversalExpression;
 }
 
 
@@ -244,11 +244,11 @@ export const PgJsonTraversalExpression: {
 export type PgJsonTraversalExpression = PgJsonTraversalExpression$instance;
 
 export interface PgNewArrayExpression$instance extends SqlExpression {
-    readonly expressions: IReadOnlyList<SqlExpression>;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
-    quote(): Expression;
-    update(expressions: IReadOnlyList<SqlExpression>): PgNewArrayExpression;
+    readonly Expressions: IReadOnlyList<SqlExpression>;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
+    Quote(): Expression;
+    Update(expressions: IReadOnlyList<SqlExpression>): PgNewArrayExpression;
 }
 
 
@@ -260,16 +260,16 @@ export const PgNewArrayExpression: {
 export type PgNewArrayExpression = PgNewArrayExpression$instance;
 
 export interface PgRegexMatchExpression$instance extends SqlExpression {
-    readonly match: SqlExpression;
-    readonly options: RegexOptions;
-    readonly pattern: SqlExpression;
-    readonly type: Type;
-    equals(other: PgRegexMatchExpression): boolean;
-    equals(other: unknown): boolean;
-    getHashCode(): int;
-    quote(): Expression;
-    toString(): string;
-    update(match: SqlExpression, pattern: SqlExpression): PgRegexMatchExpression;
+    readonly Match: SqlExpression;
+    readonly Options: RegexOptions;
+    readonly Pattern: SqlExpression;
+    readonly Type: Type;
+    Equals(other: PgRegexMatchExpression): boolean;
+    Equals(other: unknown): boolean;
+    GetHashCode(): int;
+    Quote(): Expression;
+    ToString(): string;
+    Update(match: SqlExpression, pattern: SqlExpression): PgRegexMatchExpression;
 }
 
 
@@ -281,12 +281,12 @@ export const PgRegexMatchExpression: {
 export type PgRegexMatchExpression = PgRegexMatchExpression$instance;
 
 export interface PgRowValueExpression$instance extends SqlExpression {
-    readonly values: IReadOnlyList<SqlExpression>;
-    equals(obj: unknown): boolean;
-    equals(other: PgRowValueExpression): boolean;
-    getHashCode(): int;
-    quote(): Expression;
-    update(values: IReadOnlyList<SqlExpression>): PgRowValueExpression;
+    readonly Values: IReadOnlyList<SqlExpression>;
+    Equals(obj: unknown): boolean;
+    Equals(other: PgRowValueExpression): boolean;
+    GetHashCode(): int;
+    Quote(): Expression;
+    Update(values: IReadOnlyList<SqlExpression>): PgRowValueExpression;
 }
 
 
@@ -298,15 +298,15 @@ export const PgRowValueExpression: {
 export type PgRowValueExpression = PgRowValueExpression$instance;
 
 export interface PgTableValuedFunctionExpression$instance extends TableValuedFunctionExpression {
-    readonly columnInfos: IReadOnlyList<PgTableValuedFunctionExpression_ColumnInfo> | undefined;
-    readonly withOrdinality: boolean;
-    clone(alias: string, cloningExpressionVisitor: ExpressionVisitor): TableExpressionBase;
-    equals(obj: unknown): boolean;
-    equals(expression: PgTableValuedFunctionExpression): boolean;
-    getHashCode(): int;
-    update(arguments: IReadOnlyList<SqlExpression>): PgTableValuedFunctionExpression;
-    withAlias(newAlias: string): PgTableValuedFunctionExpression;
-    withColumnInfos(columnInfos: IReadOnlyList<PgTableValuedFunctionExpression_ColumnInfo>): PgTableValuedFunctionExpression;
+    readonly ColumnInfos: IReadOnlyList<PgTableValuedFunctionExpression_ColumnInfo> | undefined;
+    readonly WithOrdinality: boolean;
+    Clone(alias: string, cloningExpressionVisitor: ExpressionVisitor): TableExpressionBase;
+    Equals(obj: unknown): boolean;
+    Equals(expression: PgTableValuedFunctionExpression): boolean;
+    GetHashCode(): int;
+    Update(arguments: IReadOnlyList<SqlExpression>): PgTableValuedFunctionExpression;
+    WithAlias(newAlias: string): PgTableValuedFunctionExpression;
+    WithColumnInfos(columnInfos: IReadOnlyList<PgTableValuedFunctionExpression_ColumnInfo>): PgTableValuedFunctionExpression;
 }
 
 
@@ -318,15 +318,15 @@ export const PgTableValuedFunctionExpression: {
 export type PgTableValuedFunctionExpression = PgTableValuedFunctionExpression$instance;
 
 export interface PgUnknownBinaryExpression$instance extends SqlExpression {
-    readonly left: SqlExpression;
-    readonly operator: string;
-    readonly right: SqlExpression;
-    equals(other: PgUnknownBinaryExpression): boolean;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
-    quote(): Expression;
-    toString(): string;
-    update(left: SqlExpression, right: SqlExpression): PgUnknownBinaryExpression;
+    readonly Left: SqlExpression;
+    readonly Operator: string;
+    readonly Right: SqlExpression;
+    Equals(other: PgUnknownBinaryExpression): boolean;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
+    Quote(): Expression;
+    ToString(): string;
+    Update(left: SqlExpression, right: SqlExpression): PgUnknownBinaryExpression;
 }
 
 
@@ -338,16 +338,16 @@ export const PgUnknownBinaryExpression: {
 export type PgUnknownBinaryExpression = PgUnknownBinaryExpression$instance;
 
 export interface PgUnnestExpression$instance extends PgTableValuedFunctionExpression {
-    readonly array: SqlExpression;
-    readonly columnName: string;
-    clone(alias: string, cloningExpressionVisitor: ExpressionVisitor): TableExpressionBase;
-    update(arguments: IReadOnlyList<SqlExpression>): PgUnnestExpression;
-    update(array: SqlExpression): PgUnnestExpression;
-    update(arguments: IReadOnlyList<SqlExpression>): PgTableValuedFunctionExpression;
-    withAlias(newAlias: string): PgUnnestExpression;
-    withAlias(newAlias: string): PgTableValuedFunctionExpression;
-    withColumnInfos(columnInfos: IReadOnlyList<PgTableValuedFunctionExpression_ColumnInfo>): PgUnnestExpression;
-    withColumnInfos(columnInfos: IReadOnlyList<PgTableValuedFunctionExpression_ColumnInfo>): PgTableValuedFunctionExpression;
+    readonly Array: SqlExpression;
+    readonly ColumnName: string;
+    Clone(alias: string, cloningExpressionVisitor: ExpressionVisitor): TableExpressionBase;
+    Update(arguments: IReadOnlyList<SqlExpression>): PgUnnestExpression;
+    Update(array: SqlExpression): PgUnnestExpression;
+    Update(arguments: IReadOnlyList<SqlExpression>): PgTableValuedFunctionExpression;
+    WithAlias(newAlias: string): PgUnnestExpression;
+    WithAlias(newAlias: string): PgTableValuedFunctionExpression;
+    WithColumnInfos(columnInfos: IReadOnlyList<PgTableValuedFunctionExpression_ColumnInfo>): PgUnnestExpression;
+    WithColumnInfos(columnInfos: IReadOnlyList<PgTableValuedFunctionExpression_ColumnInfo>): PgTableValuedFunctionExpression;
 }
 
 
