@@ -15,7 +15,7 @@ import type { ReadOnlySequence } from '@tsonic/dotnet/System.Buffers.js';
 import type { IEnumerable, IReadOnlyList, List } from '@tsonic/dotnet/System.Collections.Generic.js';
 import type { DbType } from '@tsonic/dotnet/System.Data.js';
 import type { Stream, TextReader } from '@tsonic/dotnet/System.IO.js';
-import type { AsyncCallback, Boolean as ClrBoolean, Byte, Char, Double, Enum, Func, IAsyncDisposable, IAsyncResult, ICloneable, IComparable, IConvertible, IDisposable, IEquatable, IFormattable, Int16, Int32, Int64, IntPtr, ISpanFormattable, Memory, MulticastDelegate, Nullable, Object as ClrObject, ReadOnlyMemory, ReadOnlySpan, Single, Span, String as ClrString, TimeSpan, Type, UInt16, UInt32, UInt64, ValueType, Version, Void } from '@tsonic/dotnet/System.js';
+import type { ArgumentOutOfRangeException, AsyncCallback, Boolean as ClrBoolean, Byte, Char, Double, Enum, Func, IAsyncDisposable, IAsyncResult, ICloneable, IComparable, IConvertible, IDisposable, IEquatable, IFormattable, Int16, Int32, Int64, IntPtr, ISpanFormattable, Memory, MulticastDelegate, Nullable, Object as ClrObject, ReadOnlyMemory, ReadOnlySpan, Single, Span, String as ClrString, TimeSpan, Type, UInt16, UInt32, UInt64, ValueType, Version, Void } from '@tsonic/dotnet/System.js';
 import type { ISerializable } from '@tsonic/dotnet/System.Runtime.Serialization.js';
 import type { Encoding } from '@tsonic/dotnet/System.Text.js';
 import type { CancellationToken } from '@tsonic/dotnet/System.Threading.js';

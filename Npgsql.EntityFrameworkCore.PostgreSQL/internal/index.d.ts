@@ -8,12 +8,17 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 // Import types from other namespaces
 import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { ICollection } from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { Int32, String as ClrString, TimeSpan } from "@tsonic/dotnet/System.js";
+import type { Boolean as ClrBoolean, Exception, Int32, String as ClrString, TimeSpan } from "@tsonic/dotnet/System.js";
 import type { DbContext } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.js";
 import * as Microsoft_EntityFrameworkCore_Storage_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
 import type { ExecutionStrategy, ExecutionStrategyDependencies, IExecutionStrategy } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
 
-export interface NpgsqlRetryingExecutionStrategy$instance extends ExecutionStrategy {
+export abstract class NpgsqlRetryingExecutionStrategy$protected {
+    protected ShouldRetryOn(exception: Exception): boolean;
+}
+
+
+export interface NpgsqlRetryingExecutionStrategy$instance extends NpgsqlRetryingExecutionStrategy$protected, ExecutionStrategy {
 }
 
 

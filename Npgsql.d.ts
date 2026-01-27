@@ -12,7 +12,7 @@ import type { NpgsqlDbColumn } from './Npgsql.Schema/internal/index.js';
 import type { INpgsqlTypeMapper } from './Npgsql.TypeMapping/internal/index.js';
 import type { NpgsqlDbType } from './NpgsqlTypes/internal/index.js';
 import type { ICollection as ICollection__System_Collections_Generic, IDictionary as IDictionary__System_Collections_Generic, IEnumerable as IEnumerable__System_Collections_Generic, IEnumerator as IEnumerator__System_Collections_Generic, IList as IList__System_Collections_Generic, IReadOnlyDictionary, IReadOnlyList, KeyValuePair } from '@tsonic/dotnet/System.Collections.Generic.js';
-import type { ICollection, IDictionary, IEnumerable, IEnumerator, IList } from '@tsonic/dotnet/System.Collections.js';
+import type { Hashtable, ICollection, IDictionary, IEnumerable, IEnumerator, IList } from '@tsonic/dotnet/System.Collections.js';
 import type { ReadOnlyCollection } from '@tsonic/dotnet/System.Collections.ObjectModel.js';
 import type { IComponent, ICustomTypeDescriptor } from '@tsonic/dotnet/System.ComponentModel.js';
 import type { DataTableMapping, DbBatch, DbBatchCommand, DbBatchCommandCollection, DbColumn, DbCommand, DbCommandBuilder, DbConnection, DbConnectionStringBuilder, DbDataAdapter, DbDataReader, DbDataSource, DbException, DbParameter, DbParameterCollection, DbProviderFactory, DbTransaction, IDbColumnSchemaGenerator, RowUpdatedEventArgs, RowUpdatingEventArgs } from '@tsonic/dotnet/System.Data.Common.js';

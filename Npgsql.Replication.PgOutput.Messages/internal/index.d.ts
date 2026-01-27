@@ -92,8 +92,8 @@ export const RelationMessageColumn: {
 export type RelationMessageColumn = RelationMessageColumn$instance;
 
 export interface BeginMessage$instance extends TransactionControlMessage {
-    readonly TransactionCommitTimestamp: DateTime;
-    readonly TransactionFinalLsn: NpgsqlLogSequenceNumber;
+    TransactionCommitTimestamp: DateTime;
+    TransactionFinalLsn: NpgsqlLogSequenceNumber;
 }
 
 
@@ -116,10 +116,10 @@ export const BeginPrepareMessage: {
 export type BeginPrepareMessage = BeginPrepareMessage$instance;
 
 export interface CommitMessage$instance extends PgOutputReplicationMessage {
-    readonly CommitLsn: NpgsqlLogSequenceNumber;
-    readonly Flags: CommitMessage_CommitFlags;
-    readonly TransactionCommitTimestamp: DateTime;
-    readonly TransactionEndLsn: NpgsqlLogSequenceNumber;
+    CommitLsn: NpgsqlLogSequenceNumber;
+    Flags: CommitMessage_CommitFlags;
+    TransactionCommitTimestamp: DateTime;
+    TransactionEndLsn: NpgsqlLogSequenceNumber;
 }
 
 
@@ -133,7 +133,7 @@ export type CommitMessage = CommitMessage$instance;
 export interface CommitPreparedMessage$instance extends PreparedTransactionControlMessage {
     readonly CommitPreparedEndLsn: NpgsqlLogSequenceNumber;
     readonly CommitPreparedLsn: NpgsqlLogSequenceNumber;
-    readonly Flags: CommitPreparedMessage_CommitPreparedFlags;
+    Flags: CommitPreparedMessage_CommitPreparedFlags;
     readonly TransactionCommitTimestamp: DateTime;
 }
 
@@ -158,7 +158,7 @@ export const DefaultUpdateMessage: {
 export type DefaultUpdateMessage = DefaultUpdateMessage$instance;
 
 export interface DeleteMessage$instance extends TransactionalMessage {
-    readonly Relation: RelationMessage;
+    Relation: RelationMessage;
 }
 
 
@@ -208,7 +208,7 @@ export type IndexUpdateMessage = IndexUpdateMessage$instance;
 
 export interface InsertMessage$instance extends TransactionalMessage {
     readonly NewRow: ReplicationTuple;
-    readonly Relation: RelationMessage;
+    Relation: RelationMessage;
 }
 
 
@@ -232,10 +232,10 @@ export const KeyDeleteMessage: {
 export type KeyDeleteMessage = KeyDeleteMessage$instance;
 
 export interface LogicalDecodingMessage$instance extends TransactionalMessage {
-    readonly Data: Stream;
-    readonly Flags: byte;
-    readonly MessageLsn: NpgsqlLogSequenceNumber;
-    readonly Prefix: string;
+    Data: Stream;
+    Flags: byte;
+    MessageLsn: NpgsqlLogSequenceNumber;
+    Prefix: string;
 }
 
 
@@ -247,8 +247,8 @@ export const LogicalDecodingMessage: {
 export type LogicalDecodingMessage = LogicalDecodingMessage$instance;
 
 export interface OriginMessage$instance extends PgOutputReplicationMessage {
-    readonly OriginCommitLsn: NpgsqlLogSequenceNumber;
-    readonly OriginName: string;
+    OriginCommitLsn: NpgsqlLogSequenceNumber;
+    OriginName: string;
 }
 
 
@@ -260,8 +260,8 @@ export const OriginMessage: {
 export type OriginMessage = OriginMessage$instance;
 
 export interface ParallelStreamAbortMessage$instance extends StreamAbortMessage {
-    readonly AbortLsn: NpgsqlLogSequenceNumber;
-    readonly AbortTimestamp: DateTime;
+    AbortLsn: NpgsqlLogSequenceNumber;
+    AbortTimestamp: DateTime;
 }
 
 
@@ -278,13 +278,14 @@ export interface PgOutputReplicationMessage$instance extends ReplicationMessage 
 
 
 export const PgOutputReplicationMessage: {
+    new(): PgOutputReplicationMessage;
 };
 
 
 export type PgOutputReplicationMessage = PgOutputReplicationMessage$instance;
 
 export interface PreparedTransactionControlMessage$instance extends TransactionControlMessage {
-    readonly TransactionGid: string;
+    TransactionGid: string;
 }
 
 
@@ -295,7 +296,7 @@ export const PreparedTransactionControlMessage: {
 export type PreparedTransactionControlMessage = PreparedTransactionControlMessage$instance;
 
 export interface PrepareMessage$instance extends PrepareMessageBase {
-    readonly Flags: PrepareMessage_PrepareFlags;
+    Flags: PrepareMessage_PrepareFlags;
 }
 
 
@@ -321,10 +322,10 @@ export type PrepareMessageBase = PrepareMessageBase$instance;
 
 export interface RelationMessage$instance extends TransactionalMessage {
     readonly Columns: IReadOnlyList<RelationMessage_Column>;
-    readonly Namespace: string;
-    readonly RelationId: uint;
-    readonly RelationName: string;
-    readonly ReplicaIdentity: RelationMessage_ReplicaIdentitySetting;
+    Namespace: string;
+    RelationId: uint;
+    RelationName: string;
+    ReplicaIdentity: RelationMessage_ReplicaIdentitySetting;
 }
 
 
@@ -336,11 +337,11 @@ export const RelationMessage: {
 export type RelationMessage = RelationMessage$instance;
 
 export interface RollbackPreparedMessage$instance extends PreparedTransactionControlMessage {
-    readonly Flags: RollbackPreparedMessage_RollbackPreparedFlags;
+    Flags: RollbackPreparedMessage_RollbackPreparedFlags;
     readonly PreparedTransactionEndLsn: NpgsqlLogSequenceNumber;
     readonly RollbackPreparedEndLsn: NpgsqlLogSequenceNumber;
     readonly TransactionPrepareTimestamp: DateTime;
-    readonly TransactionRollbackTimestamp: DateTime;
+    TransactionRollbackTimestamp: DateTime;
 }
 
 
@@ -352,7 +353,7 @@ export const RollbackPreparedMessage: {
 export type RollbackPreparedMessage = RollbackPreparedMessage$instance;
 
 export interface StreamAbortMessage$instance extends TransactionControlMessage {
-    readonly SubtransactionXid: uint;
+    SubtransactionXid: uint;
 }
 
 
@@ -364,10 +365,10 @@ export const StreamAbortMessage: {
 export type StreamAbortMessage = StreamAbortMessage$instance;
 
 export interface StreamCommitMessage$instance extends TransactionControlMessage {
-    readonly CommitLsn: NpgsqlLogSequenceNumber;
-    readonly Flags: byte;
-    readonly TransactionCommitTimestamp: DateTime;
-    readonly TransactionEndLsn: NpgsqlLogSequenceNumber;
+    CommitLsn: NpgsqlLogSequenceNumber;
+    Flags: byte;
+    TransactionCommitTimestamp: DateTime;
+    TransactionEndLsn: NpgsqlLogSequenceNumber;
 }
 
 
@@ -379,7 +380,7 @@ export const StreamCommitMessage: {
 export type StreamCommitMessage = StreamCommitMessage$instance;
 
 export interface StreamPrepareMessage$instance extends PrepareMessageBase {
-    readonly Flags: StreamPrepareMessage_StreamPrepareFlags;
+    Flags: StreamPrepareMessage_StreamPrepareFlags;
 }
 
 
@@ -391,7 +392,7 @@ export const StreamPrepareMessage: {
 export type StreamPrepareMessage = StreamPrepareMessage$instance;
 
 export interface StreamStartMessage$instance extends TransactionControlMessage {
-    readonly StreamSegmentIndicator: byte;
+    StreamSegmentIndicator: byte;
 }
 
 
@@ -414,30 +415,32 @@ export const StreamStopMessage: {
 export type StreamStopMessage = StreamStopMessage$instance;
 
 export interface TransactionalMessage$instance extends PgOutputReplicationMessage {
-    readonly TransactionXid: Nullable<System_Internal.UInt32>;
+    TransactionXid: Nullable<System_Internal.UInt32>;
 }
 
 
 export const TransactionalMessage: {
+    new(): TransactionalMessage;
 };
 
 
 export type TransactionalMessage = TransactionalMessage$instance;
 
 export interface TransactionControlMessage$instance extends PgOutputReplicationMessage {
-    readonly TransactionXid: uint;
+    TransactionXid: uint;
 }
 
 
 export const TransactionControlMessage: {
+    new(): TransactionControlMessage;
 };
 
 
 export type TransactionControlMessage = TransactionControlMessage$instance;
 
 export interface TruncateMessage$instance extends TransactionalMessage {
-    readonly Options: TruncateMessage_TruncateOptions;
-    readonly Relations: IReadOnlyList<RelationMessage>;
+    Options: TruncateMessage_TruncateOptions;
+    Relations: IReadOnlyList<RelationMessage>;
 }
 
 
@@ -449,9 +452,9 @@ export const TruncateMessage: {
 export type TruncateMessage = TruncateMessage$instance;
 
 export interface TypeMessage$instance extends TransactionalMessage {
-    readonly Name: string;
-    readonly Namespace: string;
-    readonly TypeId: uint;
+    Name: string;
+    Namespace: string;
+    TypeId: uint;
 }
 
 
@@ -464,7 +467,7 @@ export type TypeMessage = TypeMessage$instance;
 
 export interface UpdateMessage$instance extends TransactionalMessage {
     readonly NewRow: ReplicationTuple;
-    readonly Relation: RelationMessage;
+    Relation: RelationMessage;
 }
 
 

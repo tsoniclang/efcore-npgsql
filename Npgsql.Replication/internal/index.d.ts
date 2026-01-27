@@ -100,7 +100,7 @@ export interface ReplicationConnection$instance {
     readonly Encoding: Encoding;
     LastAppliedLsn: NpgsqlLogSequenceNumber;
     LastFlushedLsn: NpgsqlLogSequenceNumber;
-    readonly LastReceivedLsn: NpgsqlLogSequenceNumber;
+    LastReceivedLsn: NpgsqlLogSequenceNumber;
     readonly PostgreSqlVersion: Version;
     readonly ProcessID: int;
     readonly ServerVersion: string;
@@ -124,13 +124,14 @@ export const ReplicationConnection: {
 export type ReplicationConnection = ReplicationConnection$instance;
 
 export interface ReplicationMessage$instance {
-    readonly ServerClock: DateTime;
-    readonly WalEnd: NpgsqlLogSequenceNumber;
-    readonly WalStart: NpgsqlLogSequenceNumber;
+    ServerClock: DateTime;
+    WalEnd: NpgsqlLogSequenceNumber;
+    WalStart: NpgsqlLogSequenceNumber;
 }
 
 
 export const ReplicationMessage: {
+    new(): ReplicationMessage;
 };
 
 
@@ -163,7 +164,7 @@ export const ReplicationSystemIdentification: {
 export type ReplicationSystemIdentification = ReplicationSystemIdentification$instance;
 
 export interface XLogDataMessage$instance extends ReplicationMessage {
-    readonly Data: Stream;
+    Data: Stream;
 }
 
 

@@ -16,7 +16,7 @@ export interface PostgresArrayType$instance extends PostgresType {
 
 
 export const PostgresArrayType: {
-    new(): PostgresArrayType;
+    new(ns: string, name: string, oid: uint, elementPostgresType: PostgresType): PostgresArrayType;
 };
 
 
@@ -27,7 +27,7 @@ export interface PostgresBaseType$instance extends PostgresType {
 
 
 export const PostgresBaseType: {
-    new(): PostgresBaseType;
+    new(ns: string, name: string, oid: uint): PostgresBaseType;
 };
 
 
@@ -66,7 +66,7 @@ export interface PostgresDomainType$instance extends PostgresType {
 
 
 export const PostgresDomainType: {
-    new(): PostgresDomainType;
+    new(ns: string, name: string, oid: uint, baseType: PostgresType, notNull: boolean): PostgresDomainType;
 };
 
 
@@ -78,7 +78,7 @@ export interface PostgresEnumType$instance extends PostgresType {
 
 
 export const PostgresEnumType: {
-    new(): PostgresEnumType;
+    new(ns: string, name: string, oid: uint): PostgresEnumType;
 };
 
 
@@ -90,34 +90,37 @@ export interface PostgresMultirangeType$instance extends PostgresType {
 
 
 export const PostgresMultirangeType: {
-    new(): PostgresMultirangeType;
+    new(ns: string, name: string, oid: uint, rangePostgresType: PostgresRangeType): PostgresMultirangeType;
 };
 
 
 export type PostgresMultirangeType = PostgresMultirangeType$instance;
 
 export interface PostgresRangeType$instance extends PostgresType {
-    readonly Multirange: PostgresMultirangeType | undefined;
+    get Multirange(): PostgresMultirangeType | undefined;
+    set Multirange(value: PostgresMultirangeType);
     readonly Subtype: PostgresType;
 }
 
 
 export const PostgresRangeType: {
-    new(): PostgresRangeType;
+    new(ns: string, name: string, oid: uint, subtypePostgresType: PostgresType): PostgresRangeType;
 };
 
 
 export type PostgresRangeType = PostgresRangeType$instance;
 
 export interface PostgresType$instance {
-    readonly Array: PostgresArrayType | undefined;
+    get Array(): PostgresArrayType | undefined;
+    set Array(value: PostgresArrayType);
     readonly DisplayName: string;
     readonly FullName: string;
     readonly InternalName: string;
     readonly Name: string;
     readonly Namespace: string;
     readonly OID: uint;
-    readonly Range: PostgresRangeType | undefined;
+    get Range(): PostgresRangeType | undefined;
+    set Range(value: PostgresRangeType);
     ToString(): string;
 }
 

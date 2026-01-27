@@ -450,7 +450,7 @@ export type NpgsqlTid = NpgsqlTid$instance;
 
 export interface NpgsqlTsVector_Lexeme$instance {
     readonly Count: int;
-    readonly Item: NpgsqlTsVector_Lexeme_WordEntryPos;
+    Item: NpgsqlTsVector_Lexeme_WordEntryPos;
     Text: string;
     Equals(o: NpgsqlTsVector_Lexeme): boolean;
     Equals(o: unknown): boolean;
@@ -511,6 +511,7 @@ export interface NpgsqlTsQuery$instance {
 
 
 export const NpgsqlTsQuery: {
+    new(kind: NpgsqlTsQuery_NodeKind): NpgsqlTsQuery;
     Parse(value: string): NpgsqlTsQuery;
 };
 
@@ -538,6 +539,7 @@ export interface NpgsqlTsQueryBinOp$instance extends NpgsqlTsQuery {
 
 
 export const NpgsqlTsQueryBinOp: {
+    new(kind: NpgsqlTsQuery_NodeKind, left: NpgsqlTsQuery, right: NpgsqlTsQuery): NpgsqlTsQueryBinOp;
 };
 
 

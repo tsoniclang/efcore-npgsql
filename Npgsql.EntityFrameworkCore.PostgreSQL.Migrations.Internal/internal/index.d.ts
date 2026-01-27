@@ -8,7 +8,7 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 // Import types from other namespaces
 import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { IReadOnlyList } from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { Boolean as ClrBoolean, String as ClrString, Void } from "@tsonic/dotnet/System.js";
+import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
 import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 import type { IDiagnosticsLogger, IRelationalCommandDiagnosticsLogger } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Diagnostics.js";
@@ -18,10 +18,17 @@ import type { IDesignTimeModel } from "@tsonic/efcore/Microsoft.EntityFrameworkC
 import * as Microsoft_EntityFrameworkCore_Migrations_Internal_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Migrations.Internal.js";
 import type { Migrator } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Migrations.Internal.js";
 import * as Microsoft_EntityFrameworkCore_Migrations_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Migrations.js";
-import type { HistoryRepository, HistoryRepositoryDependencies, HistoryRow, IHistoryRepository, IMigrationCommandExecutor, IMigrationsAssembly, IMigrationsDatabaseLock, IMigrationsModelDiffer, IMigrationsSqlGenerator, IMigrator, LockReleaseBehavior } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Migrations.js";
+import type { HistoryRepository, HistoryRepositoryDependencies, HistoryRow, IHistoryRepository, IMigrationCommandExecutor, IMigrationsAssembly, IMigrationsDatabaseLock, IMigrationsModelDiffer, IMigrationsSqlGenerator, IMigrator, LockReleaseBehavior, MigrationCommand } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Migrations.js";
 import type { IDatabaseCreator, IDatabaseProvider, IExecutionStrategy, IRawSqlCommandBuilder, IRelationalConnection, ISqlGenerationHelper } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
 
-export interface NpgsqlHistoryRepository$instance extends HistoryRepository {
+export abstract class NpgsqlHistoryRepository$protected {
+    protected readonly ExistsSql: string;
+    protected GetCreateCommands(): IReadOnlyList<MigrationCommand>;
+    protected InterpretExistsResult(value: unknown): boolean;
+}
+
+
+export interface NpgsqlHistoryRepository$instance extends NpgsqlHistoryRepository$protected, HistoryRepository {
     readonly LockReleaseBehavior: LockReleaseBehavior;
     AcquireDatabaseLock(): IMigrationsDatabaseLock;
     AcquireDatabaseLockAsync(cancellationToken?: CancellationToken): Task<IMigrationsDatabaseLock>;

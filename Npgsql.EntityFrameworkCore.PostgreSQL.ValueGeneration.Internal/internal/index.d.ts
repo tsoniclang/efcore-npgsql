@@ -11,7 +11,9 @@ import type { ptr } from "@tsonic/core/types.js";
 // Import types from other namespaces
 import type { INpgsqlRelationalConnection } from "../../Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal/internal/index.js";
 import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, IDisposable, Object as ClrObject, Type } from "@tsonic/dotnet/System.js";
+import type { Boolean as ClrBoolean, IDisposable, Int64, Object as ClrObject, Type } from "@tsonic/dotnet/System.js";
+import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
+import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 import type { IRelationalCommandDiagnosticsLogger } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Diagnostics.js";
 import type { IProperty, ISequence, ITypeBase } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js";
 import type { IRawSqlCommandBuilder, IRelationalConnection } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
@@ -33,7 +35,13 @@ export interface INpgsqlValueGeneratorCache$instance extends IValueGeneratorCach
 
 export type INpgsqlValueGeneratorCache = INpgsqlValueGeneratorCache$instance;
 
-export interface NpgsqlSequenceHiLoValueGenerator_1$instance<TValue> extends HiLoValueGenerator<TValue> {
+export abstract class NpgsqlSequenceHiLoValueGenerator_1$protected<TValue> {
+    protected GetNewLowValue(): long;
+    protected GetNewLowValueAsync(cancellationToken?: CancellationToken): Task<System_Internal.Int64>;
+}
+
+
+export interface NpgsqlSequenceHiLoValueGenerator_1$instance<TValue> extends NpgsqlSequenceHiLoValueGenerator_1$protected<TValue>, HiLoValueGenerator<TValue> {
     readonly GeneratesTemporaryValues: boolean;
 }
 
@@ -95,7 +103,12 @@ export interface NpgsqlValueGeneratorCache$instance extends INpgsqlValueGenerato
 export type NpgsqlValueGeneratorCache = NpgsqlValueGeneratorCache$instance & __NpgsqlValueGeneratorCache$views;
 
 
-export interface NpgsqlValueGeneratorSelector$instance extends RelationalValueGeneratorSelector {
+export abstract class NpgsqlValueGeneratorSelector$protected {
+    protected FindForType(property: IProperty, typeBase: ITypeBase, clrType: Type): ValueGenerator | undefined;
+}
+
+
+export interface NpgsqlValueGeneratorSelector$instance extends NpgsqlValueGeneratorSelector$protected, RelationalValueGeneratorSelector {
     readonly Cache: INpgsqlValueGeneratorCache;
     TrySelect(property: IProperty, typeBase: ITypeBase, valueGenerator: ValueGenerator): boolean;
 }

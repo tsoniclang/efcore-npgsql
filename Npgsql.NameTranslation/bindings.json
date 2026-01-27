@@ -15,6 +15,16 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Npgsql:Npgsql.INpgsqlNameTranslator",
+          "clrName": "Npgsql.INpgsqlNameTranslator"
+        }
+      ],
       "methods": [
         {
           "stableId": "Npgsql:Npgsql.NameTranslation.NpgsqlNullNameTranslator::TranslateTypeName(System.String):System.String",
@@ -31,6 +41,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.NameTranslation.NpgsqlNullNameTranslator",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -50,6 +61,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.NameTranslation.NpgsqlNullNameTranslator",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -69,6 +81,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.INpgsqlNameTranslator",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false,
@@ -86,6 +99,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.NameTranslation.NpgsqlNullNameTranslator",
           "declaringAssemblyName": "Npgsql"
         }
@@ -102,6 +116,16 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Npgsql:Npgsql.INpgsqlNameTranslator",
+          "clrName": "Npgsql.INpgsqlNameTranslator"
+        }
+      ],
       "methods": [
         {
           "stableId": "Npgsql:Npgsql.NameTranslation.NpgsqlSnakeCaseNameTranslator::TranslateTypeName(System.String):System.String",
@@ -118,6 +142,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.NameTranslation.NpgsqlSnakeCaseNameTranslator",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -137,6 +162,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.NameTranslation.NpgsqlSnakeCaseNameTranslator",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -156,6 +182,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.NameTranslation.NpgsqlSnakeCaseNameTranslator",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -175,6 +202,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.INpgsqlNameTranslator",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false,
@@ -192,6 +220,7 @@
           "normalizedSignature": "constructor|(System.Globalization.CultureInfo):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.NameTranslation.NpgsqlSnakeCaseNameTranslator",
           "declaringAssemblyName": "Npgsql"
         },
@@ -202,6 +231,7 @@
           "normalizedSignature": "constructor|(System.Boolean,System.Globalization.CultureInfo):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.NameTranslation.NpgsqlSnakeCaseNameTranslator",
           "declaringAssemblyName": "Npgsql"
         }

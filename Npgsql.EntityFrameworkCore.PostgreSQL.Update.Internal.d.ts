@@ -6,11 +6,14 @@
 import * as Internal from './Npgsql.EntityFrameworkCore.PostgreSQL.Update.Internal/internal/index.js';
 
 // Cross-namespace type imports for constraints
+import type { IReadOnlyList } from '@tsonic/dotnet/System.Collections.Generic.js';
 import type { Boolean as ClrBoolean, Int32, Object as ClrObject, String as ClrString, Void } from '@tsonic/dotnet/System.js';
 import type { StringBuilder } from '@tsonic/dotnet/System.Text.js';
+import type { CancellationToken } from '@tsonic/dotnet/System.Threading.js';
+import type { Task } from '@tsonic/dotnet/System.Threading.Tasks.js';
 import type { IDbContextOptions } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure.js';
-import type { RelationalDataReader } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js';
-import type { IModificationCommand, IModificationCommandBatchFactory, IModificationCommandFactory, INonTrackedModificationCommand, IReadOnlyModificationCommand, IUpdateSqlGenerator, ModificationCommand, ModificationCommandBatch, ModificationCommandBatchFactoryDependencies, ModificationCommandParameters, NonTrackedModificationCommandParameters, ReaderModificationCommandBatch, ResultSetMapping, UpdateSqlGenerator, UpdateSqlGeneratorDependencies } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Update.js';
+import type { ISqlGenerationHelper, RelationalDataReader } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js';
+import type { ColumnModificationParameters, IColumnModification, IModificationCommand, IModificationCommandBatchFactory, IModificationCommandFactory, INonTrackedModificationCommand, IReadOnlyModificationCommand, IUpdateSqlGenerator, ModificationCommand, ModificationCommandBatch, ModificationCommandBatchFactoryDependencies, ModificationCommandParameters, NonTrackedModificationCommandParameters, ReaderModificationCommandBatch, ResultSetMapping, UpdateSqlGenerator, UpdateSqlGeneratorDependencies } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Update.js';
 
 // Public API exports (curated - no internal $instance/$views leakage)
 export { NpgsqlModificationCommand as NpgsqlModificationCommand } from './Npgsql.EntityFrameworkCore.PostgreSQL.Update.Internal/internal/index.js';

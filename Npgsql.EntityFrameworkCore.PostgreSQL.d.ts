@@ -7,7 +7,7 @@ import * as Internal from './Npgsql.EntityFrameworkCore.PostgreSQL/internal/inde
 
 // Cross-namespace type imports for constraints
 import type { ICollection } from '@tsonic/dotnet/System.Collections.Generic.js';
-import type { Int32, String as ClrString, TimeSpan } from '@tsonic/dotnet/System.js';
+import type { Boolean as ClrBoolean, Exception, Int32, String as ClrString, TimeSpan } from '@tsonic/dotnet/System.js';
 import type { DbContext } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.js';
 import type { ExecutionStrategy, ExecutionStrategyDependencies, IExecutionStrategy } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js';
 

@@ -11,17 +11,17 @@ import type { ptr } from "@tsonic/core/types.js";
 // Import types from other namespaces
 import type { EnumDefinition, INpgsqlSingletonOptions } from "../../Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal/internal/index.js";
 import type { NpgsqlTypeMappingSource } from "../../Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal/internal/index.js";
-import type { IReadOnlyList } from "@tsonic/dotnet/System.Collections.Generic.js";
+import type { Dictionary, IReadOnlyList } from "@tsonic/dotnet/System.Collections.Generic.js";
 import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Nullable, Object as ClrObject, String as ClrString, Version, Void } from "@tsonic/dotnet/System.js";
+import type { Boolean as ClrBoolean, Nullable, Object as ClrObject, String as ClrString, Version, Void } from "@tsonic/dotnet/System.js";
 import type { ModelBuilder } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.js";
 import type { IConventionModelBuilder, IConventionPropertyBuilder } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.Builders.js";
 import * as Microsoft_EntityFrameworkCore_Metadata_Conventions_Infrastructure_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.js";
 import type { IProviderConventionSetBuilder, ProviderConventionSetBuilderDependencies, RelationalConventionSetBuilder, RelationalConventionSetBuilderDependencies } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.js";
 import * as Microsoft_EntityFrameworkCore_Metadata_Conventions_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.Conventions.js";
 import type { ConventionSet, IConvention, IConventionContext, IEntityTypeAnnotationChangedConvention, IEntityTypeBaseTypeChangedConvention, IEntityTypePrimaryKeyChangedConvention, IForeignKeyAddedConvention, IForeignKeyOwnershipChangedConvention, IForeignKeyPropertiesChangedConvention, IForeignKeyRemovedConvention, IModelFinalizedConvention, IModelFinalizingConvention, IModelInitializedConvention, IPropertyAnnotationChangedConvention, RelationalRuntimeModelConvention, RelationalValueGenerationConvention, SharedTableConvention, StoreGenerationConvention } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.Conventions.js";
-import type { IConventionAnnotation, IReadOnlyProperty, StoreObjectIdentifier, ValueGenerated } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js";
-import type { IRelationalTypeMappingSource } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
+import type { IConventionAnnotation, IConventionProperty, IEntityType, IIndex, IModel, IProperty, IReadOnlyIndex, IReadOnlyProperty, RuntimeEntityType, RuntimeIndex, RuntimeModel, RuntimeProperty, StoreObjectIdentifier, ValueGenerated } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js";
+import type { IRelationalTypeMappingSource, RelationalTypeMapping } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
 
 export interface NpgsqlConventionSetBuilder$instance extends RelationalConventionSetBuilder {
     CreateConventionSet(): ConventionSet;
@@ -37,7 +37,14 @@ export const NpgsqlConventionSetBuilder: {
 
 export type NpgsqlConventionSetBuilder = NpgsqlConventionSetBuilder$instance;
 
-export interface NpgsqlPostgresModelFinalizingConvention$instance {
+export abstract class NpgsqlPostgresModelFinalizingConvention$protected {
+    protected DiscoverPostgresExtensions(property: IConventionProperty, typeMapping: RelationalTypeMapping, modelBuilder: IConventionModelBuilder): void;
+    protected ProcessRowVersionProperty(property: IConventionProperty, typeMapping: RelationalTypeMapping): void;
+    protected SetupEnums(modelBuilder: IConventionModelBuilder): void;
+}
+
+
+export interface NpgsqlPostgresModelFinalizingConvention$instance extends NpgsqlPostgresModelFinalizingConvention$protected {
     ProcessModelFinalizing(modelBuilder: IConventionModelBuilder, context: IConventionContext<IConventionModelBuilder>): void;
 }
 
@@ -49,7 +56,15 @@ export const NpgsqlPostgresModelFinalizingConvention: {
 
 export type NpgsqlPostgresModelFinalizingConvention = NpgsqlPostgresModelFinalizingConvention$instance;
 
-export interface NpgsqlRuntimeModelConvention$instance extends RelationalRuntimeModelConvention {
+export abstract class NpgsqlRuntimeModelConvention$protected {
+    protected ProcessEntityTypeAnnotations(annotations: Dictionary<System_Internal.String, unknown>, entityType: IEntityType, runtimeEntityType: RuntimeEntityType, runtime: boolean): void;
+    protected ProcessIndexAnnotations(annotations: Dictionary<System_Internal.String, unknown>, index: IIndex, runtimeIndex: RuntimeIndex, runtime: boolean): void;
+    protected ProcessModelAnnotations(annotations: Dictionary<System_Internal.String, unknown>, model: IModel, runtimeModel: RuntimeModel, runtime: boolean): void;
+    protected ProcessPropertyAnnotations(annotations: Dictionary<System_Internal.String, unknown>, property: IProperty, runtimeProperty: RuntimeProperty, runtime: boolean): void;
+}
+
+
+export interface NpgsqlRuntimeModelConvention$instance extends NpgsqlRuntimeModelConvention$protected, RelationalRuntimeModelConvention {
 }
 
 
@@ -60,7 +75,16 @@ export const NpgsqlRuntimeModelConvention: {
 
 export type NpgsqlRuntimeModelConvention = NpgsqlRuntimeModelConvention$instance;
 
-export interface NpgsqlSharedTableConvention$instance extends SharedTableConvention {
+export abstract class NpgsqlSharedTableConvention$protected {
+    protected readonly CheckConstraintsUniqueAcrossTables: boolean;
+    protected readonly ForeignKeysUniqueAcrossTables: boolean;
+    protected readonly IndexesUniqueAcrossTables: boolean;
+    protected readonly KeysUniqueAcrossTables: boolean;
+    protected AreCompatible(index: IReadOnlyIndex, duplicateIndex: IReadOnlyIndex, storeObject: StoreObjectIdentifier): boolean;
+}
+
+
+export interface NpgsqlSharedTableConvention$instance extends NpgsqlSharedTableConvention$protected, SharedTableConvention {
 }
 
 
@@ -71,7 +95,12 @@ export const NpgsqlSharedTableConvention: {
 
 export type NpgsqlSharedTableConvention = NpgsqlSharedTableConvention$instance;
 
-export interface NpgsqlStoreGenerationConvention$instance extends StoreGenerationConvention {
+export abstract class NpgsqlStoreGenerationConvention$protected {
+    protected Validate(property: IConventionProperty, storeObject: StoreObjectIdentifier): void;
+}
+
+
+export interface NpgsqlStoreGenerationConvention$instance extends NpgsqlStoreGenerationConvention$protected, StoreGenerationConvention {
     ProcessPropertyAnnotationChanged(propertyBuilder: IConventionPropertyBuilder, name: string, annotation: IConventionAnnotation, oldAnnotation: IConventionAnnotation, context: IConventionContext<IConventionAnnotation>): void;
 }
 
@@ -83,7 +112,12 @@ export const NpgsqlStoreGenerationConvention: {
 
 export type NpgsqlStoreGenerationConvention = NpgsqlStoreGenerationConvention$instance;
 
-export interface NpgsqlValueGenerationConvention$instance extends RelationalValueGenerationConvention {
+export abstract class NpgsqlValueGenerationConvention$protected {
+    protected GetValueGenerated(property: IConventionProperty): Nullable<ValueGenerated>;
+}
+
+
+export interface NpgsqlValueGenerationConvention$instance extends NpgsqlValueGenerationConvention$protected, RelationalValueGenerationConvention {
     ProcessPropertyAnnotationChanged(propertyBuilder: IConventionPropertyBuilder, name: string, annotation: IConventionAnnotation, oldAnnotation: IConventionAnnotation, context: IConventionContext<IConventionAnnotation>): void;
 }
 
@@ -96,7 +130,13 @@ export const NpgsqlValueGenerationConvention: {
 
 export type NpgsqlValueGenerationConvention = NpgsqlValueGenerationConvention$instance;
 
-export interface NpgsqlValueGenerationStrategyConvention$instance {
+export abstract class NpgsqlValueGenerationStrategyConvention$protected {
+    protected readonly Dependencies: ProviderConventionSetBuilderDependencies;
+    protected readonly RelationalDependencies: RelationalConventionSetBuilderDependencies;
+}
+
+
+export interface NpgsqlValueGenerationStrategyConvention$instance extends NpgsqlValueGenerationStrategyConvention$protected {
     ProcessModelFinalizing(modelBuilder: IConventionModelBuilder, context: IConventionContext<IConventionModelBuilder>): void;
     ProcessModelInitialized(modelBuilder: IConventionModelBuilder, context: IConventionContext<IConventionModelBuilder>): void;
 }
