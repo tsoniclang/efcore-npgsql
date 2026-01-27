@@ -15,6 +15,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Npgsql:Npgsql.Replication.ReplicationSlot",
+        "clrName": "Npgsql.Replication.ReplicationSlot"
+      },
       "methods": [],
       "properties": [
         {
@@ -32,6 +36,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.Internal.LogicalReplicationSlot",
           "declaringAssemblyName": "Npgsql"
         },
@@ -50,6 +55,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.Internal.LogicalReplicationSlot",
           "declaringAssemblyName": "Npgsql"
         },
@@ -68,13 +74,26 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.Internal.LogicalReplicationSlot",
           "declaringAssemblyName": "Npgsql"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Npgsql:Npgsql.Replication.Internal.LogicalReplicationSlot::.ctor(System.String,Npgsql.Replication.ReplicationSlotOptions):void",
+          "metadataToken": 100666170,
+          "canonicalSignature": "(System.String,Npgsql.Replication.ReplicationSlotOptions):void",
+          "normalizedSignature": "constructor|(System.String,Npgsql.Replication.ReplicationSlotOptions):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "visibility": "Protected",
+          "declaringClrType": "Npgsql.Replication.Internal.LogicalReplicationSlot",
+          "declaringAssemblyName": "Npgsql"
+        }
+      ]
     },
     {
       "stableId": "Npgsql:Npgsql.Replication.Internal.LogicalReplicationConnectionExtensions",
@@ -87,6 +106,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Npgsql:Npgsql.Replication.Internal.LogicalReplicationConnectionExtensions::CreateLogicalReplicationSlot(Npgsql.Replication.LogicalReplicationConnection,System.String,System.String,System.Boolean,System.Nullable_1[[Npgsql.Replication.LogicalSlotSnapshotInitMode,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]],System.Boolean,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Npgsql.Replication.ReplicationSlotOptions,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]",
@@ -103,6 +126,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.Internal.LogicalReplicationConnectionExtensions",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": true
@@ -122,6 +146,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.Internal.LogicalReplicationConnectionExtensions",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": true

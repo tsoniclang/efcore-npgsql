@@ -15,6 +15,13 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Storage.Json.JsonValueReaderWriter\u00601",
+        "clrName": "Microsoft.EntityFrameworkCore.Storage.Json.JsonValueReaderWriter\u00601",
+        "typeArguments": [
+          "BitArray"
+        ]
+      },
       "methods": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonBitArrayReaderWriter::FromJsonTyped(Microsoft.EntityFrameworkCore.Storage.Json.Utf8JsonReaderManager\u0026,System.Object):System.Collections.BitArray",
@@ -31,6 +38,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonBitArrayReaderWriter",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false,
@@ -56,6 +64,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonBitArrayReaderWriter",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
@@ -77,6 +86,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonBitArrayReaderWriter",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
@@ -95,6 +105,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonBitArrayReaderWriter",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
@@ -109,6 +120,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonBitArrayReaderWriter",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
@@ -125,6 +137,13 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Storage.Json.JsonValueReaderWriter\u00601",
+        "clrName": "Microsoft.EntityFrameworkCore.Storage.Json.JsonValueReaderWriter\u00601",
+        "typeArguments": [
+          "PhysicalAddress"
+        ]
+      },
       "methods": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonMacaddrReaderWriter::FromJsonTyped(Microsoft.EntityFrameworkCore.Storage.Json.Utf8JsonReaderManager\u0026,System.Object):System.Net.NetworkInformation.PhysicalAddress",
@@ -141,6 +160,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonMacaddrReaderWriter",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false,
@@ -166,6 +186,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonMacaddrReaderWriter",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
@@ -187,6 +208,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonMacaddrReaderWriter",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
@@ -205,6 +227,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json.JsonMacaddrReaderWriter",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }

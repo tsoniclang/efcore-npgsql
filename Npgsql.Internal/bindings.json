@@ -15,6 +15,28 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [
@@ -26,6 +48,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.DataFormat",
           "declaringAssemblyName": "Npgsql"
         },
@@ -37,6 +60,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.DataFormat",
           "declaringAssemblyName": "Npgsql"
         },
@@ -48,6 +72,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.DataFormat",
           "declaringAssemblyName": "Npgsql"
         }
@@ -66,6 +91,28 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [
@@ -77,6 +124,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.MatchRequirement",
           "declaringAssemblyName": "Npgsql"
         },
@@ -88,6 +136,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.MatchRequirement",
           "declaringAssemblyName": "Npgsql"
         },
@@ -99,6 +148,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.MatchRequirement",
           "declaringAssemblyName": "Npgsql"
         },
@@ -110,6 +160,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.MatchRequirement",
           "declaringAssemblyName": "Npgsql"
         }
@@ -128,6 +179,28 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [
@@ -139,6 +212,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.SizeKind",
           "declaringAssemblyName": "Npgsql"
         },
@@ -150,6 +224,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.SizeKind",
           "declaringAssemblyName": "Npgsql"
         },
@@ -161,6 +236,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.SizeKind",
           "declaringAssemblyName": "Npgsql"
         },
@@ -172,6 +248,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.SizeKind",
           "declaringAssemblyName": "Npgsql"
         }
@@ -190,6 +267,20 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.MulticastDelegate",
+        "clrName": "System.MulticastDelegate"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.ICloneable",
+          "clrName": "System.ICloneable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Runtime.Serialization.ISerializable",
+          "clrName": "System.Runtime.Serialization.ISerializable"
+        }
+      ],
       "methods": [
         {
           "stableId": "Npgsql:Npgsql.Internal.TypeInfoFactory::Invoke(Npgsql.Internal.PgSerializerOptions,Npgsql.Internal.TypeInfoMapping,System.Boolean):Npgsql.Internal.PgTypeInfo",
@@ -206,6 +297,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.TypeInfoFactory",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -225,6 +317,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.TypeInfoFactory",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -244,6 +337,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.TypeInfoFactory",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -260,6 +354,7 @@
           "normalizedSignature": "constructor|(System.Object,System.IntPtr):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.TypeInfoFactory",
           "declaringAssemblyName": "Npgsql"
         }
@@ -292,6 +387,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.IDbTypeResolver",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -311,6 +407,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.IDbTypeResolver",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -348,6 +445,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.INpgsqlDatabaseInfoFactory",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -385,6 +483,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.IPgTypeInfoResolver",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -406,6 +505,19 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IEquatable\u00601",
+          "clrName": "System.IEquatable\u00601",
+          "typeArguments": [
+            "BufferRequirements"
+          ]
+        }
+      ],
       "methods": [
         {
           "stableId": "Npgsql:Npgsql.Internal.BufferRequirements::CreateFixedSize(System.Int32):Npgsql.Internal.BufferRequirements",
@@ -422,6 +534,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.BufferRequirements",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -441,6 +554,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.BufferRequirements",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -460,6 +574,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.BufferRequirements",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -479,6 +594,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.BufferRequirements",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -498,6 +614,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.BufferRequirements",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -517,6 +634,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.BufferRequirements",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -536,6 +654,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.BufferRequirements",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -555,6 +674,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.BufferRequirements",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -574,6 +694,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.BufferRequirements",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -595,6 +716,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.BufferRequirements",
           "declaringAssemblyName": "Npgsql"
         },
@@ -613,6 +735,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.BufferRequirements",
           "declaringAssemblyName": "Npgsql"
         },
@@ -631,6 +754,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.BufferRequirements",
           "declaringAssemblyName": "Npgsql"
         },
@@ -649,6 +773,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.BufferRequirements",
           "declaringAssemblyName": "Npgsql"
         }
@@ -668,6 +793,20 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IAsyncDisposable",
+          "clrName": "System.IAsyncDisposable"
+        }
+      ],
       "methods": [
         {
           "stableId": "Npgsql:Npgsql.Internal.NestedReadScope::Dispose():System.Void",
@@ -684,6 +823,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.NestedReadScope",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -703,6 +843,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.NestedReadScope",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -724,6 +865,16 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        }
+      ],
       "methods": [
         {
           "stableId": "Npgsql:Npgsql.Internal.NestedWriteScope::Dispose():System.Void",
@@ -740,6 +891,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.NestedWriteScope",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -761,6 +913,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
       "methods": [
         {
           "stableId": "Npgsql:Npgsql.Internal.PgConverterResolution::GetConverter():PgConverter_1",
@@ -777,6 +933,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgConverterResolution",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -798,6 +955,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgConverterResolution",
           "declaringAssemblyName": "Npgsql"
         },
@@ -816,6 +974,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgConverterResolution",
           "declaringAssemblyName": "Npgsql"
         }
@@ -830,6 +989,7 @@
           "normalizedSignature": "constructor|(Npgsql.Internal.PgConverter,Npgsql.Internal.Postgres.PgTypeId):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgConverterResolution",
           "declaringAssemblyName": "Npgsql"
         }
@@ -846,6 +1006,19 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IEquatable\u00601",
+          "clrName": "System.IEquatable\u00601",
+          "typeArguments": [
+            "Size"
+          ]
+        }
+      ],
       "methods": [
         {
           "stableId": "Npgsql:Npgsql.Internal.Size::Create(System.Int32):Npgsql.Internal.Size",
@@ -862,6 +1035,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.Size",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -881,6 +1055,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.Size",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -900,6 +1075,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.Size",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false,
@@ -925,6 +1101,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.Size",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -944,6 +1121,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.Size",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -963,6 +1141,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.Size",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -982,6 +1161,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.Size",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -1001,6 +1181,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.Size",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -1022,6 +1203,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.Size",
           "declaringAssemblyName": "Npgsql"
         },
@@ -1040,6 +1222,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.Size",
           "declaringAssemblyName": "Npgsql"
         },
@@ -1058,6 +1241,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.Size",
           "declaringAssemblyName": "Npgsql"
         },
@@ -1076,6 +1260,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.Size",
           "declaringAssemblyName": "Npgsql"
         }
@@ -1095,6 +1280,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
       "methods": [],
       "properties": [
         {
@@ -1112,6 +1301,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.SizeContext",
           "declaringAssemblyName": "Npgsql"
         },
@@ -1130,6 +1320,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.SizeContext",
           "declaringAssemblyName": "Npgsql"
         }
@@ -1144,6 +1335,7 @@
           "normalizedSignature": "constructor|(Npgsql.Internal.DataFormat,Npgsql.Internal.Size):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.SizeContext",
           "declaringAssemblyName": "Npgsql"
         }
@@ -1160,6 +1352,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
       "methods": [
         {
           "stableId": "Npgsql:Npgsql.Internal.TypeInfoMapping::TypeEquals(System.Type):System.Boolean",
@@ -1176,6 +1372,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.TypeInfoMapping",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -1195,6 +1392,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.TypeInfoMapping",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -1216,6 +1414,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.TypeInfoMapping",
           "declaringAssemblyName": "Npgsql"
         },
@@ -1234,6 +1433,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.TypeInfoMapping",
           "declaringAssemblyName": "Npgsql"
         },
@@ -1252,6 +1452,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.TypeInfoMapping",
           "declaringAssemblyName": "Npgsql"
         },
@@ -1270,6 +1471,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.TypeInfoMapping",
           "declaringAssemblyName": "Npgsql"
         },
@@ -1288,6 +1490,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.TypeInfoMapping",
           "declaringAssemblyName": "Npgsql"
         }
@@ -1302,6 +1505,7 @@
           "normalizedSignature": "constructor|(System.Type,System.String,Npgsql.Internal.TypeInfoFactory):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.TypeInfoMapping",
           "declaringAssemblyName": "Npgsql"
         }
@@ -1318,6 +1522,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
       "methods": [],
       "properties": [
         {
@@ -1335,6 +1543,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.ValueMetadata",
           "declaringAssemblyName": "Npgsql"
         },
@@ -1353,6 +1562,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.ValueMetadata",
           "declaringAssemblyName": "Npgsql"
         },
@@ -1371,6 +1581,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.ValueMetadata",
           "declaringAssemblyName": "Npgsql"
         },
@@ -1389,6 +1600,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.ValueMetadata",
           "declaringAssemblyName": "Npgsql"
         }
@@ -1408,6 +1620,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Npgsql:Npgsql.Internal.DbTypeResolverFactory::CreateDbTypeResolver(Npgsql.Internal.NpgsqlDatabaseInfo):Npgsql.Internal.IDbTypeResolver",
@@ -1424,6 +1640,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.DbTypeResolverFactory",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -1432,7 +1649,19 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Npgsql:Npgsql.Internal.DbTypeResolverFactory::.ctor():void",
+          "metadataToken": 100666316,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "Npgsql.Internal.DbTypeResolverFactory",
+          "declaringAssemblyName": "Npgsql"
+        }
+      ]
     },
     {
       "stableId": "Npgsql:Npgsql.Internal.DynamicTypeInfoResolver",
@@ -1445,6 +1674,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Npgsql:Npgsql.Internal.IPgTypeInfoResolver",
+          "clrName": "Npgsql.Internal.IPgTypeInfoResolver"
+        }
+      ],
       "methods": [
         {
           "stableId": "Npgsql:Npgsql.Internal.DynamicTypeInfoResolver::GetTypeInfo(System.Type,System.Nullable_1[[Npgsql.Internal.Postgres.DataTypeName,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]],Npgsql.Internal.PgSerializerOptions):Npgsql.Internal.PgTypeInfo",
@@ -1461,6 +1700,125 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
+          "declaringClrType": "Npgsql.Internal.DynamicTypeInfoResolver",
+          "declaringAssemblyName": "Npgsql",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Internal.DynamicTypeInfoResolver::CreateCollection(Npgsql.Internal.TypeInfoMappingCollection):Npgsql.Internal.DynamicTypeInfoResolver\u002BDynamicMappingCollection",
+          "clrName": "CreateCollection",
+          "metadataToken": 100666318,
+          "canonicalSignature": "(Npgsql.Internal.TypeInfoMappingCollection):Npgsql.Internal.DynamicTypeInfoResolver\u002BDynamicMappingCollection",
+          "normalizedSignature": "CreateCollection|(Npgsql.Internal.TypeInfoMappingCollection):Npgsql.Internal.DynamicTypeInfoResolver\u002BDynamicMappingCollection|static=true",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Npgsql.Internal.DynamicTypeInfoResolver",
+          "declaringAssemblyName": "Npgsql",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Internal.DynamicTypeInfoResolver::IsTypeOrNullableOfType(System.Type,System.Func_2[[System.Type,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Type\u0026):System.Boolean",
+          "clrName": "IsTypeOrNullableOfType",
+          "metadataToken": 100666319,
+          "canonicalSignature": "(System.Type,System.Func_2[[System.Type,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Type\u0026):System.Boolean",
+          "normalizedSignature": "IsTypeOrNullableOfType|(System.Type,System.Func_2[[System.Type,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Type\u0026):System.Boolean|static=true",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 3,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Npgsql.Internal.DynamicTypeInfoResolver",
+          "declaringAssemblyName": "Npgsql",
+          "isExtensionMethod": false,
+          "parameterModifiers": [
+            {
+              "index": 2,
+              "modifier": "out"
+            }
+          ]
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Internal.DynamicTypeInfoResolver::IsArrayLikeType(System.Type,System.Type\u0026):System.Boolean",
+          "clrName": "IsArrayLikeType",
+          "metadataToken": 100666320,
+          "canonicalSignature": "(System.Type,System.Type\u0026):System.Boolean",
+          "normalizedSignature": "IsArrayLikeType|(System.Type,System.Type\u0026):System.Boolean|static=true",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Npgsql.Internal.DynamicTypeInfoResolver",
+          "declaringAssemblyName": "Npgsql",
+          "isExtensionMethod": false,
+          "parameterModifiers": [
+            {
+              "index": 1,
+              "modifier": "out"
+            }
+          ]
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Internal.DynamicTypeInfoResolver::IsArrayDataTypeName(Npgsql.Internal.Postgres.DataTypeName,Npgsql.Internal.PgSerializerOptions,Npgsql.Internal.Postgres.DataTypeName\u0026):System.Boolean",
+          "clrName": "IsArrayDataTypeName",
+          "metadataToken": 100666321,
+          "canonicalSignature": "(Npgsql.Internal.Postgres.DataTypeName,Npgsql.Internal.PgSerializerOptions,Npgsql.Internal.Postgres.DataTypeName\u0026):System.Boolean",
+          "normalizedSignature": "IsArrayDataTypeName|(Npgsql.Internal.Postgres.DataTypeName,Npgsql.Internal.PgSerializerOptions,Npgsql.Internal.Postgres.DataTypeName\u0026):System.Boolean|static=true",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 3,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Npgsql.Internal.DynamicTypeInfoResolver",
+          "declaringAssemblyName": "Npgsql",
+          "isExtensionMethod": false,
+          "parameterModifiers": [
+            {
+              "index": 2,
+              "modifier": "out"
+            }
+          ]
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Internal.DynamicTypeInfoResolver::GetMappings(System.Type,Npgsql.Internal.Postgres.DataTypeName,Npgsql.Internal.PgSerializerOptions):Npgsql.Internal.DynamicTypeInfoResolver\u002BDynamicMappingCollection",
+          "clrName": "GetMappings",
+          "metadataToken": 100666322,
+          "canonicalSignature": "(System.Type,Npgsql.Internal.Postgres.DataTypeName,Npgsql.Internal.PgSerializerOptions):Npgsql.Internal.DynamicTypeInfoResolver\u002BDynamicMappingCollection",
+          "normalizedSignature": "GetMappings|(System.Type,Npgsql.Internal.Postgres.DataTypeName,Npgsql.Internal.PgSerializerOptions):Npgsql.Internal.DynamicTypeInfoResolver\u002BDynamicMappingCollection|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 3,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "Npgsql.Internal.DynamicTypeInfoResolver",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -1480,6 +1838,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.IPgTypeInfoResolver",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false,
@@ -1489,7 +1848,19 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Npgsql:Npgsql.Internal.DynamicTypeInfoResolver::.ctor():void",
+          "metadataToken": 100666323,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "Npgsql.Internal.DynamicTypeInfoResolver",
+          "declaringAssemblyName": "Npgsql"
+        }
+      ]
     },
     {
       "stableId": "Npgsql:Npgsql.Internal.NpgsqlConnector",
@@ -1502,6 +1873,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Npgsql:Npgsql.Internal.NpgsqlConnector::CreateCommand(System.String):Npgsql.NpgsqlCommand",
@@ -1518,6 +1893,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.NpgsqlConnector",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -1537,6 +1913,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.NpgsqlConnector",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -1558,6 +1935,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.NpgsqlConnector",
           "declaringAssemblyName": "Npgsql"
         },
@@ -1566,16 +1944,17 @@
           "clrName": "TextEncoding",
           "metadataToken": 385876732,
           "canonicalSignature": ":System.Text.Encoding",
-          "normalizedSignature": "TextEncoding|:System.Text.Encoding|static=false|accessor=get",
+          "normalizedSignature": "TextEncoding|:System.Text.Encoding|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.NpgsqlConnector",
           "declaringAssemblyName": "Npgsql"
         },
@@ -1594,6 +1973,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.NpgsqlConnector",
           "declaringAssemblyName": "Npgsql"
         }
@@ -1613,6 +1993,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Npgsql:Npgsql.Internal.NpgsqlDatabaseInfo::GetPostgresType(System.UInt32):Npgsql.PostgresTypes.PostgresType",
@@ -1629,6 +2013,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.NpgsqlDatabaseInfo",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -1648,6 +2033,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.NpgsqlDatabaseInfo",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -1667,6 +2053,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.NpgsqlDatabaseInfo",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false,
@@ -1676,6 +2063,46 @@
               "modifier": "out"
             }
           ]
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Internal.NpgsqlDatabaseInfo::GetTypes():System.Collections.Generic.IEnumerable_1[[Npgsql.PostgresTypes.PostgresType,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]",
+          "clrName": "GetTypes",
+          "metadataToken": 100666574,
+          "canonicalSignature": "():System.Collections.Generic.IEnumerable_1[[Npgsql.PostgresTypes.PostgresType,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]",
+          "normalizedSignature": "GetTypes|():System.Collections.Generic.IEnumerable_1[[Npgsql.PostgresTypes.PostgresType,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Npgsql.Internal.NpgsqlDatabaseInfo",
+          "declaringAssemblyName": "Npgsql",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Internal.NpgsqlDatabaseInfo::ParseServerVersion(System.String):System.Version",
+          "clrName": "ParseServerVersion",
+          "metadataToken": 100666575,
+          "canonicalSignature": "(System.String):System.Version",
+          "normalizedSignature": "ParseServerVersion|(System.String):System.Version|static=true",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Npgsql.Internal.NpgsqlDatabaseInfo",
+          "declaringAssemblyName": "Npgsql",
+          "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql:Npgsql.Internal.NpgsqlDatabaseInfo::RegisterFactory(Npgsql.Internal.INpgsqlDatabaseInfoFactory):System.Void",
@@ -1692,6 +2119,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.NpgsqlDatabaseInfo",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -1713,6 +2141,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.NpgsqlDatabaseInfo",
           "declaringAssemblyName": "Npgsql"
         },
@@ -1731,6 +2160,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.NpgsqlDatabaseInfo",
           "declaringAssemblyName": "Npgsql"
         },
@@ -1749,6 +2179,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.NpgsqlDatabaseInfo",
           "declaringAssemblyName": "Npgsql"
         },
@@ -1767,6 +2198,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.NpgsqlDatabaseInfo",
           "declaringAssemblyName": "Npgsql"
         },
@@ -1785,6 +2217,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.NpgsqlDatabaseInfo",
           "declaringAssemblyName": "Npgsql"
         },
@@ -1803,6 +2236,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.NpgsqlDatabaseInfo",
           "declaringAssemblyName": "Npgsql"
         },
@@ -1821,6 +2255,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.NpgsqlDatabaseInfo",
           "declaringAssemblyName": "Npgsql"
         },
@@ -1839,6 +2274,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.NpgsqlDatabaseInfo",
           "declaringAssemblyName": "Npgsql"
         },
@@ -1857,6 +2293,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.NpgsqlDatabaseInfo",
           "declaringAssemblyName": "Npgsql"
         },
@@ -1875,6 +2312,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.NpgsqlDatabaseInfo",
           "declaringAssemblyName": "Npgsql"
         },
@@ -1893,6 +2331,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.NpgsqlDatabaseInfo",
           "declaringAssemblyName": "Npgsql"
         },
@@ -1911,6 +2350,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.NpgsqlDatabaseInfo",
           "declaringAssemblyName": "Npgsql"
         },
@@ -1929,6 +2369,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.NpgsqlDatabaseInfo",
           "declaringAssemblyName": "Npgsql"
         },
@@ -1947,6 +2388,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.NpgsqlDatabaseInfo",
           "declaringAssemblyName": "Npgsql"
         },
@@ -1955,16 +2397,17 @@
           "clrName": "HasIntegerDateTimes",
           "metadataToken": 385876802,
           "canonicalSignature": ":System.Boolean",
-          "normalizedSignature": "HasIntegerDateTimes|:System.Boolean|static=false|accessor=get",
+          "normalizedSignature": "HasIntegerDateTimes|:System.Boolean|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.NpgsqlDatabaseInfo",
           "declaringAssemblyName": "Npgsql"
         },
@@ -1973,23 +2416,47 @@
           "clrName": "SupportsTransactions",
           "metadataToken": 385876803,
           "canonicalSignature": ":System.Boolean",
-          "normalizedSignature": "SupportsTransactions|:System.Boolean|static=false|accessor=get",
+          "normalizedSignature": "SupportsTransactions|:System.Boolean|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.NpgsqlDatabaseInfo",
           "declaringAssemblyName": "Npgsql"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Npgsql:Npgsql.Internal.NpgsqlDatabaseInfo::.ctor(System.String,System.Int32,System.String,System.Version):void",
+          "metadataToken": 100666565,
+          "canonicalSignature": "(System.String,System.Int32,System.String,System.Version):void",
+          "normalizedSignature": "constructor|(System.String,System.Int32,System.String,System.Version):void|static=false",
+          "isStatic": false,
+          "parameterCount": 4,
+          "visibility": "Protected",
+          "declaringClrType": "Npgsql.Internal.NpgsqlDatabaseInfo",
+          "declaringAssemblyName": "Npgsql"
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Internal.NpgsqlDatabaseInfo::.ctor(System.String,System.Int32,System.String,System.Version,System.String):void",
+          "metadataToken": 100666566,
+          "canonicalSignature": "(System.String,System.Int32,System.String,System.Version,System.String):void",
+          "normalizedSignature": "constructor|(System.String,System.Int32,System.String,System.Version,System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 5,
+          "visibility": "Protected",
+          "declaringClrType": "Npgsql.Internal.NpgsqlDatabaseInfo",
+          "declaringAssemblyName": "Npgsql"
+        }
+      ]
     },
     {
       "stableId": "Npgsql:Npgsql.Internal.PgBufferedConverter\u00601",
@@ -2002,7 +2469,57 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 1,
+      "baseType": {
+        "stableId": "Npgsql:Npgsql.Internal.PgConverter\u00601",
+        "clrName": "Npgsql.Internal.PgConverter\u00601",
+        "typeArguments": [
+          "T"
+        ]
+      },
+      "typeParameters": [
+        "T"
+      ],
       "methods": [
+        {
+          "stableId": "Npgsql:Npgsql.Internal.PgBufferedConverter\u00601::ReadCore(Npgsql.Internal.PgReader):T",
+          "clrName": "ReadCore",
+          "metadataToken": 100666699,
+          "canonicalSignature": "(Npgsql.Internal.PgReader):T",
+          "normalizedSignature": "ReadCore|(Npgsql.Internal.PgReader):T|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Npgsql.Internal.PgBufferedConverter\u00601",
+          "declaringAssemblyName": "Npgsql",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Internal.PgBufferedConverter\u00601::WriteCore(Npgsql.Internal.PgWriter,T):System.Void",
+          "clrName": "WriteCore",
+          "metadataToken": 100666700,
+          "canonicalSignature": "(Npgsql.Internal.PgWriter,T):System.Void",
+          "normalizedSignature": "WriteCore|(Npgsql.Internal.PgWriter,T):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Npgsql.Internal.PgBufferedConverter\u00601",
+          "declaringAssemblyName": "Npgsql",
+          "isExtensionMethod": false
+        },
         {
           "stableId": "Npgsql:Npgsql.Internal.PgBufferedConverter\u00601::GetSize(Npgsql.Internal.SizeContext,T,System.Object\u0026):Npgsql.Internal.Size",
           "clrName": "GetSize",
@@ -2018,6 +2535,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgBufferedConverter\u00601",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false,
@@ -2043,6 +2561,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgBufferedConverter\u00601",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -2062,6 +2581,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgBufferedConverter\u00601",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -2081,6 +2601,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgBufferedConverter\u00601",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -2100,6 +2621,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgBufferedConverter\u00601",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -2119,6 +2641,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgBufferedConverter\u00601",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -2127,7 +2650,19 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Npgsql:Npgsql.Internal.PgBufferedConverter\u00601::.ctor(System.Boolean):void",
+          "metadataToken": 100666698,
+          "canonicalSignature": "(System.Boolean):void",
+          "normalizedSignature": "constructor|(System.Boolean):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "visibility": "Protected",
+          "declaringClrType": "Npgsql.Internal.PgBufferedConverter\u00601",
+          "declaringAssemblyName": "Npgsql"
+        }
+      ]
     },
     {
       "stableId": "Npgsql:Npgsql.Internal.PgConverter",
@@ -2140,6 +2675,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Npgsql:Npgsql.Internal.PgConverter::CanConvert(Npgsql.Internal.DataFormat,Npgsql.Internal.BufferRequirements\u0026):System.Boolean",
@@ -2156,6 +2695,33 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "Npgsql.Internal.PgConverter",
+          "declaringAssemblyName": "Npgsql",
+          "isExtensionMethod": false,
+          "parameterModifiers": [
+            {
+              "index": 1,
+              "modifier": "out"
+            }
+          ]
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Internal.PgConverter::CanConvertBufferedDefault(Npgsql.Internal.DataFormat,Npgsql.Internal.BufferRequirements\u0026):System.Boolean",
+          "clrName": "CanConvertBufferedDefault",
+          "metadataToken": 100666737,
+          "canonicalSignature": "(Npgsql.Internal.DataFormat,Npgsql.Internal.BufferRequirements\u0026):System.Boolean",
+          "normalizedSignature": "CanConvertBufferedDefault|(Npgsql.Internal.DataFormat,Npgsql.Internal.BufferRequirements\u0026):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "Npgsql.Internal.PgConverter",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false,
@@ -2183,6 +2749,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgConverter",
           "declaringAssemblyName": "Npgsql"
         }
@@ -2202,7 +2769,40 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 1,
+      "baseType": {
+        "stableId": "Npgsql:Npgsql.Internal.PgConverter",
+        "clrName": "Npgsql.Internal.PgConverter"
+      },
+      "typeParameters": [
+        "T"
+      ],
       "methods": [
+        {
+          "stableId": "Npgsql:Npgsql.Internal.PgConverter\u00601::IsDbNullValue(T,System.Object\u0026):System.Boolean",
+          "clrName": "IsDbNullValue",
+          "metadataToken": 100666739,
+          "canonicalSignature": "(T,System.Object\u0026):System.Boolean",
+          "normalizedSignature": "IsDbNullValue|(T,System.Object\u0026):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Npgsql.Internal.PgConverter\u00601",
+          "declaringAssemblyName": "Npgsql",
+          "isExtensionMethod": false,
+          "parameterModifiers": [
+            {
+              "index": 1,
+              "modifier": "ref"
+            }
+          ]
+        },
         {
           "stableId": "Npgsql:Npgsql.Internal.PgConverter\u00601::IsDbNull(T,System.Object\u0026):System.Boolean",
           "clrName": "IsDbNull",
@@ -2218,6 +2818,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgConverter\u00601",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false,
@@ -2243,6 +2844,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgConverter\u00601",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -2262,6 +2864,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgConverter\u00601",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -2281,6 +2884,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgConverter\u00601",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false,
@@ -2306,6 +2910,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgConverter\u00601",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -2325,6 +2930,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgConverter\u00601",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -2346,6 +2952,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Npgsql:Npgsql.Internal.PgConverterResolver::GetDefault(System.Nullable_1[[Npgsql.Internal.Postgres.PgTypeId,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]):Npgsql.Internal.PgConverterResolution",
@@ -2362,6 +2972,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgConverterResolver",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -2381,6 +2992,27 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "Npgsql.Internal.PgConverterResolver",
+          "declaringAssemblyName": "Npgsql",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Internal.PgConverterResolver::CreateUnsupportedPgTypeIdException(Npgsql.Internal.Postgres.PgTypeId):System.ArgumentOutOfRangeException",
+          "clrName": "CreateUnsupportedPgTypeIdException",
+          "metadataToken": 100666772,
+          "canonicalSignature": "(Npgsql.Internal.Postgres.PgTypeId):System.ArgumentOutOfRangeException",
+          "normalizedSignature": "CreateUnsupportedPgTypeIdException|(Npgsql.Internal.Postgres.PgTypeId):System.ArgumentOutOfRangeException|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "Npgsql.Internal.PgConverterResolver",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -2402,6 +3034,13 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 1,
+      "baseType": {
+        "stableId": "Npgsql:Npgsql.Internal.PgConverterResolver",
+        "clrName": "Npgsql.Internal.PgConverterResolver"
+      },
+      "typeParameters": [
+        "T"
+      ],
       "methods": [
         {
           "stableId": "Npgsql:Npgsql.Internal.PgConverterResolver\u00601::Get(T,System.Nullable_1[[Npgsql.Internal.Postgres.PgTypeId,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]):System.Nullable_1[[Npgsql.Internal.PgConverterResolution,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]",
@@ -2418,6 +3057,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgConverterResolver\u00601",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -2437,6 +3077,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgConverterResolver\u00601",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -2445,7 +3086,19 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Npgsql:Npgsql.Internal.PgConverterResolver\u00601::.ctor():void",
+          "metadataToken": 100666777,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "Npgsql.Internal.PgConverterResolver\u00601",
+          "declaringAssemblyName": "Npgsql"
+        }
+      ]
     },
     {
       "stableId": "Npgsql:Npgsql.Internal.PgReader",
@@ -2458,6 +3111,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Npgsql:Npgsql.Internal.PgReader::ReadByte():System.Byte",
@@ -2474,6 +3131,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgReader",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -2493,6 +3151,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgReader",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -2512,6 +3171,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgReader",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -2531,6 +3191,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgReader",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -2550,6 +3211,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgReader",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -2569,6 +3231,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgReader",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -2588,6 +3251,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgReader",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -2607,6 +3271,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgReader",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -2626,6 +3291,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgReader",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -2645,6 +3311,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgReader",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -2664,6 +3331,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgReader",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -2683,6 +3351,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgReader",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -2702,6 +3371,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgReader",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -2721,6 +3391,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgReader",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -2740,6 +3411,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgReader",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -2759,6 +3431,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgReader",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -2778,6 +3451,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgReader",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -2797,6 +3471,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgReader",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false,
@@ -2822,6 +3497,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgReader",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false,
@@ -2847,6 +3523,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgReader",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -2866,6 +3543,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgReader",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -2885,6 +3563,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgReader",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -2904,6 +3583,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgReader",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -2923,6 +3603,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgReader",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -2942,6 +3623,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgReader",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -2961,6 +3643,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgReader",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -2980,6 +3663,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgReader",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -2999,6 +3683,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgReader",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -3018,6 +3703,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgReader",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -3037,6 +3723,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgReader",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -3056,6 +3743,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgReader",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -3075,6 +3763,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgReader",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -3096,6 +3785,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgReader",
           "declaringAssemblyName": "Npgsql"
         },
@@ -3114,6 +3804,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgReader",
           "declaringAssemblyName": "Npgsql"
         },
@@ -3132,6 +3823,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgReader",
           "declaringAssemblyName": "Npgsql"
         }
@@ -3151,6 +3843,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Npgsql:Npgsql.Internal.PgTypeInfo",
+        "clrName": "Npgsql.Internal.PgTypeInfo"
+      },
       "methods": [
         {
           "stableId": "Npgsql:Npgsql.Internal.PgResolverTypeInfo::GetResolution(T,System.Nullable_1[[Npgsql.Internal.Postgres.PgTypeId,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]):System.Nullable_1[[Npgsql.Internal.PgConverterResolution,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]",
@@ -3167,6 +3863,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgResolverTypeInfo",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -3186,6 +3883,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgResolverTypeInfo",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -3205,6 +3903,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgResolverTypeInfo",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -3224,6 +3923,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgResolverTypeInfo",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -3243,6 +3943,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgResolverTypeInfo",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -3262,6 +3963,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgResolverTypeInfo",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -3278,6 +3980,7 @@
           "normalizedSignature": "constructor|(Npgsql.Internal.PgSerializerOptions,Npgsql.Internal.PgConverterResolver,System.Nullable_1[[Npgsql.Internal.Postgres.PgTypeId,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]],System.Type):void|static=false",
           "isStatic": false,
           "parameterCount": 4,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgResolverTypeInfo",
           "declaringAssemblyName": "Npgsql"
         }
@@ -3294,6 +3997,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Npgsql:Npgsql.Internal.PgSerializerOptions::IsWellKnownTextType(System.Type):System.Boolean",
@@ -3310,6 +4017,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgSerializerOptions",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -3329,6 +4037,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgSerializerOptions",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -3348,6 +4057,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgSerializerOptions",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -3367,6 +4077,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgSerializerOptions",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -3386,6 +4097,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgSerializerOptions",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -3405,6 +4117,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgSerializerOptions",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -3424,6 +4137,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgSerializerOptions",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -3443,6 +4157,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgSerializerOptions",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -3462,6 +4177,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgSerializerOptions",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -3481,6 +4197,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgSerializerOptions",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -3500,6 +4217,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgSerializerOptions",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false,
@@ -3525,6 +4243,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgSerializerOptions",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -3546,6 +4265,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgSerializerOptions",
           "declaringAssemblyName": "Npgsql"
         },
@@ -3564,6 +4284,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgSerializerOptions",
           "declaringAssemblyName": "Npgsql"
         },
@@ -3572,16 +4293,17 @@
           "clrName": "TypeInfoResolver",
           "metadataToken": 385876871,
           "canonicalSignature": ":Npgsql.Internal.IPgTypeInfoResolver",
-          "normalizedSignature": "TypeInfoResolver|:Npgsql.Internal.IPgTypeInfoResolver|static=false|accessor=get",
+          "normalizedSignature": "TypeInfoResolver|:Npgsql.Internal.IPgTypeInfoResolver|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgSerializerOptions",
           "declaringAssemblyName": "Npgsql"
         },
@@ -3600,6 +4322,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgSerializerOptions",
           "declaringAssemblyName": "Npgsql"
         },
@@ -3618,6 +4341,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgSerializerOptions",
           "declaringAssemblyName": "Npgsql"
         },
@@ -3636,6 +4360,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgSerializerOptions",
           "declaringAssemblyName": "Npgsql"
         }
@@ -3655,6 +4380,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 1,
+      "baseType": {
+        "stableId": "Npgsql:Npgsql.Internal.PgConverter\u00601",
+        "clrName": "Npgsql.Internal.PgConverter\u00601",
+        "typeArguments": [
+          "T"
+        ]
+      },
+      "typeParameters": [
+        "T"
+      ],
       "methods": [
         {
           "stableId": "Npgsql:Npgsql.Internal.PgStreamingConverter\u00601::CanConvert(Npgsql.Internal.DataFormat,Npgsql.Internal.BufferRequirements\u0026):System.Boolean",
@@ -3671,6 +4406,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgStreamingConverter\u00601",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false,
@@ -3685,7 +4421,19 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Npgsql:Npgsql.Internal.PgStreamingConverter\u00601::.ctor(System.Boolean):void",
+          "metadataToken": 100666913,
+          "canonicalSignature": "(System.Boolean):void",
+          "normalizedSignature": "constructor|(System.Boolean):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "visibility": "Protected",
+          "declaringClrType": "Npgsql.Internal.PgStreamingConverter\u00601",
+          "declaringAssemblyName": "Npgsql"
+        }
+      ]
     },
     {
       "stableId": "Npgsql:Npgsql.Internal.PgTypeInfo",
@@ -3698,6 +4446,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Npgsql:Npgsql.Internal.PgTypeInfo::GetResolution(T):Npgsql.Internal.PgConverterResolution",
@@ -3714,6 +4466,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgTypeInfo",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -3733,6 +4486,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgTypeInfo",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -3752,6 +4506,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgTypeInfo",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -3773,6 +4528,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgTypeInfo",
           "declaringAssemblyName": "Npgsql"
         },
@@ -3791,6 +4547,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgTypeInfo",
           "declaringAssemblyName": "Npgsql"
         },
@@ -3809,6 +4566,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgTypeInfo",
           "declaringAssemblyName": "Npgsql"
         },
@@ -3827,6 +4585,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgTypeInfo",
           "declaringAssemblyName": "Npgsql"
         },
@@ -3845,6 +4604,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgTypeInfo",
           "declaringAssemblyName": "Npgsql"
         },
@@ -3863,6 +4623,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgTypeInfo",
           "declaringAssemblyName": "Npgsql"
         }
@@ -3877,6 +4638,7 @@
           "normalizedSignature": "constructor|(Npgsql.Internal.PgSerializerOptions,Npgsql.Internal.PgConverter,Npgsql.Internal.Postgres.PgTypeId,System.Type):void|static=false",
           "isStatic": false,
           "parameterCount": 4,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgTypeInfo",
           "declaringAssemblyName": "Npgsql"
         }
@@ -3893,6 +4655,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Npgsql:Npgsql.Internal.PgTypeInfoResolverFactory::CreateResolver():Npgsql.Internal.IPgTypeInfoResolver",
@@ -3909,6 +4675,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgTypeInfoResolverFactory",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -3928,6 +4695,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgTypeInfoResolverFactory",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -3947,6 +4715,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgTypeInfoResolverFactory",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -3966,6 +4735,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgTypeInfoResolverFactory",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -3985,6 +4755,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgTypeInfoResolverFactory",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -4004,6 +4775,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgTypeInfoResolverFactory",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -4012,7 +4784,19 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Npgsql:Npgsql.Internal.PgTypeInfoResolverFactory::.ctor():void",
+          "metadataToken": 100666997,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "Npgsql.Internal.PgTypeInfoResolverFactory",
+          "declaringAssemblyName": "Npgsql"
+        }
+      ]
     },
     {
       "stableId": "Npgsql:Npgsql.Internal.PgWriter",
@@ -4025,6 +4809,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Npgsql:Npgsql.Internal.PgWriter::WriteAsOid(Npgsql.Internal.Postgres.PgTypeId):System.Void",
@@ -4041,6 +4829,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgWriter",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -4060,6 +4849,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgWriter",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -4079,6 +4869,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgWriter",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -4098,6 +4889,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgWriter",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -4117,6 +4909,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgWriter",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -4136,6 +4929,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgWriter",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -4155,6 +4949,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgWriter",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -4174,6 +4969,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgWriter",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -4193,6 +4989,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgWriter",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -4212,6 +5009,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgWriter",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -4231,6 +5029,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgWriter",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -4250,6 +5049,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgWriter",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -4269,6 +5069,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgWriter",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -4288,6 +5089,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgWriter",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -4307,6 +5109,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgWriter",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -4326,6 +5129,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgWriter",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -4345,6 +5149,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgWriter",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -4364,6 +5169,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgWriter",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -4383,6 +5189,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgWriter",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -4402,6 +5209,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgWriter",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -4421,6 +5229,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgWriter",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -4442,6 +5251,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgWriter",
           "declaringAssemblyName": "Npgsql"
         }
@@ -4461,6 +5271,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Npgsql:Npgsql.Internal.TypeInfoMappingCollection::Find(System.Type,System.Nullable_1[[Npgsql.Internal.Postgres.DataTypeName,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]],Npgsql.Internal.PgSerializerOptions):Npgsql.Internal.PgTypeInfo",
@@ -4477,6 +5291,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.TypeInfoMappingCollection",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -4496,6 +5311,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.TypeInfoMappingCollection",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -4515,6 +5331,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.TypeInfoMappingCollection",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -4534,6 +5351,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.TypeInfoMappingCollection",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -4553,6 +5371,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.TypeInfoMappingCollection",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -4572,6 +5391,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.TypeInfoMappingCollection",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -4591,6 +5411,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.TypeInfoMappingCollection",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -4610,6 +5431,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.TypeInfoMappingCollection",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -4629,6 +5451,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.TypeInfoMappingCollection",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -4648,6 +5471,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.TypeInfoMappingCollection",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -4667,6 +5491,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.TypeInfoMappingCollection",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -4686,6 +5511,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.TypeInfoMappingCollection",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -4705,6 +5531,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.TypeInfoMappingCollection",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -4724,6 +5551,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.TypeInfoMappingCollection",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -4743,6 +5571,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.TypeInfoMappingCollection",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -4762,6 +5591,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.TypeInfoMappingCollection",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -4781,6 +5611,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.TypeInfoMappingCollection",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -4800,6 +5631,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.TypeInfoMappingCollection",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -4819,6 +5651,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.TypeInfoMappingCollection",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -4838,6 +5671,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.TypeInfoMappingCollection",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -4857,6 +5691,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.TypeInfoMappingCollection",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -4876,6 +5711,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.TypeInfoMappingCollection",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -4895,6 +5731,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.TypeInfoMappingCollection",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -4914,6 +5751,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.TypeInfoMappingCollection",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -4933,6 +5771,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.TypeInfoMappingCollection",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -4952,6 +5791,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.TypeInfoMappingCollection",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -4971,6 +5811,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.TypeInfoMappingCollection",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -4990,6 +5831,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.TypeInfoMappingCollection",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -5009,6 +5851,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.TypeInfoMappingCollection",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -5028,6 +5871,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.TypeInfoMappingCollection",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -5047,6 +5891,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.TypeInfoMappingCollection",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -5066,6 +5911,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.TypeInfoMappingCollection",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -5085,6 +5931,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.TypeInfoMappingCollection",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -5104,6 +5951,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.TypeInfoMappingCollection",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false,
@@ -5131,6 +5979,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.TypeInfoMappingCollection",
           "declaringAssemblyName": "Npgsql"
         }
@@ -5145,6 +5994,7 @@
           "normalizedSignature": "constructor|(System.Int32):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.TypeInfoMappingCollection",
           "declaringAssemblyName": "Npgsql"
         },
@@ -5155,6 +6005,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.TypeInfoMappingCollection",
           "declaringAssemblyName": "Npgsql"
         },
@@ -5165,6 +6016,7 @@
           "normalizedSignature": "constructor|(Npgsql.Internal.TypeInfoMappingCollection):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.TypeInfoMappingCollection",
           "declaringAssemblyName": "Npgsql"
         },
@@ -5175,6 +6027,7 @@
           "normalizedSignature": "constructor|(System.Collections.Generic.IEnumerable_1[[Npgsql.Internal.TypeInfoMapping,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.TypeInfoMappingCollection",
           "declaringAssemblyName": "Npgsql"
         }
@@ -5191,6 +6044,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Npgsql:Npgsql.Internal.PgConverterFactory::CreateArrayMultirangeConverter(PgConverter_1,Npgsql.Internal.PgSerializerOptions):PgConverter_1",
@@ -5207,6 +6064,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgConverterFactory",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -5226,6 +6084,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgConverterFactory",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -5245,6 +6104,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgConverterFactory",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -5264,6 +6124,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.PgConverterFactory",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -5285,6 +6146,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Npgsql:Npgsql.Internal.TypeInfoMappingHelpers::CreateInfo(Npgsql.Internal.TypeInfoMapping,Npgsql.Internal.PgSerializerOptions,Npgsql.Internal.PgConverter):Npgsql.Internal.PgTypeInfo",
@@ -5301,6 +6166,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.TypeInfoMappingHelpers",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": true
@@ -5320,6 +6186,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.TypeInfoMappingHelpers",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": true
@@ -5339,6 +6206,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.TypeInfoMappingHelpers",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": true
@@ -5358,6 +6226,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.TypeInfoMappingHelpers",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": true

@@ -5,15 +5,19 @@
 // Primitive type aliases from @tsonic/core
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
+// Import support types from @tsonic/core
+import type { ptr } from "@tsonic/core/types.js";
+
 // Import types from other namespaces
 import type { INpgsqlSingletonOptions, NpgsqlOptionsExtension } from "../../Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal/internal/index.js";
 import type { INpgsqlDataSourceConfigurationPlugin } from "../../Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure/internal/index.js";
 import type { NpgsqlEStringTypeMapping } from "../../Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping/internal/index.js";
-import type { NpgsqlConnection } from "../../Npgsql/internal/index.js";
+import type { NpgsqlConnection, NpgsqlDataSource } from "../../Npgsql/internal/index.js";
+import type { ConcurrentDictionary } from "@tsonic/dotnet/System.Collections.Concurrent.js";
 import type { IEnumerable } from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { DbDataSource } from "@tsonic/dotnet/System.Data.Common.js";
+import type { DbConnection, DbDataSource } from "@tsonic/dotnet/System.Data.Common.js";
 import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Exception, Func, IAsyncDisposable, IDisposable, IServiceProvider, Object as ClrObject, String as ClrString, TimeSpan, Type, Void } from "@tsonic/dotnet/System.js";
+import type { Boolean as ClrBoolean, Exception, Func, IAsyncDisposable, IDisposable, Int32, IServiceProvider, Nullable, Object as ClrObject, String as ClrString, TimeSpan, Type, Void } from "@tsonic/dotnet/System.js";
 import type { StringBuilder } from "@tsonic/dotnet/System.Text.js";
 import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
 import type { Task, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
@@ -23,7 +27,7 @@ import type { IDbContextOptions, IResettableService } from "@tsonic/efcore/Micro
 import type { DbContext } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.js";
 import type { IModel, IProperty } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js";
 import * as Microsoft_EntityFrameworkCore_Storage_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
-import type { CoreTypeMapping, ExecutionResult, ExecutionStrategyDependencies, IDatabaseCreator, IDbContextTransactionManager, IExecutionStrategy, IExecutionStrategyFactory, IRawSqlCommandBuilder, IRelationalConnection, IRelationalDatabaseCreator, IRelationalTransactionManager, IRelationalTypeMappingSource, ISqlGenerationHelper, ITransactionEnlistmentManager, ITypeMappingSource, RelationalConnection, RelationalConnectionDependencies, RelationalDatabaseCreator, RelationalDatabaseCreatorDependencies, RelationalExecutionStrategyFactory, RelationalSqlGenerationHelper, RelationalSqlGenerationHelperDependencies, RelationalTypeMapping, RelationalTypeMappingSource, RelationalTypeMappingSourceDependencies, TypeMappingSourceDependencies } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
+import type { CoreTypeMapping, ExecutionResult, ExecutionStrategyDependencies, IDatabaseCreator, IDbContextTransactionManager, IExecutionStrategy, IExecutionStrategyFactory, IRawSqlCommandBuilder, IRelationalConnection, IRelationalDatabaseCreator, IRelationalTransactionManager, IRelationalTypeMappingSource, ISqlGenerationHelper, ITransactionEnlistmentManager, ITypeMappingSource, RelationalConnection, RelationalConnectionDependencies, RelationalDatabaseCreator, RelationalDatabaseCreatorDependencies, RelationalExecutionStrategyFactory, RelationalSqlGenerationHelper, RelationalSqlGenerationHelperDependencies, RelationalTypeMapping, RelationalTypeMappingInfo, RelationalTypeMappingSource, RelationalTypeMappingSourceDependencies, TypeMappingSourceDependencies } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
 
 export interface INpgsqlRelationalConnection$instance extends IRelationalConnection, IRelationalTransactionManager, IDbContextTransactionManager, IResettableService, IDisposable, IAsyncDisposable {
     readonly DataSource: DbDataSource | undefined;
@@ -57,7 +61,12 @@ export const NpgsqlDatabaseCreator: {
 
 export type NpgsqlDatabaseCreator = NpgsqlDatabaseCreator$instance;
 
-export interface NpgsqlDataSourceManager$instance {
+export abstract class NpgsqlDataSourceManager$protected {
+    protected CreateDataSource(npgsqlOptionsExtension: NpgsqlOptionsExtension): NpgsqlDataSource;
+}
+
+
+export interface NpgsqlDataSourceManager$instance extends NpgsqlDataSourceManager$protected {
     Dispose(): void;
     DisposeAsync(): ValueTask;
     GetDataSource(npgsqlOptionsExtension: NpgsqlOptionsExtension, applicationServiceProvider: IServiceProvider): DbDataSource | undefined;
@@ -85,7 +94,12 @@ export const NpgsqlExecutionStrategy: {
 
 export type NpgsqlExecutionStrategy = NpgsqlExecutionStrategy$instance;
 
-export interface NpgsqlExecutionStrategyFactory$instance extends RelationalExecutionStrategyFactory {
+export abstract class NpgsqlExecutionStrategyFactory$protected {
+    protected CreateDefaultStrategy(dependencies: ExecutionStrategyDependencies): IExecutionStrategy;
+}
+
+
+export interface NpgsqlExecutionStrategyFactory$instance extends NpgsqlExecutionStrategyFactory$protected, RelationalExecutionStrategyFactory {
 }
 
 
@@ -96,10 +110,17 @@ export const NpgsqlExecutionStrategyFactory: {
 
 export type NpgsqlExecutionStrategyFactory = NpgsqlExecutionStrategyFactory$instance;
 
-export interface NpgsqlRelationalConnection$instance extends RelationalConnection {
+export abstract class NpgsqlRelationalConnection$protected {
+    protected readonly SupportsAmbientTransactions: boolean;
+    protected CreateDbConnection(): DbConnection;
+}
+
+
+export interface NpgsqlRelationalConnection$instance extends NpgsqlRelationalConnection$protected, RelationalConnection {
     ConnectionString: string;
     readonly CurrentAmbientTransaction: Transaction | undefined;
-    readonly DataSource: DbDataSource | undefined;
+    get DataSource(): DbDataSource | undefined;
+    set DataSource(value: DbDataSource);
     DbConnection: NpgsqlConnection;
     get DbDataSource(): DbDataSource | undefined;
     set DbDataSource(value: DbDataSource);
@@ -110,14 +131,13 @@ export interface NpgsqlRelationalConnection$instance extends RelationalConnectio
 
 export const NpgsqlRelationalConnection: {
     new(dependencies: RelationalConnectionDependencies, dataSourceManager: NpgsqlDataSourceManager, options: IDbContextOptions): NpgsqlRelationalConnection;
+    new(dependencies: RelationalConnectionDependencies, dataSource: DbDataSource): NpgsqlRelationalConnection;
 };
 
 
 export interface __NpgsqlRelationalConnection$views {
     As_INpgsqlRelationalConnection(): INpgsqlRelationalConnection$instance;
 }
-
-export interface NpgsqlRelationalConnection$instance extends INpgsqlRelationalConnection$instance {}
 
 export type NpgsqlRelationalConnection = NpgsqlRelationalConnection$instance & __NpgsqlRelationalConnection$views;
 
@@ -147,7 +167,20 @@ export const NpgsqlTransientExceptionDetector: {
 
 export type NpgsqlTransientExceptionDetector = NpgsqlTransientExceptionDetector$instance;
 
-export interface NpgsqlTypeMappingSource$instance extends RelationalTypeMappingSource {
+export abstract class NpgsqlTypeMappingSource$protected {
+    protected readonly ClrTypeMappings: ConcurrentDictionary<Type, RelationalTypeMapping>;
+    protected readonly StoreTypeMappings: ConcurrentDictionary<System_Internal.String, RelationalTypeMapping[]>;
+    protected FindBaseMapping(mappingInfo: RelationalTypeMappingInfo): RelationalTypeMapping | undefined;
+    protected FindCollectionMapping(info: RelationalTypeMappingInfo, modelType: Type, providerType: Type, elementMapping: CoreTypeMapping): RelationalTypeMapping | undefined;
+    protected FindEnumMapping(mappingInfo: RelationalTypeMappingInfo): RelationalTypeMapping | undefined;
+    protected FindMapping(mappingInfo: RelationalTypeMappingInfo): RelationalTypeMapping | undefined;
+    protected FindRowValueMapping(mappingInfo: RelationalTypeMappingInfo): RelationalTypeMapping | undefined;
+    protected FindUserRangeMapping(mappingInfo: RelationalTypeMappingInfo): RelationalTypeMapping | undefined;
+    protected ParseStoreTypeName(storeTypeName: string, unicode: Nullable<System_Internal.Boolean>, size: Nullable<System_Internal.Int32>, precision: Nullable<System_Internal.Int32>, scale: Nullable<System_Internal.Int32>): string | undefined;
+}
+
+
+export interface NpgsqlTypeMappingSource$instance extends NpgsqlTypeMappingSource$protected, RelationalTypeMappingSource {
     readonly EStringTypeMapping: NpgsqlEStringTypeMapping;
     FindCollectionMapping(storeType: string, modelClrType: Type, providerClrType: Type, elementMapping: CoreTypeMapping): RelationalTypeMapping | undefined;
     FindContainerMapping(containerClrType: Type, containeeTypeMapping: RelationalTypeMapping, model: IModel): RelationalTypeMapping | undefined;

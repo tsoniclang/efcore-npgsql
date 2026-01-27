@@ -19,7 +19,7 @@ import type { IEnumerable, IReadOnlyList, List } from "@tsonic/dotnet/System.Col
 import type { DbType } from "@tsonic/dotnet/System.Data.js";
 import type { Stream, TextReader } from "@tsonic/dotnet/System.IO.js";
 import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { AsyncCallback, Boolean as ClrBoolean, Byte, Char, Double, Enum, Func, IAsyncDisposable, IAsyncResult, ICloneable, IComparable, IConvertible, IDisposable, IEquatable, IFormattable, Int16, Int32, Int64, IntPtr, ISpanFormattable, Memory, MulticastDelegate, Nullable, Object as ClrObject, ReadOnlyMemory, ReadOnlySpan, Single, Span, String as ClrString, TimeSpan, Type, UInt16, UInt32, UInt64, ValueType, Version, Void } from "@tsonic/dotnet/System.js";
+import type { ArgumentOutOfRangeException, AsyncCallback, Boolean as ClrBoolean, Byte, Char, Double, Enum, Func, IAsyncDisposable, IAsyncResult, ICloneable, IComparable, IConvertible, IDisposable, IEquatable, IFormattable, Int16, Int32, Int64, IntPtr, ISpanFormattable, Memory, MulticastDelegate, Nullable, Object as ClrObject, ReadOnlyMemory, ReadOnlySpan, Single, Span, String as ClrString, TimeSpan, Type, UInt16, UInt32, UInt64, ValueType, Version, Void } from "@tsonic/dotnet/System.js";
 import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization.js";
 import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization.js";
 import type { Encoding } from "@tsonic/dotnet/System.Text.js";
@@ -211,17 +211,28 @@ export interface DbTypeResolverFactory$instance {
 
 
 export const DbTypeResolverFactory: {
+    new(): DbTypeResolverFactory;
 };
 
 
 export type DbTypeResolverFactory = DbTypeResolverFactory$instance;
 
-export interface DynamicTypeInfoResolver$instance {
+export abstract class DynamicTypeInfoResolver$protected {
+    protected abstract GetMappings(type: Type, dataTypeName: DataTypeName, options: PgSerializerOptions): DynamicTypeInfoResolver_DynamicMappingCollection | undefined;
+}
+
+
+export interface DynamicTypeInfoResolver$instance extends DynamicTypeInfoResolver$protected {
     GetTypeInfo(type: Type, dataTypeName: Nullable<DataTypeName>, options: PgSerializerOptions): PgTypeInfo | undefined;
 }
 
 
 export const DynamicTypeInfoResolver: {
+    new(): DynamicTypeInfoResolver;
+    CreateCollection(baseCollection?: TypeInfoMappingCollection): DynamicTypeInfoResolver_DynamicMappingCollection;
+    IsArrayDataTypeName(dataTypeName: DataTypeName, options: PgSerializerOptions, elementDataTypeName: DataTypeName): boolean;
+    IsArrayLikeType(type: Type, elementType: Type): boolean;
+    IsTypeOrNullableOfType(type: Type, predicate: Func<Type, System_Internal.Boolean>, matchedType: Type): boolean;
 };
 
 
@@ -237,7 +248,7 @@ export type DynamicTypeInfoResolver = DynamicTypeInfoResolver$instance & __Dynam
 export interface NpgsqlConnector$instance {
     readonly DatabaseInfo: NpgsqlDatabaseInfo;
     readonly Settings: NpgsqlConnectionStringBuilder;
-    readonly TextEncoding: Encoding;
+    TextEncoding: Encoding;
     CreateBatch(): NpgsqlBatch;
     CreateCommand(cmdText?: string): NpgsqlCommand;
 }
@@ -250,8 +261,13 @@ export const NpgsqlConnector: {
 
 export type NpgsqlConnector = NpgsqlConnector$instance;
 
-export interface NpgsqlDatabaseInfo$instance {
-    readonly HasIntegerDateTimes: boolean;
+export abstract class NpgsqlDatabaseInfo$protected {
+    protected abstract GetTypes(): IEnumerable<PostgresType>;
+}
+
+
+export interface NpgsqlDatabaseInfo$instance extends NpgsqlDatabaseInfo$protected {
+    HasIntegerDateTimes: boolean;
     readonly Host: string;
     readonly Name: string;
     readonly Port: int;
@@ -264,7 +280,7 @@ export interface NpgsqlDatabaseInfo$instance {
     readonly SupportsEnumTypes: boolean;
     readonly SupportsMultirangeTypes: boolean;
     readonly SupportsRangeTypes: boolean;
-    readonly SupportsTransactions: boolean;
+    SupportsTransactions: boolean;
     readonly SupportsUnlisten: boolean;
     readonly Version: Version;
     GetPostgresType(oid: uint): PostgresType;
@@ -274,13 +290,22 @@ export interface NpgsqlDatabaseInfo$instance {
 
 
 export const NpgsqlDatabaseInfo: {
+    new(host: string, port: int, databaseName: string, version: Version): NpgsqlDatabaseInfo;
+    new(host: string, port: int, databaseName: string, version: Version, serverVersion: string): NpgsqlDatabaseInfo;
+    ParseServerVersion(value: string): Version;
     RegisterFactory(factory: INpgsqlDatabaseInfoFactory): void;
 };
 
 
 export type NpgsqlDatabaseInfo = NpgsqlDatabaseInfo$instance;
 
-export interface PgBufferedConverter_1$instance<T> extends PgConverter_1<T> {
+export abstract class PgBufferedConverter_1$protected<T> {
+    protected abstract ReadCore(reader: PgReader): T;
+    protected abstract WriteCore(writer: PgWriter, value: T): void;
+}
+
+
+export interface PgBufferedConverter_1$instance<T> extends PgBufferedConverter_1$protected<T>, PgConverter_1<T> {
     GetSize(context: SizeContext, value: T, writeState: unknown): Size;
     Read(reader: PgReader): T;
     ReadAsync(reader: PgReader, cancellationToken?: CancellationToken): ValueTask<T>;
@@ -291,6 +316,7 @@ export interface PgBufferedConverter_1$instance<T> extends PgConverter_1<T> {
 
 
 export const PgBufferedConverter_1: {
+    new<T>(customDbNullPredicate: boolean): PgBufferedConverter_1<T>;
 };
 
 
@@ -308,7 +334,12 @@ export const PgConverter: {
 
 export type PgConverter = PgConverter$instance;
 
-export interface PgConverter_1$instance<T> extends PgConverter {
+export abstract class PgConverter_1$protected<T> {
+    protected IsDbNullValue(value: T, writeState: unknown): boolean;
+}
+
+
+export interface PgConverter_1$instance<T> extends PgConverter_1$protected<T>, PgConverter {
     GetSize(context: SizeContext, value: T, writeState: unknown): Size;
     IsDbNull(value: T, writeState: unknown): boolean;
     Read(reader: PgReader): T;
@@ -343,6 +374,7 @@ export interface PgConverterResolver_1$instance<T> extends PgConverterResolver {
 
 
 export const PgConverterResolver_1: {
+    new<T>(): PgConverterResolver_1<T>;
 };
 
 
@@ -417,7 +449,7 @@ export interface PgSerializerOptions$instance {
     EnableDateTimeInfinityConversions: boolean;
     TextEncoding: Encoding;
     readonly TimeZone: string;
-    readonly TypeInfoResolver: IPgTypeInfoResolver;
+    TypeInfoResolver: IPgTypeInfoResolver;
     GetArrayElementTypeId(arrayTypeId: PgTypeId): PgTypeId;
     GetArrayTypeId(elementTypeId: PgTypeId): PgTypeId;
     GetDataTypeName(pgTypeId: PgTypeId): DataTypeName;
@@ -446,6 +478,7 @@ export interface PgStreamingConverter_1$instance<T> extends PgConverter_1<T> {
 
 
 export const PgStreamingConverter_1: {
+    new<T>(customDbNullPredicate: boolean): PgStreamingConverter_1<T>;
 };
 
 
@@ -482,6 +515,7 @@ export interface PgTypeInfoResolverFactory$instance {
 
 
 export const PgTypeInfoResolverFactory: {
+    new(): PgTypeInfoResolverFactory;
 };
 
 

@@ -54,7 +54,13 @@ export const PgTableValuedFunctionExpression_ColumnInfo: {
 
 export type PgTableValuedFunctionExpression_ColumnInfo = PgTableValuedFunctionExpression_ColumnInfo$instance;
 
-export interface PgAllExpression$instance extends SqlExpression {
+export abstract class PgAllExpression$protected {
+    protected Print(expressionPrinter: ExpressionPrinter): void;
+    protected VisitChildren(visitor: ExpressionVisitor): Expression;
+}
+
+
+export interface PgAllExpression$instance extends PgAllExpression$protected, SqlExpression {
     readonly Array: SqlExpression;
     readonly Item: SqlExpression;
     readonly OperatorType: PgAllOperatorType;
@@ -75,7 +81,13 @@ export const PgAllExpression: {
 
 export type PgAllExpression = PgAllExpression$instance;
 
-export interface PgAnyExpression$instance extends SqlExpression {
+export abstract class PgAnyExpression$protected {
+    protected Print(expressionPrinter: ExpressionPrinter): void;
+    protected VisitChildren(visitor: ExpressionVisitor): Expression;
+}
+
+
+export interface PgAnyExpression$instance extends PgAnyExpression$protected, SqlExpression {
     readonly Array: SqlExpression;
     readonly Item: SqlExpression;
     readonly OperatorType: PgAnyOperatorType;
@@ -96,7 +108,13 @@ export const PgAnyExpression: {
 
 export type PgAnyExpression = PgAnyExpression$instance;
 
-export interface PgArrayIndexExpression$instance extends SqlExpression {
+export abstract class PgArrayIndexExpression$protected {
+    protected Print(expressionPrinter: ExpressionPrinter): void;
+    protected VisitChildren(visitor: ExpressionVisitor): Expression;
+}
+
+
+export interface PgArrayIndexExpression$instance extends PgArrayIndexExpression$protected, SqlExpression {
     readonly Array: SqlExpression;
     readonly Index: SqlExpression;
     readonly IsNullable: boolean;
@@ -116,7 +134,13 @@ export const PgArrayIndexExpression: {
 
 export type PgArrayIndexExpression = PgArrayIndexExpression$instance;
 
-export interface PgArraySliceExpression$instance extends SqlExpression {
+export abstract class PgArraySliceExpression$protected {
+    protected Print(expressionPrinter: ExpressionPrinter): void;
+    protected VisitChildren(visitor: ExpressionVisitor): Expression;
+}
+
+
+export interface PgArraySliceExpression$instance extends PgArraySliceExpression$protected, SqlExpression {
     readonly Array: SqlExpression;
     readonly IsNullable: boolean;
     readonly LowerBound: SqlExpression;
@@ -137,7 +161,13 @@ export const PgArraySliceExpression: {
 
 export type PgArraySliceExpression = PgArraySliceExpression$instance;
 
-export interface PgBinaryExpression$instance extends SqlExpression {
+export abstract class PgBinaryExpression$protected {
+    protected Print(expressionPrinter: ExpressionPrinter): void;
+    protected VisitChildren(visitor: ExpressionVisitor): Expression;
+}
+
+
+export interface PgBinaryExpression$instance extends PgBinaryExpression$protected, SqlExpression {
     readonly Left: SqlExpression;
     readonly OperatorType: PgExpressionType;
     readonly Right: SqlExpression;
@@ -155,7 +185,12 @@ export const PgBinaryExpression: {
 
 export type PgBinaryExpression = PgBinaryExpression$instance;
 
-export interface PgDeleteExpression$instance extends Expression {
+export abstract class PgDeleteExpression$protected {
+    protected VisitChildren(visitor: ExpressionVisitor): Expression;
+}
+
+
+export interface PgDeleteExpression$instance extends PgDeleteExpression$protected, Expression {
     readonly FromItems: IReadOnlyList<TableExpressionBase>;
     readonly NodeType: ExpressionType;
     readonly Predicate: SqlExpression | undefined;
@@ -176,7 +211,13 @@ export const PgDeleteExpression: {
 
 export type PgDeleteExpression = PgDeleteExpression$instance;
 
-export interface PgFunctionExpression$instance extends SqlFunctionExpression {
+export abstract class PgFunctionExpression$protected {
+    protected Print(expressionPrinter: ExpressionPrinter): void;
+    protected VisitChildren(visitor: ExpressionVisitor): Expression;
+}
+
+
+export interface PgFunctionExpression$instance extends PgFunctionExpression$protected, SqlFunctionExpression {
     readonly AggregateOrderings: IReadOnlyList<OrderingExpression>;
     readonly AggregatePredicate: SqlExpression | undefined;
     readonly ArgumentNames: IReadOnlyList<string | undefined>;
@@ -202,7 +243,13 @@ export const PgFunctionExpression: {
 
 export type PgFunctionExpression = PgFunctionExpression$instance;
 
-export interface PgILikeExpression$instance extends SqlExpression {
+export abstract class PgILikeExpression$protected {
+    protected Print(expressionPrinter: ExpressionPrinter): void;
+    protected VisitChildren(visitor: ExpressionVisitor): Expression;
+}
+
+
+export interface PgILikeExpression$instance extends PgILikeExpression$protected, SqlExpression {
     readonly EscapeChar: SqlExpression | undefined;
     readonly Match: SqlExpression;
     readonly Pattern: SqlExpression;
@@ -222,7 +269,13 @@ export const PgILikeExpression: {
 
 export type PgILikeExpression = PgILikeExpression$instance;
 
-export interface PgJsonTraversalExpression$instance extends SqlExpression {
+export abstract class PgJsonTraversalExpression$protected {
+    protected Print(expressionPrinter: ExpressionPrinter): void;
+    protected VisitChildren(visitor: ExpressionVisitor): Expression;
+}
+
+
+export interface PgJsonTraversalExpression$instance extends PgJsonTraversalExpression$protected, SqlExpression {
     readonly Expression: SqlExpression;
     readonly Path: IReadOnlyList<SqlExpression>;
     readonly ReturnsText: boolean;
@@ -243,7 +296,13 @@ export const PgJsonTraversalExpression: {
 
 export type PgJsonTraversalExpression = PgJsonTraversalExpression$instance;
 
-export interface PgNewArrayExpression$instance extends SqlExpression {
+export abstract class PgNewArrayExpression$protected {
+    protected Print(expressionPrinter: ExpressionPrinter): void;
+    protected VisitChildren(visitor: ExpressionVisitor): Expression;
+}
+
+
+export interface PgNewArrayExpression$instance extends PgNewArrayExpression$protected, SqlExpression {
     readonly Expressions: IReadOnlyList<SqlExpression>;
     Equals(obj: unknown): boolean;
     GetHashCode(): int;
@@ -259,7 +318,13 @@ export const PgNewArrayExpression: {
 
 export type PgNewArrayExpression = PgNewArrayExpression$instance;
 
-export interface PgRegexMatchExpression$instance extends SqlExpression {
+export abstract class PgRegexMatchExpression$protected {
+    protected Print(expressionPrinter: ExpressionPrinter): void;
+    protected VisitChildren(visitor: ExpressionVisitor): Expression;
+}
+
+
+export interface PgRegexMatchExpression$instance extends PgRegexMatchExpression$protected, SqlExpression {
     readonly Match: SqlExpression;
     readonly Options: RegexOptions;
     readonly Pattern: SqlExpression;
@@ -280,7 +345,13 @@ export const PgRegexMatchExpression: {
 
 export type PgRegexMatchExpression = PgRegexMatchExpression$instance;
 
-export interface PgRowValueExpression$instance extends SqlExpression {
+export abstract class PgRowValueExpression$protected {
+    protected Print(expressionPrinter: ExpressionPrinter): void;
+    protected VisitChildren(visitor: ExpressionVisitor): Expression;
+}
+
+
+export interface PgRowValueExpression$instance extends PgRowValueExpression$protected, SqlExpression {
     readonly Values: IReadOnlyList<SqlExpression>;
     Equals(obj: unknown): boolean;
     Equals(other: PgRowValueExpression): boolean;
@@ -297,7 +368,13 @@ export const PgRowValueExpression: {
 
 export type PgRowValueExpression = PgRowValueExpression$instance;
 
-export interface PgTableValuedFunctionExpression$instance extends TableValuedFunctionExpression {
+export abstract class PgTableValuedFunctionExpression$protected {
+    protected Print(expressionPrinter: ExpressionPrinter): void;
+    protected VisitChildren(visitor: ExpressionVisitor): Expression;
+}
+
+
+export interface PgTableValuedFunctionExpression$instance extends PgTableValuedFunctionExpression$protected, TableValuedFunctionExpression {
     readonly ColumnInfos: IReadOnlyList<PgTableValuedFunctionExpression_ColumnInfo> | undefined;
     readonly WithOrdinality: boolean;
     Clone(alias: string, cloningExpressionVisitor: ExpressionVisitor): TableExpressionBase;
@@ -317,7 +394,13 @@ export const PgTableValuedFunctionExpression: {
 
 export type PgTableValuedFunctionExpression = PgTableValuedFunctionExpression$instance;
 
-export interface PgUnknownBinaryExpression$instance extends SqlExpression {
+export abstract class PgUnknownBinaryExpression$protected {
+    protected Print(expressionPrinter: ExpressionPrinter): void;
+    protected VisitChildren(visitor: ExpressionVisitor): Expression;
+}
+
+
+export interface PgUnknownBinaryExpression$instance extends PgUnknownBinaryExpression$protected, SqlExpression {
     readonly Left: SqlExpression;
     readonly Operator: string;
     readonly Right: SqlExpression;
@@ -337,7 +420,12 @@ export const PgUnknownBinaryExpression: {
 
 export type PgUnknownBinaryExpression = PgUnknownBinaryExpression$instance;
 
-export interface PgUnnestExpression$instance extends PgTableValuedFunctionExpression {
+export abstract class PgUnnestExpression$protected {
+    protected VisitChildren(visitor: ExpressionVisitor): Expression;
+}
+
+
+export interface PgUnnestExpression$instance extends PgUnnestExpression$protected, PgTableValuedFunctionExpression {
     readonly Array: SqlExpression;
     readonly ColumnName: string;
     Clone(alias: string, cloningExpressionVisitor: ExpressionVisitor): TableExpressionBase;

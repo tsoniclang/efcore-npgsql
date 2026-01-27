@@ -8,14 +8,14 @@ import * as Internal from './Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conv
 // Cross-namespace type imports for constraints
 import type { EnumDefinition, INpgsqlSingletonOptions } from './Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal/internal/index.js';
 import type { NpgsqlTypeMappingSource } from './Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal/internal/index.js';
-import type { IReadOnlyList } from '@tsonic/dotnet/System.Collections.Generic.js';
-import type { Nullable, Object as ClrObject, String as ClrString, Version, Void } from '@tsonic/dotnet/System.js';
+import type { Dictionary, IReadOnlyList } from '@tsonic/dotnet/System.Collections.Generic.js';
+import type { Boolean as ClrBoolean, Nullable, Object as ClrObject, String as ClrString, Version, Void } from '@tsonic/dotnet/System.js';
 import type { ModelBuilder } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.js';
 import type { IConventionModelBuilder, IConventionPropertyBuilder } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.Builders.js';
 import type { IProviderConventionSetBuilder, ProviderConventionSetBuilderDependencies, RelationalConventionSetBuilder, RelationalConventionSetBuilderDependencies } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.js';
 import type { ConventionSet, IConvention, IConventionContext, IEntityTypeAnnotationChangedConvention, IEntityTypeBaseTypeChangedConvention, IEntityTypePrimaryKeyChangedConvention, IForeignKeyAddedConvention, IForeignKeyOwnershipChangedConvention, IForeignKeyPropertiesChangedConvention, IForeignKeyRemovedConvention, IModelFinalizedConvention, IModelFinalizingConvention, IModelInitializedConvention, IPropertyAnnotationChangedConvention, RelationalRuntimeModelConvention, RelationalValueGenerationConvention, SharedTableConvention, StoreGenerationConvention } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.Conventions.js';
-import type { IConventionAnnotation, IReadOnlyProperty, StoreObjectIdentifier, ValueGenerated } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js';
-import type { IRelationalTypeMappingSource } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js';
+import type { IConventionAnnotation, IConventionProperty, IEntityType, IIndex, IModel, IProperty, IReadOnlyIndex, IReadOnlyProperty, RuntimeEntityType, RuntimeIndex, RuntimeModel, RuntimeProperty, StoreObjectIdentifier, ValueGenerated } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js';
+import type { IRelationalTypeMappingSource, RelationalTypeMapping } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js';
 
 // Public API exports (curated - no internal $instance/$views leakage)
 export { NpgsqlConventionSetBuilder as NpgsqlConventionSetBuilder } from './Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions/internal/index.js';

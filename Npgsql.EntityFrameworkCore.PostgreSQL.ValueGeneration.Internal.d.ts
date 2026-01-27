@@ -7,7 +7,9 @@ import * as Internal from './Npgsql.EntityFrameworkCore.PostgreSQL.ValueGenerati
 
 // Cross-namespace type imports for constraints
 import type { INpgsqlRelationalConnection } from './Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal/internal/index.js';
-import type { Boolean as ClrBoolean, IDisposable, Object as ClrObject, Type } from '@tsonic/dotnet/System.js';
+import type { Boolean as ClrBoolean, IDisposable, Int64, Object as ClrObject, Type } from '@tsonic/dotnet/System.js';
+import type { CancellationToken } from '@tsonic/dotnet/System.Threading.js';
+import type { Task } from '@tsonic/dotnet/System.Threading.Tasks.js';
 import type { IRelationalCommandDiagnosticsLogger } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Diagnostics.js';
 import type { IProperty, ISequence, ITypeBase } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js';
 import type { IRawSqlCommandBuilder, IRelationalConnection } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js';

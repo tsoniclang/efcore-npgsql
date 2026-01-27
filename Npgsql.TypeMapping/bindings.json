@@ -31,6 +31,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.TypeMapping.INpgsqlTypeMapper",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -50,6 +51,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.TypeMapping.INpgsqlTypeMapper",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -69,6 +71,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.TypeMapping.INpgsqlTypeMapper",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -88,6 +91,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.TypeMapping.INpgsqlTypeMapper",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -107,6 +111,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.TypeMapping.INpgsqlTypeMapper",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -126,6 +131,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.TypeMapping.INpgsqlTypeMapper",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -145,6 +151,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.TypeMapping.INpgsqlTypeMapper",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -164,6 +171,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.TypeMapping.INpgsqlTypeMapper",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -183,6 +191,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.TypeMapping.INpgsqlTypeMapper",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -202,6 +211,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.TypeMapping.INpgsqlTypeMapper",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -223,6 +233,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.TypeMapping.INpgsqlTypeMapper",
           "declaringAssemblyName": "Npgsql"
         }
@@ -242,6 +253,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -259,6 +274,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.TypeMapping.UserTypeMapping",
           "declaringAssemblyName": "Npgsql"
         },
@@ -277,6 +293,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.TypeMapping.UserTypeMapping",
           "declaringAssemblyName": "Npgsql"
         }

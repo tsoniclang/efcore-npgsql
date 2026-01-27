@@ -17,6 +17,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Microsoft.EntityFrameworkCore.Metadata.Internal.NpgsqlIndexExtensions::AreCompatibleForNpgsql(Microsoft.EntityFrameworkCore.Metadata.IReadOnlyIndex,Microsoft.EntityFrameworkCore.Metadata.IReadOnlyIndex,Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier\u0026,System.Boolean):System.Boolean",
@@ -33,6 +37,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Internal.NpgsqlIndexExtensions",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": true,

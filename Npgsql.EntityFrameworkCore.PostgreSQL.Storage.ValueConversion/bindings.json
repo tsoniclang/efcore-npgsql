@@ -15,6 +15,19 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 3,
+      "baseType": {
+        "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter\u00602",
+        "clrName": "Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter\u00602",
+        "typeArguments": [
+          "TModelCollection",
+          "TProviderCollection"
+        ]
+      },
+      "typeParameters": [
+        "TModelCollection",
+        "TConcreteModelCollection",
+        "TProviderCollection"
+      ],
       "methods": [],
       "properties": [
         {
@@ -32,6 +45,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.ValueConversion.NpgsqlArrayConverter\u00603",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
@@ -46,6 +60,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.ValueConversion.NpgsqlArrayConverter\u00603",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
@@ -56,6 +71,7 @@
           "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.ValueConversion.NpgsqlArrayConverter\u00603",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }

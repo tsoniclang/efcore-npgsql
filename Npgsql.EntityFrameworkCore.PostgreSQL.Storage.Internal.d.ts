@@ -9,10 +9,11 @@ import * as Internal from './Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Inter
 import type { INpgsqlSingletonOptions, NpgsqlOptionsExtension } from './Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal/internal/index.js';
 import type { INpgsqlDataSourceConfigurationPlugin } from './Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure/internal/index.js';
 import type { NpgsqlEStringTypeMapping } from './Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping/internal/index.js';
-import type { NpgsqlConnection } from './Npgsql/internal/index.js';
+import type { NpgsqlConnection, NpgsqlDataSource } from './Npgsql/internal/index.js';
+import type { ConcurrentDictionary } from '@tsonic/dotnet/System.Collections.Concurrent.js';
 import type { IEnumerable } from '@tsonic/dotnet/System.Collections.Generic.js';
-import type { DbDataSource } from '@tsonic/dotnet/System.Data.Common.js';
-import type { Boolean as ClrBoolean, Exception, Func, IAsyncDisposable, IDisposable, IServiceProvider, Object as ClrObject, String as ClrString, TimeSpan, Type, Void } from '@tsonic/dotnet/System.js';
+import type { DbConnection, DbDataSource } from '@tsonic/dotnet/System.Data.Common.js';
+import type { Boolean as ClrBoolean, Exception, Func, IAsyncDisposable, IDisposable, Int32, IServiceProvider, Nullable, Object as ClrObject, String as ClrString, TimeSpan, Type, Void } from '@tsonic/dotnet/System.js';
 import type { StringBuilder } from '@tsonic/dotnet/System.Text.js';
 import type { CancellationToken } from '@tsonic/dotnet/System.Threading.js';
 import type { Task, ValueTask } from '@tsonic/dotnet/System.Threading.Tasks.js';
@@ -20,7 +21,7 @@ import type { Transaction } from '@tsonic/dotnet/System.Transactions.js';
 import type { IDbContextOptions, IResettableService } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure.js';
 import type { DbContext } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.js';
 import type { IModel, IProperty } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js';
-import type { CoreTypeMapping, ExecutionResult, ExecutionStrategyDependencies, IDatabaseCreator, IDbContextTransactionManager, IExecutionStrategy, IExecutionStrategyFactory, IRawSqlCommandBuilder, IRelationalConnection, IRelationalDatabaseCreator, IRelationalTransactionManager, IRelationalTypeMappingSource, ISqlGenerationHelper, ITransactionEnlistmentManager, ITypeMappingSource, RelationalConnection, RelationalConnectionDependencies, RelationalDatabaseCreator, RelationalDatabaseCreatorDependencies, RelationalExecutionStrategyFactory, RelationalSqlGenerationHelper, RelationalSqlGenerationHelperDependencies, RelationalTypeMapping, RelationalTypeMappingSource, RelationalTypeMappingSourceDependencies, TypeMappingSourceDependencies } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js';
+import type { CoreTypeMapping, ExecutionResult, ExecutionStrategyDependencies, IDatabaseCreator, IDbContextTransactionManager, IExecutionStrategy, IExecutionStrategyFactory, IRawSqlCommandBuilder, IRelationalConnection, IRelationalDatabaseCreator, IRelationalTransactionManager, IRelationalTypeMappingSource, ISqlGenerationHelper, ITransactionEnlistmentManager, ITypeMappingSource, RelationalConnection, RelationalConnectionDependencies, RelationalDatabaseCreator, RelationalDatabaseCreatorDependencies, RelationalExecutionStrategyFactory, RelationalSqlGenerationHelper, RelationalSqlGenerationHelperDependencies, RelationalTypeMapping, RelationalTypeMappingInfo, RelationalTypeMappingSource, RelationalTypeMappingSourceDependencies, TypeMappingSourceDependencies } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js';
 
 // Public API exports (curated - no internal $instance/$views leakage)
 export type INpgsqlRelationalConnection = Internal.INpgsqlRelationalConnection;

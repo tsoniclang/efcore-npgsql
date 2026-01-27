@@ -19,7 +19,17 @@ import type { IColumn, IEntityType, IIndex, IModel, IProperty, IRelationalModel,
 import type { CoreTypeMapping } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
 import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection.js";
 
-export interface NpgsqlAnnotationCodeGenerator$instance extends AnnotationCodeGenerator {
+export abstract class NpgsqlAnnotationCodeGenerator$protected {
+    protected GenerateFluentApi(model: IModel, annotation: IAnnotation): MethodCallCodeFragment | undefined;
+    protected GenerateFluentApi(entityType: IEntityType, annotation: IAnnotation): MethodCallCodeFragment | undefined;
+    protected GenerateFluentApi(index: IIndex, annotation: IAnnotation): MethodCallCodeFragment | undefined;
+    protected IsHandledByConvention(model: IModel, annotation: IAnnotation): boolean;
+    protected IsHandledByConvention(index: IIndex, annotation: IAnnotation): boolean;
+    protected IsHandledByConvention(property: IProperty, annotation: IAnnotation): boolean;
+}
+
+
+export interface NpgsqlAnnotationCodeGenerator$instance extends NpgsqlAnnotationCodeGenerator$protected, AnnotationCodeGenerator {
     GenerateFluentApiCalls(model: IModel, annotations: IDictionary<System_Internal.String, IAnnotation>): IReadOnlyList<MethodCallCodeFragment>;
     GenerateFluentApiCalls(property: IProperty, annotations: IDictionary<System_Internal.String, IAnnotation>): IReadOnlyList<MethodCallCodeFragment>;
 }
@@ -32,7 +42,12 @@ export const NpgsqlAnnotationCodeGenerator: {
 
 export type NpgsqlAnnotationCodeGenerator = NpgsqlAnnotationCodeGenerator$instance;
 
-export interface NpgsqlCSharpRuntimeAnnotationCodeGenerator$instance extends RelationalCSharpRuntimeAnnotationCodeGenerator {
+export abstract class NpgsqlCSharpRuntimeAnnotationCodeGenerator$protected {
+    protected AddNpgsqlTypeMappingTweaks(typeMapping: CoreTypeMapping, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
+}
+
+
+export interface NpgsqlCSharpRuntimeAnnotationCodeGenerator$instance extends NpgsqlCSharpRuntimeAnnotationCodeGenerator$protected, RelationalCSharpRuntimeAnnotationCodeGenerator {
     Create(typeMapping: CoreTypeMapping, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters, valueComparer?: ValueComparer, keyValueComparer?: ValueComparer, providerValueComparer?: ValueComparer): boolean;
     Generate(model: IModel, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
     Generate(model: IRelationalModel, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;

@@ -15,6 +15,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Extensions.Internal.NpgsqlShapedQueryExpressionExtensions::TryExtractArray(Microsoft.EntityFrameworkCore.Query.ShapedQueryExpression,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression\u0026,System.Boolean,System.Boolean):System.Boolean",
@@ -31,6 +35,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Extensions.Internal.NpgsqlShapedQueryExpressionExtensions",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": true,
@@ -56,6 +61,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Extensions.Internal.NpgsqlShapedQueryExpressionExtensions",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": true,
@@ -85,6 +91,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Extensions.Internal.NpgsqlShapedQueryExpressionExtensions",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": true,
@@ -118,6 +125,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Extensions.Internal.NpgsqlShapedQueryExpressionExtensions",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": true,

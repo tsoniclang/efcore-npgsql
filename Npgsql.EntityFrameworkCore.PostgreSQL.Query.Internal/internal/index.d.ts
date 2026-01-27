@@ -5,17 +5,21 @@
 // Primitive type aliases from @tsonic/core
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
+// Import support types from @tsonic/core
+import type { ptr } from "@tsonic/core/types.js";
+
 // Import types from other namespaces
 import type { INpgsqlSingletonOptions } from "../../Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal/internal/index.js";
+import type { PgAllExpression, PgAnyExpression, PgArrayIndexExpression, PgArraySliceExpression, PgBinaryExpression, PgDeleteExpression, PgFunctionExpression, PgILikeExpression, PgJsonTraversalExpression, PgNewArrayExpression, PgRegexMatchExpression, PgRowValueExpression, PgTableValuedFunctionExpression, PgUnknownBinaryExpression } from "../../Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.Internal/internal/index.js";
 import type { IReadOnlyList } from "@tsonic/dotnet/System.Collections.Generic.js";
 import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Enum, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable, Object as ClrObject, String as ClrString, Type, Version } from "@tsonic/dotnet/System.js";
+import type { Boolean as ClrBoolean, Enum, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable, Object as ClrObject, String as ClrString, Type, Version, Void } from "@tsonic/dotnet/System.js";
 import * as System_Linq_Expressions_Internal from "@tsonic/dotnet/System.Linq.Expressions.js";
-import type { Expression, ExpressionVisitor } from "@tsonic/dotnet/System.Linq.Expressions.js";
-import type { IModel } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js";
+import type { BinaryExpression, ConditionalExpression, Expression, ExpressionVisitor, LambdaExpression, MethodCallExpression, NewArrayExpression, NewExpression, UnaryExpression } from "@tsonic/dotnet/System.Linq.Expressions.js";
+import type { IModel, IProperty } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js";
 import * as Microsoft_EntityFrameworkCore_Query_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Query.js";
-import type { CompiledQueryCacheKeyGeneratorDependencies, EvaluatableExpressionFilterDependencies, ICompiledQueryCacheKeyGenerator, IEvaluatableExpressionFilter, IQueryableMethodTranslatingExpressionVisitorFactory, IQueryCompilationContextFactory, IQuerySqlGeneratorFactory, IQueryTranslationPostprocessorFactory, IRelationalParameterBasedSqlProcessorFactory, IRelationalSqlTranslatingExpressionVisitorFactory, ParametersCacheDecorator, QueryableMethodTranslatingExpressionVisitor, QueryableMethodTranslatingExpressionVisitorDependencies, QueryCompilationContext, QueryCompilationContextDependencies, QueryContext, QuerySqlGenerator, QuerySqlGeneratorDependencies, QueryTranslationPostprocessor, QueryTranslationPostprocessorDependencies, RelationalCompiledQueryCacheKeyGenerator, RelationalCompiledQueryCacheKeyGeneratorDependencies, RelationalEvaluatableExpressionFilter, RelationalEvaluatableExpressionFilterDependencies, RelationalParameterBasedSqlProcessor, RelationalParameterBasedSqlProcessorDependencies, RelationalParameterBasedSqlProcessorParameters, RelationalQueryableMethodTranslatingExpressionVisitor, RelationalQueryableMethodTranslatingExpressionVisitorDependencies, RelationalQueryCompilationContext, RelationalQueryCompilationContextDependencies, RelationalQueryTranslationPostprocessor, RelationalQueryTranslationPostprocessorDependencies, RelationalSqlTranslatingExpressionVisitor, RelationalSqlTranslatingExpressionVisitorDependencies, RelationalTypeMappingPostprocessor, SqlNullabilityProcessor, SqlTreePruner } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Query.js";
-import type { SqlExpression } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Query.SqlExpressions.js";
+import type { CompiledQueryCacheKeyGeneratorDependencies, EvaluatableExpressionFilterDependencies, ICompiledQueryCacheKeyGenerator, IEvaluatableExpressionFilter, IQueryableMethodTranslatingExpressionVisitorFactory, IQueryCompilationContextFactory, IQuerySqlGeneratorFactory, IQueryTranslationPostprocessorFactory, IRelationalParameterBasedSqlProcessorFactory, IRelationalSqlTranslatingExpressionVisitorFactory, JsonQueryExpression, ParametersCacheDecorator, QueryableMethodTranslatingExpressionVisitor, QueryableMethodTranslatingExpressionVisitorDependencies, QueryCompilationContext, QueryCompilationContextDependencies, QueryContext, QuerySqlGenerator, QuerySqlGeneratorDependencies, QueryTranslationPostprocessor, QueryTranslationPostprocessorDependencies, RelationalCompiledQueryCacheKeyGenerator, RelationalCompiledQueryCacheKeyGeneratorDependencies, RelationalEvaluatableExpressionFilter, RelationalEvaluatableExpressionFilterDependencies, RelationalParameterBasedSqlProcessor, RelationalParameterBasedSqlProcessorDependencies, RelationalParameterBasedSqlProcessorParameters, RelationalQueryableMethodTranslatingExpressionVisitor, RelationalQueryableMethodTranslatingExpressionVisitorDependencies, RelationalQueryCompilationContext, RelationalQueryCompilationContextDependencies, RelationalQueryTranslationPostprocessor, RelationalQueryTranslationPostprocessorDependencies, RelationalSqlTranslatingExpressionVisitor, RelationalSqlTranslatingExpressionVisitorDependencies, RelationalTypeMappingPostprocessor, ShapedQueryExpression, SqlNullabilityProcessor, SqlTreePruner } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Query.js";
+import type { CollateExpression, CrossApplyExpression, DeleteExpression, JsonScalarExpression, OrderingExpression, OuterApplyExpression, SelectExpression, SetOperationBase, SqlBinaryExpression, SqlConstantExpression, SqlExpression, SqlFunctionExpression, SqlUnaryExpression, TableExpression, TableExpressionBase, UpdateExpression, ValuesExpression } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Query.SqlExpressions.js";
 import type { IRelationalTypeMappingSource } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
 
 export enum NpgsqlSqlTranslatingExpressionVisitor_StartsEndsWithContains {
@@ -37,7 +41,12 @@ export const NpgsqlCompiledQueryCacheKeyGenerator: {
 
 export type NpgsqlCompiledQueryCacheKeyGenerator = NpgsqlCompiledQueryCacheKeyGenerator$instance;
 
-export interface NpgsqlDeleteConvertingExpressionVisitor$instance extends ExpressionVisitor {
+export abstract class NpgsqlDeleteConvertingExpressionVisitor$protected {
+    protected VisitDelete(deleteExpression: DeleteExpression): Expression;
+}
+
+
+export interface NpgsqlDeleteConvertingExpressionVisitor$instance extends NpgsqlDeleteConvertingExpressionVisitor$protected, ExpressionVisitor {
     Process(node: Expression): Expression;
 }
 
@@ -61,7 +70,12 @@ export const NpgsqlEvaluatableExpressionFilter: {
 
 export type NpgsqlEvaluatableExpressionFilter = NpgsqlEvaluatableExpressionFilter$instance;
 
-export interface NpgsqlParameterBasedSqlProcessor$instance extends RelationalParameterBasedSqlProcessor {
+export abstract class NpgsqlParameterBasedSqlProcessor$protected {
+    protected ProcessSqlNullability(selectExpression: Expression, parametersDecorator: ParametersCacheDecorator): Expression;
+}
+
+
+export interface NpgsqlParameterBasedSqlProcessor$instance extends NpgsqlParameterBasedSqlProcessor$protected, RelationalParameterBasedSqlProcessor {
     Process(queryExpression: Expression, parametersDecorator: ParametersCacheDecorator): Expression;
 }
 
@@ -85,18 +99,48 @@ export const NpgsqlParameterBasedSqlProcessorFactory: {
 
 export type NpgsqlParameterBasedSqlProcessorFactory = NpgsqlParameterBasedSqlProcessorFactory$instance;
 
-export interface NpgsqlQueryableMethodTranslatingExpressionVisitor$instance extends RelationalQueryableMethodTranslatingExpressionVisitor {
+export abstract class NpgsqlQueryableMethodTranslatingExpressionVisitor$protected {
+    protected CreateSubqueryVisitor(): QueryableMethodTranslatingExpressionVisitor;
+    protected GenerateJsonPartialUpdateSetter(target: Expression, value: SqlExpression, existingSetterValue: SqlExpression): SqlExpression | undefined;
+    protected IsNaturallyOrdered(selectExpression: SelectExpression): boolean;
+    protected IsOrdered(selectExpression: SelectExpression): boolean;
+    protected IsValidSelectExpressionForExecuteDelete(selectExpression: SelectExpression): boolean;
+    protected IsValidSelectExpressionForExecuteUpdate(selectExpression: SelectExpression, targetTable: TableExpressionBase, tableExpression: TableExpression): boolean;
+    protected TransformJsonQueryToTable(jsonQueryExpression: JsonQueryExpression): ShapedQueryExpression;
+    protected TranslateAll(source: ShapedQueryExpression, predicate: LambdaExpression): ShapedQueryExpression | undefined;
+    protected TranslateAny(source: ShapedQueryExpression, predicate: LambdaExpression): ShapedQueryExpression | undefined;
+    protected TranslateConcat(source1: ShapedQueryExpression, source2: ShapedQueryExpression): ShapedQueryExpression;
+    protected TranslateContains(source: ShapedQueryExpression, item: Expression): ShapedQueryExpression | undefined;
+    protected TranslateCount(source: ShapedQueryExpression, predicate: LambdaExpression): ShapedQueryExpression | undefined;
+    protected TranslateElementAtOrDefault(source: ShapedQueryExpression, index: Expression, returnDefault: boolean): ShapedQueryExpression | undefined;
+    protected TranslateFirstOrDefault(source: ShapedQueryExpression, predicate: LambdaExpression, returnType: Type, returnDefault: boolean): ShapedQueryExpression | undefined;
+    protected TranslatePrimitiveCollection(sqlExpression: SqlExpression, property: IProperty, tableAlias: string): ShapedQueryExpression | undefined;
+    protected TranslateSkip(source: ShapedQueryExpression, count: Expression): ShapedQueryExpression | undefined;
+    protected TranslateTake(source: ShapedQueryExpression, count: Expression): ShapedQueryExpression | undefined;
+    protected TranslateWhere(source: ShapedQueryExpression, predicate: LambdaExpression): ShapedQueryExpression | undefined;
+    protected TrySerializeScalarToJson(target: JsonScalarExpression, value: SqlExpression, jsonValue: SqlExpression): boolean;
+}
+
+
+export interface NpgsqlQueryableMethodTranslatingExpressionVisitor$instance extends NpgsqlQueryableMethodTranslatingExpressionVisitor$protected, RelationalQueryableMethodTranslatingExpressionVisitor {
 }
 
 
 export const NpgsqlQueryableMethodTranslatingExpressionVisitor: {
     new(dependencies: QueryableMethodTranslatingExpressionVisitorDependencies, relationalDependencies: RelationalQueryableMethodTranslatingExpressionVisitorDependencies, queryCompilationContext: RelationalQueryCompilationContext, npgsqlSingletonOptions: INpgsqlSingletonOptions): NpgsqlQueryableMethodTranslatingExpressionVisitor;
+    new(parentVisitor: NpgsqlQueryableMethodTranslatingExpressionVisitor): NpgsqlQueryableMethodTranslatingExpressionVisitor;
 };
 
 
 export type NpgsqlQueryableMethodTranslatingExpressionVisitor = NpgsqlQueryableMethodTranslatingExpressionVisitor$instance;
 
-export interface NpgsqlQueryableMethodTranslatingExpressionVisitorFactory$instance {
+export abstract class NpgsqlQueryableMethodTranslatingExpressionVisitorFactory$protected {
+    protected readonly Dependencies: QueryableMethodTranslatingExpressionVisitorDependencies;
+    protected readonly RelationalDependencies: RelationalQueryableMethodTranslatingExpressionVisitorDependencies;
+}
+
+
+export interface NpgsqlQueryableMethodTranslatingExpressionVisitorFactory$instance extends NpgsqlQueryableMethodTranslatingExpressionVisitorFactory$protected {
     Create(queryCompilationContext: QueryCompilationContext): QueryableMethodTranslatingExpressionVisitor;
 }
 
@@ -135,7 +179,48 @@ export const NpgsqlQueryCompilationContextFactory: {
 
 export type NpgsqlQueryCompilationContextFactory = NpgsqlQueryCompilationContextFactory$instance;
 
-export interface NpgsqlQuerySqlGenerator$instance extends QuerySqlGenerator {
+export abstract class NpgsqlQuerySqlGenerator$protected {
+    protected GenerateLimitOffset(selectExpression: SelectExpression): void;
+    protected GenerateRootCommand(queryExpression: Expression): void;
+    protected GenerateSetOperation(setOperation: SetOperationBase): void;
+    protected GenerateSetOperationOperand(setOperation: SetOperationBase, operand: SelectExpression): void;
+    protected GenerateTop(selectExpression: SelectExpression): void;
+    protected GenerateValues(valuesExpression: ValuesExpression): void;
+    protected GetOperator(e: SqlBinaryExpression): string;
+    protected RequiresParentheses(outerExpression: SqlExpression, innerExpression: SqlExpression): boolean;
+    protected TryGenerateWithoutWrappingSelect(selectExpression: SelectExpression): boolean;
+    protected TryGetOperatorInfo(expression: SqlExpression, precedence: int, isAssociative: boolean): boolean;
+    protected VisitArrayAll(expression: PgAllExpression): Expression;
+    protected VisitArrayAny(expression: PgAnyExpression): Expression;
+    protected VisitArrayIndex(expression: SqlBinaryExpression): Expression;
+    protected VisitArrayIndex(expression: PgArrayIndexExpression): Expression;
+    protected VisitArraySlice(expression: PgArraySliceExpression): Expression;
+    protected VisitCollate(collateExpression: CollateExpression): Expression;
+    protected VisitCrossApply(crossApplyExpression: CrossApplyExpression): Expression;
+    protected VisitDelete(deleteExpression: DeleteExpression): Expression;
+    protected VisitExtension(extensionExpression: Expression): Expression;
+    protected VisitILike(likeExpression: PgILikeExpression, negated?: boolean): Expression;
+    protected VisitJsonPathTraversal(expression: PgJsonTraversalExpression): Expression;
+    protected VisitJsonScalar(jsonScalarExpression: JsonScalarExpression): Expression;
+    protected VisitNewArray(pgNewArrayExpression: PgNewArrayExpression): Expression;
+    protected VisitOrdering(ordering: OrderingExpression): Expression;
+    protected VisitOuterApply(outerApplyExpression: OuterApplyExpression): Expression;
+    protected VisitPgBinary(binaryExpression: PgBinaryExpression): Expression;
+    protected VisitPgDelete(pgDeleteExpression: PgDeleteExpression): Expression;
+    protected VisitPgFunction(e: PgFunctionExpression): Expression;
+    protected VisitPgTableValuedFunctionExpression(tableValuedFunctionExpression: PgTableValuedFunctionExpression): Expression;
+    protected VisitRegexMatch(expression: PgRegexMatchExpression, negated?: boolean): Expression;
+    protected VisitRowValue(rowValueExpression: PgRowValueExpression): Expression;
+    protected VisitSqlBinary(binary: SqlBinaryExpression): Expression;
+    protected VisitSqlConstant(sqlConstantExpression: SqlConstantExpression): Expression;
+    protected VisitSqlUnary(sqlUnaryExpression: SqlUnaryExpression): Expression;
+    protected VisitUnknownBinary(unknownBinaryExpression: PgUnknownBinaryExpression): Expression;
+    protected VisitUpdate(updateExpression: UpdateExpression): Expression;
+    protected VisitValues(valuesExpression: ValuesExpression): Expression;
+}
+
+
+export interface NpgsqlQuerySqlGenerator$instance extends NpgsqlQuerySqlGenerator$protected, QuerySqlGenerator {
 }
 
 
@@ -158,7 +243,13 @@ export const NpgsqlQuerySqlGeneratorFactory: {
 
 export type NpgsqlQuerySqlGeneratorFactory = NpgsqlQuerySqlGeneratorFactory$instance;
 
-export interface NpgsqlQueryTranslationPostprocessor$instance extends RelationalQueryTranslationPostprocessor {
+export abstract class NpgsqlQueryTranslationPostprocessor$protected {
+    protected ProcessTypeMappings(expression: Expression): Expression;
+    protected Prune(query: Expression): Expression;
+}
+
+
+export interface NpgsqlQueryTranslationPostprocessor$instance extends NpgsqlQueryTranslationPostprocessor$protected, RelationalQueryTranslationPostprocessor {
     Process(query: Expression): Expression;
 }
 
@@ -170,7 +261,13 @@ export const NpgsqlQueryTranslationPostprocessor: {
 
 export type NpgsqlQueryTranslationPostprocessor = NpgsqlQueryTranslationPostprocessor$instance;
 
-export interface NpgsqlQueryTranslationPostprocessorFactory$instance {
+export abstract class NpgsqlQueryTranslationPostprocessorFactory$protected {
+    protected readonly Dependencies: QueryTranslationPostprocessorDependencies;
+    protected readonly RelationalDependencies: RelationalQueryTranslationPostprocessorDependencies;
+}
+
+
+export interface NpgsqlQueryTranslationPostprocessorFactory$instance extends NpgsqlQueryTranslationPostprocessorFactory$protected {
     Create(queryCompilationContext: QueryCompilationContext): QueryTranslationPostprocessor;
 }
 
@@ -182,7 +279,12 @@ export const NpgsqlQueryTranslationPostprocessorFactory: {
 
 export type NpgsqlQueryTranslationPostprocessorFactory = NpgsqlQueryTranslationPostprocessorFactory$instance;
 
-export interface NpgsqlSetOperationTypingInjector$instance extends ExpressionVisitor {
+export abstract class NpgsqlSetOperationTypingInjector$protected {
+    protected VisitExtension(extensionExpression: Expression): Expression;
+}
+
+
+export interface NpgsqlSetOperationTypingInjector$instance extends NpgsqlSetOperationTypingInjector$protected, ExpressionVisitor {
 }
 
 
@@ -193,7 +295,25 @@ export const NpgsqlSetOperationTypingInjector: {
 
 export type NpgsqlSetOperationTypingInjector = NpgsqlSetOperationTypingInjector$instance;
 
-export interface NpgsqlSqlNullabilityProcessor$instance extends SqlNullabilityProcessor {
+export abstract class NpgsqlSqlNullabilityProcessor$protected {
+    protected VisitAll(allExpression: PgAllExpression, allowOptimizedExpansion: boolean, nullable: boolean): SqlExpression;
+    protected VisitAny(anyExpression: PgAnyExpression, allowOptimizedExpansion: boolean, nullable: boolean): SqlExpression;
+    protected VisitArrayIndex(arrayIndexExpression: PgArrayIndexExpression, allowOptimizedExpansion: boolean, nullable: boolean): SqlExpression;
+    protected VisitArraySlice(arraySliceExpression: PgArraySliceExpression, allowOptimizedExpansion: boolean, nullable: boolean): SqlExpression;
+    protected VisitCustomSqlExpression(sqlExpression: SqlExpression, allowOptimizedExpansion: boolean, nullable: boolean): SqlExpression;
+    protected VisitILike(iLikeExpression: PgILikeExpression, allowOptimizedExpansion: boolean, nullable: boolean): SqlExpression;
+    protected VisitJsonTraversal(jsonTraversalExpression: PgJsonTraversalExpression, allowOptimizedExpansion: boolean, nullable: boolean): SqlExpression;
+    protected VisitNewArray(newArrayExpression: PgNewArrayExpression, allowOptimizedExpansion: boolean, nullable: boolean): SqlExpression;
+    protected VisitPostgresBinary(binaryExpression: PgBinaryExpression, allowOptimizedExpansion: boolean, nullable: boolean): SqlExpression;
+    protected VisitRegexMatch(regexMatchExpression: PgRegexMatchExpression, allowOptimizedExpansion: boolean, nullable: boolean): SqlExpression;
+    protected VisitRowValueExpression(rowValueExpression: PgRowValueExpression, allowOptimizedExpansion: boolean, nullable: boolean): SqlExpression;
+    protected VisitSqlBinary(sqlBinaryExpression: SqlBinaryExpression, allowOptimizedExpansion: boolean, nullable: boolean): SqlExpression;
+    protected VisitSqlFunction(sqlFunctionExpression: SqlFunctionExpression, allowOptimizedExpansion: boolean, nullable: boolean): SqlExpression;
+    protected VisitUnknownBinary(unknownBinaryExpression: PgUnknownBinaryExpression, allowOptimizedExpansion: boolean, nullable: boolean): SqlExpression;
+}
+
+
+export interface NpgsqlSqlNullabilityProcessor$instance extends NpgsqlSqlNullabilityProcessor$protected, SqlNullabilityProcessor {
 }
 
 
@@ -204,7 +324,17 @@ export const NpgsqlSqlNullabilityProcessor: {
 
 export type NpgsqlSqlNullabilityProcessor = NpgsqlSqlNullabilityProcessor$instance;
 
-export interface NpgsqlSqlTranslatingExpressionVisitor$instance extends RelationalSqlTranslatingExpressionVisitor {
+export abstract class NpgsqlSqlTranslatingExpressionVisitor$protected {
+    protected VisitBinary(binaryExpression: BinaryExpression): Expression;
+    protected VisitConditional(conditionalExpression: ConditionalExpression): Expression;
+    protected VisitMethodCall(methodCallExpression: MethodCallExpression): Expression;
+    protected VisitNew(newExpression: NewExpression): Expression;
+    protected VisitNewArray(newArrayExpression: NewArrayExpression): Expression;
+    protected VisitUnary(unaryExpression: UnaryExpression): Expression;
+}
+
+
+export interface NpgsqlSqlTranslatingExpressionVisitor$instance extends NpgsqlSqlTranslatingExpressionVisitor$protected, RelationalSqlTranslatingExpressionVisitor {
     GenerateGreatest(expressions: IReadOnlyList<SqlExpression>, resultType: Type): SqlExpression;
     GenerateLeast(expressions: IReadOnlyList<SqlExpression>, resultType: Type): SqlExpression;
 }
@@ -230,7 +360,12 @@ export const NpgsqlSqlTranslatingExpressionVisitorFactory: {
 
 export type NpgsqlSqlTranslatingExpressionVisitorFactory = NpgsqlSqlTranslatingExpressionVisitorFactory$instance;
 
-export interface NpgsqlSqlTreePruner$instance extends SqlTreePruner {
+export abstract class NpgsqlSqlTreePruner$protected {
+    protected VisitExtension(node: Expression): Expression;
+}
+
+
+export interface NpgsqlSqlTreePruner$instance extends NpgsqlSqlTreePruner$protected, SqlTreePruner {
 }
 
 
@@ -241,7 +376,12 @@ export const NpgsqlSqlTreePruner: {
 
 export type NpgsqlSqlTreePruner = NpgsqlSqlTreePruner$instance;
 
-export interface NpgsqlTypeMappingPostprocessor$instance extends RelationalTypeMappingPostprocessor {
+export abstract class NpgsqlTypeMappingPostprocessor$protected {
+    protected VisitExtension(expression: Expression): Expression;
+}
+
+
+export interface NpgsqlTypeMappingPostprocessor$instance extends NpgsqlTypeMappingPostprocessor$protected, RelationalTypeMappingPostprocessor {
 }
 
 

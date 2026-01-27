@@ -17,12 +17,12 @@ import type { IDbContextOptions, ISingletonOptions } from "@tsonic/efcore/Micros
 import type { DbLoggerCategory$Scaffolding } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.js";
 
 export interface NpgsqlSingletonOptions$instance {
-    readonly EnumDefinitions: IReadOnlyList<EnumDefinition>;
-    readonly IsPostgresVersionSet: boolean;
-    readonly PostgresVersion: Version;
-    readonly ReverseNullOrderingEnabled: boolean;
-    readonly UseRedshift: boolean;
-    readonly UserRangeDefinitions: IReadOnlyList<UserRangeDefinition>;
+    EnumDefinitions: IReadOnlyList<EnumDefinition>;
+    IsPostgresVersionSet: boolean;
+    PostgresVersion: Version;
+    ReverseNullOrderingEnabled: boolean;
+    UseRedshift: boolean;
+    UserRangeDefinitions: IReadOnlyList<UserRangeDefinition>;
     Initialize(options: IDbContextOptions): void;
     Validate(options: IDbContextOptions): void;
 }
@@ -36,8 +36,6 @@ export const NpgsqlSingletonOptions: {
 export interface __NpgsqlSingletonOptions$views {
     As_INpgsqlSingletonOptions(): Npgsql_EntityFrameworkCore_PostgreSQL_Infrastructure_Internal_Internal.INpgsqlSingletonOptions$instance;
 }
-
-export interface NpgsqlSingletonOptions$instance extends Npgsql_EntityFrameworkCore_PostgreSQL_Infrastructure_Internal_Internal.INpgsqlSingletonOptions$instance {}
 
 export type NpgsqlSingletonOptions = NpgsqlSingletonOptions$instance & __NpgsqlSingletonOptions$views;
 

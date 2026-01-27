@@ -9,9 +9,9 @@ import * as Internal from './Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructur
 import type { NpgsqlOptionsExtension } from './Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal/internal/index.js';
 import type { INpgsqlNameTranslator, NpgsqlDataSourceBuilder, ProvideClientCertificatesCallback, ProvidePasswordCallback } from './Npgsql/internal/index.js';
 import type { ICollection } from '@tsonic/dotnet/System.Collections.Generic.js';
-import type { Action, Boolean as ClrBoolean, Enum, Int32, String as ClrString, TimeSpan, Type, ValueType, Version, Void } from '@tsonic/dotnet/System.js';
+import type { Action, Boolean as ClrBoolean, Enum, Int32, Nullable, String as ClrString, TimeSpan, Type, ValueType, Version, Void } from '@tsonic/dotnet/System.js';
 import type { RemoteCertificateValidationCallback } from '@tsonic/dotnet/System.Net.Security.js';
-import type { EntityFrameworkRelationalServicesBuilder, IRelationalDbContextOptionsBuilderInfrastructure, RelationalDbContextOptionsBuilder } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure.js';
+import type { EntityFrameworkRelationalServicesBuilder, IRelationalDbContextOptionsBuilderInfrastructure, RelationalDbContextOptionsBuilder, ServiceCharacteristics } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure.js';
 import type { DbContextOptionsBuilder } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.js';
 import type { IServiceCollection } from '@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection.js';
 

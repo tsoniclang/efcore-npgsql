@@ -5,6 +5,9 @@
 // Primitive type aliases from @tsonic/core
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
+// Import support types from @tsonic/core
+import type { ptr } from "@tsonic/core/types.js";
+
 // Import types from other namespaces
 import type { INpgsqlNameTranslator, NpgsqlDataSourceBuilder, ProvideClientCertificatesCallback, ProvidePasswordCallback } from "../../Npgsql/internal/index.js";
 import type { IReadOnlyDictionary, IReadOnlyList } from "@tsonic/dotnet/System.Collections.Generic.js";
@@ -16,7 +19,7 @@ import type { IDiagnosticsLogger } from "@tsonic/efcore/Microsoft.EntityFramewor
 import * as Microsoft_EntityFrameworkCore_Infrastructure_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure.js";
 import type { DbContextOptionsExtensionInfo, IDbContextOptions, IDbContextOptionsExtension, IModelValidator, ISingletonOptions, ModelValidatorDependencies, RelationalModelValidator, RelationalModelValidatorDependencies, RelationalOptionsExtension } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure.js";
 import type { DbLoggerCategory$Model$Validation, ParameterTranslationMode } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.js";
-import type { IModel } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js";
+import type { IEntityType, IKey, IModel, IProperty, StoreObjectIdentifier } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js";
 import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection.js";
 
 export interface INpgsqlSingletonOptions$instance extends ISingletonOptions {
@@ -50,7 +53,17 @@ export const EnumDefinition: {
 
 export type EnumDefinition = EnumDefinition$instance;
 
-export interface NpgsqlModelValidator$instance extends RelationalModelValidator {
+export abstract class NpgsqlModelValidator$protected {
+    protected ValidateCompatible(property: IProperty, duplicateProperty: IProperty, columnName: string, storeObject: StoreObjectIdentifier, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
+    protected ValidateIdentityVersionCompatibility(model: IModel): void;
+    protected ValidateIndexIncludeProperties(model: IModel): void;
+    protected ValidateStoredProcedures(model: IModel, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
+    protected ValidateTypeMappings(model: IModel, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
+    protected ValidateValueGeneration(entityType: IEntityType, key: IKey, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
+}
+
+
+export interface NpgsqlModelValidator$instance extends NpgsqlModelValidator$protected, RelationalModelValidator {
     Validate(model: IModel, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
 }
 
@@ -62,21 +75,32 @@ export const NpgsqlModelValidator: {
 
 export type NpgsqlModelValidator = NpgsqlModelValidator$instance;
 
-export interface NpgsqlOptionsExtension$instance extends RelationalOptionsExtension {
-    readonly AdminDatabase: string | undefined;
-    readonly DataSource: DbDataSource | undefined;
-    readonly DataSourceBuilderAction: Action<NpgsqlDataSourceBuilder> | undefined;
+export abstract class NpgsqlOptionsExtension$protected {
+    protected Clone(): RelationalOptionsExtension;
+}
+
+
+export interface NpgsqlOptionsExtension$instance extends NpgsqlOptionsExtension$protected, RelationalOptionsExtension {
+    get AdminDatabase(): string | undefined;
+    set AdminDatabase(value: string);
+    get DataSource(): DbDataSource | undefined;
+    set DataSource(value: DbDataSource);
+    get DataSourceBuilderAction(): Action<NpgsqlDataSourceBuilder> | undefined;
+    set DataSourceBuilderAction(value: Action<NpgsqlDataSourceBuilder>);
     readonly EnumDefinitions: IReadOnlyList<EnumDefinition>;
     readonly Info: DbContextOptionsExtensionInfo;
     readonly IsPostgresVersionSet: boolean;
     readonly MinBatchSize: Nullable<System_Internal.Int32>;
     readonly ParameterizedCollectionMode: ParameterTranslationMode;
     readonly PostgresVersion: Version;
-    readonly ProvideClientCertificatesCallback: ProvideClientCertificatesCallback | undefined;
-    readonly ProvidePasswordCallback: ProvidePasswordCallback | undefined;
-    readonly RemoteCertificateValidationCallback: RemoteCertificateValidationCallback | undefined;
-    readonly ReverseNullOrdering: boolean;
-    readonly UseRedshift: boolean;
+    get ProvideClientCertificatesCallback(): ProvideClientCertificatesCallback | undefined;
+    set ProvideClientCertificatesCallback(value: ProvideClientCertificatesCallback);
+    get ProvidePasswordCallback(): ProvidePasswordCallback | undefined;
+    set ProvidePasswordCallback(value: ProvidePasswordCallback);
+    get RemoteCertificateValidationCallback(): RemoteCertificateValidationCallback | undefined;
+    set RemoteCertificateValidationCallback(value: RemoteCertificateValidationCallback);
+    ReverseNullOrdering: boolean;
+    UseRedshift: boolean;
     readonly UserRangeDefinitions: IReadOnlyList<UserRangeDefinition>;
     ApplyServices(services: IServiceCollection): void;
     Validate(options: IDbContextOptions): void;

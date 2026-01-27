@@ -72,13 +72,14 @@ export interface PgOutputReplicationSlot$instance extends LogicalReplicationSlot
 export const PgOutputReplicationSlot: {
     new(slotName: string): PgOutputReplicationSlot;
     new(options: ReplicationSlotOptions): PgOutputReplicationSlot;
+    new(slot: PgOutputReplicationSlot): PgOutputReplicationSlot;
 };
 
 
 export type PgOutputReplicationSlot = PgOutputReplicationSlot$instance;
 
 export interface ReplicationTuple$instance {
-    readonly NumColumns: ushort;
+    NumColumns: ushort;
     GetAsyncEnumerator(cancellationToken?: CancellationToken): IAsyncEnumerator<ReplicationValue>;
 }
 
@@ -93,8 +94,8 @@ export type ReplicationTuple = ReplicationTuple$instance;
 export interface ReplicationValue$instance {
     readonly IsDBNull: boolean;
     readonly IsUnchangedToastedValue: boolean;
-    readonly Kind: TupleDataKind;
-    readonly Length: int;
+    Kind: TupleDataKind;
+    Length: int;
     Get<T>(cancellationToken?: CancellationToken): ValueTask<T>;
     Get(cancellationToken?: CancellationToken): ValueTask<unknown>;
     GetDataTypeName(): string;

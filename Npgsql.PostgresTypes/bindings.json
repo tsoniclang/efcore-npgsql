@@ -15,6 +15,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresType",
+        "clrName": "Npgsql.PostgresTypes.PostgresType"
+      },
       "methods": [],
       "properties": [
         {
@@ -32,13 +36,26 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.PostgresTypes.PostgresArrayType",
           "declaringAssemblyName": "Npgsql"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresArrayType::.ctor(System.String,System.String,System.UInt32,Npgsql.PostgresTypes.PostgresType):void",
+          "metadataToken": 100666209,
+          "canonicalSignature": "(System.String,System.String,System.UInt32,Npgsql.PostgresTypes.PostgresType):void",
+          "normalizedSignature": "constructor|(System.String,System.String,System.UInt32,Npgsql.PostgresTypes.PostgresType):void|static=false",
+          "isStatic": false,
+          "parameterCount": 4,
+          "visibility": "ProtectedInternal",
+          "declaringClrType": "Npgsql.PostgresTypes.PostgresArrayType",
+          "declaringAssemblyName": "Npgsql"
+        }
+      ]
     },
     {
       "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresBaseType",
@@ -51,11 +68,27 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresType",
+        "clrName": "Npgsql.PostgresTypes.PostgresType"
+      },
       "methods": [],
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresBaseType::.ctor(System.String,System.String,System.UInt32):void",
+          "metadataToken": 100666213,
+          "canonicalSignature": "(System.String,System.String,System.UInt32):void",
+          "normalizedSignature": "constructor|(System.String,System.String,System.UInt32):void|static=false",
+          "isStatic": false,
+          "parameterCount": 3,
+          "visibility": "ProtectedInternal",
+          "declaringClrType": "Npgsql.PostgresTypes.PostgresBaseType",
+          "declaringAssemblyName": "Npgsql"
+        }
+      ]
     },
     {
       "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresCompositeType",
@@ -68,6 +101,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresType",
+        "clrName": "Npgsql.PostgresTypes.PostgresType"
+      },
       "methods": [],
       "properties": [
         {
@@ -85,6 +122,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.PostgresTypes.PostgresCompositeType",
           "declaringAssemblyName": "Npgsql"
         }
@@ -104,6 +142,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresCompositeType\u002BField::ToString():System.String",
@@ -120,6 +162,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.PostgresTypes.PostgresCompositeType\u002BField",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -141,6 +184,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.PostgresTypes.PostgresCompositeType\u002BField",
           "declaringAssemblyName": "Npgsql"
         },
@@ -159,6 +203,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.PostgresTypes.PostgresCompositeType\u002BField",
           "declaringAssemblyName": "Npgsql"
         }
@@ -178,6 +223,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresType",
+        "clrName": "Npgsql.PostgresTypes.PostgresType"
+      },
       "methods": [],
       "properties": [
         {
@@ -195,6 +244,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.PostgresTypes.PostgresDomainType",
           "declaringAssemblyName": "Npgsql"
         },
@@ -213,13 +263,26 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.PostgresTypes.PostgresDomainType",
           "declaringAssemblyName": "Npgsql"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresDomainType::.ctor(System.String,System.String,System.UInt32,Npgsql.PostgresTypes.PostgresType,System.Boolean):void",
+          "metadataToken": 100666223,
+          "canonicalSignature": "(System.String,System.String,System.UInt32,Npgsql.PostgresTypes.PostgresType,System.Boolean):void",
+          "normalizedSignature": "constructor|(System.String,System.String,System.UInt32,Npgsql.PostgresTypes.PostgresType,System.Boolean):void|static=false",
+          "isStatic": false,
+          "parameterCount": 5,
+          "visibility": "ProtectedInternal",
+          "declaringClrType": "Npgsql.PostgresTypes.PostgresDomainType",
+          "declaringAssemblyName": "Npgsql"
+        }
+      ]
     },
     {
       "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresEnumType",
@@ -232,6 +295,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresType",
+        "clrName": "Npgsql.PostgresTypes.PostgresType"
+      },
       "methods": [],
       "properties": [
         {
@@ -249,13 +316,26 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.PostgresTypes.PostgresEnumType",
           "declaringAssemblyName": "Npgsql"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresEnumType::.ctor(System.String,System.String,System.UInt32):void",
+          "metadataToken": 100666228,
+          "canonicalSignature": "(System.String,System.String,System.UInt32):void",
+          "normalizedSignature": "constructor|(System.String,System.String,System.UInt32):void|static=false",
+          "isStatic": false,
+          "parameterCount": 3,
+          "visibility": "ProtectedInternal",
+          "declaringClrType": "Npgsql.PostgresTypes.PostgresEnumType",
+          "declaringAssemblyName": "Npgsql"
+        }
+      ]
     },
     {
       "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresMultirangeType",
@@ -268,6 +348,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresType",
+        "clrName": "Npgsql.PostgresTypes.PostgresType"
+      },
       "methods": [],
       "properties": [
         {
@@ -285,13 +369,26 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.PostgresTypes.PostgresMultirangeType",
           "declaringAssemblyName": "Npgsql"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresMultirangeType::.ctor(System.String,System.String,System.UInt32,Npgsql.PostgresTypes.PostgresRangeType):void",
+          "metadataToken": 100666239,
+          "canonicalSignature": "(System.String,System.String,System.UInt32,Npgsql.PostgresTypes.PostgresRangeType):void",
+          "normalizedSignature": "constructor|(System.String,System.String,System.UInt32,Npgsql.PostgresTypes.PostgresRangeType):void|static=false",
+          "isStatic": false,
+          "parameterCount": 4,
+          "visibility": "ProtectedInternal",
+          "declaringClrType": "Npgsql.PostgresTypes.PostgresMultirangeType",
+          "declaringAssemblyName": "Npgsql"
+        }
+      ]
     },
     {
       "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresRangeType",
@@ -304,6 +401,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresType",
+        "clrName": "Npgsql.PostgresTypes.PostgresType"
+      },
       "methods": [],
       "properties": [
         {
@@ -321,6 +422,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.PostgresTypes.PostgresRangeType",
           "declaringAssemblyName": "Npgsql"
         },
@@ -329,23 +431,36 @@
           "clrName": "Multirange",
           "metadataToken": 385876710,
           "canonicalSignature": ":Npgsql.PostgresTypes.PostgresMultirangeType",
-          "normalizedSignature": "Multirange|:Npgsql.PostgresTypes.PostgresMultirangeType|static=false|accessor=get",
+          "normalizedSignature": "Multirange|:Npgsql.PostgresTypes.PostgresMultirangeType|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.PostgresTypes.PostgresRangeType",
           "declaringAssemblyName": "Npgsql"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresRangeType::.ctor(System.String,System.String,System.UInt32,Npgsql.PostgresTypes.PostgresType):void",
+          "metadataToken": 100666244,
+          "canonicalSignature": "(System.String,System.String,System.UInt32,Npgsql.PostgresTypes.PostgresType):void",
+          "normalizedSignature": "constructor|(System.String,System.String,System.UInt32,Npgsql.PostgresTypes.PostgresType):void|static=false",
+          "isStatic": false,
+          "parameterCount": 4,
+          "visibility": "ProtectedInternal",
+          "declaringClrType": "Npgsql.PostgresTypes.PostgresRangeType",
+          "declaringAssemblyName": "Npgsql"
+        }
+      ]
     },
     {
       "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresType",
@@ -358,6 +473,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresType::ToString():System.String",
@@ -374,6 +493,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.PostgresTypes.PostgresType",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -395,6 +515,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.PostgresTypes.PostgresType",
           "declaringAssemblyName": "Npgsql"
         },
@@ -413,6 +534,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.PostgresTypes.PostgresType",
           "declaringAssemblyName": "Npgsql"
         },
@@ -431,6 +553,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.PostgresTypes.PostgresType",
           "declaringAssemblyName": "Npgsql"
         },
@@ -449,6 +572,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.PostgresTypes.PostgresType",
           "declaringAssemblyName": "Npgsql"
         },
@@ -467,6 +591,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.PostgresTypes.PostgresType",
           "declaringAssemblyName": "Npgsql"
         },
@@ -485,6 +610,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.PostgresTypes.PostgresType",
           "declaringAssemblyName": "Npgsql"
         },
@@ -493,16 +619,17 @@
           "clrName": "Array",
           "metadataToken": 385876718,
           "canonicalSignature": ":Npgsql.PostgresTypes.PostgresArrayType",
-          "normalizedSignature": "Array|:Npgsql.PostgresTypes.PostgresArrayType|static=false|accessor=get",
+          "normalizedSignature": "Array|:Npgsql.PostgresTypes.PostgresArrayType|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.PostgresTypes.PostgresType",
           "declaringAssemblyName": "Npgsql"
         },
@@ -511,16 +638,17 @@
           "clrName": "Range",
           "metadataToken": 385876719,
           "canonicalSignature": ":Npgsql.PostgresTypes.PostgresRangeType",
-          "normalizedSignature": "Range|:Npgsql.PostgresTypes.PostgresRangeType|static=false|accessor=get",
+          "normalizedSignature": "Range|:Npgsql.PostgresTypes.PostgresRangeType|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.PostgresTypes.PostgresType",
           "declaringAssemblyName": "Npgsql"
         }
@@ -540,6 +668,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresType",
+        "clrName": "Npgsql.PostgresTypes.PostgresType"
+      },
       "methods": [],
       "properties": [],
       "fields": [],

@@ -15,7 +15,7 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Boolean as ClrBoolean, DateTime, IEquatable, Int32, Nullable, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
 
 export interface TestDecodingData$instance extends ReplicationMessage {
-    readonly Data: string;
+    Data: string;
     Clone(): TestDecodingData;
     ToString(): string;
 }

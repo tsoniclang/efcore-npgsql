@@ -15,6 +15,19 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IEquatable\u00601",
+          "clrName": "System.IEquatable\u00601",
+          "typeArguments": [
+            "DataTypeName"
+          ]
+        }
+      ],
       "methods": [
         {
           "stableId": "Npgsql:Npgsql.Internal.Postgres.DataTypeName::GetUnqualifiedName(System.String):System.String",
@@ -31,6 +44,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.Postgres.DataTypeName",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -50,6 +64,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.Postgres.DataTypeName",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -69,6 +84,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.Postgres.DataTypeName",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -88,6 +104,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.Postgres.DataTypeName",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -107,6 +124,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.Postgres.DataTypeName",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -126,6 +144,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.Postgres.DataTypeName",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -145,6 +164,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.Postgres.DataTypeName",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -164,6 +184,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.Postgres.DataTypeName",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -185,6 +206,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.Postgres.DataTypeName",
           "declaringAssemblyName": "Npgsql"
         },
@@ -203,6 +225,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.Postgres.DataTypeName",
           "declaringAssemblyName": "Npgsql"
         },
@@ -221,6 +244,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.Postgres.DataTypeName",
           "declaringAssemblyName": "Npgsql"
         },
@@ -239,6 +263,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.Postgres.DataTypeName",
           "declaringAssemblyName": "Npgsql"
         },
@@ -257,6 +282,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.Postgres.DataTypeName",
           "declaringAssemblyName": "Npgsql"
         },
@@ -275,6 +301,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.Postgres.DataTypeName",
           "declaringAssemblyName": "Npgsql"
         },
@@ -293,6 +320,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.Postgres.DataTypeName",
           "declaringAssemblyName": "Npgsql"
         },
@@ -311,6 +339,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.Postgres.DataTypeName",
           "declaringAssemblyName": "Npgsql"
         }
@@ -325,6 +354,7 @@
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.Postgres.DataTypeName",
           "declaringAssemblyName": "Npgsql"
         }
@@ -341,6 +371,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
       "methods": [],
       "properties": [
         {
@@ -358,6 +392,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.Postgres.Field",
           "declaringAssemblyName": "Npgsql"
         },
@@ -376,6 +411,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.Postgres.Field",
           "declaringAssemblyName": "Npgsql"
         },
@@ -394,6 +430,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.Postgres.Field",
           "declaringAssemblyName": "Npgsql"
         }
@@ -408,6 +445,7 @@
           "normalizedSignature": "constructor|(System.String,Npgsql.Internal.Postgres.PgTypeId,System.Int32):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.Postgres.Field",
           "declaringAssemblyName": "Npgsql"
         }
@@ -424,6 +462,19 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IEquatable\u00601",
+          "clrName": "System.IEquatable\u00601",
+          "typeArguments": [
+            "Oid"
+          ]
+        }
+      ],
       "methods": [
         {
           "stableId": "Npgsql:Npgsql.Internal.Postgres.Oid::ToString():System.String",
@@ -440,6 +491,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.Postgres.Oid",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -459,6 +511,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.Postgres.Oid",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -478,6 +531,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.Postgres.Oid",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -497,6 +551,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.Postgres.Oid",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -518,6 +573,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.Postgres.Oid",
           "declaringAssemblyName": "Npgsql"
         },
@@ -536,6 +592,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.Postgres.Oid",
           "declaringAssemblyName": "Npgsql"
         }
@@ -550,6 +607,7 @@
           "normalizedSignature": "constructor|(System.UInt32):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.Postgres.Oid",
           "declaringAssemblyName": "Npgsql"
         }
@@ -566,6 +624,19 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IEquatable\u00601",
+          "clrName": "System.IEquatable\u00601",
+          "typeArguments": [
+            "PgTypeId"
+          ]
+        }
+      ],
       "methods": [
         {
           "stableId": "Npgsql:Npgsql.Internal.Postgres.PgTypeId::ToString():System.String",
@@ -582,6 +653,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.Postgres.PgTypeId",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -601,6 +673,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.Postgres.PgTypeId",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -620,6 +693,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.Postgres.PgTypeId",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -639,6 +713,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.Postgres.PgTypeId",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -660,6 +735,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.Postgres.PgTypeId",
           "declaringAssemblyName": "Npgsql"
         },
@@ -678,6 +754,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.Postgres.PgTypeId",
           "declaringAssemblyName": "Npgsql"
         },
@@ -696,6 +773,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.Postgres.PgTypeId",
           "declaringAssemblyName": "Npgsql"
         },
@@ -714,6 +792,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.Postgres.PgTypeId",
           "declaringAssemblyName": "Npgsql"
         }
@@ -728,6 +807,7 @@
           "normalizedSignature": "constructor|(Npgsql.Internal.Postgres.DataTypeName):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.Postgres.PgTypeId",
           "declaringAssemblyName": "Npgsql"
         },
@@ -738,6 +818,7 @@
           "normalizedSignature": "constructor|(Npgsql.Internal.Postgres.Oid):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Internal.Postgres.PgTypeId",
           "declaringAssemblyName": "Npgsql"
         }

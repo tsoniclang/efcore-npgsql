@@ -15,6 +15,28 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [
@@ -26,6 +48,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.CommitMessage\u002BCommitFlags",
           "declaringAssemblyName": "Npgsql"
         },
@@ -37,6 +60,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.CommitMessage\u002BCommitFlags",
           "declaringAssemblyName": "Npgsql"
         }
@@ -55,6 +79,28 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [
@@ -66,6 +112,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.CommitPreparedMessage\u002BCommitPreparedFlags",
           "declaringAssemblyName": "Npgsql"
         },
@@ -77,6 +124,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.CommitPreparedMessage\u002BCommitPreparedFlags",
           "declaringAssemblyName": "Npgsql"
         }
@@ -95,6 +143,28 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [
@@ -106,6 +176,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.PrepareMessage\u002BPrepareFlags",
           "declaringAssemblyName": "Npgsql"
         },
@@ -117,6 +188,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.PrepareMessage\u002BPrepareFlags",
           "declaringAssemblyName": "Npgsql"
         }
@@ -135,6 +207,28 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [
@@ -146,6 +240,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BColumn\u002BColumnFlags",
           "declaringAssemblyName": "Npgsql"
         },
@@ -157,6 +252,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BColumn\u002BColumnFlags",
           "declaringAssemblyName": "Npgsql"
         },
@@ -168,6 +264,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BColumn\u002BColumnFlags",
           "declaringAssemblyName": "Npgsql"
         }
@@ -186,6 +283,28 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [
@@ -197,6 +316,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BReplicaIdentitySetting",
           "declaringAssemblyName": "Npgsql"
         },
@@ -208,6 +328,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BReplicaIdentitySetting",
           "declaringAssemblyName": "Npgsql"
         },
@@ -219,6 +340,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BReplicaIdentitySetting",
           "declaringAssemblyName": "Npgsql"
         },
@@ -230,6 +352,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BReplicaIdentitySetting",
           "declaringAssemblyName": "Npgsql"
         },
@@ -241,6 +364,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BReplicaIdentitySetting",
           "declaringAssemblyName": "Npgsql"
         }
@@ -259,6 +383,28 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [
@@ -270,6 +416,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.RollbackPreparedMessage\u002BRollbackPreparedFlags",
           "declaringAssemblyName": "Npgsql"
         },
@@ -281,6 +428,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.RollbackPreparedMessage\u002BRollbackPreparedFlags",
           "declaringAssemblyName": "Npgsql"
         }
@@ -299,6 +447,28 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [
@@ -310,6 +480,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.StreamPrepareMessage\u002BStreamPrepareFlags",
           "declaringAssemblyName": "Npgsql"
         },
@@ -321,6 +492,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.StreamPrepareMessage\u002BStreamPrepareFlags",
           "declaringAssemblyName": "Npgsql"
         }
@@ -339,6 +511,28 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [
@@ -350,6 +544,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.TruncateMessage\u002BTruncateOptions",
           "declaringAssemblyName": "Npgsql"
         },
@@ -361,6 +556,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.TruncateMessage\u002BTruncateOptions",
           "declaringAssemblyName": "Npgsql"
         },
@@ -372,6 +568,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.TruncateMessage\u002BTruncateOptions",
           "declaringAssemblyName": "Npgsql"
         },
@@ -383,6 +580,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.TruncateMessage\u002BTruncateOptions",
           "declaringAssemblyName": "Npgsql"
         }
@@ -401,6 +599,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
       "methods": [],
       "properties": [
         {
@@ -418,6 +620,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BColumn",
           "declaringAssemblyName": "Npgsql"
         },
@@ -436,6 +639,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BColumn",
           "declaringAssemblyName": "Npgsql"
         },
@@ -454,6 +658,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BColumn",
           "declaringAssemblyName": "Npgsql"
         },
@@ -472,6 +677,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BColumn",
           "declaringAssemblyName": "Npgsql"
         }
@@ -491,6 +697,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
       "methods": [],
       "properties": [
         {
@@ -508,6 +718,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.RelationMessageColumn",
           "declaringAssemblyName": "Npgsql"
         },
@@ -526,6 +737,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.RelationMessageColumn",
           "declaringAssemblyName": "Npgsql"
         },
@@ -544,6 +756,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.RelationMessageColumn",
           "declaringAssemblyName": "Npgsql"
         },
@@ -562,6 +775,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.RelationMessageColumn",
           "declaringAssemblyName": "Npgsql"
         }
@@ -581,6 +795,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.TransactionControlMessage",
+        "clrName": "Npgsql.Replication.PgOutput.Messages.TransactionControlMessage"
+      },
       "methods": [],
       "properties": [
         {
@@ -588,16 +806,17 @@
           "clrName": "TransactionFinalLsn",
           "metadataToken": 385876601,
           "canonicalSignature": ":NpgsqlTypes.NpgsqlLogSequenceNumber",
-          "normalizedSignature": "TransactionFinalLsn|:NpgsqlTypes.NpgsqlLogSequenceNumber|static=false|accessor=get",
+          "normalizedSignature": "TransactionFinalLsn|:NpgsqlTypes.NpgsqlLogSequenceNumber|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.BeginMessage",
           "declaringAssemblyName": "Npgsql"
         },
@@ -606,16 +825,17 @@
           "clrName": "TransactionCommitTimestamp",
           "metadataToken": 385876602,
           "canonicalSignature": ":System.DateTime",
-          "normalizedSignature": "TransactionCommitTimestamp|:System.DateTime|static=false|accessor=get",
+          "normalizedSignature": "TransactionCommitTimestamp|:System.DateTime|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.BeginMessage",
           "declaringAssemblyName": "Npgsql"
         }
@@ -635,6 +855,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.PrepareMessageBase",
+        "clrName": "Npgsql.Replication.PgOutput.Messages.PrepareMessageBase"
+      },
       "methods": [],
       "properties": [],
       "fields": [],
@@ -652,6 +876,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.PgOutputReplicationMessage",
+        "clrName": "Npgsql.Replication.PgOutput.Messages.PgOutputReplicationMessage"
+      },
       "methods": [],
       "properties": [
         {
@@ -659,16 +887,17 @@
           "clrName": "Flags",
           "metadataToken": 385876603,
           "canonicalSignature": ":Npgsql.Replication.PgOutput.Messages.CommitMessage\u002BCommitFlags",
-          "normalizedSignature": "Flags|:Npgsql.Replication.PgOutput.Messages.CommitMessage\u002BCommitFlags|static=false|accessor=get",
+          "normalizedSignature": "Flags|:Npgsql.Replication.PgOutput.Messages.CommitMessage\u002BCommitFlags|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.CommitMessage",
           "declaringAssemblyName": "Npgsql"
         },
@@ -677,16 +906,17 @@
           "clrName": "CommitLsn",
           "metadataToken": 385876604,
           "canonicalSignature": ":NpgsqlTypes.NpgsqlLogSequenceNumber",
-          "normalizedSignature": "CommitLsn|:NpgsqlTypes.NpgsqlLogSequenceNumber|static=false|accessor=get",
+          "normalizedSignature": "CommitLsn|:NpgsqlTypes.NpgsqlLogSequenceNumber|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.CommitMessage",
           "declaringAssemblyName": "Npgsql"
         },
@@ -695,16 +925,17 @@
           "clrName": "TransactionEndLsn",
           "metadataToken": 385876605,
           "canonicalSignature": ":NpgsqlTypes.NpgsqlLogSequenceNumber",
-          "normalizedSignature": "TransactionEndLsn|:NpgsqlTypes.NpgsqlLogSequenceNumber|static=false|accessor=get",
+          "normalizedSignature": "TransactionEndLsn|:NpgsqlTypes.NpgsqlLogSequenceNumber|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.CommitMessage",
           "declaringAssemblyName": "Npgsql"
         },
@@ -713,16 +944,17 @@
           "clrName": "TransactionCommitTimestamp",
           "metadataToken": 385876606,
           "canonicalSignature": ":System.DateTime",
-          "normalizedSignature": "TransactionCommitTimestamp|:System.DateTime|static=false|accessor=get",
+          "normalizedSignature": "TransactionCommitTimestamp|:System.DateTime|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.CommitMessage",
           "declaringAssemblyName": "Npgsql"
         }
@@ -742,6 +974,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.PreparedTransactionControlMessage",
+        "clrName": "Npgsql.Replication.PgOutput.Messages.PreparedTransactionControlMessage"
+      },
       "methods": [],
       "properties": [
         {
@@ -749,16 +985,17 @@
           "clrName": "Flags",
           "metadataToken": 385876607,
           "canonicalSignature": ":Npgsql.Replication.PgOutput.Messages.CommitPreparedMessage\u002BCommitPreparedFlags",
-          "normalizedSignature": "Flags|:Npgsql.Replication.PgOutput.Messages.CommitPreparedMessage\u002BCommitPreparedFlags|static=false|accessor=get",
+          "normalizedSignature": "Flags|:Npgsql.Replication.PgOutput.Messages.CommitPreparedMessage\u002BCommitPreparedFlags|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.CommitPreparedMessage",
           "declaringAssemblyName": "Npgsql"
         },
@@ -777,6 +1014,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.CommitPreparedMessage",
           "declaringAssemblyName": "Npgsql"
         },
@@ -795,6 +1033,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.CommitPreparedMessage",
           "declaringAssemblyName": "Npgsql"
         },
@@ -813,6 +1052,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.CommitPreparedMessage",
           "declaringAssemblyName": "Npgsql"
         }
@@ -832,6 +1072,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.UpdateMessage",
+        "clrName": "Npgsql.Replication.PgOutput.Messages.UpdateMessage"
+      },
       "methods": [],
       "properties": [
         {
@@ -849,6 +1093,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.DefaultUpdateMessage",
           "declaringAssemblyName": "Npgsql"
         }
@@ -868,6 +1113,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.TransactionalMessage",
+        "clrName": "Npgsql.Replication.PgOutput.Messages.TransactionalMessage"
+      },
       "methods": [],
       "properties": [
         {
@@ -875,16 +1124,17 @@
           "clrName": "Relation",
           "metadataToken": 385876612,
           "canonicalSignature": ":Npgsql.Replication.PgOutput.Messages.RelationMessage",
-          "normalizedSignature": "Relation|:Npgsql.Replication.PgOutput.Messages.RelationMessage|static=false|accessor=get",
+          "normalizedSignature": "Relation|:Npgsql.Replication.PgOutput.Messages.RelationMessage|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.DeleteMessage",
           "declaringAssemblyName": "Npgsql"
         }
@@ -904,6 +1154,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.DeleteMessage",
+        "clrName": "Npgsql.Replication.PgOutput.Messages.DeleteMessage"
+      },
       "methods": [],
       "properties": [
         {
@@ -921,6 +1175,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.FullDeleteMessage",
           "declaringAssemblyName": "Npgsql"
         }
@@ -940,6 +1195,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.UpdateMessage",
+        "clrName": "Npgsql.Replication.PgOutput.Messages.UpdateMessage"
+      },
       "methods": [],
       "properties": [
         {
@@ -957,6 +1216,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.FullUpdateMessage",
           "declaringAssemblyName": "Npgsql"
         },
@@ -975,6 +1235,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.FullUpdateMessage",
           "declaringAssemblyName": "Npgsql"
         }
@@ -994,6 +1255,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.UpdateMessage",
+        "clrName": "Npgsql.Replication.PgOutput.Messages.UpdateMessage"
+      },
       "methods": [],
       "properties": [
         {
@@ -1011,6 +1276,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.IndexUpdateMessage",
           "declaringAssemblyName": "Npgsql"
         },
@@ -1029,6 +1295,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.IndexUpdateMessage",
           "declaringAssemblyName": "Npgsql"
         }
@@ -1048,6 +1315,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.TransactionalMessage",
+        "clrName": "Npgsql.Replication.PgOutput.Messages.TransactionalMessage"
+      },
       "methods": [],
       "properties": [
         {
@@ -1055,16 +1326,17 @@
           "clrName": "Relation",
           "metadataToken": 385876618,
           "canonicalSignature": ":Npgsql.Replication.PgOutput.Messages.RelationMessage",
-          "normalizedSignature": "Relation|:Npgsql.Replication.PgOutput.Messages.RelationMessage|static=false|accessor=get",
+          "normalizedSignature": "Relation|:Npgsql.Replication.PgOutput.Messages.RelationMessage|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.InsertMessage",
           "declaringAssemblyName": "Npgsql"
         },
@@ -1083,6 +1355,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.InsertMessage",
           "declaringAssemblyName": "Npgsql"
         }
@@ -1102,6 +1375,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.DeleteMessage",
+        "clrName": "Npgsql.Replication.PgOutput.Messages.DeleteMessage"
+      },
       "methods": [],
       "properties": [
         {
@@ -1119,6 +1396,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.KeyDeleteMessage",
           "declaringAssemblyName": "Npgsql"
         }
@@ -1138,6 +1416,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.TransactionalMessage",
+        "clrName": "Npgsql.Replication.PgOutput.Messages.TransactionalMessage"
+      },
       "methods": [],
       "properties": [
         {
@@ -1145,16 +1427,17 @@
           "clrName": "Flags",
           "metadataToken": 385876621,
           "canonicalSignature": ":System.Byte",
-          "normalizedSignature": "Flags|:System.Byte|static=false|accessor=get",
+          "normalizedSignature": "Flags|:System.Byte|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.LogicalDecodingMessage",
           "declaringAssemblyName": "Npgsql"
         },
@@ -1163,16 +1446,17 @@
           "clrName": "MessageLsn",
           "metadataToken": 385876622,
           "canonicalSignature": ":NpgsqlTypes.NpgsqlLogSequenceNumber",
-          "normalizedSignature": "MessageLsn|:NpgsqlTypes.NpgsqlLogSequenceNumber|static=false|accessor=get",
+          "normalizedSignature": "MessageLsn|:NpgsqlTypes.NpgsqlLogSequenceNumber|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.LogicalDecodingMessage",
           "declaringAssemblyName": "Npgsql"
         },
@@ -1181,16 +1465,17 @@
           "clrName": "Prefix",
           "metadataToken": 385876623,
           "canonicalSignature": ":System.String",
-          "normalizedSignature": "Prefix|:System.String|static=false|accessor=get",
+          "normalizedSignature": "Prefix|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.LogicalDecodingMessage",
           "declaringAssemblyName": "Npgsql"
         },
@@ -1199,16 +1484,17 @@
           "clrName": "Data",
           "metadataToken": 385876624,
           "canonicalSignature": ":System.IO.Stream",
-          "normalizedSignature": "Data|:System.IO.Stream|static=false|accessor=get",
+          "normalizedSignature": "Data|:System.IO.Stream|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.LogicalDecodingMessage",
           "declaringAssemblyName": "Npgsql"
         }
@@ -1228,6 +1514,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.PgOutputReplicationMessage",
+        "clrName": "Npgsql.Replication.PgOutput.Messages.PgOutputReplicationMessage"
+      },
       "methods": [],
       "properties": [
         {
@@ -1235,16 +1525,17 @@
           "clrName": "OriginCommitLsn",
           "metadataToken": 385876625,
           "canonicalSignature": ":NpgsqlTypes.NpgsqlLogSequenceNumber",
-          "normalizedSignature": "OriginCommitLsn|:NpgsqlTypes.NpgsqlLogSequenceNumber|static=false|accessor=get",
+          "normalizedSignature": "OriginCommitLsn|:NpgsqlTypes.NpgsqlLogSequenceNumber|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.OriginMessage",
           "declaringAssemblyName": "Npgsql"
         },
@@ -1253,16 +1544,17 @@
           "clrName": "OriginName",
           "metadataToken": 385876626,
           "canonicalSignature": ":System.String",
-          "normalizedSignature": "OriginName|:System.String|static=false|accessor=get",
+          "normalizedSignature": "OriginName|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.OriginMessage",
           "declaringAssemblyName": "Npgsql"
         }
@@ -1282,6 +1574,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.StreamAbortMessage",
+        "clrName": "Npgsql.Replication.PgOutput.Messages.StreamAbortMessage"
+      },
       "methods": [],
       "properties": [
         {
@@ -1289,16 +1585,17 @@
           "clrName": "AbortLsn",
           "metadataToken": 385876649,
           "canonicalSignature": ":NpgsqlTypes.NpgsqlLogSequenceNumber",
-          "normalizedSignature": "AbortLsn|:NpgsqlTypes.NpgsqlLogSequenceNumber|static=false|accessor=get",
+          "normalizedSignature": "AbortLsn|:NpgsqlTypes.NpgsqlLogSequenceNumber|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.ParallelStreamAbortMessage",
           "declaringAssemblyName": "Npgsql"
         },
@@ -1307,16 +1604,17 @@
           "clrName": "AbortTimestamp",
           "metadataToken": 385876650,
           "canonicalSignature": ":System.DateTime",
-          "normalizedSignature": "AbortTimestamp|:System.DateTime|static=false|accessor=get",
+          "normalizedSignature": "AbortTimestamp|:System.DateTime|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.ParallelStreamAbortMessage",
           "declaringAssemblyName": "Npgsql"
         }
@@ -1336,6 +1634,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Npgsql:Npgsql.Replication.ReplicationMessage",
+        "clrName": "Npgsql.Replication.ReplicationMessage"
+      },
       "methods": [
         {
           "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.PgOutputReplicationMessage::ToString():System.String",
@@ -1352,6 +1654,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.PgOutputReplicationMessage",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
@@ -1360,7 +1663,19 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.PgOutputReplicationMessage::.ctor():void",
+          "metadataToken": 100666068,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "Npgsql.Replication.PgOutput.Messages.PgOutputReplicationMessage",
+          "declaringAssemblyName": "Npgsql"
+        }
+      ]
     },
     {
       "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.PreparedTransactionControlMessage",
@@ -1373,6 +1688,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.TransactionControlMessage",
+        "clrName": "Npgsql.Replication.PgOutput.Messages.TransactionControlMessage"
+      },
       "methods": [],
       "properties": [
         {
@@ -1380,16 +1699,17 @@
           "clrName": "TransactionGid",
           "metadataToken": 385876627,
           "canonicalSignature": ":System.String",
-          "normalizedSignature": "TransactionGid|:System.String|static=false|accessor=get",
+          "normalizedSignature": "TransactionGid|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.PreparedTransactionControlMessage",
           "declaringAssemblyName": "Npgsql"
         }
@@ -1409,6 +1729,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.PrepareMessageBase",
+        "clrName": "Npgsql.Replication.PgOutput.Messages.PrepareMessageBase"
+      },
       "methods": [],
       "properties": [
         {
@@ -1416,16 +1740,17 @@
           "clrName": "Flags",
           "metadataToken": 385876628,
           "canonicalSignature": ":Npgsql.Replication.PgOutput.Messages.PrepareMessage\u002BPrepareFlags",
-          "normalizedSignature": "Flags|:Npgsql.Replication.PgOutput.Messages.PrepareMessage\u002BPrepareFlags|static=false|accessor=get",
+          "normalizedSignature": "Flags|:Npgsql.Replication.PgOutput.Messages.PrepareMessage\u002BPrepareFlags|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.PrepareMessage",
           "declaringAssemblyName": "Npgsql"
         }
@@ -1445,6 +1770,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.PreparedTransactionControlMessage",
+        "clrName": "Npgsql.Replication.PgOutput.Messages.PreparedTransactionControlMessage"
+      },
       "methods": [],
       "properties": [
         {
@@ -1462,6 +1791,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.PrepareMessageBase",
           "declaringAssemblyName": "Npgsql"
         },
@@ -1480,6 +1810,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.PrepareMessageBase",
           "declaringAssemblyName": "Npgsql"
         },
@@ -1498,6 +1829,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.PrepareMessageBase",
           "declaringAssemblyName": "Npgsql"
         }
@@ -1517,6 +1849,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.TransactionalMessage",
+        "clrName": "Npgsql.Replication.PgOutput.Messages.TransactionalMessage"
+      },
       "methods": [],
       "properties": [
         {
@@ -1524,16 +1860,17 @@
           "clrName": "RelationId",
           "metadataToken": 385876632,
           "canonicalSignature": ":System.UInt32",
-          "normalizedSignature": "RelationId|:System.UInt32|static=false|accessor=get",
+          "normalizedSignature": "RelationId|:System.UInt32|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.RelationMessage",
           "declaringAssemblyName": "Npgsql"
         },
@@ -1542,16 +1879,17 @@
           "clrName": "Namespace",
           "metadataToken": 385876633,
           "canonicalSignature": ":System.String",
-          "normalizedSignature": "Namespace|:System.String|static=false|accessor=get",
+          "normalizedSignature": "Namespace|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.RelationMessage",
           "declaringAssemblyName": "Npgsql"
         },
@@ -1560,16 +1898,17 @@
           "clrName": "RelationName",
           "metadataToken": 385876634,
           "canonicalSignature": ":System.String",
-          "normalizedSignature": "RelationName|:System.String|static=false|accessor=get",
+          "normalizedSignature": "RelationName|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.RelationMessage",
           "declaringAssemblyName": "Npgsql"
         },
@@ -1578,16 +1917,17 @@
           "clrName": "ReplicaIdentity",
           "metadataToken": 385876635,
           "canonicalSignature": ":Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BReplicaIdentitySetting",
-          "normalizedSignature": "ReplicaIdentity|:Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BReplicaIdentitySetting|static=false|accessor=get",
+          "normalizedSignature": "ReplicaIdentity|:Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BReplicaIdentitySetting|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.RelationMessage",
           "declaringAssemblyName": "Npgsql"
         },
@@ -1606,6 +1946,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.RelationMessage",
           "declaringAssemblyName": "Npgsql"
         }
@@ -1625,6 +1966,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.PreparedTransactionControlMessage",
+        "clrName": "Npgsql.Replication.PgOutput.Messages.PreparedTransactionControlMessage"
+      },
       "methods": [],
       "properties": [
         {
@@ -1632,16 +1977,17 @@
           "clrName": "Flags",
           "metadataToken": 385876643,
           "canonicalSignature": ":Npgsql.Replication.PgOutput.Messages.RollbackPreparedMessage\u002BRollbackPreparedFlags",
-          "normalizedSignature": "Flags|:Npgsql.Replication.PgOutput.Messages.RollbackPreparedMessage\u002BRollbackPreparedFlags|static=false|accessor=get",
+          "normalizedSignature": "Flags|:Npgsql.Replication.PgOutput.Messages.RollbackPreparedMessage\u002BRollbackPreparedFlags|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.RollbackPreparedMessage",
           "declaringAssemblyName": "Npgsql"
         },
@@ -1660,6 +2006,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.RollbackPreparedMessage",
           "declaringAssemblyName": "Npgsql"
         },
@@ -1678,6 +2025,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.RollbackPreparedMessage",
           "declaringAssemblyName": "Npgsql"
         },
@@ -1696,6 +2044,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.RollbackPreparedMessage",
           "declaringAssemblyName": "Npgsql"
         },
@@ -1704,16 +2053,17 @@
           "clrName": "TransactionRollbackTimestamp",
           "metadataToken": 385876647,
           "canonicalSignature": ":System.DateTime",
-          "normalizedSignature": "TransactionRollbackTimestamp|:System.DateTime|static=false|accessor=get",
+          "normalizedSignature": "TransactionRollbackTimestamp|:System.DateTime|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.RollbackPreparedMessage",
           "declaringAssemblyName": "Npgsql"
         }
@@ -1733,6 +2083,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.TransactionControlMessage",
+        "clrName": "Npgsql.Replication.PgOutput.Messages.TransactionControlMessage"
+      },
       "methods": [],
       "properties": [
         {
@@ -1740,16 +2094,17 @@
           "clrName": "SubtransactionXid",
           "metadataToken": 385876648,
           "canonicalSignature": ":System.UInt32",
-          "normalizedSignature": "SubtransactionXid|:System.UInt32|static=false|accessor=get",
+          "normalizedSignature": "SubtransactionXid|:System.UInt32|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.StreamAbortMessage",
           "declaringAssemblyName": "Npgsql"
         }
@@ -1769,6 +2124,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.TransactionControlMessage",
+        "clrName": "Npgsql.Replication.PgOutput.Messages.TransactionControlMessage"
+      },
       "methods": [],
       "properties": [
         {
@@ -1776,16 +2135,17 @@
           "clrName": "Flags",
           "metadataToken": 385876651,
           "canonicalSignature": ":System.Byte",
-          "normalizedSignature": "Flags|:System.Byte|static=false|accessor=get",
+          "normalizedSignature": "Flags|:System.Byte|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.StreamCommitMessage",
           "declaringAssemblyName": "Npgsql"
         },
@@ -1794,16 +2154,17 @@
           "clrName": "CommitLsn",
           "metadataToken": 385876652,
           "canonicalSignature": ":NpgsqlTypes.NpgsqlLogSequenceNumber",
-          "normalizedSignature": "CommitLsn|:NpgsqlTypes.NpgsqlLogSequenceNumber|static=false|accessor=get",
+          "normalizedSignature": "CommitLsn|:NpgsqlTypes.NpgsqlLogSequenceNumber|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.StreamCommitMessage",
           "declaringAssemblyName": "Npgsql"
         },
@@ -1812,16 +2173,17 @@
           "clrName": "TransactionEndLsn",
           "metadataToken": 385876653,
           "canonicalSignature": ":NpgsqlTypes.NpgsqlLogSequenceNumber",
-          "normalizedSignature": "TransactionEndLsn|:NpgsqlTypes.NpgsqlLogSequenceNumber|static=false|accessor=get",
+          "normalizedSignature": "TransactionEndLsn|:NpgsqlTypes.NpgsqlLogSequenceNumber|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.StreamCommitMessage",
           "declaringAssemblyName": "Npgsql"
         },
@@ -1830,16 +2192,17 @@
           "clrName": "TransactionCommitTimestamp",
           "metadataToken": 385876654,
           "canonicalSignature": ":System.DateTime",
-          "normalizedSignature": "TransactionCommitTimestamp|:System.DateTime|static=false|accessor=get",
+          "normalizedSignature": "TransactionCommitTimestamp|:System.DateTime|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.StreamCommitMessage",
           "declaringAssemblyName": "Npgsql"
         }
@@ -1859,6 +2222,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.PrepareMessageBase",
+        "clrName": "Npgsql.Replication.PgOutput.Messages.PrepareMessageBase"
+      },
       "methods": [],
       "properties": [
         {
@@ -1866,16 +2233,17 @@
           "clrName": "Flags",
           "metadataToken": 385876655,
           "canonicalSignature": ":Npgsql.Replication.PgOutput.Messages.StreamPrepareMessage\u002BStreamPrepareFlags",
-          "normalizedSignature": "Flags|:Npgsql.Replication.PgOutput.Messages.StreamPrepareMessage\u002BStreamPrepareFlags|static=false|accessor=get",
+          "normalizedSignature": "Flags|:Npgsql.Replication.PgOutput.Messages.StreamPrepareMessage\u002BStreamPrepareFlags|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.StreamPrepareMessage",
           "declaringAssemblyName": "Npgsql"
         }
@@ -1895,6 +2263,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.TransactionControlMessage",
+        "clrName": "Npgsql.Replication.PgOutput.Messages.TransactionControlMessage"
+      },
       "methods": [],
       "properties": [
         {
@@ -1902,16 +2274,17 @@
           "clrName": "StreamSegmentIndicator",
           "metadataToken": 385876656,
           "canonicalSignature": ":System.Byte",
-          "normalizedSignature": "StreamSegmentIndicator|:System.Byte|static=false|accessor=get",
+          "normalizedSignature": "StreamSegmentIndicator|:System.Byte|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.StreamStartMessage",
           "declaringAssemblyName": "Npgsql"
         }
@@ -1931,6 +2304,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.PgOutputReplicationMessage",
+        "clrName": "Npgsql.Replication.PgOutput.Messages.PgOutputReplicationMessage"
+      },
       "methods": [],
       "properties": [],
       "fields": [],
@@ -1948,6 +2325,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.PgOutputReplicationMessage",
+        "clrName": "Npgsql.Replication.PgOutput.Messages.PgOutputReplicationMessage"
+      },
       "methods": [],
       "properties": [
         {
@@ -1955,23 +2336,36 @@
           "clrName": "TransactionXid",
           "metadataToken": 385876657,
           "canonicalSignature": ":System.Nullable_1[[System.UInt32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "normalizedSignature": "TransactionXid|:System.Nullable_1[[System.UInt32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "normalizedSignature": "TransactionXid|:System.Nullable_1[[System.UInt32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.TransactionalMessage",
           "declaringAssemblyName": "Npgsql"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.TransactionalMessage::.ctor():void",
+          "metadataToken": 100666143,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "Npgsql.Replication.PgOutput.Messages.TransactionalMessage",
+          "declaringAssemblyName": "Npgsql"
+        }
+      ]
     },
     {
       "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.TransactionControlMessage",
@@ -1984,6 +2378,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.PgOutputReplicationMessage",
+        "clrName": "Npgsql.Replication.PgOutput.Messages.PgOutputReplicationMessage"
+      },
       "methods": [],
       "properties": [
         {
@@ -1991,23 +2389,36 @@
           "clrName": "TransactionXid",
           "metadataToken": 385876658,
           "canonicalSignature": ":System.UInt32",
-          "normalizedSignature": "TransactionXid|:System.UInt32|static=false|accessor=get",
+          "normalizedSignature": "TransactionXid|:System.UInt32|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.TransactionControlMessage",
           "declaringAssemblyName": "Npgsql"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.TransactionControlMessage::.ctor():void",
+          "metadataToken": 100666147,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "Npgsql.Replication.PgOutput.Messages.TransactionControlMessage",
+          "declaringAssemblyName": "Npgsql"
+        }
+      ]
     },
     {
       "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.TruncateMessage",
@@ -2020,6 +2431,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.TransactionalMessage",
+        "clrName": "Npgsql.Replication.PgOutput.Messages.TransactionalMessage"
+      },
       "methods": [],
       "properties": [
         {
@@ -2027,16 +2442,17 @@
           "clrName": "Options",
           "metadataToken": 385876659,
           "canonicalSignature": ":Npgsql.Replication.PgOutput.Messages.TruncateMessage\u002BTruncateOptions",
-          "normalizedSignature": "Options|:Npgsql.Replication.PgOutput.Messages.TruncateMessage\u002BTruncateOptions|static=false|accessor=get",
+          "normalizedSignature": "Options|:Npgsql.Replication.PgOutput.Messages.TruncateMessage\u002BTruncateOptions|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.TruncateMessage",
           "declaringAssemblyName": "Npgsql"
         },
@@ -2045,16 +2461,17 @@
           "clrName": "Relations",
           "metadataToken": 385876660,
           "canonicalSignature": ":System.Collections.Generic.IReadOnlyList_1[[Npgsql.Replication.PgOutput.Messages.RelationMessage,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]",
-          "normalizedSignature": "Relations|:System.Collections.Generic.IReadOnlyList_1[[Npgsql.Replication.PgOutput.Messages.RelationMessage,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]|static=false|accessor=get",
+          "normalizedSignature": "Relations|:System.Collections.Generic.IReadOnlyList_1[[Npgsql.Replication.PgOutput.Messages.RelationMessage,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.TruncateMessage",
           "declaringAssemblyName": "Npgsql"
         }
@@ -2074,6 +2491,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.TransactionalMessage",
+        "clrName": "Npgsql.Replication.PgOutput.Messages.TransactionalMessage"
+      },
       "methods": [],
       "properties": [
         {
@@ -2081,16 +2502,17 @@
           "clrName": "TypeId",
           "metadataToken": 385876661,
           "canonicalSignature": ":System.UInt32",
-          "normalizedSignature": "TypeId|:System.UInt32|static=false|accessor=get",
+          "normalizedSignature": "TypeId|:System.UInt32|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.TypeMessage",
           "declaringAssemblyName": "Npgsql"
         },
@@ -2099,16 +2521,17 @@
           "clrName": "Namespace",
           "metadataToken": 385876662,
           "canonicalSignature": ":System.String",
-          "normalizedSignature": "Namespace|:System.String|static=false|accessor=get",
+          "normalizedSignature": "Namespace|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.TypeMessage",
           "declaringAssemblyName": "Npgsql"
         },
@@ -2117,16 +2540,17 @@
           "clrName": "Name",
           "metadataToken": 385876663,
           "canonicalSignature": ":System.String",
-          "normalizedSignature": "Name|:System.String|static=false|accessor=get",
+          "normalizedSignature": "Name|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.TypeMessage",
           "declaringAssemblyName": "Npgsql"
         }
@@ -2146,6 +2570,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.TransactionalMessage",
+        "clrName": "Npgsql.Replication.PgOutput.Messages.TransactionalMessage"
+      },
       "methods": [],
       "properties": [
         {
@@ -2153,16 +2581,17 @@
           "clrName": "Relation",
           "metadataToken": 385876664,
           "canonicalSignature": ":Npgsql.Replication.PgOutput.Messages.RelationMessage",
-          "normalizedSignature": "Relation|:Npgsql.Replication.PgOutput.Messages.RelationMessage|static=false|accessor=get",
+          "normalizedSignature": "Relation|:Npgsql.Replication.PgOutput.Messages.RelationMessage|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.UpdateMessage",
           "declaringAssemblyName": "Npgsql"
         },
@@ -2181,6 +2610,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.Replication.PgOutput.Messages.UpdateMessage",
           "declaringAssemblyName": "Npgsql"
         }

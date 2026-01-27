@@ -15,7 +15,51 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Update.ModificationCommand",
+        "clrName": "Microsoft.EntityFrameworkCore.Update.ModificationCommand"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Update.IModificationCommand",
+          "clrName": "Microsoft.EntityFrameworkCore.Update.IModificationCommand"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Update.IReadOnlyModificationCommand",
+          "clrName": "Microsoft.EntityFrameworkCore.Update.IReadOnlyModificationCommand"
+        },
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Update.INonTrackedModificationCommand",
+          "clrName": "Microsoft.EntityFrameworkCore.Update.INonTrackedModificationCommand"
+        }
+      ],
       "methods": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Update.Internal.NpgsqlModificationCommand::ProcessSinglePropertyJsonUpdate(Microsoft.EntityFrameworkCore.Update.ColumnModificationParameters\u0026):System.Void",
+          "clrName": "ProcessSinglePropertyJsonUpdate",
+          "metadataToken": 100664084,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Update.ColumnModificationParameters\u0026):System.Void",
+          "normalizedSignature": "ProcessSinglePropertyJsonUpdate|(Microsoft.EntityFrameworkCore.Update.ColumnModificationParameters\u0026):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Update.Internal.NpgsqlModificationCommand",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false,
+          "parameterModifiers": [
+            {
+              "index": 0,
+              "modifier": "ref"
+            }
+          ]
+        },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Update.Internal.NpgsqlModificationCommand::PropagateResults(Microsoft.EntityFrameworkCore.Storage.RelationalDataReader):System.Void",
           "clrName": "PropagateResults",
@@ -31,6 +75,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Update.Internal.NpgsqlModificationCommand",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
@@ -47,6 +92,7 @@
           "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Update.ModificationCommandParameters\u0026):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Update.Internal.NpgsqlModificationCommand",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "parameterModifiers": [
@@ -63,6 +109,7 @@
           "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Update.NonTrackedModificationCommandParameters\u0026):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Update.Internal.NpgsqlModificationCommand",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "parameterModifiers": [
@@ -85,8 +132,133 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
-      "methods": [],
-      "properties": [],
+      "baseType": {
+        "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch",
+        "clrName": "Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch"
+      },
+      "methods": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Update.Internal.NpgsqlModificationCommandBatch::AddParameter(Microsoft.EntityFrameworkCore.Update.IColumnModification):System.Void",
+          "clrName": "AddParameter",
+          "metadataToken": 100664088,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Update.IColumnModification):System.Void",
+          "normalizedSignature": "AddParameter|(Microsoft.EntityFrameworkCore.Update.IColumnModification):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Update.Internal.NpgsqlModificationCommandBatch",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Update.Internal.NpgsqlModificationCommandBatch::Consume(Microsoft.EntityFrameworkCore.Storage.RelationalDataReader):System.Void",
+          "clrName": "Consume",
+          "metadataToken": 100664089,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalDataReader):System.Void",
+          "normalizedSignature": "Consume|(Microsoft.EntityFrameworkCore.Storage.RelationalDataReader):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Update.Internal.NpgsqlModificationCommandBatch",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Update.Internal.NpgsqlModificationCommandBatch::ConsumeAsync(Microsoft.EntityFrameworkCore.Storage.RelationalDataReader,System.Threading.CancellationToken):System.Threading.Tasks.Task",
+          "clrName": "ConsumeAsync",
+          "metadataToken": 100664090,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalDataReader,System.Threading.CancellationToken):System.Threading.Tasks.Task",
+          "normalizedSignature": "ConsumeAsync|(Microsoft.EntityFrameworkCore.Storage.RelationalDataReader,System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Update.Internal.NpgsqlModificationCommandBatch",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Update.Internal.NpgsqlModificationCommandBatch::ThrowAggregateUpdateConcurrencyException(Microsoft.EntityFrameworkCore.Storage.RelationalDataReader,System.Int32,System.Int32,System.Int32):System.Void",
+          "clrName": "ThrowAggregateUpdateConcurrencyException",
+          "metadataToken": 100664093,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalDataReader,System.Int32,System.Int32,System.Int32):System.Void",
+          "normalizedSignature": "ThrowAggregateUpdateConcurrencyException|(Microsoft.EntityFrameworkCore.Storage.RelationalDataReader,System.Int32,System.Int32,System.Int32):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 4,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Update.Internal.NpgsqlModificationCommandBatch",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Update.Internal.NpgsqlModificationCommandBatch::ThrowAggregateUpdateConcurrencyExceptionAsync(Microsoft.EntityFrameworkCore.Storage.RelationalDataReader,System.Int32,System.Int32,System.Int32,System.Threading.CancellationToken):System.Threading.Tasks.Task",
+          "clrName": "ThrowAggregateUpdateConcurrencyExceptionAsync",
+          "metadataToken": 100664094,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalDataReader,System.Int32,System.Int32,System.Int32,System.Threading.CancellationToken):System.Threading.Tasks.Task",
+          "normalizedSignature": "ThrowAggregateUpdateConcurrencyExceptionAsync|(Microsoft.EntityFrameworkCore.Storage.RelationalDataReader,System.Int32,System.Int32,System.Int32,System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 5,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Update.Internal.NpgsqlModificationCommandBatch",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Update.Internal.NpgsqlModificationCommandBatch::MaxBatchSize:System.Int32",
+          "clrName": "MaxBatchSize",
+          "metadataToken": 385875991,
+          "canonicalSignature": ":System.Int32",
+          "normalizedSignature": "MaxBatchSize|:System.Int32|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "visibility": "Protected",
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Update.Internal.NpgsqlModificationCommandBatch",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+        }
+      ],
       "fields": [],
       "events": [],
       "constructors": [
@@ -97,6 +269,7 @@
           "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Update.ModificationCommandBatchFactoryDependencies,System.Int32):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Update.Internal.NpgsqlModificationCommandBatch",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
@@ -113,6 +286,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Update.IModificationCommandBatchFactory",
+          "clrName": "Microsoft.EntityFrameworkCore.Update.IModificationCommandBatchFactory"
+        }
+      ],
       "methods": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Update.Internal.NpgsqlModificationCommandBatchFactory::Create():Microsoft.EntityFrameworkCore.Update.ModificationCommandBatch",
@@ -129,6 +312,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Update.Internal.NpgsqlModificationCommandBatchFactory",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
@@ -145,6 +329,7 @@
           "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Update.ModificationCommandBatchFactoryDependencies,Microsoft.EntityFrameworkCore.Infrastructure.IDbContextOptions):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Update.Internal.NpgsqlModificationCommandBatchFactory",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
@@ -161,6 +346,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Update.IModificationCommandFactory",
+          "clrName": "Microsoft.EntityFrameworkCore.Update.IModificationCommandFactory"
+        }
+      ],
       "methods": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Update.Internal.NpgsqlModificationCommandFactory::CreateModificationCommand(Microsoft.EntityFrameworkCore.Update.ModificationCommandParameters\u0026):Microsoft.EntityFrameworkCore.Update.IModificationCommand",
@@ -177,6 +372,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Update.Internal.NpgsqlModificationCommandFactory",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false,
@@ -202,6 +398,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Update.Internal.NpgsqlModificationCommandFactory",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false,
@@ -224,6 +421,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Update.Internal.NpgsqlModificationCommandFactory",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
@@ -240,6 +438,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Update.UpdateSqlGenerator",
+        "clrName": "Microsoft.EntityFrameworkCore.Update.UpdateSqlGenerator"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Update.IUpdateSqlGenerator",
+          "clrName": "Microsoft.EntityFrameworkCore.Update.IUpdateSqlGenerator"
+        }
+      ],
       "methods": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Update.Internal.NpgsqlUpdateSqlGenerator::AppendInsertOperation(System.Text.StringBuilder,Microsoft.EntityFrameworkCore.Update.IReadOnlyModificationCommand,System.Int32,System.Boolean\u0026):Microsoft.EntityFrameworkCore.Update.ResultSetMapping",
@@ -256,6 +464,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Update.Internal.NpgsqlUpdateSqlGenerator",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false,
@@ -281,6 +490,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Update.Internal.NpgsqlUpdateSqlGenerator",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false,
@@ -290,6 +500,26 @@
               "modifier": "out"
             }
           ]
+        },
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Update.Internal.NpgsqlUpdateSqlGenerator::AppendInsertCommand(System.Text.StringBuilder,System.String,System.String,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Update.IColumnModification,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Update.IColumnModification,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean):System.Void",
+          "clrName": "AppendInsertCommand",
+          "metadataToken": 100664104,
+          "canonicalSignature": "(System.Text.StringBuilder,System.String,System.String,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Update.IColumnModification,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Update.IColumnModification,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean):System.Void",
+          "normalizedSignature": "AppendInsertCommand|(System.Text.StringBuilder,System.String,System.String,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Update.IColumnModification,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Update.IColumnModification,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 6,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Update.Internal.NpgsqlUpdateSqlGenerator",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Update.Internal.NpgsqlUpdateSqlGenerator::AppendUpdateOperation(System.Text.StringBuilder,Microsoft.EntityFrameworkCore.Update.IReadOnlyModificationCommand,System.Int32,System.Boolean\u0026):Microsoft.EntityFrameworkCore.Update.ResultSetMapping",
@@ -306,6 +536,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Update.Internal.NpgsqlUpdateSqlGenerator",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false,
@@ -315,6 +546,26 @@
               "modifier": "out"
             }
           ]
+        },
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Update.Internal.NpgsqlUpdateSqlGenerator::AppendUpdateColumnValue(Microsoft.EntityFrameworkCore.Storage.ISqlGenerationHelper,Microsoft.EntityFrameworkCore.Update.IColumnModification,System.Text.StringBuilder,System.String,System.String):System.Void",
+          "clrName": "AppendUpdateColumnValue",
+          "metadataToken": 100664106,
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.ISqlGenerationHelper,Microsoft.EntityFrameworkCore.Update.IColumnModification,System.Text.StringBuilder,System.String,System.String):System.Void",
+          "normalizedSignature": "AppendUpdateColumnValue|(Microsoft.EntityFrameworkCore.Storage.ISqlGenerationHelper,Microsoft.EntityFrameworkCore.Update.IColumnModification,System.Text.StringBuilder,System.String,System.String):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 5,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Update.Internal.NpgsqlUpdateSqlGenerator",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Update.Internal.NpgsqlUpdateSqlGenerator::AppendDeleteOperation(System.Text.StringBuilder,Microsoft.EntityFrameworkCore.Update.IReadOnlyModificationCommand,System.Int32,System.Boolean\u0026):Microsoft.EntityFrameworkCore.Update.ResultSetMapping",
@@ -331,6 +582,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Update.Internal.NpgsqlUpdateSqlGenerator",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false,
@@ -356,6 +608,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Update.Internal.NpgsqlUpdateSqlGenerator",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false,
@@ -381,6 +634,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Update.Internal.NpgsqlUpdateSqlGenerator",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
@@ -397,6 +651,7 @@
           "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Update.UpdateSqlGeneratorDependencies):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Update.Internal.NpgsqlUpdateSqlGenerator",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }

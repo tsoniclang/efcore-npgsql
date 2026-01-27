@@ -7,12 +7,13 @@ import * as Internal from './Npgsql.EntityFrameworkCore.PostgreSQL.Migrations/in
 
 // Cross-namespace type imports for constraints
 import type { INpgsqlSingletonOptions } from './Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal/internal/index.js';
-import type { NpgsqlDropDatabaseOperation } from './Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations/internal/index.js';
+import type { PostgresCollation, PostgresEnum, PostgresExtension, PostgresRange } from './Npgsql.EntityFrameworkCore.PostgreSQL.Metadata/internal/index.js';
+import type { NpgsqlCreateDatabaseOperation, NpgsqlDropDatabaseOperation } from './Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations/internal/index.js';
 import type { IReadOnlyList } from '@tsonic/dotnet/System.Collections.Generic.js';
-import type { String as ClrString, Void } from '@tsonic/dotnet/System.js';
-import type { IModel } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js';
+import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString, Void } from '@tsonic/dotnet/System.js';
+import type { IColumn, IModel } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js';
 import type { IMigrationsSqlGenerator, MigrationCommand, MigrationCommandListBuilder, MigrationsSqlGenerationOptions, MigrationsSqlGenerator, MigrationsSqlGeneratorDependencies } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Migrations.js';
-import type { MigrationOperation } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Migrations.Operations.js';
+import type { AddColumnOperation, AlterColumnOperation, AlterDatabaseOperation, AlterTableOperation, ColumnOperation, CreateIndexOperation, CreateSequenceOperation, CreateTableOperation, DropColumnOperation, DropIndexOperation, EnsureSchemaOperation, InsertDataOperation, MigrationOperation, RenameColumnOperation, RenameIndexOperation, RenameSequenceOperation, RenameTableOperation, RestartSequenceOperation, SequenceOperation } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Migrations.Operations.js';
 
 // Public API exports (curated - no internal $instance/$views leakage)
 export { NpgsqlMigrationsSqlGenerator as NpgsqlMigrationsSqlGenerator } from './Npgsql.EntityFrameworkCore.PostgreSQL.Migrations/internal/index.js';

@@ -15,7 +15,38 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
-      "methods": [],
+      "baseType": {
+        "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy",
+        "clrName": "Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Storage.IExecutionStrategy",
+          "clrName": "Microsoft.EntityFrameworkCore.Storage.IExecutionStrategy"
+        }
+      ],
+      "methods": [
+        {
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.NpgsqlRetryingExecutionStrategy::ShouldRetryOn(System.Exception):System.Boolean",
+          "clrName": "ShouldRetryOn",
+          "metadataToken": 100664056,
+          "canonicalSignature": "(System.Exception):System.Boolean",
+          "normalizedSignature": "ShouldRetryOn|(System.Exception):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.NpgsqlRetryingExecutionStrategy",
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "isExtensionMethod": false
+        }
+      ],
       "properties": [],
       "fields": [],
       "events": [],
@@ -27,6 +58,7 @@
           "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.DbContext):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.NpgsqlRetryingExecutionStrategy",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
@@ -37,6 +69,7 @@
           "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.ExecutionStrategyDependencies):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.NpgsqlRetryingExecutionStrategy",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
@@ -47,6 +80,7 @@
           "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.DbContext,System.Int32):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.NpgsqlRetryingExecutionStrategy",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
@@ -57,6 +91,7 @@
           "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.ExecutionStrategyDependencies,System.Int32):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.NpgsqlRetryingExecutionStrategy",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
@@ -67,6 +102,7 @@
           "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.ExecutionStrategyDependencies,System.Collections.Generic.ICollection_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.NpgsqlRetryingExecutionStrategy",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
@@ -77,6 +113,7 @@
           "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.DbContext,System.Int32,System.TimeSpan,System.Collections.Generic.ICollection_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
           "isStatic": false,
           "parameterCount": 4,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.NpgsqlRetryingExecutionStrategy",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
@@ -87,6 +124,7 @@
           "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.ExecutionStrategyDependencies,System.Int32,System.TimeSpan,System.Collections.Generic.ICollection_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
           "isStatic": false,
           "parameterCount": 4,
+          "visibility": "Public",
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.NpgsqlRetryingExecutionStrategy",
           "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
