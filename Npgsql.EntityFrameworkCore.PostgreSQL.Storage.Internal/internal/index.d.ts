@@ -30,15 +30,22 @@ import * as Microsoft_EntityFrameworkCore_Storage_Internal from "@tsonic/efcore/
 import type { CoreTypeMapping, ExecutionResult, ExecutionStrategyDependencies, IDatabaseCreator, IDbContextTransactionManager, IExecutionStrategy, IExecutionStrategyFactory, IRawSqlCommandBuilder, IRelationalConnection, IRelationalDatabaseCreator, IRelationalTransactionManager, IRelationalTypeMappingSource, ISqlGenerationHelper, ITransactionEnlistmentManager, ITypeMappingSource, RelationalConnection, RelationalConnectionDependencies, RelationalDatabaseCreator, RelationalDatabaseCreatorDependencies, RelationalExecutionStrategyFactory, RelationalSqlGenerationHelper, RelationalSqlGenerationHelperDependencies, RelationalTypeMapping, RelationalTypeMappingInfo, RelationalTypeMappingSource, RelationalTypeMappingSourceDependencies, TypeMappingSourceDependencies } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
 
 export interface INpgsqlRelationalConnection$instance extends IRelationalConnection, IRelationalTransactionManager, IDbContextTransactionManager, IResettableService, IDisposable, IAsyncDisposable {
+    readonly __tsonic_iface_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_INpgsqlRelationalConnection: never;
+
     readonly DataSource: DbDataSource | undefined;
     CloneWith(connectionString: string, async: boolean, cancellationToken?: CancellationToken): ValueTask<INpgsqlRelationalConnection>;
     CreateAdminConnection(): INpgsqlRelationalConnection;
 }
 
 
+export interface INpgsqlRelationalConnection$instance extends Microsoft_EntityFrameworkCore_Infrastructure_Internal.IResettableService, Microsoft_EntityFrameworkCore_Storage_Internal.IDbContextTransactionManager, Microsoft_EntityFrameworkCore_Storage_Internal.IRelationalConnection, Microsoft_EntityFrameworkCore_Storage_Internal.IRelationalTransactionManager, System_Internal.IAsyncDisposable, System_Internal.IDisposable {}
+
 export type INpgsqlRelationalConnection = INpgsqlRelationalConnection$instance;
 
 export interface NpgsqlDatabaseCreator$instance extends RelationalDatabaseCreator {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Storage_IDatabaseCreator: never;
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Storage_IRelationalDatabaseCreator: never;
+
     RetryDelay: TimeSpan;
     RetryTimeout: TimeSpan;
     Create(): void;
@@ -61,12 +68,11 @@ export const NpgsqlDatabaseCreator: {
 
 export type NpgsqlDatabaseCreator = NpgsqlDatabaseCreator$instance;
 
-export abstract class NpgsqlDataSourceManager$protected {
-    protected CreateDataSource(npgsqlOptionsExtension: NpgsqlOptionsExtension): NpgsqlDataSource;
-}
+export interface NpgsqlDataSourceManager$instance {
+    readonly __tsonic_iface_System_IAsyncDisposable: never;
+    readonly __tsonic_iface_System_IDisposable: never;
 
-
-export interface NpgsqlDataSourceManager$instance extends NpgsqlDataSourceManager$protected {
+    CreateDataSource(npgsqlOptionsExtension: NpgsqlOptionsExtension): NpgsqlDataSource;
     Dispose(): void;
     DisposeAsync(): ValueTask;
     GetDataSource(npgsqlOptionsExtension: NpgsqlOptionsExtension, applicationServiceProvider: IServiceProvider): DbDataSource | undefined;
@@ -81,6 +87,8 @@ export const NpgsqlDataSourceManager: {
 export type NpgsqlDataSourceManager = NpgsqlDataSourceManager$instance;
 
 export interface NpgsqlExecutionStrategy$instance {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Storage_IExecutionStrategy: never;
+
     readonly RetriesOnFailure: boolean;
     Execute<TState, TResult>(state: TState, operation: Func<DbContext, TState, TResult>, verifySucceeded: Func<DbContext, TState, ExecutionResult<TResult>>): TResult;
     ExecuteAsync<TState, TResult>(state: TState, operation: Func<DbContext, TState, CancellationToken, Task<TResult>>, verifySucceeded: Func<DbContext, TState, CancellationToken, Task<ExecutionResult<TResult>>>, cancellationToken: CancellationToken): Task<TResult>;
@@ -94,12 +102,10 @@ export const NpgsqlExecutionStrategy: {
 
 export type NpgsqlExecutionStrategy = NpgsqlExecutionStrategy$instance;
 
-export abstract class NpgsqlExecutionStrategyFactory$protected {
-    protected CreateDefaultStrategy(dependencies: ExecutionStrategyDependencies): IExecutionStrategy;
-}
+export interface NpgsqlExecutionStrategyFactory$instance extends RelationalExecutionStrategyFactory {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Storage_IExecutionStrategyFactory: never;
 
-
-export interface NpgsqlExecutionStrategyFactory$instance extends NpgsqlExecutionStrategyFactory$protected, RelationalExecutionStrategyFactory {
+    CreateDefaultStrategy(dependencies: ExecutionStrategyDependencies): IExecutionStrategy;
 }
 
 
@@ -110,28 +116,33 @@ export const NpgsqlExecutionStrategyFactory: {
 
 export type NpgsqlExecutionStrategyFactory = NpgsqlExecutionStrategyFactory$instance;
 
-export abstract class NpgsqlRelationalConnection$protected {
-    protected readonly SupportsAmbientTransactions: boolean;
-    protected CreateDbConnection(): DbConnection;
-}
+export interface NpgsqlRelationalConnection$instance extends RelationalConnection {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_IResettableService: never;
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Storage_IDbContextTransactionManager: never;
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Storage_IRelationalConnection: never;
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Storage_IRelationalTransactionManager: never;
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Storage_ITransactionEnlistmentManager: never;
+    readonly __tsonic_iface_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_INpgsqlRelationalConnection: never;
+    readonly __tsonic_iface_System_IAsyncDisposable: never;
+    readonly __tsonic_iface_System_IDisposable: never;
 
-
-export interface NpgsqlRelationalConnection$instance extends NpgsqlRelationalConnection$protected, RelationalConnection {
-    ConnectionString: string;
+    get ConnectionString(): string | undefined;
+    set ConnectionString(value: string | undefined);
     readonly CurrentAmbientTransaction: Transaction | undefined;
     get DataSource(): DbDataSource | undefined;
-    set DataSource(value: DbDataSource);
+    set DataSource(value: DbDataSource | undefined);
     DbConnection: NpgsqlConnection;
     get DbDataSource(): DbDataSource | undefined;
-    set DbDataSource(value: DbDataSource);
+    set DbDataSource(value: DbDataSource | undefined);
+    readonly SupportsAmbientTransactions: boolean;
     CloneWith(connectionString: string, async: boolean, cancellationToken?: CancellationToken): ValueTask<INpgsqlRelationalConnection>;
     CreateAdminConnection(): INpgsqlRelationalConnection;
+    CreateDbConnection(): DbConnection;
 }
 
 
 export const NpgsqlRelationalConnection: {
     new(dependencies: RelationalConnectionDependencies, dataSourceManager: NpgsqlDataSourceManager, options: IDbContextOptions): NpgsqlRelationalConnection;
-    new(dependencies: RelationalConnectionDependencies, dataSource: DbDataSource): NpgsqlRelationalConnection;
 };
 
 
@@ -139,10 +150,14 @@ export interface __NpgsqlRelationalConnection$views {
     As_INpgsqlRelationalConnection(): INpgsqlRelationalConnection$instance;
 }
 
+export interface NpgsqlRelationalConnection$instance extends Microsoft_EntityFrameworkCore_Storage_Internal.ITransactionEnlistmentManager {}
+
 export type NpgsqlRelationalConnection = NpgsqlRelationalConnection$instance & __NpgsqlRelationalConnection$views;
 
 
 export interface NpgsqlSqlGenerationHelper$instance extends RelationalSqlGenerationHelper {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Storage_ISqlGenerationHelper: never;
+
     DelimitIdentifier(identifier: string): string;
     DelimitIdentifier(builder: StringBuilder, identifier: string): void;
 }
@@ -167,24 +182,23 @@ export const NpgsqlTransientExceptionDetector: {
 
 export type NpgsqlTransientExceptionDetector = NpgsqlTransientExceptionDetector$instance;
 
-export abstract class NpgsqlTypeMappingSource$protected {
-    protected readonly ClrTypeMappings: ConcurrentDictionary<Type, RelationalTypeMapping>;
-    protected readonly StoreTypeMappings: ConcurrentDictionary<System_Internal.String, RelationalTypeMapping[]>;
-    protected FindBaseMapping(mappingInfo: RelationalTypeMappingInfo): RelationalTypeMapping | undefined;
-    protected FindCollectionMapping(info: RelationalTypeMappingInfo, modelType: Type, providerType: Type, elementMapping: CoreTypeMapping): RelationalTypeMapping | undefined;
-    protected FindEnumMapping(mappingInfo: RelationalTypeMappingInfo): RelationalTypeMapping | undefined;
-    protected FindMapping(mappingInfo: RelationalTypeMappingInfo): RelationalTypeMapping | undefined;
-    protected FindRowValueMapping(mappingInfo: RelationalTypeMappingInfo): RelationalTypeMapping | undefined;
-    protected FindUserRangeMapping(mappingInfo: RelationalTypeMappingInfo): RelationalTypeMapping | undefined;
-    protected ParseStoreTypeName(storeTypeName: string, unicode: Nullable<System_Internal.Boolean>, size: Nullable<System_Internal.Int32>, precision: Nullable<System_Internal.Int32>, scale: Nullable<System_Internal.Int32>): string | undefined;
-}
+export interface NpgsqlTypeMappingSource$instance extends RelationalTypeMappingSource {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Storage_IRelationalTypeMappingSource: never;
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Storage_ITypeMappingSource: never;
 
-
-export interface NpgsqlTypeMappingSource$instance extends NpgsqlTypeMappingSource$protected, RelationalTypeMappingSource {
     readonly EStringTypeMapping: NpgsqlEStringTypeMapping;
+    readonly ClrTypeMappings: ConcurrentDictionary<Type, RelationalTypeMapping>;
+    readonly StoreTypeMappings: ConcurrentDictionary<System_Internal.String, RelationalTypeMapping[]>;
+    FindBaseMapping(mappingInfo: RelationalTypeMappingInfo): RelationalTypeMapping | undefined;
+    FindCollectionMapping(info: RelationalTypeMappingInfo, modelType: Type, providerType: Type, elementMapping: CoreTypeMapping): RelationalTypeMapping | undefined;
     FindCollectionMapping(storeType: string, modelClrType: Type, providerClrType: Type, elementMapping: CoreTypeMapping): RelationalTypeMapping | undefined;
     FindContainerMapping(containerClrType: Type, containeeTypeMapping: RelationalTypeMapping, model: IModel): RelationalTypeMapping | undefined;
+    FindEnumMapping(mappingInfo: RelationalTypeMappingInfo): RelationalTypeMapping | undefined;
+    FindMapping(mappingInfo: RelationalTypeMappingInfo): RelationalTypeMapping | undefined;
     FindMapping(property: IProperty): RelationalTypeMapping | undefined;
+    FindRowValueMapping(mappingInfo: RelationalTypeMappingInfo): RelationalTypeMapping | undefined;
+    FindUserRangeMapping(mappingInfo: RelationalTypeMappingInfo): RelationalTypeMapping | undefined;
+    ParseStoreTypeName(storeTypeName: string, unicode: Nullable<System_Internal.Boolean>, size: Nullable<System_Internal.Int32>, precision: Nullable<System_Internal.Int32>, scale: Nullable<System_Internal.Int32>): string | undefined;
 }
 
 

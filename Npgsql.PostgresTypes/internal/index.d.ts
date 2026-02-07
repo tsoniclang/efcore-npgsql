@@ -15,8 +15,7 @@ export interface PostgresArrayType$instance extends PostgresType {
 }
 
 
-export const PostgresArrayType: {
-    new(ns: string, name: string, oid: uint, elementPostgresType: PostgresType): PostgresArrayType;
+export const PostgresArrayType: (abstract new(ns: string, name: string, oid: uint, elementPostgresType: PostgresType) => PostgresArrayType) & {
 };
 
 
@@ -26,8 +25,7 @@ export interface PostgresBaseType$instance extends PostgresType {
 }
 
 
-export const PostgresBaseType: {
-    new(ns: string, name: string, oid: uint): PostgresBaseType;
+export const PostgresBaseType: (abstract new(ns: string, name: string, oid: uint) => PostgresBaseType) & {
 };
 
 
@@ -39,7 +37,6 @@ export interface PostgresCompositeType$instance extends PostgresType {
 
 
 export const PostgresCompositeType: {
-    new(): PostgresCompositeType;
 };
 
 
@@ -53,7 +50,6 @@ export interface PostgresCompositeType_Field$instance {
 
 
 export const PostgresCompositeType_Field: {
-    new(): PostgresCompositeType_Field;
 };
 
 
@@ -65,8 +61,7 @@ export interface PostgresDomainType$instance extends PostgresType {
 }
 
 
-export const PostgresDomainType: {
-    new(ns: string, name: string, oid: uint, baseType: PostgresType, notNull: boolean): PostgresDomainType;
+export const PostgresDomainType: (abstract new(ns: string, name: string, oid: uint, baseType: PostgresType, notNull: boolean) => PostgresDomainType) & {
 };
 
 
@@ -77,8 +72,7 @@ export interface PostgresEnumType$instance extends PostgresType {
 }
 
 
-export const PostgresEnumType: {
-    new(ns: string, name: string, oid: uint): PostgresEnumType;
+export const PostgresEnumType: (abstract new(ns: string, name: string, oid: uint) => PostgresEnumType) & {
 };
 
 
@@ -89,8 +83,7 @@ export interface PostgresMultirangeType$instance extends PostgresType {
 }
 
 
-export const PostgresMultirangeType: {
-    new(ns: string, name: string, oid: uint, rangePostgresType: PostgresRangeType): PostgresMultirangeType;
+export const PostgresMultirangeType: (abstract new(ns: string, name: string, oid: uint, rangePostgresType: PostgresRangeType) => PostgresMultirangeType) & {
 };
 
 
@@ -98,13 +91,12 @@ export type PostgresMultirangeType = PostgresMultirangeType$instance;
 
 export interface PostgresRangeType$instance extends PostgresType {
     get Multirange(): PostgresMultirangeType | undefined;
-    set Multirange(value: PostgresMultirangeType);
+    set Multirange(value: PostgresMultirangeType | undefined);
     readonly Subtype: PostgresType;
 }
 
 
-export const PostgresRangeType: {
-    new(ns: string, name: string, oid: uint, subtypePostgresType: PostgresType): PostgresRangeType;
+export const PostgresRangeType: (abstract new(ns: string, name: string, oid: uint, subtypePostgresType: PostgresType) => PostgresRangeType) & {
 };
 
 
@@ -112,7 +104,7 @@ export type PostgresRangeType = PostgresRangeType$instance;
 
 export interface PostgresType$instance {
     get Array(): PostgresArrayType | undefined;
-    set Array(value: PostgresArrayType);
+    set Array(value: PostgresArrayType | undefined);
     readonly DisplayName: string;
     readonly FullName: string;
     readonly InternalName: string;
@@ -120,7 +112,7 @@ export interface PostgresType$instance {
     readonly Namespace: string;
     readonly OID: uint;
     get Range(): PostgresRangeType | undefined;
-    set Range(value: PostgresRangeType);
+    set Range(value: PostgresRangeType | undefined);
     ToString(): string;
 }
 
@@ -136,7 +128,6 @@ export interface UnknownBackendType$instance extends PostgresType {
 
 
 export const UnknownBackendType: {
-    new(): UnknownBackendType;
 };
 
 

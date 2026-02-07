@@ -14,6 +14,8 @@ import * as Microsoft_EntityFrameworkCore_Metadata_Internal from "@tsonic/efcore
 import type { IColumn, IRelationalAnnotationProvider, IRelationalModel, ITable, ITableIndex, RelationalAnnotationProvider, RelationalAnnotationProviderDependencies } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js";
 
 export interface IdentitySequenceOptionsData$instance {
+    readonly __tsonic_iface_System_IEquatable_1: never;
+
     IncrementBy: long;
     IsCyclic: boolean;
     MaxValue: Nullable<System_Internal.Int64>;
@@ -38,6 +40,8 @@ export const IdentitySequenceOptionsData: {
 export type IdentitySequenceOptionsData = IdentitySequenceOptionsData$instance;
 
 export interface NpgsqlAnnotationProvider$instance extends RelationalAnnotationProvider {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_IRelationalAnnotationProvider: never;
+
     For(table: ITable, designTime: boolean): IEnumerable<IAnnotation>;
     For(column: IColumn, designTime: boolean): IEnumerable<IAnnotation>;
     For(index: ITableIndex, designTime: boolean): IEnumerable<IAnnotation>;

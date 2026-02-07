@@ -29,6 +29,8 @@ export const TestDecodingData: {
 export type TestDecodingData = TestDecodingData$instance;
 
 export interface TestDecodingOptions$instance {
+    readonly __tsonic_iface_System_IEquatable_1: never;
+
     readonly ForceBinary: Nullable<System_Internal.Boolean>;
     readonly IncludeRewrites: Nullable<System_Internal.Boolean>;
     readonly IncludeTimestamp: Nullable<System_Internal.Boolean>;

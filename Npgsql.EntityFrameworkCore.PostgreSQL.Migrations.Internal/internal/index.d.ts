@@ -21,14 +21,10 @@ import * as Microsoft_EntityFrameworkCore_Migrations_Internal from "@tsonic/efco
 import type { HistoryRepository, HistoryRepositoryDependencies, HistoryRow, IHistoryRepository, IMigrationCommandExecutor, IMigrationsAssembly, IMigrationsDatabaseLock, IMigrationsModelDiffer, IMigrationsSqlGenerator, IMigrator, LockReleaseBehavior, MigrationCommand } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Migrations.js";
 import type { IDatabaseCreator, IDatabaseProvider, IExecutionStrategy, IRawSqlCommandBuilder, IRelationalConnection, ISqlGenerationHelper } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
 
-export abstract class NpgsqlHistoryRepository$protected {
-    protected readonly ExistsSql: string;
-    protected GetCreateCommands(): IReadOnlyList<MigrationCommand>;
-    protected InterpretExistsResult(value: unknown): boolean;
-}
+export interface NpgsqlHistoryRepository$instance extends HistoryRepository {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Migrations_IHistoryRepository: never;
 
-
-export interface NpgsqlHistoryRepository$instance extends NpgsqlHistoryRepository$protected, HistoryRepository {
+    readonly ExistsSql: string;
     readonly LockReleaseBehavior: LockReleaseBehavior;
     AcquireDatabaseLock(): IMigrationsDatabaseLock;
     AcquireDatabaseLockAsync(cancellationToken?: CancellationToken): Task<IMigrationsDatabaseLock>;
@@ -38,8 +34,10 @@ export interface NpgsqlHistoryRepository$instance extends NpgsqlHistoryRepositor
     GetAppliedMigrationsAsync(cancellationToken?: CancellationToken): Task<IReadOnlyList<HistoryRow>>;
     GetBeginIfExistsScript(migrationId: string): string;
     GetBeginIfNotExistsScript(migrationId: string): string;
+    GetCreateCommands(): IReadOnlyList<MigrationCommand>;
     GetCreateIfNotExistsScript(): string;
     GetEndIfScript(): string;
+    InterpretExistsResult(value: unknown): boolean;
 }
 
 
@@ -51,6 +49,8 @@ export const NpgsqlHistoryRepository: {
 export type NpgsqlHistoryRepository = NpgsqlHistoryRepository$instance;
 
 export interface NpgsqlMigrator$instance extends Migrator {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Migrations_IMigrator: never;
+
     Migrate(targetMigration: string): void;
     MigrateAsync(targetMigration: string, cancellationToken?: CancellationToken): Task;
 }

@@ -23,6 +23,8 @@ import type { IEntityType, IKey, IModel, IProperty, StoreObjectIdentifier } from
 import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection.js";
 
 export interface INpgsqlSingletonOptions$instance extends ISingletonOptions {
+    readonly __tsonic_iface_Npgsql_EntityFrameworkCore_PostgreSQL_Infrastructure_Internal_INpgsqlSingletonOptions: never;
+
     readonly PostgresVersion: Version;
     readonly IsPostgresVersionSet: boolean;
     readonly UseRedshift: boolean;
@@ -32,9 +34,13 @@ export interface INpgsqlSingletonOptions$instance extends ISingletonOptions {
 }
 
 
+export interface INpgsqlSingletonOptions$instance extends Microsoft_EntityFrameworkCore_Infrastructure_Internal.ISingletonOptions {}
+
 export type INpgsqlSingletonOptions = INpgsqlSingletonOptions$instance;
 
 export interface EnumDefinition$instance {
+    readonly __tsonic_iface_System_IEquatable_1: never;
+
     readonly ClrType: Type;
     readonly Labels: IReadOnlyDictionary<unknown, System_Internal.String>;
     readonly NameTranslator: INpgsqlNameTranslator;
@@ -53,18 +59,16 @@ export const EnumDefinition: {
 
 export type EnumDefinition = EnumDefinition$instance;
 
-export abstract class NpgsqlModelValidator$protected {
-    protected ValidateCompatible(property: IProperty, duplicateProperty: IProperty, columnName: string, storeObject: StoreObjectIdentifier, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
-    protected ValidateIdentityVersionCompatibility(model: IModel): void;
-    protected ValidateIndexIncludeProperties(model: IModel): void;
-    protected ValidateStoredProcedures(model: IModel, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
-    protected ValidateTypeMappings(model: IModel, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
-    protected ValidateValueGeneration(entityType: IEntityType, key: IKey, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
-}
+export interface NpgsqlModelValidator$instance extends RelationalModelValidator {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_IModelValidator: never;
 
-
-export interface NpgsqlModelValidator$instance extends NpgsqlModelValidator$protected, RelationalModelValidator {
     Validate(model: IModel, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
+    ValidateCompatible(property: IProperty, duplicateProperty: IProperty, columnName: string, storeObject: StoreObjectIdentifier, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
+    ValidateIdentityVersionCompatibility(model: IModel): void;
+    ValidateIndexIncludeProperties(model: IModel): void;
+    ValidateStoredProcedures(model: IModel, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
+    ValidateTypeMappings(model: IModel, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
+    ValidateValueGeneration(entityType: IEntityType, key: IKey, logger: IDiagnosticsLogger<DbLoggerCategory$Model$Validation>): void;
 }
 
 
@@ -75,18 +79,15 @@ export const NpgsqlModelValidator: {
 
 export type NpgsqlModelValidator = NpgsqlModelValidator$instance;
 
-export abstract class NpgsqlOptionsExtension$protected {
-    protected Clone(): RelationalOptionsExtension;
-}
+export interface NpgsqlOptionsExtension$instance extends RelationalOptionsExtension {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_IDbContextOptionsExtension: never;
 
-
-export interface NpgsqlOptionsExtension$instance extends NpgsqlOptionsExtension$protected, RelationalOptionsExtension {
     get AdminDatabase(): string | undefined;
-    set AdminDatabase(value: string);
+    set AdminDatabase(value: string | undefined);
     get DataSource(): DbDataSource | undefined;
-    set DataSource(value: DbDataSource);
+    set DataSource(value: DbDataSource | undefined);
     get DataSourceBuilderAction(): Action<NpgsqlDataSourceBuilder> | undefined;
-    set DataSourceBuilderAction(value: Action<NpgsqlDataSourceBuilder>);
+    set DataSourceBuilderAction(value: Action<NpgsqlDataSourceBuilder> | undefined);
     readonly EnumDefinitions: IReadOnlyList<EnumDefinition>;
     readonly Info: DbContextOptionsExtensionInfo;
     readonly IsPostgresVersionSet: boolean;
@@ -94,15 +95,16 @@ export interface NpgsqlOptionsExtension$instance extends NpgsqlOptionsExtension$
     readonly ParameterizedCollectionMode: ParameterTranslationMode;
     readonly PostgresVersion: Version;
     get ProvideClientCertificatesCallback(): ProvideClientCertificatesCallback | undefined;
-    set ProvideClientCertificatesCallback(value: ProvideClientCertificatesCallback);
+    set ProvideClientCertificatesCallback(value: ProvideClientCertificatesCallback | undefined);
     get ProvidePasswordCallback(): ProvidePasswordCallback | undefined;
-    set ProvidePasswordCallback(value: ProvidePasswordCallback);
+    set ProvidePasswordCallback(value: ProvidePasswordCallback | undefined);
     get RemoteCertificateValidationCallback(): RemoteCertificateValidationCallback | undefined;
-    set RemoteCertificateValidationCallback(value: RemoteCertificateValidationCallback);
+    set RemoteCertificateValidationCallback(value: RemoteCertificateValidationCallback | undefined);
     ReverseNullOrdering: boolean;
     UseRedshift: boolean;
     readonly UserRangeDefinitions: IReadOnlyList<UserRangeDefinition>;
     ApplyServices(services: IServiceCollection): void;
+    Clone(): RelationalOptionsExtension;
     Validate(options: IDbContextOptions): void;
     WithAdminDatabase(adminDatabase: string): NpgsqlOptionsExtension;
     WithConnection(connection: DbConnection): RelationalOptionsExtension;
@@ -131,6 +133,8 @@ export const NpgsqlOptionsExtension: {
 export type NpgsqlOptionsExtension = NpgsqlOptionsExtension$instance;
 
 export interface UserRangeDefinition$instance {
+    readonly __tsonic_iface_System_IEquatable_1: never;
+
     readonly StoreTypeName: string;
     readonly StoreTypeSchema: string | undefined;
     readonly SubtypeClrType: Type;

@@ -43,7 +43,6 @@ export interface JsonMacaddrReaderWriter$instance extends JsonValueReaderWriter<
 
 
 export const JsonMacaddrReaderWriter: {
-    new(): JsonMacaddrReaderWriter;
     readonly Instance: JsonMacaddrReaderWriter;
 };
 

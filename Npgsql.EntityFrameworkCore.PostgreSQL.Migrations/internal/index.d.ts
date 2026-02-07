@@ -17,51 +17,49 @@ import * as Microsoft_EntityFrameworkCore_Migrations_Internal from "@tsonic/efco
 import type { IMigrationsSqlGenerator, MigrationCommand, MigrationCommandListBuilder, MigrationsSqlGenerationOptions, MigrationsSqlGenerator, MigrationsSqlGeneratorDependencies } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Migrations.js";
 import type { AddColumnOperation, AlterColumnOperation, AlterDatabaseOperation, AlterTableOperation, ColumnOperation, CreateIndexOperation, CreateSequenceOperation, CreateTableOperation, DropColumnOperation, DropIndexOperation, EnsureSchemaOperation, InsertDataOperation, MigrationOperation, RenameColumnOperation, RenameIndexOperation, RenameSequenceOperation, RenameTableOperation, RestartSequenceOperation, SequenceOperation } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Migrations.Operations.js";
 
-export abstract class NpgsqlMigrationsSqlGenerator$protected {
-    protected ApplyTsVectorColumnSql(column: ColumnOperation, model: IModel, name: string, schema: string, table: string): void;
-    protected ColumnDefinition(schema: string, table: string, name: string, operation: ColumnOperation, model: IModel, builder: MigrationCommandListBuilder): void;
-    protected ComputedColumnDefinition(schema: string, table: string, name: string, operation: ColumnOperation, model: IModel, builder: MigrationCommandListBuilder): void;
-    protected DefaultValue(defaultValue: unknown, defaultValueSql: string, columnType: string, builder: MigrationCommandListBuilder): void;
-    protected Generate(operation: MigrationOperation, model: IModel, builder: MigrationCommandListBuilder): void;
-    protected Generate(operation: AlterTableOperation, model: IModel, builder: MigrationCommandListBuilder): void;
-    protected Generate(operation: AlterColumnOperation, model: IModel, builder: MigrationCommandListBuilder): void;
-    protected Generate(operation: RenameIndexOperation, model: IModel, builder: MigrationCommandListBuilder): void;
-    protected Generate(operation: RenameSequenceOperation, model: IModel, builder: MigrationCommandListBuilder): void;
-    protected Generate(operation: RestartSequenceOperation, model: IModel, builder: MigrationCommandListBuilder): void;
-    protected Generate(operation: RenameTableOperation, model: IModel, builder: MigrationCommandListBuilder): void;
-    protected Generate(operation: EnsureSchemaOperation, model: IModel, builder: MigrationCommandListBuilder): void;
-    protected Generate(operation: NpgsqlCreateDatabaseOperation, model: IModel, builder: MigrationCommandListBuilder): void;
-    protected Generate(operation: AlterDatabaseOperation, model: IModel, builder: MigrationCommandListBuilder): void;
-    protected Generate(operation: RenameColumnOperation, model: IModel, builder: MigrationCommandListBuilder): void;
-    protected Generate(operation: CreateSequenceOperation, model: IModel, builder: MigrationCommandListBuilder): void;
-    protected Generate(operation: CreateTableOperation, model: IModel, builder: MigrationCommandListBuilder, terminate?: boolean): void;
-    protected Generate(operation: DropColumnOperation, model: IModel, builder: MigrationCommandListBuilder, terminate?: boolean): void;
-    protected Generate(operation: AddColumnOperation, model: IModel, builder: MigrationCommandListBuilder, terminate?: boolean): void;
-    protected Generate(operation: CreateIndexOperation, model: IModel, builder: MigrationCommandListBuilder, terminate?: boolean): void;
-    protected Generate(operation: DropIndexOperation, model: IModel, builder: MigrationCommandListBuilder, terminate?: boolean): void;
-    protected Generate(operation: InsertDataOperation, model: IModel, builder: MigrationCommandListBuilder, terminate?: boolean): void;
-    protected GenerateAddEnumLabel(enumType: PostgresEnum, addedLabel: string, beforeLabel: string, afterLabel: string, model: IModel, builder: MigrationCommandListBuilder): void;
-    protected GenerateCollationStatements(operation: AlterDatabaseOperation, model: IModel, builder: MigrationCommandListBuilder): void;
-    protected GenerateCreateCollation(collation: PostgresCollation, model: IModel, builder: MigrationCommandListBuilder): void;
-    protected GenerateCreateEnum(enumType: PostgresEnum, model: IModel, builder: MigrationCommandListBuilder): void;
-    protected GenerateCreateExtension(extension: PostgresExtension, model: IModel, builder: MigrationCommandListBuilder): void;
-    protected GenerateCreateRange(rangeType: PostgresRange, model: IModel, builder: MigrationCommandListBuilder): void;
-    protected GenerateDropCollation(collation: PostgresCollation, model: IModel, builder: MigrationCommandListBuilder): void;
-    protected GenerateDropEnum(enumType: PostgresEnum, model: IModel, builder: MigrationCommandListBuilder): void;
-    protected GenerateDropRange(rangeType: PostgresRange, model: IModel, builder: MigrationCommandListBuilder): void;
-    protected GenerateEnumStatements(operation: AlterDatabaseOperation, model: IModel, builder: MigrationCommandListBuilder): void;
-    protected GenerateRangeStatements(operation: AlterDatabaseOperation, model: IModel, builder: MigrationCommandListBuilder): void;
-    protected IdentityDefinition(operation: ColumnOperation, builder: MigrationCommandListBuilder): void;
-    protected IndexOptions(operation: MigrationOperation, model: IModel, builder: MigrationCommandListBuilder): void;
-    protected RecreateIndexes(column: IColumn, currentOperation: MigrationOperation, builder: MigrationCommandListBuilder): void;
-    protected SequenceOptions(schema: string, name: string, operation: SequenceOperation, model: IModel, builder: MigrationCommandListBuilder, forAlter: boolean): void;
-}
+export interface NpgsqlMigrationsSqlGenerator$instance extends MigrationsSqlGenerator {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Migrations_IMigrationsSqlGenerator: never;
 
-
-export interface NpgsqlMigrationsSqlGenerator$instance extends NpgsqlMigrationsSqlGenerator$protected, MigrationsSqlGenerator {
+    ApplyTsVectorColumnSql(column: ColumnOperation, model: IModel, name: string, schema: string, table: string): void;
+    ColumnDefinition(schema: string, table: string, name: string, operation: ColumnOperation, model: IModel, builder: MigrationCommandListBuilder): void;
+    ComputedColumnDefinition(schema: string, table: string, name: string, operation: ColumnOperation, model: IModel, builder: MigrationCommandListBuilder): void;
+    DefaultValue(defaultValue: unknown, defaultValueSql: string, columnType: string, builder: MigrationCommandListBuilder): void;
     Generate(operations: IReadOnlyList<MigrationOperation>, model?: IModel, options?: MigrationsSqlGenerationOptions): IReadOnlyList<MigrationCommand>;
+    Generate(operation: MigrationOperation, model: IModel, builder: MigrationCommandListBuilder): void;
+    Generate(operation: CreateTableOperation, model: IModel, builder: MigrationCommandListBuilder, terminate?: boolean): void;
+    Generate(operation: AlterTableOperation, model: IModel, builder: MigrationCommandListBuilder): void;
+    Generate(operation: DropColumnOperation, model: IModel, builder: MigrationCommandListBuilder, terminate?: boolean): void;
+    Generate(operation: AddColumnOperation, model: IModel, builder: MigrationCommandListBuilder, terminate?: boolean): void;
+    Generate(operation: AlterColumnOperation, model: IModel, builder: MigrationCommandListBuilder): void;
+    Generate(operation: RenameIndexOperation, model: IModel, builder: MigrationCommandListBuilder): void;
+    Generate(operation: RenameSequenceOperation, model: IModel, builder: MigrationCommandListBuilder): void;
+    Generate(operation: RestartSequenceOperation, model: IModel, builder: MigrationCommandListBuilder): void;
+    Generate(operation: RenameTableOperation, model: IModel, builder: MigrationCommandListBuilder): void;
+    Generate(operation: CreateIndexOperation, model: IModel, builder: MigrationCommandListBuilder, terminate?: boolean): void;
+    Generate(operation: EnsureSchemaOperation, model: IModel, builder: MigrationCommandListBuilder): void;
+    Generate(operation: NpgsqlCreateDatabaseOperation, model: IModel, builder: MigrationCommandListBuilder): void;
     Generate(operation: NpgsqlDropDatabaseOperation, model: IModel, builder: MigrationCommandListBuilder): void;
+    Generate(operation: AlterDatabaseOperation, model: IModel, builder: MigrationCommandListBuilder): void;
+    Generate(operation: DropIndexOperation, model: IModel, builder: MigrationCommandListBuilder, terminate?: boolean): void;
+    Generate(operation: RenameColumnOperation, model: IModel, builder: MigrationCommandListBuilder): void;
+    Generate(operation: InsertDataOperation, model: IModel, builder: MigrationCommandListBuilder, terminate?: boolean): void;
+    Generate(operation: CreateSequenceOperation, model: IModel, builder: MigrationCommandListBuilder): void;
+    GenerateAddEnumLabel(enumType: PostgresEnum, addedLabel: string, beforeLabel: string, afterLabel: string, model: IModel, builder: MigrationCommandListBuilder): void;
+    GenerateCollationStatements(operation: AlterDatabaseOperation, model: IModel, builder: MigrationCommandListBuilder): void;
+    GenerateCreateCollation(collation: PostgresCollation, model: IModel, builder: MigrationCommandListBuilder): void;
+    GenerateCreateEnum(enumType: PostgresEnum, model: IModel, builder: MigrationCommandListBuilder): void;
+    GenerateCreateExtension(extension: PostgresExtension, model: IModel, builder: MigrationCommandListBuilder): void;
+    GenerateCreateRange(rangeType: PostgresRange, model: IModel, builder: MigrationCommandListBuilder): void;
+    GenerateDropCollation(collation: PostgresCollation, model: IModel, builder: MigrationCommandListBuilder): void;
+    GenerateDropEnum(enumType: PostgresEnum, model: IModel, builder: MigrationCommandListBuilder): void;
+    GenerateDropRange(rangeType: PostgresRange, model: IModel, builder: MigrationCommandListBuilder): void;
+    GenerateEnumStatements(operation: AlterDatabaseOperation, model: IModel, builder: MigrationCommandListBuilder): void;
+    GenerateRangeStatements(operation: AlterDatabaseOperation, model: IModel, builder: MigrationCommandListBuilder): void;
+    IdentityDefinition(operation: ColumnOperation, builder: MigrationCommandListBuilder): void;
+    IndexOptions(operation: MigrationOperation, model: IModel, builder: MigrationCommandListBuilder): void;
+    RecreateIndexes(column: IColumn, currentOperation: MigrationOperation, builder: MigrationCommandListBuilder): void;
     Rename(schema: string, name: string, newName: string, type: string, builder: MigrationCommandListBuilder): void;
+    SequenceOptions(schema: string, name: string, operation: SequenceOperation, model: IModel, builder: MigrationCommandListBuilder, forAlter: boolean): void;
     Transfer(newSchema: string, schema: string, name: string, type: string, builder: MigrationCommandListBuilder): void;
 }
 

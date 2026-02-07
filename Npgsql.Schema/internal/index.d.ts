@@ -17,21 +17,21 @@ export interface NpgsqlDbColumn$instance extends DbColumn {
     AllowDBNull: Nullable<System_Internal.Boolean>;
     BaseCatalogName: string;
     get BaseColumnName(): string | undefined;
-    set BaseColumnName(value: string);
+    set BaseColumnName(value: string | undefined);
     get BaseSchemaName(): string | undefined;
-    set BaseSchemaName(value: string);
+    set BaseSchemaName(value: string | undefined);
     BaseServerName: string;
     get BaseTableName(): string | undefined;
-    set BaseTableName(value: string);
+    set BaseTableName(value: string | undefined);
     ColumnAttributeNumber: Nullable<System_Internal.Int16>;
     ColumnName: string;
     ColumnOrdinal: Nullable<System_Internal.Int32>;
     ColumnSize: Nullable<System_Internal.Int32>;
     get DataType(): Type | undefined;
-    set DataType(value: Type);
+    set DataType(value: Type | undefined);
     DataTypeName: string;
     get DefaultValue(): string | undefined;
-    set DefaultValue(value: string);
+    set DefaultValue(value: string | undefined);
     IsAliased: Nullable<System_Internal.Boolean>;
     IsAutoIncrement: Nullable<System_Internal.Boolean>;
     IsIdentity: Nullable<System_Internal.Boolean>;
@@ -39,7 +39,7 @@ export interface NpgsqlDbColumn$instance extends DbColumn {
     IsLong: Nullable<System_Internal.Boolean>;
     IsReadOnly: Nullable<System_Internal.Boolean>;
     IsUnique: Nullable<System_Internal.Boolean>;
-    readonly Item: unknown | undefined;
+    readonly [propertyName: string]: unknown | undefined;
     NpgsqlDbType: Nullable<NpgsqlDbType>;
     NumericPrecision: Nullable<System_Internal.Int32>;
     NumericScale: Nullable<System_Internal.Int32>;
@@ -47,7 +47,7 @@ export interface NpgsqlDbColumn$instance extends DbColumn {
     TableOID: uint;
     TypeOID: uint;
     get UdtAssemblyQualifiedName(): string | undefined;
-    set UdtAssemblyQualifiedName(value: string);
+    set UdtAssemblyQualifiedName(value: string | undefined);
 }
 
 

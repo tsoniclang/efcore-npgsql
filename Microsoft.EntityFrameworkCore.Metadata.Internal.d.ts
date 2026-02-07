@@ -11,3 +11,6 @@ import type { IReadOnlyIndex, StoreObjectIdentifier } from '@tsonic/efcore/Micro
 
 // Public API exports (curated - no internal $instance/$views leakage)
 export { NpgsqlIndexExtensions$instance as NpgsqlIndexExtensions } from './Microsoft.EntityFrameworkCore.Metadata.Internal/internal/index.js';
+// Extension methods (C# using semantics)
+export type { ExtensionMethods_Microsoft_EntityFrameworkCore_Metadata_Internal as ExtensionMethods } from './__internal/extensions/index.js';
+

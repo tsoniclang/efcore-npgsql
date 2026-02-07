@@ -17,7 +17,6 @@ export interface FieldDescription$instance {
 
 
 export const FieldDescription: {
-    new(): FieldDescription;
 };
 
 

@@ -19,6 +19,8 @@ import type { AtTimeZoneExpression, SqlExpression } from "@tsonic/efcore/Microso
 import type { RelationalTypeMapping } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
 
 export interface NpgsqlSqlExpressionFactory$instance extends SqlExpressionFactory {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_ISqlExpressionFactory: never;
+
     AggregateFunction(name: string, arguments: IEnumerable<SqlExpression>, aggregateEnumerableExpression: EnumerableExpression, nullable: boolean, argumentsPropagateNullability: IEnumerable<System_Internal.Boolean>, returnType: Type, typeMapping?: RelationalTypeMapping): PgFunctionExpression;
     All(item: SqlExpression, array: SqlExpression, operatorType: PgAllOperatorType): PgAllExpression;
     Any(item: SqlExpression, array: SqlExpression, operatorType: PgAnyOperatorType): PgAnyExpression;

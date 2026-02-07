@@ -19,18 +19,16 @@ import type { DbContextOptionsBuilder } from "@tsonic/efcore/Microsoft.EntityFra
 import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection.js";
 
 export interface INpgsqlDataSourceConfigurationPlugin$instance {
+    readonly __tsonic_iface_Npgsql_EntityFrameworkCore_PostgreSQL_Infrastructure_INpgsqlDataSourceConfigurationPlugin: never;
+
     Configure(npgsqlDataSourceBuilder: NpgsqlDataSourceBuilder): void;
 }
 
 
 export type INpgsqlDataSourceConfigurationPlugin = INpgsqlDataSourceConfigurationPlugin$instance;
 
-export abstract class EntityFrameworkNpgsqlServicesBuilder$protected {
-    protected TryGetServiceCharacteristics(serviceType: Type): Nullable<ServiceCharacteristics>;
-}
-
-
-export interface EntityFrameworkNpgsqlServicesBuilder$instance extends EntityFrameworkNpgsqlServicesBuilder$protected, EntityFrameworkRelationalServicesBuilder {
+export interface EntityFrameworkNpgsqlServicesBuilder$instance extends EntityFrameworkRelationalServicesBuilder {
+    TryGetServiceCharacteristics(serviceType: Type): Nullable<ServiceCharacteristics>;
 }
 
 
@@ -42,6 +40,8 @@ export const EntityFrameworkNpgsqlServicesBuilder: {
 export type EntityFrameworkNpgsqlServicesBuilder = EntityFrameworkNpgsqlServicesBuilder$instance;
 
 export interface NpgsqlDbContextOptionsBuilder$instance extends RelationalDbContextOptionsBuilder<NpgsqlDbContextOptionsBuilder, NpgsqlOptionsExtension> {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_IRelationalDbContextOptionsBuilderInfrastructure: never;
+
     ConfigureDataSource(dataSourceBuilderAction: Action<NpgsqlDataSourceBuilder>): NpgsqlDbContextOptionsBuilder;
     EnableRetryOnFailure(): NpgsqlDbContextOptionsBuilder;
     EnableRetryOnFailure(maxRetryCount: int): NpgsqlDbContextOptionsBuilder;

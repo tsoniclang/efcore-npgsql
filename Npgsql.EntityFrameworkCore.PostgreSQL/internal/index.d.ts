@@ -13,12 +13,10 @@ import type { DbContext } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.js"
 import * as Microsoft_EntityFrameworkCore_Storage_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
 import type { ExecutionStrategy, ExecutionStrategyDependencies, IExecutionStrategy } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
 
-export abstract class NpgsqlRetryingExecutionStrategy$protected {
-    protected ShouldRetryOn(exception: Exception): boolean;
-}
+export interface NpgsqlRetryingExecutionStrategy$instance extends ExecutionStrategy {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Storage_IExecutionStrategy: never;
 
-
-export interface NpgsqlRetryingExecutionStrategy$instance extends NpgsqlRetryingExecutionStrategy$protected, ExecutionStrategy {
+    ShouldRetryOn(exception: Exception): boolean;
 }
 
 

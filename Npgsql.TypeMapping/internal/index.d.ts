@@ -13,6 +13,8 @@ import type { Boolean as ClrBoolean, Enum, Object as ClrObject, String as ClrStr
 import type { JsonSerializerOptions } from "@tsonic/dotnet/System.Text.Json.js";
 
 export interface INpgsqlTypeMapper$instance {
+    readonly __tsonic_iface_Npgsql_TypeMapping_INpgsqlTypeMapper: never;
+
     DefaultNameTranslator: INpgsqlNameTranslator;
     AddDbTypeResolverFactory(factory: DbTypeResolverFactory): void;
     AddTypeInfoResolverFactory(factory: PgTypeInfoResolverFactory): void;

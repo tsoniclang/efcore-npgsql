@@ -16,11 +16,15 @@ import * as Microsoft_EntityFrameworkCore_Migrations_Operations_Internal from "@
 import type { DatabaseOperation, MigrationOperation } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Migrations.Operations.js";
 
 export interface NpgsqlCreateDatabaseOperation$instance extends DatabaseOperation {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_IAnnotatable: never;
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_IReadOnlyAnnotatable: never;
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_IMutableAnnotatable: never;
+
     Name: string;
     get Tablespace(): string | undefined;
-    set Tablespace(value: string);
+    set Tablespace(value: string | undefined);
     get Template(): string | undefined;
-    set Template(value: string);
+    set Template(value: string | undefined);
 }
 
 
@@ -32,6 +36,10 @@ export const NpgsqlCreateDatabaseOperation: {
 export type NpgsqlCreateDatabaseOperation = NpgsqlCreateDatabaseOperation$instance;
 
 export interface NpgsqlDropDatabaseOperation$instance extends MigrationOperation {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_IAnnotatable: never;
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_IReadOnlyAnnotatable: never;
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_IMutableAnnotatable: never;
+
     Name: string;
 }
 

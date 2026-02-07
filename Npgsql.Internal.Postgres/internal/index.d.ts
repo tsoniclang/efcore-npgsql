@@ -10,6 +10,8 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Boolean as ClrBoolean, IEquatable, Int32, Object as ClrObject, String as ClrString, UInt32, ValueType } from "@tsonic/dotnet/System.js";
 
 export interface DataTypeName$instance {
+    readonly __tsonic_iface_System_IEquatable_1: never;
+
     readonly DisplayName: string;
     readonly IsArray: boolean;
     readonly IsUnqualified: boolean;
@@ -51,6 +53,8 @@ export const Field: {
 export type Field = Field$instance;
 
 export interface Oid$instance {
+    readonly __tsonic_iface_System_IEquatable_1: never;
+
     Value: uint;
     Equals(other: Oid): boolean;
     Equals(obj: unknown): boolean;
@@ -68,6 +72,8 @@ export const Oid: {
 export type Oid = Oid$instance;
 
 export interface PgTypeId$instance {
+    readonly __tsonic_iface_System_IEquatable_1: never;
+
     readonly DataTypeName: DataTypeName;
     readonly IsDataTypeName: boolean;
     readonly IsOid: boolean;

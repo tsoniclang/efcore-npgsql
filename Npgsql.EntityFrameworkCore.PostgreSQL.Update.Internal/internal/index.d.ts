@@ -20,12 +20,12 @@ import type { ISqlGenerationHelper, RelationalDataReader } from "@tsonic/efcore/
 import * as Microsoft_EntityFrameworkCore_Update_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Update.js";
 import type { ColumnModificationParameters, IColumnModification, IModificationCommand, IModificationCommandBatchFactory, IModificationCommandFactory, INonTrackedModificationCommand, IReadOnlyModificationCommand, IUpdateSqlGenerator, ModificationCommand, ModificationCommandBatch, ModificationCommandBatchFactoryDependencies, ModificationCommandParameters, NonTrackedModificationCommandParameters, ReaderModificationCommandBatch, ResultSetMapping, UpdateSqlGenerator, UpdateSqlGeneratorDependencies } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Update.js";
 
-export abstract class NpgsqlModificationCommand$protected {
-    protected ProcessSinglePropertyJsonUpdate(parameters: ColumnModificationParameters): void;
-}
+export interface NpgsqlModificationCommand$instance extends ModificationCommand {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Update_IModificationCommand: never;
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Update_INonTrackedModificationCommand: never;
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Update_IReadOnlyModificationCommand: never;
 
-
-export interface NpgsqlModificationCommand$instance extends NpgsqlModificationCommand$protected, ModificationCommand {
+    ProcessSinglePropertyJsonUpdate(parameters: ColumnModificationParameters): void;
     PropagateResults(relationalReader: RelationalDataReader): void;
 }
 
@@ -38,17 +38,13 @@ export const NpgsqlModificationCommand: {
 
 export type NpgsqlModificationCommand = NpgsqlModificationCommand$instance;
 
-export abstract class NpgsqlModificationCommandBatch$protected {
-    protected readonly MaxBatchSize: int;
-    protected AddParameter(columnModification: IColumnModification): void;
-    protected Consume(reader: RelationalDataReader): void;
-    protected ConsumeAsync(reader: RelationalDataReader, cancellationToken?: CancellationToken): Task;
-    protected ThrowAggregateUpdateConcurrencyException(reader: RelationalDataReader, commandIndex: int, expectedRowsAffected: int, rowsAffected: int): void;
-    protected ThrowAggregateUpdateConcurrencyExceptionAsync(reader: RelationalDataReader, commandIndex: int, expectedRowsAffected: int, rowsAffected: int, cancellationToken: CancellationToken): Task;
-}
-
-
-export interface NpgsqlModificationCommandBatch$instance extends NpgsqlModificationCommandBatch$protected, ReaderModificationCommandBatch {
+export interface NpgsqlModificationCommandBatch$instance extends ReaderModificationCommandBatch {
+    readonly MaxBatchSize: int;
+    AddParameter(columnModification: IColumnModification): void;
+    Consume(reader: RelationalDataReader): void;
+    ConsumeAsync(reader: RelationalDataReader, cancellationToken?: CancellationToken): Task;
+    ThrowAggregateUpdateConcurrencyException(reader: RelationalDataReader, commandIndex: int, expectedRowsAffected: int, rowsAffected: int): void;
+    ThrowAggregateUpdateConcurrencyExceptionAsync(reader: RelationalDataReader, commandIndex: int, expectedRowsAffected: int, rowsAffected: int, cancellationToken: CancellationToken): Task;
 }
 
 
@@ -60,6 +56,8 @@ export const NpgsqlModificationCommandBatch: {
 export type NpgsqlModificationCommandBatch = NpgsqlModificationCommandBatch$instance;
 
 export interface NpgsqlModificationCommandBatchFactory$instance {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Update_IModificationCommandBatchFactory: never;
+
     Create(): ModificationCommandBatch;
 }
 
@@ -72,6 +70,8 @@ export const NpgsqlModificationCommandBatchFactory: {
 export type NpgsqlModificationCommandBatchFactory = NpgsqlModificationCommandBatchFactory$instance;
 
 export interface NpgsqlModificationCommandFactory$instance {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Update_IModificationCommandFactory: never;
+
     CreateModificationCommand(modificationCommandParameters: ModificationCommandParameters): IModificationCommand;
     CreateNonTrackedModificationCommand(modificationCommandParameters: NonTrackedModificationCommandParameters): INonTrackedModificationCommand;
 }
@@ -84,18 +84,16 @@ export const NpgsqlModificationCommandFactory: {
 
 export type NpgsqlModificationCommandFactory = NpgsqlModificationCommandFactory$instance;
 
-export abstract class NpgsqlUpdateSqlGenerator$protected {
-    protected AppendInsertCommand(commandStringBuilder: StringBuilder, name: string, schema: string, writeOperations: IReadOnlyList<IColumnModification>, readOperations: IReadOnlyList<IColumnModification>, overridingSystemValue: boolean): void;
-    protected AppendUpdateColumnValue(updateSqlGeneratorHelper: ISqlGenerationHelper, columnModification: IColumnModification, stringBuilder: StringBuilder, name: string, schema: string): void;
-}
+export interface NpgsqlUpdateSqlGenerator$instance extends UpdateSqlGenerator {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Update_IUpdateSqlGenerator: never;
 
-
-export interface NpgsqlUpdateSqlGenerator$instance extends NpgsqlUpdateSqlGenerator$protected, UpdateSqlGenerator {
     AppendDeleteOperation(commandStringBuilder: StringBuilder, command: IReadOnlyModificationCommand, commandPosition: int, requiresTransaction: boolean): ResultSetMapping;
+    AppendInsertCommand(commandStringBuilder: StringBuilder, name: string, schema: string, writeOperations: IReadOnlyList<IColumnModification>, readOperations: IReadOnlyList<IColumnModification>, overridingSystemValue: boolean): void;
     AppendInsertOperation(commandStringBuilder: StringBuilder, command: IReadOnlyModificationCommand, commandPosition: int, requiresTransaction: boolean): ResultSetMapping;
     AppendInsertOperation(commandStringBuilder: StringBuilder, command: IReadOnlyModificationCommand, commandPosition: int, overridingSystemValue: boolean, requiresTransaction: boolean): ResultSetMapping;
     AppendObtainNextSequenceValueOperation(commandStringBuilder: StringBuilder, name: string, schema: string): void;
     AppendStoredProcedureCall(commandStringBuilder: StringBuilder, command: IReadOnlyModificationCommand, commandPosition: int, requiresTransaction: boolean): ResultSetMapping;
+    AppendUpdateColumnValue(updateSqlGeneratorHelper: ISqlGenerationHelper, columnModification: IColumnModification, stringBuilder: StringBuilder, name: string, schema: string): void;
     AppendUpdateOperation(commandStringBuilder: StringBuilder, command: IReadOnlyModificationCommand, commandPosition: int, requiresTransaction: boolean): ResultSetMapping;
 }
 

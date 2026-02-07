@@ -53,6 +53,8 @@ export const TimelineHistoryFile: {
 export type TimelineHistoryFile = TimelineHistoryFile$instance;
 
 export interface LogicalReplicationConnection$instance extends ReplicationConnection {
+    readonly __tsonic_iface_System_IAsyncDisposable: never;
+
 }
 
 
@@ -65,6 +67,8 @@ export const LogicalReplicationConnection: {
 export type LogicalReplicationConnection = LogicalReplicationConnection$instance;
 
 export interface PhysicalReplicationConnection$instance extends ReplicationConnection {
+    readonly __tsonic_iface_System_IAsyncDisposable: never;
+
     CreateReplicationSlot(slotName: string, isTemporary?: boolean, reserveWal?: boolean, cancellationToken?: CancellationToken): Task<PhysicalReplicationSlot>;
     ReadReplicationSlot(slotName: string, cancellationToken?: CancellationToken): Task<PhysicalReplicationSlot | undefined>;
     StartReplication(slot: PhysicalReplicationSlot, walLocation: NpgsqlLogSequenceNumber, cancellationToken: CancellationToken, timeline?: uint): IAsyncEnumerable<XLogDataMessage>;
@@ -95,6 +99,8 @@ export const PhysicalReplicationSlot: {
 export type PhysicalReplicationSlot = PhysicalReplicationSlot$instance;
 
 export interface ReplicationConnection$instance {
+    readonly __tsonic_iface_System_IAsyncDisposable: never;
+
     CommandTimeout: TimeSpan;
     ConnectionString: string;
     readonly Encoding: Encoding;
@@ -130,8 +136,7 @@ export interface ReplicationMessage$instance {
 }
 
 
-export const ReplicationMessage: {
-    new(): ReplicationMessage;
+export const ReplicationMessage: (abstract new() => ReplicationMessage) & {
 };
 
 
@@ -157,7 +162,6 @@ export interface ReplicationSystemIdentification$instance {
 
 
 export const ReplicationSystemIdentification: {
-    new(): ReplicationSystemIdentification;
 };
 
 

@@ -17,6 +17,8 @@ import type { DatabaseModelFactory, DatabaseModelFactoryOptions, IDatabaseModelF
 import type { DatabaseModel } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Scaffolding.Metadata.js";
 
 export interface NpgsqlCodeGenerator$instance extends ProviderCodeGenerator {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Scaffolding_IProviderConfigurationCodeGenerator: never;
+
     GenerateUseProvider(connectionString: string, providerOptions: MethodCallCodeFragment): MethodCallCodeFragment;
 }
 
@@ -29,6 +31,8 @@ export const NpgsqlCodeGenerator: {
 export type NpgsqlCodeGenerator = NpgsqlCodeGenerator$instance;
 
 export interface NpgsqlDatabaseModelFactory$instance extends DatabaseModelFactory {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Scaffolding_IDatabaseModelFactory: never;
+
     Create(connectionString: string, options: DatabaseModelFactoryOptions): DatabaseModel;
     Create(dbConnection: DbConnection, options: DatabaseModelFactoryOptions): DatabaseModel;
 }
