@@ -98,7 +98,6 @@ export interface BeginMessage$instance extends TransactionControlMessage {
 
 
 export const BeginMessage: {
-    new(): BeginMessage;
 };
 
 
@@ -109,7 +108,6 @@ export interface BeginPrepareMessage$instance extends PrepareMessageBase {
 
 
 export const BeginPrepareMessage: {
-    new(): BeginPrepareMessage;
 };
 
 
@@ -124,7 +122,6 @@ export interface CommitMessage$instance extends PgOutputReplicationMessage {
 
 
 export const CommitMessage: {
-    new(): CommitMessage;
 };
 
 
@@ -139,7 +136,6 @@ export interface CommitPreparedMessage$instance extends PreparedTransactionContr
 
 
 export const CommitPreparedMessage: {
-    new(): CommitPreparedMessage;
 };
 
 
@@ -151,7 +147,6 @@ export interface DefaultUpdateMessage$instance extends UpdateMessage {
 
 
 export const DefaultUpdateMessage: {
-    new(): DefaultUpdateMessage;
 };
 
 
@@ -174,7 +169,6 @@ export interface FullDeleteMessage$instance extends DeleteMessage {
 
 
 export const FullDeleteMessage: {
-    new(): FullDeleteMessage;
 };
 
 
@@ -187,7 +181,6 @@ export interface FullUpdateMessage$instance extends UpdateMessage {
 
 
 export const FullUpdateMessage: {
-    new(): FullUpdateMessage;
 };
 
 
@@ -200,7 +193,6 @@ export interface IndexUpdateMessage$instance extends UpdateMessage {
 
 
 export const IndexUpdateMessage: {
-    new(): IndexUpdateMessage;
 };
 
 
@@ -213,7 +205,6 @@ export interface InsertMessage$instance extends TransactionalMessage {
 
 
 export const InsertMessage: {
-    new(): InsertMessage;
 };
 
 
@@ -225,7 +216,6 @@ export interface KeyDeleteMessage$instance extends DeleteMessage {
 
 
 export const KeyDeleteMessage: {
-    new(): KeyDeleteMessage;
 };
 
 
@@ -240,7 +230,6 @@ export interface LogicalDecodingMessage$instance extends TransactionalMessage {
 
 
 export const LogicalDecodingMessage: {
-    new(): LogicalDecodingMessage;
 };
 
 
@@ -253,7 +242,6 @@ export interface OriginMessage$instance extends PgOutputReplicationMessage {
 
 
 export const OriginMessage: {
-    new(): OriginMessage;
 };
 
 
@@ -266,7 +254,6 @@ export interface ParallelStreamAbortMessage$instance extends StreamAbortMessage 
 
 
 export const ParallelStreamAbortMessage: {
-    new(): ParallelStreamAbortMessage;
 };
 
 
@@ -277,8 +264,7 @@ export interface PgOutputReplicationMessage$instance extends ReplicationMessage 
 }
 
 
-export const PgOutputReplicationMessage: {
-    new(): PgOutputReplicationMessage;
+export const PgOutputReplicationMessage: (abstract new() => PgOutputReplicationMessage) & {
 };
 
 
@@ -301,7 +287,6 @@ export interface PrepareMessage$instance extends PrepareMessageBase {
 
 
 export const PrepareMessage: {
-    new(): PrepareMessage;
 };
 
 
@@ -330,7 +315,6 @@ export interface RelationMessage$instance extends TransactionalMessage {
 
 
 export const RelationMessage: {
-    new(): RelationMessage;
 };
 
 
@@ -346,7 +330,6 @@ export interface RollbackPreparedMessage$instance extends PreparedTransactionCon
 
 
 export const RollbackPreparedMessage: {
-    new(): RollbackPreparedMessage;
 };
 
 
@@ -358,7 +341,6 @@ export interface StreamAbortMessage$instance extends TransactionControlMessage {
 
 
 export const StreamAbortMessage: {
-    new(): StreamAbortMessage;
 };
 
 
@@ -373,7 +355,6 @@ export interface StreamCommitMessage$instance extends TransactionControlMessage 
 
 
 export const StreamCommitMessage: {
-    new(): StreamCommitMessage;
 };
 
 
@@ -385,7 +366,6 @@ export interface StreamPrepareMessage$instance extends PrepareMessageBase {
 
 
 export const StreamPrepareMessage: {
-    new(): StreamPrepareMessage;
 };
 
 
@@ -397,7 +377,6 @@ export interface StreamStartMessage$instance extends TransactionControlMessage {
 
 
 export const StreamStartMessage: {
-    new(): StreamStartMessage;
 };
 
 
@@ -408,7 +387,6 @@ export interface StreamStopMessage$instance extends PgOutputReplicationMessage {
 
 
 export const StreamStopMessage: {
-    new(): StreamStopMessage;
 };
 
 
@@ -419,8 +397,7 @@ export interface TransactionalMessage$instance extends PgOutputReplicationMessag
 }
 
 
-export const TransactionalMessage: {
-    new(): TransactionalMessage;
+export const TransactionalMessage: (abstract new() => TransactionalMessage) & {
 };
 
 
@@ -431,8 +408,7 @@ export interface TransactionControlMessage$instance extends PgOutputReplicationM
 }
 
 
-export const TransactionControlMessage: {
-    new(): TransactionControlMessage;
+export const TransactionControlMessage: (abstract new() => TransactionControlMessage) & {
 };
 
 
@@ -445,7 +421,6 @@ export interface TruncateMessage$instance extends TransactionalMessage {
 
 
 export const TruncateMessage: {
-    new(): TruncateMessage;
 };
 
 
@@ -459,7 +434,6 @@ export interface TypeMessage$instance extends TransactionalMessage {
 
 
 export const TypeMessage: {
-    new(): TypeMessage;
 };
 
 

@@ -50,6 +50,8 @@ export type TypeInfoFactory = (options: PgSerializerOptions, mapping: TypeInfoMa
 
 
 export interface IDbTypeResolver$instance {
+    readonly __tsonic_iface_Npgsql_Internal_IDbTypeResolver: never;
+
     GetDataTypeName(dbType: DbType, type: Type): string | undefined;
     GetDbType(dataTypeName: DataTypeName): Nullable<DbType>;
 }
@@ -58,6 +60,8 @@ export interface IDbTypeResolver$instance {
 export type IDbTypeResolver = IDbTypeResolver$instance;
 
 export interface INpgsqlDatabaseInfoFactory$instance {
+    readonly __tsonic_iface_Npgsql_Internal_INpgsqlDatabaseInfoFactory: never;
+
     Load(conn: NpgsqlConnector, timeout: NpgsqlTimeout, async: boolean): Task<NpgsqlDatabaseInfo | undefined>;
 }
 
@@ -65,6 +69,8 @@ export interface INpgsqlDatabaseInfoFactory$instance {
 export type INpgsqlDatabaseInfoFactory = INpgsqlDatabaseInfoFactory$instance;
 
 export interface IPgTypeInfoResolver$instance {
+    readonly __tsonic_iface_Npgsql_Internal_IPgTypeInfoResolver: never;
+
     GetTypeInfo(type: Type, dataTypeName: Nullable<DataTypeName>, options: PgSerializerOptions): PgTypeInfo | undefined;
 }
 
@@ -72,6 +78,8 @@ export interface IPgTypeInfoResolver$instance {
 export type IPgTypeInfoResolver = IPgTypeInfoResolver$instance;
 
 export interface BufferRequirements$instance {
+    readonly __tsonic_iface_System_IEquatable_1: never;
+
     readonly Read: Size;
     readonly Write: Size;
     Combine(read: Size, write: Size): BufferRequirements;
@@ -96,6 +104,9 @@ export const BufferRequirements: {
 export type BufferRequirements = BufferRequirements$instance;
 
 export interface NestedReadScope$instance {
+    readonly __tsonic_iface_System_IAsyncDisposable: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+
     Dispose(): void;
     DisposeAsync(): ValueTask;
 }
@@ -109,6 +120,8 @@ export const NestedReadScope: {
 export type NestedReadScope = NestedReadScope$instance;
 
 export interface NestedWriteScope$instance {
+    readonly __tsonic_iface_System_IDisposable: never;
+
     Dispose(): void;
 }
 
@@ -135,6 +148,8 @@ export const PgConverterResolution: {
 export type PgConverterResolution = PgConverterResolution$instance;
 
 export interface Size$instance {
+    readonly __tsonic_iface_System_IEquatable_1: never;
+
     readonly Kind: SizeKind;
     readonly Value: int;
     Combine(other: Size): Size;
@@ -176,7 +191,7 @@ export interface TypeInfoMapping$instance {
     MatchRequirement: MatchRequirement;
     Type: Type;
     get TypeMatchPredicate(): Func<Type | undefined, System_Internal.Boolean> | undefined;
-    set TypeMatchPredicate(value: Func<Type | undefined, System_Internal.Boolean>);
+    set TypeMatchPredicate(value: Func<Type | undefined, System_Internal.Boolean> | undefined);
     DataTypeNameEquals(dataTypeName: string): boolean;
     TypeEquals(type: Type): boolean;
 }
@@ -194,7 +209,7 @@ export interface ValueMetadata$instance {
     Format: DataFormat;
     Size: Size;
     get WriteState(): unknown | undefined;
-    set WriteState(value: unknown);
+    set WriteState(value: unknown | undefined);
 }
 
 
@@ -210,26 +225,22 @@ export interface DbTypeResolverFactory$instance {
 }
 
 
-export const DbTypeResolverFactory: {
-    new(): DbTypeResolverFactory;
+export const DbTypeResolverFactory: (abstract new() => DbTypeResolverFactory) & {
 };
 
 
 export type DbTypeResolverFactory = DbTypeResolverFactory$instance;
 
-export abstract class DynamicTypeInfoResolver$protected {
-    protected abstract GetMappings(type: Type, dataTypeName: DataTypeName, options: PgSerializerOptions): DynamicTypeInfoResolver_DynamicMappingCollection | undefined;
-}
+export interface DynamicTypeInfoResolver$instance {
+    readonly __tsonic_iface_Npgsql_Internal_IPgTypeInfoResolver: never;
 
-
-export interface DynamicTypeInfoResolver$instance extends DynamicTypeInfoResolver$protected {
+    GetMappings(type: Type, dataTypeName: DataTypeName, options: PgSerializerOptions): unknown | undefined;
     GetTypeInfo(type: Type, dataTypeName: Nullable<DataTypeName>, options: PgSerializerOptions): PgTypeInfo | undefined;
 }
 
 
-export const DynamicTypeInfoResolver: {
-    new(): DynamicTypeInfoResolver;
-    CreateCollection(baseCollection?: TypeInfoMappingCollection): DynamicTypeInfoResolver_DynamicMappingCollection;
+export const DynamicTypeInfoResolver: (abstract new() => DynamicTypeInfoResolver) & {
+    CreateCollection(baseCollection?: TypeInfoMappingCollection): unknown;
     IsArrayDataTypeName(dataTypeName: DataTypeName, options: PgSerializerOptions, elementDataTypeName: DataTypeName): boolean;
     IsArrayLikeType(type: Type, elementType: Type): boolean;
     IsTypeOrNullableOfType(type: Type, predicate: Func<Type, System_Internal.Boolean>, matchedType: Type): boolean;
@@ -255,18 +266,12 @@ export interface NpgsqlConnector$instance {
 
 
 export const NpgsqlConnector: {
-    new(): NpgsqlConnector;
 };
 
 
 export type NpgsqlConnector = NpgsqlConnector$instance;
 
-export abstract class NpgsqlDatabaseInfo$protected {
-    protected abstract GetTypes(): IEnumerable<PostgresType>;
-}
-
-
-export interface NpgsqlDatabaseInfo$instance extends NpgsqlDatabaseInfo$protected {
+export interface NpgsqlDatabaseInfo$instance {
     HasIntegerDateTimes: boolean;
     readonly Host: string;
     readonly Name: string;
@@ -285,13 +290,12 @@ export interface NpgsqlDatabaseInfo$instance extends NpgsqlDatabaseInfo$protecte
     readonly Version: Version;
     GetPostgresType(oid: uint): PostgresType;
     GetPostgresType(pgName: string): PostgresType;
+    GetTypes(): IEnumerable<PostgresType>;
     TryGetPostgresTypeByName(pgName: string, pgType: PostgresType): boolean;
 }
 
 
-export const NpgsqlDatabaseInfo: {
-    new(host: string, port: int, databaseName: string, version: Version): NpgsqlDatabaseInfo;
-    new(host: string, port: int, databaseName: string, version: Version, serverVersion: string): NpgsqlDatabaseInfo;
+export const NpgsqlDatabaseInfo: (abstract new(host: string, port: int, databaseName: string, version: Version) => NpgsqlDatabaseInfo) & (abstract new(host: string, port: int, databaseName: string, version: Version, serverVersion: string) => NpgsqlDatabaseInfo) & {
     ParseServerVersion(value: string): Version;
     RegisterFactory(factory: INpgsqlDatabaseInfoFactory): void;
 };
@@ -299,24 +303,19 @@ export const NpgsqlDatabaseInfo: {
 
 export type NpgsqlDatabaseInfo = NpgsqlDatabaseInfo$instance;
 
-export abstract class PgBufferedConverter_1$protected<T> {
-    protected abstract ReadCore(reader: PgReader): T;
-    protected abstract WriteCore(writer: PgWriter, value: T): void;
-}
-
-
-export interface PgBufferedConverter_1$instance<T> extends PgBufferedConverter_1$protected<T>, PgConverter_1<T> {
+export interface PgBufferedConverter_1$instance<T> extends PgConverter_1<T> {
     GetSize(context: SizeContext, value: T, writeState: unknown): Size;
     Read(reader: PgReader): T;
     ReadAsync(reader: PgReader, cancellationToken?: CancellationToken): ValueTask<T>;
     ReadAsync(reader: PgReader, cancellationToken?: CancellationToken): ValueTask<T>;
+    ReadCore(reader: PgReader): T;
     Write(writer: PgWriter, value: T): void;
     WriteAsync(writer: PgWriter, value: T, cancellationToken?: CancellationToken): ValueTask;
+    WriteCore(writer: PgWriter, value: T): void;
 }
 
 
-export const PgBufferedConverter_1: {
-    new<T>(customDbNullPredicate: boolean): PgBufferedConverter_1<T>;
+export const PgBufferedConverter_1: (abstract new<T>(customDbNullPredicate: boolean) => PgBufferedConverter_1<T>) & {
 };
 
 
@@ -334,14 +333,10 @@ export const PgConverter: {
 
 export type PgConverter = PgConverter$instance;
 
-export abstract class PgConverter_1$protected<T> {
-    protected IsDbNullValue(value: T, writeState: unknown): boolean;
-}
-
-
-export interface PgConverter_1$instance<T> extends PgConverter_1$protected<T>, PgConverter {
+export interface PgConverter_1$instance<T> extends PgConverter {
     GetSize(context: SizeContext, value: T, writeState: unknown): Size;
     IsDbNull(value: T, writeState: unknown): boolean;
+    IsDbNullValue(value: T, writeState: unknown): boolean;
     Read(reader: PgReader): T;
     ReadAsync(reader: PgReader, cancellationToken?: CancellationToken): ValueTask<T>;
     Write(writer: PgWriter, value: T): void;
@@ -373,8 +368,7 @@ export interface PgConverterResolver_1$instance<T> extends PgConverterResolver {
 }
 
 
-export const PgConverterResolver_1: {
-    new<T>(): PgConverterResolver_1<T>;
+export const PgConverterResolver_1: (abstract new<T>() => PgConverterResolver_1<T>) & {
 };
 
 
@@ -420,7 +414,6 @@ export interface PgReader$instance {
 
 
 export const PgReader: {
-    new(): PgReader;
 };
 
 
@@ -465,7 +458,6 @@ export interface PgSerializerOptions$instance {
 
 
 export const PgSerializerOptions: {
-    new(): PgSerializerOptions;
     IsWellKnownTextType(type: Type): boolean;
 };
 
@@ -477,8 +469,7 @@ export interface PgStreamingConverter_1$instance<T> extends PgConverter_1<T> {
 }
 
 
-export const PgStreamingConverter_1: {
-    new<T>(customDbNullPredicate: boolean): PgStreamingConverter_1<T>;
+export const PgStreamingConverter_1: (abstract new<T>(customDbNullPredicate: boolean) => PgStreamingConverter_1<T>) & {
 };
 
 
@@ -514,8 +505,7 @@ export interface PgTypeInfoResolverFactory$instance {
 }
 
 
-export const PgTypeInfoResolverFactory: {
-    new(): PgTypeInfoResolverFactory;
+export const PgTypeInfoResolverFactory: (abstract new() => PgTypeInfoResolverFactory) & {
 };
 
 
@@ -548,7 +538,6 @@ export interface PgWriter$instance {
 
 
 export const PgWriter: {
-    new(): PgWriter;
 };
 
 

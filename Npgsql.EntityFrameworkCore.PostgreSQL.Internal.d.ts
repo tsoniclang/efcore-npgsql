@@ -18,3 +18,6 @@ export { NpgsqlLoggerExtensions$instance as NpgsqlLoggerExtensions } from './Npg
 export { NpgsqlSingletonOptions as NpgsqlSingletonOptions } from './Npgsql.EntityFrameworkCore.PostgreSQL.Internal/internal/index.js';
 export { NpgsqlStrings$instance as NpgsqlStrings } from './Npgsql.EntityFrameworkCore.PostgreSQL.Internal/internal/index.js';
 export { NpgsqlResources$instance as NpgsqlResources } from './Npgsql.EntityFrameworkCore.PostgreSQL.Internal/internal/index.js';
+// Extension methods (C# using semantics)
+export type { ExtensionMethods_Npgsql_EntityFrameworkCore_PostgreSQL_Internal as ExtensionMethods } from './__internal/extensions/index.js';
+

@@ -12,3 +12,6 @@ import type { ColumnExpression, SqlExpression } from '@tsonic/efcore/Microsoft.E
 
 // Public API exports (curated - no internal $instance/$views leakage)
 export { NpgsqlShapedQueryExpressionExtensions$instance as NpgsqlShapedQueryExpressionExtensions } from './Npgsql.EntityFrameworkCore.PostgreSQL.Extensions.Internal/internal/index.js';
+// Extension methods (C# using semantics)
+export type { ExtensionMethods_Npgsql_EntityFrameworkCore_PostgreSQL_Extensions_Internal as ExtensionMethods } from './__internal/extensions/index.js';
+

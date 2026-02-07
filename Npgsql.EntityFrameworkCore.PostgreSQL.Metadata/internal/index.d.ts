@@ -40,7 +40,7 @@ export interface CockroachDbInterleaveInParent$instance {
     InterleavePrefix: List<System_Internal.String>;
     ParentTableName: string;
     get ParentTableSchema(): string | undefined;
-    set ParentTableSchema(value: string);
+    set ParentTableSchema(value: string | undefined);
 }
 
 
@@ -58,13 +58,12 @@ export interface PostgresCollation$instance {
     LcCtype: string;
     readonly Name: string;
     get Provider(): string | undefined;
-    set Provider(value: string);
+    set Provider(value: string | undefined);
     readonly Schema: string | undefined;
 }
 
 
 export const PostgresCollation: {
-    new(): PostgresCollation;
     FindCollation(annotatable: IReadOnlyAnnotatable, schema: string, name: string): PostgresCollation | undefined;
     GetCollations(annotatable: IReadOnlyAnnotatable): IEnumerable<PostgresCollation>;
     GetOrAddCollation(annotatable: IMutableAnnotatable, schema: string, name: string, lcCollate: string, lcCtype: string, provider?: string, deterministic?: Nullable<System_Internal.Boolean>): PostgresCollation;
@@ -82,7 +81,6 @@ export interface PostgresEnum$instance {
 
 
 export const PostgresEnum: {
-    new(): PostgresEnum;
     FindPostgresEnum(annotatable: IReadOnlyAnnotatable, schema: string, name: string): PostgresEnum | undefined;
     GetOrAddPostgresEnum(annotatable: IConventionAnnotatable, schema: string, name: string, labels: string[]): PostgresEnum;
     GetOrAddPostgresEnum(annotatable: IMutableAnnotatable, schema: string, name: string, labels: string[]): PostgresEnum;
@@ -97,12 +95,12 @@ export interface PostgresExtension$instance {
     readonly Annotatable: Annotatable;
     readonly Name: string;
     readonly Schema: string | undefined;
-    Version: string;
+    get Version(): string | undefined;
+    set Version(value: string | undefined);
 }
 
 
 export const PostgresExtension: {
-    new(): PostgresExtension;
     FindPostgresExtension(annotatable: IReadOnlyAnnotatable, schema: string, name: string): PostgresExtension | undefined;
     GetOrAddPostgresExtension(annotatable: IConventionAnnotatable, schema: string, name: string, version: string): PostgresExtension;
     GetOrAddPostgresExtension(annotatable: IMutableAnnotatable, schema: string, name: string, version: string): PostgresExtension;
@@ -116,21 +114,20 @@ export type PostgresExtension = PostgresExtension$instance;
 export interface PostgresRange$instance {
     readonly Annotatable: Annotatable;
     get CanonicalFunction(): string | undefined;
-    set CanonicalFunction(value: string);
+    set CanonicalFunction(value: string | undefined);
     get Collation(): string | undefined;
-    set Collation(value: string);
+    set Collation(value: string | undefined);
     readonly Name: string;
     readonly Schema: string | undefined;
     Subtype: string;
     get SubtypeDiff(): string | undefined;
-    set SubtypeDiff(value: string);
+    set SubtypeDiff(value: string | undefined);
     get SubtypeOpClass(): string | undefined;
-    set SubtypeOpClass(value: string);
+    set SubtypeOpClass(value: string | undefined);
 }
 
 
 export const PostgresRange: {
-    new(): PostgresRange;
     FindPostgresRange(annotatable: IReadOnlyAnnotatable, schema: string, name: string): PostgresRange | undefined;
     GetOrAddPostgresRange(annotatable: IMutableAnnotatable, schema: string, name: string, subtype: string, canonicalFunction?: string, subtypeOpClass?: string, collation?: string, subtypeDiff?: string): PostgresRange;
     GetPostgresRanges(annotatable: IReadOnlyAnnotatable): IEnumerable<PostgresRange>;

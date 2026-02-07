@@ -36,9 +36,11 @@ export enum PgAnyOperatorType {
 
 
 export interface PgTableValuedFunctionExpression_ColumnInfo$instance {
+    readonly __tsonic_iface_System_IEquatable_1: never;
+
     Name: string;
     get TypeMapping(): RelationalTypeMapping | undefined;
-    set TypeMapping(value: RelationalTypeMapping);
+    set TypeMapping(value: RelationalTypeMapping | undefined);
     Deconstruct(Name: string, TypeMapping: RelationalTypeMapping): void;
     Equals(obj: unknown): boolean;
     Equals(other: PgTableValuedFunctionExpression_ColumnInfo): boolean;
@@ -54,13 +56,11 @@ export const PgTableValuedFunctionExpression_ColumnInfo: {
 
 export type PgTableValuedFunctionExpression_ColumnInfo = PgTableValuedFunctionExpression_ColumnInfo$instance;
 
-export abstract class PgAllExpression$protected {
-    protected Print(expressionPrinter: ExpressionPrinter): void;
-    protected VisitChildren(visitor: ExpressionVisitor): Expression;
-}
+export interface PgAllExpression$instance extends SqlExpression {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IPrintableExpression: never;
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IRelationalQuotableExpression: never;
+    readonly __tsonic_iface_System_IEquatable_1: never;
 
-
-export interface PgAllExpression$instance extends PgAllExpression$protected, SqlExpression {
     readonly Array: SqlExpression;
     readonly Item: SqlExpression;
     readonly OperatorType: PgAllOperatorType;
@@ -68,9 +68,11 @@ export interface PgAllExpression$instance extends PgAllExpression$protected, Sql
     Equals(obj: unknown): boolean;
     Equals(other: PgAllExpression): boolean;
     GetHashCode(): int;
+    Print(expressionPrinter: ExpressionPrinter): void;
     Quote(): Expression;
     ToString(): string;
     Update(item: SqlExpression, array: SqlExpression): PgAllExpression;
+    VisitChildren(visitor: ExpressionVisitor): Expression;
 }
 
 
@@ -81,13 +83,11 @@ export const PgAllExpression: {
 
 export type PgAllExpression = PgAllExpression$instance;
 
-export abstract class PgAnyExpression$protected {
-    protected Print(expressionPrinter: ExpressionPrinter): void;
-    protected VisitChildren(visitor: ExpressionVisitor): Expression;
-}
+export interface PgAnyExpression$instance extends SqlExpression {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IPrintableExpression: never;
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IRelationalQuotableExpression: never;
+    readonly __tsonic_iface_System_IEquatable_1: never;
 
-
-export interface PgAnyExpression$instance extends PgAnyExpression$protected, SqlExpression {
     readonly Array: SqlExpression;
     readonly Item: SqlExpression;
     readonly OperatorType: PgAnyOperatorType;
@@ -95,9 +95,11 @@ export interface PgAnyExpression$instance extends PgAnyExpression$protected, Sql
     Equals(obj: unknown): boolean;
     Equals(other: PgAnyExpression): boolean;
     GetHashCode(): int;
+    Print(expressionPrinter: ExpressionPrinter): void;
     Quote(): Expression;
     ToString(): string;
     Update(item: SqlExpression, array: SqlExpression): PgAnyExpression;
+    VisitChildren(visitor: ExpressionVisitor): Expression;
 }
 
 
@@ -108,22 +110,22 @@ export const PgAnyExpression: {
 
 export type PgAnyExpression = PgAnyExpression$instance;
 
-export abstract class PgArrayIndexExpression$protected {
-    protected Print(expressionPrinter: ExpressionPrinter): void;
-    protected VisitChildren(visitor: ExpressionVisitor): Expression;
-}
+export interface PgArrayIndexExpression$instance extends SqlExpression {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IPrintableExpression: never;
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IRelationalQuotableExpression: never;
+    readonly __tsonic_iface_System_IEquatable_1: never;
 
-
-export interface PgArrayIndexExpression$instance extends PgArrayIndexExpression$protected, SqlExpression {
     readonly Array: SqlExpression;
     readonly Index: SqlExpression;
     readonly IsNullable: boolean;
     Equals(other: PgArrayIndexExpression): boolean;
     Equals(obj: unknown): boolean;
     GetHashCode(): int;
+    Print(expressionPrinter: ExpressionPrinter): void;
     Quote(): Expression;
     ToString(): string;
     Update(array: SqlExpression, index: SqlExpression): PgArrayIndexExpression;
+    VisitChildren(visitor: ExpressionVisitor): Expression;
 }
 
 
@@ -134,23 +136,23 @@ export const PgArrayIndexExpression: {
 
 export type PgArrayIndexExpression = PgArrayIndexExpression$instance;
 
-export abstract class PgArraySliceExpression$protected {
-    protected Print(expressionPrinter: ExpressionPrinter): void;
-    protected VisitChildren(visitor: ExpressionVisitor): Expression;
-}
+export interface PgArraySliceExpression$instance extends SqlExpression {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IPrintableExpression: never;
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IRelationalQuotableExpression: never;
+    readonly __tsonic_iface_System_IEquatable_1: never;
 
-
-export interface PgArraySliceExpression$instance extends PgArraySliceExpression$protected, SqlExpression {
     readonly Array: SqlExpression;
     readonly IsNullable: boolean;
-    readonly LowerBound: SqlExpression;
-    readonly UpperBound: SqlExpression;
+    readonly LowerBound: SqlExpression | undefined;
+    readonly UpperBound: SqlExpression | undefined;
     Equals(other: PgArraySliceExpression): boolean;
     Equals(obj: unknown): boolean;
     GetHashCode(): int;
+    Print(expressionPrinter: ExpressionPrinter): void;
     Quote(): Expression;
     ToString(): string;
     Update(array: SqlExpression, lowerBound: SqlExpression, upperBound: SqlExpression): PgArraySliceExpression;
+    VisitChildren(visitor: ExpressionVisitor): Expression;
 }
 
 
@@ -161,20 +163,19 @@ export const PgArraySliceExpression: {
 
 export type PgArraySliceExpression = PgArraySliceExpression$instance;
 
-export abstract class PgBinaryExpression$protected {
-    protected Print(expressionPrinter: ExpressionPrinter): void;
-    protected VisitChildren(visitor: ExpressionVisitor): Expression;
-}
+export interface PgBinaryExpression$instance extends SqlExpression {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IPrintableExpression: never;
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IRelationalQuotableExpression: never;
 
-
-export interface PgBinaryExpression$instance extends PgBinaryExpression$protected, SqlExpression {
     readonly Left: SqlExpression;
     readonly OperatorType: PgExpressionType;
     readonly Right: SqlExpression;
     Equals(obj: unknown): boolean;
     GetHashCode(): int;
+    Print(expressionPrinter: ExpressionPrinter): void;
     Quote(): Expression;
     Update(left: SqlExpression, right: SqlExpression): PgBinaryExpression;
+    VisitChildren(visitor: ExpressionVisitor): Expression;
 }
 
 
@@ -185,12 +186,9 @@ export const PgBinaryExpression: {
 
 export type PgBinaryExpression = PgBinaryExpression$instance;
 
-export abstract class PgDeleteExpression$protected {
-    protected VisitChildren(visitor: ExpressionVisitor): Expression;
-}
+export interface PgDeleteExpression$instance extends Expression {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IPrintableExpression: never;
 
-
-export interface PgDeleteExpression$instance extends PgDeleteExpression$protected, Expression {
     readonly FromItems: IReadOnlyList<TableExpressionBase>;
     readonly NodeType: ExpressionType;
     readonly Predicate: SqlExpression | undefined;
@@ -201,6 +199,7 @@ export interface PgDeleteExpression$instance extends PgDeleteExpression$protecte
     GetHashCode(): int;
     Print(expressionPrinter: ExpressionPrinter): void;
     Update(predicate: SqlExpression): PgDeleteExpression;
+    VisitChildren(visitor: ExpressionVisitor): Expression;
 }
 
 
@@ -211,13 +210,11 @@ export const PgDeleteExpression: {
 
 export type PgDeleteExpression = PgDeleteExpression$instance;
 
-export abstract class PgFunctionExpression$protected {
-    protected Print(expressionPrinter: ExpressionPrinter): void;
-    protected VisitChildren(visitor: ExpressionVisitor): Expression;
-}
+export interface PgFunctionExpression$instance extends SqlFunctionExpression {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IPrintableExpression: never;
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IRelationalQuotableExpression: never;
+    readonly __tsonic_iface_System_IEquatable_1: never;
 
-
-export interface PgFunctionExpression$instance extends PgFunctionExpression$protected, SqlFunctionExpression {
     readonly AggregateOrderings: IReadOnlyList<OrderingExpression>;
     readonly AggregatePredicate: SqlExpression | undefined;
     readonly ArgumentNames: IReadOnlyList<string | undefined>;
@@ -229,8 +226,10 @@ export interface PgFunctionExpression$instance extends PgFunctionExpression$prot
     Equals(obj: unknown): boolean;
     Equals(other: PgFunctionExpression): boolean;
     GetHashCode(): int;
+    Print(expressionPrinter: ExpressionPrinter): void;
     Update(instance: SqlExpression, arguments: IReadOnlyList<SqlExpression>): SqlFunctionExpression;
     UpdateAggregateComponents(predicate: SqlExpression, orderings: IReadOnlyList<OrderingExpression>): PgFunctionExpression;
+    VisitChildren(visitor: ExpressionVisitor): Expression;
 }
 
 
@@ -243,22 +242,22 @@ export const PgFunctionExpression: {
 
 export type PgFunctionExpression = PgFunctionExpression$instance;
 
-export abstract class PgILikeExpression$protected {
-    protected Print(expressionPrinter: ExpressionPrinter): void;
-    protected VisitChildren(visitor: ExpressionVisitor): Expression;
-}
+export interface PgILikeExpression$instance extends SqlExpression {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IPrintableExpression: never;
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IRelationalQuotableExpression: never;
+    readonly __tsonic_iface_System_IEquatable_1: never;
 
-
-export interface PgILikeExpression$instance extends PgILikeExpression$protected, SqlExpression {
     readonly EscapeChar: SqlExpression | undefined;
     readonly Match: SqlExpression;
     readonly Pattern: SqlExpression;
     Equals(obj: unknown): boolean;
     Equals(other: PgILikeExpression): boolean;
     GetHashCode(): int;
+    Print(expressionPrinter: ExpressionPrinter): void;
     Quote(): Expression;
     ToString(): string;
     Update(match: SqlExpression, pattern: SqlExpression, escapeChar: SqlExpression): PgILikeExpression;
+    VisitChildren(visitor: ExpressionVisitor): Expression;
 }
 
 
@@ -269,13 +268,11 @@ export const PgILikeExpression: {
 
 export type PgILikeExpression = PgILikeExpression$instance;
 
-export abstract class PgJsonTraversalExpression$protected {
-    protected Print(expressionPrinter: ExpressionPrinter): void;
-    protected VisitChildren(visitor: ExpressionVisitor): Expression;
-}
+export interface PgJsonTraversalExpression$instance extends SqlExpression {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IPrintableExpression: never;
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IRelationalQuotableExpression: never;
+    readonly __tsonic_iface_System_IEquatable_1: never;
 
-
-export interface PgJsonTraversalExpression$instance extends PgJsonTraversalExpression$protected, SqlExpression {
     readonly Expression: SqlExpression;
     readonly Path: IReadOnlyList<SqlExpression>;
     readonly ReturnsText: boolean;
@@ -283,9 +280,11 @@ export interface PgJsonTraversalExpression$instance extends PgJsonTraversalExpre
     Equals(obj: unknown): boolean;
     Equals(other: PgJsonTraversalExpression): boolean;
     GetHashCode(): int;
+    Print(expressionPrinter: ExpressionPrinter): void;
     Quote(): Expression;
     ToString(): string;
     Update(expression: SqlExpression, path: IReadOnlyList<SqlExpression>): PgJsonTraversalExpression;
+    VisitChildren(visitor: ExpressionVisitor): Expression;
 }
 
 
@@ -296,18 +295,17 @@ export const PgJsonTraversalExpression: {
 
 export type PgJsonTraversalExpression = PgJsonTraversalExpression$instance;
 
-export abstract class PgNewArrayExpression$protected {
-    protected Print(expressionPrinter: ExpressionPrinter): void;
-    protected VisitChildren(visitor: ExpressionVisitor): Expression;
-}
+export interface PgNewArrayExpression$instance extends SqlExpression {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IPrintableExpression: never;
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IRelationalQuotableExpression: never;
 
-
-export interface PgNewArrayExpression$instance extends PgNewArrayExpression$protected, SqlExpression {
     readonly Expressions: IReadOnlyList<SqlExpression>;
     Equals(obj: unknown): boolean;
     GetHashCode(): int;
+    Print(expressionPrinter: ExpressionPrinter): void;
     Quote(): Expression;
     Update(expressions: IReadOnlyList<SqlExpression>): PgNewArrayExpression;
+    VisitChildren(visitor: ExpressionVisitor): Expression;
 }
 
 
@@ -318,13 +316,11 @@ export const PgNewArrayExpression: {
 
 export type PgNewArrayExpression = PgNewArrayExpression$instance;
 
-export abstract class PgRegexMatchExpression$protected {
-    protected Print(expressionPrinter: ExpressionPrinter): void;
-    protected VisitChildren(visitor: ExpressionVisitor): Expression;
-}
+export interface PgRegexMatchExpression$instance extends SqlExpression {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IPrintableExpression: never;
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IRelationalQuotableExpression: never;
+    readonly __tsonic_iface_System_IEquatable_1: never;
 
-
-export interface PgRegexMatchExpression$instance extends PgRegexMatchExpression$protected, SqlExpression {
     readonly Match: SqlExpression;
     readonly Options: RegexOptions;
     readonly Pattern: SqlExpression;
@@ -332,9 +328,11 @@ export interface PgRegexMatchExpression$instance extends PgRegexMatchExpression$
     Equals(other: PgRegexMatchExpression): boolean;
     Equals(other: unknown): boolean;
     GetHashCode(): int;
+    Print(expressionPrinter: ExpressionPrinter): void;
     Quote(): Expression;
     ToString(): string;
     Update(match: SqlExpression, pattern: SqlExpression): PgRegexMatchExpression;
+    VisitChildren(visitor: ExpressionVisitor): Expression;
 }
 
 
@@ -345,19 +343,19 @@ export const PgRegexMatchExpression: {
 
 export type PgRegexMatchExpression = PgRegexMatchExpression$instance;
 
-export abstract class PgRowValueExpression$protected {
-    protected Print(expressionPrinter: ExpressionPrinter): void;
-    protected VisitChildren(visitor: ExpressionVisitor): Expression;
-}
+export interface PgRowValueExpression$instance extends SqlExpression {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IPrintableExpression: never;
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IRelationalQuotableExpression: never;
+    readonly __tsonic_iface_System_IEquatable_1: never;
 
-
-export interface PgRowValueExpression$instance extends PgRowValueExpression$protected, SqlExpression {
     readonly Values: IReadOnlyList<SqlExpression>;
     Equals(obj: unknown): boolean;
     Equals(other: PgRowValueExpression): boolean;
     GetHashCode(): int;
+    Print(expressionPrinter: ExpressionPrinter): void;
     Quote(): Expression;
     Update(values: IReadOnlyList<SqlExpression>): PgRowValueExpression;
+    VisitChildren(visitor: ExpressionVisitor): Expression;
 }
 
 
@@ -368,20 +366,21 @@ export const PgRowValueExpression: {
 
 export type PgRowValueExpression = PgRowValueExpression$instance;
 
-export abstract class PgTableValuedFunctionExpression$protected {
-    protected Print(expressionPrinter: ExpressionPrinter): void;
-    protected VisitChildren(visitor: ExpressionVisitor): Expression;
-}
+export interface PgTableValuedFunctionExpression$instance extends TableValuedFunctionExpression {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IPrintableExpression: never;
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IRelationalQuotableExpression: never;
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_SqlExpressions_ITableBasedExpression: never;
+    readonly __tsonic_iface_System_IEquatable_1: never;
 
-
-export interface PgTableValuedFunctionExpression$instance extends PgTableValuedFunctionExpression$protected, TableValuedFunctionExpression {
     readonly ColumnInfos: IReadOnlyList<PgTableValuedFunctionExpression_ColumnInfo> | undefined;
     readonly WithOrdinality: boolean;
     Clone(alias: string, cloningExpressionVisitor: ExpressionVisitor): TableExpressionBase;
     Equals(obj: unknown): boolean;
     Equals(expression: PgTableValuedFunctionExpression): boolean;
     GetHashCode(): int;
+    Print(expressionPrinter: ExpressionPrinter): void;
     Update(arguments: IReadOnlyList<SqlExpression>): PgTableValuedFunctionExpression;
+    VisitChildren(visitor: ExpressionVisitor): Expression;
     WithAlias(newAlias: string): PgTableValuedFunctionExpression;
     WithColumnInfos(columnInfos: IReadOnlyList<PgTableValuedFunctionExpression_ColumnInfo>): PgTableValuedFunctionExpression;
 }
@@ -394,22 +393,22 @@ export const PgTableValuedFunctionExpression: {
 
 export type PgTableValuedFunctionExpression = PgTableValuedFunctionExpression$instance;
 
-export abstract class PgUnknownBinaryExpression$protected {
-    protected Print(expressionPrinter: ExpressionPrinter): void;
-    protected VisitChildren(visitor: ExpressionVisitor): Expression;
-}
+export interface PgUnknownBinaryExpression$instance extends SqlExpression {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IPrintableExpression: never;
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IRelationalQuotableExpression: never;
+    readonly __tsonic_iface_System_IEquatable_1: never;
 
-
-export interface PgUnknownBinaryExpression$instance extends PgUnknownBinaryExpression$protected, SqlExpression {
     readonly Left: SqlExpression;
     readonly Operator: string;
     readonly Right: SqlExpression;
     Equals(other: PgUnknownBinaryExpression): boolean;
     Equals(obj: unknown): boolean;
     GetHashCode(): int;
+    Print(expressionPrinter: ExpressionPrinter): void;
     Quote(): Expression;
     ToString(): string;
     Update(left: SqlExpression, right: SqlExpression): PgUnknownBinaryExpression;
+    VisitChildren(visitor: ExpressionVisitor): Expression;
 }
 
 
@@ -420,18 +419,19 @@ export const PgUnknownBinaryExpression: {
 
 export type PgUnknownBinaryExpression = PgUnknownBinaryExpression$instance;
 
-export abstract class PgUnnestExpression$protected {
-    protected VisitChildren(visitor: ExpressionVisitor): Expression;
-}
+export interface PgUnnestExpression$instance extends PgTableValuedFunctionExpression {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IPrintableExpression: never;
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IRelationalQuotableExpression: never;
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_SqlExpressions_ITableBasedExpression: never;
+    readonly __tsonic_iface_System_IEquatable_1: never;
 
-
-export interface PgUnnestExpression$instance extends PgUnnestExpression$protected, PgTableValuedFunctionExpression {
     readonly Array: SqlExpression;
     readonly ColumnName: string;
     Clone(alias: string, cloningExpressionVisitor: ExpressionVisitor): TableExpressionBase;
     Update(arguments: IReadOnlyList<SqlExpression>): PgUnnestExpression;
     Update(array: SqlExpression): PgUnnestExpression;
     Update(arguments: IReadOnlyList<SqlExpression>): PgTableValuedFunctionExpression;
+    VisitChildren(visitor: ExpressionVisitor): Expression;
     WithAlias(newAlias: string): PgUnnestExpression;
     WithAlias(newAlias: string): PgTableValuedFunctionExpression;
     WithColumnInfos(columnInfos: IReadOnlyList<PgTableValuedFunctionExpression_ColumnInfo>): PgUnnestExpression;

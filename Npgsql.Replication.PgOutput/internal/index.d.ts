@@ -43,6 +43,8 @@ export enum TupleDataKind {
 
 
 export interface PgOutputReplicationOptions$instance {
+    readonly __tsonic_iface_System_IEquatable_1: never;
+
     readonly Binary: Nullable<System_Internal.Boolean>;
     readonly Messages: Nullable<System_Internal.Boolean>;
     readonly ProtocolVersion: PgOutputProtocolVersion;
@@ -72,20 +74,20 @@ export interface PgOutputReplicationSlot$instance extends LogicalReplicationSlot
 export const PgOutputReplicationSlot: {
     new(slotName: string): PgOutputReplicationSlot;
     new(options: ReplicationSlotOptions): PgOutputReplicationSlot;
-    new(slot: PgOutputReplicationSlot): PgOutputReplicationSlot;
 };
 
 
 export type PgOutputReplicationSlot = PgOutputReplicationSlot$instance;
 
 export interface ReplicationTuple$instance {
+    readonly __tsonic_iface_System_Collections_Generic_IAsyncEnumerable_1: never;
+
     NumColumns: ushort;
     GetAsyncEnumerator(cancellationToken?: CancellationToken): IAsyncEnumerator<ReplicationValue>;
 }
 
 
 export const ReplicationTuple: {
-    new(): ReplicationTuple;
 };
 
 
@@ -108,7 +110,6 @@ export interface ReplicationValue$instance {
 
 
 export const ReplicationValue: {
-    new(): ReplicationValue;
 };
 
 

@@ -22,6 +22,8 @@ import * as Microsoft_EntityFrameworkCore_ValueGeneration_Internal from "@tsonic
 import type { HiLoValueGenerator, HiLoValueGeneratorState, IValueGeneratorCache, IValueGeneratorSelector, RelationalValueGeneratorSelector, ValueGenerator, ValueGeneratorCache, ValueGeneratorCacheDependencies, ValueGeneratorSelectorDependencies } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.ValueGeneration.js";
 
 export interface INpgsqlSequenceValueGeneratorFactory$instance {
+    readonly __tsonic_iface_Npgsql_EntityFrameworkCore_PostgreSQL_ValueGeneration_Internal_INpgsqlSequenceValueGeneratorFactory: never;
+
     TryCreate(property: IProperty, clrType: Type, generatorState: NpgsqlSequenceValueGeneratorState, connection: INpgsqlRelationalConnection, rawSqlCommandBuilder: IRawSqlCommandBuilder, commandLogger: IRelationalCommandDiagnosticsLogger): ValueGenerator | undefined;
 }
 
@@ -29,20 +31,20 @@ export interface INpgsqlSequenceValueGeneratorFactory$instance {
 export type INpgsqlSequenceValueGeneratorFactory = INpgsqlSequenceValueGeneratorFactory$instance;
 
 export interface INpgsqlValueGeneratorCache$instance extends IValueGeneratorCache {
+    readonly __tsonic_iface_Npgsql_EntityFrameworkCore_PostgreSQL_ValueGeneration_Internal_INpgsqlValueGeneratorCache: never;
+
     GetOrAddSequenceState(property: IProperty, connection: IRelationalConnection): NpgsqlSequenceValueGeneratorState;
 }
 
 
+export interface INpgsqlValueGeneratorCache$instance extends Microsoft_EntityFrameworkCore_ValueGeneration_Internal.IValueGeneratorCache {}
+
 export type INpgsqlValueGeneratorCache = INpgsqlValueGeneratorCache$instance;
 
-export abstract class NpgsqlSequenceHiLoValueGenerator_1$protected<TValue> {
-    protected GetNewLowValue(): long;
-    protected GetNewLowValueAsync(cancellationToken?: CancellationToken): Task<System_Internal.Int64>;
-}
-
-
-export interface NpgsqlSequenceHiLoValueGenerator_1$instance<TValue> extends NpgsqlSequenceHiLoValueGenerator_1$protected<TValue>, HiLoValueGenerator<TValue> {
+export interface NpgsqlSequenceHiLoValueGenerator_1$instance<TValue> extends HiLoValueGenerator<TValue> {
     readonly GeneratesTemporaryValues: boolean;
+    GetNewLowValue(): long;
+    GetNewLowValueAsync(cancellationToken?: CancellationToken): Task<System_Internal.Int64>;
 }
 
 
@@ -54,6 +56,8 @@ export const NpgsqlSequenceHiLoValueGenerator_1: {
 export type NpgsqlSequenceHiLoValueGenerator_1<TValue> = NpgsqlSequenceHiLoValueGenerator_1$instance<TValue>;
 
 export interface NpgsqlSequenceValueGeneratorFactory$instance {
+    readonly __tsonic_iface_Npgsql_EntityFrameworkCore_PostgreSQL_ValueGeneration_Internal_INpgsqlSequenceValueGeneratorFactory: never;
+
     TryCreate(property: IProperty, type: Type, generatorState: NpgsqlSequenceValueGeneratorState, connection: INpgsqlRelationalConnection, rawSqlCommandBuilder: IRawSqlCommandBuilder, commandLogger: IRelationalCommandDiagnosticsLogger): ValueGenerator | undefined;
 }
 
@@ -73,6 +77,8 @@ export type NpgsqlSequenceValueGeneratorFactory = NpgsqlSequenceValueGeneratorFa
 
 
 export interface NpgsqlSequenceValueGeneratorState$instance extends HiLoValueGeneratorState {
+    readonly __tsonic_iface_System_IDisposable: never;
+
     readonly Sequence: ISequence;
 }
 
@@ -85,6 +91,9 @@ export const NpgsqlSequenceValueGeneratorState: {
 export type NpgsqlSequenceValueGeneratorState = NpgsqlSequenceValueGeneratorState$instance;
 
 export interface NpgsqlValueGeneratorCache$instance extends ValueGeneratorCache {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_ValueGeneration_IValueGeneratorCache: never;
+    readonly __tsonic_iface_Npgsql_EntityFrameworkCore_PostgreSQL_ValueGeneration_Internal_INpgsqlValueGeneratorCache: never;
+
     GetOrAddSequenceState(property: IProperty, connection: IRelationalConnection): NpgsqlSequenceValueGeneratorState;
 }
 
@@ -103,13 +112,11 @@ export interface NpgsqlValueGeneratorCache$instance extends INpgsqlValueGenerato
 export type NpgsqlValueGeneratorCache = NpgsqlValueGeneratorCache$instance & __NpgsqlValueGeneratorCache$views;
 
 
-export abstract class NpgsqlValueGeneratorSelector$protected {
-    protected FindForType(property: IProperty, typeBase: ITypeBase, clrType: Type): ValueGenerator | undefined;
-}
+export interface NpgsqlValueGeneratorSelector$instance extends RelationalValueGeneratorSelector {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_ValueGeneration_IValueGeneratorSelector: never;
 
-
-export interface NpgsqlValueGeneratorSelector$instance extends NpgsqlValueGeneratorSelector$protected, RelationalValueGeneratorSelector {
     readonly Cache: INpgsqlValueGeneratorCache;
+    FindForType(property: IProperty, typeBase: ITypeBase, clrType: Type): ValueGenerator | undefined;
     TrySelect(property: IProperty, typeBase: ITypeBase, valueGenerator: ValueGenerator): boolean;
 }
 

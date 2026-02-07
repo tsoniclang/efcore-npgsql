@@ -13,6 +13,8 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
 
 export interface NpgsqlNullNameTranslator$instance {
+    readonly __tsonic_iface_Npgsql_INpgsqlNameTranslator: never;
+
     TranslateMemberName(clrName: string): string;
     TranslateTypeName(clrName: string): string;
 }
@@ -33,6 +35,8 @@ export type NpgsqlNullNameTranslator = NpgsqlNullNameTranslator$instance & __Npg
 
 
 export interface NpgsqlSnakeCaseNameTranslator$instance {
+    readonly __tsonic_iface_Npgsql_INpgsqlNameTranslator: never;
+
     TranslateMemberName(clrName: string): string;
     TranslateTypeName(clrName: string): string;
 }

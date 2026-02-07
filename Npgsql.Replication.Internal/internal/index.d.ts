@@ -22,8 +22,7 @@ export interface LogicalReplicationSlot$instance extends ReplicationSlot {
 }
 
 
-export const LogicalReplicationSlot: {
-    new(outputPlugin: string, replicationSlotOptions: ReplicationSlotOptions): LogicalReplicationSlot;
+export const LogicalReplicationSlot: (abstract new(outputPlugin: string, replicationSlotOptions: ReplicationSlotOptions) => LogicalReplicationSlot) & {
 };
 
 
