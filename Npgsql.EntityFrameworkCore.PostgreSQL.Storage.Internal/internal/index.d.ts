@@ -13,27 +13,27 @@ import type { INpgsqlSingletonOptions, NpgsqlOptionsExtension } from "../../Npgs
 import type { INpgsqlDataSourceConfigurationPlugin } from "../../Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure/internal/index.js";
 import type { NpgsqlEStringTypeMapping } from "../../Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping/internal/index.js";
 import type { NpgsqlConnection, NpgsqlDataSource } from "../../Npgsql/internal/index.js";
-import type { ConcurrentDictionary } from "@tsonic/dotnet/System.Collections.Concurrent.js";
-import type { IEnumerable } from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { DbConnection, DbDataSource } from "@tsonic/dotnet/System.Data.Common.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Exception, Func, IAsyncDisposable, IDisposable, Int32, IServiceProvider, Nullable, Object as ClrObject, String as ClrString, TimeSpan, Type, Void } from "@tsonic/dotnet/System.js";
-import type { StringBuilder } from "@tsonic/dotnet/System.Text.js";
-import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
-import type { Task, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
-import type { Transaction } from "@tsonic/dotnet/System.Transactions.js";
-import * as Microsoft_EntityFrameworkCore_Infrastructure_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure.js";
-import type { IDbContextOptions, IResettableService } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure.js";
-import type { DbContext } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.js";
-import type { IModel, IProperty } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js";
-import * as Microsoft_EntityFrameworkCore_Storage_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
-import type { CoreTypeMapping, ExecutionResult, ExecutionStrategyDependencies, IDatabaseCreator, IDbContextTransactionManager, IExecutionStrategy, IExecutionStrategyFactory, IRawSqlCommandBuilder, IRelationalConnection, IRelationalDatabaseCreator, IRelationalTransactionManager, IRelationalTypeMappingSource, ISqlGenerationHelper, ITransactionEnlistmentManager, ITypeMappingSource, RelationalConnection, RelationalConnectionDependencies, RelationalDatabaseCreator, RelationalDatabaseCreatorDependencies, RelationalExecutionStrategyFactory, RelationalSqlGenerationHelper, RelationalSqlGenerationHelperDependencies, RelationalTypeMapping, RelationalTypeMappingInfo, RelationalTypeMappingSource, RelationalTypeMappingSourceDependencies, TypeMappingSourceDependencies } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
+import type { ConcurrentDictionary_2 } from "@tsonic/dotnet/System.Collections.Concurrent/internal/index.js";
+import type { IEnumerable_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { DbConnection, DbDataSource } from "@tsonic/dotnet/System.Data.Common/internal/index.js";
+import type { StringBuilder } from "@tsonic/dotnet/System.Text/internal/index.js";
+import type { Task, Task_1, ValueTask, ValueTask_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal/index.js";
+import type { Transaction } from "@tsonic/dotnet/System.Transactions/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Exception, Func_3, Func_4, IAsyncDisposable, IDisposable, Int32, IServiceProvider, Nullable_1, Object as ClrObject, String as ClrString, TimeSpan, Type, Void } from "@tsonic/dotnet/System/internal/index.js";
+import * as Microsoft_EntityFrameworkCore_Infrastructure_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure/internal/index.js";
+import type { IDbContextOptions, IResettableService } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure/internal/index.js";
+import type { IModel, IProperty } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata/internal/index.js";
+import * as Microsoft_EntityFrameworkCore_Storage_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage/internal/index.js";
+import type { CoreTypeMapping, ExecutionResult_1, ExecutionStrategyDependencies, IDatabaseCreator, IDbContextTransactionManager, IExecutionStrategy, IExecutionStrategyFactory, IRawSqlCommandBuilder, IRelationalConnection, IRelationalDatabaseCreator, IRelationalTransactionManager, IRelationalTypeMappingSource, ISqlGenerationHelper, ITransactionEnlistmentManager, ITypeMappingSource, RelationalConnection, RelationalConnectionDependencies, RelationalDatabaseCreator, RelationalDatabaseCreatorDependencies, RelationalExecutionStrategyFactory, RelationalSqlGenerationHelper, RelationalSqlGenerationHelperDependencies, RelationalTypeMapping, RelationalTypeMappingInfo, RelationalTypeMappingSource, RelationalTypeMappingSourceDependencies, TypeMappingSourceDependencies } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage/internal/index.js";
+import type { DbContext } from "@tsonic/efcore/Microsoft.EntityFrameworkCore/internal/index.js";
 
 export interface INpgsqlRelationalConnection$instance extends IRelationalConnection, IRelationalTransactionManager, IDbContextTransactionManager, IResettableService, IDisposable, IAsyncDisposable {
     readonly __tsonic_iface_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_INpgsqlRelationalConnection: never;
 
     readonly DataSource: DbDataSource | undefined;
-    CloneWith(connectionString: string, async: boolean, cancellationToken?: CancellationToken): ValueTask<INpgsqlRelationalConnection>;
+    CloneWith(connectionString: string, async: boolean, cancellationToken?: CancellationToken): ValueTask_1<INpgsqlRelationalConnection>;
     CreateAdminConnection(): INpgsqlRelationalConnection;
 }
 
@@ -55,9 +55,9 @@ export interface NpgsqlDatabaseCreator$instance extends RelationalDatabaseCreato
     Delete(): void;
     DeleteAsync(cancellationToken?: CancellationToken): Task;
     Exists(): boolean;
-    ExistsAsync(cancellationToken?: CancellationToken): Task<System_Internal.Boolean>;
+    ExistsAsync(cancellationToken?: CancellationToken): Task_1<System_Internal.Boolean>;
     HasTables(): boolean;
-    HasTablesAsync(cancellationToken?: CancellationToken): Task<System_Internal.Boolean>;
+    HasTablesAsync(cancellationToken?: CancellationToken): Task_1<System_Internal.Boolean>;
 }
 
 
@@ -80,7 +80,7 @@ export interface NpgsqlDataSourceManager$instance {
 
 
 export const NpgsqlDataSourceManager: {
-    new(plugins: IEnumerable<INpgsqlDataSourceConfigurationPlugin>): NpgsqlDataSourceManager;
+    new(plugins: IEnumerable_1<INpgsqlDataSourceConfigurationPlugin>): NpgsqlDataSourceManager;
 };
 
 
@@ -90,8 +90,8 @@ export interface NpgsqlExecutionStrategy$instance {
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Storage_IExecutionStrategy: never;
 
     readonly RetriesOnFailure: boolean;
-    Execute<TState, TResult>(state: TState, operation: Func<DbContext, TState, TResult>, verifySucceeded: Func<DbContext, TState, ExecutionResult<TResult>>): TResult;
-    ExecuteAsync<TState, TResult>(state: TState, operation: Func<DbContext, TState, CancellationToken, Task<TResult>>, verifySucceeded: Func<DbContext, TState, CancellationToken, Task<ExecutionResult<TResult>>>, cancellationToken: CancellationToken): Task<TResult>;
+    Execute<TState, TResult>(state: TState, operation: Func_3<DbContext, TState, TResult>, verifySucceeded: Func_3<DbContext, TState, ExecutionResult_1<TResult>>): TResult;
+    ExecuteAsync<TState, TResult>(state: TState, operation: Func_4<DbContext, TState, CancellationToken, Task_1<TResult>>, verifySucceeded: Func_4<DbContext, TState, CancellationToken, Task_1<ExecutionResult_1<TResult>>>, cancellationToken: CancellationToken): Task_1<TResult>;
 }
 
 
@@ -135,7 +135,7 @@ export interface NpgsqlRelationalConnection$instance extends RelationalConnectio
     get DbDataSource(): DbDataSource | undefined;
     set DbDataSource(value: DbDataSource | undefined);
     readonly SupportsAmbientTransactions: boolean;
-    CloneWith(connectionString: string, async: boolean, cancellationToken?: CancellationToken): ValueTask<INpgsqlRelationalConnection>;
+    CloneWith(connectionString: string, async: boolean, cancellationToken?: CancellationToken): ValueTask_1<INpgsqlRelationalConnection>;
     CreateAdminConnection(): INpgsqlRelationalConnection;
     CreateDbConnection(): DbConnection;
 }
@@ -187,8 +187,8 @@ export interface NpgsqlTypeMappingSource$instance extends RelationalTypeMappingS
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Storage_ITypeMappingSource: never;
 
     readonly EStringTypeMapping: NpgsqlEStringTypeMapping;
-    readonly ClrTypeMappings: ConcurrentDictionary<Type, RelationalTypeMapping>;
-    readonly StoreTypeMappings: ConcurrentDictionary<System_Internal.String, RelationalTypeMapping[]>;
+    readonly ClrTypeMappings: ConcurrentDictionary_2<Type, RelationalTypeMapping>;
+    readonly StoreTypeMappings: ConcurrentDictionary_2<System_Internal.String, RelationalTypeMapping[]>;
     FindBaseMapping(mappingInfo: RelationalTypeMappingInfo): RelationalTypeMapping | undefined;
     FindCollectionMapping(info: RelationalTypeMappingInfo, modelType: Type, providerType: Type, elementMapping: CoreTypeMapping): RelationalTypeMapping | undefined;
     FindCollectionMapping(storeType: string, modelClrType: Type, providerClrType: Type, elementMapping: CoreTypeMapping): RelationalTypeMapping | undefined;
@@ -198,7 +198,7 @@ export interface NpgsqlTypeMappingSource$instance extends RelationalTypeMappingS
     FindMapping(property: IProperty): RelationalTypeMapping | undefined;
     FindRowValueMapping(mappingInfo: RelationalTypeMappingInfo): RelationalTypeMapping | undefined;
     FindUserRangeMapping(mappingInfo: RelationalTypeMappingInfo): RelationalTypeMapping | undefined;
-    ParseStoreTypeName(storeTypeName: string, unicode: Nullable<System_Internal.Boolean>, size: Nullable<System_Internal.Int32>, precision: Nullable<System_Internal.Int32>, scale: Nullable<System_Internal.Int32>): string | undefined;
+    ParseStoreTypeName(storeTypeName: string, unicode: Nullable_1<System_Internal.Boolean>, size: Nullable_1<System_Internal.Int32>, precision: Nullable_1<System_Internal.Int32>, scale: Nullable_1<System_Internal.Int32>): string | undefined;
 }
 
 

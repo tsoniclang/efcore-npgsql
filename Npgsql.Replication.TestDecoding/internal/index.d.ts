@@ -11,8 +11,8 @@ import type { LogicalReplicationSlot } from "../../Npgsql.Replication.Internal/i
 import * as Npgsql_Replication_Internal from "../../Npgsql.Replication/internal/index.js";
 import type { ReplicationMessage, ReplicationSlotOptions } from "../../Npgsql.Replication/internal/index.js";
 import type { NpgsqlLogSequenceNumber } from "../../NpgsqlTypes/internal/index.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, DateTime, IEquatable, Int32, Nullable, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, DateTime, IEquatable_1, Int32, Nullable_1, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface TestDecodingData$instance extends ReplicationMessage {
     Data: string;
@@ -31,13 +31,13 @@ export type TestDecodingData = TestDecodingData$instance;
 export interface TestDecodingOptions$instance {
     readonly __tsonic_iface_System_IEquatable_1: never;
 
-    readonly ForceBinary: Nullable<System_Internal.Boolean>;
-    readonly IncludeRewrites: Nullable<System_Internal.Boolean>;
-    readonly IncludeTimestamp: Nullable<System_Internal.Boolean>;
-    readonly IncludeXids: Nullable<System_Internal.Boolean>;
-    readonly OnlyLocal: Nullable<System_Internal.Boolean>;
-    readonly SkipEmptyXacts: Nullable<System_Internal.Boolean>;
-    readonly StreamChanges: Nullable<System_Internal.Boolean>;
+    readonly ForceBinary: Nullable_1<System_Internal.Boolean>;
+    readonly IncludeRewrites: Nullable_1<System_Internal.Boolean>;
+    readonly IncludeTimestamp: Nullable_1<System_Internal.Boolean>;
+    readonly IncludeXids: Nullable_1<System_Internal.Boolean>;
+    readonly OnlyLocal: Nullable_1<System_Internal.Boolean>;
+    readonly SkipEmptyXacts: Nullable_1<System_Internal.Boolean>;
+    readonly StreamChanges: Nullable_1<System_Internal.Boolean>;
     Equals(other: TestDecodingOptions): boolean;
     Equals(obj: unknown): boolean;
     GetHashCode(): int;
@@ -45,7 +45,7 @@ export interface TestDecodingOptions$instance {
 
 
 export const TestDecodingOptions: {
-    new(includeXids: Nullable<System_Internal.Boolean>, includeTimestamp: Nullable<System_Internal.Boolean>, forceBinary: Nullable<System_Internal.Boolean>, skipEmptyXacts: Nullable<System_Internal.Boolean>, onlyLocal: Nullable<System_Internal.Boolean>, includeRewrites: Nullable<System_Internal.Boolean>, streamChanges: Nullable<System_Internal.Boolean>): TestDecodingOptions;
+    new(includeXids: Nullable_1<System_Internal.Boolean>, includeTimestamp: Nullable_1<System_Internal.Boolean>, forceBinary: Nullable_1<System_Internal.Boolean>, skipEmptyXacts: Nullable_1<System_Internal.Boolean>, onlyLocal: Nullable_1<System_Internal.Boolean>, includeRewrites: Nullable_1<System_Internal.Boolean>, streamChanges: Nullable_1<System_Internal.Boolean>): TestDecodingOptions;
 };
 
 

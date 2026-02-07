@@ -10,10 +10,10 @@ import type { ReplicationTuple } from "../../Npgsql.Replication.PgOutput/interna
 import * as Npgsql_Replication_Internal from "../../Npgsql.Replication/internal/index.js";
 import type { ReplicationMessage } from "../../Npgsql.Replication/internal/index.js";
 import type { NpgsqlLogSequenceNumber } from "../../NpgsqlTypes/internal/index.js";
-import type { IReadOnlyList } from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { Stream } from "@tsonic/dotnet/System.IO.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Byte, DateTime, Enum, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable, Nullable, String as ClrString, UInt32, ValueType } from "@tsonic/dotnet/System.js";
+import type { IReadOnlyList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { Stream } from "@tsonic/dotnet/System.IO/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Byte, DateTime, Enum, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable, Nullable_1, String as ClrString, UInt32, ValueType } from "@tsonic/dotnet/System/internal/index.js";
 
 export enum CommitMessage_CommitFlags {
     None = 0
@@ -306,7 +306,7 @@ export const PrepareMessageBase: {
 export type PrepareMessageBase = PrepareMessageBase$instance;
 
 export interface RelationMessage$instance extends TransactionalMessage {
-    readonly Columns: IReadOnlyList<RelationMessage_Column>;
+    readonly Columns: IReadOnlyList_1<RelationMessage_Column>;
     Namespace: string;
     RelationId: uint;
     RelationName: string;
@@ -393,7 +393,7 @@ export const StreamStopMessage: {
 export type StreamStopMessage = StreamStopMessage$instance;
 
 export interface TransactionalMessage$instance extends PgOutputReplicationMessage {
-    TransactionXid: Nullable<System_Internal.UInt32>;
+    TransactionXid: Nullable_1<System_Internal.UInt32>;
 }
 
 
@@ -416,7 +416,7 @@ export type TransactionControlMessage = TransactionControlMessage$instance;
 
 export interface TruncateMessage$instance extends TransactionalMessage {
     Options: TruncateMessage_TruncateOptions;
-    Relations: IReadOnlyList<RelationMessage>;
+    Relations: IReadOnlyList_1<RelationMessage>;
 }
 
 

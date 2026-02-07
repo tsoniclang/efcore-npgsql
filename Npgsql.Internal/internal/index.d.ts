@@ -14,17 +14,17 @@ import type { PostgresType } from "../../Npgsql.PostgresTypes/internal/index.js"
 import type { NpgsqlTimeout } from "../../Npgsql.Util/internal/index.js";
 import type { ArrayNullabilityMode, INpgsqlNameTranslator, NpgsqlBatch, NpgsqlCommand, NpgsqlConnectionStringBuilder } from "../../Npgsql/internal/index.js";
 import type { NpgsqlRange_1 } from "../../NpgsqlTypes/internal/index.js";
-import type { ReadOnlySequence } from "@tsonic/dotnet/System.Buffers.js";
-import type { IEnumerable, IReadOnlyList, List } from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { DbType } from "@tsonic/dotnet/System.Data.js";
-import type { Stream, TextReader } from "@tsonic/dotnet/System.IO.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { ArgumentOutOfRangeException, AsyncCallback, Boolean as ClrBoolean, Byte, Char, Double, Enum, Func, IAsyncDisposable, IAsyncResult, ICloneable, IComparable, IConvertible, IDisposable, IEquatable, IFormattable, Int16, Int32, Int64, IntPtr, ISpanFormattable, Memory, MulticastDelegate, Nullable, Object as ClrObject, ReadOnlyMemory, ReadOnlySpan, Single, Span, String as ClrString, TimeSpan, Type, UInt16, UInt32, UInt64, ValueType, Version, Void } from "@tsonic/dotnet/System.js";
-import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { Encoding } from "@tsonic/dotnet/System.Text.js";
-import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
-import type { Task, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
+import type { ReadOnlySequence_1 } from "@tsonic/dotnet/System.Buffers/internal/index.js";
+import type { IEnumerable_1, IReadOnlyList_1, List_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { DbType } from "@tsonic/dotnet/System.Data/internal/index.js";
+import type { Stream, TextReader } from "@tsonic/dotnet/System.IO/internal/index.js";
+import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import type { Encoding } from "@tsonic/dotnet/System.Text/internal/index.js";
+import type { Task_1, ValueTask, ValueTask_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { ArgumentOutOfRangeException, AsyncCallback, Boolean as ClrBoolean, Byte, Char, Double, Enum, Func_1, Func_2, IAsyncDisposable, IAsyncResult, ICloneable, IComparable, IConvertible, IDisposable, IEquatable_1, IFormattable, Int16, Int32, Int64, IntPtr, ISpanFormattable, Memory_1, MulticastDelegate, Nullable_1, Object as ClrObject, ReadOnlyMemory_1, ReadOnlySpan_1, Single, Span_1, String as ClrString, TimeSpan, Type, UInt16, UInt32, UInt64, ValueType, Version, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export enum DataFormat {
     Binary = 0,
@@ -53,7 +53,7 @@ export interface IDbTypeResolver$instance {
     readonly __tsonic_iface_Npgsql_Internal_IDbTypeResolver: never;
 
     GetDataTypeName(dbType: DbType, type: Type): string | undefined;
-    GetDbType(dataTypeName: DataTypeName): Nullable<DbType>;
+    GetDbType(dataTypeName: DataTypeName): Nullable_1<DbType>;
 }
 
 
@@ -62,7 +62,7 @@ export type IDbTypeResolver = IDbTypeResolver$instance;
 export interface INpgsqlDatabaseInfoFactory$instance {
     readonly __tsonic_iface_Npgsql_Internal_INpgsqlDatabaseInfoFactory: never;
 
-    Load(conn: NpgsqlConnector, timeout: NpgsqlTimeout, async: boolean): Task<NpgsqlDatabaseInfo | undefined>;
+    Load(conn: NpgsqlConnector, timeout: NpgsqlTimeout, async: boolean): Task_1<NpgsqlDatabaseInfo | undefined>;
 }
 
 
@@ -71,7 +71,7 @@ export type INpgsqlDatabaseInfoFactory = INpgsqlDatabaseInfoFactory$instance;
 export interface IPgTypeInfoResolver$instance {
     readonly __tsonic_iface_Npgsql_Internal_IPgTypeInfoResolver: never;
 
-    GetTypeInfo(type: Type, dataTypeName: Nullable<DataTypeName>, options: PgSerializerOptions): PgTypeInfo | undefined;
+    GetTypeInfo(type: Type, dataTypeName: Nullable_1<DataTypeName>, options: PgSerializerOptions): PgTypeInfo | undefined;
 }
 
 
@@ -190,8 +190,8 @@ export interface TypeInfoMapping$instance {
     Factory: TypeInfoFactory;
     MatchRequirement: MatchRequirement;
     Type: Type;
-    get TypeMatchPredicate(): Func<Type | undefined, System_Internal.Boolean> | undefined;
-    set TypeMatchPredicate(value: Func<Type | undefined, System_Internal.Boolean> | undefined);
+    get TypeMatchPredicate(): Func_2<Type | undefined, System_Internal.Boolean> | undefined;
+    set TypeMatchPredicate(value: Func_2<Type | undefined, System_Internal.Boolean> | undefined);
     DataTypeNameEquals(dataTypeName: string): boolean;
     TypeEquals(type: Type): boolean;
 }
@@ -235,7 +235,7 @@ export interface DynamicTypeInfoResolver$instance {
     readonly __tsonic_iface_Npgsql_Internal_IPgTypeInfoResolver: never;
 
     GetMappings(type: Type, dataTypeName: DataTypeName, options: PgSerializerOptions): unknown | undefined;
-    GetTypeInfo(type: Type, dataTypeName: Nullable<DataTypeName>, options: PgSerializerOptions): PgTypeInfo | undefined;
+    GetTypeInfo(type: Type, dataTypeName: Nullable_1<DataTypeName>, options: PgSerializerOptions): PgTypeInfo | undefined;
 }
 
 
@@ -243,7 +243,7 @@ export const DynamicTypeInfoResolver: (abstract new() => DynamicTypeInfoResolver
     CreateCollection(baseCollection?: TypeInfoMappingCollection): unknown;
     IsArrayDataTypeName(dataTypeName: DataTypeName, options: PgSerializerOptions, elementDataTypeName: DataTypeName): boolean;
     IsArrayLikeType(type: Type, elementType: Type): boolean;
-    IsTypeOrNullableOfType(type: Type, predicate: Func<Type, System_Internal.Boolean>, matchedType: Type): boolean;
+    IsTypeOrNullableOfType(type: Type, predicate: Func_2<Type, System_Internal.Boolean>, matchedType: Type): boolean;
 };
 
 
@@ -290,7 +290,7 @@ export interface NpgsqlDatabaseInfo$instance {
     readonly Version: Version;
     GetPostgresType(oid: uint): PostgresType;
     GetPostgresType(pgName: string): PostgresType;
-    GetTypes(): IEnumerable<PostgresType>;
+    GetTypes(): IEnumerable_1<PostgresType>;
     TryGetPostgresTypeByName(pgName: string, pgType: PostgresType): boolean;
 }
 
@@ -306,8 +306,8 @@ export type NpgsqlDatabaseInfo = NpgsqlDatabaseInfo$instance;
 export interface PgBufferedConverter_1$instance<T> extends PgConverter_1<T> {
     GetSize(context: SizeContext, value: T, writeState: unknown): Size;
     Read(reader: PgReader): T;
-    ReadAsync(reader: PgReader, cancellationToken?: CancellationToken): ValueTask<T>;
-    ReadAsync(reader: PgReader, cancellationToken?: CancellationToken): ValueTask<T>;
+    ReadAsync(reader: PgReader, cancellationToken?: CancellationToken): ValueTask_1<T>;
+    ReadAsync(reader: PgReader, cancellationToken?: CancellationToken): ValueTask_1<T>;
     ReadCore(reader: PgReader): T;
     Write(writer: PgWriter, value: T): void;
     WriteAsync(writer: PgWriter, value: T, cancellationToken?: CancellationToken): ValueTask;
@@ -338,7 +338,7 @@ export interface PgConverter_1$instance<T> extends PgConverter {
     IsDbNull(value: T, writeState: unknown): boolean;
     IsDbNullValue(value: T, writeState: unknown): boolean;
     Read(reader: PgReader): T;
-    ReadAsync(reader: PgReader, cancellationToken?: CancellationToken): ValueTask<T>;
+    ReadAsync(reader: PgReader, cancellationToken?: CancellationToken): ValueTask_1<T>;
     Write(writer: PgWriter, value: T): void;
     WriteAsync(writer: PgWriter, value: T, cancellationToken?: CancellationToken): ValueTask;
 }
@@ -352,7 +352,7 @@ export type PgConverter_1<T> = PgConverter_1$instance<T>;
 
 export interface PgConverterResolver$instance {
     Get(field: Field): PgConverterResolution;
-    GetDefault(pgTypeId: Nullable<PgTypeId>): PgConverterResolution;
+    GetDefault(pgTypeId: Nullable_1<PgTypeId>): PgConverterResolution;
 }
 
 
@@ -363,7 +363,7 @@ export const PgConverterResolver: {
 export type PgConverterResolver = PgConverterResolver$instance;
 
 export interface PgConverterResolver_1$instance<T> extends PgConverterResolver {
-    Get(value: T, expectedPgTypeId: Nullable<PgTypeId>): Nullable<PgConverterResolution>;
+    Get(value: T, expectedPgTypeId: Nullable_1<PgTypeId>): Nullable_1<PgConverterResolution>;
     Get(field: Field): PgConverterResolution;
 }
 
@@ -379,37 +379,37 @@ export interface PgReader$instance {
     readonly CurrentRemaining: int;
     readonly IsResumed: boolean;
     BeginNestedRead(size: int, bufferRequirement: Size): NestedReadScope;
-    BeginNestedReadAsync(size: int, bufferRequirement: Size, cancellationToken?: CancellationToken): ValueTask<NestedReadScope>;
+    BeginNestedReadAsync(size: int, bufferRequirement: Size, cancellationToken?: CancellationToken): ValueTask_1<NestedReadScope>;
     Buffer(bufferRequirement: Size): void;
     Buffer(byteCount: int): void;
     BufferAsync(bufferRequirement: Size, cancellationToken: CancellationToken): ValueTask;
     BufferAsync(byteCount: int, cancellationToken: CancellationToken): ValueTask;
-    Consume(count?: Nullable<System_Internal.Int32>): void;
-    ConsumeAsync(count?: Nullable<System_Internal.Int32>, cancellationToken?: CancellationToken): ValueTask;
-    GetStream(length?: Nullable<System_Internal.Int32>): Stream;
+    Consume(count?: Nullable_1<System_Internal.Int32>): void;
+    ConsumeAsync(count?: Nullable_1<System_Internal.Int32>, cancellationToken?: CancellationToken): ValueTask;
+    GetStream(length?: Nullable_1<System_Internal.Int32>): Stream;
     GetTextReader(encoding: Encoding): TextReader;
-    GetTextReaderAsync(encoding: Encoding, cancellationToken: CancellationToken): ValueTask<TextReader>;
-    Read(destination: Span<System_Internal.Byte>): void;
+    GetTextReaderAsync(encoding: Encoding, cancellationToken: CancellationToken): ValueTask_1<TextReader>;
+    Read(destination: Span_1<System_Internal.Byte>): void;
     ReadByte(): byte;
-    ReadBytes(buffer: Span<System_Internal.Byte>): void;
-    ReadBytes(count: int): ReadOnlySequence<System_Internal.Byte>;
-    ReadBytesAsync(buffer: Memory<System_Internal.Byte>, cancellationToken?: CancellationToken): ValueTask;
-    ReadBytesAsync(count: int, cancellationToken?: CancellationToken): ValueTask<ReadOnlySequence<System_Internal.Byte>>;
+    ReadBytes(buffer: Span_1<System_Internal.Byte>): void;
+    ReadBytes(count: int): ReadOnlySequence_1<System_Internal.Byte>;
+    ReadBytesAsync(buffer: Memory_1<System_Internal.Byte>, cancellationToken?: CancellationToken): ValueTask;
+    ReadBytesAsync(count: int, cancellationToken?: CancellationToken): ValueTask_1<ReadOnlySequence_1<System_Internal.Byte>>;
     ReadDouble(): double;
     ReadFloat(): float;
     ReadInt16(): short;
     ReadInt32(): int;
     ReadInt64(): long;
     ReadNullTerminatedString(encoding: Encoding): string;
-    ReadNullTerminatedStringAsync(encoding: Encoding, cancellationToken?: CancellationToken): ValueTask<System_Internal.String>;
+    ReadNullTerminatedStringAsync(encoding: Encoding, cancellationToken?: CancellationToken): ValueTask_1<System_Internal.String>;
     ReadUInt16(): ushort;
     ReadUInt32(): uint;
     ReadUInt64(): ulong;
     Rewind(count: int): void;
     ShouldBuffer(bufferRequirement: Size): boolean;
     ShouldBuffer(byteCount: int): boolean;
-    TryReadBytes(count: int, bytes: ReadOnlySpan<System_Internal.Byte>): boolean;
-    TryReadBytes(count: int, bytes: ReadOnlyMemory<System_Internal.Byte>): boolean;
+    TryReadBytes(count: int, bytes: ReadOnlySpan_1<System_Internal.Byte>): boolean;
+    TryReadBytes(count: int, bytes: ReadOnlyMemory_1<System_Internal.Byte>): boolean;
 }
 
 
@@ -421,16 +421,16 @@ export type PgReader = PgReader$instance;
 
 export interface PgResolverTypeInfo$instance extends PgTypeInfo {
     GetConverterResolver(): PgConverterResolver;
-    GetDefaultResolution(expectedPgTypeId: Nullable<PgTypeId>): PgConverterResolution;
-    GetResolution<T>(value: T, expectedPgTypeId: Nullable<PgTypeId>): Nullable<PgConverterResolution>;
+    GetDefaultResolution(expectedPgTypeId: Nullable_1<PgTypeId>): PgConverterResolution;
+    GetResolution<T>(value: T, expectedPgTypeId: Nullable_1<PgTypeId>): Nullable_1<PgConverterResolution>;
     GetResolution(field: Field): PgConverterResolution;
     GetResolution<T>(value: T): PgConverterResolution;
-    GetResolutionAsObject(value: unknown, expectedPgTypeId: Nullable<PgTypeId>): Nullable<PgConverterResolution>;
+    GetResolutionAsObject(value: unknown, expectedPgTypeId: Nullable_1<PgTypeId>): Nullable_1<PgConverterResolution>;
 }
 
 
 export const PgResolverTypeInfo: {
-    new(options: PgSerializerOptions, converterResolver: PgConverterResolver, pgTypeId: Nullable<PgTypeId>, unboxedType: Type): PgResolverTypeInfo;
+    new(options: PgSerializerOptions, converterResolver: PgConverterResolver, pgTypeId: Nullable_1<PgTypeId>, unboxedType: Type): PgResolverTypeInfo;
 };
 
 
@@ -477,12 +477,12 @@ export type PgStreamingConverter_1<T> = PgStreamingConverter_1$instance<T>;
 
 export interface PgTypeInfo$instance {
     readonly Options: PgSerializerOptions;
-    readonly PgTypeId: Nullable<PgTypeId>;
-    PreferredFormat: Nullable<DataFormat>;
+    readonly PgTypeId: Nullable_1<PgTypeId>;
+    PreferredFormat: Nullable_1<DataFormat>;
     SupportsReading: boolean;
     SupportsWriting: boolean;
     readonly Type: Type;
-    GetBufferRequirements(converter: PgConverter, format: DataFormat): Nullable<BufferRequirements>;
+    GetBufferRequirements(converter: PgConverter, format: DataFormat): Nullable_1<BufferRequirements>;
     GetObjectResolution(value: unknown): PgConverterResolution;
     GetResolution<T>(value: T): PgConverterResolution;
 }
@@ -514,7 +514,7 @@ export type PgTypeInfoResolverFactory = PgTypeInfoResolverFactory$instance;
 export interface PgWriter$instance {
     readonly Current: ValueMetadata;
     BeginNestedWrite(bufferRequirement: Size, byteCount: int, state: unknown): NestedWriteScope;
-    BeginNestedWriteAsync(bufferRequirement: Size, byteCount: int, state: unknown, cancellationToken?: CancellationToken): ValueTask<NestedWriteScope>;
+    BeginNestedWriteAsync(bufferRequirement: Size, byteCount: int, state: unknown, cancellationToken?: CancellationToken): ValueTask_1<NestedWriteScope>;
     Flush(timeout?: TimeSpan): void;
     FlushAsync(cancellationToken?: CancellationToken): ValueTask;
     GetStream(allowMixedIO?: boolean): Stream;
@@ -522,10 +522,10 @@ export interface PgWriter$instance {
     ShouldFlush(byteCount: int): boolean;
     WriteAsOid(pgTypeId: PgTypeId): void;
     WriteByte(value: byte): void;
-    WriteBytes(buffer: ReadOnlySpan<System_Internal.Byte>): void;
-    WriteBytesAsync(buffer: ReadOnlyMemory<System_Internal.Byte>, cancellationToken?: CancellationToken): ValueTask;
-    WriteChars(data: ReadOnlySpan<System_Internal.Char>, encoding: Encoding): void;
-    WriteCharsAsync(data: ReadOnlyMemory<System_Internal.Char>, encoding: Encoding, cancellationToken?: CancellationToken): ValueTask;
+    WriteBytes(buffer: ReadOnlySpan_1<System_Internal.Byte>): void;
+    WriteBytesAsync(buffer: ReadOnlyMemory_1<System_Internal.Byte>, cancellationToken?: CancellationToken): ValueTask;
+    WriteChars(data: ReadOnlySpan_1<System_Internal.Char>, encoding: Encoding): void;
+    WriteCharsAsync(data: ReadOnlyMemory_1<System_Internal.Char>, encoding: Encoding, cancellationToken?: CancellationToken): ValueTask;
     WriteDouble(value: double): void;
     WriteFloat(value: float): void;
     WriteInt16(value: short): void;
@@ -544,14 +544,14 @@ export const PgWriter: {
 export type PgWriter = PgWriter$instance;
 
 export interface TypeInfoMappingCollection$instance {
-    readonly Items: IReadOnlyList<TypeInfoMapping>;
+    readonly Items: IReadOnlyList_1<TypeInfoMapping>;
     Add(mapping: TypeInfoMapping): void;
     AddArrayType<TElement>(elementDataTypeName: string): void;
     AddArrayType<TElement>(elementDataTypeName: string, suppressObjectMapping: boolean): void;
     AddArrayType<TElement>(elementMapping: TypeInfoMapping): void;
     AddArrayType<TElement>(elementMapping: TypeInfoMapping, suppressObjectMapping: boolean): void;
-    AddPolymorphicResolverArrayType(elementDataTypeName: string, elementToArrayConverterFactory: Func<PgSerializerOptions, Func<PgConverterResolution, PgConverter>>): void;
-    AddPolymorphicResolverArrayType(elementMapping: TypeInfoMapping, elementToArrayConverterFactory: Func<PgSerializerOptions, Func<PgConverterResolution, PgConverter>>): void;
+    AddPolymorphicResolverArrayType(elementDataTypeName: string, elementToArrayConverterFactory: Func_2<PgSerializerOptions, Func_2<PgConverterResolution, PgConverter>>): void;
+    AddPolymorphicResolverArrayType(elementMapping: TypeInfoMapping, elementToArrayConverterFactory: Func_2<PgSerializerOptions, Func_2<PgConverterResolution, PgConverter>>): void;
     AddRange(collection: TypeInfoMappingCollection): void;
     AddResolverArrayType<TElement>(elementDataTypeName: string): void;
     AddResolverArrayType<TElement>(elementDataTypeName: string, suppressObjectMapping: boolean): void;
@@ -563,21 +563,21 @@ export interface TypeInfoMappingCollection$instance {
     AddResolverStructArrayType<TElement extends unknown>(elementMapping: TypeInfoMapping, nullableElementMapping: TypeInfoMapping, suppressObjectMapping: boolean): void;
     AddResolverStructType<T extends unknown>(dataTypeName: string, createInfo: TypeInfoFactory, isDefault?: boolean): void;
     AddResolverStructType<T extends unknown>(dataTypeName: string, createInfo: TypeInfoFactory, matchRequirement: MatchRequirement): void;
-    AddResolverStructType<T extends unknown>(dataTypeName: string, createInfo: TypeInfoFactory, configure: Func<TypeInfoMapping, TypeInfoMapping>): void;
+    AddResolverStructType<T extends unknown>(dataTypeName: string, createInfo: TypeInfoFactory, configure: Func_2<TypeInfoMapping, TypeInfoMapping>): void;
     AddResolverType<T>(dataTypeName: string, createInfo: TypeInfoFactory, isDefault?: boolean): void;
     AddResolverType<T>(dataTypeName: string, createInfo: TypeInfoFactory, matchRequirement: MatchRequirement): void;
-    AddResolverType<T>(dataTypeName: string, createInfo: TypeInfoFactory, configure: Func<TypeInfoMapping, TypeInfoMapping>): void;
+    AddResolverType<T>(dataTypeName: string, createInfo: TypeInfoFactory, configure: Func_2<TypeInfoMapping, TypeInfoMapping>): void;
     AddStructArrayType<TElement extends unknown>(elementDataTypeName: string): void;
     AddStructArrayType<TElement extends unknown>(elementDataTypeName: string, suppressObjectMapping: boolean): void;
     AddStructArrayType<TElement extends unknown>(elementMapping: TypeInfoMapping, nullableElementMapping: TypeInfoMapping): void;
     AddStructArrayType<TElement extends unknown>(elementMapping: TypeInfoMapping, nullableElementMapping: TypeInfoMapping, suppressObjectMapping: boolean): void;
     AddStructType<T extends unknown>(dataTypeName: string, createInfo: TypeInfoFactory, isDefault?: boolean): void;
     AddStructType<T extends unknown>(dataTypeName: string, createInfo: TypeInfoFactory, matchRequirement: MatchRequirement): void;
-    AddStructType<T extends unknown>(dataTypeName: string, createInfo: TypeInfoFactory, configure: Func<TypeInfoMapping, TypeInfoMapping>): void;
+    AddStructType<T extends unknown>(dataTypeName: string, createInfo: TypeInfoFactory, configure: Func_2<TypeInfoMapping, TypeInfoMapping>): void;
     AddType<T>(dataTypeName: string, createInfo: TypeInfoFactory, isDefault?: boolean): void;
     AddType<T>(dataTypeName: string, createInfo: TypeInfoFactory, matchRequirement: MatchRequirement): void;
-    AddType<T>(dataTypeName: string, createInfo: TypeInfoFactory, configure: Func<TypeInfoMapping, TypeInfoMapping>): void;
-    Find(type: Type, dataTypeName: Nullable<DataTypeName>, options: PgSerializerOptions): PgTypeInfo | undefined;
+    AddType<T>(dataTypeName: string, createInfo: TypeInfoFactory, configure: Func_2<TypeInfoMapping, TypeInfoMapping>): void;
+    Find(type: Type, dataTypeName: Nullable_1<DataTypeName>, options: PgSerializerOptions): PgTypeInfo | undefined;
 }
 
 
@@ -585,7 +585,7 @@ export const TypeInfoMappingCollection: {
     new(capacity: int): TypeInfoMappingCollection;
     new(): TypeInfoMappingCollection;
     new(baseCollection: TypeInfoMappingCollection): TypeInfoMappingCollection;
-    new(items: IEnumerable<TypeInfoMapping>): TypeInfoMappingCollection;
+    new(items: IEnumerable_1<TypeInfoMapping>): TypeInfoMappingCollection;
     IsArrayLikeType(type: Type, elementType: Type): boolean;
 };
 
@@ -594,8 +594,8 @@ export type TypeInfoMappingCollection = TypeInfoMappingCollection$instance;
 
 export abstract class PgConverterFactory$instance {
     static CreateArrayMultirangeConverter<T>(rangeConverter: PgConverter_1<T>, options: PgSerializerOptions): PgConverter_1<T[]>;
-    static CreateListMultirangeConverter<T>(rangeConverter: PgConverter_1<T>, options: PgSerializerOptions): PgConverter_1<List<T>>;
-    static CreatePolymorphicArrayConverter<TBase>(arrayConverterFactory: Func<PgConverter_1<TBase>>, nullableArrayConverterFactory: Func<PgConverter_1<TBase>>, options: PgSerializerOptions): PgConverter_1<TBase>;
+    static CreateListMultirangeConverter<T>(rangeConverter: PgConverter_1<T>, options: PgSerializerOptions): PgConverter_1<List_1<T>>;
+    static CreatePolymorphicArrayConverter<TBase>(arrayConverterFactory: Func_1<PgConverter_1<TBase>>, nullableArrayConverterFactory: Func_1<PgConverter_1<TBase>>, options: PgSerializerOptions): PgConverter_1<TBase>;
     static CreateRangeConverter<T>(subTypeConverter: PgConverter_1<T>, options: PgSerializerOptions): PgConverter_1<NpgsqlRange_1<T>>;
 }
 
@@ -603,9 +603,9 @@ export abstract class PgConverterFactory$instance {
 export type PgConverterFactory = PgConverterFactory$instance;
 
 export abstract class TypeInfoMappingHelpers$instance {
-    static CreateInfo(mapping: TypeInfoMapping, options: PgSerializerOptions, converter: PgConverter, preferredFormat?: Nullable<DataFormat>, supportsWriting?: boolean): PgTypeInfo;
+    static CreateInfo(mapping: TypeInfoMapping, options: PgSerializerOptions, converter: PgConverter, preferredFormat?: Nullable_1<DataFormat>, supportsWriting?: boolean): PgTypeInfo;
     static CreateInfo(mapping: TypeInfoMapping, options: PgSerializerOptions, converter: PgConverter): PgTypeInfo;
-    static CreateInfo(mapping: TypeInfoMapping, options: PgSerializerOptions, resolver: PgConverterResolver, includeDataTypeName: boolean, preferredFormat?: Nullable<DataFormat>, supportsWriting?: boolean): PgResolverTypeInfo;
+    static CreateInfo(mapping: TypeInfoMapping, options: PgSerializerOptions, resolver: PgConverterResolver, includeDataTypeName: boolean, preferredFormat?: Nullable_1<DataFormat>, supportsWriting?: boolean): PgResolverTypeInfo;
     static CreateInfo(mapping: TypeInfoMapping, options: PgSerializerOptions, resolver: PgConverterResolver, includeDataTypeName: boolean): PgResolverTypeInfo;
 }
 

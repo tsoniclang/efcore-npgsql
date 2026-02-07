@@ -6,13 +6,13 @@
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 // Import types from other namespaces
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Guid, String as ClrString } from "@tsonic/dotnet/System.js";
-import type { EntityEntry } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.ChangeTracking.js";
-import * as Microsoft_EntityFrameworkCore_ValueGeneration_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.ValueGeneration.js";
-import type { ValueGenerator } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.ValueGeneration.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Guid, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
+import type { EntityEntry } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.ChangeTracking/internal/index.js";
+import * as Microsoft_EntityFrameworkCore_ValueGeneration_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.ValueGeneration/internal/index.js";
+import type { ValueGenerator_1 } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.ValueGeneration/internal/index.js";
 
-export interface NpgsqlSequentialGuidValueGenerator$instance extends ValueGenerator<Guid> {
+export interface NpgsqlSequentialGuidValueGenerator$instance extends ValueGenerator_1<Guid> {
     readonly GeneratesTemporaryValues: boolean;
     Next(entry: EntityEntry): Guid;
 }
@@ -25,7 +25,7 @@ export const NpgsqlSequentialGuidValueGenerator: {
 
 export type NpgsqlSequentialGuidValueGenerator = NpgsqlSequentialGuidValueGenerator$instance;
 
-export interface NpgsqlSequentialStringValueGenerator$instance extends ValueGenerator<System_Internal.String> {
+export interface NpgsqlSequentialStringValueGenerator$instance extends ValueGenerator_1<System_Internal.String> {
     readonly GeneratesTemporaryValues: boolean;
     Next(entry: EntityEntry): string;
 }

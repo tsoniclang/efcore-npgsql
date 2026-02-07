@@ -11,13 +11,13 @@ import * as Npgsql_Replication_Internal_Internal from "../../Npgsql.Replication.
 import type { LogicalReplicationSlot } from "../../Npgsql.Replication.Internal/internal/index.js";
 import type { ReplicationSlotOptions } from "../../Npgsql.Replication/internal/index.js";
 import type { NpgsqlLogSequenceNumber } from "../../NpgsqlTypes/internal/index.js";
-import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { IAsyncEnumerable, IAsyncEnumerator, IEnumerable, List } from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { Stream, TextReader } from "@tsonic/dotnet/System.IO.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Byte, Enum, IComparable, IConvertible, IEquatable, IFormattable, Int32, ISpanFormattable, Nullable, Object as ClrObject, String as ClrString, Type, UInt16, UInt64 } from "@tsonic/dotnet/System.js";
-import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
-import type { ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
+import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { IAsyncEnumerable_1, IAsyncEnumerator_1, IEnumerable_1, List_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { Stream, TextReader } from "@tsonic/dotnet/System.IO/internal/index.js";
+import type { ValueTask_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Byte, Enum, IComparable, IConvertible, IEquatable_1, IFormattable, Int32, ISpanFormattable, Nullable_1, Object as ClrObject, String as ClrString, Type, UInt16, UInt64 } from "@tsonic/dotnet/System/internal/index.js";
 
 export enum PgOutputProtocolVersion {
     V1 = 1,
@@ -45,12 +45,12 @@ export enum TupleDataKind {
 export interface PgOutputReplicationOptions$instance {
     readonly __tsonic_iface_System_IEquatable_1: never;
 
-    readonly Binary: Nullable<System_Internal.Boolean>;
-    readonly Messages: Nullable<System_Internal.Boolean>;
+    readonly Binary: Nullable_1<System_Internal.Boolean>;
+    readonly Messages: Nullable_1<System_Internal.Boolean>;
     readonly ProtocolVersion: PgOutputProtocolVersion;
-    readonly PublicationNames: List<System_Internal.String>;
-    readonly StreamingMode: Nullable<PgOutputStreamingMode>;
-    readonly TwoPhase: Nullable<System_Internal.Boolean>;
+    readonly PublicationNames: List_1<System_Internal.String>;
+    readonly StreamingMode: Nullable_1<PgOutputStreamingMode>;
+    readonly TwoPhase: Nullable_1<System_Internal.Boolean>;
     Equals(other: PgOutputReplicationOptions): boolean;
     Equals(obj: unknown): boolean;
     GetHashCode(): int;
@@ -58,10 +58,10 @@ export interface PgOutputReplicationOptions$instance {
 
 
 export const PgOutputReplicationOptions: {
-    new(publicationName: string, protocolVersion: ulong, binary: Nullable<System_Internal.Boolean>, streaming: Nullable<System_Internal.Boolean>, messages: Nullable<System_Internal.Boolean>, twoPhase: Nullable<System_Internal.Boolean>): PgOutputReplicationOptions;
-    new(publicationName: string, protocolVersion: PgOutputProtocolVersion, binary: Nullable<System_Internal.Boolean>, streamingMode: Nullable<PgOutputStreamingMode>, messages: Nullable<System_Internal.Boolean>, twoPhase: Nullable<System_Internal.Boolean>): PgOutputReplicationOptions;
-    new(publicationNames: IEnumerable<System_Internal.String>, protocolVersion: ulong, binary: Nullable<System_Internal.Boolean>, streaming: Nullable<System_Internal.Boolean>, messages: Nullable<System_Internal.Boolean>, twoPhase: Nullable<System_Internal.Boolean>): PgOutputReplicationOptions;
-    new(publicationNames: IEnumerable<System_Internal.String>, protocolVersion: PgOutputProtocolVersion, binary: Nullable<System_Internal.Boolean>, streamingMode: Nullable<PgOutputStreamingMode>, messages: Nullable<System_Internal.Boolean>, twoPhase: Nullable<System_Internal.Boolean>): PgOutputReplicationOptions;
+    new(publicationName: string, protocolVersion: ulong, binary: Nullable_1<System_Internal.Boolean>, streaming: Nullable_1<System_Internal.Boolean>, messages: Nullable_1<System_Internal.Boolean>, twoPhase: Nullable_1<System_Internal.Boolean>): PgOutputReplicationOptions;
+    new(publicationName: string, protocolVersion: PgOutputProtocolVersion, binary: Nullable_1<System_Internal.Boolean>, streamingMode: Nullable_1<PgOutputStreamingMode>, messages: Nullable_1<System_Internal.Boolean>, twoPhase: Nullable_1<System_Internal.Boolean>): PgOutputReplicationOptions;
+    new(publicationNames: IEnumerable_1<System_Internal.String>, protocolVersion: ulong, binary: Nullable_1<System_Internal.Boolean>, streaming: Nullable_1<System_Internal.Boolean>, messages: Nullable_1<System_Internal.Boolean>, twoPhase: Nullable_1<System_Internal.Boolean>): PgOutputReplicationOptions;
+    new(publicationNames: IEnumerable_1<System_Internal.String>, protocolVersion: PgOutputProtocolVersion, binary: Nullable_1<System_Internal.Boolean>, streamingMode: Nullable_1<PgOutputStreamingMode>, messages: Nullable_1<System_Internal.Boolean>, twoPhase: Nullable_1<System_Internal.Boolean>): PgOutputReplicationOptions;
 };
 
 
@@ -83,7 +83,7 @@ export interface ReplicationTuple$instance {
     readonly __tsonic_iface_System_Collections_Generic_IAsyncEnumerable_1: never;
 
     NumColumns: ushort;
-    GetAsyncEnumerator(cancellationToken?: CancellationToken): IAsyncEnumerator<ReplicationValue>;
+    GetAsyncEnumerator(cancellationToken?: CancellationToken): IAsyncEnumerator_1<ReplicationValue>;
 }
 
 
@@ -98,8 +98,8 @@ export interface ReplicationValue$instance {
     readonly IsUnchangedToastedValue: boolean;
     Kind: TupleDataKind;
     Length: int;
-    Get<T>(cancellationToken?: CancellationToken): ValueTask<T>;
-    Get(cancellationToken?: CancellationToken): ValueTask<unknown>;
+    Get<T>(cancellationToken?: CancellationToken): ValueTask_1<T>;
+    Get(cancellationToken?: CancellationToken): ValueTask_1<unknown>;
     GetDataTypeName(): string;
     GetFieldName(): string;
     GetFieldType(): Type;

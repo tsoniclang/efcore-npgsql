@@ -6,9 +6,9 @@
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 // Import types from other namespaces
-import type { IReadOnlyList } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString, UInt32 } from "@tsonic/dotnet/System.js";
+import type { IReadOnlyList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString, UInt32 } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface PostgresArrayType$instance extends PostgresType {
     readonly Element: PostgresType;
@@ -32,7 +32,7 @@ export const PostgresBaseType: (abstract new(ns: string, name: string, oid: uint
 export type PostgresBaseType = PostgresBaseType$instance;
 
 export interface PostgresCompositeType$instance extends PostgresType {
-    readonly Fields: IReadOnlyList<PostgresCompositeType_Field>;
+    readonly Fields: IReadOnlyList_1<PostgresCompositeType_Field>;
 }
 
 
@@ -68,7 +68,7 @@ export const PostgresDomainType: (abstract new(ns: string, name: string, oid: ui
 export type PostgresDomainType = PostgresDomainType$instance;
 
 export interface PostgresEnumType$instance extends PostgresType {
-    readonly Labels: IReadOnlyList<System_Internal.String>;
+    readonly Labels: IReadOnlyList_1<System_Internal.String>;
 }
 
 

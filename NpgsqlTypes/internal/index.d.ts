@@ -9,17 +9,17 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
-import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { ICollection, IEnumerable as IEnumerable__System_Collections_Generic, IEnumerator, IList, IReadOnlyList, List } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections.js";
-import type { IEnumerable } from "@tsonic/dotnet/System.Collections.js";
-import * as System_ComponentModel_Internal from "@tsonic/dotnet/System.ComponentModel.js";
-import type { ITypeDescriptorContext, TypeConverter } from "@tsonic/dotnet/System.ComponentModel.js";
-import type { CultureInfo } from "@tsonic/dotnet/System.Globalization.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Attribute, Boolean as ClrBoolean, Byte, Char, Double, Enum, IComparable, IConvertible, IEquatable, IFormattable, Int16, Int32, Int64, ISpanFormattable, Object as ClrObject, ReadOnlySpan, String as ClrString, Type, UInt16, UInt32, UInt64, ValueType, Void } from "@tsonic/dotnet/System.js";
-import type { IPAddress } from "@tsonic/dotnet/System.Net.js";
-import type { StringBuilder } from "@tsonic/dotnet/System.Text.js";
+import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { ICollection_1, IEnumerable_1, IEnumerator_1, IList_1, IReadOnlyList_1, List_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections/internal/index.js";
+import type { IEnumerable } from "@tsonic/dotnet/System.Collections/internal/index.js";
+import * as System_ComponentModel_Internal from "@tsonic/dotnet/System.ComponentModel/internal/index.js";
+import type { ITypeDescriptorContext, TypeConverter } from "@tsonic/dotnet/System.ComponentModel/internal/index.js";
+import type { CultureInfo } from "@tsonic/dotnet/System.Globalization/internal/index.js";
+import type { IPAddress } from "@tsonic/dotnet/System.Net/internal/index.js";
+import type { StringBuilder } from "@tsonic/dotnet/System.Text/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Attribute, Boolean as ClrBoolean, Byte, Char, Double, Enum, IComparable, IComparable_1, IConvertible, IEquatable_1, IFormattable, Int16, Int32, Int64, ISpanFormattable, Object as ClrObject, ReadOnlySpan_1, String as ClrString, Type, UInt16, UInt32, UInt64, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export enum NpgsqlDbType {
     Bigint = 1,
@@ -208,8 +208,8 @@ export interface NpgsqlCube$instance {
 
     readonly Dimensions: int;
     readonly IsPoint: boolean;
-    readonly LowerLeft: IReadOnlyList<System_Internal.Double>;
-    readonly UpperRight: IReadOnlyList<System_Internal.Double>;
+    readonly LowerLeft: IReadOnlyList_1<System_Internal.Double>;
+    readonly UpperRight: IReadOnlyList_1<System_Internal.Double>;
     Equals(other: NpgsqlCube): boolean;
     Equals(obj: unknown): boolean;
     GetHashCode(): int;
@@ -221,8 +221,8 @@ export interface NpgsqlCube$instance {
 export const NpgsqlCube: {
     new(coord: double): NpgsqlCube;
     new(lowerLeft: double, upperRight: double): NpgsqlCube;
-    new(coords: IEnumerable__System_Collections_Generic<System_Internal.Double>): NpgsqlCube;
-    new(lowerLeft: IEnumerable__System_Collections_Generic<System_Internal.Double>, upperRight: IEnumerable__System_Collections_Generic<System_Internal.Double>): NpgsqlCube;
+    new(coords: IEnumerable_1<System_Internal.Double>): NpgsqlCube;
+    new(lowerLeft: IEnumerable_1<System_Internal.Double>, upperRight: IEnumerable_1<System_Internal.Double>): NpgsqlCube;
     new(cube: NpgsqlCube, coord: double): NpgsqlCube;
     new(cube: NpgsqlCube, lowerLeft: double, upperRight: double): NpgsqlCube;
 };
@@ -308,10 +308,10 @@ export const NpgsqlLogSequenceNumber: {
     new(value: ulong): NpgsqlLogSequenceNumber;
     readonly Invalid: NpgsqlLogSequenceNumber;
     Larger(value1: NpgsqlLogSequenceNumber, value2: NpgsqlLogSequenceNumber): NpgsqlLogSequenceNumber;
-    Parse(s: ReadOnlySpan<System_Internal.Char>): NpgsqlLogSequenceNumber;
+    Parse(s: ReadOnlySpan_1<System_Internal.Char>): NpgsqlLogSequenceNumber;
     Parse(s: string): NpgsqlLogSequenceNumber;
     Smaller(value1: NpgsqlLogSequenceNumber, value2: NpgsqlLogSequenceNumber): NpgsqlLogSequenceNumber;
-    TryParse(s: ReadOnlySpan<System_Internal.Char>, result: NpgsqlLogSequenceNumber): boolean;
+    TryParse(s: ReadOnlySpan_1<System_Internal.Char>, result: NpgsqlLogSequenceNumber): boolean;
     TryParse(s: string, result: NpgsqlLogSequenceNumber): boolean;
 };
 
@@ -357,7 +357,7 @@ export interface NpgsqlPath$instance {
     CopyTo(array: NpgsqlPoint[], arrayIndex: int): void;
     Equals(other: NpgsqlPath): boolean;
     Equals(obj: unknown): boolean;
-    GetEnumerator(): IEnumerator<NpgsqlPoint>;
+    GetEnumerator(): IEnumerator_1<NpgsqlPoint>;
     GetHashCode(): int;
     IndexOf(item: NpgsqlPoint): int;
     Insert(index: int, item: NpgsqlPoint): void;
@@ -369,8 +369,8 @@ export interface NpgsqlPath$instance {
 
 export const NpgsqlPath: {
     new(): NpgsqlPath;
-    new(points: IEnumerable__System_Collections_Generic<NpgsqlPoint>, open: boolean): NpgsqlPath;
-    new(points: IEnumerable__System_Collections_Generic<NpgsqlPoint>): NpgsqlPath;
+    new(points: IEnumerable_1<NpgsqlPoint>, open: boolean): NpgsqlPath;
+    new(points: IEnumerable_1<NpgsqlPoint>): NpgsqlPath;
     new(points: NpgsqlPoint[]): NpgsqlPath;
     new(open: boolean): NpgsqlPath;
     new(capacity: int, open: boolean): NpgsqlPath;
@@ -417,7 +417,7 @@ export interface NpgsqlPolygon$instance {
     CopyTo(array: NpgsqlPoint[], arrayIndex: int): void;
     Equals(other: NpgsqlPolygon): boolean;
     Equals(obj: unknown): boolean;
-    GetEnumerator(): IEnumerator<NpgsqlPoint>;
+    GetEnumerator(): IEnumerator_1<NpgsqlPoint>;
     GetHashCode(): int;
     IndexOf(item: NpgsqlPoint): int;
     Insert(index: int, item: NpgsqlPoint): void;
@@ -429,7 +429,7 @@ export interface NpgsqlPolygon$instance {
 
 export const NpgsqlPolygon: {
     new(): NpgsqlPolygon;
-    new(points: IEnumerable__System_Collections_Generic<NpgsqlPoint>): NpgsqlPolygon;
+    new(points: IEnumerable_1<NpgsqlPoint>): NpgsqlPolygon;
     new(points: NpgsqlPoint[]): NpgsqlPolygon;
     new(capacity: int): NpgsqlPolygon;
 };
@@ -500,7 +500,7 @@ export interface NpgsqlTsVector_Lexeme$instance {
 
 export const NpgsqlTsVector_Lexeme: {
     new(text: string): NpgsqlTsVector_Lexeme;
-    new(text: string, wordEntryPositions: List<NpgsqlTsVector_Lexeme_WordEntryPos>): NpgsqlTsVector_Lexeme;
+    new(text: string, wordEntryPositions: List_1<NpgsqlTsVector_Lexeme_WordEntryPos>): NpgsqlTsVector_Lexeme;
 };
 
 
@@ -686,7 +686,7 @@ export interface NpgsqlTsVector$instance {
     readonly [index: number]: NpgsqlTsVector_Lexeme;
     Equals(other: NpgsqlTsVector): boolean;
     Equals(obj: unknown): boolean;
-    GetEnumerator(): IEnumerator<NpgsqlTsVector_Lexeme>;
+    GetEnumerator(): IEnumerator_1<NpgsqlTsVector_Lexeme>;
     GetHashCode(): int;
     ToString(): string;
 }

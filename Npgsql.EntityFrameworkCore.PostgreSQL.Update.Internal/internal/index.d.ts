@@ -9,16 +9,16 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
-import type { IReadOnlyList } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Int32, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
-import type { StringBuilder } from "@tsonic/dotnet/System.Text.js";
-import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
-import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
-import type { IDbContextOptions } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure.js";
-import type { ISqlGenerationHelper, RelationalDataReader } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
-import * as Microsoft_EntityFrameworkCore_Update_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Update.js";
-import type { ColumnModificationParameters, IColumnModification, IModificationCommand, IModificationCommandBatchFactory, IModificationCommandFactory, INonTrackedModificationCommand, IReadOnlyModificationCommand, IUpdateSqlGenerator, ModificationCommand, ModificationCommandBatch, ModificationCommandBatchFactoryDependencies, ModificationCommandParameters, NonTrackedModificationCommandParameters, ReaderModificationCommandBatch, ResultSetMapping, UpdateSqlGenerator, UpdateSqlGeneratorDependencies } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Update.js";
+import type { IReadOnlyList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { StringBuilder } from "@tsonic/dotnet/System.Text/internal/index.js";
+import type { Task } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Int32, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
+import type { IDbContextOptions } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure/internal/index.js";
+import type { ISqlGenerationHelper, RelationalDataReader } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage/internal/index.js";
+import * as Microsoft_EntityFrameworkCore_Update_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Update/internal/index.js";
+import type { ColumnModificationParameters, IColumnModification, IModificationCommand, IModificationCommandBatchFactory, IModificationCommandFactory, INonTrackedModificationCommand, IReadOnlyModificationCommand, IUpdateSqlGenerator, ModificationCommand, ModificationCommandBatch, ModificationCommandBatchFactoryDependencies, ModificationCommandParameters, NonTrackedModificationCommandParameters, ReaderModificationCommandBatch, ResultSetMapping, UpdateSqlGenerator, UpdateSqlGeneratorDependencies } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Update/internal/index.js";
 
 export interface NpgsqlModificationCommand$instance extends ModificationCommand {
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Update_IModificationCommand: never;
@@ -88,7 +88,7 @@ export interface NpgsqlUpdateSqlGenerator$instance extends UpdateSqlGenerator {
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Update_IUpdateSqlGenerator: never;
 
     AppendDeleteOperation(commandStringBuilder: StringBuilder, command: IReadOnlyModificationCommand, commandPosition: int, requiresTransaction: boolean): ResultSetMapping;
-    AppendInsertCommand(commandStringBuilder: StringBuilder, name: string, schema: string, writeOperations: IReadOnlyList<IColumnModification>, readOperations: IReadOnlyList<IColumnModification>, overridingSystemValue: boolean): void;
+    AppendInsertCommand(commandStringBuilder: StringBuilder, name: string, schema: string, writeOperations: IReadOnlyList_1<IColumnModification>, readOperations: IReadOnlyList_1<IColumnModification>, overridingSystemValue: boolean): void;
     AppendInsertOperation(commandStringBuilder: StringBuilder, command: IReadOnlyModificationCommand, commandPosition: int, requiresTransaction: boolean): ResultSetMapping;
     AppendInsertOperation(commandStringBuilder: StringBuilder, command: IReadOnlyModificationCommand, commandPosition: int, overridingSystemValue: boolean, requiresTransaction: boolean): ResultSetMapping;
     AppendObtainNextSequenceValueOperation(commandStringBuilder: StringBuilder, name: string, schema: string): void;

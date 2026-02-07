@@ -6,20 +6,20 @@
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 // Import types from other namespaces
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { IReadOnlyList } from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
-import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
-import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
-import type { IDiagnosticsLogger, IRelationalCommandDiagnosticsLogger } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Diagnostics.js";
-import type { ICurrentDbContext, IDbContextOptions, IModelRuntimeInitializer } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure.js";
-import type { DbLoggerCategory$Migrations } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.js";
-import type { IDesignTimeModel } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js";
-import * as Microsoft_EntityFrameworkCore_Migrations_Internal_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Migrations.Internal.js";
-import type { Migrator } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Migrations.Internal.js";
-import * as Microsoft_EntityFrameworkCore_Migrations_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Migrations.js";
-import type { HistoryRepository, HistoryRepositoryDependencies, HistoryRow, IHistoryRepository, IMigrationCommandExecutor, IMigrationsAssembly, IMigrationsDatabaseLock, IMigrationsModelDiffer, IMigrationsSqlGenerator, IMigrator, LockReleaseBehavior, MigrationCommand } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Migrations.js";
-import type { IDatabaseCreator, IDatabaseProvider, IExecutionStrategy, IRawSqlCommandBuilder, IRelationalConnection, ISqlGenerationHelper } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { IReadOnlyList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { Task, Task_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal/index.js";
+import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
+import type { IDiagnosticsLogger_1, IRelationalCommandDiagnosticsLogger } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Diagnostics/internal/index.js";
+import type { ICurrentDbContext, IDbContextOptions, IModelRuntimeInitializer } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure/internal/index.js";
+import type { IDesignTimeModel } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata/internal/index.js";
+import * as Microsoft_EntityFrameworkCore_Migrations_Internal_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Migrations.Internal/internal/index.js";
+import type { Migrator } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Migrations.Internal/internal/index.js";
+import * as Microsoft_EntityFrameworkCore_Migrations_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Migrations/internal/index.js";
+import type { HistoryRepository, HistoryRepositoryDependencies, HistoryRow, IHistoryRepository, IMigrationCommandExecutor, IMigrationsAssembly, IMigrationsDatabaseLock, IMigrationsModelDiffer, IMigrationsSqlGenerator, IMigrator, LockReleaseBehavior, MigrationCommand } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Migrations/internal/index.js";
+import type { IDatabaseCreator, IDatabaseProvider, IExecutionStrategy, IRawSqlCommandBuilder, IRelationalConnection, ISqlGenerationHelper } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage/internal/index.js";
+import type { DbLoggerCategory$Migrations } from "@tsonic/efcore/Microsoft.EntityFrameworkCore/internal/index.js";
 
 export interface NpgsqlHistoryRepository$instance extends HistoryRepository {
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Migrations_IHistoryRepository: never;
@@ -27,14 +27,14 @@ export interface NpgsqlHistoryRepository$instance extends HistoryRepository {
     readonly ExistsSql: string;
     readonly LockReleaseBehavior: LockReleaseBehavior;
     AcquireDatabaseLock(): IMigrationsDatabaseLock;
-    AcquireDatabaseLockAsync(cancellationToken?: CancellationToken): Task<IMigrationsDatabaseLock>;
+    AcquireDatabaseLockAsync(cancellationToken?: CancellationToken): Task_1<IMigrationsDatabaseLock>;
     Exists(): boolean;
-    ExistsAsync(cancellationToken?: CancellationToken): Task<System_Internal.Boolean>;
-    GetAppliedMigrations(): IReadOnlyList<HistoryRow>;
-    GetAppliedMigrationsAsync(cancellationToken?: CancellationToken): Task<IReadOnlyList<HistoryRow>>;
+    ExistsAsync(cancellationToken?: CancellationToken): Task_1<System_Internal.Boolean>;
+    GetAppliedMigrations(): IReadOnlyList_1<HistoryRow>;
+    GetAppliedMigrationsAsync(cancellationToken?: CancellationToken): Task_1<IReadOnlyList_1<HistoryRow>>;
     GetBeginIfExistsScript(migrationId: string): string;
     GetBeginIfNotExistsScript(migrationId: string): string;
-    GetCreateCommands(): IReadOnlyList<MigrationCommand>;
+    GetCreateCommands(): IReadOnlyList_1<MigrationCommand>;
     GetCreateIfNotExistsScript(): string;
     GetEndIfScript(): string;
     InterpretExistsResult(value: unknown): boolean;
@@ -57,7 +57,7 @@ export interface NpgsqlMigrator$instance extends Migrator {
 
 
 export const NpgsqlMigrator: {
-    new(migrationsAssembly: IMigrationsAssembly, historyRepository: IHistoryRepository, databaseCreator: IDatabaseCreator, migrationsSqlGenerator: IMigrationsSqlGenerator, rawSqlCommandBuilder: IRawSqlCommandBuilder, migrationCommandExecutor: IMigrationCommandExecutor, connection: IRelationalConnection, sqlGenerationHelper: ISqlGenerationHelper, currentContext: ICurrentDbContext, modelRuntimeInitializer: IModelRuntimeInitializer, logger: IDiagnosticsLogger<DbLoggerCategory$Migrations>, commandLogger: IRelationalCommandDiagnosticsLogger, databaseProvider: IDatabaseProvider, migrationsModelDiffer: IMigrationsModelDiffer, designTimeModel: IDesignTimeModel, contextOptions: IDbContextOptions, executionStrategy: IExecutionStrategy): NpgsqlMigrator;
+    new(migrationsAssembly: IMigrationsAssembly, historyRepository: IHistoryRepository, databaseCreator: IDatabaseCreator, migrationsSqlGenerator: IMigrationsSqlGenerator, rawSqlCommandBuilder: IRawSqlCommandBuilder, migrationCommandExecutor: IMigrationCommandExecutor, connection: IRelationalConnection, sqlGenerationHelper: ISqlGenerationHelper, currentContext: ICurrentDbContext, modelRuntimeInitializer: IModelRuntimeInitializer, logger: IDiagnosticsLogger_1<DbLoggerCategory$Migrations>, commandLogger: IRelationalCommandDiagnosticsLogger, databaseProvider: IDatabaseProvider, migrationsModelDiffer: IMigrationsModelDiffer, designTimeModel: IDesignTimeModel, contextOptions: IDbContextOptions, executionStrategy: IExecutionStrategy): NpgsqlMigrator;
 };
 
 

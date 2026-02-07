@@ -9,11 +9,11 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 import * as Npgsql_Replication_Internal from "../../Npgsql.Replication/internal/index.js";
 import type { LogicalReplicationConnection, LogicalSlotSnapshotInitMode, ReplicationSlot, ReplicationSlotOptions, XLogDataMessage } from "../../Npgsql.Replication/internal/index.js";
 import type { NpgsqlLogSequenceNumber } from "../../NpgsqlTypes/internal/index.js";
-import type { IAsyncEnumerable, IEnumerable, KeyValuePair } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Nullable, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
-import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
-import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
+import type { IAsyncEnumerable_1, IEnumerable_1, KeyValuePair_2 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { Task_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Nullable_1, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface LogicalReplicationSlot$instance extends ReplicationSlot {
     readonly ConsistentPoint: NpgsqlLogSequenceNumber;
@@ -29,8 +29,8 @@ export const LogicalReplicationSlot: (abstract new(outputPlugin: string, replica
 export type LogicalReplicationSlot = LogicalReplicationSlot$instance;
 
 export abstract class LogicalReplicationConnectionExtensions$instance {
-    static CreateLogicalReplicationSlot(connection: LogicalReplicationConnection, slotName: string, outputPlugin: string, isTemporary?: boolean, slotSnapshotInitMode?: Nullable<LogicalSlotSnapshotInitMode>, twoPhase?: boolean, cancellationToken?: CancellationToken): Task<ReplicationSlotOptions>;
-    static StartLogicalReplication(connection: LogicalReplicationConnection, slot: LogicalReplicationSlot, cancellationToken: CancellationToken, walLocation?: Nullable<NpgsqlLogSequenceNumber>, options?: IEnumerable<KeyValuePair<System_Internal.String, System_Internal.String>>, bypassingStream?: boolean): IAsyncEnumerable<XLogDataMessage>;
+    static CreateLogicalReplicationSlot(connection: LogicalReplicationConnection, slotName: string, outputPlugin: string, isTemporary?: boolean, slotSnapshotInitMode?: Nullable_1<LogicalSlotSnapshotInitMode>, twoPhase?: boolean, cancellationToken?: CancellationToken): Task_1<ReplicationSlotOptions>;
+    static StartLogicalReplication(connection: LogicalReplicationConnection, slot: LogicalReplicationSlot, cancellationToken: CancellationToken, walLocation?: Nullable_1<NpgsqlLogSequenceNumber>, options?: IEnumerable_1<KeyValuePair_2<System_Internal.String, System_Internal.String>>, bypassingStream?: boolean): IAsyncEnumerable_1<XLogDataMessage>;
 }
 
 

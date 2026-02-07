@@ -13,22 +13,23 @@ import * as Microsoft_EntityFrameworkCore_Internal from "../../Microsoft.EntityF
 import type { LTree } from "../../Microsoft.EntityFrameworkCore/internal/index.js";
 import * as NpgsqlTypes_Internal from "../../NpgsqlTypes/internal/index.js";
 import type { NpgsqlCidr, NpgsqlDbType, NpgsqlInet, NpgsqlLogSequenceNumber } from "../../NpgsqlTypes/internal/index.js";
-import type { IReadOnlyDictionary } from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { DbCommand, DbParameter } from "@tsonic/dotnet/System.Data.Common.js";
-import type { ParameterDirection } from "@tsonic/dotnet/System.Data.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Char, DateOnly, DateTime, DateTimeOffset, Enum, Int32, Nullable, Object as ClrObject, ReadOnlySpan, String as ClrString, TimeSpan, Type, ValueType, Void } from "@tsonic/dotnet/System.js";
-import type { Expression } from "@tsonic/dotnet/System.Linq.Expressions.js";
-import * as System_Net_Internal from "@tsonic/dotnet/System.Net.js";
-import type { IPAddress, IPNetwork } from "@tsonic/dotnet/System.Net.js";
-import * as System_Numerics_Internal from "@tsonic/dotnet/System.Numerics.js";
-import type { BigInteger } from "@tsonic/dotnet/System.Numerics.js";
-import type { MethodInfo } from "@tsonic/dotnet/System.Reflection.js";
-import type { Utf8JsonWriter } from "@tsonic/dotnet/System.Text.Json.js";
-import type { ValueComparer } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.ChangeTracking.js";
-import * as Microsoft_EntityFrameworkCore_Storage_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
-import type { BoolTypeMapping, CharTypeMapping, CoreTypeMapping, DecimalTypeMapping, DoubleTypeMapping, FloatTypeMapping, IntTypeMapping, JsonTypeMapping, RelationalTypeMapping, StringTypeMapping } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
-import type { JsonValueReaderWriter, Utf8JsonReaderManager } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.Json.js";
+import type { IReadOnlyDictionary_2 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { DbCommand, DbParameter } from "@tsonic/dotnet/System.Data.Common/internal/index.js";
+import type { ParameterDirection } from "@tsonic/dotnet/System.Data/internal/index.js";
+import type { Expression } from "@tsonic/dotnet/System.Linq.Expressions/internal/index.js";
+import * as System_Net_Internal from "@tsonic/dotnet/System.Net/internal/index.js";
+import type { IPAddress, IPNetwork } from "@tsonic/dotnet/System.Net/internal/index.js";
+import * as System_Numerics_Internal from "@tsonic/dotnet/System.Numerics/internal/index.js";
+import type { BigInteger } from "@tsonic/dotnet/System.Numerics/internal/index.js";
+import type { MethodInfo } from "@tsonic/dotnet/System.Reflection/internal/index.js";
+import type { Utf8JsonWriter } from "@tsonic/dotnet/System.Text.Json/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Char, DateOnly, DateTime, DateTimeOffset, Enum, Int32, Nullable_1, Object as ClrObject, ReadOnlySpan_1, String as ClrString, TimeSpan, Type, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
+import type { ValueComparer } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.ChangeTracking/internal/index.js";
+import * as Microsoft_EntityFrameworkCore_Storage_Json_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.Json/internal/index.js";
+import type { JsonValueReaderWriter, JsonValueReaderWriter_1, Utf8JsonReaderManager } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.Json/internal/index.js";
+import * as Microsoft_EntityFrameworkCore_Storage_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage/internal/index.js";
+import type { BoolTypeMapping, CharTypeMapping, CoreTypeMapping, DecimalTypeMapping, DoubleTypeMapping, FloatTypeMapping, IntTypeMapping, JsonTypeMapping, RelationalTypeMapping, StringTypeMapping } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage/internal/index.js";
 
 export interface INpgsqlTypeMapping$instance {
     readonly __tsonic_iface_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_INpgsqlTypeMapping: never;
@@ -51,10 +52,10 @@ export const NpgsqlArrayTypeMapping: (abstract new(parameters: RelationalTypeMap
 export type NpgsqlArrayTypeMapping = NpgsqlArrayTypeMapping$instance;
 
 export interface NpgsqlArrayTypeMapping_3$instance<TCollection, TConcreteCollection, TElement> extends NpgsqlArrayTypeMapping {
-    readonly NpgsqlDbType: Nullable<NpgsqlDbType>;
+    readonly NpgsqlDbType: Nullable_1<NpgsqlDbType>;
     Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
     ConfigureParameter(parameter: DbParameter): void;
-    CreateParameter(command: DbCommand, name: string, value: unknown, nullable?: Nullable<System_Internal.Boolean>, direction?: ParameterDirection): DbParameter;
+    CreateParameter(command: DbCommand, name: string, value: unknown, nullable?: Nullable_1<System_Internal.Boolean>, direction?: ParameterDirection): DbParameter;
     GenerateNonNullSqlLiteral(value: unknown): string;
 }
 
@@ -91,7 +92,7 @@ export interface NpgsqlBigIntegerTypeMapping$instance extends INpgsqlTypeMapping
 export type NpgsqlBigIntegerTypeMapping = NpgsqlBigIntegerTypeMapping$instance & __NpgsqlBigIntegerTypeMapping$views;
 
 
-export interface NpgsqlBigIntegerTypeMapping_JsonBigIntegerReaderWriter$instance extends JsonValueReaderWriter<BigInteger> {
+export interface NpgsqlBigIntegerTypeMapping_JsonBigIntegerReaderWriter$instance extends JsonValueReaderWriter_1<BigInteger> {
     readonly ConstructorExpression: Expression;
     FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): BigInteger;
     ToJsonTyped(writer: Utf8JsonWriter, value: BigInteger): void;
@@ -257,7 +258,7 @@ export interface NpgsqlCidrTypeMapping$instance extends INpgsqlTypeMapping$insta
 export type NpgsqlCidrTypeMapping = NpgsqlCidrTypeMapping$instance & __NpgsqlCidrTypeMapping$views;
 
 
-export interface NpgsqlCidrTypeMapping_JsonCidrReaderWriter$instance extends JsonValueReaderWriter<IPNetwork> {
+export interface NpgsqlCidrTypeMapping_JsonCidrReaderWriter$instance extends JsonValueReaderWriter_1<IPNetwork> {
     readonly ConstructorExpression: Expression;
     FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): IPNetwork;
     ToJsonTyped(writer: Utf8JsonWriter, ipNetwork: IPNetwork): void;
@@ -344,7 +345,7 @@ export interface NpgsqlDateOnlyTypeMapping$instance extends INpgsqlTypeMapping$i
 export type NpgsqlDateOnlyTypeMapping = NpgsqlDateOnlyTypeMapping$instance & __NpgsqlDateOnlyTypeMapping$views;
 
 
-export interface NpgsqlDateOnlyTypeMapping_NpgsqlJsonDateOnlyReaderWriter$instance extends JsonValueReaderWriter<DateOnly> {
+export interface NpgsqlDateOnlyTypeMapping_NpgsqlJsonDateOnlyReaderWriter$instance extends JsonValueReaderWriter_1<DateOnly> {
     readonly ConstructorExpression: Expression;
     FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): DateOnly;
     ToJsonTyped(writer: Utf8JsonWriter, value: DateOnly): void;
@@ -383,7 +384,7 @@ export interface NpgsqlDateTimeDateTypeMapping$instance extends INpgsqlTypeMappi
 export type NpgsqlDateTimeDateTypeMapping = NpgsqlDateTimeDateTypeMapping$instance & __NpgsqlDateTimeDateTypeMapping$views;
 
 
-export interface NpgsqlDateTimeDateTypeMapping_NpgsqlJsonDateTimeReaderWriter$instance extends JsonValueReaderWriter<DateTime> {
+export interface NpgsqlDateTimeDateTypeMapping_NpgsqlJsonDateTimeReaderWriter$instance extends JsonValueReaderWriter_1<DateTime> {
     readonly ConstructorExpression: Expression;
     FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): DateTime;
     ToJsonTyped(writer: Utf8JsonWriter, value: DateTime): void;
@@ -437,24 +438,24 @@ export const NpgsqlDoubleTypeMapping: {
 export type NpgsqlDoubleTypeMapping = NpgsqlDoubleTypeMapping$instance;
 
 export interface NpgsqlEnumTypeMapping$instance extends RelationalTypeMapping {
-    readonly Labels: IReadOnlyDictionary<unknown, System_Internal.String>;
+    readonly Labels: IReadOnlyDictionary_2<unknown, System_Internal.String>;
     readonly UnquotedStoreType: string;
     Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
-    Clone(unquotedStoreType: string, labels: IReadOnlyDictionary<unknown, System_Internal.String>): NpgsqlEnumTypeMapping;
+    Clone(unquotedStoreType: string, labels: IReadOnlyDictionary_2<unknown, System_Internal.String>): NpgsqlEnumTypeMapping;
     ConfigureParameter(parameter: DbParameter): void;
     GenerateNonNullSqlLiteral(value: unknown): string;
 }
 
 
 export const NpgsqlEnumTypeMapping: {
-    new(quotedStoreType: string, unquotedStoreType: string, enumType: Type, labels: IReadOnlyDictionary<unknown, System_Internal.String>): NpgsqlEnumTypeMapping;
+    new(quotedStoreType: string, unquotedStoreType: string, enumType: Type, labels: IReadOnlyDictionary_2<unknown, System_Internal.String>): NpgsqlEnumTypeMapping;
     readonly Default: NpgsqlEnumTypeMapping;
 };
 
 
 export type NpgsqlEnumTypeMapping = NpgsqlEnumTypeMapping$instance;
 
-export interface NpgsqlEnumTypeMapping_JsonPgEnumReaderWriter_1$instance<T extends number> extends JsonValueReaderWriter<T> {
+export interface NpgsqlEnumTypeMapping_JsonPgEnumReaderWriter_1$instance<T extends number> extends JsonValueReaderWriter_1<T> {
     readonly ConstructorExpression: Expression;
     FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): T;
     ToJsonTyped(writer: Utf8JsonWriter, value: T): void;
@@ -543,7 +544,7 @@ export interface NpgsqlInetTypeMapping$instance extends INpgsqlTypeMapping$insta
 export type NpgsqlInetTypeMapping = NpgsqlInetTypeMapping$instance & __NpgsqlInetTypeMapping$views;
 
 
-export interface NpgsqlInetTypeMapping_JsonIPAddressReaderWriter$instance extends JsonValueReaderWriter<IPAddress> {
+export interface NpgsqlInetTypeMapping_JsonIPAddressReaderWriter$instance extends JsonValueReaderWriter_1<IPAddress> {
     readonly ConstructorExpression: Expression;
     FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): IPAddress;
     ToJsonTyped(writer: Utf8JsonWriter, value: IPAddress): void;
@@ -558,7 +559,7 @@ export const NpgsqlInetTypeMapping_JsonIPAddressReaderWriter: {
 
 export type NpgsqlInetTypeMapping_JsonIPAddressReaderWriter = NpgsqlInetTypeMapping_JsonIPAddressReaderWriter$instance;
 
-export interface NpgsqlInetTypeMapping_JsonNpgsqlInetReaderWriter$instance extends JsonValueReaderWriter<NpgsqlInet> {
+export interface NpgsqlInetTypeMapping_JsonNpgsqlInetReaderWriter$instance extends JsonValueReaderWriter_1<NpgsqlInet> {
     readonly ConstructorExpression: Expression;
     FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): NpgsqlInet;
     ToJsonTyped(writer: Utf8JsonWriter, value: NpgsqlInet): void;
@@ -587,7 +588,7 @@ export const NpgsqlIntervalTypeMapping: {
     new(): NpgsqlIntervalTypeMapping;
     readonly Default: NpgsqlIntervalTypeMapping;
     FormatTimeSpanAsInterval(ts: TimeSpan): string;
-    ParseIntervalAsTimeSpan(s: ReadOnlySpan<System_Internal.Char>): TimeSpan;
+    ParseIntervalAsTimeSpan(s: ReadOnlySpan_1<System_Internal.Char>): TimeSpan;
 };
 
 
@@ -600,7 +601,7 @@ export interface NpgsqlIntervalTypeMapping$instance extends INpgsqlTypeMapping$i
 export type NpgsqlIntervalTypeMapping = NpgsqlIntervalTypeMapping$instance & __NpgsqlIntervalTypeMapping$views;
 
 
-export interface NpgsqlIntervalTypeMapping_NpgsqlJsonTimeSpanReaderWriter$instance extends JsonValueReaderWriter<TimeSpan> {
+export interface NpgsqlIntervalTypeMapping_NpgsqlJsonTimeSpanReaderWriter$instance extends JsonValueReaderWriter_1<TimeSpan> {
     readonly ConstructorExpression: Expression;
     FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): TimeSpan;
     ToJsonTyped(writer: Utf8JsonWriter, value: TimeSpan): void;
@@ -665,7 +666,7 @@ export interface NpgsqlLegacyCidrTypeMapping$instance extends INpgsqlTypeMapping
 export type NpgsqlLegacyCidrTypeMapping = NpgsqlLegacyCidrTypeMapping$instance & __NpgsqlLegacyCidrTypeMapping$views;
 
 
-export interface NpgsqlLegacyCidrTypeMapping_JsonCidrLegacyReaderWriter$instance extends JsonValueReaderWriter<NpgsqlCidr> {
+export interface NpgsqlLegacyCidrTypeMapping_JsonCidrLegacyReaderWriter$instance extends JsonValueReaderWriter_1<NpgsqlCidr> {
     readonly ConstructorExpression: Expression;
     FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): NpgsqlCidr;
     ToJsonTyped(writer: Utf8JsonWriter, value: NpgsqlCidr): void;
@@ -751,7 +752,7 @@ export interface NpgsqlLTreeTypeMapping$instance extends INpgsqlTypeMapping$inst
 export type NpgsqlLTreeTypeMapping = NpgsqlLTreeTypeMapping$instance & __NpgsqlLTreeTypeMapping$views;
 
 
-export interface NpgsqlLTreeTypeMapping_JsonLTreeReaderWriter$instance extends JsonValueReaderWriter<LTree> {
+export interface NpgsqlLTreeTypeMapping_JsonLTreeReaderWriter$instance extends JsonValueReaderWriter_1<LTree> {
     readonly ConstructorExpression: Expression;
     FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): LTree;
     ToJsonTyped(writer: Utf8JsonWriter, value: LTree): void;
@@ -895,7 +896,7 @@ export interface NpgsqlPgLsnTypeMapping$instance extends INpgsqlTypeMapping$inst
 export type NpgsqlPgLsnTypeMapping = NpgsqlPgLsnTypeMapping$instance & __NpgsqlPgLsnTypeMapping$views;
 
 
-export interface NpgsqlPgLsnTypeMapping_JsonLogSequenceNumberReaderWriter$instance extends JsonValueReaderWriter<NpgsqlLogSequenceNumber> {
+export interface NpgsqlPgLsnTypeMapping_JsonLogSequenceNumberReaderWriter$instance extends JsonValueReaderWriter_1<NpgsqlLogSequenceNumber> {
     readonly ConstructorExpression: Expression;
     FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): NpgsqlLogSequenceNumber;
     ToJsonTyped(writer: Utf8JsonWriter, value: NpgsqlLogSequenceNumber): void;
@@ -1140,7 +1141,7 @@ export interface NpgsqlTimestampTypeMapping$instance extends INpgsqlTypeMapping$
 export type NpgsqlTimestampTypeMapping = NpgsqlTimestampTypeMapping$instance & __NpgsqlTimestampTypeMapping$views;
 
 
-export interface NpgsqlTimestampTypeMapping_NpgsqlJsonTimestampReaderWriter$instance extends JsonValueReaderWriter<DateTime> {
+export interface NpgsqlTimestampTypeMapping_NpgsqlJsonTimestampReaderWriter$instance extends JsonValueReaderWriter_1<DateTime> {
     readonly ConstructorExpression: Expression;
     FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): DateTime;
     ToJsonTyped(writer: Utf8JsonWriter, value: DateTime): void;
@@ -1180,7 +1181,7 @@ export interface NpgsqlTimestampTzTypeMapping$instance extends INpgsqlTypeMappin
 export type NpgsqlTimestampTzTypeMapping = NpgsqlTimestampTzTypeMapping$instance & __NpgsqlTimestampTzTypeMapping$views;
 
 
-export interface NpgsqlTimestampTzTypeMapping_NpgsqlJsonTimestampTzDateTimeOffsetReaderWriter$instance extends JsonValueReaderWriter<DateTimeOffset> {
+export interface NpgsqlTimestampTzTypeMapping_NpgsqlJsonTimestampTzDateTimeOffsetReaderWriter$instance extends JsonValueReaderWriter_1<DateTimeOffset> {
     readonly ConstructorExpression: Expression;
     FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): DateTimeOffset;
     ToJsonTyped(writer: Utf8JsonWriter, value: DateTimeOffset): void;
@@ -1195,7 +1196,7 @@ export const NpgsqlTimestampTzTypeMapping_NpgsqlJsonTimestampTzDateTimeOffsetRea
 
 export type NpgsqlTimestampTzTypeMapping_NpgsqlJsonTimestampTzDateTimeOffsetReaderWriter = NpgsqlTimestampTzTypeMapping_NpgsqlJsonTimestampTzDateTimeOffsetReaderWriter$instance;
 
-export interface NpgsqlTimestampTzTypeMapping_NpgsqlJsonTimestampTzDateTimeReaderWriter$instance extends JsonValueReaderWriter<DateTime> {
+export interface NpgsqlTimestampTzTypeMapping_NpgsqlJsonTimestampTzDateTimeReaderWriter$instance extends JsonValueReaderWriter_1<DateTime> {
     readonly ConstructorExpression: Expression;
     FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): DateTime;
     ToJsonTyped(writer: Utf8JsonWriter, value: DateTime): void;
@@ -1260,7 +1261,7 @@ export interface NpgsqlTimeTzTypeMapping$instance extends INpgsqlTypeMapping$ins
 export type NpgsqlTimeTzTypeMapping = NpgsqlTimeTzTypeMapping$instance & __NpgsqlTimeTzTypeMapping$views;
 
 
-export interface NpgsqlTimeTzTypeMapping_JsonTimeTzReaderWriter$instance extends JsonValueReaderWriter<DateTimeOffset> {
+export interface NpgsqlTimeTzTypeMapping_JsonTimeTzReaderWriter$instance extends JsonValueReaderWriter_1<DateTimeOffset> {
     readonly ConstructorExpression: Expression;
     FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): DateTimeOffset;
     ToJsonTyped(writer: Utf8JsonWriter, value: DateTimeOffset): void;
