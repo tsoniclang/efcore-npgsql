@@ -6,11 +6,11 @@
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 // Import types from other namespaces
-import type { IEnumerable, IReadOnlyList, List } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Enum, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable, Nullable, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
-import type { Annotatable, IReadOnlyAnnotatable } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure.js";
-import type { IConventionAnnotatable, IMutableAnnotatable } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js";
+import type { IEnumerable_1, IReadOnlyList_1, List_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Enum, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable, Nullable_1, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
+import type { Annotatable, IReadOnlyAnnotatable } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure/internal/index.js";
+import type { IConventionAnnotatable, IMutableAnnotatable } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata/internal/index.js";
 
 export enum NpgsqlValueGenerationStrategy {
     None = 0,
@@ -37,7 +37,7 @@ export enum SortOrder {
 
 export interface CockroachDbInterleaveInParent$instance {
     readonly Annotatable: Annotatable;
-    InterleavePrefix: List<System_Internal.String>;
+    InterleavePrefix: List_1<System_Internal.String>;
     ParentTableName: string;
     get ParentTableSchema(): string | undefined;
     set ParentTableSchema(value: string | undefined);
@@ -53,7 +53,7 @@ export type CockroachDbInterleaveInParent = CockroachDbInterleaveInParent$instan
 
 export interface PostgresCollation$instance {
     readonly Annotatable: Annotatable;
-    IsDeterministic: Nullable<System_Internal.Boolean>;
+    IsDeterministic: Nullable_1<System_Internal.Boolean>;
     LcCollate: string;
     LcCtype: string;
     readonly Name: string;
@@ -65,8 +65,8 @@ export interface PostgresCollation$instance {
 
 export const PostgresCollation: {
     FindCollation(annotatable: IReadOnlyAnnotatable, schema: string, name: string): PostgresCollation | undefined;
-    GetCollations(annotatable: IReadOnlyAnnotatable): IEnumerable<PostgresCollation>;
-    GetOrAddCollation(annotatable: IMutableAnnotatable, schema: string, name: string, lcCollate: string, lcCtype: string, provider?: string, deterministic?: Nullable<System_Internal.Boolean>): PostgresCollation;
+    GetCollations(annotatable: IReadOnlyAnnotatable): IEnumerable_1<PostgresCollation>;
+    GetOrAddCollation(annotatable: IMutableAnnotatable, schema: string, name: string, lcCollate: string, lcCtype: string, provider?: string, deterministic?: Nullable_1<System_Internal.Boolean>): PostgresCollation;
 };
 
 
@@ -74,7 +74,7 @@ export type PostgresCollation = PostgresCollation$instance;
 
 export interface PostgresEnum$instance {
     readonly Annotatable: Annotatable;
-    Labels: IReadOnlyList<System_Internal.String>;
+    Labels: IReadOnlyList_1<System_Internal.String>;
     readonly Name: string;
     readonly Schema: string | undefined;
 }
@@ -85,7 +85,7 @@ export const PostgresEnum: {
     GetOrAddPostgresEnum(annotatable: IConventionAnnotatable, schema: string, name: string, labels: string[]): PostgresEnum;
     GetOrAddPostgresEnum(annotatable: IMutableAnnotatable, schema: string, name: string, labels: string[]): PostgresEnum;
     GetOrAddPostgresEnum(annotatable: IMutableAnnotatable, name: string, labels: string[]): PostgresEnum;
-    GetPostgresEnums(annotatable: IReadOnlyAnnotatable): IEnumerable<PostgresEnum>;
+    GetPostgresEnums(annotatable: IReadOnlyAnnotatable): IEnumerable_1<PostgresEnum>;
 };
 
 
@@ -105,7 +105,7 @@ export const PostgresExtension: {
     GetOrAddPostgresExtension(annotatable: IConventionAnnotatable, schema: string, name: string, version: string): PostgresExtension;
     GetOrAddPostgresExtension(annotatable: IMutableAnnotatable, schema: string, name: string, version: string): PostgresExtension;
     GetOrAddPostgresExtension(annotatable: IMutableAnnotatable, name: string, version: string): PostgresExtension;
-    GetPostgresExtensions(annotatable: IReadOnlyAnnotatable): IEnumerable<PostgresExtension>;
+    GetPostgresExtensions(annotatable: IReadOnlyAnnotatable): IEnumerable_1<PostgresExtension>;
 };
 
 
@@ -130,7 +130,7 @@ export interface PostgresRange$instance {
 export const PostgresRange: {
     FindPostgresRange(annotatable: IReadOnlyAnnotatable, schema: string, name: string): PostgresRange | undefined;
     GetOrAddPostgresRange(annotatable: IMutableAnnotatable, schema: string, name: string, subtype: string, canonicalFunction?: string, subtypeOpClass?: string, collation?: string, subtypeDiff?: string): PostgresRange;
-    GetPostgresRanges(annotatable: IReadOnlyAnnotatable): IEnumerable<PostgresRange>;
+    GetPostgresRanges(annotatable: IReadOnlyAnnotatable): IEnumerable_1<PostgresRange>;
 };
 
 
@@ -138,7 +138,7 @@ export type PostgresRange = PostgresRange$instance;
 
 export abstract class NpgsqlValueGenerationStrategyExtensions$instance {
     static IsIdentity(strategy: NpgsqlValueGenerationStrategy): boolean;
-    static IsIdentity(strategy: Nullable<NpgsqlValueGenerationStrategy>): boolean;
+    static IsIdentity(strategy: Nullable_1<NpgsqlValueGenerationStrategy>): boolean;
 }
 
 

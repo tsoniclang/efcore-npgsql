@@ -9,19 +9,19 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { PgAllExpression, PgAllOperatorType, PgAnyExpression, PgAnyOperatorType, PgArrayIndexExpression, PgArraySliceExpression, PgFunctionExpression, PgILikeExpression, PgJsonTraversalExpression, PgNewArrayExpression, PgRegexMatchExpression } from "../../Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.Internal/internal/index.js";
 import type { PgExpressionType } from "../../Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions/internal/index.js";
-import type { IEnumerable, IReadOnlyList } from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { Boolean as ClrBoolean, String as ClrString, Type } from "@tsonic/dotnet/System.js";
-import type { ExpressionType } from "@tsonic/dotnet/System.Linq.Expressions.js";
-import type { RegexOptions } from "@tsonic/dotnet/System.Text.RegularExpressions.js";
-import * as Microsoft_EntityFrameworkCore_Query_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Query.js";
-import type { EnumerableExpression, ISqlExpressionFactory, SqlExpressionFactory, SqlExpressionFactoryDependencies } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Query.js";
-import type { AtTimeZoneExpression, SqlExpression } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Query.SqlExpressions.js";
-import type { RelationalTypeMapping } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
+import type { IEnumerable_1, IReadOnlyList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { ExpressionType } from "@tsonic/dotnet/System.Linq.Expressions/internal/index.js";
+import type { RegexOptions } from "@tsonic/dotnet/System.Text.RegularExpressions/internal/index.js";
+import type { Boolean as ClrBoolean, String as ClrString, Type } from "@tsonic/dotnet/System/internal/index.js";
+import type { AtTimeZoneExpression, SqlExpression } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Query.SqlExpressions/internal/index.js";
+import * as Microsoft_EntityFrameworkCore_Query_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Query/internal/index.js";
+import type { EnumerableExpression, ISqlExpressionFactory, SqlExpressionFactory, SqlExpressionFactoryDependencies } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Query/internal/index.js";
+import type { RelationalTypeMapping } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage/internal/index.js";
 
 export interface NpgsqlSqlExpressionFactory$instance extends SqlExpressionFactory {
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_ISqlExpressionFactory: never;
 
-    AggregateFunction(name: string, arguments: IEnumerable<SqlExpression>, aggregateEnumerableExpression: EnumerableExpression, nullable: boolean, argumentsPropagateNullability: IEnumerable<System_Internal.Boolean>, returnType: Type, typeMapping?: RelationalTypeMapping): PgFunctionExpression;
+    AggregateFunction(name: string, arguments: IEnumerable_1<SqlExpression>, aggregateEnumerableExpression: EnumerableExpression, nullable: boolean, argumentsPropagateNullability: IEnumerable_1<System_Internal.Boolean>, returnType: Type, typeMapping?: RelationalTypeMapping): PgFunctionExpression;
     All(item: SqlExpression, array: SqlExpression, operatorType: PgAllOperatorType): PgAllExpression;
     Any(item: SqlExpression, array: SqlExpression, operatorType: PgAnyOperatorType): PgAnyExpression;
     ApplyTypeMapping(sqlExpression: SqlExpression, typeMapping: RelationalTypeMapping): SqlExpression | undefined;
@@ -34,11 +34,11 @@ export interface NpgsqlSqlExpressionFactory$instance extends SqlExpressionFactor
     GenerateOneBasedIndexExpression(expression: SqlExpression): SqlExpression;
     ILike(match: SqlExpression, pattern: SqlExpression, escapeChar?: SqlExpression): PgILikeExpression;
     JsonTraversal(expression: SqlExpression, returnsText: boolean, type: Type, typeMapping?: RelationalTypeMapping): PgJsonTraversalExpression;
-    JsonTraversal(expression: SqlExpression, path: IEnumerable<SqlExpression>, returnsText: boolean, type: Type, typeMapping?: RelationalTypeMapping): PgJsonTraversalExpression;
+    JsonTraversal(expression: SqlExpression, path: IEnumerable_1<SqlExpression>, returnsText: boolean, type: Type, typeMapping?: RelationalTypeMapping): PgJsonTraversalExpression;
     MakeBinary(operatorType: ExpressionType, left: SqlExpression, right: SqlExpression, typeMapping: RelationalTypeMapping, existingExpr?: SqlExpression): SqlExpression | undefined;
     MakePostgresBinary(operatorType: PgExpressionType, left: SqlExpression, right: SqlExpression, typeMapping?: RelationalTypeMapping): SqlExpression;
-    NewArray(expressions: IReadOnlyList<SqlExpression>, type: Type, typeMapping?: RelationalTypeMapping): PgNewArrayExpression;
-    NewArrayOrConstant(elements: IReadOnlyList<SqlExpression>, type: Type, typeMapping?: RelationalTypeMapping): SqlExpression;
+    NewArray(expressions: IReadOnlyList_1<SqlExpression>, type: Type, typeMapping?: RelationalTypeMapping): PgNewArrayExpression;
+    NewArrayOrConstant(elements: IReadOnlyList_1<SqlExpression>, type: Type, typeMapping?: RelationalTypeMapping): SqlExpression;
     Overlaps(left: SqlExpression, right: SqlExpression): SqlExpression;
     RegexMatch(match: SqlExpression, pattern: SqlExpression, options: RegexOptions): PgRegexMatchExpression;
 }

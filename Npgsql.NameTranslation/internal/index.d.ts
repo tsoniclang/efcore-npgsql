@@ -8,11 +8,11 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 // Import types from other namespaces
 import * as Npgsql_Internal from "../../Npgsql/internal/index.js";
 import type { INpgsqlNameTranslator } from "../../Npgsql/internal/index.js";
-import type { CultureInfo } from "@tsonic/dotnet/System.Globalization.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
+import type { CultureInfo } from "@tsonic/dotnet/System.Globalization/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface NpgsqlNullNameTranslator$instance {
+export interface NpgsqlNullNameTranslator$instance extends Npgsql_Internal.INpgsqlNameTranslator$instance {
     readonly __tsonic_iface_Npgsql_INpgsqlNameTranslator: never;
 
     TranslateMemberName(clrName: string): string;
@@ -29,12 +29,10 @@ export interface __NpgsqlNullNameTranslator$views {
     As_INpgsqlNameTranslator(): Npgsql_Internal.INpgsqlNameTranslator$instance;
 }
 
-export interface NpgsqlNullNameTranslator$instance extends Npgsql_Internal.INpgsqlNameTranslator$instance {}
-
 export type NpgsqlNullNameTranslator = NpgsqlNullNameTranslator$instance & __NpgsqlNullNameTranslator$views;
 
 
-export interface NpgsqlSnakeCaseNameTranslator$instance {
+export interface NpgsqlSnakeCaseNameTranslator$instance extends Npgsql_Internal.INpgsqlNameTranslator$instance {
     readonly __tsonic_iface_Npgsql_INpgsqlNameTranslator: never;
 
     TranslateMemberName(clrName: string): string;
@@ -52,8 +50,6 @@ export const NpgsqlSnakeCaseNameTranslator: {
 export interface __NpgsqlSnakeCaseNameTranslator$views {
     As_INpgsqlNameTranslator(): Npgsql_Internal.INpgsqlNameTranslator$instance;
 }
-
-export interface NpgsqlSnakeCaseNameTranslator$instance extends Npgsql_Internal.INpgsqlNameTranslator$instance {}
 
 export type NpgsqlSnakeCaseNameTranslator = NpgsqlSnakeCaseNameTranslator$instance & __NpgsqlSnakeCaseNameTranslator$views;
 

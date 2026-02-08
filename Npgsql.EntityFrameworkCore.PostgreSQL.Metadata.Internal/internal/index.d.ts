@@ -6,22 +6,22 @@
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 // Import types from other namespaces
-import type { IEnumerable } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, IEquatable, Int32, Int64, Nullable, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
-import type { IAnnotation, IReadOnlyAnnotatable } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure.js";
-import * as Microsoft_EntityFrameworkCore_Metadata_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js";
-import type { IColumn, IRelationalAnnotationProvider, IRelationalModel, ITable, ITableIndex, RelationalAnnotationProvider, RelationalAnnotationProviderDependencies } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js";
+import type { IEnumerable_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, IEquatable_1, Int32, Int64, Nullable_1, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
+import type { IAnnotation, IReadOnlyAnnotatable } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure/internal/index.js";
+import * as Microsoft_EntityFrameworkCore_Metadata_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata/internal/index.js";
+import type { IColumn, IRelationalAnnotationProvider, IRelationalModel, ITable, ITableIndex, RelationalAnnotationProvider, RelationalAnnotationProviderDependencies } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata/internal/index.js";
 
 export interface IdentitySequenceOptionsData$instance {
     readonly __tsonic_iface_System_IEquatable_1: never;
 
     IncrementBy: long;
     IsCyclic: boolean;
-    MaxValue: Nullable<System_Internal.Int64>;
-    MinValue: Nullable<System_Internal.Int64>;
+    MaxValue: Nullable_1<System_Internal.Int64>;
+    MinValue: Nullable_1<System_Internal.Int64>;
     NumbersToCache: long;
-    StartValue: Nullable<System_Internal.Int64>;
+    StartValue: Nullable_1<System_Internal.Int64>;
     Equals(other: IdentitySequenceOptionsData): boolean;
     Equals(obj: unknown): boolean;
     GetHashCode(): int;
@@ -42,10 +42,10 @@ export type IdentitySequenceOptionsData = IdentitySequenceOptionsData$instance;
 export interface NpgsqlAnnotationProvider$instance extends RelationalAnnotationProvider {
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_IRelationalAnnotationProvider: never;
 
-    For(table: ITable, designTime: boolean): IEnumerable<IAnnotation>;
-    For(column: IColumn, designTime: boolean): IEnumerable<IAnnotation>;
-    For(index: ITableIndex, designTime: boolean): IEnumerable<IAnnotation>;
-    For(model: IRelationalModel, designTime: boolean): IEnumerable<IAnnotation>;
+    For(table: ITable, designTime: boolean): IEnumerable_1<IAnnotation>;
+    For(column: IColumn, designTime: boolean): IEnumerable_1<IAnnotation>;
+    For(index: ITableIndex, designTime: boolean): IEnumerable_1<IAnnotation>;
+    For(model: IRelationalModel, designTime: boolean): IEnumerable_1<IAnnotation>;
 }
 
 

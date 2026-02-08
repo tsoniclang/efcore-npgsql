@@ -9,10 +9,10 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Object as ClrObject } from "@tsonic/dotnet/System.js";
-import type { ShapedQueryExpression } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Query.js";
-import type { ColumnExpression, SqlExpression } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Query.SqlExpressions.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Object as ClrObject } from "@tsonic/dotnet/System/internal/index.js";
+import type { ColumnExpression, SqlExpression } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Query.SqlExpressions/internal/index.js";
+import type { ShapedQueryExpression } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Query/internal/index.js";
 
 export abstract class NpgsqlShapedQueryExpressionExtensions$instance {
     static TryConvertToArray(source: ShapedQueryExpression, array: SqlExpression, ignoreOrderings?: boolean, ignorePredicate?: boolean): boolean;

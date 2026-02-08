@@ -6,18 +6,18 @@
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 // Import types from other namespaces
-import type { IDictionary, IReadOnlyList } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
-import type { ValueComparer } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.ChangeTracking.js";
-import * as Microsoft_EntityFrameworkCore_Design_Internal_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Design.Internal.js";
-import type { CSharpRuntimeAnnotationCodeGeneratorDependencies, CSharpRuntimeAnnotationCodeGeneratorParameters, RelationalCSharpRuntimeAnnotationCodeGenerator, RelationalCSharpRuntimeAnnotationCodeGeneratorDependencies } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Design.Internal.js";
-import * as Microsoft_EntityFrameworkCore_Design_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Design.js";
-import type { AnnotationCodeGenerator, AnnotationCodeGeneratorDependencies, IAnnotationCodeGenerator, IDesignTimeServices, MethodCallCodeFragment } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Design.js";
-import type { IAnnotation } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure.js";
-import type { IColumn, IEntityType, IIndex, IModel, IProperty, IRelationalModel, ITable, ITableIndex } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js";
-import type { CoreTypeMapping } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.js";
-import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection.js";
+import type { IDictionary_2, IReadOnlyList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
+import type { ValueComparer } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.ChangeTracking/internal/index.js";
+import * as Microsoft_EntityFrameworkCore_Design_Internal_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Design.Internal/internal/index.js";
+import type { CSharpRuntimeAnnotationCodeGeneratorDependencies, CSharpRuntimeAnnotationCodeGeneratorParameters, RelationalCSharpRuntimeAnnotationCodeGenerator, RelationalCSharpRuntimeAnnotationCodeGeneratorDependencies } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Design.Internal/internal/index.js";
+import * as Microsoft_EntityFrameworkCore_Design_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Design/internal/index.js";
+import type { AnnotationCodeGenerator, AnnotationCodeGeneratorDependencies, IAnnotationCodeGenerator, IDesignTimeServices, MethodCallCodeFragment } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Design/internal/index.js";
+import type { IAnnotation } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure/internal/index.js";
+import type { IColumn, IEntityType, IIndex, IModel, IProperty, IRelationalModel, ITable, ITableIndex } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata/internal/index.js";
+import type { CoreTypeMapping } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage/internal/index.js";
+import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection/internal/index.js";
 
 export interface NpgsqlAnnotationCodeGenerator$instance extends AnnotationCodeGenerator {
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Design_IAnnotationCodeGenerator: never;
@@ -25,8 +25,8 @@ export interface NpgsqlAnnotationCodeGenerator$instance extends AnnotationCodeGe
     GenerateFluentApi(model: IModel, annotation: IAnnotation): MethodCallCodeFragment | undefined;
     GenerateFluentApi(entityType: IEntityType, annotation: IAnnotation): MethodCallCodeFragment | undefined;
     GenerateFluentApi(index: IIndex, annotation: IAnnotation): MethodCallCodeFragment | undefined;
-    GenerateFluentApiCalls(model: IModel, annotations: IDictionary<System_Internal.String, IAnnotation>): IReadOnlyList<MethodCallCodeFragment>;
-    GenerateFluentApiCalls(property: IProperty, annotations: IDictionary<System_Internal.String, IAnnotation>): IReadOnlyList<MethodCallCodeFragment>;
+    GenerateFluentApiCalls(model: IModel, annotations: IDictionary_2<System_Internal.String, IAnnotation>): IReadOnlyList_1<MethodCallCodeFragment>;
+    GenerateFluentApiCalls(property: IProperty, annotations: IDictionary_2<System_Internal.String, IAnnotation>): IReadOnlyList_1<MethodCallCodeFragment>;
     IsHandledByConvention(model: IModel, annotation: IAnnotation): boolean;
     IsHandledByConvention(index: IIndex, annotation: IAnnotation): boolean;
     IsHandledByConvention(property: IProperty, annotation: IAnnotation): boolean;
