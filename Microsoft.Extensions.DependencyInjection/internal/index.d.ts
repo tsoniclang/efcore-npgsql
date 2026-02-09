@@ -7,14 +7,14 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 
 // Import types from other namespaces
 import type { NpgsqlDbContextOptionsBuilder } from "../../Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure/internal/index.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Action, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
-import type { DbContext, DbContextOptionsBuilder } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.js";
-import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Action_1, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
+import type { DbContext, DbContextOptionsBuilder } from "@tsonic/efcore/Microsoft.EntityFrameworkCore/internal/index.js";
+import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection/internal/index.js";
 
 export abstract class NpgsqlServiceCollectionExtensions$instance {
     static AddEntityFrameworkNpgsql(serviceCollection: IServiceCollection): IServiceCollection;
-    static AddNpgsql<TContext extends DbContext>(serviceCollection: IServiceCollection, connectionString: string, npgsqlOptionsAction?: Action<NpgsqlDbContextOptionsBuilder>, optionsAction?: Action<DbContextOptionsBuilder>): IServiceCollection;
+    static AddNpgsql<TContext extends DbContext>(serviceCollection: IServiceCollection, connectionString: string, npgsqlOptionsAction?: Action_1<NpgsqlDbContextOptionsBuilder>, optionsAction?: Action_1<DbContextOptionsBuilder>): IServiceCollection;
 }
 
 

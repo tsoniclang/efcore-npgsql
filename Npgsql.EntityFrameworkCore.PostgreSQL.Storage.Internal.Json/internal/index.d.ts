@@ -10,17 +10,17 @@ import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
 import * as System_Internal from "@tsonic/dotnet/System.js";
-import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections.js";
-import type { BitArray } from "@tsonic/dotnet/System.Collections.js";
-import type { Object as ClrObject, Void } from "@tsonic/dotnet/System.js";
-import type { Expression } from "@tsonic/dotnet/System.Linq.Expressions.js";
-import * as System_Net_NetworkInformation_Internal from "@tsonic/dotnet/System.Net.NetworkInformation.js";
-import type { PhysicalAddress } from "@tsonic/dotnet/System.Net.NetworkInformation.js";
-import type { Utf8JsonWriter } from "@tsonic/dotnet/System.Text.Json.js";
-import * as Microsoft_EntityFrameworkCore_Storage_Json_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.Json.js";
-import type { JsonValueReaderWriter, Utf8JsonReaderManager } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.Json.js";
+import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections/internal/index.js";
+import type { BitArray } from "@tsonic/dotnet/System.Collections/internal/index.js";
+import type { Expression } from "@tsonic/dotnet/System.Linq.Expressions/internal/index.js";
+import * as System_Net_NetworkInformation_Internal from "@tsonic/dotnet/System.Net.NetworkInformation/internal/index.js";
+import type { PhysicalAddress } from "@tsonic/dotnet/System.Net.NetworkInformation/internal/index.js";
+import type { Utf8JsonWriter } from "@tsonic/dotnet/System.Text.Json/internal/index.js";
+import type { Object as ClrObject, Void } from "@tsonic/dotnet/System/internal/index.js";
+import * as Microsoft_EntityFrameworkCore_Storage_Json_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.Json/internal/index.js";
+import type { JsonValueReaderWriter_1, Utf8JsonReaderManager } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.Json/internal/index.js";
 
-export interface JsonBitArrayReaderWriter$instance extends JsonValueReaderWriter<BitArray> {
+export interface JsonBitArrayReaderWriter$instance extends JsonValueReaderWriter_1<BitArray> {
     readonly ConstructorExpression: Expression;
     FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): BitArray;
     ToJsonTyped(writer: Utf8JsonWriter, value: BitArray): void;
@@ -35,7 +35,7 @@ export const JsonBitArrayReaderWriter: {
 
 export type JsonBitArrayReaderWriter = JsonBitArrayReaderWriter$instance;
 
-export interface JsonMacaddrReaderWriter$instance extends JsonValueReaderWriter<PhysicalAddress> {
+export interface JsonMacaddrReaderWriter$instance extends JsonValueReaderWriter_1<PhysicalAddress> {
     readonly ConstructorExpression: Expression;
     FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): PhysicalAddress;
     ToJsonTyped(writer: Utf8JsonWriter, value: PhysicalAddress): void;

@@ -10,13 +10,13 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import * as Npgsql_EntityFrameworkCore_PostgreSQL_Infrastructure_Internal_Internal from "../../Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal/internal/index.js";
 import type { NpgsqlOptionsExtension } from "../../Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal/internal/index.js";
 import type { INpgsqlNameTranslator, NpgsqlDataSourceBuilder, ProvideClientCertificatesCallback, ProvidePasswordCallback } from "../../Npgsql/internal/index.js";
-import type { ICollection } from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { Action, Boolean as ClrBoolean, Enum, Int32, Nullable, String as ClrString, TimeSpan, Type, ValueType, Version, Void } from "@tsonic/dotnet/System.js";
-import type { RemoteCertificateValidationCallback } from "@tsonic/dotnet/System.Net.Security.js";
-import * as Microsoft_EntityFrameworkCore_Infrastructure_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure.js";
-import type { EntityFrameworkRelationalServicesBuilder, IRelationalDbContextOptionsBuilderInfrastructure, RelationalDbContextOptionsBuilder, ServiceCharacteristics } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure.js";
-import type { DbContextOptionsBuilder } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.js";
-import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection.js";
+import type { ICollection_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { RemoteCertificateValidationCallback } from "@tsonic/dotnet/System.Net.Security/internal/index.js";
+import type { Action_1, Boolean as ClrBoolean, Enum, Int32, Nullable_1, String as ClrString, TimeSpan, Type, ValueType, Version, Void } from "@tsonic/dotnet/System/internal/index.js";
+import * as Microsoft_EntityFrameworkCore_Infrastructure_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure/internal/index.js";
+import type { EntityFrameworkRelationalServicesBuilder, IRelationalDbContextOptionsBuilderInfrastructure, RelationalDbContextOptionsBuilder_2, ServiceCharacteristics } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure/internal/index.js";
+import type { DbContextOptionsBuilder } from "@tsonic/efcore/Microsoft.EntityFrameworkCore/internal/index.js";
+import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection/internal/index.js";
 
 export interface INpgsqlDataSourceConfigurationPlugin$instance {
     readonly __tsonic_iface_Npgsql_EntityFrameworkCore_PostgreSQL_Infrastructure_INpgsqlDataSourceConfigurationPlugin: never;
@@ -28,7 +28,7 @@ export interface INpgsqlDataSourceConfigurationPlugin$instance {
 export type INpgsqlDataSourceConfigurationPlugin = INpgsqlDataSourceConfigurationPlugin$instance;
 
 export interface EntityFrameworkNpgsqlServicesBuilder$instance extends EntityFrameworkRelationalServicesBuilder {
-    TryGetServiceCharacteristics(serviceType: Type): Nullable<ServiceCharacteristics>;
+    TryGetServiceCharacteristics(serviceType: Type): Nullable_1<ServiceCharacteristics>;
 }
 
 
@@ -39,14 +39,14 @@ export const EntityFrameworkNpgsqlServicesBuilder: {
 
 export type EntityFrameworkNpgsqlServicesBuilder = EntityFrameworkNpgsqlServicesBuilder$instance;
 
-export interface NpgsqlDbContextOptionsBuilder$instance extends RelationalDbContextOptionsBuilder<NpgsqlDbContextOptionsBuilder, NpgsqlOptionsExtension> {
+export interface NpgsqlDbContextOptionsBuilder$instance extends RelationalDbContextOptionsBuilder_2<NpgsqlDbContextOptionsBuilder, NpgsqlOptionsExtension> {
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_IRelationalDbContextOptionsBuilderInfrastructure: never;
 
-    ConfigureDataSource(dataSourceBuilderAction: Action<NpgsqlDataSourceBuilder>): NpgsqlDbContextOptionsBuilder;
+    ConfigureDataSource(dataSourceBuilderAction: Action_1<NpgsqlDataSourceBuilder>): NpgsqlDbContextOptionsBuilder;
     EnableRetryOnFailure(): NpgsqlDbContextOptionsBuilder;
     EnableRetryOnFailure(maxRetryCount: int): NpgsqlDbContextOptionsBuilder;
-    EnableRetryOnFailure(errorCodesToAdd: ICollection<System_Internal.String>): NpgsqlDbContextOptionsBuilder;
-    EnableRetryOnFailure(maxRetryCount: int, maxRetryDelay: TimeSpan, errorCodesToAdd: ICollection<System_Internal.String>): NpgsqlDbContextOptionsBuilder;
+    EnableRetryOnFailure(errorCodesToAdd: ICollection_1<System_Internal.String>): NpgsqlDbContextOptionsBuilder;
+    EnableRetryOnFailure(maxRetryCount: int, maxRetryDelay: TimeSpan, errorCodesToAdd: ICollection_1<System_Internal.String>): NpgsqlDbContextOptionsBuilder;
     MapEnum<T extends number>(enumName?: string, schemaName?: string, nameTranslator?: INpgsqlNameTranslator): NpgsqlDbContextOptionsBuilder;
     MapEnum(clrType: Type, enumName?: string, schemaName?: string, nameTranslator?: INpgsqlNameTranslator): NpgsqlDbContextOptionsBuilder;
     MapRange<TSubtype>(rangeName: string, schemaName?: string, subtypeName?: string): NpgsqlDbContextOptionsBuilder;

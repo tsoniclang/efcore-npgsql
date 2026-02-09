@@ -7,10 +7,11 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 
 // Import types from other namespaces
 import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { IEnumerable } from "@tsonic/dotnet/System.Collections.js";
-import type { ValueConverter } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.ValueConversion.js";
+import type { IEnumerable } from "@tsonic/dotnet/System.Collections/internal/index.js";
+import * as Microsoft_EntityFrameworkCore_Storage_ValueConversion_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.ValueConversion/internal/index.js";
+import type { ValueConverter, ValueConverter_2 } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.ValueConversion/internal/index.js";
 
-export interface NpgsqlArrayConverter_3$instance<TModelCollection extends IEnumerable, TConcreteModelCollection extends IEnumerable, TProviderCollection extends IEnumerable> extends ValueConverter<TModelCollection, TProviderCollection> {
+export interface NpgsqlArrayConverter_3$instance<TModelCollection extends IEnumerable, TConcreteModelCollection extends IEnumerable, TProviderCollection extends IEnumerable> extends ValueConverter_2<TModelCollection, TProviderCollection> {
     readonly ElementConverter: ValueConverter | undefined;
 }
 

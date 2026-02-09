@@ -8,9 +8,9 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 // Import types from other namespaces
 import type { DbTypeResolverFactory, PgTypeInfoResolverFactory } from "../../Npgsql.Internal/internal/index.js";
 import type { INpgsqlNameTranslator } from "../../Npgsql/internal/index.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Enum, Object as ClrObject, String as ClrString, Type, ValueType, Void } from "@tsonic/dotnet/System.js";
-import type { JsonSerializerOptions } from "@tsonic/dotnet/System.Text.Json.js";
+import type { JsonSerializerOptions } from "@tsonic/dotnet/System.Text.Json/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Enum, Object as ClrObject, String as ClrString, Type, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface INpgsqlTypeMapper$instance {
     readonly __tsonic_iface_Npgsql_TypeMapping_INpgsqlTypeMapper: never;
