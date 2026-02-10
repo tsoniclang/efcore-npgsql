@@ -12,6 +12,8 @@ import * as Microsoft_EntityFrameworkCore_Storage_ValueConversion_Internal from 
 import type { ValueConverter, ValueConverter_2 } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.ValueConversion/internal/index.js";
 
 export interface NpgsqlArrayConverter_3$instance<TModelCollection extends IEnumerable, TConcreteModelCollection extends IEnumerable, TProviderCollection extends IEnumerable> extends ValueConverter_2<TModelCollection, TProviderCollection> {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_ValueConversion_NpgsqlArrayConverter_3: never;
+
     readonly ElementConverter: ValueConverter | undefined;
 }
 

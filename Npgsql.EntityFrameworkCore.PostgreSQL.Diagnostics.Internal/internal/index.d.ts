@@ -11,6 +11,8 @@ import * as Microsoft_EntityFrameworkCore_Diagnostics_Internal from "@tsonic/efc
 import type { EventDefinitionBase, RelationalLoggingDefinitions } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Diagnostics/internal/index.js";
 
 export interface NpgsqlLoggingDefinitions$instance extends RelationalLoggingDefinitions {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Diagnostics_Internal_NpgsqlLoggingDefinitions: never;
+
     LogFoundDefaultSchema: EventDefinitionBase | undefined;
     LogFoundColumn: EventDefinitionBase | undefined;
     LogFoundForeignKey: EventDefinitionBase | undefined;

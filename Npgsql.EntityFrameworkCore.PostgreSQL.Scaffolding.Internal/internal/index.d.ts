@@ -17,6 +17,8 @@ import type { DatabaseModelFactory, DatabaseModelFactoryOptions, IDatabaseModelF
 import type { DbLoggerCategory$Scaffolding } from "@tsonic/efcore/Microsoft.EntityFrameworkCore/internal/index.js";
 
 export interface NpgsqlCodeGenerator$instance extends ProviderCodeGenerator {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Scaffolding_Internal_NpgsqlCodeGenerator: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Scaffolding_IProviderConfigurationCodeGenerator: never;
 
     GenerateUseProvider(connectionString: string, providerOptions: MethodCallCodeFragment): MethodCallCodeFragment;
@@ -31,6 +33,8 @@ export const NpgsqlCodeGenerator: {
 export type NpgsqlCodeGenerator = NpgsqlCodeGenerator$instance;
 
 export interface NpgsqlDatabaseModelFactory$instance extends DatabaseModelFactory {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Scaffolding_Internal_NpgsqlDatabaseModelFactory: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Scaffolding_IDatabaseModelFactory: never;
 
     Create(connectionString: string, options: DatabaseModelFactoryOptions): DatabaseModel;

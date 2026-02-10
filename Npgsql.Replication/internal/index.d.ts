@@ -26,6 +26,8 @@ export enum LogicalSlotSnapshotInitMode {
 
 
 export interface ReplicationSlotOptions$instance {
+    readonly __tsonic_type_Npgsql_Replication_ReplicationSlotOptions: never;
+
     readonly ConsistentPoint: NpgsqlLogSequenceNumber;
     readonly SlotName: string;
 }
@@ -40,6 +42,8 @@ export const ReplicationSlotOptions: {
 export type ReplicationSlotOptions = ReplicationSlotOptions$instance;
 
 export interface TimelineHistoryFile$instance {
+    readonly __tsonic_type_Npgsql_Replication_TimelineHistoryFile: never;
+
     readonly Content: byte[];
     readonly FileName: string;
 }
@@ -53,6 +57,8 @@ export const TimelineHistoryFile: {
 export type TimelineHistoryFile = TimelineHistoryFile$instance;
 
 export interface LogicalReplicationConnection$instance extends ReplicationConnection {
+    readonly __tsonic_type_Npgsql_Replication_LogicalReplicationConnection: never;
+
     readonly __tsonic_iface_System_IAsyncDisposable: never;
 
 }
@@ -67,6 +73,8 @@ export const LogicalReplicationConnection: {
 export type LogicalReplicationConnection = LogicalReplicationConnection$instance;
 
 export interface PhysicalReplicationConnection$instance extends ReplicationConnection {
+    readonly __tsonic_type_Npgsql_Replication_PhysicalReplicationConnection: never;
+
     readonly __tsonic_iface_System_IAsyncDisposable: never;
 
     CreateReplicationSlot(slotName: string, isTemporary?: boolean, reserveWal?: boolean, cancellationToken?: CancellationToken): Task_1<PhysicalReplicationSlot>;
@@ -86,6 +94,8 @@ export const PhysicalReplicationConnection: {
 export type PhysicalReplicationConnection = PhysicalReplicationConnection$instance;
 
 export interface PhysicalReplicationSlot$instance extends ReplicationSlot {
+    readonly __tsonic_type_Npgsql_Replication_PhysicalReplicationSlot: never;
+
     readonly RestartLsn: Nullable_1<NpgsqlLogSequenceNumber>;
     readonly RestartTimeline: Nullable_1<System_Internal.UInt32>;
 }
@@ -99,6 +109,8 @@ export const PhysicalReplicationSlot: {
 export type PhysicalReplicationSlot = PhysicalReplicationSlot$instance;
 
 export interface ReplicationConnection$instance {
+    readonly __tsonic_type_Npgsql_Replication_ReplicationConnection: never;
+
     readonly __tsonic_iface_System_IAsyncDisposable: never;
 
     CommandTimeout: TimeSpan;
@@ -130,6 +142,8 @@ export const ReplicationConnection: {
 export type ReplicationConnection = ReplicationConnection$instance;
 
 export interface ReplicationMessage$instance {
+    readonly __tsonic_type_Npgsql_Replication_ReplicationMessage: never;
+
     ServerClock: DateTime;
     WalEnd: NpgsqlLogSequenceNumber;
     WalStart: NpgsqlLogSequenceNumber;
@@ -143,6 +157,8 @@ export const ReplicationMessage: (abstract new() => ReplicationMessage) & {
 export type ReplicationMessage = ReplicationMessage$instance;
 
 export interface ReplicationSlot$instance {
+    readonly __tsonic_type_Npgsql_Replication_ReplicationSlot: never;
+
     readonly Name: string;
 }
 
@@ -154,6 +170,8 @@ export const ReplicationSlot: {
 export type ReplicationSlot = ReplicationSlot$instance;
 
 export interface ReplicationSystemIdentification$instance {
+    readonly __tsonic_type_Npgsql_Replication_ReplicationSystemIdentification: never;
+
     readonly DbName: string | undefined;
     readonly SystemId: string;
     readonly Timeline: uint;
@@ -168,6 +186,8 @@ export const ReplicationSystemIdentification: {
 export type ReplicationSystemIdentification = ReplicationSystemIdentification$instance;
 
 export interface XLogDataMessage$instance extends ReplicationMessage {
+    readonly __tsonic_type_Npgsql_Replication_XLogDataMessage: never;
+
     Data: Stream;
 }
 

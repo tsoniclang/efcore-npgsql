@@ -18,6 +18,8 @@ import * as Microsoft_EntityFrameworkCore_Migrations_Internal from "@tsonic/efco
 import type { IMigrationsSqlGenerator, MigrationCommand, MigrationCommandListBuilder, MigrationsSqlGenerationOptions, MigrationsSqlGenerator, MigrationsSqlGeneratorDependencies } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Migrations/internal/index.js";
 
 export interface NpgsqlMigrationsSqlGenerator$instance extends MigrationsSqlGenerator {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Migrations_NpgsqlMigrationsSqlGenerator: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Migrations_IMigrationsSqlGenerator: never;
 
     ApplyTsVectorColumnSql(column: ColumnOperation, model: IModel, name: string, schema: string, table: string): void;

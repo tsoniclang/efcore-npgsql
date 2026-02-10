@@ -21,6 +21,8 @@ import * as Microsoft_EntityFrameworkCore_Update_Internal from "@tsonic/efcore/M
 import type { ColumnModificationParameters, IColumnModification, IModificationCommand, IModificationCommandBatchFactory, IModificationCommandFactory, INonTrackedModificationCommand, IReadOnlyModificationCommand, IUpdateSqlGenerator, ModificationCommand, ModificationCommandBatch, ModificationCommandBatchFactoryDependencies, ModificationCommandParameters, NonTrackedModificationCommandParameters, ReaderModificationCommandBatch, ResultSetMapping, UpdateSqlGenerator, UpdateSqlGeneratorDependencies } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Update/internal/index.js";
 
 export interface NpgsqlModificationCommand$instance extends ModificationCommand {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Update_Internal_NpgsqlModificationCommand: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Update_IModificationCommand: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Update_INonTrackedModificationCommand: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Update_IReadOnlyModificationCommand: never;
@@ -39,6 +41,8 @@ export const NpgsqlModificationCommand: {
 export type NpgsqlModificationCommand = NpgsqlModificationCommand$instance;
 
 export interface NpgsqlModificationCommandBatch$instance extends ReaderModificationCommandBatch {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Update_Internal_NpgsqlModificationCommandBatch: never;
+
     readonly MaxBatchSize: int;
     AddParameter(columnModification: IColumnModification): void;
     Consume(reader: RelationalDataReader): void;
@@ -56,6 +60,8 @@ export const NpgsqlModificationCommandBatch: {
 export type NpgsqlModificationCommandBatch = NpgsqlModificationCommandBatch$instance;
 
 export interface NpgsqlModificationCommandBatchFactory$instance {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Update_Internal_NpgsqlModificationCommandBatchFactory: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Update_IModificationCommandBatchFactory: never;
 
     Create(): ModificationCommandBatch;
@@ -70,6 +76,8 @@ export const NpgsqlModificationCommandBatchFactory: {
 export type NpgsqlModificationCommandBatchFactory = NpgsqlModificationCommandBatchFactory$instance;
 
 export interface NpgsqlModificationCommandFactory$instance {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Update_Internal_NpgsqlModificationCommandFactory: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Update_IModificationCommandFactory: never;
 
     CreateModificationCommand(modificationCommandParameters: ModificationCommandParameters): IModificationCommand;
@@ -85,6 +93,8 @@ export const NpgsqlModificationCommandFactory: {
 export type NpgsqlModificationCommandFactory = NpgsqlModificationCommandFactory$instance;
 
 export interface NpgsqlUpdateSqlGenerator$instance extends UpdateSqlGenerator {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Update_Internal_NpgsqlUpdateSqlGenerator: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Update_IUpdateSqlGenerator: never;
 
     AppendDeleteOperation(commandStringBuilder: StringBuilder, command: IReadOnlyModificationCommand, commandPosition: int, requiresTransaction: boolean): ResultSetMapping;

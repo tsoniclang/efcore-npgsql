@@ -43,6 +43,8 @@ export enum TupleDataKind {
 
 
 export interface PgOutputReplicationOptions$instance {
+    readonly __tsonic_type_Npgsql_Replication_PgOutput_PgOutputReplicationOptions: never;
+
     readonly __tsonic_iface_System_IEquatable_1: never;
 
     readonly Binary: Nullable_1<System_Internal.Boolean>;
@@ -68,6 +70,8 @@ export const PgOutputReplicationOptions: {
 export type PgOutputReplicationOptions = PgOutputReplicationOptions$instance;
 
 export interface PgOutputReplicationSlot$instance extends LogicalReplicationSlot {
+    readonly __tsonic_type_Npgsql_Replication_PgOutput_PgOutputReplicationSlot: never;
+
 }
 
 
@@ -80,6 +84,8 @@ export const PgOutputReplicationSlot: {
 export type PgOutputReplicationSlot = PgOutputReplicationSlot$instance;
 
 export interface ReplicationTuple$instance {
+    readonly __tsonic_type_Npgsql_Replication_PgOutput_ReplicationTuple: never;
+
     readonly __tsonic_iface_System_Collections_Generic_IAsyncEnumerable_1: never;
 
     NumColumns: ushort;
@@ -94,6 +100,8 @@ export const ReplicationTuple: {
 export type ReplicationTuple = ReplicationTuple$instance;
 
 export interface ReplicationValue$instance {
+    readonly __tsonic_type_Npgsql_Replication_PgOutput_ReplicationValue: never;
+
     readonly IsDBNull: boolean;
     readonly IsUnchangedToastedValue: boolean;
     Kind: TupleDataKind;

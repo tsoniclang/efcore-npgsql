@@ -28,6 +28,8 @@ export interface INpgsqlDataSourceConfigurationPlugin$instance {
 export type INpgsqlDataSourceConfigurationPlugin = INpgsqlDataSourceConfigurationPlugin$instance;
 
 export interface EntityFrameworkNpgsqlServicesBuilder$instance extends EntityFrameworkRelationalServicesBuilder {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Infrastructure_EntityFrameworkNpgsqlServicesBuilder: never;
+
     TryGetServiceCharacteristics(serviceType: Type): Nullable_1<ServiceCharacteristics>;
 }
 
@@ -40,6 +42,8 @@ export const EntityFrameworkNpgsqlServicesBuilder: {
 export type EntityFrameworkNpgsqlServicesBuilder = EntityFrameworkNpgsqlServicesBuilder$instance;
 
 export interface NpgsqlDbContextOptionsBuilder$instance extends RelationalDbContextOptionsBuilder_2<NpgsqlDbContextOptionsBuilder, NpgsqlOptionsExtension> {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Infrastructure_NpgsqlDbContextOptionsBuilder: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_IRelationalDbContextOptionsBuilderInfrastructure: never;
 
     ConfigureDataSource(dataSourceBuilderAction: Action_1<NpgsqlDataSourceBuilder>): NpgsqlDbContextOptionsBuilder;

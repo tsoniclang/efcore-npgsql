@@ -22,6 +22,8 @@ import type { IRelationalTypeMappingSource } from "@tsonic/efcore/Microsoft.Enti
 import type { DbLoggerCategory$Query } from "@tsonic/efcore/Microsoft.EntityFrameworkCore/internal/index.js";
 
 export interface NpgsqlAggregateMethodCallTranslatorProvider$instance extends RelationalAggregateMethodCallTranslatorProvider {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_ExpressionTranslators_Internal_NpgsqlAggregateMethodCallTranslatorProvider: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IAggregateMethodCallTranslatorProvider: never;
 
 }
@@ -35,6 +37,8 @@ export const NpgsqlAggregateMethodCallTranslatorProvider: {
 export type NpgsqlAggregateMethodCallTranslatorProvider = NpgsqlAggregateMethodCallTranslatorProvider$instance;
 
 export interface NpgsqlArrayMethodTranslator$instance {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_ExpressionTranslators_Internal_NpgsqlArrayMethodTranslator: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslator: never;
 
     Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
@@ -49,6 +53,8 @@ export const NpgsqlArrayMethodTranslator: {
 export type NpgsqlArrayMethodTranslator = NpgsqlArrayMethodTranslator$instance;
 
 export interface NpgsqlBigIntegerMemberTranslator$instance {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_ExpressionTranslators_Internal_NpgsqlBigIntegerMemberTranslator: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMemberTranslator: never;
 
     Translate(instance: SqlExpression, member: MemberInfo, returnType: Type, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
@@ -63,6 +69,8 @@ export const NpgsqlBigIntegerMemberTranslator: {
 export type NpgsqlBigIntegerMemberTranslator = NpgsqlBigIntegerMemberTranslator$instance;
 
 export interface NpgsqlByteArrayMethodTranslator$instance {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_ExpressionTranslators_Internal_NpgsqlByteArrayMethodTranslator: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslator: never;
 
     Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
@@ -77,6 +85,8 @@ export const NpgsqlByteArrayMethodTranslator: {
 export type NpgsqlByteArrayMethodTranslator = NpgsqlByteArrayMethodTranslator$instance;
 
 export interface NpgsqlConvertTranslator$instance {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_ExpressionTranslators_Internal_NpgsqlConvertTranslator: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslator: never;
 
     Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
@@ -91,6 +101,8 @@ export const NpgsqlConvertTranslator: {
 export type NpgsqlConvertTranslator = NpgsqlConvertTranslator$instance;
 
 export interface NpgsqlCubeTranslator$instance {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_ExpressionTranslators_Internal_NpgsqlCubeTranslator: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMemberTranslator: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslator: never;
 
@@ -107,6 +119,8 @@ export const NpgsqlCubeTranslator: {
 export type NpgsqlCubeTranslator = NpgsqlCubeTranslator$instance;
 
 export interface NpgsqlDateTimeMemberTranslator$instance {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_ExpressionTranslators_Internal_NpgsqlDateTimeMemberTranslator: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMemberTranslator: never;
 
     Translate(instance: SqlExpression, member: MemberInfo, returnType: Type, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
@@ -121,6 +135,8 @@ export const NpgsqlDateTimeMemberTranslator: {
 export type NpgsqlDateTimeMemberTranslator = NpgsqlDateTimeMemberTranslator$instance;
 
 export interface NpgsqlDateTimeMethodTranslator$instance {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_ExpressionTranslators_Internal_NpgsqlDateTimeMethodTranslator: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslator: never;
 
     Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
@@ -135,6 +151,8 @@ export const NpgsqlDateTimeMethodTranslator: {
 export type NpgsqlDateTimeMethodTranslator = NpgsqlDateTimeMethodTranslator$instance;
 
 export interface NpgsqlFullTextSearchMethodTranslator$instance {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_ExpressionTranslators_Internal_NpgsqlFullTextSearchMethodTranslator: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslator: never;
 
     Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
@@ -149,6 +167,8 @@ export const NpgsqlFullTextSearchMethodTranslator: {
 export type NpgsqlFullTextSearchMethodTranslator = NpgsqlFullTextSearchMethodTranslator$instance;
 
 export interface NpgsqlFuzzyStringMatchMethodTranslator$instance {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_ExpressionTranslators_Internal_NpgsqlFuzzyStringMatchMethodTranslator: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslator: never;
 
     Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
@@ -163,6 +183,8 @@ export const NpgsqlFuzzyStringMatchMethodTranslator: {
 export type NpgsqlFuzzyStringMatchMethodTranslator = NpgsqlFuzzyStringMatchMethodTranslator$instance;
 
 export interface NpgsqlGuidTranslator$instance {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_ExpressionTranslators_Internal_NpgsqlGuidTranslator: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslator: never;
 
     Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
@@ -177,6 +199,8 @@ export const NpgsqlGuidTranslator: {
 export type NpgsqlGuidTranslator = NpgsqlGuidTranslator$instance;
 
 export interface NpgsqlJsonDbFunctionsTranslator$instance {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_ExpressionTranslators_Internal_NpgsqlJsonDbFunctionsTranslator: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslator: never;
 
     Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
@@ -191,6 +215,8 @@ export const NpgsqlJsonDbFunctionsTranslator: {
 export type NpgsqlJsonDbFunctionsTranslator = NpgsqlJsonDbFunctionsTranslator$instance;
 
 export interface NpgsqlJsonDomTranslator$instance {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_ExpressionTranslators_Internal_NpgsqlJsonDomTranslator: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMemberTranslator: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslator: never;
 
@@ -207,6 +233,8 @@ export const NpgsqlJsonDomTranslator: {
 export type NpgsqlJsonDomTranslator = NpgsqlJsonDomTranslator$instance;
 
 export interface NpgsqlJsonPocoTranslator$instance {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_ExpressionTranslators_Internal_NpgsqlJsonPocoTranslator: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMemberTranslator: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslator: never;
 
@@ -225,6 +253,8 @@ export const NpgsqlJsonPocoTranslator: {
 export type NpgsqlJsonPocoTranslator = NpgsqlJsonPocoTranslator$instance;
 
 export interface NpgsqlLikeTranslator$instance {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_ExpressionTranslators_Internal_NpgsqlLikeTranslator: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslator: never;
 
     Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
@@ -239,6 +269,8 @@ export const NpgsqlLikeTranslator: {
 export type NpgsqlLikeTranslator = NpgsqlLikeTranslator$instance;
 
 export interface NpgsqlLTreeTranslator$instance {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_ExpressionTranslators_Internal_NpgsqlLTreeTranslator: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMemberTranslator: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslator: never;
 
@@ -255,6 +287,8 @@ export const NpgsqlLTreeTranslator: {
 export type NpgsqlLTreeTranslator = NpgsqlLTreeTranslator$instance;
 
 export interface NpgsqlMathTranslator$instance {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_ExpressionTranslators_Internal_NpgsqlMathTranslator: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslator: never;
 
     Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
@@ -269,6 +303,8 @@ export const NpgsqlMathTranslator: {
 export type NpgsqlMathTranslator = NpgsqlMathTranslator$instance;
 
 export interface NpgsqlMemberTranslatorProvider$instance extends RelationalMemberTranslatorProvider {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_ExpressionTranslators_Internal_NpgsqlMemberTranslatorProvider: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMemberTranslatorProvider: never;
 
     readonly JsonPocoTranslator: NpgsqlJsonPocoTranslator;
@@ -283,6 +319,8 @@ export const NpgsqlMemberTranslatorProvider: {
 export type NpgsqlMemberTranslatorProvider = NpgsqlMemberTranslatorProvider$instance;
 
 export interface NpgsqlMethodCallTranslatorProvider$instance extends RelationalMethodCallTranslatorProvider {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_ExpressionTranslators_Internal_NpgsqlMethodCallTranslatorProvider: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslatorProvider: never;
 
     readonly LTreeTranslator: NpgsqlLTreeTranslator;
@@ -297,6 +335,8 @@ export const NpgsqlMethodCallTranslatorProvider: {
 export type NpgsqlMethodCallTranslatorProvider = NpgsqlMethodCallTranslatorProvider$instance;
 
 export interface NpgsqlMiscAggregateMethodTranslator$instance {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_ExpressionTranslators_Internal_NpgsqlMiscAggregateMethodTranslator: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IAggregateMethodCallTranslator: never;
 
     Translate(method: MethodInfo, source: EnumerableExpression, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
@@ -311,6 +351,8 @@ export const NpgsqlMiscAggregateMethodTranslator: {
 export type NpgsqlMiscAggregateMethodTranslator = NpgsqlMiscAggregateMethodTranslator$instance;
 
 export interface NpgsqlNetworkTranslator$instance {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_ExpressionTranslators_Internal_NpgsqlNetworkTranslator: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslator: never;
 
     Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
@@ -325,6 +367,8 @@ export const NpgsqlNetworkTranslator: {
 export type NpgsqlNetworkTranslator = NpgsqlNetworkTranslator$instance;
 
 export interface NpgsqlObjectToStringTranslator$instance {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_ExpressionTranslators_Internal_NpgsqlObjectToStringTranslator: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslator: never;
 
     Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
@@ -339,6 +383,8 @@ export const NpgsqlObjectToStringTranslator: {
 export type NpgsqlObjectToStringTranslator = NpgsqlObjectToStringTranslator$instance;
 
 export interface NpgsqlQueryableAggregateMethodTranslator$instance {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_ExpressionTranslators_Internal_NpgsqlQueryableAggregateMethodTranslator: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IAggregateMethodCallTranslator: never;
 
     Translate(method: MethodInfo, source: EnumerableExpression, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
@@ -353,6 +399,8 @@ export const NpgsqlQueryableAggregateMethodTranslator: {
 export type NpgsqlQueryableAggregateMethodTranslator = NpgsqlQueryableAggregateMethodTranslator$instance;
 
 export interface NpgsqlRandomTranslator$instance {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_ExpressionTranslators_Internal_NpgsqlRandomTranslator: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslator: never;
 
     Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
@@ -367,6 +415,8 @@ export const NpgsqlRandomTranslator: {
 export type NpgsqlRandomTranslator = NpgsqlRandomTranslator$instance;
 
 export interface NpgsqlRangeTranslator$instance {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_ExpressionTranslators_Internal_NpgsqlRangeTranslator: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMemberTranslator: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslator: never;
 
@@ -383,6 +433,8 @@ export const NpgsqlRangeTranslator: {
 export type NpgsqlRangeTranslator = NpgsqlRangeTranslator$instance;
 
 export interface NpgsqlRegexTranslator$instance {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_ExpressionTranslators_Internal_NpgsqlRegexTranslator: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslator: never;
 
     Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
@@ -397,6 +449,8 @@ export const NpgsqlRegexTranslator: {
 export type NpgsqlRegexTranslator = NpgsqlRegexTranslator$instance;
 
 export interface NpgsqlRowValueTranslator$instance {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_ExpressionTranslators_Internal_NpgsqlRowValueTranslator: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslator: never;
 
     Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
@@ -411,6 +465,8 @@ export const NpgsqlRowValueTranslator: {
 export type NpgsqlRowValueTranslator = NpgsqlRowValueTranslator$instance;
 
 export interface NpgsqlStatisticsAggregateMethodTranslator$instance {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_ExpressionTranslators_Internal_NpgsqlStatisticsAggregateMethodTranslator: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IAggregateMethodCallTranslator: never;
 
     Translate(method: MethodInfo, source: EnumerableExpression, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
@@ -425,6 +481,8 @@ export const NpgsqlStatisticsAggregateMethodTranslator: {
 export type NpgsqlStatisticsAggregateMethodTranslator = NpgsqlStatisticsAggregateMethodTranslator$instance;
 
 export interface NpgsqlStringMemberTranslator$instance {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_ExpressionTranslators_Internal_NpgsqlStringMemberTranslator: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMemberTranslator: never;
 
     Translate(instance: SqlExpression, member: MemberInfo, returnType: Type, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
@@ -439,6 +497,8 @@ export const NpgsqlStringMemberTranslator: {
 export type NpgsqlStringMemberTranslator = NpgsqlStringMemberTranslator$instance;
 
 export interface NpgsqlStringMethodTranslator$instance {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_ExpressionTranslators_Internal_NpgsqlStringMethodTranslator: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslator: never;
 
     Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
@@ -453,6 +513,8 @@ export const NpgsqlStringMethodTranslator: {
 export type NpgsqlStringMethodTranslator = NpgsqlStringMethodTranslator$instance;
 
 export interface NpgsqlTimeSpanMemberTranslator$instance {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_ExpressionTranslators_Internal_NpgsqlTimeSpanMemberTranslator: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMemberTranslator: never;
 
     Translate(instance: SqlExpression, member: MemberInfo, returnType: Type, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;
@@ -467,6 +529,8 @@ export const NpgsqlTimeSpanMemberTranslator: {
 export type NpgsqlTimeSpanMemberTranslator = NpgsqlTimeSpanMemberTranslator$instance;
 
 export interface NpgsqlTrigramsMethodTranslator$instance {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_ExpressionTranslators_Internal_NpgsqlTrigramsMethodTranslator: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IMethodCallTranslator: never;
 
     Translate(instance: SqlExpression, method: MethodInfo, arguments: IReadOnlyList_1<SqlExpression>, logger: IDiagnosticsLogger_1<DbLoggerCategory$Query>): SqlExpression | undefined;

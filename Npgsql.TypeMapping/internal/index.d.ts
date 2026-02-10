@@ -32,6 +32,8 @@ export interface INpgsqlTypeMapper$instance {
 export type INpgsqlTypeMapper = INpgsqlTypeMapper$instance;
 
 export interface UserTypeMapping$instance {
+    readonly __tsonic_type_Npgsql_TypeMapping_UserTypeMapping: never;
+
     readonly ClrType: Type;
     readonly PgTypeName: string;
 }

@@ -36,6 +36,8 @@ export enum PgAnyOperatorType {
 
 
 export interface PgTableValuedFunctionExpression_ColumnInfo$instance {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_Expressions_Internal_PgTableValuedFunctionExpression_ColumnInfo: never;
+
     readonly __tsonic_iface_System_IEquatable_1: never;
 
     Name: string;
@@ -57,6 +59,8 @@ export const PgTableValuedFunctionExpression_ColumnInfo: {
 export type PgTableValuedFunctionExpression_ColumnInfo = PgTableValuedFunctionExpression_ColumnInfo$instance;
 
 export interface PgAllExpression$instance extends SqlExpression {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_Expressions_Internal_PgAllExpression: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IPrintableExpression: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IRelationalQuotableExpression: never;
     readonly __tsonic_iface_System_IEquatable_1: never;
@@ -84,6 +88,8 @@ export const PgAllExpression: {
 export type PgAllExpression = PgAllExpression$instance;
 
 export interface PgAnyExpression$instance extends SqlExpression {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_Expressions_Internal_PgAnyExpression: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IPrintableExpression: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IRelationalQuotableExpression: never;
     readonly __tsonic_iface_System_IEquatable_1: never;
@@ -111,6 +117,8 @@ export const PgAnyExpression: {
 export type PgAnyExpression = PgAnyExpression$instance;
 
 export interface PgArrayIndexExpression$instance extends SqlExpression {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_Expressions_Internal_PgArrayIndexExpression: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IPrintableExpression: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IRelationalQuotableExpression: never;
     readonly __tsonic_iface_System_IEquatable_1: never;
@@ -137,6 +145,8 @@ export const PgArrayIndexExpression: {
 export type PgArrayIndexExpression = PgArrayIndexExpression$instance;
 
 export interface PgArraySliceExpression$instance extends SqlExpression {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_Expressions_Internal_PgArraySliceExpression: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IPrintableExpression: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IRelationalQuotableExpression: never;
     readonly __tsonic_iface_System_IEquatable_1: never;
@@ -164,6 +174,8 @@ export const PgArraySliceExpression: {
 export type PgArraySliceExpression = PgArraySliceExpression$instance;
 
 export interface PgBinaryExpression$instance extends SqlExpression {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_Expressions_Internal_PgBinaryExpression: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IPrintableExpression: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IRelationalQuotableExpression: never;
 
@@ -187,6 +199,8 @@ export const PgBinaryExpression: {
 export type PgBinaryExpression = PgBinaryExpression$instance;
 
 export interface PgDeleteExpression$instance extends Expression {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_Expressions_Internal_PgDeleteExpression: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IPrintableExpression: never;
 
     readonly FromItems: IReadOnlyList_1<TableExpressionBase>;
@@ -211,6 +225,8 @@ export const PgDeleteExpression: {
 export type PgDeleteExpression = PgDeleteExpression$instance;
 
 export interface PgFunctionExpression$instance extends SqlFunctionExpression {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_Expressions_Internal_PgFunctionExpression: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IPrintableExpression: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IRelationalQuotableExpression: never;
     readonly __tsonic_iface_System_IEquatable_1: never;
@@ -243,6 +259,8 @@ export const PgFunctionExpression: {
 export type PgFunctionExpression = PgFunctionExpression$instance;
 
 export interface PgILikeExpression$instance extends SqlExpression {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_Expressions_Internal_PgILikeExpression: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IPrintableExpression: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IRelationalQuotableExpression: never;
     readonly __tsonic_iface_System_IEquatable_1: never;
@@ -269,6 +287,8 @@ export const PgILikeExpression: {
 export type PgILikeExpression = PgILikeExpression$instance;
 
 export interface PgJsonTraversalExpression$instance extends SqlExpression {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_Expressions_Internal_PgJsonTraversalExpression: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IPrintableExpression: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IRelationalQuotableExpression: never;
     readonly __tsonic_iface_System_IEquatable_1: never;
@@ -296,6 +316,8 @@ export const PgJsonTraversalExpression: {
 export type PgJsonTraversalExpression = PgJsonTraversalExpression$instance;
 
 export interface PgNewArrayExpression$instance extends SqlExpression {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_Expressions_Internal_PgNewArrayExpression: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IPrintableExpression: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IRelationalQuotableExpression: never;
 
@@ -317,6 +339,8 @@ export const PgNewArrayExpression: {
 export type PgNewArrayExpression = PgNewArrayExpression$instance;
 
 export interface PgRegexMatchExpression$instance extends SqlExpression {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_Expressions_Internal_PgRegexMatchExpression: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IPrintableExpression: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IRelationalQuotableExpression: never;
     readonly __tsonic_iface_System_IEquatable_1: never;
@@ -344,6 +368,8 @@ export const PgRegexMatchExpression: {
 export type PgRegexMatchExpression = PgRegexMatchExpression$instance;
 
 export interface PgRowValueExpression$instance extends SqlExpression {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_Expressions_Internal_PgRowValueExpression: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IPrintableExpression: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IRelationalQuotableExpression: never;
     readonly __tsonic_iface_System_IEquatable_1: never;
@@ -367,6 +393,8 @@ export const PgRowValueExpression: {
 export type PgRowValueExpression = PgRowValueExpression$instance;
 
 export interface PgTableValuedFunctionExpression$instance extends TableValuedFunctionExpression {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_Expressions_Internal_PgTableValuedFunctionExpression: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IPrintableExpression: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IRelationalQuotableExpression: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_SqlExpressions_ITableBasedExpression: never;
@@ -394,6 +422,8 @@ export const PgTableValuedFunctionExpression: {
 export type PgTableValuedFunctionExpression = PgTableValuedFunctionExpression$instance;
 
 export interface PgUnknownBinaryExpression$instance extends SqlExpression {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_Expressions_Internal_PgUnknownBinaryExpression: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IPrintableExpression: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IRelationalQuotableExpression: never;
     readonly __tsonic_iface_System_IEquatable_1: never;
@@ -420,6 +450,8 @@ export const PgUnknownBinaryExpression: {
 export type PgUnknownBinaryExpression = PgUnknownBinaryExpression$instance;
 
 export interface PgUnnestExpression$instance extends PgTableValuedFunctionExpression {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_Expressions_Internal_PgUnnestExpression: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IPrintableExpression: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IRelationalQuotableExpression: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_SqlExpressions_ITableBasedExpression: never;
