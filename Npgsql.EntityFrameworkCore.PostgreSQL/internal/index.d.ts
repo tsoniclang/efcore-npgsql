@@ -14,6 +14,8 @@ import type { ExecutionStrategy, ExecutionStrategyDependencies, IExecutionStrate
 import type { DbContext } from "@tsonic/efcore/Microsoft.EntityFrameworkCore/internal/index.js";
 
 export interface NpgsqlRetryingExecutionStrategy$instance extends ExecutionStrategy {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_NpgsqlRetryingExecutionStrategy: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Storage_IExecutionStrategy: never;
 
     ShouldRetryOn(exception: Exception): boolean;

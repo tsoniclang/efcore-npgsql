@@ -78,6 +78,8 @@ export interface IPgTypeInfoResolver$instance {
 export type IPgTypeInfoResolver = IPgTypeInfoResolver$instance;
 
 export interface BufferRequirements$instance {
+    readonly __tsonic_type_Npgsql_Internal_BufferRequirements: never;
+
     readonly __tsonic_iface_System_IEquatable_1: never;
 
     readonly Read: Size;
@@ -104,6 +106,8 @@ export const BufferRequirements: {
 export type BufferRequirements = BufferRequirements$instance;
 
 export interface NestedReadScope$instance {
+    readonly __tsonic_type_Npgsql_Internal_NestedReadScope: never;
+
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
@@ -120,6 +124,8 @@ export const NestedReadScope: {
 export type NestedReadScope = NestedReadScope$instance;
 
 export interface NestedWriteScope$instance {
+    readonly __tsonic_type_Npgsql_Internal_NestedWriteScope: never;
+
     readonly __tsonic_iface_System_IDisposable: never;
 
     Dispose(): void;
@@ -134,6 +140,8 @@ export const NestedWriteScope: {
 export type NestedWriteScope = NestedWriteScope$instance;
 
 export interface PgConverterResolution$instance {
+    readonly __tsonic_type_Npgsql_Internal_PgConverterResolution: never;
+
     readonly Converter: PgConverter;
     readonly PgTypeId: PgTypeId;
     GetConverter<T>(): PgConverter_1<T>;
@@ -148,6 +156,8 @@ export const PgConverterResolution: {
 export type PgConverterResolution = PgConverterResolution$instance;
 
 export interface Size$instance {
+    readonly __tsonic_type_Npgsql_Internal_Size: never;
+
     readonly __tsonic_iface_System_IEquatable_1: never;
 
     readonly Kind: SizeKind;
@@ -173,6 +183,8 @@ export const Size: {
 export type Size = Size$instance;
 
 export interface SizeContext$instance {
+    readonly __tsonic_type_Npgsql_Internal_SizeContext: never;
+
     BufferRequirement: Size;
     readonly Format: DataFormat;
 }
@@ -186,6 +198,8 @@ export const SizeContext: {
 export type SizeContext = SizeContext$instance;
 
 export interface TypeInfoMapping$instance {
+    readonly __tsonic_type_Npgsql_Internal_TypeInfoMapping: never;
+
     DataTypeName: string;
     Factory: TypeInfoFactory;
     MatchRequirement: MatchRequirement;
@@ -205,6 +219,8 @@ export const TypeInfoMapping: {
 export type TypeInfoMapping = TypeInfoMapping$instance;
 
 export interface ValueMetadata$instance {
+    readonly __tsonic_type_Npgsql_Internal_ValueMetadata: never;
+
     BufferRequirement: Size;
     Format: DataFormat;
     Size: Size;
@@ -221,6 +237,8 @@ export const ValueMetadata: {
 export type ValueMetadata = ValueMetadata$instance;
 
 export interface DbTypeResolverFactory$instance {
+    readonly __tsonic_type_Npgsql_Internal_DbTypeResolverFactory: never;
+
     CreateDbTypeResolver(databaseInfo: NpgsqlDatabaseInfo): IDbTypeResolver;
 }
 
@@ -232,6 +250,8 @@ export const DbTypeResolverFactory: (abstract new() => DbTypeResolverFactory) & 
 export type DbTypeResolverFactory = DbTypeResolverFactory$instance;
 
 export interface DynamicTypeInfoResolver$instance extends IPgTypeInfoResolver$instance {
+    readonly __tsonic_type_Npgsql_Internal_DynamicTypeInfoResolver: never;
+
     readonly __tsonic_iface_Npgsql_Internal_IPgTypeInfoResolver: never;
 
     GetMappings(type: Type, dataTypeName: DataTypeName, options: PgSerializerOptions): unknown | undefined;
@@ -255,6 +275,8 @@ export type DynamicTypeInfoResolver = DynamicTypeInfoResolver$instance & __Dynam
 
 
 export interface NpgsqlConnector$instance {
+    readonly __tsonic_type_Npgsql_Internal_NpgsqlConnector: never;
+
     readonly DatabaseInfo: NpgsqlDatabaseInfo;
     readonly Settings: NpgsqlConnectionStringBuilder;
     TextEncoding: Encoding;
@@ -270,6 +292,8 @@ export const NpgsqlConnector: {
 export type NpgsqlConnector = NpgsqlConnector$instance;
 
 export interface NpgsqlDatabaseInfo$instance {
+    readonly __tsonic_type_Npgsql_Internal_NpgsqlDatabaseInfo: never;
+
     HasIntegerDateTimes: boolean;
     readonly Host: string;
     readonly Name: string;
@@ -302,6 +326,8 @@ export const NpgsqlDatabaseInfo: (abstract new(host: string, port: int, database
 export type NpgsqlDatabaseInfo = NpgsqlDatabaseInfo$instance;
 
 export interface PgBufferedConverter_1$instance<T> extends PgConverter_1<T> {
+    readonly __tsonic_type_Npgsql_Internal_PgBufferedConverter_1: never;
+
     GetSize(context: SizeContext, value: T, writeState: unknown): Size;
     Read(reader: PgReader): T;
     ReadAsync(reader: PgReader, cancellationToken?: CancellationToken): ValueTask_1<T>;
@@ -320,6 +346,8 @@ export const PgBufferedConverter_1: (abstract new<T>(customDbNullPredicate: bool
 export type PgBufferedConverter_1<T> = PgBufferedConverter_1$instance<T>;
 
 export interface PgConverter$instance {
+    readonly __tsonic_type_Npgsql_Internal_PgConverter: never;
+
     readonly IsDbNullable: boolean;
     CanConvert(format: DataFormat, bufferRequirements: BufferRequirements): boolean;
 }
@@ -332,6 +360,8 @@ export const PgConverter: {
 export type PgConverter = PgConverter$instance;
 
 export interface PgConverter_1$instance<T> extends PgConverter {
+    readonly __tsonic_type_Npgsql_Internal_PgConverter_1: never;
+
     GetSize(context: SizeContext, value: T, writeState: unknown): Size;
     IsDbNull(value: T, writeState: unknown): boolean;
     IsDbNullValue(value: T, writeState: unknown): boolean;
@@ -349,6 +379,8 @@ export const PgConverter_1: {
 export type PgConverter_1<T> = PgConverter_1$instance<T>;
 
 export interface PgConverterResolver$instance {
+    readonly __tsonic_type_Npgsql_Internal_PgConverterResolver: never;
+
     Get(field: Field): PgConverterResolution;
     GetDefault(pgTypeId: Nullable_1<PgTypeId>): PgConverterResolution;
 }
@@ -361,6 +393,8 @@ export const PgConverterResolver: {
 export type PgConverterResolver = PgConverterResolver$instance;
 
 export interface PgConverterResolver_1$instance<T> extends PgConverterResolver {
+    readonly __tsonic_type_Npgsql_Internal_PgConverterResolver_1: never;
+
     Get(value: T, expectedPgTypeId: Nullable_1<PgTypeId>): Nullable_1<PgConverterResolution>;
     Get(field: Field): PgConverterResolution;
 }
@@ -373,6 +407,8 @@ export const PgConverterResolver_1: (abstract new<T>() => PgConverterResolver_1<
 export type PgConverterResolver_1<T> = PgConverterResolver_1$instance<T>;
 
 export interface PgReader$instance {
+    readonly __tsonic_type_Npgsql_Internal_PgReader: never;
+
     readonly Current: ValueMetadata;
     readonly CurrentRemaining: int;
     readonly IsResumed: boolean;
@@ -418,6 +454,8 @@ export const PgReader: {
 export type PgReader = PgReader$instance;
 
 export interface PgResolverTypeInfo$instance extends PgTypeInfo {
+    readonly __tsonic_type_Npgsql_Internal_PgResolverTypeInfo: never;
+
     GetConverterResolver(): PgConverterResolver;
     GetDefaultResolution(expectedPgTypeId: Nullable_1<PgTypeId>): PgConverterResolution;
     GetResolution<T>(value: T, expectedPgTypeId: Nullable_1<PgTypeId>): Nullable_1<PgConverterResolution>;
@@ -435,6 +473,8 @@ export const PgResolverTypeInfo: {
 export type PgResolverTypeInfo = PgResolverTypeInfo$instance;
 
 export interface PgSerializerOptions$instance {
+    readonly __tsonic_type_Npgsql_Internal_PgSerializerOptions: never;
+
     ArrayNullabilityMode: ArrayNullabilityMode;
     DefaultNameTranslator: INpgsqlNameTranslator;
     EnableDateTimeInfinityConversions: boolean;
@@ -463,6 +503,8 @@ export const PgSerializerOptions: {
 export type PgSerializerOptions = PgSerializerOptions$instance;
 
 export interface PgStreamingConverter_1$instance<T> extends PgConverter_1<T> {
+    readonly __tsonic_type_Npgsql_Internal_PgStreamingConverter_1: never;
+
     CanConvert(format: DataFormat, bufferRequirements: BufferRequirements): boolean;
 }
 
@@ -474,6 +516,8 @@ export const PgStreamingConverter_1: (abstract new<T>(customDbNullPredicate: boo
 export type PgStreamingConverter_1<T> = PgStreamingConverter_1$instance<T>;
 
 export interface PgTypeInfo$instance {
+    readonly __tsonic_type_Npgsql_Internal_PgTypeInfo: never;
+
     readonly Options: PgSerializerOptions;
     readonly PgTypeId: Nullable_1<PgTypeId>;
     PreferredFormat: Nullable_1<DataFormat>;
@@ -494,6 +538,8 @@ export const PgTypeInfo: {
 export type PgTypeInfo = PgTypeInfo$instance;
 
 export interface PgTypeInfoResolverFactory$instance {
+    readonly __tsonic_type_Npgsql_Internal_PgTypeInfoResolverFactory: never;
+
     CreateArrayResolver(): IPgTypeInfoResolver | undefined;
     CreateMultirangeArrayResolver(): IPgTypeInfoResolver | undefined;
     CreateMultirangeResolver(): IPgTypeInfoResolver | undefined;
@@ -510,6 +556,8 @@ export const PgTypeInfoResolverFactory: (abstract new() => PgTypeInfoResolverFac
 export type PgTypeInfoResolverFactory = PgTypeInfoResolverFactory$instance;
 
 export interface PgWriter$instance {
+    readonly __tsonic_type_Npgsql_Internal_PgWriter: never;
+
     readonly Current: ValueMetadata;
     BeginNestedWrite(bufferRequirement: Size, byteCount: int, state: unknown): NestedWriteScope;
     BeginNestedWriteAsync(bufferRequirement: Size, byteCount: int, state: unknown, cancellationToken?: CancellationToken): ValueTask_1<NestedWriteScope>;
@@ -542,6 +590,8 @@ export const PgWriter: {
 export type PgWriter = PgWriter$instance;
 
 export interface TypeInfoMappingCollection$instance {
+    readonly __tsonic_type_Npgsql_Internal_TypeInfoMappingCollection: never;
+
     readonly Items: IReadOnlyList_1<TypeInfoMapping>;
     Add(mapping: TypeInfoMapping): void;
     AddArrayType<TElement>(elementDataTypeName: string): void;

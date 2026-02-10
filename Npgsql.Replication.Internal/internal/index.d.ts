@@ -16,6 +16,8 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Nullable_1, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface LogicalReplicationSlot$instance extends ReplicationSlot {
+    readonly __tsonic_type_Npgsql_Replication_Internal_LogicalReplicationSlot: never;
+
     readonly ConsistentPoint: NpgsqlLogSequenceNumber;
     readonly OutputPlugin: string;
     readonly SnapshotName: string | undefined;

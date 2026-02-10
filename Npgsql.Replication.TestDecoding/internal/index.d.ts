@@ -15,6 +15,8 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, DateTime, IEquatable_1, Int32, Nullable_1, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface TestDecodingData$instance extends ReplicationMessage {
+    readonly __tsonic_type_Npgsql_Replication_TestDecoding_TestDecodingData: never;
+
     Data: string;
     Clone(): TestDecodingData;
     ToString(): string;
@@ -29,6 +31,8 @@ export const TestDecodingData: {
 export type TestDecodingData = TestDecodingData$instance;
 
 export interface TestDecodingOptions$instance {
+    readonly __tsonic_type_Npgsql_Replication_TestDecoding_TestDecodingOptions: never;
+
     readonly __tsonic_iface_System_IEquatable_1: never;
 
     readonly ForceBinary: Nullable_1<System_Internal.Boolean>;
@@ -52,6 +56,8 @@ export const TestDecodingOptions: {
 export type TestDecodingOptions = TestDecodingOptions$instance;
 
 export interface TestDecodingReplicationSlot$instance extends LogicalReplicationSlot {
+    readonly __tsonic_type_Npgsql_Replication_TestDecoding_TestDecodingReplicationSlot: never;
+
 }
 
 

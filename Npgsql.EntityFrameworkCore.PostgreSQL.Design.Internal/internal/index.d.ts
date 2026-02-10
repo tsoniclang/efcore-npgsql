@@ -20,6 +20,8 @@ import type { CoreTypeMapping } from "@tsonic/efcore/Microsoft.EntityFrameworkCo
 import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection/internal/index.js";
 
 export interface NpgsqlAnnotationCodeGenerator$instance extends AnnotationCodeGenerator {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Design_Internal_NpgsqlAnnotationCodeGenerator: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Design_IAnnotationCodeGenerator: never;
 
     GenerateFluentApi(model: IModel, annotation: IAnnotation): MethodCallCodeFragment | undefined;
@@ -41,6 +43,8 @@ export const NpgsqlAnnotationCodeGenerator: {
 export type NpgsqlAnnotationCodeGenerator = NpgsqlAnnotationCodeGenerator$instance;
 
 export interface NpgsqlCSharpRuntimeAnnotationCodeGenerator$instance extends RelationalCSharpRuntimeAnnotationCodeGenerator {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Design_Internal_NpgsqlCSharpRuntimeAnnotationCodeGenerator: never;
+
     AddNpgsqlTypeMappingTweaks(typeMapping: CoreTypeMapping, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
     Create(typeMapping: CoreTypeMapping, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters, valueComparer?: ValueComparer, keyValueComparer?: ValueComparer, providerValueComparer?: ValueComparer): boolean;
     Generate(model: IModel, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
@@ -62,6 +66,8 @@ export const NpgsqlCSharpRuntimeAnnotationCodeGenerator: {
 export type NpgsqlCSharpRuntimeAnnotationCodeGenerator = NpgsqlCSharpRuntimeAnnotationCodeGenerator$instance;
 
 export interface NpgsqlDesignTimeServices$instance {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Design_Internal_NpgsqlDesignTimeServices: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Design_IDesignTimeServices: never;
 
     ConfigureDesignTimeServices(serviceCollection: IServiceCollection): void;

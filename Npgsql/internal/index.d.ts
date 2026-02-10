@@ -140,6 +140,8 @@ export interface INpgsqlNameTranslator$instance {
 export type INpgsqlNameTranslator = INpgsqlNameTranslator$instance;
 
 export interface NpgsqlBatch$instance extends DbBatch {
+    readonly __tsonic_type_Npgsql_NpgsqlBatch: never;
+
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
@@ -181,6 +183,8 @@ export const NpgsqlBatch: {
 export type NpgsqlBatch = NpgsqlBatch$instance;
 
 export interface NpgsqlBatchCommand$instance extends DbBatchCommand {
+    readonly __tsonic_type_Npgsql_NpgsqlBatchCommand: never;
+
     AppendErrorBarrier: Nullable_1<System_Internal.Boolean>;
     readonly CanCreateParameter: boolean;
     CommandText: string;
@@ -205,6 +209,8 @@ export const NpgsqlBatchCommand: {
 export type NpgsqlBatchCommand = NpgsqlBatchCommand$instance;
 
 export interface NpgsqlBatchCommandCollection$instance extends DbBatchCommandCollection {
+    readonly __tsonic_type_Npgsql_NpgsqlBatchCommandCollection: never;
+
     readonly __tsonic_iface_System_Collections_Generic_ICollection_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IList_1: never;
@@ -212,7 +218,6 @@ export interface NpgsqlBatchCommandCollection$instance extends DbBatchCommandCol
 
     readonly Count: int;
     readonly IsReadOnly: boolean;
-    [index: number]: NpgsqlBatchCommand;
     Add(item: NpgsqlBatchCommand): void;
     Add(item: DbBatchCommand): void;
     Clear(): void;
@@ -237,9 +242,11 @@ export const NpgsqlBatchCommandCollection: {
 };
 
 
-export type NpgsqlBatchCommandCollection = NpgsqlBatchCommandCollection$instance;
+export type NpgsqlBatchCommandCollection = NpgsqlBatchCommandCollection$instance & { [index: number]: NpgsqlBatchCommand; };
 
 export interface NpgsqlBinaryExporter$instance {
+    readonly __tsonic_type_Npgsql_NpgsqlBinaryExporter: never;
+
     readonly __tsonic_iface_Npgsql_ICancelable: never;
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
@@ -268,6 +275,8 @@ export const NpgsqlBinaryExporter: {
 export type NpgsqlBinaryExporter = NpgsqlBinaryExporter$instance;
 
 export interface NpgsqlBinaryImporter$instance {
+    readonly __tsonic_type_Npgsql_NpgsqlBinaryImporter: never;
+
     readonly __tsonic_iface_Npgsql_ICancelable: never;
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
@@ -301,6 +310,8 @@ export const NpgsqlBinaryImporter: {
 export type NpgsqlBinaryImporter = NpgsqlBinaryImporter$instance;
 
 export interface NpgsqlCommand$instance extends DbCommand {
+    readonly __tsonic_type_Npgsql_NpgsqlCommand: never;
+
     readonly __tsonic_iface_System_ComponentModel_IComponent: never;
     readonly __tsonic_iface_System_Data_IDbCommand: never;
     readonly __tsonic_iface_System_IAsyncDisposable: never;
@@ -359,6 +370,8 @@ export const NpgsqlCommand: {
 export type NpgsqlCommand = NpgsqlCommand$instance;
 
 export interface NpgsqlCommandBuilder$instance extends DbCommandBuilder {
+    readonly __tsonic_type_Npgsql_NpgsqlCommandBuilder: never;
+
     readonly __tsonic_iface_System_ComponentModel_IComponent: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
@@ -390,6 +403,8 @@ export const NpgsqlCommandBuilder: {
 export type NpgsqlCommandBuilder = NpgsqlCommandBuilder$instance;
 
 export interface NpgsqlConnection$instance extends DbConnection {
+    readonly __tsonic_type_Npgsql_NpgsqlConnection: never;
+
     readonly __tsonic_iface_System_ComponentModel_IComponent: never;
     readonly __tsonic_iface_System_Data_IDbConnection: never;
     readonly __tsonic_iface_System_IAsyncDisposable: never;
@@ -484,6 +499,8 @@ export const NpgsqlConnection: {
 export type NpgsqlConnection = NpgsqlConnection$instance;
 
 export interface NpgsqlConnectionStringBuilder$instance extends DbConnectionStringBuilder {
+    readonly __tsonic_type_Npgsql_NpgsqlConnectionStringBuilder: never;
+
     readonly __tsonic_iface_System_Collections_Generic_ICollection_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IDictionary_2: never;
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
@@ -517,7 +534,6 @@ export interface NpgsqlConnectionStringBuilder$instance extends DbConnectionStri
     IncludeFailedBatchedCommand: boolean;
     IncludeRealm: boolean;
     InternalCommandTimeout: int;
-    [keyword: string]: unknown;
     KeepAlive: int;
     KerberosServiceName: string;
     readonly Keys: ICollection_1<System_Internal.String>;
@@ -592,9 +608,11 @@ export const NpgsqlConnectionStringBuilder: {
 };
 
 
-export type NpgsqlConnectionStringBuilder = NpgsqlConnectionStringBuilder$instance;
+export type NpgsqlConnectionStringBuilder = NpgsqlConnectionStringBuilder$instance & { [keyword: string]: unknown; };
 
 export interface NpgsqlCopyTextReader$instance extends StreamReader {
+    readonly __tsonic_type_Npgsql_NpgsqlCopyTextReader: never;
+
     readonly __tsonic_iface_Npgsql_ICancelable: never;
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
@@ -613,6 +631,8 @@ export const NpgsqlCopyTextReader: {
 export type NpgsqlCopyTextReader = NpgsqlCopyTextReader$instance;
 
 export interface NpgsqlCopyTextWriter$instance extends StreamWriter {
+    readonly __tsonic_type_Npgsql_NpgsqlCopyTextWriter: never;
+
     readonly __tsonic_iface_Npgsql_ICancelable: never;
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
@@ -630,6 +650,8 @@ export const NpgsqlCopyTextWriter: {
 export type NpgsqlCopyTextWriter = NpgsqlCopyTextWriter$instance;
 
 export interface NpgsqlDataAdapter$instance extends DbDataAdapter {
+    readonly __tsonic_type_Npgsql_NpgsqlDataAdapter: never;
+
     readonly __tsonic_iface_System_ComponentModel_IComponent: never;
     readonly __tsonic_iface_System_Data_IDataAdapter: never;
     readonly __tsonic_iface_System_Data_IDbDataAdapter: never;
@@ -662,6 +684,8 @@ export const NpgsqlDataAdapter: {
 export type NpgsqlDataAdapter = NpgsqlDataAdapter$instance;
 
 export interface NpgsqlDataReader$instance extends DbDataReader {
+    readonly __tsonic_type_Npgsql_NpgsqlDataReader: never;
+
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
     readonly __tsonic_iface_System_Data_Common_IDbColumnSchemaGenerator: never;
     readonly __tsonic_iface_System_Data_IDataReader: never;
@@ -735,6 +759,8 @@ export const NpgsqlDataReader: {
 export type NpgsqlDataReader = NpgsqlDataReader$instance;
 
 export interface NpgsqlDataSource$instance extends DbDataSource {
+    readonly __tsonic_type_Npgsql_NpgsqlDataSource: never;
+
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
@@ -769,6 +795,8 @@ export const NpgsqlDataSource: {
 export type NpgsqlDataSource = NpgsqlDataSource$instance;
 
 export interface NpgsqlDataSourceBuilder$instance {
+    readonly __tsonic_type_Npgsql_NpgsqlDataSourceBuilder: never;
+
     readonly __tsonic_iface_Npgsql_TypeMapping_INpgsqlTypeMapper: never;
 
     readonly ConnectionString: string;
@@ -824,6 +852,8 @@ export type NpgsqlDataSourceBuilder = NpgsqlDataSourceBuilder$instance & __Npgsq
 
 
 export interface NpgsqlException$instance extends DbException {
+    readonly __tsonic_type_Npgsql_NpgsqlException: never;
+
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
     get BatchCommand(): NpgsqlBatchCommand | undefined;
@@ -843,6 +873,8 @@ export const NpgsqlException: {
 export type NpgsqlException = NpgsqlException$instance;
 
 export interface NpgsqlFactory$instance extends DbProviderFactory {
+    readonly __tsonic_type_Npgsql_NpgsqlFactory: never;
+
     readonly __tsonic_iface_System_IServiceProvider: never;
 
     readonly CanCreateBatch: boolean;
@@ -869,6 +901,8 @@ export const NpgsqlFactory: {
 export type NpgsqlFactory = NpgsqlFactory$instance;
 
 export interface NpgsqlLargeObjectManager$instance {
+    readonly __tsonic_type_Npgsql_NpgsqlLargeObjectManager: never;
+
     readonly Has64BitSupport: boolean;
     MaxTransferBlockSize: int;
     Create(preferredOid?: uint): uint;
@@ -894,6 +928,8 @@ export const NpgsqlLargeObjectManager: {
 export type NpgsqlLargeObjectManager = NpgsqlLargeObjectManager$instance;
 
 export interface NpgsqlLargeObjectStream$instance extends Stream {
+    readonly __tsonic_type_Npgsql_NpgsqlLargeObjectStream: never;
+
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
@@ -926,6 +962,8 @@ export const NpgsqlLargeObjectStream: {
 export type NpgsqlLargeObjectStream = NpgsqlLargeObjectStream$instance;
 
 export interface NpgsqlLoggingConfiguration$instance {
+    readonly __tsonic_type_Npgsql_NpgsqlLoggingConfiguration: never;
+
 }
 
 
@@ -937,6 +975,8 @@ export const NpgsqlLoggingConfiguration: {
 export type NpgsqlLoggingConfiguration = NpgsqlLoggingConfiguration$instance;
 
 export interface NpgsqlMetricsOptions$instance {
+    readonly __tsonic_type_Npgsql_NpgsqlMetricsOptions: never;
+
 }
 
 
@@ -948,6 +988,8 @@ export const NpgsqlMetricsOptions: {
 export type NpgsqlMetricsOptions = NpgsqlMetricsOptions$instance;
 
 export interface NpgsqlMultiHostDataSource$instance extends NpgsqlDataSource {
+    readonly __tsonic_type_Npgsql_NpgsqlMultiHostDataSource: never;
+
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
@@ -970,6 +1012,8 @@ export const NpgsqlMultiHostDataSource: {
 export type NpgsqlMultiHostDataSource = NpgsqlMultiHostDataSource$instance;
 
 export interface NpgsqlNestedDataReader$instance extends DbDataReader {
+    readonly __tsonic_type_Npgsql_NpgsqlNestedDataReader: never;
+
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
     readonly __tsonic_iface_System_Data_IDataReader: never;
     readonly __tsonic_iface_System_Data_IDataRecord: never;
@@ -1022,6 +1066,8 @@ export const NpgsqlNestedDataReader: {
 export type NpgsqlNestedDataReader = NpgsqlNestedDataReader$instance;
 
 export interface NpgsqlNoticeEventArgs$instance extends EventArgs {
+    readonly __tsonic_type_Npgsql_NpgsqlNoticeEventArgs: never;
+
     readonly Notice: PostgresNotice;
 }
 
@@ -1033,6 +1079,8 @@ export const NpgsqlNoticeEventArgs: {
 export type NpgsqlNoticeEventArgs = NpgsqlNoticeEventArgs$instance;
 
 export interface NpgsqlNotificationEventArgs$instance extends EventArgs {
+    readonly __tsonic_type_Npgsql_NpgsqlNotificationEventArgs: never;
+
     readonly Channel: string;
     readonly Payload: string;
     readonly PID: int;
@@ -1046,6 +1094,8 @@ export const NpgsqlNotificationEventArgs: {
 export type NpgsqlNotificationEventArgs = NpgsqlNotificationEventArgs$instance;
 
 export interface NpgsqlOperationInProgressException$instance extends NpgsqlException {
+    readonly __tsonic_type_Npgsql_NpgsqlOperationInProgressException: never;
+
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
     readonly CommandInProgress: NpgsqlCommand | undefined;
@@ -1060,6 +1110,8 @@ export const NpgsqlOperationInProgressException: {
 export type NpgsqlOperationInProgressException = NpgsqlOperationInProgressException$instance;
 
 export interface NpgsqlParameter$instance extends DbParameter {
+    readonly __tsonic_type_Npgsql_NpgsqlParameter: never;
+
     readonly __tsonic_iface_System_Data_IDataParameter: never;
     readonly __tsonic_iface_System_Data_IDbDataParameter: never;
     readonly __tsonic_iface_System_ICloneable: never;
@@ -1107,6 +1159,8 @@ export const NpgsqlParameter: {
 export type NpgsqlParameter = NpgsqlParameter$instance;
 
 export interface NpgsqlParameter_1$instance<T> extends NpgsqlParameter {
+    readonly __tsonic_type_Npgsql_NpgsqlParameter_1: never;
+
     readonly __tsonic_iface_System_Data_IDataParameter: never;
     readonly __tsonic_iface_System_Data_IDbDataParameter: never;
     readonly __tsonic_iface_System_ICloneable: never;
@@ -1128,6 +1182,8 @@ export const NpgsqlParameter_1: {
 export type NpgsqlParameter_1<T> = NpgsqlParameter_1$instance<T>;
 
 export interface NpgsqlParameterCollection$instance extends DbParameterCollection {
+    readonly __tsonic_type_Npgsql_NpgsqlParameterCollection: never;
+
     readonly __tsonic_iface_System_Collections_Generic_ICollection_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IList_1: never;
@@ -1190,6 +1246,8 @@ export const NpgsqlParameterCollection: {
 export type NpgsqlParameterCollection = NpgsqlParameterCollection$instance;
 
 export interface NpgsqlRawCopyStream$instance extends Stream {
+    readonly __tsonic_type_Npgsql_NpgsqlRawCopyStream: never;
+
     readonly __tsonic_iface_Npgsql_ICancelable: never;
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
@@ -1228,6 +1286,8 @@ export const NpgsqlRawCopyStream: {
 export type NpgsqlRawCopyStream = NpgsqlRawCopyStream$instance;
 
 export interface NpgsqlRowUpdatedEventArgs$instance extends RowUpdatedEventArgs {
+    readonly __tsonic_type_Npgsql_NpgsqlRowUpdatedEventArgs: never;
+
 }
 
 
@@ -1239,6 +1299,8 @@ export const NpgsqlRowUpdatedEventArgs: {
 export type NpgsqlRowUpdatedEventArgs = NpgsqlRowUpdatedEventArgs$instance;
 
 export interface NpgsqlRowUpdatingEventArgs$instance extends RowUpdatingEventArgs {
+    readonly __tsonic_type_Npgsql_NpgsqlRowUpdatingEventArgs: never;
+
 }
 
 
@@ -1250,6 +1312,8 @@ export const NpgsqlRowUpdatingEventArgs: {
 export type NpgsqlRowUpdatingEventArgs = NpgsqlRowUpdatingEventArgs$instance;
 
 export interface NpgsqlSlimDataSourceBuilder$instance {
+    readonly __tsonic_type_Npgsql_NpgsqlSlimDataSourceBuilder: never;
+
     readonly __tsonic_iface_Npgsql_TypeMapping_INpgsqlTypeMapper: never;
 
     readonly ConnectionString: string;
@@ -1318,6 +1382,8 @@ export type NpgsqlSlimDataSourceBuilder = NpgsqlSlimDataSourceBuilder$instance &
 
 
 export interface NpgsqlTracingOptionsBuilder$instance {
+    readonly __tsonic_type_Npgsql_NpgsqlTracingOptionsBuilder: never;
+
     ConfigureBatchEnrichmentCallback(batchEnrichmentCallback: Action_2<Activity, NpgsqlBatch>): NpgsqlTracingOptionsBuilder;
     ConfigureBatchFilter(batchFilter: Func_2<NpgsqlBatch, System_Internal.Boolean>): NpgsqlTracingOptionsBuilder;
     ConfigureBatchSpanNameProvider(batchSpanNameProvider: Func_2<NpgsqlBatch, System_Internal.String>): NpgsqlTracingOptionsBuilder;
@@ -1339,6 +1405,8 @@ export const NpgsqlTracingOptionsBuilder: {
 export type NpgsqlTracingOptionsBuilder = NpgsqlTracingOptionsBuilder$instance;
 
 export interface NpgsqlTransaction$instance extends DbTransaction {
+    readonly __tsonic_type_Npgsql_NpgsqlTransaction: never;
+
     readonly __tsonic_iface_System_Data_IDbTransaction: never;
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
@@ -1369,6 +1437,8 @@ export const NpgsqlTransaction: {
 export type NpgsqlTransaction = NpgsqlTransaction$instance;
 
 export interface NpgsqlTypeLoadingOptionsBuilder$instance {
+    readonly __tsonic_type_Npgsql_NpgsqlTypeLoadingOptionsBuilder: never;
+
     EnableTableCompositesLoading(enable?: boolean): NpgsqlTypeLoadingOptionsBuilder;
     EnableTypeLoading(enable?: boolean): NpgsqlTypeLoadingOptionsBuilder;
     SetTypeLoadingSchemas(schemas: IEnumerable_1<System_Internal.String>): NpgsqlTypeLoadingOptionsBuilder;
@@ -1382,6 +1452,8 @@ export const NpgsqlTypeLoadingOptionsBuilder: {
 export type NpgsqlTypeLoadingOptionsBuilder = NpgsqlTypeLoadingOptionsBuilder$instance;
 
 export interface PostgresException$instance extends NpgsqlException {
+    readonly __tsonic_type_Npgsql_PostgresException: never;
+
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
     readonly ColumnName: string | undefined;
@@ -1417,6 +1489,8 @@ export const PostgresException: {
 export type PostgresException = PostgresException$instance;
 
 export interface PostgresNotice$instance {
+    readonly __tsonic_type_Npgsql_PostgresNotice: never;
+
     get ColumnName(): string | undefined;
     set ColumnName(value: string | undefined);
     get ConstraintName(): string | undefined;

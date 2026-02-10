@@ -62,6 +62,8 @@ export enum TruncateMessage_TruncateOptions {
 
 
 export interface RelationMessage_Column$instance {
+    readonly __tsonic_type_Npgsql_Replication_PgOutput_Messages_RelationMessage_Column: never;
+
     readonly ColumnName: string;
     readonly DataTypeId: uint;
     readonly Flags: RelationMessage_Column_ColumnFlags;
@@ -77,6 +79,8 @@ export const RelationMessage_Column: {
 export type RelationMessage_Column = RelationMessage_Column$instance;
 
 export interface RelationMessageColumn$instance {
+    readonly __tsonic_type_Npgsql_Replication_PgOutput_Messages_RelationMessageColumn: never;
+
     readonly ColumnName: string;
     readonly DataTypeId: uint;
     readonly Flags: byte;
@@ -92,6 +96,8 @@ export const RelationMessageColumn: {
 export type RelationMessageColumn = RelationMessageColumn$instance;
 
 export interface BeginMessage$instance extends TransactionControlMessage {
+    readonly __tsonic_type_Npgsql_Replication_PgOutput_Messages_BeginMessage: never;
+
     TransactionCommitTimestamp: DateTime;
     TransactionFinalLsn: NpgsqlLogSequenceNumber;
 }
@@ -104,6 +110,8 @@ export const BeginMessage: {
 export type BeginMessage = BeginMessage$instance;
 
 export interface BeginPrepareMessage$instance extends PrepareMessageBase {
+    readonly __tsonic_type_Npgsql_Replication_PgOutput_Messages_BeginPrepareMessage: never;
+
 }
 
 
@@ -114,6 +122,8 @@ export const BeginPrepareMessage: {
 export type BeginPrepareMessage = BeginPrepareMessage$instance;
 
 export interface CommitMessage$instance extends PgOutputReplicationMessage {
+    readonly __tsonic_type_Npgsql_Replication_PgOutput_Messages_CommitMessage: never;
+
     CommitLsn: NpgsqlLogSequenceNumber;
     Flags: CommitMessage_CommitFlags;
     TransactionCommitTimestamp: DateTime;
@@ -128,6 +138,8 @@ export const CommitMessage: {
 export type CommitMessage = CommitMessage$instance;
 
 export interface CommitPreparedMessage$instance extends PreparedTransactionControlMessage {
+    readonly __tsonic_type_Npgsql_Replication_PgOutput_Messages_CommitPreparedMessage: never;
+
     readonly CommitPreparedEndLsn: NpgsqlLogSequenceNumber;
     readonly CommitPreparedLsn: NpgsqlLogSequenceNumber;
     Flags: CommitPreparedMessage_CommitPreparedFlags;
@@ -142,6 +154,8 @@ export const CommitPreparedMessage: {
 export type CommitPreparedMessage = CommitPreparedMessage$instance;
 
 export interface DefaultUpdateMessage$instance extends UpdateMessage {
+    readonly __tsonic_type_Npgsql_Replication_PgOutput_Messages_DefaultUpdateMessage: never;
+
     readonly NewRow: ReplicationTuple;
 }
 
@@ -153,6 +167,8 @@ export const DefaultUpdateMessage: {
 export type DefaultUpdateMessage = DefaultUpdateMessage$instance;
 
 export interface DeleteMessage$instance extends TransactionalMessage {
+    readonly __tsonic_type_Npgsql_Replication_PgOutput_Messages_DeleteMessage: never;
+
     Relation: RelationMessage;
 }
 
@@ -164,6 +180,8 @@ export const DeleteMessage: {
 export type DeleteMessage = DeleteMessage$instance;
 
 export interface FullDeleteMessage$instance extends DeleteMessage {
+    readonly __tsonic_type_Npgsql_Replication_PgOutput_Messages_FullDeleteMessage: never;
+
     readonly OldRow: ReplicationTuple;
 }
 
@@ -175,6 +193,8 @@ export const FullDeleteMessage: {
 export type FullDeleteMessage = FullDeleteMessage$instance;
 
 export interface FullUpdateMessage$instance extends UpdateMessage {
+    readonly __tsonic_type_Npgsql_Replication_PgOutput_Messages_FullUpdateMessage: never;
+
     readonly NewRow: ReplicationTuple;
     readonly OldRow: ReplicationTuple;
 }
@@ -187,6 +207,8 @@ export const FullUpdateMessage: {
 export type FullUpdateMessage = FullUpdateMessage$instance;
 
 export interface IndexUpdateMessage$instance extends UpdateMessage {
+    readonly __tsonic_type_Npgsql_Replication_PgOutput_Messages_IndexUpdateMessage: never;
+
     readonly Key: ReplicationTuple;
     readonly NewRow: ReplicationTuple;
 }
@@ -199,6 +221,8 @@ export const IndexUpdateMessage: {
 export type IndexUpdateMessage = IndexUpdateMessage$instance;
 
 export interface InsertMessage$instance extends TransactionalMessage {
+    readonly __tsonic_type_Npgsql_Replication_PgOutput_Messages_InsertMessage: never;
+
     readonly NewRow: ReplicationTuple;
     Relation: RelationMessage;
 }
@@ -211,6 +235,8 @@ export const InsertMessage: {
 export type InsertMessage = InsertMessage$instance;
 
 export interface KeyDeleteMessage$instance extends DeleteMessage {
+    readonly __tsonic_type_Npgsql_Replication_PgOutput_Messages_KeyDeleteMessage: never;
+
     readonly Key: ReplicationTuple;
 }
 
@@ -222,6 +248,8 @@ export const KeyDeleteMessage: {
 export type KeyDeleteMessage = KeyDeleteMessage$instance;
 
 export interface LogicalDecodingMessage$instance extends TransactionalMessage {
+    readonly __tsonic_type_Npgsql_Replication_PgOutput_Messages_LogicalDecodingMessage: never;
+
     Data: Stream;
     Flags: byte;
     MessageLsn: NpgsqlLogSequenceNumber;
@@ -236,6 +264,8 @@ export const LogicalDecodingMessage: {
 export type LogicalDecodingMessage = LogicalDecodingMessage$instance;
 
 export interface OriginMessage$instance extends PgOutputReplicationMessage {
+    readonly __tsonic_type_Npgsql_Replication_PgOutput_Messages_OriginMessage: never;
+
     OriginCommitLsn: NpgsqlLogSequenceNumber;
     OriginName: string;
 }
@@ -248,6 +278,8 @@ export const OriginMessage: {
 export type OriginMessage = OriginMessage$instance;
 
 export interface ParallelStreamAbortMessage$instance extends StreamAbortMessage {
+    readonly __tsonic_type_Npgsql_Replication_PgOutput_Messages_ParallelStreamAbortMessage: never;
+
     AbortLsn: NpgsqlLogSequenceNumber;
     AbortTimestamp: DateTime;
 }
@@ -260,6 +292,8 @@ export const ParallelStreamAbortMessage: {
 export type ParallelStreamAbortMessage = ParallelStreamAbortMessage$instance;
 
 export interface PgOutputReplicationMessage$instance extends ReplicationMessage {
+    readonly __tsonic_type_Npgsql_Replication_PgOutput_Messages_PgOutputReplicationMessage: never;
+
     ToString(): string;
 }
 
@@ -271,6 +305,8 @@ export const PgOutputReplicationMessage: (abstract new() => PgOutputReplicationM
 export type PgOutputReplicationMessage = PgOutputReplicationMessage$instance;
 
 export interface PreparedTransactionControlMessage$instance extends TransactionControlMessage {
+    readonly __tsonic_type_Npgsql_Replication_PgOutput_Messages_PreparedTransactionControlMessage: never;
+
     TransactionGid: string;
 }
 
@@ -282,6 +318,8 @@ export const PreparedTransactionControlMessage: {
 export type PreparedTransactionControlMessage = PreparedTransactionControlMessage$instance;
 
 export interface PrepareMessage$instance extends PrepareMessageBase {
+    readonly __tsonic_type_Npgsql_Replication_PgOutput_Messages_PrepareMessage: never;
+
     Flags: PrepareMessage_PrepareFlags;
 }
 
@@ -293,6 +331,8 @@ export const PrepareMessage: {
 export type PrepareMessage = PrepareMessage$instance;
 
 export interface PrepareMessageBase$instance extends PreparedTransactionControlMessage {
+    readonly __tsonic_type_Npgsql_Replication_PgOutput_Messages_PrepareMessageBase: never;
+
     readonly PrepareEndLsn: NpgsqlLogSequenceNumber;
     readonly PrepareLsn: NpgsqlLogSequenceNumber;
     readonly TransactionPrepareTimestamp: DateTime;
@@ -306,6 +346,8 @@ export const PrepareMessageBase: {
 export type PrepareMessageBase = PrepareMessageBase$instance;
 
 export interface RelationMessage$instance extends TransactionalMessage {
+    readonly __tsonic_type_Npgsql_Replication_PgOutput_Messages_RelationMessage: never;
+
     readonly Columns: IReadOnlyList_1<RelationMessage_Column>;
     Namespace: string;
     RelationId: uint;
@@ -321,6 +363,8 @@ export const RelationMessage: {
 export type RelationMessage = RelationMessage$instance;
 
 export interface RollbackPreparedMessage$instance extends PreparedTransactionControlMessage {
+    readonly __tsonic_type_Npgsql_Replication_PgOutput_Messages_RollbackPreparedMessage: never;
+
     Flags: RollbackPreparedMessage_RollbackPreparedFlags;
     readonly PreparedTransactionEndLsn: NpgsqlLogSequenceNumber;
     readonly RollbackPreparedEndLsn: NpgsqlLogSequenceNumber;
@@ -336,6 +380,8 @@ export const RollbackPreparedMessage: {
 export type RollbackPreparedMessage = RollbackPreparedMessage$instance;
 
 export interface StreamAbortMessage$instance extends TransactionControlMessage {
+    readonly __tsonic_type_Npgsql_Replication_PgOutput_Messages_StreamAbortMessage: never;
+
     SubtransactionXid: uint;
 }
 
@@ -347,6 +393,8 @@ export const StreamAbortMessage: {
 export type StreamAbortMessage = StreamAbortMessage$instance;
 
 export interface StreamCommitMessage$instance extends TransactionControlMessage {
+    readonly __tsonic_type_Npgsql_Replication_PgOutput_Messages_StreamCommitMessage: never;
+
     CommitLsn: NpgsqlLogSequenceNumber;
     Flags: byte;
     TransactionCommitTimestamp: DateTime;
@@ -361,6 +409,8 @@ export const StreamCommitMessage: {
 export type StreamCommitMessage = StreamCommitMessage$instance;
 
 export interface StreamPrepareMessage$instance extends PrepareMessageBase {
+    readonly __tsonic_type_Npgsql_Replication_PgOutput_Messages_StreamPrepareMessage: never;
+
     Flags: StreamPrepareMessage_StreamPrepareFlags;
 }
 
@@ -372,6 +422,8 @@ export const StreamPrepareMessage: {
 export type StreamPrepareMessage = StreamPrepareMessage$instance;
 
 export interface StreamStartMessage$instance extends TransactionControlMessage {
+    readonly __tsonic_type_Npgsql_Replication_PgOutput_Messages_StreamStartMessage: never;
+
     StreamSegmentIndicator: byte;
 }
 
@@ -383,6 +435,8 @@ export const StreamStartMessage: {
 export type StreamStartMessage = StreamStartMessage$instance;
 
 export interface StreamStopMessage$instance extends PgOutputReplicationMessage {
+    readonly __tsonic_type_Npgsql_Replication_PgOutput_Messages_StreamStopMessage: never;
+
 }
 
 
@@ -393,6 +447,8 @@ export const StreamStopMessage: {
 export type StreamStopMessage = StreamStopMessage$instance;
 
 export interface TransactionalMessage$instance extends PgOutputReplicationMessage {
+    readonly __tsonic_type_Npgsql_Replication_PgOutput_Messages_TransactionalMessage: never;
+
     TransactionXid: Nullable_1<System_Internal.UInt32>;
 }
 
@@ -404,6 +460,8 @@ export const TransactionalMessage: (abstract new() => TransactionalMessage) & {
 export type TransactionalMessage = TransactionalMessage$instance;
 
 export interface TransactionControlMessage$instance extends PgOutputReplicationMessage {
+    readonly __tsonic_type_Npgsql_Replication_PgOutput_Messages_TransactionControlMessage: never;
+
     TransactionXid: uint;
 }
 
@@ -415,6 +473,8 @@ export const TransactionControlMessage: (abstract new() => TransactionControlMes
 export type TransactionControlMessage = TransactionControlMessage$instance;
 
 export interface TruncateMessage$instance extends TransactionalMessage {
+    readonly __tsonic_type_Npgsql_Replication_PgOutput_Messages_TruncateMessage: never;
+
     Options: TruncateMessage_TruncateOptions;
     Relations: IReadOnlyList_1<RelationMessage>;
 }
@@ -427,6 +487,8 @@ export const TruncateMessage: {
 export type TruncateMessage = TruncateMessage$instance;
 
 export interface TypeMessage$instance extends TransactionalMessage {
+    readonly __tsonic_type_Npgsql_Replication_PgOutput_Messages_TypeMessage: never;
+
     Name: string;
     Namespace: string;
     TypeId: uint;
@@ -440,6 +502,8 @@ export const TypeMessage: {
 export type TypeMessage = TypeMessage$instance;
 
 export interface UpdateMessage$instance extends TransactionalMessage {
+    readonly __tsonic_type_Npgsql_Replication_PgOutput_Messages_UpdateMessage: never;
+
     readonly NewRow: ReplicationTuple;
     Relation: RelationMessage;
 }

@@ -39,6 +39,8 @@ export interface INpgsqlSingletonOptions$instance extends Microsoft_EntityFramew
 export type INpgsqlSingletonOptions = INpgsqlSingletonOptions$instance;
 
 export interface EnumDefinition$instance {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Infrastructure_Internal_EnumDefinition: never;
+
     readonly __tsonic_iface_System_IEquatable_1: never;
 
     readonly ClrType: Type;
@@ -60,6 +62,8 @@ export const EnumDefinition: {
 export type EnumDefinition = EnumDefinition$instance;
 
 export interface NpgsqlModelValidator$instance extends RelationalModelValidator {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Infrastructure_Internal_NpgsqlModelValidator: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_IModelValidator: never;
 
     Validate(model: IModel, logger: IDiagnosticsLogger_1<DbLoggerCategory$Model$Validation>): void;
@@ -80,6 +84,8 @@ export const NpgsqlModelValidator: {
 export type NpgsqlModelValidator = NpgsqlModelValidator$instance;
 
 export interface NpgsqlOptionsExtension$instance extends RelationalOptionsExtension {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Infrastructure_Internal_NpgsqlOptionsExtension: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_IDbContextOptionsExtension: never;
 
     get AdminDatabase(): string | undefined;
@@ -133,6 +139,8 @@ export const NpgsqlOptionsExtension: {
 export type NpgsqlOptionsExtension = NpgsqlOptionsExtension$instance;
 
 export interface UserRangeDefinition$instance {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Infrastructure_Internal_UserRangeDefinition: never;
+
     readonly __tsonic_iface_System_IEquatable_1: never;
 
     readonly StoreTypeName: string;

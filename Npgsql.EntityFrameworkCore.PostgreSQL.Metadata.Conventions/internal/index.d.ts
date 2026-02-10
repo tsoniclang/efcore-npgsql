@@ -24,6 +24,8 @@ import type { IRelationalTypeMappingSource, RelationalTypeMapping } from "@tsoni
 import type { ModelBuilder } from "@tsonic/efcore/Microsoft.EntityFrameworkCore/internal/index.js";
 
 export interface NpgsqlConventionSetBuilder$instance extends RelationalConventionSetBuilder {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Metadata_Conventions_NpgsqlConventionSetBuilder: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_Infrastructure_IProviderConventionSetBuilder: never;
 
     CreateConventionSet(): ConventionSet;
@@ -40,6 +42,8 @@ export const NpgsqlConventionSetBuilder: {
 export type NpgsqlConventionSetBuilder = NpgsqlConventionSetBuilder$instance;
 
 export interface NpgsqlPostgresModelFinalizingConvention$instance {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Metadata_Conventions_NpgsqlPostgresModelFinalizingConvention: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IConvention: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IModelFinalizingConvention: never;
 
@@ -58,6 +62,8 @@ export const NpgsqlPostgresModelFinalizingConvention: {
 export type NpgsqlPostgresModelFinalizingConvention = NpgsqlPostgresModelFinalizingConvention$instance;
 
 export interface NpgsqlRuntimeModelConvention$instance extends RelationalRuntimeModelConvention {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Metadata_Conventions_NpgsqlRuntimeModelConvention: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IConvention: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IModelFinalizedConvention: never;
 
@@ -76,6 +82,8 @@ export const NpgsqlRuntimeModelConvention: {
 export type NpgsqlRuntimeModelConvention = NpgsqlRuntimeModelConvention$instance;
 
 export interface NpgsqlSharedTableConvention$instance extends SharedTableConvention {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Metadata_Conventions_NpgsqlSharedTableConvention: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IConvention: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IModelFinalizingConvention: never;
 
@@ -95,6 +103,8 @@ export const NpgsqlSharedTableConvention: {
 export type NpgsqlSharedTableConvention = NpgsqlSharedTableConvention$instance;
 
 export interface NpgsqlStoreGenerationConvention$instance extends StoreGenerationConvention {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Metadata_Conventions_NpgsqlStoreGenerationConvention: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IConvention: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IModelFinalizingConvention: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IPropertyAnnotationChangedConvention: never;
@@ -112,6 +122,8 @@ export const NpgsqlStoreGenerationConvention: {
 export type NpgsqlStoreGenerationConvention = NpgsqlStoreGenerationConvention$instance;
 
 export interface NpgsqlValueGenerationConvention$instance extends RelationalValueGenerationConvention {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Metadata_Conventions_NpgsqlValueGenerationConvention: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IConvention: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IEntityTypeAnnotationChangedConvention: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IEntityTypeBaseTypeChangedConvention: never;
@@ -136,6 +148,8 @@ export const NpgsqlValueGenerationConvention: {
 export type NpgsqlValueGenerationConvention = NpgsqlValueGenerationConvention$instance;
 
 export interface NpgsqlValueGenerationStrategyConvention$instance {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Metadata_Conventions_NpgsqlValueGenerationStrategyConvention: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IConvention: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IModelFinalizingConvention: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IModelInitializedConvention: never;

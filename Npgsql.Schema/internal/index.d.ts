@@ -14,6 +14,8 @@ import type { DbColumn } from "@tsonic/dotnet/System.Data.Common/internal/index.
 import type { Boolean as ClrBoolean, Int16, Int32, Nullable_1, Object as ClrObject, String as ClrString, Type, UInt32 } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface NpgsqlDbColumn$instance extends DbColumn {
+    readonly __tsonic_type_Npgsql_Schema_NpgsqlDbColumn: never;
+
     AllowDBNull: Nullable_1<System_Internal.Boolean>;
     BaseCatalogName: string;
     get BaseColumnName(): string | undefined;
@@ -39,7 +41,6 @@ export interface NpgsqlDbColumn$instance extends DbColumn {
     IsLong: Nullable_1<System_Internal.Boolean>;
     IsReadOnly: Nullable_1<System_Internal.Boolean>;
     IsUnique: Nullable_1<System_Internal.Boolean>;
-    readonly [propertyName: string]: unknown | undefined;
     NpgsqlDbType: Nullable_1<NpgsqlDbType>;
     NumericPrecision: Nullable_1<System_Internal.Int32>;
     NumericScale: Nullable_1<System_Internal.Int32>;
@@ -56,5 +57,5 @@ export const NpgsqlDbColumn: {
 };
 
 
-export type NpgsqlDbColumn = NpgsqlDbColumn$instance;
+export type NpgsqlDbColumn = NpgsqlDbColumn$instance & { readonly [propertyName: string]: unknown | undefined; };
 

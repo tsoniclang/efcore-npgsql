@@ -36,6 +36,8 @@ export enum SortOrder {
 
 
 export interface CockroachDbInterleaveInParent$instance {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Metadata_CockroachDbInterleaveInParent: never;
+
     readonly Annotatable: Annotatable;
     InterleavePrefix: List_1<System_Internal.String>;
     ParentTableName: string;
@@ -52,6 +54,8 @@ export const CockroachDbInterleaveInParent: {
 export type CockroachDbInterleaveInParent = CockroachDbInterleaveInParent$instance;
 
 export interface PostgresCollation$instance {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Metadata_PostgresCollation: never;
+
     readonly Annotatable: Annotatable;
     IsDeterministic: Nullable_1<System_Internal.Boolean>;
     LcCollate: string;
@@ -73,6 +77,8 @@ export const PostgresCollation: {
 export type PostgresCollation = PostgresCollation$instance;
 
 export interface PostgresEnum$instance {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Metadata_PostgresEnum: never;
+
     readonly Annotatable: Annotatable;
     Labels: IReadOnlyList_1<System_Internal.String>;
     readonly Name: string;
@@ -92,6 +98,8 @@ export const PostgresEnum: {
 export type PostgresEnum = PostgresEnum$instance;
 
 export interface PostgresExtension$instance {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Metadata_PostgresExtension: never;
+
     readonly Annotatable: Annotatable;
     readonly Name: string;
     readonly Schema: string | undefined;
@@ -112,6 +120,8 @@ export const PostgresExtension: {
 export type PostgresExtension = PostgresExtension$instance;
 
 export interface PostgresRange$instance {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Metadata_PostgresRange: never;
+
     readonly Annotatable: Annotatable;
     get CanonicalFunction(): string | undefined;
     set CanonicalFunction(value: string | undefined);
