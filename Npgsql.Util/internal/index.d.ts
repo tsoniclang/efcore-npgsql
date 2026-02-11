@@ -10,6 +10,8 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { ValueType } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface NpgsqlTimeout$instance {
+    readonly __tsonic_type_Npgsql_Util_NpgsqlTimeout: never;
+
 }
 
 

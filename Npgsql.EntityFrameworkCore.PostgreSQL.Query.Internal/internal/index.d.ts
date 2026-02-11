@@ -30,6 +30,8 @@ export enum NpgsqlSqlTranslatingExpressionVisitor_StartsEndsWithContains {
 
 
 export interface NpgsqlCompiledQueryCacheKeyGenerator$instance extends RelationalCompiledQueryCacheKeyGenerator {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_Internal_NpgsqlCompiledQueryCacheKeyGenerator: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_ICompiledQueryCacheKeyGenerator: never;
 
     GenerateCacheKey(query: Expression, async: boolean): unknown;
@@ -44,6 +46,8 @@ export const NpgsqlCompiledQueryCacheKeyGenerator: {
 export type NpgsqlCompiledQueryCacheKeyGenerator = NpgsqlCompiledQueryCacheKeyGenerator$instance;
 
 export interface NpgsqlDeleteConvertingExpressionVisitor$instance extends ExpressionVisitor {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_Internal_NpgsqlDeleteConvertingExpressionVisitor: never;
+
     Process(node: Expression): Expression;
     VisitDelete(deleteExpression: DeleteExpression): Expression;
 }
@@ -57,6 +61,8 @@ export const NpgsqlDeleteConvertingExpressionVisitor: {
 export type NpgsqlDeleteConvertingExpressionVisitor = NpgsqlDeleteConvertingExpressionVisitor$instance;
 
 export interface NpgsqlEvaluatableExpressionFilter$instance extends RelationalEvaluatableExpressionFilter {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_Internal_NpgsqlEvaluatableExpressionFilter: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IEvaluatableExpressionFilter: never;
 
     IsEvaluatableExpression(expression: Expression, model: IModel): boolean;
@@ -71,6 +77,8 @@ export const NpgsqlEvaluatableExpressionFilter: {
 export type NpgsqlEvaluatableExpressionFilter = NpgsqlEvaluatableExpressionFilter$instance;
 
 export interface NpgsqlParameterBasedSqlProcessor$instance extends RelationalParameterBasedSqlProcessor {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_Internal_NpgsqlParameterBasedSqlProcessor: never;
+
     Process(queryExpression: Expression, parametersDecorator: ParametersCacheDecorator): Expression;
     ProcessSqlNullability(selectExpression: Expression, parametersDecorator: ParametersCacheDecorator): Expression;
 }
@@ -84,6 +92,8 @@ export const NpgsqlParameterBasedSqlProcessor: {
 export type NpgsqlParameterBasedSqlProcessor = NpgsqlParameterBasedSqlProcessor$instance;
 
 export interface NpgsqlParameterBasedSqlProcessorFactory$instance {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_Internal_NpgsqlParameterBasedSqlProcessorFactory: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IRelationalParameterBasedSqlProcessorFactory: never;
 
     Create(parameters: RelationalParameterBasedSqlProcessorParameters): RelationalParameterBasedSqlProcessor;
@@ -98,6 +108,8 @@ export const NpgsqlParameterBasedSqlProcessorFactory: {
 export type NpgsqlParameterBasedSqlProcessorFactory = NpgsqlParameterBasedSqlProcessorFactory$instance;
 
 export interface NpgsqlQueryableMethodTranslatingExpressionVisitor$instance extends RelationalQueryableMethodTranslatingExpressionVisitor {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_Internal_NpgsqlQueryableMethodTranslatingExpressionVisitor: never;
+
     CreateSubqueryVisitor(): QueryableMethodTranslatingExpressionVisitor;
     GenerateJsonPartialUpdateSetter(target: Expression, value: SqlExpression, existingSetterValue: SqlExpression): SqlExpression | undefined;
     IsNaturallyOrdered(selectExpression: SelectExpression): boolean;
@@ -128,6 +140,8 @@ export const NpgsqlQueryableMethodTranslatingExpressionVisitor: {
 export type NpgsqlQueryableMethodTranslatingExpressionVisitor = NpgsqlQueryableMethodTranslatingExpressionVisitor$instance;
 
 export interface NpgsqlQueryableMethodTranslatingExpressionVisitorFactory$instance {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_Internal_NpgsqlQueryableMethodTranslatingExpressionVisitorFactory: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IQueryableMethodTranslatingExpressionVisitorFactory: never;
 
     readonly Dependencies: QueryableMethodTranslatingExpressionVisitorDependencies;
@@ -144,6 +158,8 @@ export const NpgsqlQueryableMethodTranslatingExpressionVisitorFactory: {
 export type NpgsqlQueryableMethodTranslatingExpressionVisitorFactory = NpgsqlQueryableMethodTranslatingExpressionVisitorFactory$instance;
 
 export interface NpgsqlQueryCompilationContext$instance extends RelationalQueryCompilationContext {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_Internal_NpgsqlQueryCompilationContext: never;
+
     readonly IsBuffering: boolean;
     readonly SupportsPrecompiledQuery: boolean;
 }
@@ -158,6 +174,8 @@ export const NpgsqlQueryCompilationContext: {
 export type NpgsqlQueryCompilationContext = NpgsqlQueryCompilationContext$instance;
 
 export interface NpgsqlQueryCompilationContextFactory$instance {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_Internal_NpgsqlQueryCompilationContextFactory: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IQueryCompilationContextFactory: never;
 
     Create(async: boolean): QueryCompilationContext;
@@ -173,6 +191,8 @@ export const NpgsqlQueryCompilationContextFactory: {
 export type NpgsqlQueryCompilationContextFactory = NpgsqlQueryCompilationContextFactory$instance;
 
 export interface NpgsqlQuerySqlGenerator$instance extends QuerySqlGenerator {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_Internal_NpgsqlQuerySqlGenerator: never;
+
     GenerateLimitOffset(selectExpression: SelectExpression): void;
     GenerateRootCommand(queryExpression: Expression): void;
     GenerateSetOperation(setOperation: SetOperationBase): void;
@@ -221,6 +241,8 @@ export const NpgsqlQuerySqlGenerator: {
 export type NpgsqlQuerySqlGenerator = NpgsqlQuerySqlGenerator$instance;
 
 export interface NpgsqlQuerySqlGeneratorFactory$instance {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_Internal_NpgsqlQuerySqlGeneratorFactory: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IQuerySqlGeneratorFactory: never;
 
     Create(): QuerySqlGenerator;
@@ -235,6 +257,8 @@ export const NpgsqlQuerySqlGeneratorFactory: {
 export type NpgsqlQuerySqlGeneratorFactory = NpgsqlQuerySqlGeneratorFactory$instance;
 
 export interface NpgsqlQueryTranslationPostprocessor$instance extends RelationalQueryTranslationPostprocessor {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_Internal_NpgsqlQueryTranslationPostprocessor: never;
+
     Process(query: Expression): Expression;
     ProcessTypeMappings(expression: Expression): Expression;
     Prune(query: Expression): Expression;
@@ -249,6 +273,8 @@ export const NpgsqlQueryTranslationPostprocessor: {
 export type NpgsqlQueryTranslationPostprocessor = NpgsqlQueryTranslationPostprocessor$instance;
 
 export interface NpgsqlQueryTranslationPostprocessorFactory$instance {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_Internal_NpgsqlQueryTranslationPostprocessorFactory: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IQueryTranslationPostprocessorFactory: never;
 
     readonly Dependencies: QueryTranslationPostprocessorDependencies;
@@ -265,6 +291,8 @@ export const NpgsqlQueryTranslationPostprocessorFactory: {
 export type NpgsqlQueryTranslationPostprocessorFactory = NpgsqlQueryTranslationPostprocessorFactory$instance;
 
 export interface NpgsqlSetOperationTypingInjector$instance extends ExpressionVisitor {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_Internal_NpgsqlSetOperationTypingInjector: never;
+
     VisitExtension(extensionExpression: Expression): Expression;
 }
 
@@ -277,6 +305,8 @@ export const NpgsqlSetOperationTypingInjector: {
 export type NpgsqlSetOperationTypingInjector = NpgsqlSetOperationTypingInjector$instance;
 
 export interface NpgsqlSqlNullabilityProcessor$instance extends SqlNullabilityProcessor {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_Internal_NpgsqlSqlNullabilityProcessor: never;
+
     VisitAll(allExpression: PgAllExpression, allowOptimizedExpansion: boolean, nullable: boolean): SqlExpression;
     VisitAny(anyExpression: PgAnyExpression, allowOptimizedExpansion: boolean, nullable: boolean): SqlExpression;
     VisitArrayIndex(arrayIndexExpression: PgArrayIndexExpression, allowOptimizedExpansion: boolean, nullable: boolean): SqlExpression;
@@ -302,6 +332,8 @@ export const NpgsqlSqlNullabilityProcessor: {
 export type NpgsqlSqlNullabilityProcessor = NpgsqlSqlNullabilityProcessor$instance;
 
 export interface NpgsqlSqlTranslatingExpressionVisitor$instance extends RelationalSqlTranslatingExpressionVisitor {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_Internal_NpgsqlSqlTranslatingExpressionVisitor: never;
+
     GenerateGreatest(expressions: IReadOnlyList_1<SqlExpression>, resultType: Type): SqlExpression;
     GenerateLeast(expressions: IReadOnlyList_1<SqlExpression>, resultType: Type): SqlExpression;
     VisitBinary(binaryExpression: BinaryExpression): Expression;
@@ -322,6 +354,8 @@ export const NpgsqlSqlTranslatingExpressionVisitor: {
 export type NpgsqlSqlTranslatingExpressionVisitor = NpgsqlSqlTranslatingExpressionVisitor$instance;
 
 export interface NpgsqlSqlTranslatingExpressionVisitorFactory$instance {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_Internal_NpgsqlSqlTranslatingExpressionVisitorFactory: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IRelationalSqlTranslatingExpressionVisitorFactory: never;
 
     Create(queryCompilationContext: QueryCompilationContext, queryableMethodTranslatingExpressionVisitor: QueryableMethodTranslatingExpressionVisitor): RelationalSqlTranslatingExpressionVisitor;
@@ -336,6 +370,8 @@ export const NpgsqlSqlTranslatingExpressionVisitorFactory: {
 export type NpgsqlSqlTranslatingExpressionVisitorFactory = NpgsqlSqlTranslatingExpressionVisitorFactory$instance;
 
 export interface NpgsqlSqlTreePruner$instance extends SqlTreePruner {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_Internal_NpgsqlSqlTreePruner: never;
+
     VisitExtension(node: Expression): Expression;
 }
 
@@ -348,6 +384,8 @@ export const NpgsqlSqlTreePruner: {
 export type NpgsqlSqlTreePruner = NpgsqlSqlTreePruner$instance;
 
 export interface NpgsqlTypeMappingPostprocessor$instance extends RelationalTypeMappingPostprocessor {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_Internal_NpgsqlTypeMappingPostprocessor: never;
+
     VisitExtension(expression: Expression): Expression;
 }
 
@@ -360,6 +398,8 @@ export const NpgsqlTypeMappingPostprocessor: {
 export type NpgsqlTypeMappingPostprocessor = NpgsqlTypeMappingPostprocessor$instance;
 
 export interface NpgsqlUnnestPostprocessor$instance extends ExpressionVisitor {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_Internal_NpgsqlUnnestPostprocessor: never;
+
     Visit(expression: Expression): Expression | undefined;
 }
 

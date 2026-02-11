@@ -22,6 +22,8 @@ import type { IDatabaseCreator, IDatabaseProvider, IExecutionStrategy, IRawSqlCo
 import type { DbLoggerCategory$Migrations } from "@tsonic/efcore/Microsoft.EntityFrameworkCore/internal/index.js";
 
 export interface NpgsqlHistoryRepository$instance extends HistoryRepository {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Migrations_Internal_NpgsqlHistoryRepository: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Migrations_IHistoryRepository: never;
 
     readonly ExistsSql: string;
@@ -49,6 +51,8 @@ export const NpgsqlHistoryRepository: {
 export type NpgsqlHistoryRepository = NpgsqlHistoryRepository$instance;
 
 export interface NpgsqlMigrator$instance extends Migrator {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Migrations_Internal_NpgsqlMigrator: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Migrations_IMigrator: never;
 
     Migrate(targetMigration: string): void;

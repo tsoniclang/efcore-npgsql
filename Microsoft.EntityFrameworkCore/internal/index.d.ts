@@ -42,6 +42,8 @@ export enum NpgsqlTsRankingNormalization {
 
 
 export interface LTree$instance {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_LTree: never;
+
     readonly __tsonic_iface_System_IEquatable_1: never;
 
     readonly NLevel: int;

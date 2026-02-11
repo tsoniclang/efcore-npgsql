@@ -19,6 +19,8 @@ import type { EnumerableExpression, ISqlExpressionFactory, SqlExpressionFactory,
 import type { RelationalTypeMapping } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage/internal/index.js";
 
 export interface NpgsqlSqlExpressionFactory$instance extends SqlExpressionFactory {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_NpgsqlSqlExpressionFactory: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_ISqlExpressionFactory: never;
 
     AggregateFunction(name: string, arguments: IEnumerable_1<SqlExpression>, aggregateEnumerableExpression: EnumerableExpression, nullable: boolean, argumentsPropagateNullability: IEnumerable_1<System_Internal.Boolean>, returnType: Type, typeMapping?: RelationalTypeMapping): PgFunctionExpression;

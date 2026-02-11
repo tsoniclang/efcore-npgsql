@@ -10,6 +10,8 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, IEquatable_1, Int32, Object as ClrObject, String as ClrString, UInt32, ValueType } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface DataTypeName$instance {
+    readonly __tsonic_type_Npgsql_Internal_Postgres_DataTypeName: never;
+
     readonly __tsonic_iface_System_IEquatable_1: never;
 
     readonly DisplayName: string;
@@ -39,6 +41,8 @@ export const DataTypeName: {
 export type DataTypeName = DataTypeName$instance;
 
 export interface Field$instance {
+    readonly __tsonic_type_Npgsql_Internal_Postgres_Field: never;
+
     Name: string;
     PgTypeId: PgTypeId;
     TypeModifier: int;
@@ -53,6 +57,8 @@ export const Field: {
 export type Field = Field$instance;
 
 export interface Oid$instance {
+    readonly __tsonic_type_Npgsql_Internal_Postgres_Oid: never;
+
     readonly __tsonic_iface_System_IEquatable_1: never;
 
     Value: uint;
@@ -72,6 +78,8 @@ export const Oid: {
 export type Oid = Oid$instance;
 
 export interface PgTypeId$instance {
+    readonly __tsonic_type_Npgsql_Internal_Postgres_PgTypeId: never;
+
     readonly __tsonic_iface_System_IEquatable_1: never;
 
     readonly DataTypeName: DataTypeName;

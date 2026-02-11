@@ -10,6 +10,8 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Int16, Int32, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface FieldDescription$instance {
+    readonly __tsonic_type_Npgsql_BackendMessages_FieldDescription: never;
+
     TypeModifier: int;
     TypeSize: short;
     ToString(): string;

@@ -43,6 +43,8 @@ export interface INpgsqlRelationalConnection$instance extends Microsoft_EntityFr
 export type INpgsqlRelationalConnection = INpgsqlRelationalConnection$instance;
 
 export interface NpgsqlDatabaseCreator$instance extends RelationalDatabaseCreator {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_NpgsqlDatabaseCreator: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Storage_IDatabaseCreator: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Storage_IRelationalDatabaseCreator: never;
 
@@ -69,6 +71,8 @@ export const NpgsqlDatabaseCreator: {
 export type NpgsqlDatabaseCreator = NpgsqlDatabaseCreator$instance;
 
 export interface NpgsqlDataSourceManager$instance {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_NpgsqlDataSourceManager: never;
+
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
@@ -87,6 +91,8 @@ export const NpgsqlDataSourceManager: {
 export type NpgsqlDataSourceManager = NpgsqlDataSourceManager$instance;
 
 export interface NpgsqlExecutionStrategy$instance {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_NpgsqlExecutionStrategy: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Storage_IExecutionStrategy: never;
 
     readonly RetriesOnFailure: boolean;
@@ -103,6 +109,8 @@ export const NpgsqlExecutionStrategy: {
 export type NpgsqlExecutionStrategy = NpgsqlExecutionStrategy$instance;
 
 export interface NpgsqlExecutionStrategyFactory$instance extends RelationalExecutionStrategyFactory {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_NpgsqlExecutionStrategyFactory: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Storage_IExecutionStrategyFactory: never;
 
     CreateDefaultStrategy(dependencies: ExecutionStrategyDependencies): IExecutionStrategy;
@@ -117,6 +125,8 @@ export const NpgsqlExecutionStrategyFactory: {
 export type NpgsqlExecutionStrategyFactory = NpgsqlExecutionStrategyFactory$instance;
 
 export interface NpgsqlRelationalConnection$instance extends RelationalConnection, Microsoft_EntityFrameworkCore_Storage_Internal.ITransactionEnlistmentManager {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_NpgsqlRelationalConnection: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_IResettableService: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Storage_IDbContextTransactionManager: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Storage_IRelationalConnection: never;
@@ -154,6 +164,8 @@ export type NpgsqlRelationalConnection = NpgsqlRelationalConnection$instance & _
 
 
 export interface NpgsqlSqlGenerationHelper$instance extends RelationalSqlGenerationHelper {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_NpgsqlSqlGenerationHelper: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Storage_ISqlGenerationHelper: never;
 
     DelimitIdentifier(identifier: string): string;
@@ -169,6 +181,8 @@ export const NpgsqlSqlGenerationHelper: {
 export type NpgsqlSqlGenerationHelper = NpgsqlSqlGenerationHelper$instance;
 
 export interface NpgsqlTransientExceptionDetector$instance {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_NpgsqlTransientExceptionDetector: never;
+
 }
 
 
@@ -181,6 +195,8 @@ export const NpgsqlTransientExceptionDetector: {
 export type NpgsqlTransientExceptionDetector = NpgsqlTransientExceptionDetector$instance;
 
 export interface NpgsqlTypeMappingSource$instance extends RelationalTypeMappingSource {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_NpgsqlTypeMappingSource: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Storage_IRelationalTypeMappingSource: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Storage_ITypeMappingSource: never;
 

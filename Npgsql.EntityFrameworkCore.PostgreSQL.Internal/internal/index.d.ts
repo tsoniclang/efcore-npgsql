@@ -17,6 +17,8 @@ import type { IDbContextOptions, ISingletonOptions } from "@tsonic/efcore/Micros
 import type { DbLoggerCategory$Scaffolding } from "@tsonic/efcore/Microsoft.EntityFrameworkCore/internal/index.js";
 
 export interface NpgsqlSingletonOptions$instance {
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Internal_NpgsqlSingletonOptions: never;
+
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_ISingletonOptions: never;
     readonly __tsonic_iface_Npgsql_EntityFrameworkCore_PostgreSQL_Infrastructure_Internal_INpgsqlSingletonOptions: never;
 
