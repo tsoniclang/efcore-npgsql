@@ -462,12 +462,9 @@ export interface PgUnnestExpression$instance extends PgTableValuedFunctionExpres
     Clone(alias: string, cloningExpressionVisitor: ExpressionVisitor): TableExpressionBase;
     Update(arguments: IReadOnlyList_1<SqlExpression>): PgUnnestExpression;
     Update(array: SqlExpression): PgUnnestExpression;
-    Update(arguments: IReadOnlyList_1<SqlExpression>): PgTableValuedFunctionExpression;
     VisitChildren(visitor: ExpressionVisitor): Expression;
     WithAlias(newAlias: string): PgUnnestExpression;
-    WithAlias(newAlias: string): PgTableValuedFunctionExpression;
     WithColumnInfos(columnInfos: IReadOnlyList_1<PgTableValuedFunctionExpression_ColumnInfo>): PgUnnestExpression;
-    WithColumnInfos(columnInfos: IReadOnlyList_1<PgTableValuedFunctionExpression_ColumnInfo>): PgTableValuedFunctionExpression;
 }
 
 

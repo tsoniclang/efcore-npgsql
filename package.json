@@ -1,6 +1,6 @@
 {
   "name": "@tsonic/efcore-npgsql",
-  "version": "10.0.12",
+  "version": "10.0.14",
   "description": "TypeScript type definitions for Npgsql.EntityFrameworkCore.PostgreSQL (+ dependencies) for .NET 10",
   "type": "module",
   "keywords": [
@@ -20,9 +20,9 @@
     "url": "https://github.com/tsoniclang/efcore-npgsql.git"
   },
   "peerDependencies": {
-    "@tsonic/core": "10.0.12",
-    "@tsonic/dotnet": "10.0.12",
-    "@tsonic/microsoft-extensions": "10.0.12",
-    "@tsonic/efcore": "10.0.12"
+    "@tsonic/core": "10.0.14",
+    "@tsonic/dotnet": "10.0.14",
+    "@tsonic/microsoft-extensions": "10.0.14",
+    "@tsonic/efcore": "10.0.14"
   }
 }
