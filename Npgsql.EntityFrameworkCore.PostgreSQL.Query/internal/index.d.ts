@@ -6,7 +6,7 @@
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 // Import types from other namespaces
-import * as System_Internal from "@tsonic/dotnet/System.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { PgAllExpression, PgAllOperatorType, PgAnyExpression, PgAnyOperatorType, PgArrayIndexExpression, PgArraySliceExpression, PgFunctionExpression, PgILikeExpression, PgJsonTraversalExpression, PgNewArrayExpression, PgRegexMatchExpression } from "../../Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.Internal/internal/index.js";
 import type { PgExpressionType } from "../../Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions/internal/index.js";
 import type { IEnumerable_1, IReadOnlyList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
