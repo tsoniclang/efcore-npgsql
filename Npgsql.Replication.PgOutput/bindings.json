@@ -766,11 +766,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Npgsql:Npgsql.Replication.PgOutput.ReplicationValue::Get(System.Threading.CancellationToken):ValueTask_1",
+          "stableId": "Npgsql:Npgsql.Replication.PgOutput.ReplicationValue::Get(System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[!!0]]",
           "clrName": "Get",
           "metadataToken": 100665982,
-          "canonicalSignature": "(System.Threading.CancellationToken):ValueTask_1",
-          "normalizedSignature": "Get|(System.Threading.CancellationToken):ValueTask_1|static=false",
+          "canonicalSignature": "(System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[!!0]]",
+          "normalizedSignature": "Get|(System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[!!0]]|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 1,

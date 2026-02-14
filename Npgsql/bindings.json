@@ -2862,11 +2862,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Npgsql:Npgsql.NpgsqlBinaryExporter::Read():T",
+          "stableId": "Npgsql:Npgsql.NpgsqlBinaryExporter::Read():!!0",
           "clrName": "Read",
           "metadataToken": 100663877,
-          "canonicalSignature": "():T",
-          "normalizedSignature": "Read|():T|static=false",
+          "canonicalSignature": "():!!0",
+          "normalizedSignature": "Read|():!!0|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 1,
@@ -2882,11 +2882,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Npgsql:Npgsql.NpgsqlBinaryExporter::ReadAsync(System.Threading.CancellationToken):ValueTask_1",
+          "stableId": "Npgsql:Npgsql.NpgsqlBinaryExporter::ReadAsync(System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[!!0]]",
           "clrName": "ReadAsync",
           "metadataToken": 100663878,
-          "canonicalSignature": "(System.Threading.CancellationToken):ValueTask_1",
-          "normalizedSignature": "ReadAsync|(System.Threading.CancellationToken):ValueTask_1|static=false",
+          "canonicalSignature": "(System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[!!0]]",
+          "normalizedSignature": "ReadAsync|(System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[!!0]]|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 1,
@@ -2902,11 +2902,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Npgsql:Npgsql.NpgsqlBinaryExporter::Read(NpgsqlTypes.NpgsqlDbType):T",
+          "stableId": "Npgsql:Npgsql.NpgsqlBinaryExporter::Read(NpgsqlTypes.NpgsqlDbType):!!0",
           "clrName": "Read",
           "metadataToken": 100663879,
-          "canonicalSignature": "(NpgsqlTypes.NpgsqlDbType):T",
-          "normalizedSignature": "Read|(NpgsqlTypes.NpgsqlDbType):T|static=false",
+          "canonicalSignature": "(NpgsqlTypes.NpgsqlDbType):!!0",
+          "normalizedSignature": "Read|(NpgsqlTypes.NpgsqlDbType):!!0|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 1,
@@ -2922,11 +2922,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Npgsql:Npgsql.NpgsqlBinaryExporter::ReadAsync(NpgsqlTypes.NpgsqlDbType,System.Threading.CancellationToken):ValueTask_1",
+          "stableId": "Npgsql:Npgsql.NpgsqlBinaryExporter::ReadAsync(NpgsqlTypes.NpgsqlDbType,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[!!0]]",
           "clrName": "ReadAsync",
           "metadataToken": 100663880,
-          "canonicalSignature": "(NpgsqlTypes.NpgsqlDbType,System.Threading.CancellationToken):ValueTask_1",
-          "normalizedSignature": "ReadAsync|(NpgsqlTypes.NpgsqlDbType,System.Threading.CancellationToken):ValueTask_1|static=false",
+          "canonicalSignature": "(NpgsqlTypes.NpgsqlDbType,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[!!0]]",
+          "normalizedSignature": "ReadAsync|(NpgsqlTypes.NpgsqlDbType,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[!!0]]|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 1,
@@ -3177,11 +3177,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Npgsql:Npgsql.NpgsqlBinaryImporter::Write(T):System.Void",
+          "stableId": "Npgsql:Npgsql.NpgsqlBinaryImporter::Write(!!0):System.Void",
           "clrName": "Write",
           "metadataToken": 100663912,
-          "canonicalSignature": "(T):System.Void",
-          "normalizedSignature": "Write|(T):System.Void|static=false",
+          "canonicalSignature": "(!!0):System.Void",
+          "normalizedSignature": "Write|(!!0):System.Void|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 1,
@@ -3197,11 +3197,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Npgsql:Npgsql.NpgsqlBinaryImporter::WriteAsync(T,System.Threading.CancellationToken):System.Threading.Tasks.Task",
+          "stableId": "Npgsql:Npgsql.NpgsqlBinaryImporter::WriteAsync(!!0,System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "clrName": "WriteAsync",
           "metadataToken": 100663913,
-          "canonicalSignature": "(T,System.Threading.CancellationToken):System.Threading.Tasks.Task",
-          "normalizedSignature": "WriteAsync|(T,System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
+          "canonicalSignature": "(!!0,System.Threading.CancellationToken):System.Threading.Tasks.Task",
+          "normalizedSignature": "WriteAsync|(!!0,System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 1,
@@ -3217,11 +3217,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Npgsql:Npgsql.NpgsqlBinaryImporter::Write(T,NpgsqlTypes.NpgsqlDbType):System.Void",
+          "stableId": "Npgsql:Npgsql.NpgsqlBinaryImporter::Write(!!0,NpgsqlTypes.NpgsqlDbType):System.Void",
           "clrName": "Write",
           "metadataToken": 100663914,
-          "canonicalSignature": "(T,NpgsqlTypes.NpgsqlDbType):System.Void",
-          "normalizedSignature": "Write|(T,NpgsqlTypes.NpgsqlDbType):System.Void|static=false",
+          "canonicalSignature": "(!!0,NpgsqlTypes.NpgsqlDbType):System.Void",
+          "normalizedSignature": "Write|(!!0,NpgsqlTypes.NpgsqlDbType):System.Void|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 1,
@@ -3237,11 +3237,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Npgsql:Npgsql.NpgsqlBinaryImporter::WriteAsync(T,NpgsqlTypes.NpgsqlDbType,System.Threading.CancellationToken):System.Threading.Tasks.Task",
+          "stableId": "Npgsql:Npgsql.NpgsqlBinaryImporter::WriteAsync(!!0,NpgsqlTypes.NpgsqlDbType,System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "clrName": "WriteAsync",
           "metadataToken": 100663915,
-          "canonicalSignature": "(T,NpgsqlTypes.NpgsqlDbType,System.Threading.CancellationToken):System.Threading.Tasks.Task",
-          "normalizedSignature": "WriteAsync|(T,NpgsqlTypes.NpgsqlDbType,System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
+          "canonicalSignature": "(!!0,NpgsqlTypes.NpgsqlDbType,System.Threading.CancellationToken):System.Threading.Tasks.Task",
+          "normalizedSignature": "WriteAsync|(!!0,NpgsqlTypes.NpgsqlDbType,System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 1,
@@ -3257,11 +3257,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Npgsql:Npgsql.NpgsqlBinaryImporter::Write(T,System.String):System.Void",
+          "stableId": "Npgsql:Npgsql.NpgsqlBinaryImporter::Write(!!0,System.String):System.Void",
           "clrName": "Write",
           "metadataToken": 100663916,
-          "canonicalSignature": "(T,System.String):System.Void",
-          "normalizedSignature": "Write|(T,System.String):System.Void|static=false",
+          "canonicalSignature": "(!!0,System.String):System.Void",
+          "normalizedSignature": "Write|(!!0,System.String):System.Void|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 1,
@@ -3277,11 +3277,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Npgsql:Npgsql.NpgsqlBinaryImporter::WriteAsync(T,System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task",
+          "stableId": "Npgsql:Npgsql.NpgsqlBinaryImporter::WriteAsync(!!0,System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "clrName": "WriteAsync",
           "metadataToken": 100663917,
-          "canonicalSignature": "(T,System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task",
-          "normalizedSignature": "WriteAsync|(T,System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
+          "canonicalSignature": "(!!0,System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task",
+          "normalizedSignature": "WriteAsync|(!!0,System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 1,
@@ -8813,11 +8813,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Npgsql:Npgsql.NpgsqlDataReader::GetFieldValueAsync(System.Int32,System.Threading.CancellationToken):Task_1",
+          "stableId": "Npgsql:Npgsql.NpgsqlDataReader::GetFieldValueAsync(System.Int32,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[!!0]]",
           "clrName": "GetFieldValueAsync",
           "metadataToken": 100664490,
-          "canonicalSignature": "(System.Int32,System.Threading.CancellationToken):Task_1",
-          "normalizedSignature": "GetFieldValueAsync|(System.Int32,System.Threading.CancellationToken):Task_1|static=false",
+          "canonicalSignature": "(System.Int32,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[!!0]]",
+          "normalizedSignature": "GetFieldValueAsync|(System.Int32,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[!!0]]|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 1,
@@ -8833,11 +8833,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Npgsql:Npgsql.NpgsqlDataReader::GetFieldValue(System.Int32):T",
+          "stableId": "Npgsql:Npgsql.NpgsqlDataReader::GetFieldValue(System.Int32):!!0",
           "clrName": "GetFieldValue",
           "metadataToken": 100664491,
-          "canonicalSignature": "(System.Int32):T",
-          "normalizedSignature": "GetFieldValue|(System.Int32):T|static=false",
+          "canonicalSignature": "(System.Int32):!!0",
+          "normalizedSignature": "GetFieldValue|(System.Int32):!!0|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 1,
@@ -12714,11 +12714,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Npgsql:Npgsql.NpgsqlNestedDataReader::GetFieldValue(System.Int32):T",
+          "stableId": "Npgsql:Npgsql.NpgsqlNestedDataReader::GetFieldValue(System.Int32):!!0",
           "clrName": "GetFieldValue",
           "metadataToken": 100664878,
-          "canonicalSignature": "(System.Int32):T",
-          "normalizedSignature": "GetFieldValue|(System.Int32):T|static=false",
+          "canonicalSignature": "(System.Int32):!!0",
+          "normalizedSignature": "GetFieldValue|(System.Int32):!!0|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 1,
@@ -13661,11 +13661,11 @@
       "methods": [],
       "properties": [
         {
-          "stableId": "Npgsql:Npgsql.NpgsqlParameter\u00601::TypedValue:T",
+          "stableId": "Npgsql:Npgsql.NpgsqlParameter\u00601::TypedValue:!0",
           "clrName": "TypedValue",
           "metadataToken": 385876353,
-          "canonicalSignature": ":T",
-          "normalizedSignature": "TypedValue|:T|static=false|accessor=getset",
+          "canonicalSignature": ":!0",
+          "normalizedSignature": "TypedValue|:!0|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
@@ -13714,10 +13714,10 @@
           "declaringAssemblyName": "Npgsql"
         },
         {
-          "stableId": "Npgsql:Npgsql.NpgsqlParameter\u00601::.ctor(System.String,T):void",
+          "stableId": "Npgsql:Npgsql.NpgsqlParameter\u00601::.ctor(System.String,!0):void",
           "metadataToken": 100665051,
-          "canonicalSignature": "(System.String,T):void",
-          "normalizedSignature": "constructor|(System.String,T):void|static=false",
+          "canonicalSignature": "(System.String,!0):void",
+          "normalizedSignature": "constructor|(System.String,!0):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",

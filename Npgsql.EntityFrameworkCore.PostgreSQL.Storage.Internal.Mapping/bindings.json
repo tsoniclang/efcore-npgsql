@@ -198,11 +198,11 @@
       ],
       "properties": [
         {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlArrayTypeMapping\u00603::Default:NpgsqlArrayTypeMapping_3",
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlArrayTypeMapping\u00603::Default:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlArrayTypeMapping_3[[!0],[!1],[!2]]",
           "clrName": "Default",
           "metadataToken": 385876008,
-          "canonicalSignature": ":NpgsqlArrayTypeMapping_3",
-          "normalizedSignature": "Default|:NpgsqlArrayTypeMapping_3|static=true|accessor=get",
+          "canonicalSignature": ":Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlArrayTypeMapping_3[[!0],[!1],[!2]]",
+          "normalizedSignature": "Default|:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlArrayTypeMapping_3[[!0],[!1],[!2]]|static=true|accessor=get",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
@@ -3000,11 +3000,11 @@
       ],
       "methods": [
         {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlEnumTypeMapping\u002BJsonPgEnumReaderWriter\u00601::FromJsonTyped(Microsoft.EntityFrameworkCore.Storage.Json.Utf8JsonReaderManager\u0026,System.Object):T",
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlEnumTypeMapping\u002BJsonPgEnumReaderWriter\u00601::FromJsonTyped(Microsoft.EntityFrameworkCore.Storage.Json.Utf8JsonReaderManager\u0026,System.Object):!0",
           "clrName": "FromJsonTyped",
           "metadataToken": 100665870,
-          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.Json.Utf8JsonReaderManager\u0026,System.Object):T",
-          "normalizedSignature": "FromJsonTyped|(Microsoft.EntityFrameworkCore.Storage.Json.Utf8JsonReaderManager\u0026,System.Object):T|static=false",
+          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.Json.Utf8JsonReaderManager\u0026,System.Object):!0",
+          "normalizedSignature": "FromJsonTyped|(Microsoft.EntityFrameworkCore.Storage.Json.Utf8JsonReaderManager\u0026,System.Object):!0|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -3026,11 +3026,11 @@
           ]
         },
         {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlEnumTypeMapping\u002BJsonPgEnumReaderWriter\u00601::ToJsonTyped(System.Text.Json.Utf8JsonWriter,T):System.Void",
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlEnumTypeMapping\u002BJsonPgEnumReaderWriter\u00601::ToJsonTyped(System.Text.Json.Utf8JsonWriter,!0):System.Void",
           "clrName": "ToJsonTyped",
           "metadataToken": 100665871,
-          "canonicalSignature": "(System.Text.Json.Utf8JsonWriter,T):System.Void",
-          "normalizedSignature": "ToJsonTyped|(System.Text.Json.Utf8JsonWriter,T):System.Void|static=false",
+          "canonicalSignature": "(System.Text.Json.Utf8JsonWriter,!0):System.Void",
+          "normalizedSignature": "ToJsonTyped|(System.Text.Json.Utf8JsonWriter,!0):System.Void|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -3048,11 +3048,11 @@
       ],
       "properties": [
         {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlEnumTypeMapping\u002BJsonPgEnumReaderWriter\u00601::Instance:JsonPgEnumReaderWriter_1",
+          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlEnumTypeMapping\u002BJsonPgEnumReaderWriter\u00601::Instance:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlEnumTypeMapping\u002BJsonPgEnumReaderWriter_1[[!0]]",
           "clrName": "Instance",
           "metadataToken": 385876271,
-          "canonicalSignature": ":JsonPgEnumReaderWriter_1",
-          "normalizedSignature": "Instance|:JsonPgEnumReaderWriter_1|static=true|accessor=get",
+          "canonicalSignature": ":Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlEnumTypeMapping\u002BJsonPgEnumReaderWriter_1[[!0]]",
+          "normalizedSignature": "Instance|:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlEnumTypeMapping\u002BJsonPgEnumReaderWriter_1[[!0]]|static=true|accessor=get",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
