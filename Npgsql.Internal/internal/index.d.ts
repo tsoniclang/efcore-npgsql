@@ -331,7 +331,6 @@ export interface PgBufferedConverter_1$instance<T> extends PgConverter_1<T> {
     GetSize(context: SizeContext, value: T, writeState: unknown): Size;
     Read(reader: PgReader): T;
     ReadAsync(reader: PgReader, cancellationToken?: CancellationToken): ValueTask_1<T>;
-    ReadAsync(reader: PgReader, cancellationToken?: CancellationToken): ValueTask_1<T>;
     ReadCore(reader: PgReader): T;
     Write(writer: PgWriter, value: T): void;
     WriteAsync(writer: PgWriter, value: T, cancellationToken?: CancellationToken): ValueTask;

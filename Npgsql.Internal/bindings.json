@@ -2625,26 +2625,6 @@
           "declaringClrType": "Npgsql.Internal.PgBufferedConverter\u00601",
           "declaringAssemblyName": "Npgsql",
           "isExtensionMethod": false
-        },
-        {
-          "stableId": "Npgsql:Npgsql.Internal.PgBufferedConverter\u00601::ReadAsync(Npgsql.Internal.PgReader,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1",
-          "clrName": "ReadAsync",
-          "metadataToken": 0,
-          "canonicalSignature": "(Npgsql.Internal.PgReader,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1",
-          "normalizedSignature": "ReadAsync|(Npgsql.Internal.PgReader,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "BaseOverload",
-          "arity": 0,
-          "parameterCount": 2,
-          "isStatic": false,
-          "isAbstract": true,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Npgsql.Internal.PgBufferedConverter\u00601",
-          "declaringAssemblyName": "Npgsql",
-          "isExtensionMethod": false
         }
       ],
       "properties": [],
