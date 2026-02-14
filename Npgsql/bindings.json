@@ -12170,11 +12170,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Npgsql:Npgsql.NpgsqlMultiHostDataSource::OpenConnectionAsync(System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1",
+          "stableId": "Npgsql:Npgsql.NpgsqlMultiHostDataSource::OpenConnectionAsync(System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1\u003CNpgsql.NpgsqlConnection\u003E",
           "clrName": "OpenConnectionAsync",
           "metadataToken": 0,
-          "canonicalSignature": "(System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1",
-          "normalizedSignature": "OpenConnectionAsync|(System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1|static=false",
+          "canonicalSignature": "(System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1\u003CNpgsql.NpgsqlConnection\u003E",
+          "normalizedSignature": "OpenConnectionAsync|(System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1\u003CNpgsql.NpgsqlConnection\u003E|static=false",
           "emitScope": "ClassSurface",
           "provenance": "BaseOverload",
           "arity": 0,
