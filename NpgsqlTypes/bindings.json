@@ -4734,11 +4734,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Npgsql:NpgsqlTypes.NpgsqlRange\u00601::Equals(NpgsqlTypes.NpgsqlRange_1[[!0]]):System.Boolean",
+          "stableId": "Npgsql:NpgsqlTypes.NpgsqlRange\u00601::Equals(NpgsqlRange_1):System.Boolean",
           "clrName": "Equals",
           "metadataToken": 100663371,
-          "canonicalSignature": "(NpgsqlTypes.NpgsqlRange_1[[!0]]):System.Boolean",
-          "normalizedSignature": "Equals|(NpgsqlTypes.NpgsqlRange_1[[!0]]):System.Boolean|static=false",
+          "canonicalSignature": "(NpgsqlRange_1):System.Boolean",
+          "normalizedSignature": "Equals|(NpgsqlRange_1):System.Boolean|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -4794,11 +4794,11 @@
           "isExtensionMethod": false
         },
         {
-          "stableId": "Npgsql:NpgsqlTypes.NpgsqlRange\u00601::Parse(System.String):NpgsqlTypes.NpgsqlRange_1[[!0]]",
+          "stableId": "Npgsql:NpgsqlTypes.NpgsqlRange\u00601::Parse(System.String):NpgsqlRange_1",
           "clrName": "Parse",
           "metadataToken": 100663374,
-          "canonicalSignature": "(System.String):NpgsqlTypes.NpgsqlRange_1[[!0]]",
-          "normalizedSignature": "Parse|(System.String):NpgsqlTypes.NpgsqlRange_1[[!0]]|static=true",
+          "canonicalSignature": "(System.String):NpgsqlRange_1",
+          "normalizedSignature": "Parse|(System.String):NpgsqlRange_1|static=true",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -4816,11 +4816,11 @@
       ],
       "properties": [
         {
-          "stableId": "Npgsql:NpgsqlTypes.NpgsqlRange\u00601::LowerBound:!0",
+          "stableId": "Npgsql:NpgsqlTypes.NpgsqlRange\u00601::LowerBound:T",
           "clrName": "LowerBound",
           "metadataToken": 385875976,
-          "canonicalSignature": ":!0",
-          "normalizedSignature": "LowerBound|:!0|static=false|accessor=get",
+          "canonicalSignature": ":T",
+          "normalizedSignature": "LowerBound|:T|static=false|accessor=get",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
@@ -4835,11 +4835,11 @@
           "declaringAssemblyName": "Npgsql"
         },
         {
-          "stableId": "Npgsql:NpgsqlTypes.NpgsqlRange\u00601::UpperBound:!0",
+          "stableId": "Npgsql:NpgsqlTypes.NpgsqlRange\u00601::UpperBound:T",
           "clrName": "UpperBound",
           "metadataToken": 385875977,
-          "canonicalSignature": ":!0",
-          "normalizedSignature": "UpperBound|:!0|static=false|accessor=get",
+          "canonicalSignature": ":T",
+          "normalizedSignature": "UpperBound|:T|static=false|accessor=get",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
@@ -4951,10 +4951,10 @@
       ],
       "fields": [
         {
-          "stableId": "Npgsql:NpgsqlTypes.NpgsqlRange\u00601::EmptyNpgsqlTypes.NpgsqlRange\u00601[[!0]]",
+          "stableId": "Npgsql:NpgsqlTypes.NpgsqlRange\u00601::EmptyNpgsqlRange\u00601",
           "clrName": "Empty",
           "metadataToken": 67108961,
-          "normalizedSignature": "Empty|NpgsqlTypes.NpgsqlRange\u00601[[!0]]|static=true|const=false",
+          "normalizedSignature": "Empty|NpgsqlRange\u00601|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
@@ -4966,10 +4966,10 @@
       "events": [],
       "constructors": [
         {
-          "stableId": "Npgsql:NpgsqlTypes.NpgsqlRange\u00601::.ctor(!0,!0):void",
+          "stableId": "Npgsql:NpgsqlTypes.NpgsqlRange\u00601::.ctor(T,T):void",
           "metadataToken": 100663362,
-          "canonicalSignature": "(!0,!0):void",
-          "normalizedSignature": "constructor|(!0,!0):void|static=false",
+          "canonicalSignature": "(T,T):void",
+          "normalizedSignature": "constructor|(T,T):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
@@ -4977,10 +4977,10 @@
           "declaringAssemblyName": "Npgsql"
         },
         {
-          "stableId": "Npgsql:NpgsqlTypes.NpgsqlRange\u00601::.ctor(!0,System.Boolean,!0,System.Boolean):void",
+          "stableId": "Npgsql:NpgsqlTypes.NpgsqlRange\u00601::.ctor(T,System.Boolean,T,System.Boolean):void",
           "metadataToken": 100663363,
-          "canonicalSignature": "(!0,System.Boolean,!0,System.Boolean):void",
-          "normalizedSignature": "constructor|(!0,System.Boolean,!0,System.Boolean):void|static=false",
+          "canonicalSignature": "(T,System.Boolean,T,System.Boolean):void",
+          "normalizedSignature": "constructor|(T,System.Boolean,T,System.Boolean):void|static=false",
           "isStatic": false,
           "parameterCount": 4,
           "visibility": "Public",
@@ -4988,10 +4988,10 @@
           "declaringAssemblyName": "Npgsql"
         },
         {
-          "stableId": "Npgsql:NpgsqlTypes.NpgsqlRange\u00601::.ctor(!0,System.Boolean,System.Boolean,!0,System.Boolean,System.Boolean):void",
+          "stableId": "Npgsql:NpgsqlTypes.NpgsqlRange\u00601::.ctor(T,System.Boolean,System.Boolean,T,System.Boolean,System.Boolean):void",
           "metadataToken": 100663364,
-          "canonicalSignature": "(!0,System.Boolean,System.Boolean,!0,System.Boolean,System.Boolean):void",
-          "normalizedSignature": "constructor|(!0,System.Boolean,System.Boolean,!0,System.Boolean,System.Boolean):void|static=false",
+          "canonicalSignature": "(T,System.Boolean,System.Boolean,T,System.Boolean,System.Boolean):void",
+          "normalizedSignature": "constructor|(T,System.Boolean,System.Boolean,T,System.Boolean,System.Boolean):void|static=false",
           "isStatic": false,
           "parameterCount": 6,
           "visibility": "Public",
