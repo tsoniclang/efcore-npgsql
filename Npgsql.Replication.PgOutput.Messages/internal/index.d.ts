@@ -449,7 +449,8 @@ export type StreamStopMessage = StreamStopMessage$instance;
 export interface TransactionalMessage$instance extends PgOutputReplicationMessage {
     readonly __tsonic_type_Npgsql_Replication_PgOutput_Messages_TransactionalMessage: never;
 
-    TransactionXid: Nullable_1<System_Internal.UInt32>;
+    get TransactionXid(): Nullable_1<System_Internal.UInt32>;
+    set TransactionXid(value: Nullable_1<System_Internal.UInt32> | uint);
 }
 
 
