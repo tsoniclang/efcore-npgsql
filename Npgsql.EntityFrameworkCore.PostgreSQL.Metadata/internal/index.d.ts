@@ -57,7 +57,8 @@ export interface PostgresCollation$instance {
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Metadata_PostgresCollation: never;
 
     readonly Annotatable: Annotatable;
-    IsDeterministic: Nullable_1<System_Internal.Boolean>;
+    get IsDeterministic(): Nullable_1<System_Internal.Boolean>;
+    set IsDeterministic(value: Nullable_1<System_Internal.Boolean> | boolean);
     LcCollate: string;
     LcCtype: string;
     readonly Name: string;

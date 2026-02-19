@@ -185,7 +185,8 @@ export type NpgsqlBatch = NpgsqlBatch$instance;
 export interface NpgsqlBatchCommand$instance extends DbBatchCommand {
     readonly __tsonic_type_Npgsql_NpgsqlBatchCommand: never;
 
-    AppendErrorBarrier: Nullable_1<System_Internal.Boolean>;
+    get AppendErrorBarrier(): Nullable_1<System_Internal.Boolean>;
+    set AppendErrorBarrier(value: Nullable_1<System_Internal.Boolean> | boolean);
     readonly CanCreateParameter: boolean;
     CommandText: string;
     CommandType: CommandType;

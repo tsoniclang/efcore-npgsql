@@ -20,10 +20,13 @@ export interface IdentitySequenceOptionsData$instance {
 
     IncrementBy: long;
     IsCyclic: boolean;
-    MaxValue: Nullable_1<System_Internal.Int64>;
-    MinValue: Nullable_1<System_Internal.Int64>;
+    get MaxValue(): Nullable_1<System_Internal.Int64>;
+    set MaxValue(value: Nullable_1<System_Internal.Int64> | long);
+    get MinValue(): Nullable_1<System_Internal.Int64>;
+    set MinValue(value: Nullable_1<System_Internal.Int64> | long);
     NumbersToCache: long;
-    StartValue: Nullable_1<System_Internal.Int64>;
+    get StartValue(): Nullable_1<System_Internal.Int64>;
+    set StartValue(value: Nullable_1<System_Internal.Int64> | long);
     Equals(other: IdentitySequenceOptionsData): boolean;
     Equals(obj: unknown): boolean;
     GetHashCode(): int;

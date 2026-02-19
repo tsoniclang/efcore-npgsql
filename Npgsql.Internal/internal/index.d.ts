@@ -519,7 +519,8 @@ export interface PgTypeInfo$instance {
 
     readonly Options: PgSerializerOptions;
     readonly PgTypeId: Nullable_1<PgTypeId>;
-    PreferredFormat: Nullable_1<DataFormat>;
+    get PreferredFormat(): Nullable_1<DataFormat>;
+    set PreferredFormat(value: Nullable_1<DataFormat> | DataFormat);
     SupportsReading: boolean;
     SupportsWriting: boolean;
     readonly Type: Type;
