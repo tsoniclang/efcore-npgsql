@@ -2,11 +2,9 @@
 // Namespace: Microsoft.EntityFrameworkCore
 // Assembly: Microsoft.EntityFrameworkCore, Microsoft.EntityFrameworkCore.Abstractions, Microsoft.EntityFrameworkCore.Relational, Npgsql.EntityFrameworkCore.PostgreSQL
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
-// Import support types from @tsonic/core
-import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
 import type { NpgsqlDbContextOptionsBuilder } from "../../Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure/internal/index.js";
@@ -48,7 +46,7 @@ export interface LTree$instance {
 
     readonly NLevel: int;
     Equals(other: LTree): boolean;
-    Equals(obj: unknown): boolean;
+    Equals(obj: JsValue | null): boolean;
     GetHashCode(): int;
     Index(other: LTree): int;
     Index(other: LTree, offset: int): int;
@@ -130,7 +128,7 @@ export abstract class NpgsqlAlterDatabaseOperationExtensions$instance {
     static GetOldPostgresEnums(operation: AlterDatabaseOperation): IReadOnlyList_1<PostgresEnum>;
     static GetOldPostgresExtensions(operation: AlterDatabaseOperation): IReadOnlyList_1<PostgresExtension>;
     static GetOldPostgresRanges(operation: AlterDatabaseOperation): IReadOnlyList_1<PostgresRange>;
-    static GetOrAddPostgresExtension(operation: AlterDatabaseOperation, schema: string, name: string, version: string): PostgresExtension;
+    static GetOrAddPostgresExtension(operation: AlterDatabaseOperation, schema: string | null, name: string, version: string | null): PostgresExtension;
     static GetPostgresCollations(operation: AlterDatabaseOperation): IReadOnlyList_1<PostgresCollation>;
     static GetPostgresEnums(operation: AlterDatabaseOperation): IReadOnlyList_1<PostgresEnum>;
     static GetPostgresExtensions(operation: AlterDatabaseOperation): IReadOnlyList_1<PostgresExtension>;
@@ -166,7 +164,7 @@ export abstract class NpgsqlDatabaseFacadeExtensions$instance {
 export type NpgsqlDatabaseFacadeExtensions = NpgsqlDatabaseFacadeExtensions$instance;
 
 export abstract class NpgsqlDatabaseModelExtensions$instance {
-    static GetOrAddPostgresExtension(model: DatabaseModel, schema: string, name: string, version: string): PostgresExtension;
+    static GetOrAddPostgresExtension(model: DatabaseModel, schema: string | null, name: string, version: string | null): PostgresExtension;
     static GetPostgresEnums(model: DatabaseModel): IReadOnlyList_1<PostgresEnum>;
     static GetPostgresExtensions(model: DatabaseModel): IReadOnlyList_1<PostgresExtension>;
 }
@@ -175,16 +173,16 @@ export abstract class NpgsqlDatabaseModelExtensions$instance {
 export type NpgsqlDatabaseModelExtensions = NpgsqlDatabaseModelExtensions$instance;
 
 export abstract class NpgsqlDbContextOptionsBuilderExtensions$instance {
-    static UseNpgsql<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, npgsqlOptionsAction?: Action_1<NpgsqlDbContextOptionsBuilder>): DbContextOptionsBuilder_1<TContext>;
-    static UseNpgsql<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connection: DbConnection, npgsqlOptionsAction?: Action_1<NpgsqlDbContextOptionsBuilder>): DbContextOptionsBuilder_1<TContext>;
-    static UseNpgsql<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connection: DbConnection, contextOwnsConnection: boolean, npgsqlOptionsAction?: Action_1<NpgsqlDbContextOptionsBuilder>): DbContextOptionsBuilder_1<TContext>;
-    static UseNpgsql<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, dataSource: DbDataSource, npgsqlOptionsAction?: Action_1<NpgsqlDbContextOptionsBuilder>): DbContextOptionsBuilder_1<TContext>;
-    static UseNpgsql<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connectionString: string, npgsqlOptionsAction?: Action_1<NpgsqlDbContextOptionsBuilder>): DbContextOptionsBuilder_1<TContext>;
-    static UseNpgsql(optionsBuilder: DbContextOptionsBuilder, npgsqlOptionsAction?: Action_1<NpgsqlDbContextOptionsBuilder>): DbContextOptionsBuilder;
-    static UseNpgsql(optionsBuilder: DbContextOptionsBuilder, connection: DbConnection, npgsqlOptionsAction?: Action_1<NpgsqlDbContextOptionsBuilder>): DbContextOptionsBuilder;
-    static UseNpgsql(optionsBuilder: DbContextOptionsBuilder, connection: DbConnection, contextOwnsConnection: boolean, npgsqlOptionsAction?: Action_1<NpgsqlDbContextOptionsBuilder>): DbContextOptionsBuilder;
-    static UseNpgsql(optionsBuilder: DbContextOptionsBuilder, dataSource: DbDataSource, npgsqlOptionsAction?: Action_1<NpgsqlDbContextOptionsBuilder>): DbContextOptionsBuilder;
-    static UseNpgsql(optionsBuilder: DbContextOptionsBuilder, connectionString: string, npgsqlOptionsAction?: Action_1<NpgsqlDbContextOptionsBuilder>): DbContextOptionsBuilder;
+    static UseNpgsql<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, npgsqlOptionsAction?: Action_1<NpgsqlDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
+    static UseNpgsql<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connection: DbConnection, npgsqlOptionsAction?: Action_1<NpgsqlDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
+    static UseNpgsql<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connection: DbConnection, contextOwnsConnection: boolean, npgsqlOptionsAction?: Action_1<NpgsqlDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
+    static UseNpgsql<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, dataSource: DbDataSource, npgsqlOptionsAction?: Action_1<NpgsqlDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
+    static UseNpgsql<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connectionString: string | null, npgsqlOptionsAction?: Action_1<NpgsqlDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
+    static UseNpgsql(optionsBuilder: DbContextOptionsBuilder, npgsqlOptionsAction?: Action_1<NpgsqlDbContextOptionsBuilder> | null): DbContextOptionsBuilder;
+    static UseNpgsql(optionsBuilder: DbContextOptionsBuilder, connection: DbConnection, npgsqlOptionsAction?: Action_1<NpgsqlDbContextOptionsBuilder> | null): DbContextOptionsBuilder;
+    static UseNpgsql(optionsBuilder: DbContextOptionsBuilder, connection: DbConnection, contextOwnsConnection: boolean, npgsqlOptionsAction?: Action_1<NpgsqlDbContextOptionsBuilder> | null): DbContextOptionsBuilder;
+    static UseNpgsql(optionsBuilder: DbContextOptionsBuilder, dataSource: DbDataSource, npgsqlOptionsAction?: Action_1<NpgsqlDbContextOptionsBuilder> | null): DbContextOptionsBuilder;
+    static UseNpgsql(optionsBuilder: DbContextOptionsBuilder, connectionString: string | null, npgsqlOptionsAction?: Action_1<NpgsqlDbContextOptionsBuilder> | null): DbContextOptionsBuilder;
 }
 
 
@@ -211,14 +209,14 @@ export type NpgsqlDbFunctionsExtensions = NpgsqlDbFunctionsExtensions$instance;
 
 export abstract class NpgsqlEntityTypeBuilderExtensions$instance {
     static CanSetIsUnlogged(entityTypeBuilder: IConventionEntityTypeBuilder, unlogged?: boolean, fromDataAnnotation?: boolean): boolean;
-    static CanSetStorageParameter(entityTypeBuilder: IConventionEntityTypeBuilder, parameterName: string, parameterValue: unknown, fromDataAnnotation?: boolean): boolean;
-    static HasGeneratedTsVectorColumn<TEntity>(entityTypeBuilder: EntityTypeBuilder_1<TEntity>, tsVectorPropertyExpression: Expression_1<Func_2<TEntity, NpgsqlTsVector>>, config: string, includeExpression: Expression_1<Func_2<TEntity, unknown>>): EntityTypeBuilder_1<TEntity>;
-    static HasStorageParameter<TEntity>(entityTypeBuilder: EntityTypeBuilder_1<TEntity>, parameterName: string, parameterValue: unknown): EntityTypeBuilder_1<TEntity>;
-    static HasStorageParameter(entityTypeBuilder: EntityTypeBuilder, parameterName: string, parameterValue: unknown): EntityTypeBuilder;
-    static HasStorageParameter(entityTypeBuilder: IConventionEntityTypeBuilder, parameterName: string, parameterValue: unknown, fromDataAnnotation?: boolean): IConventionEntityTypeBuilder | undefined;
+    static CanSetStorageParameter(entityTypeBuilder: IConventionEntityTypeBuilder, parameterName: string, parameterValue: JsValue | null, fromDataAnnotation?: boolean): boolean;
+    static HasGeneratedTsVectorColumn<TEntity>(entityTypeBuilder: EntityTypeBuilder_1<TEntity>, tsVectorPropertyExpression: Expression_1<Func_2<TEntity, NpgsqlTsVector>>, config: string, includeExpression: Expression_1<Func_2<TEntity, JsValue>>): EntityTypeBuilder_1<TEntity>;
+    static HasStorageParameter<TEntity>(entityTypeBuilder: EntityTypeBuilder_1<TEntity>, parameterName: string, parameterValue: JsValue | null): EntityTypeBuilder_1<TEntity>;
+    static HasStorageParameter(entityTypeBuilder: EntityTypeBuilder, parameterName: string, parameterValue: JsValue | null): EntityTypeBuilder;
+    static HasStorageParameter(entityTypeBuilder: IConventionEntityTypeBuilder, parameterName: string, parameterValue: JsValue | null, fromDataAnnotation?: boolean): IConventionEntityTypeBuilder | null;
     static IsUnlogged<TEntity>(entityTypeBuilder: EntityTypeBuilder_1<TEntity>, unlogged?: boolean): EntityTypeBuilder_1<TEntity>;
     static IsUnlogged(entityTypeBuilder: EntityTypeBuilder, unlogged?: boolean): EntityTypeBuilder;
-    static IsUnlogged(entityTypeBuilder: IConventionEntityTypeBuilder, unlogged?: boolean, fromDataAnnotation?: boolean): IConventionEntityTypeBuilder | undefined;
+    static IsUnlogged(entityTypeBuilder: IConventionEntityTypeBuilder, unlogged?: boolean, fromDataAnnotation?: boolean): IConventionEntityTypeBuilder | null;
     static UseCockroachDbInterleaveInParent<TEntity>(entityTypeBuilder: EntityTypeBuilder_1<TEntity>, parentTableType: Type, interleavePrefix: List_1<System_Internal.String>): EntityTypeBuilder_1<TEntity>;
     static UseCockroachDbInterleaveInParent(entityTypeBuilder: EntityTypeBuilder, parentTableType: Type, interleavePrefix: List_1<System_Internal.String>): EntityTypeBuilder;
 }
@@ -230,13 +228,13 @@ export abstract class NpgsqlEntityTypeExtensions$instance {
     static GetCockroachDbInterleaveInParent(entityType: IReadOnlyEntityType): CockroachDbInterleaveInParent;
     static GetIsUnlogged(entityType: IReadOnlyEntityType): boolean;
     static GetIsUnloggedConfigurationSource(index: IConventionEntityType): Nullable_1<ConfigurationSource>;
-    static GetStorageParameter(entityType: IEntityType, parameterName: string): string | undefined;
+    static GetStorageParameter(entityType: IEntityType, parameterName: string): string | null;
     static GetStorageParameterConfigurationSource(index: IConventionEntityType, parameterName: string): Nullable_1<ConfigurationSource>;
-    static GetStorageParameters(entityType: IReadOnlyEntityType): Dictionary_2<System_Internal.String, unknown | undefined>;
+    static GetStorageParameters(entityType: IReadOnlyEntityType): Dictionary_2<System_Internal.String, JsValue | null>;
     static SetIsUnlogged(entityType: IConventionEntityType, unlogged: boolean, fromDataAnnotation?: boolean): boolean;
     static SetIsUnlogged(entityType: IMutableEntityType, unlogged: boolean): void;
-    static SetStorageParameter(entityType: IConventionEntityType, parameterName: string, parameterValue: unknown, fromDataAnnotation?: boolean): unknown;
-    static SetStorageParameter(entityType: IMutableEntityType, parameterName: string, parameterValue: unknown): void;
+    static SetStorageParameter(entityType: IConventionEntityType, parameterName: string, parameterValue: JsValue | null, fromDataAnnotation?: boolean): JsValue;
+    static SetStorageParameter(entityType: IMutableEntityType, parameterName: string, parameterValue: JsValue | null): void;
 }
 
 
@@ -318,42 +316,42 @@ export type NpgsqlFuzzyStringMatchDbFunctionsExtensions = NpgsqlFuzzyStringMatch
 
 export abstract class NpgsqlIndexBuilderExtensions$instance {
     static AreNullsDistinct<TEntity>(indexBuilder: IndexBuilder_1<TEntity>, nullsDistinct?: boolean): IndexBuilder_1<TEntity>;
-    static AreNullsDistinct(indexBuilder: IConventionIndexBuilder, nullsDistinct?: boolean, fromDataAnnotation?: boolean): IConventionIndexBuilder | undefined;
+    static AreNullsDistinct(indexBuilder: IConventionIndexBuilder, nullsDistinct?: boolean, fromDataAnnotation?: boolean): IConventionIndexBuilder | null;
     static AreNullsDistinct(indexBuilder: IndexBuilder, nullsDistinct?: boolean): IndexBuilder;
     static CanSetAreNullsDistinct(indexBuilder: IConventionIndexBuilder, nullsDistinct?: boolean, fromDataAnnotation?: boolean): boolean;
-    static CanSetCollation(indexBuilder: IConventionIndexBuilder, values: IReadOnlyList_1<System_Internal.String>, fromDataAnnotation: boolean): boolean;
-    static CanSetIncludeProperties(indexBuilder: IConventionIndexBuilder, propertyNames: IReadOnlyList_1<System_Internal.String>, fromDataAnnotation?: boolean): boolean;
+    static CanSetCollation(indexBuilder: IConventionIndexBuilder, values: IReadOnlyList_1<System_Internal.String> | null, fromDataAnnotation: boolean): boolean;
+    static CanSetIncludeProperties(indexBuilder: IConventionIndexBuilder, propertyNames: IReadOnlyList_1<System_Internal.String> | null, fromDataAnnotation?: boolean): boolean;
     static CanSetIsCreatedConcurrently(indexBuilder: IConventionIndexBuilder, createdConcurrently: Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): boolean;
-    static CanSetIsTsVectorExpressionIndex(indexBuilder: IConventionIndexBuilder, config: string, fromDataAnnotation?: boolean): boolean;
-    static CanSetMethod(indexBuilder: IConventionIndexBuilder, method: string, fromDataAnnotation?: boolean): boolean;
-    static CanSetNullSortOrder(indexBuilder: IConventionIndexBuilder, values: IReadOnlyList_1<NullSortOrder>, fromDataAnnotation: boolean): boolean;
-    static CanSetOperators(indexBuilder: IConventionIndexBuilder, operators: IReadOnlyList_1<System_Internal.String>, fromDataAnnotation: boolean): boolean;
-    static CanSetStorageParameter(indexBuilder: IConventionIndexBuilder, parameterName: string, parameterValue: unknown, fromDataAnnotation?: boolean): boolean;
-    static HasMethod<TEntity>(indexBuilder: IndexBuilder_1<TEntity>, method: string): IndexBuilder_1<TEntity>;
-    static HasMethod(indexBuilder: IConventionIndexBuilder, method: string, fromDataAnnotation?: boolean): IConventionIndexBuilder | undefined;
-    static HasMethod(indexBuilder: IndexBuilder, method: string): IndexBuilder;
-    static HasNullSortOrder<TEntity>(indexBuilder: IndexBuilder_1<TEntity>, ...values: NullSortOrder[]): IndexBuilder_1<TEntity>;
-    static HasNullSortOrder(indexBuilder: IConventionIndexBuilder, values: IReadOnlyList_1<NullSortOrder>, fromDataAnnotation: boolean): IConventionIndexBuilder | undefined;
-    static HasNullSortOrder(indexBuilder: IndexBuilder, ...values: NullSortOrder[]): IndexBuilder;
-    static HasOperators<TEntity>(indexBuilder: IndexBuilder_1<TEntity>, ...operators: string[]): IndexBuilder_1<TEntity>;
-    static HasOperators(indexBuilder: IConventionIndexBuilder, operators: IReadOnlyList_1<System_Internal.String>, fromDataAnnotation: boolean): IConventionIndexBuilder | undefined;
-    static HasOperators(indexBuilder: IndexBuilder, ...operators: string[]): IndexBuilder;
-    static HasStorageParameter<TEntity>(indexBuilder: IndexBuilder_1<TEntity>, parameterName: string, parameterValue: unknown): IndexBuilder_1<TEntity>;
-    static HasStorageParameter(indexBuilder: IConventionIndexBuilder, parameterName: string, parameterValue: unknown, fromDataAnnotation?: boolean): IConventionIndexBuilder | undefined;
-    static HasStorageParameter(indexBuilder: IndexBuilder, parameterName: string, parameterValue: unknown): IndexBuilder;
-    static IncludeProperties<TEntity>(indexBuilder: IndexBuilder_1<TEntity>, includeExpression: Expression_1<Func_2<TEntity, unknown>>): IndexBuilder_1<TEntity>;
+    static CanSetIsTsVectorExpressionIndex(indexBuilder: IConventionIndexBuilder, config: string | null, fromDataAnnotation?: boolean): boolean;
+    static CanSetMethod(indexBuilder: IConventionIndexBuilder, method: string | null, fromDataAnnotation?: boolean): boolean;
+    static CanSetNullSortOrder(indexBuilder: IConventionIndexBuilder, values: IReadOnlyList_1<NullSortOrder> | null, fromDataAnnotation: boolean): boolean;
+    static CanSetOperators(indexBuilder: IConventionIndexBuilder, operators: IReadOnlyList_1<System_Internal.String> | null, fromDataAnnotation: boolean): boolean;
+    static CanSetStorageParameter(indexBuilder: IConventionIndexBuilder, parameterName: string, parameterValue: JsValue | null, fromDataAnnotation?: boolean): boolean;
+    static HasMethod<TEntity>(indexBuilder: IndexBuilder_1<TEntity>, method: string | null): IndexBuilder_1<TEntity>;
+    static HasMethod(indexBuilder: IConventionIndexBuilder, method: string | null, fromDataAnnotation?: boolean): IConventionIndexBuilder | null;
+    static HasMethod(indexBuilder: IndexBuilder, method: string | null): IndexBuilder;
+    static HasNullSortOrder<TEntity>(indexBuilder: IndexBuilder_1<TEntity>, ...values: NullSortOrder[] | null): IndexBuilder_1<TEntity>;
+    static HasNullSortOrder(indexBuilder: IConventionIndexBuilder, values: IReadOnlyList_1<NullSortOrder> | null, fromDataAnnotation: boolean): IConventionIndexBuilder | null;
+    static HasNullSortOrder(indexBuilder: IndexBuilder, ...values: NullSortOrder[] | null): IndexBuilder;
+    static HasOperators<TEntity>(indexBuilder: IndexBuilder_1<TEntity>, ...operators: string[] | null): IndexBuilder_1<TEntity>;
+    static HasOperators(indexBuilder: IConventionIndexBuilder, operators: IReadOnlyList_1<System_Internal.String> | null, fromDataAnnotation: boolean): IConventionIndexBuilder | null;
+    static HasOperators(indexBuilder: IndexBuilder, ...operators: string[] | null): IndexBuilder;
+    static HasStorageParameter<TEntity>(indexBuilder: IndexBuilder_1<TEntity>, parameterName: string, parameterValue: JsValue | null): IndexBuilder_1<TEntity>;
+    static HasStorageParameter(indexBuilder: IConventionIndexBuilder, parameterName: string, parameterValue: JsValue | null, fromDataAnnotation?: boolean): IConventionIndexBuilder | null;
+    static HasStorageParameter(indexBuilder: IndexBuilder, parameterName: string, parameterValue: JsValue | null): IndexBuilder;
+    static IncludeProperties<TEntity>(indexBuilder: IndexBuilder_1<TEntity>, includeExpression: Expression_1<Func_2<TEntity, JsValue>>): IndexBuilder_1<TEntity>;
     static IncludeProperties<TEntity>(indexBuilder: IndexBuilder_1<TEntity>, ...propertyNames: string[]): IndexBuilder_1<TEntity>;
-    static IncludeProperties(indexBuilder: IConventionIndexBuilder, propertyNames: IReadOnlyList_1<System_Internal.String>, fromDataAnnotation?: boolean): IConventionIndexBuilder | undefined;
+    static IncludeProperties(indexBuilder: IConventionIndexBuilder, propertyNames: IReadOnlyList_1<System_Internal.String>, fromDataAnnotation?: boolean): IConventionIndexBuilder | null;
     static IncludeProperties(indexBuilder: IndexBuilder, ...propertyNames: string[]): IndexBuilder;
     static IsCreatedConcurrently<TEntity>(indexBuilder: IndexBuilder_1<TEntity>, createdConcurrently?: boolean): IndexBuilder_1<TEntity>;
-    static IsCreatedConcurrently(indexBuilder: IConventionIndexBuilder, createdConcurrently: Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): IConventionIndexBuilder | undefined;
+    static IsCreatedConcurrently(indexBuilder: IConventionIndexBuilder, createdConcurrently: Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): IConventionIndexBuilder | null;
     static IsCreatedConcurrently(indexBuilder: IndexBuilder, createdConcurrently?: boolean): IndexBuilder;
     static IsTsVectorExpressionIndex<TEntity>(indexBuilder: IndexBuilder_1<TEntity>, config: string): IndexBuilder_1<TEntity>;
-    static IsTsVectorExpressionIndex(indexBuilder: IConventionIndexBuilder, config: string): IConventionIndexBuilder | undefined;
+    static IsTsVectorExpressionIndex(indexBuilder: IConventionIndexBuilder, config: string | null): IConventionIndexBuilder | null;
     static IsTsVectorExpressionIndex(indexBuilder: IndexBuilder, config: string): IndexBuilder;
-    static UseCollation<TEntity>(indexBuilder: IndexBuilder_1<TEntity>, ...values: string[]): IndexBuilder_1<TEntity>;
-    static UseCollation(indexBuilder: IConventionIndexBuilder, values: IReadOnlyList_1<System_Internal.String>, fromDataAnnotation: boolean): IConventionIndexBuilder | undefined;
-    static UseCollation(indexBuilder: IndexBuilder, ...values: string[]): IndexBuilder;
+    static UseCollation<TEntity>(indexBuilder: IndexBuilder_1<TEntity>, ...values: string[] | null): IndexBuilder_1<TEntity>;
+    static UseCollation(indexBuilder: IConventionIndexBuilder, values: IReadOnlyList_1<System_Internal.String> | null, fromDataAnnotation: boolean): IConventionIndexBuilder | null;
+    static UseCollation(indexBuilder: IndexBuilder, ...values: string[] | null): IndexBuilder;
 }
 
 
@@ -362,60 +360,60 @@ export type NpgsqlIndexBuilderExtensions = NpgsqlIndexBuilderExtensions$instance
 export abstract class NpgsqlIndexExtensions$instance {
     static GetAreNullsDistinct(index: IReadOnlyIndex): Nullable_1<System_Internal.Boolean>;
     static GetAreNullsDistinctConfigurationSource(index: IConventionIndex): Nullable_1<ConfigurationSource>;
-    static GetCollation(index: IReadOnlyIndex): IReadOnlyList_1<System_Internal.String> | undefined;
+    static GetCollation(index: IReadOnlyIndex): IReadOnlyList_1<System_Internal.String> | null;
     static GetCollationConfigurationSource(index: IConventionIndex): Nullable_1<ConfigurationSource>;
-    static GetIncludeProperties(index: IReadOnlyIndex): IReadOnlyList_1<System_Internal.String> | undefined;
+    static GetIncludeProperties(index: IReadOnlyIndex): IReadOnlyList_1<System_Internal.String> | null;
     static GetIncludePropertiesConfigurationSource(index: IConventionIndex): Nullable_1<ConfigurationSource>;
     static GetIsCreatedConcurrentlyConfigurationSource(index: IConventionIndex): Nullable_1<ConfigurationSource>;
-    static GetMethod(index: IReadOnlyIndex): string | undefined;
+    static GetMethod(index: IReadOnlyIndex): string | null;
     static GetMethodConfigurationSource(index: IConventionIndex): Nullable_1<ConfigurationSource>;
-    static GetNullSortOrder(index: IReadOnlyIndex): IReadOnlyList_1<NullSortOrder> | undefined;
+    static GetNullSortOrder(index: IReadOnlyIndex): IReadOnlyList_1<NullSortOrder> | null;
     static GetNullSortOrderConfigurationSource(index: IConventionIndex): Nullable_1<ConfigurationSource>;
-    static GetOperators(index: IReadOnlyIndex): IReadOnlyList_1<System_Internal.String> | undefined;
+    static GetOperators(index: IReadOnlyIndex): IReadOnlyList_1<System_Internal.String> | null;
     static GetOperatorsConfigurationSource(index: IConventionIndex): Nullable_1<ConfigurationSource>;
-    static GetStorageParameter(index: IIndex, parameterName: string): string | undefined;
+    static GetStorageParameter(index: IIndex, parameterName: string): string | null;
     static GetStorageParameterConfigurationSource(index: IConventionIndex, parameterName: string): Nullable_1<ConfigurationSource>;
-    static GetStorageParameters(index: IReadOnlyIndex): Dictionary_2<System_Internal.String, unknown | undefined>;
-    static GetTsVectorConfig(index: IReadOnlyIndex): string | undefined;
+    static GetStorageParameters(index: IReadOnlyIndex): Dictionary_2<System_Internal.String, JsValue | null>;
+    static GetTsVectorConfig(index: IReadOnlyIndex): string | null;
     static GetTsVectorConfigConfigurationSource(index: IConventionIndex): Nullable_1<ConfigurationSource>;
     static IsCreatedConcurrently(index: IReadOnlyIndex): Nullable_1<System_Internal.Boolean>;
     static SetAreNullsDistinct(index: IConventionIndex, nullsDistinct: Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): Nullable_1<System_Internal.Boolean>;
     static SetAreNullsDistinct(index: IMutableIndex, nullsDistinct: Nullable_1<System_Internal.Boolean>): void;
-    static SetCollation(index: IConventionIndex, collations: IReadOnlyList_1<System_Internal.String>, fromDataAnnotation?: boolean): IReadOnlyList_1<System_Internal.String> | undefined;
-    static SetCollation(index: IMutableIndex, collations: IReadOnlyList_1<System_Internal.String>): void;
-    static SetIncludeProperties(index: IConventionIndex, properties: IReadOnlyList_1<System_Internal.String>, fromDataAnnotation?: boolean): IReadOnlyList_1<System_Internal.String> | undefined;
-    static SetIncludeProperties(index: IMutableIndex, properties: IReadOnlyList_1<System_Internal.String>): void;
+    static SetCollation(index: IConventionIndex, collations: IReadOnlyList_1<System_Internal.String> | null, fromDataAnnotation?: boolean): IReadOnlyList_1<System_Internal.String> | null;
+    static SetCollation(index: IMutableIndex, collations: IReadOnlyList_1<System_Internal.String> | null): void;
+    static SetIncludeProperties(index: IConventionIndex, properties: IReadOnlyList_1<System_Internal.String> | null, fromDataAnnotation?: boolean): IReadOnlyList_1<System_Internal.String> | null;
+    static SetIncludeProperties(index: IMutableIndex, properties: IReadOnlyList_1<System_Internal.String> | null): void;
     static SetIsCreatedConcurrently(index: IConventionIndex, createdConcurrently: Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): Nullable_1<System_Internal.Boolean>;
     static SetIsCreatedConcurrently(index: IMutableIndex, createdConcurrently: Nullable_1<System_Internal.Boolean>): void;
-    static SetMethod(index: IConventionIndex, method: string, fromDataAnnotation?: boolean): string | undefined;
-    static SetMethod(index: IMutableIndex, method: string): void;
-    static SetNullSortOrder(index: IConventionIndex, nullSortOrder: IReadOnlyList_1<NullSortOrder>, fromDataAnnotation?: boolean): IReadOnlyList_1<NullSortOrder> | undefined;
-    static SetNullSortOrder(index: IMutableIndex, nullSortOrder: IReadOnlyList_1<NullSortOrder>): void;
-    static SetOperators(index: IConventionIndex, operators: IReadOnlyList_1<System_Internal.String>, fromDataAnnotation?: boolean): IReadOnlyList_1<System_Internal.String> | undefined;
-    static SetOperators(index: IMutableIndex, operators: IReadOnlyList_1<System_Internal.String>): void;
-    static SetStorageParameter(index: IConventionIndex, parameterName: string, parameterValue: unknown, fromDataAnnotation?: boolean): unknown;
-    static SetStorageParameter(index: IMutableIndex, parameterName: string, parameterValue: unknown): void;
-    static SetTsVectorConfig(index: IConventionIndex, config: string, fromDataAnnotation?: boolean): string | undefined;
-    static SetTsVectorConfig(index: IMutableIndex, config: string): void;
+    static SetMethod(index: IConventionIndex, method: string | null, fromDataAnnotation?: boolean): string | null;
+    static SetMethod(index: IMutableIndex, method: string | null): void;
+    static SetNullSortOrder(index: IConventionIndex, nullSortOrder: IReadOnlyList_1<NullSortOrder> | null, fromDataAnnotation?: boolean): IReadOnlyList_1<NullSortOrder> | null;
+    static SetNullSortOrder(index: IMutableIndex, nullSortOrder: IReadOnlyList_1<NullSortOrder> | null): void;
+    static SetOperators(index: IConventionIndex, operators: IReadOnlyList_1<System_Internal.String> | null, fromDataAnnotation?: boolean): IReadOnlyList_1<System_Internal.String> | null;
+    static SetOperators(index: IMutableIndex, operators: IReadOnlyList_1<System_Internal.String> | null): void;
+    static SetStorageParameter(index: IConventionIndex, parameterName: string, parameterValue: JsValue | null, fromDataAnnotation?: boolean): JsValue;
+    static SetStorageParameter(index: IMutableIndex, parameterName: string, parameterValue: JsValue | null): void;
+    static SetTsVectorConfig(index: IConventionIndex, config: string | null, fromDataAnnotation?: boolean): string | null;
+    static SetTsVectorConfig(index: IMutableIndex, config: string | null): void;
 }
 
 
 export type NpgsqlIndexExtensions = NpgsqlIndexExtensions$instance;
 
 export abstract class NpgsqlJsonDbFunctionsExtensions$instance {
-    static JsonContained(_: DbFunctions, contained: unknown, json: unknown): boolean;
-    static JsonContains(_: DbFunctions, json: unknown, contained: unknown): boolean;
-    static JsonExistAll(_: DbFunctions, json: unknown, ...keys: string[]): boolean;
-    static JsonExistAny(_: DbFunctions, json: unknown, ...keys: string[]): boolean;
-    static JsonExists(_: DbFunctions, json: unknown, key: string): boolean;
-    static JsonTypeof(_: DbFunctions, json: unknown): string;
+    static JsonContained(_: DbFunctions, contained: JsValue, json: JsValue): boolean;
+    static JsonContains(_: DbFunctions, json: JsValue, contained: JsValue): boolean;
+    static JsonExistAll(_: DbFunctions, json: JsValue, ...keys: string[]): boolean;
+    static JsonExistAny(_: DbFunctions, json: JsValue, ...keys: string[]): boolean;
+    static JsonExists(_: DbFunctions, json: JsValue, key: string): boolean;
+    static JsonTypeof(_: DbFunctions, json: JsValue): string;
 }
 
 
 export type NpgsqlJsonDbFunctionsExtensions = NpgsqlJsonDbFunctionsExtensions$instance;
 
 export abstract class NpgsqlMigrationBuilderExtensions$instance {
-    static EnsurePostgresExtension(builder: MigrationBuilder, name: string, schema?: string, version?: string): MigrationBuilder;
+    static EnsurePostgresExtension(builder: MigrationBuilder, name: string, schema?: string | null, version?: string | null): MigrationBuilder;
     static IsNpgsql(builder: MigrationBuilder): boolean;
 }
 
@@ -423,31 +421,31 @@ export abstract class NpgsqlMigrationBuilderExtensions$instance {
 export type NpgsqlMigrationBuilderExtensions = NpgsqlMigrationBuilderExtensions$instance;
 
 export abstract class NpgsqlModelBuilderExtensions$instance {
-    static CanSetHiLoSequence(modelBuilder: IConventionModelBuilder, name: string, schema: string, fromDataAnnotation?: boolean): boolean;
-    static CanSetPostgresEnum(modelBuilder: IConventionModelBuilder, schema: string, name: string, fromDataAnnotation?: boolean): boolean;
-    static CanSetPostgresExtension(modelBuilder: IConventionModelBuilder, schema: string, name: string, version?: string, fromDataAnnotation?: boolean): boolean;
+    static CanSetHiLoSequence(modelBuilder: IConventionModelBuilder, name: string | null, schema: string | null, fromDataAnnotation?: boolean): boolean;
+    static CanSetPostgresEnum(modelBuilder: IConventionModelBuilder, schema: string | null, name: string, fromDataAnnotation?: boolean): boolean;
+    static CanSetPostgresExtension(modelBuilder: IConventionModelBuilder, schema: string | null, name: string, version?: string | null, fromDataAnnotation?: boolean): boolean;
     static CanSetValueGenerationStrategy(modelBuilder: IConventionModelBuilder, valueGenerationStrategy: Nullable_1<NpgsqlValueGenerationStrategy>, fromDataAnnotation?: boolean): boolean;
-    static HasCollation(modelBuilder: ModelBuilder, name: string, locale: string, provider?: string, deterministic?: Nullable_1<System_Internal.Boolean>): ModelBuilder;
-    static HasCollation(modelBuilder: ModelBuilder, schema: string, name: string, locale: string, provider?: string, deterministic?: Nullable_1<System_Internal.Boolean>): ModelBuilder;
-    static HasCollation(modelBuilder: ModelBuilder, schema: string, name: string, lcCollate: string, lcCtype: string, provider?: string, deterministic?: Nullable_1<System_Internal.Boolean>): ModelBuilder;
-    static HasHiLoSequence(modelBuilder: IConventionModelBuilder, name: string, schema: string, fromDataAnnotation?: boolean): IConventionSequenceBuilder | undefined;
-    static HasPostgresEnum(modelBuilder: IConventionModelBuilder, schema: string, name: string, labels: string[]): IConventionModelBuilder;
-    static HasPostgresEnum<TEnum extends number>(modelBuilder: ModelBuilder, schema?: string, name?: string, nameTranslator?: INpgsqlNameTranslator): ModelBuilder;
-    static HasPostgresEnum(modelBuilder: ModelBuilder, schema: string, name: string, labels: string[]): ModelBuilder;
+    static HasCollation(modelBuilder: ModelBuilder, name: string, locale: string, provider?: string | null, deterministic?: Nullable_1<System_Internal.Boolean>): ModelBuilder;
+    static HasCollation(modelBuilder: ModelBuilder, schema: string | null, name: string, locale: string, provider?: string | null, deterministic?: Nullable_1<System_Internal.Boolean>): ModelBuilder;
+    static HasCollation(modelBuilder: ModelBuilder, schema: string | null, name: string, lcCollate: string, lcCtype: string, provider?: string | null, deterministic?: Nullable_1<System_Internal.Boolean>): ModelBuilder;
+    static HasHiLoSequence(modelBuilder: IConventionModelBuilder, name: string | null, schema: string | null, fromDataAnnotation?: boolean): IConventionSequenceBuilder | null;
+    static HasPostgresEnum(modelBuilder: IConventionModelBuilder, schema: string | null, name: string, labels: string[]): IConventionModelBuilder;
+    static HasPostgresEnum<TEnum extends number & NonNullable<JsValue>>(modelBuilder: ModelBuilder, schema?: string | null, name?: string | null, nameTranslator?: INpgsqlNameTranslator | null): ModelBuilder;
+    static HasPostgresEnum(modelBuilder: ModelBuilder, schema: string | null, name: string, labels: string[]): ModelBuilder;
     static HasPostgresEnum(modelBuilder: ModelBuilder, name: string, labels: string[]): ModelBuilder;
-    static HasPostgresExtension(modelBuilder: IConventionModelBuilder, name: string, fromDataAnnotation?: boolean): IConventionModelBuilder | undefined;
-    static HasPostgresExtension(modelBuilder: IConventionModelBuilder, schema: string, name: string, version?: string, fromDataAnnotation?: boolean): IConventionModelBuilder | undefined;
-    static HasPostgresExtension(modelBuilder: ModelBuilder, schema: string, name: string, version?: string): ModelBuilder;
+    static HasPostgresExtension(modelBuilder: IConventionModelBuilder, name: string, fromDataAnnotation?: boolean): IConventionModelBuilder | null;
+    static HasPostgresExtension(modelBuilder: IConventionModelBuilder, schema: string | null, name: string, version?: string | null, fromDataAnnotation?: boolean): IConventionModelBuilder | null;
+    static HasPostgresExtension(modelBuilder: ModelBuilder, schema: string | null, name: string, version?: string | null): ModelBuilder;
     static HasPostgresExtension(modelBuilder: ModelBuilder, name: string): ModelBuilder;
-    static HasPostgresRange(modelBuilder: ModelBuilder, schema: string, name: string, subtype: string, canonicalFunction?: string, subtypeOpClass?: string, collation?: string, subtypeDiff?: string): ModelBuilder;
+    static HasPostgresRange(modelBuilder: ModelBuilder, schema: string | null, name: string, subtype: string, canonicalFunction?: string | null, subtypeOpClass?: string | null, collation?: string | null, subtypeDiff?: string | null): ModelBuilder;
     static HasPostgresRange(modelBuilder: ModelBuilder, name: string, subtype: string): ModelBuilder;
-    static HasValueGenerationStrategy(modelBuilder: IConventionModelBuilder, valueGenerationStrategy: Nullable_1<NpgsqlValueGenerationStrategy>, fromDataAnnotation?: boolean): IConventionModelBuilder | undefined;
+    static HasValueGenerationStrategy(modelBuilder: IConventionModelBuilder, valueGenerationStrategy: Nullable_1<NpgsqlValueGenerationStrategy>, fromDataAnnotation?: boolean): IConventionModelBuilder | null;
     static UseDatabaseTemplate(modelBuilder: ModelBuilder, templateDatabaseName: string): ModelBuilder;
-    static UseHiLo(modelBuilder: ModelBuilder, name?: string, schema?: string): ModelBuilder;
+    static UseHiLo(modelBuilder: ModelBuilder, name?: string | null, schema?: string | null): ModelBuilder;
     static UseIdentityAlwaysColumns(modelBuilder: ModelBuilder): ModelBuilder;
     static UseIdentityByDefaultColumns(modelBuilder: ModelBuilder): ModelBuilder;
     static UseIdentityColumns(modelBuilder: ModelBuilder): ModelBuilder;
-    static UseKeySequences(modelBuilder: ModelBuilder, nameSuffix?: string, schema?: string): ModelBuilder;
+    static UseKeySequences(modelBuilder: ModelBuilder, nameSuffix?: string | null, schema?: string | null): ModelBuilder;
     static UseSerialColumns(modelBuilder: ModelBuilder): ModelBuilder;
     static UseTablespace(modelBuilder: ModelBuilder, tablespace: string): ModelBuilder;
 }
@@ -459,41 +457,41 @@ export abstract class NpgsqlModelExtensions$instance {
     static readonly DefaultHiLoSequenceName: string;
     static readonly DefaultSequenceNameSuffix: string;
     static GetCollations(model: IReadOnlyModel): IReadOnlyList_1<PostgresCollation>;
-    static GetDatabaseTemplate(model: IReadOnlyModel): string | undefined;
+    static GetDatabaseTemplate(model: IReadOnlyModel): string | null;
     static GetDatabaseTemplateConfigurationSource(model: IConventionModel): Nullable_1<ConfigurationSource>;
     static GetHiLoSequenceName(model: IReadOnlyModel): string;
     static GetHiLoSequenceNameConfigurationSource(model: IConventionModel): Nullable_1<ConfigurationSource>;
-    static GetHiLoSequenceSchema(model: IReadOnlyModel): string | undefined;
+    static GetHiLoSequenceSchema(model: IReadOnlyModel): string | null;
     static GetHiLoSequenceSchemaConfigurationSource(model: IConventionModel): Nullable_1<ConfigurationSource>;
-    static GetOrAddCollation(model: IMutableModel, schema: string, name: string, lcCollate: string, lcCtype: string, provider?: string, deterministic?: Nullable_1<System_Internal.Boolean>): PostgresCollation;
-    static GetOrAddPostgresEnum(model: IConventionModel, schema: string, name: string, labels: string[]): PostgresEnum;
-    static GetOrAddPostgresEnum(model: IMutableModel, schema: string, name: string, labels: string[]): PostgresEnum;
-    static GetOrAddPostgresExtension(model: IConventionModel, schema: string, name: string, version: string): PostgresExtension;
-    static GetOrAddPostgresExtension(model: IMutableModel, schema: string, name: string, version: string): PostgresExtension;
-    static GetOrAddPostgresRange(model: IMutableModel, schema: string, name: string, subtype: string, canonicalFunction?: string, subtypeOpClass?: string, collation?: string, subtypeDiff?: string): PostgresRange;
+    static GetOrAddCollation(model: IMutableModel, schema: string | null, name: string, lcCollate: string, lcCtype: string, provider?: string | null, deterministic?: Nullable_1<System_Internal.Boolean>): PostgresCollation;
+    static GetOrAddPostgresEnum(model: IConventionModel, schema: string | null, name: string, labels: string[]): PostgresEnum;
+    static GetOrAddPostgresEnum(model: IMutableModel, schema: string | null, name: string, labels: string[]): PostgresEnum;
+    static GetOrAddPostgresExtension(model: IConventionModel, schema: string | null, name: string, version: string | null): PostgresExtension;
+    static GetOrAddPostgresExtension(model: IMutableModel, schema: string | null, name: string, version: string | null): PostgresExtension;
+    static GetOrAddPostgresRange(model: IMutableModel, schema: string | null, name: string, subtype: string, canonicalFunction?: string | null, subtypeOpClass?: string | null, collation?: string | null, subtypeDiff?: string | null): PostgresRange;
     static GetPostgresEnums(model: IReadOnlyModel): IReadOnlyList_1<PostgresEnum>;
     static GetPostgresExtensions(model: IReadOnlyModel): IReadOnlyList_1<PostgresExtension>;
     static GetSequenceNameSuffix(model: IReadOnlyModel): string;
     static GetSequenceNameSuffixConfigurationSource(model: IConventionModel): Nullable_1<ConfigurationSource>;
-    static GetSequenceSchema(model: IReadOnlyModel): string | undefined;
+    static GetSequenceSchema(model: IReadOnlyModel): string | null;
     static GetSequenceSchemaConfigurationSource(model: IConventionModel): Nullable_1<ConfigurationSource>;
-    static GetTablespace(model: IReadOnlyModel): string | undefined;
+    static GetTablespace(model: IReadOnlyModel): string | null;
     static GetTablespaceConfigurationSource(model: IConventionModel): Nullable_1<ConfigurationSource>;
     static GetValueGenerationStrategy(model: IReadOnlyModel): Nullable_1<NpgsqlValueGenerationStrategy>;
     static GetValueGenerationStrategyConfigurationSource(model: IConventionModel): Nullable_1<ConfigurationSource>;
     static PostgresRanges(model: IReadOnlyModel): IReadOnlyList_1<PostgresRange>;
-    static SetDatabaseTemplate(model: IConventionModel, template: string, fromDataAnnotation?: boolean): string | undefined;
-    static SetDatabaseTemplate(model: IMutableModel, template: string): void;
-    static SetHiLoSequenceName(model: IConventionModel, name: string, fromDataAnnotation?: boolean): string | undefined;
-    static SetHiLoSequenceName(model: IMutableModel, name: string): void;
-    static SetHiLoSequenceSchema(model: IConventionModel, value: string, fromDataAnnotation?: boolean): string | undefined;
-    static SetHiLoSequenceSchema(model: IMutableModel, value: string): void;
-    static SetSequenceNameSuffix(model: IConventionModel, name: string, fromDataAnnotation?: boolean): string | undefined;
-    static SetSequenceNameSuffix(model: IMutableModel, name: string): void;
-    static SetSequenceSchema(model: IConventionModel, value: string, fromDataAnnotation?: boolean): string | undefined;
-    static SetSequenceSchema(model: IMutableModel, value: string): void;
-    static SetTablespace(model: IConventionModel, tablespace: string, fromDataAnnotation?: boolean): string | undefined;
-    static SetTablespace(model: IMutableModel, tablespace: string): void;
+    static SetDatabaseTemplate(model: IConventionModel, template: string | null, fromDataAnnotation?: boolean): string | null;
+    static SetDatabaseTemplate(model: IMutableModel, template: string | null): void;
+    static SetHiLoSequenceName(model: IConventionModel, name: string | null, fromDataAnnotation?: boolean): string | null;
+    static SetHiLoSequenceName(model: IMutableModel, name: string | null): void;
+    static SetHiLoSequenceSchema(model: IConventionModel, value: string | null, fromDataAnnotation?: boolean): string | null;
+    static SetHiLoSequenceSchema(model: IMutableModel, value: string | null): void;
+    static SetSequenceNameSuffix(model: IConventionModel, name: string | null, fromDataAnnotation?: boolean): string | null;
+    static SetSequenceNameSuffix(model: IMutableModel, name: string | null): void;
+    static SetSequenceSchema(model: IConventionModel, value: string | null, fromDataAnnotation?: boolean): string | null;
+    static SetSequenceSchema(model: IMutableModel, value: string | null): void;
+    static SetTablespace(model: IConventionModel, tablespace: string | null, fromDataAnnotation?: boolean): string | null;
+    static SetTablespace(model: IMutableModel, tablespace: string | null): void;
     static SetValueGenerationStrategy(model: IConventionModel, value: Nullable_1<NpgsqlValueGenerationStrategy>, fromDataAnnotation?: boolean): Nullable_1<NpgsqlValueGenerationStrategy>;
     static SetValueGenerationStrategy(model: IMutableModel, value: Nullable_1<NpgsqlValueGenerationStrategy>): void;
 }
@@ -629,37 +627,37 @@ export abstract class NpgsqlNetworkDbFunctionsExtensions$instance {
 export type NpgsqlNetworkDbFunctionsExtensions = NpgsqlNetworkDbFunctionsExtensions$instance;
 
 export abstract class NpgsqlPropertyBuilderExtensions$instance {
-    static CanSetCompressionMethod(propertyBuilder: IConventionPropertyBuilder, compressionMethod: string, fromDataAnnotation?: boolean): boolean;
-    static CanSetHiLoSequence(propertyBuilder: IConventionPropertyBuilder, name: string, schema: string, fromDataAnnotation?: boolean): boolean;
+    static CanSetCompressionMethod(propertyBuilder: IConventionPropertyBuilder, compressionMethod: string | null, fromDataAnnotation?: boolean): boolean;
+    static CanSetHiLoSequence(propertyBuilder: IConventionPropertyBuilder, name: string | null, schema: string | null, fromDataAnnotation?: boolean): boolean;
     static CanSetIdentityOptions(propertyBuilder: IConventionPropertyBuilder, startValue?: Nullable_1<System_Internal.Int64>, incrementBy?: Nullable_1<System_Internal.Int64>, minValue?: Nullable_1<System_Internal.Int64>, maxValue?: Nullable_1<System_Internal.Int64>, cyclic?: Nullable_1<System_Internal.Boolean>, numbersToCache?: Nullable_1<System_Internal.Int64>): boolean;
-    static CanSetIsGeneratedTsVectorColumn(propertyBuilder: IConventionPropertyBuilder, config: string, includedPropertyNames: IReadOnlyList_1<System_Internal.String>, fromDataAnnotation?: boolean): boolean;
-    static CanSetSequence(propertyBuilder: IConventionPropertyBuilder, name: string, schema: string, fromDataAnnotation?: boolean): boolean;
+    static CanSetIsGeneratedTsVectorColumn(propertyBuilder: IConventionPropertyBuilder, config: string | null, includedPropertyNames: IReadOnlyList_1<System_Internal.String> | null, fromDataAnnotation?: boolean): boolean;
+    static CanSetSequence(propertyBuilder: IConventionPropertyBuilder, name: string | null, schema: string | null, fromDataAnnotation?: boolean): boolean;
     static CanSetValueGenerationStrategy(propertyBuilder: IConventionPropertyBuilder, valueGenerationStrategy: Nullable_1<NpgsqlValueGenerationStrategy>, storeObject: StoreObjectIdentifier, fromDataAnnotation?: boolean): boolean;
     static CanSetValueGenerationStrategy(propertyBuilder: IConventionPropertyBuilder, valueGenerationStrategy: Nullable_1<NpgsqlValueGenerationStrategy>, fromDataAnnotation?: boolean): boolean;
-    static HasHiLoSequence(propertyBuilder: IConventionPropertyBuilder, name: string, schema: string, fromDataAnnotation?: boolean): IConventionSequenceBuilder | undefined;
-    static HasIdentityOptions(propertyBuilder: IConventionPropertyBuilder, startValue?: Nullable_1<System_Internal.Int64>, incrementBy?: Nullable_1<System_Internal.Int64>, minValue?: Nullable_1<System_Internal.Int64>, maxValue?: Nullable_1<System_Internal.Int64>, cyclic?: Nullable_1<System_Internal.Boolean>, numbersToCache?: Nullable_1<System_Internal.Int64>): IConventionPropertyBuilder | undefined;
+    static HasHiLoSequence(propertyBuilder: IConventionPropertyBuilder, name: string | null, schema: string | null, fromDataAnnotation?: boolean): IConventionSequenceBuilder | null;
+    static HasIdentityOptions(propertyBuilder: IConventionPropertyBuilder, startValue?: Nullable_1<System_Internal.Int64>, incrementBy?: Nullable_1<System_Internal.Int64>, minValue?: Nullable_1<System_Internal.Int64>, maxValue?: Nullable_1<System_Internal.Int64>, cyclic?: Nullable_1<System_Internal.Boolean>, numbersToCache?: Nullable_1<System_Internal.Int64>): IConventionPropertyBuilder | null;
     static HasIdentityOptions(propertyBuilder: PropertyBuilder, startValue?: Nullable_1<System_Internal.Int64>, incrementBy?: Nullable_1<System_Internal.Int64>, minValue?: Nullable_1<System_Internal.Int64>, maxValue?: Nullable_1<System_Internal.Int64>, cyclic?: Nullable_1<System_Internal.Boolean>, numbersToCache?: Nullable_1<System_Internal.Int64>): PropertyBuilder;
     static HasIdentityOptions<TProperty>(propertyBuilder: PropertyBuilder_1<TProperty>, startValue?: Nullable_1<System_Internal.Int64>, incrementBy?: Nullable_1<System_Internal.Int64>, minValue?: Nullable_1<System_Internal.Int64>, maxValue?: Nullable_1<System_Internal.Int64>, cyclic?: Nullable_1<System_Internal.Boolean>, numbersToCache?: Nullable_1<System_Internal.Int64>): PropertyBuilder_1<TProperty>;
     static HasPostgresArrayConversion<TElementProperty, TElementProvider>(propertyBuilder: PropertyBuilder_1<TElementProperty[]>, convertToProviderExpression: Expression_1<Func_2<TElementProperty, TElementProvider>>, convertFromProviderExpression: Expression_1<Func_2<TElementProvider, TElementProperty>>): PropertyBuilder_1<TElementProperty[]>;
     static HasPostgresArrayConversion<TElementProperty, TElementProvider>(propertyBuilder: PropertyBuilder_1<TElementProperty[]>, elementValueConverter: ValueConverter): PropertyBuilder_1<TElementProperty[]>;
-    static HasSequence(propertyBuilder: IConventionPropertyBuilder, name: string, schema: string, fromDataAnnotation?: boolean): IConventionSequenceBuilder | undefined;
-    static HasValueGenerationStrategy(propertyBuilder: IConventionPropertyBuilder, valueGenerationStrategy: Nullable_1<NpgsqlValueGenerationStrategy>, fromDataAnnotation?: boolean): IConventionPropertyBuilder | undefined;
-    static IsGeneratedTsVectorColumn(propertyBuilder: IConventionPropertyBuilder, config: string, includedPropertyNames: IReadOnlyList_1<System_Internal.String>, fromDataAnnotation?: boolean): IConventionPropertyBuilder | undefined;
+    static HasSequence(propertyBuilder: IConventionPropertyBuilder, name: string | null, schema: string | null, fromDataAnnotation?: boolean): IConventionSequenceBuilder | null;
+    static HasValueGenerationStrategy(propertyBuilder: IConventionPropertyBuilder, valueGenerationStrategy: Nullable_1<NpgsqlValueGenerationStrategy>, fromDataAnnotation?: boolean): IConventionPropertyBuilder | null;
+    static IsGeneratedTsVectorColumn(propertyBuilder: IConventionPropertyBuilder, config: string, includedPropertyNames: IReadOnlyList_1<System_Internal.String>, fromDataAnnotation?: boolean): IConventionPropertyBuilder | null;
     static IsGeneratedTsVectorColumn(propertyBuilder: PropertyBuilder_1<NpgsqlTsVector>, config: string, ...includedPropertyNames: string[]): PropertyBuilder_1<NpgsqlTsVector>;
     static IsGeneratedTsVectorColumn(propertyBuilder: PropertyBuilder, config: string, ...includedPropertyNames: string[]): PropertyBuilder;
-    static UseCompressionMethod(propertyBuilder: IConventionPropertyBuilder, compressionMethod: string, fromDataAnnotation?: boolean): IConventionPropertyBuilder | undefined;
-    static UseCompressionMethod(propertyBuilder: PropertyBuilder, compressionMethod: string): PropertyBuilder;
-    static UseCompressionMethod<TEntity>(propertyBuilder: PropertyBuilder_1<TEntity>, compressionMethod: string): PropertyBuilder_1<TEntity>;
-    static UseHiLo(propertyBuilder: PropertyBuilder, name?: string, schema?: string): PropertyBuilder;
-    static UseHiLo<TProperty>(propertyBuilder: PropertyBuilder_1<TProperty>, name?: string, schema?: string): PropertyBuilder_1<TProperty>;
+    static UseCompressionMethod(propertyBuilder: IConventionPropertyBuilder, compressionMethod: string | null, fromDataAnnotation?: boolean): IConventionPropertyBuilder | null;
+    static UseCompressionMethod(propertyBuilder: PropertyBuilder, compressionMethod: string | null): PropertyBuilder;
+    static UseCompressionMethod<TEntity>(propertyBuilder: PropertyBuilder_1<TEntity>, compressionMethod: string | null): PropertyBuilder_1<TEntity>;
+    static UseHiLo(propertyBuilder: PropertyBuilder, name?: string | null, schema?: string | null): PropertyBuilder;
+    static UseHiLo<TProperty>(propertyBuilder: PropertyBuilder_1<TProperty>, name?: string | null, schema?: string | null): PropertyBuilder_1<TProperty>;
     static UseIdentityAlwaysColumn(propertyBuilder: PropertyBuilder): PropertyBuilder;
     static UseIdentityAlwaysColumn<TProperty>(propertyBuilder: PropertyBuilder_1<TProperty>): PropertyBuilder_1<TProperty>;
     static UseIdentityByDefaultColumn(propertyBuilder: PropertyBuilder): PropertyBuilder;
     static UseIdentityByDefaultColumn<TProperty>(propertyBuilder: PropertyBuilder_1<TProperty>): PropertyBuilder_1<TProperty>;
     static UseIdentityColumn(propertyBuilder: PropertyBuilder): PropertyBuilder;
     static UseIdentityColumn<TProperty>(propertyBuilder: PropertyBuilder_1<TProperty>): PropertyBuilder_1<TProperty>;
-    static UseSequence(propertyBuilder: PropertyBuilder, name?: string, schema?: string): PropertyBuilder;
-    static UseSequence<TProperty>(propertyBuilder: PropertyBuilder_1<TProperty>, name?: string, schema?: string): PropertyBuilder_1<TProperty>;
+    static UseSequence(propertyBuilder: PropertyBuilder, name?: string | null, schema?: string | null): PropertyBuilder;
+    static UseSequence<TProperty>(propertyBuilder: PropertyBuilder_1<TProperty>, name?: string | null, schema?: string | null): PropertyBuilder_1<TProperty>;
     static UseSerialColumn(propertyBuilder: PropertyBuilder): PropertyBuilder;
     static UseSerialColumn<TProperty>(propertyBuilder: PropertyBuilder_1<TProperty>): PropertyBuilder_1<TProperty>;
 }
@@ -668,22 +666,22 @@ export abstract class NpgsqlPropertyBuilderExtensions$instance {
 export type NpgsqlPropertyBuilderExtensions = NpgsqlPropertyBuilderExtensions$instance;
 
 export abstract class NpgsqlPropertyExtensions$instance {
-    static FindHiLoSequence(property: IProperty, storeObject: StoreObjectIdentifier): ISequence | undefined;
-    static FindHiLoSequence(property: IProperty): ISequence | undefined;
-    static FindHiLoSequence(property: IReadOnlyProperty, storeObject: StoreObjectIdentifier): IReadOnlySequence | undefined;
-    static FindHiLoSequence(property: IReadOnlyProperty): IReadOnlySequence | undefined;
-    static FindSequence(property: IProperty, storeObject: StoreObjectIdentifier): ISequence | undefined;
-    static FindSequence(property: IProperty): ISequence | undefined;
-    static FindSequence(property: IReadOnlyProperty, storeObject: StoreObjectIdentifier): IReadOnlySequence | undefined;
-    static FindSequence(property: IReadOnlyProperty): IReadOnlySequence | undefined;
-    static GetCompressionMethod(property: IReadOnlyProperty, storeObject: StoreObjectIdentifier): string | undefined;
-    static GetCompressionMethod(property: IReadOnlyProperty): string | undefined;
+    static FindHiLoSequence(property: IProperty, storeObject: StoreObjectIdentifier): ISequence | null;
+    static FindHiLoSequence(property: IProperty): ISequence | null;
+    static FindHiLoSequence(property: IReadOnlyProperty, storeObject: StoreObjectIdentifier): IReadOnlySequence | null;
+    static FindHiLoSequence(property: IReadOnlyProperty): IReadOnlySequence | null;
+    static FindSequence(property: IProperty, storeObject: StoreObjectIdentifier): ISequence | null;
+    static FindSequence(property: IProperty): ISequence | null;
+    static FindSequence(property: IReadOnlyProperty, storeObject: StoreObjectIdentifier): IReadOnlySequence | null;
+    static FindSequence(property: IReadOnlyProperty): IReadOnlySequence | null;
+    static GetCompressionMethod(property: IReadOnlyProperty, storeObject: StoreObjectIdentifier): string | null;
+    static GetCompressionMethod(property: IReadOnlyProperty): string | null;
     static GetCompressionMethodConfigurationSource(index: IConventionProperty): Nullable_1<ConfigurationSource>;
-    static GetHiLoSequenceName(property: IReadOnlyProperty, storeObject: StoreObjectIdentifier): string | undefined;
-    static GetHiLoSequenceName(property: IReadOnlyProperty): string | undefined;
+    static GetHiLoSequenceName(property: IReadOnlyProperty, storeObject: StoreObjectIdentifier): string | null;
+    static GetHiLoSequenceName(property: IReadOnlyProperty): string | null;
     static GetHiLoSequenceNameConfigurationSource(property: IConventionProperty): Nullable_1<ConfigurationSource>;
-    static GetHiLoSequenceSchema(property: IReadOnlyProperty, storeObject: StoreObjectIdentifier): string | undefined;
-    static GetHiLoSequenceSchema(property: IReadOnlyProperty): string | undefined;
+    static GetHiLoSequenceSchema(property: IReadOnlyProperty, storeObject: StoreObjectIdentifier): string | null;
+    static GetHiLoSequenceSchema(property: IReadOnlyProperty): string | null;
     static GetHiLoSequenceSchemaConfigurationSource(property: IConventionProperty): Nullable_1<ConfigurationSource>;
     static GetIdentityIncrementBy(property: IReadOnlyProperty): Nullable_1<System_Internal.Int64>;
     static GetIdentityIncrementByConfigurationSource(property: IConventionProperty): Nullable_1<ConfigurationSource>;
@@ -697,15 +695,15 @@ export abstract class NpgsqlPropertyExtensions$instance {
     static GetIdentityNumbersToCacheConfigurationSource(property: IConventionProperty): Nullable_1<ConfigurationSource>;
     static GetIdentityStartValue(property: IReadOnlyProperty): Nullable_1<System_Internal.Int64>;
     static GetIdentityStartValueConfigurationSource(property: IConventionProperty): Nullable_1<ConfigurationSource>;
-    static GetSequenceName(property: IReadOnlyProperty, storeObject: StoreObjectIdentifier): string | undefined;
-    static GetSequenceName(property: IReadOnlyProperty): string | undefined;
+    static GetSequenceName(property: IReadOnlyProperty, storeObject: StoreObjectIdentifier): string | null;
+    static GetSequenceName(property: IReadOnlyProperty): string | null;
     static GetSequenceNameConfigurationSource(property: IConventionProperty): Nullable_1<ConfigurationSource>;
-    static GetSequenceSchema(property: IReadOnlyProperty, storeObject: StoreObjectIdentifier): string | undefined;
-    static GetSequenceSchema(property: IReadOnlyProperty): string | undefined;
+    static GetSequenceSchema(property: IReadOnlyProperty, storeObject: StoreObjectIdentifier): string | null;
+    static GetSequenceSchema(property: IReadOnlyProperty): string | null;
     static GetSequenceSchemaConfigurationSource(property: IConventionProperty): Nullable_1<ConfigurationSource>;
-    static GetTsVectorConfig(property: IReadOnlyProperty): string | undefined;
+    static GetTsVectorConfig(property: IReadOnlyProperty): string | null;
     static GetTsVectorConfigConfigurationSource(property: IConventionProperty): Nullable_1<ConfigurationSource>;
-    static GetTsVectorProperties(property: IReadOnlyProperty): IReadOnlyList_1<System_Internal.String> | undefined;
+    static GetTsVectorProperties(property: IReadOnlyProperty): IReadOnlyList_1<System_Internal.String> | null;
     static GetTsVectorPropertiesConfigurationSource(property: IConventionProperty): Nullable_1<ConfigurationSource>;
     static GetValueGenerationStrategy(property: IReadOnlyProperty, storeObject: StoreObjectIdentifier): NpgsqlValueGenerationStrategy;
     static GetValueGenerationStrategy(property: IReadOnlyProperty): NpgsqlValueGenerationStrategy;
@@ -718,12 +716,12 @@ export abstract class NpgsqlPropertyExtensions$instance {
     static RemoveHiLoOptions(property: IMutableProperty): void;
     static RemoveIdentityOptions(property: IConventionProperty): void;
     static RemoveIdentityOptions(property: IMutableProperty): void;
-    static SetCompressionMethod(property: IConventionProperty, compressionMethod: string, fromDataAnnotation?: boolean): string | undefined;
-    static SetCompressionMethod(property: IMutableProperty, compressionMethod: string): void;
-    static SetHiLoSequenceName(property: IConventionProperty, name: string, fromDataAnnotation?: boolean): string | undefined;
-    static SetHiLoSequenceName(property: IMutableProperty, name: string): void;
-    static SetHiLoSequenceSchema(property: IConventionProperty, schema: string, fromDataAnnotation?: boolean): string | undefined;
-    static SetHiLoSequenceSchema(property: IMutableProperty, schema: string): void;
+    static SetCompressionMethod(property: IConventionProperty, compressionMethod: string | null, fromDataAnnotation?: boolean): string | null;
+    static SetCompressionMethod(property: IMutableProperty, compressionMethod: string | null): void;
+    static SetHiLoSequenceName(property: IConventionProperty, name: string | null, fromDataAnnotation?: boolean): string | null;
+    static SetHiLoSequenceName(property: IMutableProperty, name: string | null): void;
+    static SetHiLoSequenceSchema(property: IConventionProperty, schema: string | null, fromDataAnnotation?: boolean): string | null;
+    static SetHiLoSequenceSchema(property: IMutableProperty, schema: string | null): void;
     static SetIdentityIncrementBy(property: IConventionProperty, incrementBy: Nullable_1<System_Internal.Int64>, fromDataAnnotation?: boolean): Nullable_1<System_Internal.Int64>;
     static SetIdentityIncrementBy(property: IMutableProperty, incrementBy: Nullable_1<System_Internal.Int64>): void;
     static SetIdentityIsCyclic(property: IConventionProperty, cyclic: Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): Nullable_1<System_Internal.Boolean>;
@@ -736,14 +734,14 @@ export abstract class NpgsqlPropertyExtensions$instance {
     static SetIdentityNumbersToCache(property: IMutableProperty, numbersToCache: Nullable_1<System_Internal.Int64>): void;
     static SetIdentityStartValue(property: IConventionProperty, startValue: Nullable_1<System_Internal.Int64>, fromDataAnnotation?: boolean): Nullable_1<System_Internal.Int64>;
     static SetIdentityStartValue(property: IMutableProperty, startValue: Nullable_1<System_Internal.Int64>): void;
-    static SetSequenceName(property: IConventionProperty, name: string, fromDataAnnotation?: boolean): string | undefined;
-    static SetSequenceName(property: IMutableProperty, name: string): void;
-    static SetSequenceSchema(property: IConventionProperty, schema: string, fromDataAnnotation?: boolean): string | undefined;
-    static SetSequenceSchema(property: IMutableProperty, schema: string): void;
+    static SetSequenceName(property: IConventionProperty, name: string | null, fromDataAnnotation?: boolean): string | null;
+    static SetSequenceName(property: IMutableProperty, name: string | null): void;
+    static SetSequenceSchema(property: IConventionProperty, schema: string | null, fromDataAnnotation?: boolean): string | null;
+    static SetSequenceSchema(property: IMutableProperty, schema: string | null): void;
     static SetTsVectorConfig(property: IConventionProperty, config: string, fromDataAnnotation?: boolean): string;
-    static SetTsVectorConfig(property: IMutableProperty, config: string): void;
-    static SetTsVectorProperties(property: IConventionProperty, properties: IReadOnlyList_1<System_Internal.String>, fromDataAnnotation?: boolean): IReadOnlyList_1<System_Internal.String> | undefined;
-    static SetTsVectorProperties(property: IMutableProperty, properties: IReadOnlyList_1<System_Internal.String>): void;
+    static SetTsVectorConfig(property: IMutableProperty, config: string | null): void;
+    static SetTsVectorProperties(property: IConventionProperty, properties: IReadOnlyList_1<System_Internal.String> | null, fromDataAnnotation?: boolean): IReadOnlyList_1<System_Internal.String> | null;
+    static SetTsVectorProperties(property: IMutableProperty, properties: IReadOnlyList_1<System_Internal.String> | null): void;
     static SetValueGenerationStrategy(property: IConventionProperty, value: Nullable_1<NpgsqlValueGenerationStrategy>, storeObject: StoreObjectIdentifier, fromDataAnnotation?: boolean): Nullable_1<NpgsqlValueGenerationStrategy>;
     static SetValueGenerationStrategy(property: IConventionProperty, value: Nullable_1<NpgsqlValueGenerationStrategy>, fromDataAnnotation?: boolean): Nullable_1<NpgsqlValueGenerationStrategy>;
     static SetValueGenerationStrategy(overrides: IConventionRelationalPropertyOverrides, value: Nullable_1<NpgsqlValueGenerationStrategy>, fromDataAnnotation?: boolean): Nullable_1<NpgsqlValueGenerationStrategy>;

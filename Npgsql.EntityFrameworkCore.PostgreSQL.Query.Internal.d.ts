@@ -33,8 +33,8 @@ export { NpgsqlQueryTranslationPostprocessorFactory as NpgsqlQueryTranslationPos
 export { NpgsqlSetOperationTypingInjector as NpgsqlSetOperationTypingInjector } from './Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal/internal/index.js';
 export { NpgsqlSqlNullabilityProcessor as NpgsqlSqlNullabilityProcessor } from './Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal/internal/index.js';
 export { NpgsqlSqlTranslatingExpressionVisitor as NpgsqlSqlTranslatingExpressionVisitor } from './Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal/internal/index.js';
+export { NpgsqlSqlTranslatingExpressionVisitor_StartsEndsWithContains as NpgsqlSqlTranslatingExpressionVisitor_StartsEndsWithContains } from './Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal/internal/index.js';
 export { NpgsqlSqlTranslatingExpressionVisitorFactory as NpgsqlSqlTranslatingExpressionVisitorFactory } from './Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal/internal/index.js';
 export { NpgsqlSqlTreePruner as NpgsqlSqlTreePruner } from './Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal/internal/index.js';
 export { NpgsqlTypeMappingPostprocessor as NpgsqlTypeMappingPostprocessor } from './Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal/internal/index.js';
 export { NpgsqlUnnestPostprocessor as NpgsqlUnnestPostprocessor } from './Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal/internal/index.js';
-export { NpgsqlSqlTranslatingExpressionVisitor_StartsEndsWithContains as NpgsqlSqlTranslatingExpressionVisitor_StartsEndsWithContains } from './Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal/internal/index.js';

@@ -2,11 +2,9 @@
 // Namespace: Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json
 // Assembly: Npgsql.EntityFrameworkCore.PostgreSQL
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
-// Import support types from @tsonic/core
-import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
@@ -24,7 +22,7 @@ export interface JsonBitArrayReaderWriter$instance extends JsonValueReaderWriter
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Json_JsonBitArrayReaderWriter: never;
 
     readonly ConstructorExpression: Expression;
-    FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): BitArray;
+    FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: JsValue | null): BitArray;
     ToJsonTyped(writer: Utf8JsonWriter, value: BitArray): void;
 }
 
@@ -41,7 +39,7 @@ export interface JsonMacaddrReaderWriter$instance extends JsonValueReaderWriter_
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Json_JsonMacaddrReaderWriter: never;
 
     readonly ConstructorExpression: Expression;
-    FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown): PhysicalAddress;
+    FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: JsValue | null): PhysicalAddress;
     ToJsonTyped(writer: Utf8JsonWriter, value: PhysicalAddress): void;
 }
 

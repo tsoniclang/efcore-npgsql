@@ -2,11 +2,9 @@
 // Namespace: Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal
 // Assembly: Npgsql.EntityFrameworkCore.PostgreSQL
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
-// Import support types from @tsonic/core
-import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
 import type { INpgsqlRelationalConnection } from "../../Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal/internal/index.js";
@@ -24,7 +22,7 @@ import type { HiLoValueGenerator_1, HiLoValueGeneratorState, IValueGeneratorCach
 export interface INpgsqlSequenceValueGeneratorFactory$instance {
     readonly __tsonic_iface_Npgsql_EntityFrameworkCore_PostgreSQL_ValueGeneration_Internal_INpgsqlSequenceValueGeneratorFactory: never;
 
-    TryCreate(property: IProperty, clrType: Type, generatorState: NpgsqlSequenceValueGeneratorState, connection: INpgsqlRelationalConnection, rawSqlCommandBuilder: IRawSqlCommandBuilder, commandLogger: IRelationalCommandDiagnosticsLogger): ValueGenerator | undefined;
+    TryCreate(property: IProperty, clrType: Type, generatorState: NpgsqlSequenceValueGeneratorState, connection: INpgsqlRelationalConnection, rawSqlCommandBuilder: IRawSqlCommandBuilder, commandLogger: IRelationalCommandDiagnosticsLogger): ValueGenerator | null;
 }
 
 
@@ -62,7 +60,7 @@ export interface NpgsqlSequenceValueGeneratorFactory$instance extends INpgsqlSeq
 
     readonly __tsonic_iface_Npgsql_EntityFrameworkCore_PostgreSQL_ValueGeneration_Internal_INpgsqlSequenceValueGeneratorFactory: never;
 
-    TryCreate(property: IProperty, type: Type, generatorState: NpgsqlSequenceValueGeneratorState, connection: INpgsqlRelationalConnection, rawSqlCommandBuilder: IRawSqlCommandBuilder, commandLogger: IRelationalCommandDiagnosticsLogger): ValueGenerator | undefined;
+    TryCreate(property: IProperty, type: Type, generatorState: NpgsqlSequenceValueGeneratorState, connection: INpgsqlRelationalConnection, rawSqlCommandBuilder: IRawSqlCommandBuilder, commandLogger: IRelationalCommandDiagnosticsLogger): ValueGenerator | null;
 }
 
 
@@ -122,8 +120,8 @@ export interface NpgsqlValueGeneratorSelector$instance extends RelationalValueGe
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_ValueGeneration_IValueGeneratorSelector: never;
 
     readonly Cache: INpgsqlValueGeneratorCache;
-    FindForType(property: IProperty, typeBase: ITypeBase, clrType: Type): ValueGenerator | undefined;
-    TrySelect(property: IProperty, typeBase: ITypeBase, valueGenerator: ValueGenerator): boolean;
+    FindForType(property: IProperty, typeBase: ITypeBase, clrType: Type): ValueGenerator | null;
+    TrySelect(property: IProperty, typeBase: ITypeBase, valueGenerator: ValueGenerator | null): boolean;
 }
 
 

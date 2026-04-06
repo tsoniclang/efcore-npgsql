@@ -21,7 +21,9 @@ export { NpgsqlInterval as NpgsqlInterval } from './NpgsqlTypes/internal/index.j
 export { NpgsqlLogSequenceNumber as NpgsqlLogSequenceNumber } from './NpgsqlTypes/internal/index.js';
 export { NpgsqlRange_1 as NpgsqlRange } from './NpgsqlTypes/internal/index.js';
 export { NpgsqlTsQuery as NpgsqlTsQuery } from './NpgsqlTypes/internal/index.js';
+export { NpgsqlTsQuery_NodeKind as NpgsqlTsQuery_NodeKind } from './NpgsqlTypes/internal/index.js';
 export { NpgsqlTsQueryLexeme as NpgsqlTsQueryLexeme } from './NpgsqlTypes/internal/index.js';
+export { NpgsqlTsQueryLexeme_Weight as NpgsqlTsQueryLexeme_Weight } from './NpgsqlTypes/internal/index.js';
 export { NpgsqlTsQueryNot as NpgsqlTsQueryNot } from './NpgsqlTypes/internal/index.js';
 export { NpgsqlTsQueryBinOp as NpgsqlTsQueryBinOp } from './NpgsqlTypes/internal/index.js';
 export { NpgsqlTsQueryAnd as NpgsqlTsQueryAnd } from './NpgsqlTypes/internal/index.js';
@@ -29,6 +31,9 @@ export { NpgsqlTsQueryOr as NpgsqlTsQueryOr } from './NpgsqlTypes/internal/index
 export { NpgsqlTsQueryFollowedBy as NpgsqlTsQueryFollowedBy } from './NpgsqlTypes/internal/index.js';
 export { NpgsqlTsQueryEmpty as NpgsqlTsQueryEmpty } from './NpgsqlTypes/internal/index.js';
 export { NpgsqlTsVector as NpgsqlTsVector } from './NpgsqlTypes/internal/index.js';
+export { NpgsqlTsVector_Lexeme as NpgsqlTsVector_Lexeme } from './NpgsqlTypes/internal/index.js';
+export { NpgsqlTsVector_Lexeme_WordEntryPos as NpgsqlTsVector_Lexeme_WordEntryPos } from './NpgsqlTypes/internal/index.js';
+export { NpgsqlTsVector_Lexeme_Weight as NpgsqlTsVector_Lexeme_Weight } from './NpgsqlTypes/internal/index.js';
 export { NpgsqlPoint as NpgsqlPoint } from './NpgsqlTypes/internal/index.js';
 export { NpgsqlLine as NpgsqlLine } from './NpgsqlTypes/internal/index.js';
 export { NpgsqlLSeg as NpgsqlLSeg } from './NpgsqlTypes/internal/index.js';
@@ -40,8 +45,3 @@ export { NpgsqlInet as NpgsqlInet } from './NpgsqlTypes/internal/index.js';
 export { NpgsqlCidr as NpgsqlCidr } from './NpgsqlTypes/internal/index.js';
 export { NpgsqlTid as NpgsqlTid } from './NpgsqlTypes/internal/index.js';
 export { PgNameAttribute as PgNameAttribute } from './NpgsqlTypes/internal/index.js';
-export { NpgsqlTsQuery_NodeKind as NpgsqlTsQuery_NodeKind } from './NpgsqlTypes/internal/index.js';
-export { NpgsqlTsQueryLexeme_Weight as NpgsqlTsQueryLexeme_Weight } from './NpgsqlTypes/internal/index.js';
-export { NpgsqlTsVector_Lexeme as NpgsqlTsVector_Lexeme } from './NpgsqlTypes/internal/index.js';
-export { NpgsqlTsVector_Lexeme_WordEntryPos as NpgsqlTsVector_Lexeme_WordEntryPos } from './NpgsqlTypes/internal/index.js';
-export { NpgsqlTsVector_Lexeme_Weight as NpgsqlTsVector_Lexeme_Weight } from './NpgsqlTypes/internal/index.js';

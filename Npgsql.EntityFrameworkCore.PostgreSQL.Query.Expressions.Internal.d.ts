@@ -31,6 +31,6 @@ export { PgNewArrayExpression as PgNewArrayExpression } from './Npgsql.EntityFra
 export { PgRegexMatchExpression as PgRegexMatchExpression } from './Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.Internal/internal/index.js';
 export { PgRowValueExpression as PgRowValueExpression } from './Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.Internal/internal/index.js';
 export { PgTableValuedFunctionExpression as PgTableValuedFunctionExpression } from './Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.Internal/internal/index.js';
+export { PgTableValuedFunctionExpression_ColumnInfo as PgTableValuedFunctionExpression_ColumnInfo } from './Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.Internal/internal/index.js';
 export { PgUnknownBinaryExpression as PgUnknownBinaryExpression } from './Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.Internal/internal/index.js';
 export { PgUnnestExpression as PgUnnestExpression } from './Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.Internal/internal/index.js';
-export { PgTableValuedFunctionExpression_ColumnInfo as PgTableValuedFunctionExpression_ColumnInfo } from './Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.Internal/internal/index.js';

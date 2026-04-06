@@ -13,7 +13,7 @@ import type { Action, Boolean as ClrBoolean, IEquatable, Int32, Nullable, Object
 import type { RemoteCertificateValidationCallback } from '@tsonic/dotnet/System.Net.Security.js';
 import type { IDiagnosticsLogger } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Diagnostics.js';
 import type { DbContextOptionsExtensionInfo, IDbContextOptions, IDbContextOptionsExtension, IModelValidator, ISingletonOptions, ModelValidatorDependencies, RelationalModelValidator, RelationalModelValidatorDependencies, RelationalOptionsExtension } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure.js';
-import type { DbLoggerCategory$Model$Validation, ParameterTranslationMode } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.js';
+import type { DbLoggerCategory_Model_Validation, ParameterTranslationMode } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.js';
 import type { IEntityType, IKey, IModel, IProperty, StoreObjectIdentifier } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js';
 import type { IServiceCollection } from '@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection.js';
 

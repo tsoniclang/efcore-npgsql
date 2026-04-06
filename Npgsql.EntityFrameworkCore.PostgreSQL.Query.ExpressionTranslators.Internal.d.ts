@@ -13,7 +13,7 @@ import type { Boolean as ClrBoolean, Object as ClrObject, Type, Version } from '
 import type { MemberInfo, MethodInfo } from '@tsonic/dotnet/System.Reflection.js';
 import type { IDiagnosticsLogger } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Diagnostics.js';
 import type { IDbContextOptions } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure.js';
-import type { DbLoggerCategory$Query } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.js';
+import type { DbLoggerCategory_Query } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.js';
 import type { IModel } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js';
 import type { EnumerableExpression, IAggregateMethodCallTranslator, IAggregateMethodCallTranslatorProvider, IMemberTranslator, IMemberTranslatorProvider, IMethodCallTranslator, IMethodCallTranslatorProvider, ISqlExpressionFactory, RelationalAggregateMethodCallTranslatorProvider, RelationalAggregateMethodCallTranslatorProviderDependencies, RelationalMemberTranslatorProvider, RelationalMemberTranslatorProviderDependencies, RelationalMethodCallTranslatorProvider, RelationalMethodCallTranslatorProviderDependencies } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Query.js';
 import type { SqlExpression } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Query.SqlExpressions.js';

@@ -2,11 +2,9 @@
 // Namespace: Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal
 // Assembly: Npgsql.EntityFrameworkCore.PostgreSQL
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
-// Import support types from @tsonic/core
-import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
 import type { INpgsqlSingletonOptions } from "../../Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal/internal/index.js";
@@ -22,19 +20,12 @@ import * as Microsoft_EntityFrameworkCore_Query_Internal from "@tsonic/efcore/Mi
 import type { CompiledQueryCacheKeyGeneratorDependencies, EvaluatableExpressionFilterDependencies, ICompiledQueryCacheKeyGenerator, IEvaluatableExpressionFilter, IQueryableMethodTranslatingExpressionVisitorFactory, IQueryCompilationContextFactory, IQuerySqlGeneratorFactory, IQueryTranslationPostprocessorFactory, IRelationalParameterBasedSqlProcessorFactory, IRelationalSqlTranslatingExpressionVisitorFactory, JsonQueryExpression, ParametersCacheDecorator, QueryableMethodTranslatingExpressionVisitor, QueryableMethodTranslatingExpressionVisitorDependencies, QueryCompilationContext, QueryCompilationContextDependencies, QueryContext, QuerySqlGenerator, QuerySqlGeneratorDependencies, QueryTranslationPostprocessor, QueryTranslationPostprocessorDependencies, RelationalCompiledQueryCacheKeyGenerator, RelationalCompiledQueryCacheKeyGeneratorDependencies, RelationalEvaluatableExpressionFilter, RelationalEvaluatableExpressionFilterDependencies, RelationalParameterBasedSqlProcessor, RelationalParameterBasedSqlProcessorDependencies, RelationalParameterBasedSqlProcessorParameters, RelationalQueryableMethodTranslatingExpressionVisitor, RelationalQueryableMethodTranslatingExpressionVisitorDependencies, RelationalQueryCompilationContext, RelationalQueryCompilationContextDependencies, RelationalQueryTranslationPostprocessor, RelationalQueryTranslationPostprocessorDependencies, RelationalSqlTranslatingExpressionVisitor, RelationalSqlTranslatingExpressionVisitorDependencies, RelationalTypeMappingPostprocessor, ShapedQueryExpression, SqlNullabilityProcessor, SqlTreePruner } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Query/internal/index.js";
 import type { IRelationalTypeMappingSource } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage/internal/index.js";
 
-export enum NpgsqlSqlTranslatingExpressionVisitor_StartsEndsWithContains {
-    StartsWith = 0,
-    EndsWith = 1,
-    Contains = 2
-}
-
-
 export interface NpgsqlCompiledQueryCacheKeyGenerator$instance extends RelationalCompiledQueryCacheKeyGenerator {
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_Internal_NpgsqlCompiledQueryCacheKeyGenerator: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_ICompiledQueryCacheKeyGenerator: never;
 
-    GenerateCacheKey(query: Expression, async: boolean): unknown;
+    GenerateCacheKey(query: Expression, async: boolean): JsValue;
 }
 
 
@@ -111,24 +102,24 @@ export interface NpgsqlQueryableMethodTranslatingExpressionVisitor$instance exte
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_Internal_NpgsqlQueryableMethodTranslatingExpressionVisitor: never;
 
     CreateSubqueryVisitor(): QueryableMethodTranslatingExpressionVisitor;
-    GenerateJsonPartialUpdateSetter(target: Expression, value: SqlExpression, existingSetterValue: SqlExpression): SqlExpression | undefined;
+    GenerateJsonPartialUpdateSetter(target: Expression, value: SqlExpression, existingSetterValue: SqlExpression | null): SqlExpression | null;
     IsNaturallyOrdered(selectExpression: SelectExpression): boolean;
     IsOrdered(selectExpression: SelectExpression): boolean;
     IsValidSelectExpressionForExecuteDelete(selectExpression: SelectExpression): boolean;
-    IsValidSelectExpressionForExecuteUpdate(selectExpression: SelectExpression, targetTable: TableExpressionBase, tableExpression: TableExpression): boolean;
+    IsValidSelectExpressionForExecuteUpdate(selectExpression: SelectExpression, targetTable: TableExpressionBase, tableExpression: TableExpression | null): boolean;
     TransformJsonQueryToTable(jsonQueryExpression: JsonQueryExpression): ShapedQueryExpression;
-    TranslateAll(source: ShapedQueryExpression, predicate: LambdaExpression): ShapedQueryExpression | undefined;
-    TranslateAny(source: ShapedQueryExpression, predicate: LambdaExpression): ShapedQueryExpression | undefined;
+    TranslateAll(source: ShapedQueryExpression, predicate: LambdaExpression): ShapedQueryExpression | null;
+    TranslateAny(source: ShapedQueryExpression, predicate: LambdaExpression | null): ShapedQueryExpression | null;
     TranslateConcat(source1: ShapedQueryExpression, source2: ShapedQueryExpression): ShapedQueryExpression;
-    TranslateContains(source: ShapedQueryExpression, item: Expression): ShapedQueryExpression | undefined;
-    TranslateCount(source: ShapedQueryExpression, predicate: LambdaExpression): ShapedQueryExpression | undefined;
-    TranslateElementAtOrDefault(source: ShapedQueryExpression, index: Expression, returnDefault: boolean): ShapedQueryExpression | undefined;
-    TranslateFirstOrDefault(source: ShapedQueryExpression, predicate: LambdaExpression, returnType: Type, returnDefault: boolean): ShapedQueryExpression | undefined;
-    TranslatePrimitiveCollection(sqlExpression: SqlExpression, property: IProperty, tableAlias: string): ShapedQueryExpression | undefined;
-    TranslateSkip(source: ShapedQueryExpression, count: Expression): ShapedQueryExpression | undefined;
-    TranslateTake(source: ShapedQueryExpression, count: Expression): ShapedQueryExpression | undefined;
-    TranslateWhere(source: ShapedQueryExpression, predicate: LambdaExpression): ShapedQueryExpression | undefined;
-    TrySerializeScalarToJson(target: JsonScalarExpression, value: SqlExpression, jsonValue: SqlExpression): boolean;
+    TranslateContains(source: ShapedQueryExpression, item: Expression): ShapedQueryExpression | null;
+    TranslateCount(source: ShapedQueryExpression, predicate: LambdaExpression | null): ShapedQueryExpression | null;
+    TranslateElementAtOrDefault(source: ShapedQueryExpression, index: Expression, returnDefault: boolean): ShapedQueryExpression | null;
+    TranslateFirstOrDefault(source: ShapedQueryExpression, predicate: LambdaExpression | null, returnType: Type, returnDefault: boolean): ShapedQueryExpression | null;
+    TranslatePrimitiveCollection(sqlExpression: SqlExpression, property: IProperty | null, tableAlias: string): ShapedQueryExpression | null;
+    TranslateSkip(source: ShapedQueryExpression, count: Expression): ShapedQueryExpression | null;
+    TranslateTake(source: ShapedQueryExpression, count: Expression): ShapedQueryExpression | null;
+    TranslateWhere(source: ShapedQueryExpression, predicate: LambdaExpression): ShapedQueryExpression | null;
+    TrySerializeScalarToJson(target: JsonScalarExpression, value: SqlExpression, jsonValue: SqlExpression | null): boolean;
 }
 
 
@@ -347,11 +338,18 @@ export interface NpgsqlSqlTranslatingExpressionVisitor$instance extends Relation
 
 export const NpgsqlSqlTranslatingExpressionVisitor: {
     new(dependencies: RelationalSqlTranslatingExpressionVisitorDependencies, queryCompilationContext: QueryCompilationContext, queryableMethodTranslatingExpressionVisitor: QueryableMethodTranslatingExpressionVisitor): NpgsqlSqlTranslatingExpressionVisitor;
-    ConstructLikePatternParameter(queryContext: QueryContext, baseParameterName: string, methodType: NpgsqlSqlTranslatingExpressionVisitor_StartsEndsWithContains): string | undefined;
+    ConstructLikePatternParameter(queryContext: QueryContext, baseParameterName: string, methodType: NpgsqlSqlTranslatingExpressionVisitor_StartsEndsWithContains): string | null;
 };
 
 
 export type NpgsqlSqlTranslatingExpressionVisitor = NpgsqlSqlTranslatingExpressionVisitor$instance;
+
+export enum NpgsqlSqlTranslatingExpressionVisitor_StartsEndsWithContains {
+    StartsWith = 0,
+    EndsWith = 1,
+    Contains = 2
+}
+
 
 export interface NpgsqlSqlTranslatingExpressionVisitorFactory$instance {
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_Internal_NpgsqlSqlTranslatingExpressionVisitorFactory: never;
@@ -400,7 +398,7 @@ export type NpgsqlTypeMappingPostprocessor = NpgsqlTypeMappingPostprocessor$inst
 export interface NpgsqlUnnestPostprocessor$instance extends ExpressionVisitor {
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_Internal_NpgsqlUnnestPostprocessor: never;
 
-    Visit(expression: Expression): Expression | undefined;
+    Visit(expression: Expression | null): Expression | null;
 }
 
 

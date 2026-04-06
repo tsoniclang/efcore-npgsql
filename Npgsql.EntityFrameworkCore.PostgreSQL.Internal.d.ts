@@ -11,7 +11,7 @@ import type { IReadOnlyList } from '@tsonic/dotnet/System.Collections.Generic.js
 import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString, Version, Void } from '@tsonic/dotnet/System.js';
 import type { EventDefinition, FallbackEventDefinition, IDiagnosticsLogger } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Diagnostics.js';
 import type { IDbContextOptions, ISingletonOptions } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure.js';
-import type { DbLoggerCategory$Scaffolding } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.js';
+import type { DbLoggerCategory_Scaffolding } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.js';
 
 // Public API exports (curated - no internal $instance/$views leakage)
 export { NpgsqlLoggerExtensions$instance as NpgsqlLoggerExtensions } from './Npgsql.EntityFrameworkCore.PostgreSQL.Internal/internal/index.js';

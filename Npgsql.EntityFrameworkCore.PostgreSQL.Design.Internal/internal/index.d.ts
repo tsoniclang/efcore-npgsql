@@ -2,8 +2,9 @@
 // Namespace: Npgsql.EntityFrameworkCore.PostgreSQL.Design.Internal
 // Assembly: Npgsql.EntityFrameworkCore.PostgreSQL
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { IDictionary_2, IReadOnlyList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
@@ -24,9 +25,9 @@ export interface NpgsqlAnnotationCodeGenerator$instance extends AnnotationCodeGe
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Design_IAnnotationCodeGenerator: never;
 
-    GenerateFluentApi(model: IModel, annotation: IAnnotation): MethodCallCodeFragment | undefined;
-    GenerateFluentApi(entityType: IEntityType, annotation: IAnnotation): MethodCallCodeFragment | undefined;
-    GenerateFluentApi(index: IIndex, annotation: IAnnotation): MethodCallCodeFragment | undefined;
+    GenerateFluentApi(model: IModel, annotation: IAnnotation): MethodCallCodeFragment | null;
+    GenerateFluentApi(entityType: IEntityType, annotation: IAnnotation): MethodCallCodeFragment | null;
+    GenerateFluentApi(index: IIndex, annotation: IAnnotation): MethodCallCodeFragment | null;
     GenerateFluentApiCalls(model: IModel, annotations: IDictionary_2<System_Internal.String, IAnnotation>): IReadOnlyList_1<MethodCallCodeFragment>;
     GenerateFluentApiCalls(property: IProperty, annotations: IDictionary_2<System_Internal.String, IAnnotation>): IReadOnlyList_1<MethodCallCodeFragment>;
     IsHandledByConvention(model: IModel, annotation: IAnnotation): boolean;
@@ -46,7 +47,7 @@ export interface NpgsqlCSharpRuntimeAnnotationCodeGenerator$instance extends Rel
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Design_Internal_NpgsqlCSharpRuntimeAnnotationCodeGenerator: never;
 
     AddNpgsqlTypeMappingTweaks(typeMapping: CoreTypeMapping, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
-    Create(typeMapping: CoreTypeMapping, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters, valueComparer?: ValueComparer, keyValueComparer?: ValueComparer, providerValueComparer?: ValueComparer): boolean;
+    Create(typeMapping: CoreTypeMapping, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters, valueComparer?: ValueComparer | null, keyValueComparer?: ValueComparer | null, providerValueComparer?: ValueComparer | null): boolean;
     Generate(model: IModel, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
     Generate(model: IRelationalModel, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
     Generate(property: IProperty, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;

@@ -26,6 +26,7 @@ export { BufferRequirements as BufferRequirements } from './Npgsql.Internal/inte
 export { DataFormat as DataFormat } from './Npgsql.Internal/internal/index.js';
 export { DbTypeResolverFactory as DbTypeResolverFactory } from './Npgsql.Internal/internal/index.js';
 export { DynamicTypeInfoResolver as DynamicTypeInfoResolver } from './Npgsql.Internal/internal/index.js';
+export { DynamicTypeInfoResolver_DynamicMappingCollection as DynamicTypeInfoResolver_DynamicMappingCollection } from './Npgsql.Internal/internal/index.js';
 export type IDbTypeResolver = Internal.IDbTypeResolver;
 export type INpgsqlDatabaseInfoFactory = Internal.INpgsqlDatabaseInfoFactory;
 export type IPgTypeInfoResolver = Internal.IPgTypeInfoResolver;

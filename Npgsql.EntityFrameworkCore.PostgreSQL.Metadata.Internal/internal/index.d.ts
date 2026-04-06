@@ -2,8 +2,9 @@
 // Namespace: Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Internal
 // Assembly: Npgsql.EntityFrameworkCore.PostgreSQL
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { IEnumerable_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
@@ -27,8 +28,8 @@ export interface IdentitySequenceOptionsData$instance {
     NumbersToCache: long;
     get StartValue(): Nullable_1<System_Internal.Int64>;
     set StartValue(value: Nullable_1<System_Internal.Int64> | long);
-    Equals(other: IdentitySequenceOptionsData): boolean;
-    Equals(obj: unknown): boolean;
+    Equals(other: IdentitySequenceOptionsData | null): boolean;
+    Equals(obj: JsValue | null): boolean;
     GetHashCode(): int;
     Serialize(): string;
 }
@@ -37,7 +38,7 @@ export interface IdentitySequenceOptionsData$instance {
 export const IdentitySequenceOptionsData: {
     new(): IdentitySequenceOptionsData;
     readonly Empty: IdentitySequenceOptionsData;
-    Deserialize(value: string): IdentitySequenceOptionsData;
+    Deserialize(value: string | null): IdentitySequenceOptionsData;
     Get(annotatable: IReadOnlyAnnotatable): IdentitySequenceOptionsData;
 };
 

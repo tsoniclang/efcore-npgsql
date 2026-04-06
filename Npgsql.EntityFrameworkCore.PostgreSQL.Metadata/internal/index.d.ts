@@ -2,8 +2,9 @@
 // Namespace: Npgsql.EntityFrameworkCore.PostgreSQL.Metadata
 // Assembly: Npgsql.EntityFrameworkCore.PostgreSQL
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { IEnumerable_1, IReadOnlyList_1, List_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
@@ -41,8 +42,8 @@ export interface CockroachDbInterleaveInParent$instance {
     readonly Annotatable: Annotatable;
     InterleavePrefix: List_1<System_Internal.String>;
     ParentTableName: string;
-    get ParentTableSchema(): string | undefined;
-    set ParentTableSchema(value: string | undefined);
+    get ParentTableSchema(): string | null;
+    set ParentTableSchema(value: string | null);
 }
 
 
@@ -62,16 +63,16 @@ export interface PostgresCollation$instance {
     LcCollate: string;
     LcCtype: string;
     readonly Name: string;
-    get Provider(): string | undefined;
-    set Provider(value: string | undefined);
-    readonly Schema: string | undefined;
+    get Provider(): string | null;
+    set Provider(value: string | null);
+    readonly Schema: string | null;
 }
 
 
 export const PostgresCollation: {
-    FindCollation(annotatable: IReadOnlyAnnotatable, schema: string, name: string): PostgresCollation | undefined;
+    FindCollation(annotatable: IReadOnlyAnnotatable, schema: string | null, name: string): PostgresCollation | null;
     GetCollations(annotatable: IReadOnlyAnnotatable): IEnumerable_1<PostgresCollation>;
-    GetOrAddCollation(annotatable: IMutableAnnotatable, schema: string, name: string, lcCollate: string, lcCtype: string, provider?: string, deterministic?: Nullable_1<System_Internal.Boolean>): PostgresCollation;
+    GetOrAddCollation(annotatable: IMutableAnnotatable, schema: string | null, name: string, lcCollate: string, lcCtype: string, provider?: string | null, deterministic?: Nullable_1<System_Internal.Boolean>): PostgresCollation;
 };
 
 
@@ -83,14 +84,14 @@ export interface PostgresEnum$instance {
     readonly Annotatable: Annotatable;
     Labels: IReadOnlyList_1<System_Internal.String>;
     readonly Name: string;
-    readonly Schema: string | undefined;
+    readonly Schema: string | null;
 }
 
 
 export const PostgresEnum: {
-    FindPostgresEnum(annotatable: IReadOnlyAnnotatable, schema: string, name: string): PostgresEnum | undefined;
-    GetOrAddPostgresEnum(annotatable: IConventionAnnotatable, schema: string, name: string, labels: string[]): PostgresEnum;
-    GetOrAddPostgresEnum(annotatable: IMutableAnnotatable, schema: string, name: string, labels: string[]): PostgresEnum;
+    FindPostgresEnum(annotatable: IReadOnlyAnnotatable, schema: string | null, name: string): PostgresEnum | null;
+    GetOrAddPostgresEnum(annotatable: IConventionAnnotatable, schema: string | null, name: string, labels: string[]): PostgresEnum;
+    GetOrAddPostgresEnum(annotatable: IMutableAnnotatable, schema: string | null, name: string, labels: string[]): PostgresEnum;
     GetOrAddPostgresEnum(annotatable: IMutableAnnotatable, name: string, labels: string[]): PostgresEnum;
     GetPostgresEnums(annotatable: IReadOnlyAnnotatable): IEnumerable_1<PostgresEnum>;
 };
@@ -103,17 +104,17 @@ export interface PostgresExtension$instance {
 
     readonly Annotatable: Annotatable;
     readonly Name: string;
-    readonly Schema: string | undefined;
-    get Version(): string | undefined;
-    set Version(value: string | undefined);
+    readonly Schema: string | null;
+    get Version(): string | null;
+    set Version(value: string | null);
 }
 
 
 export const PostgresExtension: {
-    FindPostgresExtension(annotatable: IReadOnlyAnnotatable, schema: string, name: string): PostgresExtension | undefined;
-    GetOrAddPostgresExtension(annotatable: IConventionAnnotatable, schema: string, name: string, version: string): PostgresExtension;
-    GetOrAddPostgresExtension(annotatable: IMutableAnnotatable, schema: string, name: string, version: string): PostgresExtension;
-    GetOrAddPostgresExtension(annotatable: IMutableAnnotatable, name: string, version: string): PostgresExtension;
+    FindPostgresExtension(annotatable: IReadOnlyAnnotatable, schema: string | null, name: string): PostgresExtension | null;
+    GetOrAddPostgresExtension(annotatable: IConventionAnnotatable, schema: string | null, name: string, version: string | null): PostgresExtension;
+    GetOrAddPostgresExtension(annotatable: IMutableAnnotatable, schema: string | null, name: string, version: string | null): PostgresExtension;
+    GetOrAddPostgresExtension(annotatable: IMutableAnnotatable, name: string, version: string | null): PostgresExtension;
     GetPostgresExtensions(annotatable: IReadOnlyAnnotatable): IEnumerable_1<PostgresExtension>;
 };
 
@@ -124,23 +125,23 @@ export interface PostgresRange$instance {
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Metadata_PostgresRange: never;
 
     readonly Annotatable: Annotatable;
-    get CanonicalFunction(): string | undefined;
-    set CanonicalFunction(value: string | undefined);
-    get Collation(): string | undefined;
-    set Collation(value: string | undefined);
+    get CanonicalFunction(): string | null;
+    set CanonicalFunction(value: string | null);
+    get Collation(): string | null;
+    set Collation(value: string | null);
     readonly Name: string;
-    readonly Schema: string | undefined;
+    readonly Schema: string | null;
     Subtype: string;
-    get SubtypeDiff(): string | undefined;
-    set SubtypeDiff(value: string | undefined);
-    get SubtypeOpClass(): string | undefined;
-    set SubtypeOpClass(value: string | undefined);
+    get SubtypeDiff(): string | null;
+    set SubtypeDiff(value: string | null);
+    get SubtypeOpClass(): string | null;
+    set SubtypeOpClass(value: string | null);
 }
 
 
 export const PostgresRange: {
-    FindPostgresRange(annotatable: IReadOnlyAnnotatable, schema: string, name: string): PostgresRange | undefined;
-    GetOrAddPostgresRange(annotatable: IMutableAnnotatable, schema: string, name: string, subtype: string, canonicalFunction?: string, subtypeOpClass?: string, collation?: string, subtypeDiff?: string): PostgresRange;
+    FindPostgresRange(annotatable: IReadOnlyAnnotatable, schema: string | null, name: string): PostgresRange | null;
+    GetOrAddPostgresRange(annotatable: IMutableAnnotatable, schema: string | null, name: string, subtype: string, canonicalFunction?: string | null, subtypeOpClass?: string | null, collation?: string | null, subtypeDiff?: string | null): PostgresRange;
     GetPostgresRanges(annotatable: IReadOnlyAnnotatable): IEnumerable_1<PostgresRange>;
 };
 

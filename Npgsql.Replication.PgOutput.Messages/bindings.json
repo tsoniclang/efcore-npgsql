@@ -5,688 +5,6 @@
   ],
   "types": [
     {
-      "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.CommitMessage\u002BCommitFlags",
-      "clrName": "Npgsql.Replication.PgOutput.Messages.CommitMessage\u002BCommitFlags",
-      "assemblyName": "Npgsql",
-      "metadataToken": 0,
-      "kind": "Enum",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": true,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Enum",
-        "clrName": "System.Enum"
-      },
-      "interfaces": [
-        {
-          "stableId": "System.Private.CoreLib:System.IComparable",
-          "clrName": "System.IComparable"
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
-          "clrName": "System.ISpanFormattable"
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.IFormattable",
-          "clrName": "System.IFormattable"
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.IConvertible",
-          "clrName": "System.IConvertible"
-        }
-      ],
-      "methods": [],
-      "properties": [],
-      "fields": [
-        {
-          "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.CommitMessage\u002BCommitFlags::value__System.Byte",
-          "clrName": "value__",
-          "metadataToken": 67112471,
-          "normalizedSignature": "value__|System.Byte|static=false|const=false",
-          "isStatic": false,
-          "isReadOnly": false,
-          "isLiteral": false,
-          "visibility": "Public",
-          "declaringClrType": "Npgsql.Replication.PgOutput.Messages.CommitMessage\u002BCommitFlags",
-          "declaringAssemblyName": "Npgsql"
-        },
-        {
-          "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.CommitMessage\u002BCommitFlags::NoneNpgsql.Replication.PgOutput.Messages.CommitMessage\u002BCommitFlags",
-          "clrName": "None",
-          "metadataToken": 67112472,
-          "normalizedSignature": "None|Npgsql.Replication.PgOutput.Messages.CommitMessage\u002BCommitFlags|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "declaringClrType": "Npgsql.Replication.PgOutput.Messages.CommitMessage\u002BCommitFlags",
-          "declaringAssemblyName": "Npgsql"
-        }
-      ],
-      "events": [],
-      "constructors": []
-    },
-    {
-      "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.CommitPreparedMessage\u002BCommitPreparedFlags",
-      "clrName": "Npgsql.Replication.PgOutput.Messages.CommitPreparedMessage\u002BCommitPreparedFlags",
-      "assemblyName": "Npgsql",
-      "metadataToken": 0,
-      "kind": "Enum",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": true,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Enum",
-        "clrName": "System.Enum"
-      },
-      "interfaces": [
-        {
-          "stableId": "System.Private.CoreLib:System.IComparable",
-          "clrName": "System.IComparable"
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
-          "clrName": "System.ISpanFormattable"
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.IFormattable",
-          "clrName": "System.IFormattable"
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.IConvertible",
-          "clrName": "System.IConvertible"
-        }
-      ],
-      "methods": [],
-      "properties": [],
-      "fields": [
-        {
-          "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.CommitPreparedMessage\u002BCommitPreparedFlags::value__System.Byte",
-          "clrName": "value__",
-          "metadataToken": 67112473,
-          "normalizedSignature": "value__|System.Byte|static=false|const=false",
-          "isStatic": false,
-          "isReadOnly": false,
-          "isLiteral": false,
-          "visibility": "Public",
-          "declaringClrType": "Npgsql.Replication.PgOutput.Messages.CommitPreparedMessage\u002BCommitPreparedFlags",
-          "declaringAssemblyName": "Npgsql"
-        },
-        {
-          "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.CommitPreparedMessage\u002BCommitPreparedFlags::NoneNpgsql.Replication.PgOutput.Messages.CommitPreparedMessage\u002BCommitPreparedFlags",
-          "clrName": "None",
-          "metadataToken": 67112474,
-          "normalizedSignature": "None|Npgsql.Replication.PgOutput.Messages.CommitPreparedMessage\u002BCommitPreparedFlags|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "declaringClrType": "Npgsql.Replication.PgOutput.Messages.CommitPreparedMessage\u002BCommitPreparedFlags",
-          "declaringAssemblyName": "Npgsql"
-        }
-      ],
-      "events": [],
-      "constructors": []
-    },
-    {
-      "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.PrepareMessage\u002BPrepareFlags",
-      "clrName": "Npgsql.Replication.PgOutput.Messages.PrepareMessage\u002BPrepareFlags",
-      "assemblyName": "Npgsql",
-      "metadataToken": 0,
-      "kind": "Enum",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": true,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Enum",
-        "clrName": "System.Enum"
-      },
-      "interfaces": [
-        {
-          "stableId": "System.Private.CoreLib:System.IComparable",
-          "clrName": "System.IComparable"
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
-          "clrName": "System.ISpanFormattable"
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.IFormattable",
-          "clrName": "System.IFormattable"
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.IConvertible",
-          "clrName": "System.IConvertible"
-        }
-      ],
-      "methods": [],
-      "properties": [],
-      "fields": [
-        {
-          "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.PrepareMessage\u002BPrepareFlags::value__System.Byte",
-          "clrName": "value__",
-          "metadataToken": 67112475,
-          "normalizedSignature": "value__|System.Byte|static=false|const=false",
-          "isStatic": false,
-          "isReadOnly": false,
-          "isLiteral": false,
-          "visibility": "Public",
-          "declaringClrType": "Npgsql.Replication.PgOutput.Messages.PrepareMessage\u002BPrepareFlags",
-          "declaringAssemblyName": "Npgsql"
-        },
-        {
-          "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.PrepareMessage\u002BPrepareFlags::NoneNpgsql.Replication.PgOutput.Messages.PrepareMessage\u002BPrepareFlags",
-          "clrName": "None",
-          "metadataToken": 67112476,
-          "normalizedSignature": "None|Npgsql.Replication.PgOutput.Messages.PrepareMessage\u002BPrepareFlags|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "declaringClrType": "Npgsql.Replication.PgOutput.Messages.PrepareMessage\u002BPrepareFlags",
-          "declaringAssemblyName": "Npgsql"
-        }
-      ],
-      "events": [],
-      "constructors": []
-    },
-    {
-      "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BColumn\u002BColumnFlags",
-      "clrName": "Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BColumn\u002BColumnFlags",
-      "assemblyName": "Npgsql",
-      "metadataToken": 0,
-      "kind": "Enum",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": true,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Enum",
-        "clrName": "System.Enum"
-      },
-      "interfaces": [
-        {
-          "stableId": "System.Private.CoreLib:System.IComparable",
-          "clrName": "System.IComparable"
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
-          "clrName": "System.ISpanFormattable"
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.IFormattable",
-          "clrName": "System.IFormattable"
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.IConvertible",
-          "clrName": "System.IConvertible"
-        }
-      ],
-      "methods": [],
-      "properties": [],
-      "fields": [
-        {
-          "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BColumn\u002BColumnFlags::value__System.Int32",
-          "clrName": "value__",
-          "metadataToken": 67114171,
-          "normalizedSignature": "value__|System.Int32|static=false|const=false",
-          "isStatic": false,
-          "isReadOnly": false,
-          "isLiteral": false,
-          "visibility": "Public",
-          "declaringClrType": "Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BColumn\u002BColumnFlags",
-          "declaringAssemblyName": "Npgsql"
-        },
-        {
-          "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BColumn\u002BColumnFlags::NoneNpgsql.Replication.PgOutput.Messages.RelationMessage\u002BColumn\u002BColumnFlags",
-          "clrName": "None",
-          "metadataToken": 67114172,
-          "normalizedSignature": "None|Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BColumn\u002BColumnFlags|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "declaringClrType": "Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BColumn\u002BColumnFlags",
-          "declaringAssemblyName": "Npgsql"
-        },
-        {
-          "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BColumn\u002BColumnFlags::PartOfKeyNpgsql.Replication.PgOutput.Messages.RelationMessage\u002BColumn\u002BColumnFlags",
-          "clrName": "PartOfKey",
-          "metadataToken": 67114173,
-          "normalizedSignature": "PartOfKey|Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BColumn\u002BColumnFlags|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "declaringClrType": "Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BColumn\u002BColumnFlags",
-          "declaringAssemblyName": "Npgsql"
-        }
-      ],
-      "events": [],
-      "constructors": []
-    },
-    {
-      "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BReplicaIdentitySetting",
-      "clrName": "Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BReplicaIdentitySetting",
-      "assemblyName": "Npgsql",
-      "metadataToken": 0,
-      "kind": "Enum",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": true,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Enum",
-        "clrName": "System.Enum"
-      },
-      "interfaces": [
-        {
-          "stableId": "System.Private.CoreLib:System.IComparable",
-          "clrName": "System.IComparable"
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
-          "clrName": "System.ISpanFormattable"
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.IFormattable",
-          "clrName": "System.IFormattable"
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.IConvertible",
-          "clrName": "System.IConvertible"
-        }
-      ],
-      "methods": [],
-      "properties": [],
-      "fields": [
-        {
-          "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BReplicaIdentitySetting::value__System.Byte",
-          "clrName": "value__",
-          "metadataToken": 67112481,
-          "normalizedSignature": "value__|System.Byte|static=false|const=false",
-          "isStatic": false,
-          "isReadOnly": false,
-          "isLiteral": false,
-          "visibility": "Public",
-          "declaringClrType": "Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BReplicaIdentitySetting",
-          "declaringAssemblyName": "Npgsql"
-        },
-        {
-          "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BReplicaIdentitySetting::DefaultNpgsql.Replication.PgOutput.Messages.RelationMessage\u002BReplicaIdentitySetting",
-          "clrName": "Default",
-          "metadataToken": 67112482,
-          "normalizedSignature": "Default|Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BReplicaIdentitySetting|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "declaringClrType": "Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BReplicaIdentitySetting",
-          "declaringAssemblyName": "Npgsql"
-        },
-        {
-          "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BReplicaIdentitySetting::NothingNpgsql.Replication.PgOutput.Messages.RelationMessage\u002BReplicaIdentitySetting",
-          "clrName": "Nothing",
-          "metadataToken": 67112483,
-          "normalizedSignature": "Nothing|Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BReplicaIdentitySetting|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "declaringClrType": "Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BReplicaIdentitySetting",
-          "declaringAssemblyName": "Npgsql"
-        },
-        {
-          "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BReplicaIdentitySetting::AllColumnsNpgsql.Replication.PgOutput.Messages.RelationMessage\u002BReplicaIdentitySetting",
-          "clrName": "AllColumns",
-          "metadataToken": 67112484,
-          "normalizedSignature": "AllColumns|Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BReplicaIdentitySetting|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "declaringClrType": "Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BReplicaIdentitySetting",
-          "declaringAssemblyName": "Npgsql"
-        },
-        {
-          "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BReplicaIdentitySetting::IndexWithIndIsReplIdentNpgsql.Replication.PgOutput.Messages.RelationMessage\u002BReplicaIdentitySetting",
-          "clrName": "IndexWithIndIsReplIdent",
-          "metadataToken": 67112485,
-          "normalizedSignature": "IndexWithIndIsReplIdent|Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BReplicaIdentitySetting|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "declaringClrType": "Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BReplicaIdentitySetting",
-          "declaringAssemblyName": "Npgsql"
-        }
-      ],
-      "events": [],
-      "constructors": []
-    },
-    {
-      "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.RollbackPreparedMessage\u002BRollbackPreparedFlags",
-      "clrName": "Npgsql.Replication.PgOutput.Messages.RollbackPreparedMessage\u002BRollbackPreparedFlags",
-      "assemblyName": "Npgsql",
-      "metadataToken": 0,
-      "kind": "Enum",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": true,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Enum",
-        "clrName": "System.Enum"
-      },
-      "interfaces": [
-        {
-          "stableId": "System.Private.CoreLib:System.IComparable",
-          "clrName": "System.IComparable"
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
-          "clrName": "System.ISpanFormattable"
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.IFormattable",
-          "clrName": "System.IFormattable"
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.IConvertible",
-          "clrName": "System.IConvertible"
-        }
-      ],
-      "methods": [],
-      "properties": [],
-      "fields": [
-        {
-          "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.RollbackPreparedMessage\u002BRollbackPreparedFlags::value__System.Byte",
-          "clrName": "value__",
-          "metadataToken": 67112486,
-          "normalizedSignature": "value__|System.Byte|static=false|const=false",
-          "isStatic": false,
-          "isReadOnly": false,
-          "isLiteral": false,
-          "visibility": "Public",
-          "declaringClrType": "Npgsql.Replication.PgOutput.Messages.RollbackPreparedMessage\u002BRollbackPreparedFlags",
-          "declaringAssemblyName": "Npgsql"
-        },
-        {
-          "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.RollbackPreparedMessage\u002BRollbackPreparedFlags::NoneNpgsql.Replication.PgOutput.Messages.RollbackPreparedMessage\u002BRollbackPreparedFlags",
-          "clrName": "None",
-          "metadataToken": 67112487,
-          "normalizedSignature": "None|Npgsql.Replication.PgOutput.Messages.RollbackPreparedMessage\u002BRollbackPreparedFlags|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "declaringClrType": "Npgsql.Replication.PgOutput.Messages.RollbackPreparedMessage\u002BRollbackPreparedFlags",
-          "declaringAssemblyName": "Npgsql"
-        }
-      ],
-      "events": [],
-      "constructors": []
-    },
-    {
-      "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.StreamPrepareMessage\u002BStreamPrepareFlags",
-      "clrName": "Npgsql.Replication.PgOutput.Messages.StreamPrepareMessage\u002BStreamPrepareFlags",
-      "assemblyName": "Npgsql",
-      "metadataToken": 0,
-      "kind": "Enum",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": true,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Enum",
-        "clrName": "System.Enum"
-      },
-      "interfaces": [
-        {
-          "stableId": "System.Private.CoreLib:System.IComparable",
-          "clrName": "System.IComparable"
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
-          "clrName": "System.ISpanFormattable"
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.IFormattable",
-          "clrName": "System.IFormattable"
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.IConvertible",
-          "clrName": "System.IConvertible"
-        }
-      ],
-      "methods": [],
-      "properties": [],
-      "fields": [
-        {
-          "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.StreamPrepareMessage\u002BStreamPrepareFlags::value__System.Byte",
-          "clrName": "value__",
-          "metadataToken": 67112488,
-          "normalizedSignature": "value__|System.Byte|static=false|const=false",
-          "isStatic": false,
-          "isReadOnly": false,
-          "isLiteral": false,
-          "visibility": "Public",
-          "declaringClrType": "Npgsql.Replication.PgOutput.Messages.StreamPrepareMessage\u002BStreamPrepareFlags",
-          "declaringAssemblyName": "Npgsql"
-        },
-        {
-          "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.StreamPrepareMessage\u002BStreamPrepareFlags::NoneNpgsql.Replication.PgOutput.Messages.StreamPrepareMessage\u002BStreamPrepareFlags",
-          "clrName": "None",
-          "metadataToken": 67112489,
-          "normalizedSignature": "None|Npgsql.Replication.PgOutput.Messages.StreamPrepareMessage\u002BStreamPrepareFlags|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "declaringClrType": "Npgsql.Replication.PgOutput.Messages.StreamPrepareMessage\u002BStreamPrepareFlags",
-          "declaringAssemblyName": "Npgsql"
-        }
-      ],
-      "events": [],
-      "constructors": []
-    },
-    {
-      "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.TruncateMessage\u002BTruncateOptions",
-      "clrName": "Npgsql.Replication.PgOutput.Messages.TruncateMessage\u002BTruncateOptions",
-      "assemblyName": "Npgsql",
-      "metadataToken": 0,
-      "kind": "Enum",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": true,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Enum",
-        "clrName": "System.Enum"
-      },
-      "interfaces": [
-        {
-          "stableId": "System.Private.CoreLib:System.IComparable",
-          "clrName": "System.IComparable"
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
-          "clrName": "System.ISpanFormattable"
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.IFormattable",
-          "clrName": "System.IFormattable"
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.IConvertible",
-          "clrName": "System.IConvertible"
-        }
-      ],
-      "methods": [],
-      "properties": [],
-      "fields": [
-        {
-          "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.TruncateMessage\u002BTruncateOptions::value__System.Byte",
-          "clrName": "value__",
-          "metadataToken": 67112490,
-          "normalizedSignature": "value__|System.Byte|static=false|const=false",
-          "isStatic": false,
-          "isReadOnly": false,
-          "isLiteral": false,
-          "visibility": "Public",
-          "declaringClrType": "Npgsql.Replication.PgOutput.Messages.TruncateMessage\u002BTruncateOptions",
-          "declaringAssemblyName": "Npgsql"
-        },
-        {
-          "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.TruncateMessage\u002BTruncateOptions::NoneNpgsql.Replication.PgOutput.Messages.TruncateMessage\u002BTruncateOptions",
-          "clrName": "None",
-          "metadataToken": 67112491,
-          "normalizedSignature": "None|Npgsql.Replication.PgOutput.Messages.TruncateMessage\u002BTruncateOptions|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "declaringClrType": "Npgsql.Replication.PgOutput.Messages.TruncateMessage\u002BTruncateOptions",
-          "declaringAssemblyName": "Npgsql"
-        },
-        {
-          "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.TruncateMessage\u002BTruncateOptions::CascadeNpgsql.Replication.PgOutput.Messages.TruncateMessage\u002BTruncateOptions",
-          "clrName": "Cascade",
-          "metadataToken": 67112492,
-          "normalizedSignature": "Cascade|Npgsql.Replication.PgOutput.Messages.TruncateMessage\u002BTruncateOptions|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "declaringClrType": "Npgsql.Replication.PgOutput.Messages.TruncateMessage\u002BTruncateOptions",
-          "declaringAssemblyName": "Npgsql"
-        },
-        {
-          "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.TruncateMessage\u002BTruncateOptions::RestartIdentityNpgsql.Replication.PgOutput.Messages.TruncateMessage\u002BTruncateOptions",
-          "clrName": "RestartIdentity",
-          "metadataToken": 67112493,
-          "normalizedSignature": "RestartIdentity|Npgsql.Replication.PgOutput.Messages.TruncateMessage\u002BTruncateOptions|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "declaringClrType": "Npgsql.Replication.PgOutput.Messages.TruncateMessage\u002BTruncateOptions",
-          "declaringAssemblyName": "Npgsql"
-        }
-      ],
-      "events": [],
-      "constructors": []
-    },
-    {
-      "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BColumn",
-      "clrName": "Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BColumn",
-      "assemblyName": "Npgsql",
-      "metadataToken": 0,
-      "kind": "Struct",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": true,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.ValueType",
-        "clrName": "System.ValueType"
-      },
-      "methods": [],
-      "properties": [
-        {
-          "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BColumn::Flags:Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BColumn\u002BColumnFlags",
-          "clrName": "Flags",
-          "metadataToken": 385877331,
-          "canonicalSignature": ":Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BColumn\u002BColumnFlags",
-          "normalizedSignature": "Flags|:Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BColumn\u002BColumnFlags|static=false|accessor=get",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "declaringClrType": "Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BColumn",
-          "declaringAssemblyName": "Npgsql"
-        },
-        {
-          "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BColumn::ColumnName:System.String",
-          "clrName": "ColumnName",
-          "metadataToken": 385877332,
-          "canonicalSignature": ":System.String",
-          "normalizedSignature": "ColumnName|:System.String|static=false|accessor=get",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "declaringClrType": "Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BColumn",
-          "declaringAssemblyName": "Npgsql"
-        },
-        {
-          "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BColumn::DataTypeId:System.UInt32",
-          "clrName": "DataTypeId",
-          "metadataToken": 385877333,
-          "canonicalSignature": ":System.UInt32",
-          "normalizedSignature": "DataTypeId|:System.UInt32|static=false|accessor=get",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "declaringClrType": "Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BColumn",
-          "declaringAssemblyName": "Npgsql"
-        },
-        {
-          "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BColumn::TypeModifier:System.Int32",
-          "clrName": "TypeModifier",
-          "metadataToken": 385877334,
-          "canonicalSignature": ":System.Int32",
-          "normalizedSignature": "TypeModifier|:System.Int32|static=false|accessor=get",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "declaringClrType": "Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BColumn",
-          "declaringAssemblyName": "Npgsql"
-        }
-      ],
-      "fields": [],
-      "events": [],
-      "constructors": []
-    },
-    {
       "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.RelationMessageColumn",
       "clrName": "Npgsql.Replication.PgOutput.Messages.RelationMessageColumn",
       "assemblyName": "Npgsql",
@@ -964,6 +282,70 @@
       "constructors": []
     },
     {
+      "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.CommitMessage\u002BCommitFlags",
+      "clrName": "Npgsql.Replication.PgOutput.Messages.CommitMessage\u002BCommitFlags",
+      "assemblyName": "Npgsql",
+      "metadataToken": 0,
+      "kind": "Enum",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
+      "methods": [],
+      "properties": [],
+      "fields": [
+        {
+          "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.CommitMessage\u002BCommitFlags::value__System.Byte",
+          "clrName": "value__",
+          "metadataToken": 67112471,
+          "normalizedSignature": "value__|System.Byte|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "isLiteral": false,
+          "visibility": "Public",
+          "declaringClrType": "Npgsql.Replication.PgOutput.Messages.CommitMessage\u002BCommitFlags",
+          "declaringAssemblyName": "Npgsql"
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.CommitMessage\u002BCommitFlags::NoneNpgsql.Replication.PgOutput.Messages.CommitMessage\u002BCommitFlags",
+          "clrName": "None",
+          "metadataToken": 67112472,
+          "normalizedSignature": "None|Npgsql.Replication.PgOutput.Messages.CommitMessage\u002BCommitFlags|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true,
+          "visibility": "Public",
+          "declaringClrType": "Npgsql.Replication.PgOutput.Messages.CommitMessage\u002BCommitFlags",
+          "declaringAssemblyName": "Npgsql"
+        }
+      ],
+      "events": [],
+      "constructors": []
+    },
+    {
       "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.CommitPreparedMessage",
       "clrName": "Npgsql.Replication.PgOutput.Messages.CommitPreparedMessage",
       "assemblyName": "Npgsql",
@@ -1058,6 +440,70 @@
         }
       ],
       "fields": [],
+      "events": [],
+      "constructors": []
+    },
+    {
+      "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.CommitPreparedMessage\u002BCommitPreparedFlags",
+      "clrName": "Npgsql.Replication.PgOutput.Messages.CommitPreparedMessage\u002BCommitPreparedFlags",
+      "assemblyName": "Npgsql",
+      "metadataToken": 0,
+      "kind": "Enum",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
+      "methods": [],
+      "properties": [],
+      "fields": [
+        {
+          "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.CommitPreparedMessage\u002BCommitPreparedFlags::value__System.Byte",
+          "clrName": "value__",
+          "metadataToken": 67112473,
+          "normalizedSignature": "value__|System.Byte|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "isLiteral": false,
+          "visibility": "Public",
+          "declaringClrType": "Npgsql.Replication.PgOutput.Messages.CommitPreparedMessage\u002BCommitPreparedFlags",
+          "declaringAssemblyName": "Npgsql"
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.CommitPreparedMessage\u002BCommitPreparedFlags::NoneNpgsql.Replication.PgOutput.Messages.CommitPreparedMessage\u002BCommitPreparedFlags",
+          "clrName": "None",
+          "metadataToken": 67112474,
+          "normalizedSignature": "None|Npgsql.Replication.PgOutput.Messages.CommitPreparedMessage\u002BCommitPreparedFlags|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true,
+          "visibility": "Public",
+          "declaringClrType": "Npgsql.Replication.PgOutput.Messages.CommitPreparedMessage\u002BCommitPreparedFlags",
+          "declaringAssemblyName": "Npgsql"
+        }
+      ],
       "events": [],
       "constructors": []
     },
@@ -1760,6 +1206,70 @@
       "constructors": []
     },
     {
+      "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.PrepareMessage\u002BPrepareFlags",
+      "clrName": "Npgsql.Replication.PgOutput.Messages.PrepareMessage\u002BPrepareFlags",
+      "assemblyName": "Npgsql",
+      "metadataToken": 0,
+      "kind": "Enum",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
+      "methods": [],
+      "properties": [],
+      "fields": [
+        {
+          "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.PrepareMessage\u002BPrepareFlags::value__System.Byte",
+          "clrName": "value__",
+          "metadataToken": 67112475,
+          "normalizedSignature": "value__|System.Byte|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "isLiteral": false,
+          "visibility": "Public",
+          "declaringClrType": "Npgsql.Replication.PgOutput.Messages.PrepareMessage\u002BPrepareFlags",
+          "declaringAssemblyName": "Npgsql"
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.PrepareMessage\u002BPrepareFlags::NoneNpgsql.Replication.PgOutput.Messages.PrepareMessage\u002BPrepareFlags",
+          "clrName": "None",
+          "metadataToken": 67112476,
+          "normalizedSignature": "None|Npgsql.Replication.PgOutput.Messages.PrepareMessage\u002BPrepareFlags|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true,
+          "visibility": "Public",
+          "declaringClrType": "Npgsql.Replication.PgOutput.Messages.PrepareMessage\u002BPrepareFlags",
+          "declaringAssemblyName": "Npgsql"
+        }
+      ],
+      "events": [],
+      "constructors": []
+    },
+    {
       "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.PrepareMessageBase",
       "clrName": "Npgsql.Replication.PgOutput.Messages.PrepareMessageBase",
       "assemblyName": "Npgsql",
@@ -1956,6 +1466,280 @@
       "constructors": []
     },
     {
+      "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BReplicaIdentitySetting",
+      "clrName": "Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BReplicaIdentitySetting",
+      "assemblyName": "Npgsql",
+      "metadataToken": 0,
+      "kind": "Enum",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
+      "methods": [],
+      "properties": [],
+      "fields": [
+        {
+          "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BReplicaIdentitySetting::value__System.Byte",
+          "clrName": "value__",
+          "metadataToken": 67112481,
+          "normalizedSignature": "value__|System.Byte|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "isLiteral": false,
+          "visibility": "Public",
+          "declaringClrType": "Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BReplicaIdentitySetting",
+          "declaringAssemblyName": "Npgsql"
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BReplicaIdentitySetting::DefaultNpgsql.Replication.PgOutput.Messages.RelationMessage\u002BReplicaIdentitySetting",
+          "clrName": "Default",
+          "metadataToken": 67112482,
+          "normalizedSignature": "Default|Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BReplicaIdentitySetting|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true,
+          "visibility": "Public",
+          "declaringClrType": "Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BReplicaIdentitySetting",
+          "declaringAssemblyName": "Npgsql"
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BReplicaIdentitySetting::NothingNpgsql.Replication.PgOutput.Messages.RelationMessage\u002BReplicaIdentitySetting",
+          "clrName": "Nothing",
+          "metadataToken": 67112483,
+          "normalizedSignature": "Nothing|Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BReplicaIdentitySetting|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true,
+          "visibility": "Public",
+          "declaringClrType": "Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BReplicaIdentitySetting",
+          "declaringAssemblyName": "Npgsql"
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BReplicaIdentitySetting::AllColumnsNpgsql.Replication.PgOutput.Messages.RelationMessage\u002BReplicaIdentitySetting",
+          "clrName": "AllColumns",
+          "metadataToken": 67112484,
+          "normalizedSignature": "AllColumns|Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BReplicaIdentitySetting|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true,
+          "visibility": "Public",
+          "declaringClrType": "Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BReplicaIdentitySetting",
+          "declaringAssemblyName": "Npgsql"
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BReplicaIdentitySetting::IndexWithIndIsReplIdentNpgsql.Replication.PgOutput.Messages.RelationMessage\u002BReplicaIdentitySetting",
+          "clrName": "IndexWithIndIsReplIdent",
+          "metadataToken": 67112485,
+          "normalizedSignature": "IndexWithIndIsReplIdent|Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BReplicaIdentitySetting|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true,
+          "visibility": "Public",
+          "declaringClrType": "Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BReplicaIdentitySetting",
+          "declaringAssemblyName": "Npgsql"
+        }
+      ],
+      "events": [],
+      "constructors": []
+    },
+    {
+      "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BColumn",
+      "clrName": "Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BColumn",
+      "assemblyName": "Npgsql",
+      "metadataToken": 0,
+      "kind": "Struct",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BColumn::Flags:Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BColumn\u002BColumnFlags",
+          "clrName": "Flags",
+          "metadataToken": 385877331,
+          "canonicalSignature": ":Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BColumn\u002BColumnFlags",
+          "normalizedSignature": "Flags|:Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BColumn\u002BColumnFlags|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "visibility": "Public",
+          "declaringClrType": "Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BColumn",
+          "declaringAssemblyName": "Npgsql"
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BColumn::ColumnName:System.String",
+          "clrName": "ColumnName",
+          "metadataToken": 385877332,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "ColumnName|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "visibility": "Public",
+          "declaringClrType": "Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BColumn",
+          "declaringAssemblyName": "Npgsql"
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BColumn::DataTypeId:System.UInt32",
+          "clrName": "DataTypeId",
+          "metadataToken": 385877333,
+          "canonicalSignature": ":System.UInt32",
+          "normalizedSignature": "DataTypeId|:System.UInt32|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "visibility": "Public",
+          "declaringClrType": "Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BColumn",
+          "declaringAssemblyName": "Npgsql"
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BColumn::TypeModifier:System.Int32",
+          "clrName": "TypeModifier",
+          "metadataToken": 385877334,
+          "canonicalSignature": ":System.Int32",
+          "normalizedSignature": "TypeModifier|:System.Int32|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "visibility": "Public",
+          "declaringClrType": "Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BColumn",
+          "declaringAssemblyName": "Npgsql"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": []
+    },
+    {
+      "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BColumn\u002BColumnFlags",
+      "clrName": "Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BColumn\u002BColumnFlags",
+      "assemblyName": "Npgsql",
+      "metadataToken": 0,
+      "kind": "Enum",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
+      "methods": [],
+      "properties": [],
+      "fields": [
+        {
+          "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BColumn\u002BColumnFlags::value__System.Int32",
+          "clrName": "value__",
+          "metadataToken": 67114171,
+          "normalizedSignature": "value__|System.Int32|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "isLiteral": false,
+          "visibility": "Public",
+          "declaringClrType": "Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BColumn\u002BColumnFlags",
+          "declaringAssemblyName": "Npgsql"
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BColumn\u002BColumnFlags::NoneNpgsql.Replication.PgOutput.Messages.RelationMessage\u002BColumn\u002BColumnFlags",
+          "clrName": "None",
+          "metadataToken": 67114172,
+          "normalizedSignature": "None|Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BColumn\u002BColumnFlags|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true,
+          "visibility": "Public",
+          "declaringClrType": "Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BColumn\u002BColumnFlags",
+          "declaringAssemblyName": "Npgsql"
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BColumn\u002BColumnFlags::PartOfKeyNpgsql.Replication.PgOutput.Messages.RelationMessage\u002BColumn\u002BColumnFlags",
+          "clrName": "PartOfKey",
+          "metadataToken": 67114173,
+          "normalizedSignature": "PartOfKey|Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BColumn\u002BColumnFlags|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true,
+          "visibility": "Public",
+          "declaringClrType": "Npgsql.Replication.PgOutput.Messages.RelationMessage\u002BColumn\u002BColumnFlags",
+          "declaringAssemblyName": "Npgsql"
+        }
+      ],
+      "events": [],
+      "constructors": []
+    },
+    {
       "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.RollbackPreparedMessage",
       "clrName": "Npgsql.Replication.PgOutput.Messages.RollbackPreparedMessage",
       "assemblyName": "Npgsql",
@@ -2069,6 +1853,70 @@
         }
       ],
       "fields": [],
+      "events": [],
+      "constructors": []
+    },
+    {
+      "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.RollbackPreparedMessage\u002BRollbackPreparedFlags",
+      "clrName": "Npgsql.Replication.PgOutput.Messages.RollbackPreparedMessage\u002BRollbackPreparedFlags",
+      "assemblyName": "Npgsql",
+      "metadataToken": 0,
+      "kind": "Enum",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
+      "methods": [],
+      "properties": [],
+      "fields": [
+        {
+          "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.RollbackPreparedMessage\u002BRollbackPreparedFlags::value__System.Byte",
+          "clrName": "value__",
+          "metadataToken": 67112486,
+          "normalizedSignature": "value__|System.Byte|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "isLiteral": false,
+          "visibility": "Public",
+          "declaringClrType": "Npgsql.Replication.PgOutput.Messages.RollbackPreparedMessage\u002BRollbackPreparedFlags",
+          "declaringAssemblyName": "Npgsql"
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.RollbackPreparedMessage\u002BRollbackPreparedFlags::NoneNpgsql.Replication.PgOutput.Messages.RollbackPreparedMessage\u002BRollbackPreparedFlags",
+          "clrName": "None",
+          "metadataToken": 67112487,
+          "normalizedSignature": "None|Npgsql.Replication.PgOutput.Messages.RollbackPreparedMessage\u002BRollbackPreparedFlags|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true,
+          "visibility": "Public",
+          "declaringClrType": "Npgsql.Replication.PgOutput.Messages.RollbackPreparedMessage\u002BRollbackPreparedFlags",
+          "declaringAssemblyName": "Npgsql"
+        }
+      ],
       "events": [],
       "constructors": []
     },
@@ -2249,6 +2097,70 @@
         }
       ],
       "fields": [],
+      "events": [],
+      "constructors": []
+    },
+    {
+      "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.StreamPrepareMessage\u002BStreamPrepareFlags",
+      "clrName": "Npgsql.Replication.PgOutput.Messages.StreamPrepareMessage\u002BStreamPrepareFlags",
+      "assemblyName": "Npgsql",
+      "metadataToken": 0,
+      "kind": "Enum",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
+      "methods": [],
+      "properties": [],
+      "fields": [
+        {
+          "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.StreamPrepareMessage\u002BStreamPrepareFlags::value__System.Byte",
+          "clrName": "value__",
+          "metadataToken": 67112488,
+          "normalizedSignature": "value__|System.Byte|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "isLiteral": false,
+          "visibility": "Public",
+          "declaringClrType": "Npgsql.Replication.PgOutput.Messages.StreamPrepareMessage\u002BStreamPrepareFlags",
+          "declaringAssemblyName": "Npgsql"
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.StreamPrepareMessage\u002BStreamPrepareFlags::NoneNpgsql.Replication.PgOutput.Messages.StreamPrepareMessage\u002BStreamPrepareFlags",
+          "clrName": "None",
+          "metadataToken": 67112489,
+          "normalizedSignature": "None|Npgsql.Replication.PgOutput.Messages.StreamPrepareMessage\u002BStreamPrepareFlags|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true,
+          "visibility": "Public",
+          "declaringClrType": "Npgsql.Replication.PgOutput.Messages.StreamPrepareMessage\u002BStreamPrepareFlags",
+          "declaringAssemblyName": "Npgsql"
+        }
+      ],
       "events": [],
       "constructors": []
     },
@@ -2477,6 +2389,94 @@
         }
       ],
       "fields": [],
+      "events": [],
+      "constructors": []
+    },
+    {
+      "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.TruncateMessage\u002BTruncateOptions",
+      "clrName": "Npgsql.Replication.PgOutput.Messages.TruncateMessage\u002BTruncateOptions",
+      "assemblyName": "Npgsql",
+      "metadataToken": 0,
+      "kind": "Enum",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
+      "methods": [],
+      "properties": [],
+      "fields": [
+        {
+          "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.TruncateMessage\u002BTruncateOptions::value__System.Byte",
+          "clrName": "value__",
+          "metadataToken": 67112490,
+          "normalizedSignature": "value__|System.Byte|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "isLiteral": false,
+          "visibility": "Public",
+          "declaringClrType": "Npgsql.Replication.PgOutput.Messages.TruncateMessage\u002BTruncateOptions",
+          "declaringAssemblyName": "Npgsql"
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.TruncateMessage\u002BTruncateOptions::NoneNpgsql.Replication.PgOutput.Messages.TruncateMessage\u002BTruncateOptions",
+          "clrName": "None",
+          "metadataToken": 67112491,
+          "normalizedSignature": "None|Npgsql.Replication.PgOutput.Messages.TruncateMessage\u002BTruncateOptions|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true,
+          "visibility": "Public",
+          "declaringClrType": "Npgsql.Replication.PgOutput.Messages.TruncateMessage\u002BTruncateOptions",
+          "declaringAssemblyName": "Npgsql"
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.TruncateMessage\u002BTruncateOptions::CascadeNpgsql.Replication.PgOutput.Messages.TruncateMessage\u002BTruncateOptions",
+          "clrName": "Cascade",
+          "metadataToken": 67112492,
+          "normalizedSignature": "Cascade|Npgsql.Replication.PgOutput.Messages.TruncateMessage\u002BTruncateOptions|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true,
+          "visibility": "Public",
+          "declaringClrType": "Npgsql.Replication.PgOutput.Messages.TruncateMessage\u002BTruncateOptions",
+          "declaringAssemblyName": "Npgsql"
+        },
+        {
+          "stableId": "Npgsql:Npgsql.Replication.PgOutput.Messages.TruncateMessage\u002BTruncateOptions::RestartIdentityNpgsql.Replication.PgOutput.Messages.TruncateMessage\u002BTruncateOptions",
+          "clrName": "RestartIdentity",
+          "metadataToken": 67112493,
+          "normalizedSignature": "RestartIdentity|Npgsql.Replication.PgOutput.Messages.TruncateMessage\u002BTruncateOptions|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true,
+          "visibility": "Public",
+          "declaringClrType": "Npgsql.Replication.PgOutput.Messages.TruncateMessage\u002BTruncateOptions",
+          "declaringAssemblyName": "Npgsql"
+        }
+      ],
       "events": [],
       "constructors": []
     },

@@ -2,8 +2,9 @@
 // Namespace: Npgsql.TypeMapping
 // Assembly: Npgsql
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { DbTypeResolverFactory, PgTypeInfoResolverFactory } from "../../Npgsql.Internal/internal/index.js";
@@ -19,13 +20,13 @@ export interface INpgsqlTypeMapper$instance {
     AddDbTypeResolverFactory(factory: DbTypeResolverFactory): void;
     AddTypeInfoResolverFactory(factory: PgTypeInfoResolverFactory): void;
     ConfigureJsonOptions(serializerOptions: JsonSerializerOptions): INpgsqlTypeMapper;
-    EnableDynamicJson(jsonbClrTypes?: Type[], jsonClrTypes?: Type[]): INpgsqlTypeMapper;
+    EnableDynamicJson(jsonbClrTypes?: Type[] | null, jsonClrTypes?: Type[] | null): INpgsqlTypeMapper;
     EnableRecordsAsTuples(): INpgsqlTypeMapper;
-    MapEnum<TEnum extends number>(pgName?: string, nameTranslator?: INpgsqlNameTranslator): INpgsqlTypeMapper;
-    MapEnum(clrType: Type, pgName?: string, nameTranslator?: INpgsqlNameTranslator): INpgsqlTypeMapper;
+    MapEnum<TEnum extends number & NonNullable<JsValue>>(pgName?: string | null, nameTranslator?: INpgsqlNameTranslator | null): INpgsqlTypeMapper;
+    MapEnum(clrType: Type, pgName?: string | null, nameTranslator?: INpgsqlNameTranslator | null): INpgsqlTypeMapper;
     Reset(): void;
-    UnmapEnum<TEnum extends number>(pgName?: string, nameTranslator?: INpgsqlNameTranslator): boolean;
-    UnmapEnum(clrType: Type, pgName?: string, nameTranslator?: INpgsqlNameTranslator): boolean;
+    UnmapEnum<TEnum extends number & NonNullable<JsValue>>(pgName?: string | null, nameTranslator?: INpgsqlNameTranslator | null): boolean;
+    UnmapEnum(clrType: Type, pgName?: string | null, nameTranslator?: INpgsqlNameTranslator | null): boolean;
 }
 
 

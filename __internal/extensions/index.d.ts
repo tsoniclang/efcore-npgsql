@@ -36,17 +36,15 @@ import * as System_Runtime_CompilerServices from "@tsonic/dotnet/System.Runtime.
 import * as System_Threading from "@tsonic/dotnet/System.Threading/internal/index.js";
 import * as System_Threading_Tasks from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
 
-// Import primitive type aliases
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import sticky extension scope helper
 import type { Rewrap } from '@tsonic/core/lang.js';
 
 // Import CLR type aliases for generic type arguments
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
-
-// Import unsafe type markers
-import type { ptr } from '@tsonic/core/types.js';
 
 // Internal helper types for sticky extension scopes
 type __TsonicExtMapOf<T> = T extends { __tsonic_ext?: infer M } ? M : {};
@@ -62,7 +60,7 @@ interface __TsonicExtMethods_Microsoft_EntityFrameworkCore {
   Add(this: Microsoft_EntityFrameworkCore.DbFunctions, inet: NpgsqlTypes.NpgsqlInet, value: int): Rewrap<this, NpgsqlTypes.NpgsqlInet>;
   Add(this: Microsoft_EntityFrameworkCore.DbFunctions, cidr: System.ValueTuple_2<System_Net.IPAddress, System_Internal.Int32>, value: int): Rewrap<this, System.ValueTuple_2<System_Net.IPAddress, System_Internal.Int32>>;
   And(this: NpgsqlTypes.NpgsqlTsQuery, query2: NpgsqlTypes.NpgsqlTsQuery): Rewrap<this, NpgsqlTypes.NpgsqlTsQuery>;
-  AreNullsDistinct(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder, nullsDistinct?: boolean, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder | undefined>;
+  AreNullsDistinct(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder, nullsDistinct?: boolean, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder | null>;
   AreNullsDistinct(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder, nullsDistinct?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder>;
   AreNullsDistinct<TEntity>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder_1<TEntity>, nullsDistinct?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder_1<TEntity>>;
   ArrayAgg<T>(this: Microsoft_EntityFrameworkCore.DbFunctions, input: System_Collections_Generic.IEnumerable_1<T>): Rewrap<this, T[]>;
@@ -80,24 +78,24 @@ interface __TsonicExtMethods_Microsoft_EntityFrameworkCore {
   Broadcast(this: Microsoft_EntityFrameworkCore.DbFunctions, inet: NpgsqlTypes.NpgsqlInet): Rewrap<this, NpgsqlTypes.NpgsqlInet>;
   Broadcast(this: Microsoft_EntityFrameworkCore.DbFunctions, cidr: System.ValueTuple_2<System_Net.IPAddress, System_Internal.Int32>): Rewrap<this, System_Net.IPAddress>;
   CanSetAreNullsDistinct(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder, nullsDistinct?: boolean, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
-  CanSetCollation(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder, values: System_Collections_Generic.IReadOnlyList_1<System_Internal.String>, fromDataAnnotation: boolean): Rewrap<this, boolean>;
-  CanSetCompressionMethod(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder, compressionMethod: string, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
-  CanSetHiLoSequence(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder, name: string, schema: string, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
-  CanSetHiLoSequence(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder, name: string, schema: string, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
+  CanSetCollation(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder, values: System_Collections_Generic.IReadOnlyList_1<System_Internal.String> | null, fromDataAnnotation: boolean): Rewrap<this, boolean>;
+  CanSetCompressionMethod(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder, compressionMethod: string | null, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
+  CanSetHiLoSequence(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder, name: string | null, schema: string | null, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
+  CanSetHiLoSequence(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder, name: string | null, schema: string | null, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
   CanSetIdentityOptions(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder, startValue?: System.Nullable_1<System_Internal.Int64>, incrementBy?: System.Nullable_1<System_Internal.Int64>, minValue?: System.Nullable_1<System_Internal.Int64>, maxValue?: System.Nullable_1<System_Internal.Int64>, cyclic?: System.Nullable_1<System_Internal.Boolean>, numbersToCache?: System.Nullable_1<System_Internal.Int64>): Rewrap<this, boolean>;
-  CanSetIncludeProperties(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder, propertyNames: System_Collections_Generic.IReadOnlyList_1<System_Internal.String>, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
+  CanSetIncludeProperties(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder, propertyNames: System_Collections_Generic.IReadOnlyList_1<System_Internal.String> | null, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
   CanSetIsCreatedConcurrently(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder, createdConcurrently: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
-  CanSetIsGeneratedTsVectorColumn(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder, config: string, includedPropertyNames: System_Collections_Generic.IReadOnlyList_1<System_Internal.String>, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
-  CanSetIsTsVectorExpressionIndex(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder, config: string, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
+  CanSetIsGeneratedTsVectorColumn(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder, config: string | null, includedPropertyNames: System_Collections_Generic.IReadOnlyList_1<System_Internal.String> | null, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
+  CanSetIsTsVectorExpressionIndex(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder, config: string | null, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
   CanSetIsUnlogged(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder, unlogged?: boolean, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
-  CanSetMethod(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder, method: string, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
-  CanSetNullSortOrder(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder, values: System_Collections_Generic.IReadOnlyList_1<Npgsql_EntityFrameworkCore_PostgreSQL_Metadata.NullSortOrder>, fromDataAnnotation: boolean): Rewrap<this, boolean>;
-  CanSetOperators(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder, operators: System_Collections_Generic.IReadOnlyList_1<System_Internal.String>, fromDataAnnotation: boolean): Rewrap<this, boolean>;
-  CanSetPostgresEnum(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder, schema: string, name: string, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
-  CanSetPostgresExtension(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder, schema: string, name: string, version?: string, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
-  CanSetSequence(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder, name: string, schema: string, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
-  CanSetStorageParameter(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder, parameterName: string, parameterValue: unknown, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
-  CanSetStorageParameter(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder, parameterName: string, parameterValue: unknown, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
+  CanSetMethod(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder, method: string | null, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
+  CanSetNullSortOrder(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder, values: System_Collections_Generic.IReadOnlyList_1<Npgsql_EntityFrameworkCore_PostgreSQL_Metadata.NullSortOrder> | null, fromDataAnnotation: boolean): Rewrap<this, boolean>;
+  CanSetOperators(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder, operators: System_Collections_Generic.IReadOnlyList_1<System_Internal.String> | null, fromDataAnnotation: boolean): Rewrap<this, boolean>;
+  CanSetPostgresEnum(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder, schema: string | null, name: string, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
+  CanSetPostgresExtension(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder, schema: string | null, name: string, version?: string | null, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
+  CanSetSequence(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder, name: string | null, schema: string | null, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
+  CanSetStorageParameter(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder, parameterName: string, parameterValue: JsValue | null, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
+  CanSetStorageParameter(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder, parameterName: string, parameterValue: JsValue | null, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
   CanSetValueGenerationStrategy(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder, valueGenerationStrategy: System.Nullable_1<Npgsql_EntityFrameworkCore_PostgreSQL_Metadata.NpgsqlValueGenerationStrategy>, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
   CanSetValueGenerationStrategy(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder, valueGenerationStrategy: System.Nullable_1<Npgsql_EntityFrameworkCore_PostgreSQL_Metadata.NpgsqlValueGenerationStrategy>, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
   CanSetValueGenerationStrategy(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder, valueGenerationStrategy: System.Nullable_1<Npgsql_EntityFrameworkCore_PostgreSQL_Metadata.NpgsqlValueGenerationStrategy>, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
@@ -147,20 +145,20 @@ interface __TsonicExtMethods_Microsoft_EntityFrameworkCore {
   DoesNotExtendRightOf<T>(this: System_Collections_Generic.List_1<NpgsqlTypes.NpgsqlRange_1<T>>, multirange2: System_Collections_Generic.List_1<NpgsqlTypes.NpgsqlRange_1<T>>): Rewrap<this, boolean>;
   DoesNotExtendRightOf<T>(this: System_Collections_Generic.List_1<NpgsqlTypes.NpgsqlRange_1<T>>, range: NpgsqlTypes.NpgsqlRange_1<T>): Rewrap<this, boolean>;
   Enlarge(this: NpgsqlTypes.NpgsqlCube, radius: double, dimensions: int): Rewrap<this, NpgsqlTypes.NpgsqlCube>;
-  EnsurePostgresExtension(this: Microsoft_EntityFrameworkCore_Migrations.MigrationBuilder, name: string, schema?: string, version?: string): Rewrap<this, Microsoft_EntityFrameworkCore_Migrations.MigrationBuilder>;
+  EnsurePostgresExtension(this: Microsoft_EntityFrameworkCore_Migrations.MigrationBuilder, name: string, schema?: string | null, version?: string | null): Rewrap<this, Microsoft_EntityFrameworkCore_Migrations.MigrationBuilder>;
   Except<T>(this: NpgsqlTypes.NpgsqlRange_1<T>, b: NpgsqlTypes.NpgsqlRange_1<T>): Rewrap<this, NpgsqlTypes.NpgsqlRange_1<T>>;
   Except<T>(this: System_Collections_Generic.List_1<NpgsqlTypes.NpgsqlRange_1<T>>, multirange2: System_Collections_Generic.List_1<NpgsqlTypes.NpgsqlRange_1<T>>): Rewrap<this, System_Collections_Generic.List_1<NpgsqlTypes.NpgsqlRange_1<T>>>;
   Family(this: Microsoft_EntityFrameworkCore.DbFunctions, inet: NpgsqlTypes.NpgsqlInet): Rewrap<this, int>;
   Family(this: Microsoft_EntityFrameworkCore.DbFunctions, cidr: System.ValueTuple_2<System_Net.IPAddress, System_Internal.Int32>): Rewrap<this, int>;
   Filter(this: NpgsqlTypes.NpgsqlTsVector, weights: char[]): Rewrap<this, NpgsqlTypes.NpgsqlTsVector>;
-  FindHiLoSequence(this: Microsoft_EntityFrameworkCore_Metadata.IProperty): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata.ISequence | undefined>;
-  FindHiLoSequence(this: Microsoft_EntityFrameworkCore_Metadata.IProperty, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata.ISequence | undefined>;
-  FindHiLoSequence(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata.IReadOnlySequence | undefined>;
-  FindHiLoSequence(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata.IReadOnlySequence | undefined>;
-  FindSequence(this: Microsoft_EntityFrameworkCore_Metadata.IProperty): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata.ISequence | undefined>;
-  FindSequence(this: Microsoft_EntityFrameworkCore_Metadata.IProperty, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata.ISequence | undefined>;
-  FindSequence(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata.IReadOnlySequence | undefined>;
-  FindSequence(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata.IReadOnlySequence | undefined>;
+  FindHiLoSequence(this: Microsoft_EntityFrameworkCore_Metadata.IProperty): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata.ISequence | null>;
+  FindHiLoSequence(this: Microsoft_EntityFrameworkCore_Metadata.IProperty, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata.ISequence | null>;
+  FindHiLoSequence(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata.IReadOnlySequence | null>;
+  FindHiLoSequence(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata.IReadOnlySequence | null>;
+  FindSequence(this: Microsoft_EntityFrameworkCore_Metadata.IProperty): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata.ISequence | null>;
+  FindSequence(this: Microsoft_EntityFrameworkCore_Metadata.IProperty, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata.ISequence | null>;
+  FindSequence(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata.IReadOnlySequence | null>;
+  FindSequence(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata.IReadOnlySequence | null>;
   FuzzyStringMatchDifference(this: Microsoft_EntityFrameworkCore.DbFunctions, source: string, target: string): Rewrap<this, int>;
   FuzzyStringMatchDoubleMetaphone(this: Microsoft_EntityFrameworkCore.DbFunctions, text: string): Rewrap<this, string>;
   FuzzyStringMatchDoubleMetaphoneAlt(this: Microsoft_EntityFrameworkCore.DbFunctions, text: string): Rewrap<this, string>;
@@ -173,22 +171,22 @@ interface __TsonicExtMethods_Microsoft_EntityFrameworkCore {
   GetAreNullsDistinct(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyIndex): Rewrap<this, System.Nullable_1<System_Internal.Boolean>>;
   GetAreNullsDistinctConfigurationSource(this: Microsoft_EntityFrameworkCore_Metadata.IConventionIndex): Rewrap<this, System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
   GetCockroachDbInterleaveInParent(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyEntityType): Rewrap<this, Npgsql_EntityFrameworkCore_PostgreSQL_Metadata.CockroachDbInterleaveInParent>;
-  GetCollation(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyIndex): Rewrap<this, System_Collections_Generic.IReadOnlyList_1<System_Internal.String> | undefined>;
+  GetCollation(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyIndex): Rewrap<this, System_Collections_Generic.IReadOnlyList_1<System_Internal.String> | null>;
   GetCollationConfigurationSource(this: Microsoft_EntityFrameworkCore_Metadata.IConventionIndex): Rewrap<this, System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
   GetCollations(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyModel): Rewrap<this, System_Collections_Generic.IReadOnlyList_1<Npgsql_EntityFrameworkCore_PostgreSQL_Metadata.PostgresCollation>>;
-  GetCompressionMethod(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty): Rewrap<this, string | undefined>;
-  GetCompressionMethod(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): Rewrap<this, string | undefined>;
+  GetCompressionMethod(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty): Rewrap<this, string | null>;
+  GetCompressionMethod(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): Rewrap<this, string | null>;
   GetCompressionMethodConfigurationSource(this: Microsoft_EntityFrameworkCore_Metadata.IConventionProperty): Rewrap<this, System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
-  GetDatabaseTemplate(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyModel): Rewrap<this, string | undefined>;
+  GetDatabaseTemplate(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyModel): Rewrap<this, string | null>;
   GetDatabaseTemplateConfigurationSource(this: Microsoft_EntityFrameworkCore_Metadata.IConventionModel): Rewrap<this, System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
   GetHiLoSequenceName(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyModel): Rewrap<this, string>;
-  GetHiLoSequenceName(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty): Rewrap<this, string | undefined>;
-  GetHiLoSequenceName(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): Rewrap<this, string | undefined>;
+  GetHiLoSequenceName(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty): Rewrap<this, string | null>;
+  GetHiLoSequenceName(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): Rewrap<this, string | null>;
   GetHiLoSequenceNameConfigurationSource(this: Microsoft_EntityFrameworkCore_Metadata.IConventionModel): Rewrap<this, System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
   GetHiLoSequenceNameConfigurationSource(this: Microsoft_EntityFrameworkCore_Metadata.IConventionProperty): Rewrap<this, System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
-  GetHiLoSequenceSchema(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyModel): Rewrap<this, string | undefined>;
-  GetHiLoSequenceSchema(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty): Rewrap<this, string | undefined>;
-  GetHiLoSequenceSchema(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): Rewrap<this, string | undefined>;
+  GetHiLoSequenceSchema(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyModel): Rewrap<this, string | null>;
+  GetHiLoSequenceSchema(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty): Rewrap<this, string | null>;
+  GetHiLoSequenceSchema(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): Rewrap<this, string | null>;
   GetHiLoSequenceSchemaConfigurationSource(this: Microsoft_EntityFrameworkCore_Metadata.IConventionModel): Rewrap<this, System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
   GetHiLoSequenceSchemaConfigurationSource(this: Microsoft_EntityFrameworkCore_Metadata.IConventionProperty): Rewrap<this, System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
   GetIdentityIncrementBy(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty): Rewrap<this, System.Nullable_1<System_Internal.Int64>>;
@@ -203,31 +201,31 @@ interface __TsonicExtMethods_Microsoft_EntityFrameworkCore {
   GetIdentityNumbersToCacheConfigurationSource(this: Microsoft_EntityFrameworkCore_Metadata.IConventionProperty): Rewrap<this, System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
   GetIdentityStartValue(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty): Rewrap<this, System.Nullable_1<System_Internal.Int64>>;
   GetIdentityStartValueConfigurationSource(this: Microsoft_EntityFrameworkCore_Metadata.IConventionProperty): Rewrap<this, System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
-  GetIncludeProperties(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyIndex): Rewrap<this, System_Collections_Generic.IReadOnlyList_1<System_Internal.String> | undefined>;
+  GetIncludeProperties(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyIndex): Rewrap<this, System_Collections_Generic.IReadOnlyList_1<System_Internal.String> | null>;
   GetIncludePropertiesConfigurationSource(this: Microsoft_EntityFrameworkCore_Metadata.IConventionIndex): Rewrap<this, System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
   GetIsCreatedConcurrentlyConfigurationSource(this: Microsoft_EntityFrameworkCore_Metadata.IConventionIndex): Rewrap<this, System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
   GetIsUnlogged(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyEntityType): Rewrap<this, boolean>;
   GetIsUnloggedConfigurationSource(this: Microsoft_EntityFrameworkCore_Metadata.IConventionEntityType): Rewrap<this, System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
   GetLength(this: NpgsqlTypes.NpgsqlTsVector): Rewrap<this, int>;
-  GetMethod(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyIndex): Rewrap<this, string | undefined>;
+  GetMethod(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyIndex): Rewrap<this, string | null>;
   GetMethodConfigurationSource(this: Microsoft_EntityFrameworkCore_Metadata.IConventionIndex): Rewrap<this, System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
   GetNodeCount(this: NpgsqlTypes.NpgsqlTsQuery): Rewrap<this, int>;
-  GetNullSortOrder(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyIndex): Rewrap<this, System_Collections_Generic.IReadOnlyList_1<Npgsql_EntityFrameworkCore_PostgreSQL_Metadata.NullSortOrder> | undefined>;
+  GetNullSortOrder(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyIndex): Rewrap<this, System_Collections_Generic.IReadOnlyList_1<Npgsql_EntityFrameworkCore_PostgreSQL_Metadata.NullSortOrder> | null>;
   GetNullSortOrderConfigurationSource(this: Microsoft_EntityFrameworkCore_Metadata.IConventionIndex): Rewrap<this, System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
   GetOldPostgresCollations(this: Microsoft_EntityFrameworkCore_Migrations_Operations.AlterDatabaseOperation): Rewrap<this, System_Collections_Generic.IReadOnlyList_1<Npgsql_EntityFrameworkCore_PostgreSQL_Metadata.PostgresCollation>>;
   GetOldPostgresEnums(this: Microsoft_EntityFrameworkCore_Migrations_Operations.AlterDatabaseOperation): Rewrap<this, System_Collections_Generic.IReadOnlyList_1<Npgsql_EntityFrameworkCore_PostgreSQL_Metadata.PostgresEnum>>;
   GetOldPostgresExtensions(this: Microsoft_EntityFrameworkCore_Migrations_Operations.AlterDatabaseOperation): Rewrap<this, System_Collections_Generic.IReadOnlyList_1<Npgsql_EntityFrameworkCore_PostgreSQL_Metadata.PostgresExtension>>;
   GetOldPostgresRanges(this: Microsoft_EntityFrameworkCore_Migrations_Operations.AlterDatabaseOperation): Rewrap<this, System_Collections_Generic.IReadOnlyList_1<Npgsql_EntityFrameworkCore_PostgreSQL_Metadata.PostgresRange>>;
-  GetOperators(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyIndex): Rewrap<this, System_Collections_Generic.IReadOnlyList_1<System_Internal.String> | undefined>;
+  GetOperators(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyIndex): Rewrap<this, System_Collections_Generic.IReadOnlyList_1<System_Internal.String> | null>;
   GetOperatorsConfigurationSource(this: Microsoft_EntityFrameworkCore_Metadata.IConventionIndex): Rewrap<this, System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
-  GetOrAddCollation(this: Microsoft_EntityFrameworkCore_Metadata.IMutableModel, schema: string, name: string, lcCollate: string, lcCtype: string, provider?: string, deterministic?: System.Nullable_1<System_Internal.Boolean>): Rewrap<this, Npgsql_EntityFrameworkCore_PostgreSQL_Metadata.PostgresCollation>;
-  GetOrAddPostgresEnum(this: Microsoft_EntityFrameworkCore_Metadata.IConventionModel, schema: string, name: string, labels: string[]): Rewrap<this, Npgsql_EntityFrameworkCore_PostgreSQL_Metadata.PostgresEnum>;
-  GetOrAddPostgresEnum(this: Microsoft_EntityFrameworkCore_Metadata.IMutableModel, schema: string, name: string, labels: string[]): Rewrap<this, Npgsql_EntityFrameworkCore_PostgreSQL_Metadata.PostgresEnum>;
-  GetOrAddPostgresExtension(this: Microsoft_EntityFrameworkCore_Metadata.IConventionModel, schema: string, name: string, version: string): Rewrap<this, Npgsql_EntityFrameworkCore_PostgreSQL_Metadata.PostgresExtension>;
-  GetOrAddPostgresExtension(this: Microsoft_EntityFrameworkCore_Metadata.IMutableModel, schema: string, name: string, version: string): Rewrap<this, Npgsql_EntityFrameworkCore_PostgreSQL_Metadata.PostgresExtension>;
-  GetOrAddPostgresExtension(this: Microsoft_EntityFrameworkCore_Migrations_Operations.AlterDatabaseOperation, schema: string, name: string, version: string): Rewrap<this, Npgsql_EntityFrameworkCore_PostgreSQL_Metadata.PostgresExtension>;
-  GetOrAddPostgresExtension(this: Microsoft_EntityFrameworkCore_Scaffolding_Metadata.DatabaseModel, schema: string, name: string, version: string): Rewrap<this, Npgsql_EntityFrameworkCore_PostgreSQL_Metadata.PostgresExtension>;
-  GetOrAddPostgresRange(this: Microsoft_EntityFrameworkCore_Metadata.IMutableModel, schema: string, name: string, subtype: string, canonicalFunction?: string, subtypeOpClass?: string, collation?: string, subtypeDiff?: string): Rewrap<this, Npgsql_EntityFrameworkCore_PostgreSQL_Metadata.PostgresRange>;
+  GetOrAddCollation(this: Microsoft_EntityFrameworkCore_Metadata.IMutableModel, schema: string | null, name: string, lcCollate: string, lcCtype: string, provider?: string | null, deterministic?: System.Nullable_1<System_Internal.Boolean>): Rewrap<this, Npgsql_EntityFrameworkCore_PostgreSQL_Metadata.PostgresCollation>;
+  GetOrAddPostgresEnum(this: Microsoft_EntityFrameworkCore_Metadata.IConventionModel, schema: string | null, name: string, labels: string[]): Rewrap<this, Npgsql_EntityFrameworkCore_PostgreSQL_Metadata.PostgresEnum>;
+  GetOrAddPostgresEnum(this: Microsoft_EntityFrameworkCore_Metadata.IMutableModel, schema: string | null, name: string, labels: string[]): Rewrap<this, Npgsql_EntityFrameworkCore_PostgreSQL_Metadata.PostgresEnum>;
+  GetOrAddPostgresExtension(this: Microsoft_EntityFrameworkCore_Metadata.IConventionModel, schema: string | null, name: string, version: string | null): Rewrap<this, Npgsql_EntityFrameworkCore_PostgreSQL_Metadata.PostgresExtension>;
+  GetOrAddPostgresExtension(this: Microsoft_EntityFrameworkCore_Metadata.IMutableModel, schema: string | null, name: string, version: string | null): Rewrap<this, Npgsql_EntityFrameworkCore_PostgreSQL_Metadata.PostgresExtension>;
+  GetOrAddPostgresExtension(this: Microsoft_EntityFrameworkCore_Migrations_Operations.AlterDatabaseOperation, schema: string | null, name: string, version: string | null): Rewrap<this, Npgsql_EntityFrameworkCore_PostgreSQL_Metadata.PostgresExtension>;
+  GetOrAddPostgresExtension(this: Microsoft_EntityFrameworkCore_Scaffolding_Metadata.DatabaseModel, schema: string | null, name: string, version: string | null): Rewrap<this, Npgsql_EntityFrameworkCore_PostgreSQL_Metadata.PostgresExtension>;
+  GetOrAddPostgresRange(this: Microsoft_EntityFrameworkCore_Metadata.IMutableModel, schema: string | null, name: string, subtype: string, canonicalFunction?: string | null, subtypeOpClass?: string | null, collation?: string | null, subtypeDiff?: string | null): Rewrap<this, Npgsql_EntityFrameworkCore_PostgreSQL_Metadata.PostgresRange>;
   GetPostgresCollations(this: Microsoft_EntityFrameworkCore_Migrations_Operations.AlterDatabaseOperation): Rewrap<this, System_Collections_Generic.IReadOnlyList_1<Npgsql_EntityFrameworkCore_PostgreSQL_Metadata.PostgresCollation>>;
   GetPostgresEnums(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyModel): Rewrap<this, System_Collections_Generic.IReadOnlyList_1<Npgsql_EntityFrameworkCore_PostgreSQL_Metadata.PostgresEnum>>;
   GetPostgresEnums(this: Microsoft_EntityFrameworkCore_Migrations_Operations.AlterDatabaseOperation): Rewrap<this, System_Collections_Generic.IReadOnlyList_1<Npgsql_EntityFrameworkCore_PostgreSQL_Metadata.PostgresEnum>>;
@@ -240,29 +238,29 @@ interface __TsonicExtMethods_Microsoft_EntityFrameworkCore {
   GetResultHeadline(this: NpgsqlTypes.NpgsqlTsQuery, document: string): Rewrap<this, string>;
   GetResultHeadline(this: NpgsqlTypes.NpgsqlTsQuery, document: string, options: string): Rewrap<this, string>;
   GetResultHeadline(this: NpgsqlTypes.NpgsqlTsQuery, config: string, document: string, options: string): Rewrap<this, string>;
-  GetSequenceName(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty): Rewrap<this, string | undefined>;
-  GetSequenceName(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): Rewrap<this, string | undefined>;
+  GetSequenceName(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty): Rewrap<this, string | null>;
+  GetSequenceName(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): Rewrap<this, string | null>;
   GetSequenceNameConfigurationSource(this: Microsoft_EntityFrameworkCore_Metadata.IConventionProperty): Rewrap<this, System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
   GetSequenceNameSuffix(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyModel): Rewrap<this, string>;
   GetSequenceNameSuffixConfigurationSource(this: Microsoft_EntityFrameworkCore_Metadata.IConventionModel): Rewrap<this, System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
-  GetSequenceSchema(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyModel): Rewrap<this, string | undefined>;
-  GetSequenceSchema(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty): Rewrap<this, string | undefined>;
-  GetSequenceSchema(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): Rewrap<this, string | undefined>;
+  GetSequenceSchema(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyModel): Rewrap<this, string | null>;
+  GetSequenceSchema(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty): Rewrap<this, string | null>;
+  GetSequenceSchema(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier): Rewrap<this, string | null>;
   GetSequenceSchemaConfigurationSource(this: Microsoft_EntityFrameworkCore_Metadata.IConventionModel): Rewrap<this, System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
   GetSequenceSchemaConfigurationSource(this: Microsoft_EntityFrameworkCore_Metadata.IConventionProperty): Rewrap<this, System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
-  GetStorageParameter(this: Microsoft_EntityFrameworkCore_Metadata.IEntityType, parameterName: string): Rewrap<this, string | undefined>;
-  GetStorageParameter(this: Microsoft_EntityFrameworkCore_Metadata.IIndex, parameterName: string): Rewrap<this, string | undefined>;
+  GetStorageParameter(this: Microsoft_EntityFrameworkCore_Metadata.IEntityType, parameterName: string): Rewrap<this, string | null>;
+  GetStorageParameter(this: Microsoft_EntityFrameworkCore_Metadata.IIndex, parameterName: string): Rewrap<this, string | null>;
   GetStorageParameterConfigurationSource(this: Microsoft_EntityFrameworkCore_Metadata.IConventionEntityType, parameterName: string): Rewrap<this, System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
   GetStorageParameterConfigurationSource(this: Microsoft_EntityFrameworkCore_Metadata.IConventionIndex, parameterName: string): Rewrap<this, System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
-  GetStorageParameters(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyEntityType): Rewrap<this, System_Collections_Generic.Dictionary_2<System_Internal.String, unknown | undefined>>;
-  GetStorageParameters(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyIndex): Rewrap<this, System_Collections_Generic.Dictionary_2<System_Internal.String, unknown | undefined>>;
-  GetTablespace(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyModel): Rewrap<this, string | undefined>;
+  GetStorageParameters(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyEntityType): Rewrap<this, System_Collections_Generic.Dictionary_2<System_Internal.String, JsValue | null>>;
+  GetStorageParameters(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyIndex): Rewrap<this, System_Collections_Generic.Dictionary_2<System_Internal.String, JsValue | null>>;
+  GetTablespace(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyModel): Rewrap<this, string | null>;
   GetTablespaceConfigurationSource(this: Microsoft_EntityFrameworkCore_Metadata.IConventionModel): Rewrap<this, System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
-  GetTsVectorConfig(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyIndex): Rewrap<this, string | undefined>;
-  GetTsVectorConfig(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty): Rewrap<this, string | undefined>;
+  GetTsVectorConfig(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyIndex): Rewrap<this, string | null>;
+  GetTsVectorConfig(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty): Rewrap<this, string | null>;
   GetTsVectorConfigConfigurationSource(this: Microsoft_EntityFrameworkCore_Metadata.IConventionIndex): Rewrap<this, System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
   GetTsVectorConfigConfigurationSource(this: Microsoft_EntityFrameworkCore_Metadata.IConventionProperty): Rewrap<this, System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
-  GetTsVectorProperties(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty): Rewrap<this, System_Collections_Generic.IReadOnlyList_1<System_Internal.String> | undefined>;
+  GetTsVectorProperties(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty): Rewrap<this, System_Collections_Generic.IReadOnlyList_1<System_Internal.String> | null>;
   GetTsVectorPropertiesConfigurationSource(this: Microsoft_EntityFrameworkCore_Metadata.IConventionProperty): Rewrap<this, System.Nullable_1<Microsoft_EntityFrameworkCore_Metadata.ConfigurationSource>>;
   GetValueGenerationStrategy(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyModel): Rewrap<this, System.Nullable_1<Npgsql_EntityFrameworkCore_PostgreSQL_Metadata.NpgsqlValueGenerationStrategy>>;
   GetValueGenerationStrategy(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyProperty): Rewrap<this, Npgsql_EntityFrameworkCore_PostgreSQL_Metadata.NpgsqlValueGenerationStrategy>;
@@ -280,55 +278,55 @@ interface __TsonicExtMethods_Microsoft_EntityFrameworkCore {
   GreaterThanOrEqual(this: Microsoft_EntityFrameworkCore.DbFunctions, inet: NpgsqlTypes.NpgsqlInet, other: NpgsqlTypes.NpgsqlInet): Rewrap<this, boolean>;
   GreaterThanOrEqual(this: Microsoft_EntityFrameworkCore.DbFunctions, macaddr: System_Net_NetworkInformation.PhysicalAddress, other: System_Net_NetworkInformation.PhysicalAddress): Rewrap<this, boolean>;
   GreaterThanOrEqual(this: Microsoft_EntityFrameworkCore.DbFunctions, cidr: System.ValueTuple_2<System_Net.IPAddress, System_Internal.Int32>, other: System.ValueTuple_2<System_Net.IPAddress, System_Internal.Int32>): Rewrap<this, boolean>;
-  HasCollation(this: Microsoft_EntityFrameworkCore.ModelBuilder, name: string, locale: string, provider?: string, deterministic?: System.Nullable_1<System_Internal.Boolean>): Rewrap<this, Microsoft_EntityFrameworkCore.ModelBuilder>;
-  HasCollation(this: Microsoft_EntityFrameworkCore.ModelBuilder, schema: string, name: string, locale: string, provider?: string, deterministic?: System.Nullable_1<System_Internal.Boolean>): Rewrap<this, Microsoft_EntityFrameworkCore.ModelBuilder>;
-  HasCollation(this: Microsoft_EntityFrameworkCore.ModelBuilder, schema: string, name: string, lcCollate: string, lcCtype: string, provider?: string, deterministic?: System.Nullable_1<System_Internal.Boolean>): Rewrap<this, Microsoft_EntityFrameworkCore.ModelBuilder>;
-  HasGeneratedTsVectorColumn<TEntity>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.EntityTypeBuilder_1<TEntity>, tsVectorPropertyExpression: System_Linq_Expressions.Expression_1<System.Func_2<TEntity, NpgsqlTypes.NpgsqlTsVector>>, config: string, includeExpression: System_Linq_Expressions.Expression_1<System.Func_2<TEntity, unknown>>): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.EntityTypeBuilder_1<TEntity>>;
-  HasHiLoSequence(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder, name: string, schema: string, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionSequenceBuilder | undefined>;
-  HasHiLoSequence(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder, name: string, schema: string, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionSequenceBuilder | undefined>;
-  HasIdentityOptions(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder, startValue?: System.Nullable_1<System_Internal.Int64>, incrementBy?: System.Nullable_1<System_Internal.Int64>, minValue?: System.Nullable_1<System_Internal.Int64>, maxValue?: System.Nullable_1<System_Internal.Int64>, cyclic?: System.Nullable_1<System_Internal.Boolean>, numbersToCache?: System.Nullable_1<System_Internal.Int64>): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder | undefined>;
+  HasCollation(this: Microsoft_EntityFrameworkCore.ModelBuilder, name: string, locale: string, provider?: string | null, deterministic?: System.Nullable_1<System_Internal.Boolean>): Rewrap<this, Microsoft_EntityFrameworkCore.ModelBuilder>;
+  HasCollation(this: Microsoft_EntityFrameworkCore.ModelBuilder, schema: string | null, name: string, locale: string, provider?: string | null, deterministic?: System.Nullable_1<System_Internal.Boolean>): Rewrap<this, Microsoft_EntityFrameworkCore.ModelBuilder>;
+  HasCollation(this: Microsoft_EntityFrameworkCore.ModelBuilder, schema: string | null, name: string, lcCollate: string, lcCtype: string, provider?: string | null, deterministic?: System.Nullable_1<System_Internal.Boolean>): Rewrap<this, Microsoft_EntityFrameworkCore.ModelBuilder>;
+  HasGeneratedTsVectorColumn<TEntity>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.EntityTypeBuilder_1<TEntity>, tsVectorPropertyExpression: System_Linq_Expressions.Expression_1<System.Func_2<TEntity, NpgsqlTypes.NpgsqlTsVector>>, config: string, includeExpression: System_Linq_Expressions.Expression_1<System.Func_2<TEntity, JsValue>>): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.EntityTypeBuilder_1<TEntity>>;
+  HasHiLoSequence(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder, name: string | null, schema: string | null, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionSequenceBuilder | null>;
+  HasHiLoSequence(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder, name: string | null, schema: string | null, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionSequenceBuilder | null>;
+  HasIdentityOptions(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder, startValue?: System.Nullable_1<System_Internal.Int64>, incrementBy?: System.Nullable_1<System_Internal.Int64>, minValue?: System.Nullable_1<System_Internal.Int64>, maxValue?: System.Nullable_1<System_Internal.Int64>, cyclic?: System.Nullable_1<System_Internal.Boolean>, numbersToCache?: System.Nullable_1<System_Internal.Int64>): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder | null>;
   HasIdentityOptions(this: Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder, startValue?: System.Nullable_1<System_Internal.Int64>, incrementBy?: System.Nullable_1<System_Internal.Int64>, minValue?: System.Nullable_1<System_Internal.Int64>, maxValue?: System.Nullable_1<System_Internal.Int64>, cyclic?: System.Nullable_1<System_Internal.Boolean>, numbersToCache?: System.Nullable_1<System_Internal.Int64>): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder>;
   HasIdentityOptions<TProperty>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<TProperty>, startValue?: System.Nullable_1<System_Internal.Int64>, incrementBy?: System.Nullable_1<System_Internal.Int64>, minValue?: System.Nullable_1<System_Internal.Int64>, maxValue?: System.Nullable_1<System_Internal.Int64>, cyclic?: System.Nullable_1<System_Internal.Boolean>, numbersToCache?: System.Nullable_1<System_Internal.Int64>): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<TProperty>>;
-  HasMethod(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder, method: string, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder | undefined>;
-  HasMethod(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder, method: string): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder>;
-  HasMethod<TEntity>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder_1<TEntity>, method: string): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder_1<TEntity>>;
-  HasNullSortOrder(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder, values: System_Collections_Generic.IReadOnlyList_1<Npgsql_EntityFrameworkCore_PostgreSQL_Metadata.NullSortOrder>, fromDataAnnotation: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder | undefined>;
-  HasNullSortOrder(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder, ...values: Npgsql_EntityFrameworkCore_PostgreSQL_Metadata.NullSortOrder[]): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder>;
-  HasNullSortOrder<TEntity>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder_1<TEntity>, ...values: Npgsql_EntityFrameworkCore_PostgreSQL_Metadata.NullSortOrder[]): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder_1<TEntity>>;
-  HasOperators(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder, operators: System_Collections_Generic.IReadOnlyList_1<System_Internal.String>, fromDataAnnotation: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder | undefined>;
-  HasOperators(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder, ...operators: string[]): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder>;
-  HasOperators<TEntity>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder_1<TEntity>, ...operators: string[]): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder_1<TEntity>>;
+  HasMethod(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder, method: string | null, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder | null>;
+  HasMethod(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder, method: string | null): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder>;
+  HasMethod<TEntity>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder_1<TEntity>, method: string | null): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder_1<TEntity>>;
+  HasNullSortOrder(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder, values: System_Collections_Generic.IReadOnlyList_1<Npgsql_EntityFrameworkCore_PostgreSQL_Metadata.NullSortOrder> | null, fromDataAnnotation: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder | null>;
+  HasNullSortOrder(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder, ...values: Npgsql_EntityFrameworkCore_PostgreSQL_Metadata.NullSortOrder[] | null): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder>;
+  HasNullSortOrder<TEntity>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder_1<TEntity>, ...values: Npgsql_EntityFrameworkCore_PostgreSQL_Metadata.NullSortOrder[] | null): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder_1<TEntity>>;
+  HasOperators(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder, operators: System_Collections_Generic.IReadOnlyList_1<System_Internal.String> | null, fromDataAnnotation: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder | null>;
+  HasOperators(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder, ...operators: string[] | null): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder>;
+  HasOperators<TEntity>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder_1<TEntity>, ...operators: string[] | null): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder_1<TEntity>>;
   HasPostgresArrayConversion<TElementProperty, TElementProvider>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<TElementProperty[]>, convertToProviderExpression: System_Linq_Expressions.Expression_1<System.Func_2<TElementProperty, TElementProvider>>, convertFromProviderExpression: System_Linq_Expressions.Expression_1<System.Func_2<TElementProvider, TElementProperty>>): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<TElementProperty[]>>;
   HasPostgresArrayConversion<TElementProperty, TElementProvider>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<TElementProperty[]>, elementValueConverter: Microsoft_EntityFrameworkCore_Storage_ValueConversion.ValueConverter): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<TElementProperty[]>>;
-  HasPostgresEnum(this: Microsoft_EntityFrameworkCore.ModelBuilder, schema: string, name: string, labels: string[]): Rewrap<this, Microsoft_EntityFrameworkCore.ModelBuilder>;
+  HasPostgresEnum(this: Microsoft_EntityFrameworkCore.ModelBuilder, schema: string | null, name: string, labels: string[]): Rewrap<this, Microsoft_EntityFrameworkCore.ModelBuilder>;
   HasPostgresEnum(this: Microsoft_EntityFrameworkCore.ModelBuilder, name: string, labels: string[]): Rewrap<this, Microsoft_EntityFrameworkCore.ModelBuilder>;
-  HasPostgresEnum<TEnum extends number>(this: Microsoft_EntityFrameworkCore.ModelBuilder, schema?: string, name?: string, nameTranslator?: Npgsql.INpgsqlNameTranslator): Rewrap<this, Microsoft_EntityFrameworkCore.ModelBuilder>;
-  HasPostgresEnum(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder, schema: string, name: string, labels: string[]): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder>;
-  HasPostgresExtension(this: Microsoft_EntityFrameworkCore.ModelBuilder, schema: string, name: string, version?: string): Rewrap<this, Microsoft_EntityFrameworkCore.ModelBuilder>;
+  HasPostgresEnum<TEnum extends number & NonNullable<JsValue>>(this: Microsoft_EntityFrameworkCore.ModelBuilder, schema?: string | null, name?: string | null, nameTranslator?: Npgsql.INpgsqlNameTranslator | null): Rewrap<this, Microsoft_EntityFrameworkCore.ModelBuilder>;
+  HasPostgresEnum(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder, schema: string | null, name: string, labels: string[]): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder>;
+  HasPostgresExtension(this: Microsoft_EntityFrameworkCore.ModelBuilder, schema: string | null, name: string, version?: string | null): Rewrap<this, Microsoft_EntityFrameworkCore.ModelBuilder>;
   HasPostgresExtension(this: Microsoft_EntityFrameworkCore.ModelBuilder, name: string): Rewrap<this, Microsoft_EntityFrameworkCore.ModelBuilder>;
-  HasPostgresExtension(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder, schema: string, name: string, version?: string, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder | undefined>;
-  HasPostgresExtension(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder, name: string, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder | undefined>;
-  HasPostgresRange(this: Microsoft_EntityFrameworkCore.ModelBuilder, schema: string, name: string, subtype: string, canonicalFunction?: string, subtypeOpClass?: string, collation?: string, subtypeDiff?: string): Rewrap<this, Microsoft_EntityFrameworkCore.ModelBuilder>;
+  HasPostgresExtension(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder, schema: string | null, name: string, version?: string | null, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder | null>;
+  HasPostgresExtension(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder, name: string, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder | null>;
+  HasPostgresRange(this: Microsoft_EntityFrameworkCore.ModelBuilder, schema: string | null, name: string, subtype: string, canonicalFunction?: string | null, subtypeOpClass?: string | null, collation?: string | null, subtypeDiff?: string | null): Rewrap<this, Microsoft_EntityFrameworkCore.ModelBuilder>;
   HasPostgresRange(this: Microsoft_EntityFrameworkCore.ModelBuilder, name: string, subtype: string): Rewrap<this, Microsoft_EntityFrameworkCore.ModelBuilder>;
-  HasSequence(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder, name: string, schema: string, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionSequenceBuilder | undefined>;
-  HasStorageParameter(this: Microsoft_EntityFrameworkCore_Metadata_Builders.EntityTypeBuilder, parameterName: string, parameterValue: unknown): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.EntityTypeBuilder>;
-  HasStorageParameter<TEntity>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.EntityTypeBuilder_1<TEntity>, parameterName: string, parameterValue: unknown): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.EntityTypeBuilder_1<TEntity>>;
-  HasStorageParameter(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder, parameterName: string, parameterValue: unknown, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder | undefined>;
-  HasStorageParameter(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder, parameterName: string, parameterValue: unknown, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder | undefined>;
-  HasStorageParameter(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder, parameterName: string, parameterValue: unknown): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder>;
-  HasStorageParameter<TEntity>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder_1<TEntity>, parameterName: string, parameterValue: unknown): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder_1<TEntity>>;
-  HasValueGenerationStrategy(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder, valueGenerationStrategy: System.Nullable_1<Npgsql_EntityFrameworkCore_PostgreSQL_Metadata.NpgsqlValueGenerationStrategy>, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder | undefined>;
-  HasValueGenerationStrategy(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder, valueGenerationStrategy: System.Nullable_1<Npgsql_EntityFrameworkCore_PostgreSQL_Metadata.NpgsqlValueGenerationStrategy>, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder | undefined>;
+  HasSequence(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder, name: string | null, schema: string | null, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionSequenceBuilder | null>;
+  HasStorageParameter(this: Microsoft_EntityFrameworkCore_Metadata_Builders.EntityTypeBuilder, parameterName: string, parameterValue: JsValue | null): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.EntityTypeBuilder>;
+  HasStorageParameter<TEntity>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.EntityTypeBuilder_1<TEntity>, parameterName: string, parameterValue: JsValue | null): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.EntityTypeBuilder_1<TEntity>>;
+  HasStorageParameter(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder, parameterName: string, parameterValue: JsValue | null, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder | null>;
+  HasStorageParameter(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder, parameterName: string, parameterValue: JsValue | null, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder | null>;
+  HasStorageParameter(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder, parameterName: string, parameterValue: JsValue | null): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder>;
+  HasStorageParameter<TEntity>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder_1<TEntity>, parameterName: string, parameterValue: JsValue | null): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder_1<TEntity>>;
+  HasValueGenerationStrategy(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder, valueGenerationStrategy: System.Nullable_1<Npgsql_EntityFrameworkCore_PostgreSQL_Metadata.NpgsqlValueGenerationStrategy>, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionModelBuilder | null>;
+  HasValueGenerationStrategy(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder, valueGenerationStrategy: System.Nullable_1<Npgsql_EntityFrameworkCore_PostgreSQL_Metadata.NpgsqlValueGenerationStrategy>, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder | null>;
   Host(this: Microsoft_EntityFrameworkCore.DbFunctions, inet: NpgsqlTypes.NpgsqlInet): Rewrap<this, string>;
   Host(this: Microsoft_EntityFrameworkCore.DbFunctions, cidr: System.ValueTuple_2<System_Net.IPAddress, System_Internal.Int32>): Rewrap<this, string>;
   HostMask(this: Microsoft_EntityFrameworkCore.DbFunctions, inet: NpgsqlTypes.NpgsqlInet): Rewrap<this, NpgsqlTypes.NpgsqlInet>;
   HostMask(this: Microsoft_EntityFrameworkCore.DbFunctions, cidr: System.ValueTuple_2<System_Net.IPAddress, System_Internal.Int32>): Rewrap<this, System_Net.IPAddress>;
   ILike(this: Microsoft_EntityFrameworkCore.DbFunctions, matchExpression: string, pattern: string): Rewrap<this, boolean>;
   ILike(this: Microsoft_EntityFrameworkCore.DbFunctions, matchExpression: string, pattern: string, escapeCharacter: string): Rewrap<this, boolean>;
-  IncludeProperties(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder, propertyNames: System_Collections_Generic.IReadOnlyList_1<System_Internal.String>, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder | undefined>;
+  IncludeProperties(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder, propertyNames: System_Collections_Generic.IReadOnlyList_1<System_Internal.String>, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder | null>;
   IncludeProperties(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder, ...propertyNames: string[]): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder>;
   IncludeProperties<TEntity>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder_1<TEntity>, ...propertyNames: string[]): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder_1<TEntity>>;
-  IncludeProperties<TEntity>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder_1<TEntity>, includeExpression: System_Linq_Expressions.Expression_1<System.Func_2<TEntity, unknown>>): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder_1<TEntity>>;
+  IncludeProperties<TEntity>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder_1<TEntity>, includeExpression: System_Linq_Expressions.Expression_1<System.Func_2<TEntity, JsValue>>): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder_1<TEntity>>;
   Intersect(this: NpgsqlTypes.NpgsqlCube, other: NpgsqlTypes.NpgsqlCube): Rewrap<this, NpgsqlTypes.NpgsqlCube>;
   Intersect<T>(this: NpgsqlTypes.NpgsqlRange_1<T>, b: NpgsqlTypes.NpgsqlRange_1<T>): Rewrap<this, NpgsqlTypes.NpgsqlRange_1<T>>;
   Intersect<T>(this: System_Collections_Generic.List_1<NpgsqlTypes.NpgsqlRange_1<T>>, multirange2: System_Collections_Generic.List_1<NpgsqlTypes.NpgsqlRange_1<T>>): Rewrap<this, System_Collections_Generic.List_1<NpgsqlTypes.NpgsqlRange_1<T>>>;
@@ -337,10 +335,10 @@ interface __TsonicExtMethods_Microsoft_EntityFrameworkCore {
   IsAdjacentTo<T>(this: System_Collections_Generic.List_1<NpgsqlTypes.NpgsqlRange_1<T>>, range: NpgsqlTypes.NpgsqlRange_1<T>): Rewrap<this, boolean>;
   IsContainedIn(this: NpgsqlTypes.NpgsqlTsQuery, query2: NpgsqlTypes.NpgsqlTsQuery): Rewrap<this, boolean>;
   IsCreatedConcurrently(this: Microsoft_EntityFrameworkCore_Metadata.IReadOnlyIndex): Rewrap<this, System.Nullable_1<System_Internal.Boolean>>;
-  IsCreatedConcurrently(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder, createdConcurrently: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder | undefined>;
+  IsCreatedConcurrently(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder, createdConcurrently: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder | null>;
   IsCreatedConcurrently(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder, createdConcurrently?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder>;
   IsCreatedConcurrently<TEntity>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder_1<TEntity>, createdConcurrently?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder_1<TEntity>>;
-  IsGeneratedTsVectorColumn(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder, config: string, includedPropertyNames: System_Collections_Generic.IReadOnlyList_1<System_Internal.String>, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder | undefined>;
+  IsGeneratedTsVectorColumn(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder, config: string, includedPropertyNames: System_Collections_Generic.IReadOnlyList_1<System_Internal.String>, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder | null>;
   IsGeneratedTsVectorColumn(this: Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder, config: string, ...includedPropertyNames: string[]): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder>;
   IsGeneratedTsVectorColumn(this: Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<NpgsqlTypes.NpgsqlTsVector>, config: string, ...includedPropertyNames: string[]): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<NpgsqlTypes.NpgsqlTsVector>>;
   IsNpgsql(this: Microsoft_EntityFrameworkCore_Infrastructure.DatabaseFacade): Rewrap<this, boolean>;
@@ -351,21 +349,21 @@ interface __TsonicExtMethods_Microsoft_EntityFrameworkCore {
   IsStrictlyRightOf<T>(this: NpgsqlTypes.NpgsqlRange_1<T>, b: NpgsqlTypes.NpgsqlRange_1<T>): Rewrap<this, boolean>;
   IsStrictlyRightOf<T>(this: System_Collections_Generic.List_1<NpgsqlTypes.NpgsqlRange_1<T>>, multirange2: System_Collections_Generic.List_1<NpgsqlTypes.NpgsqlRange_1<T>>): Rewrap<this, boolean>;
   IsStrictlyRightOf<T>(this: System_Collections_Generic.List_1<NpgsqlTypes.NpgsqlRange_1<T>>, range: NpgsqlTypes.NpgsqlRange_1<T>): Rewrap<this, boolean>;
-  IsTsVectorExpressionIndex(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder, config: string): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder | undefined>;
+  IsTsVectorExpressionIndex(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder, config: string | null): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder | null>;
   IsTsVectorExpressionIndex(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder, config: string): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder>;
   IsTsVectorExpressionIndex<TEntity>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder_1<TEntity>, config: string): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder_1<TEntity>>;
   IsUnlogged(this: Microsoft_EntityFrameworkCore_Metadata_Builders.EntityTypeBuilder, unlogged?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.EntityTypeBuilder>;
   IsUnlogged<TEntity>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.EntityTypeBuilder_1<TEntity>, unlogged?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.EntityTypeBuilder_1<TEntity>>;
-  IsUnlogged(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder, unlogged?: boolean, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder | undefined>;
+  IsUnlogged(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder, unlogged?: boolean, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionEntityTypeBuilder | null>;
   JsonAgg<T>(this: Microsoft_EntityFrameworkCore.DbFunctions, input: System_Collections_Generic.IEnumerable_1<T>): Rewrap<this, T[]>;
-  JsonContained(this: Microsoft_EntityFrameworkCore.DbFunctions, contained: unknown, json: unknown): Rewrap<this, boolean>;
-  JsonContains(this: Microsoft_EntityFrameworkCore.DbFunctions, json: unknown, contained: unknown): Rewrap<this, boolean>;
-  JsonExistAll(this: Microsoft_EntityFrameworkCore.DbFunctions, json: unknown, ...keys: string[]): Rewrap<this, boolean>;
-  JsonExistAny(this: Microsoft_EntityFrameworkCore.DbFunctions, json: unknown, ...keys: string[]): Rewrap<this, boolean>;
-  JsonExists(this: Microsoft_EntityFrameworkCore.DbFunctions, json: unknown, key: string): Rewrap<this, boolean>;
+  JsonContained(this: Microsoft_EntityFrameworkCore.DbFunctions, contained: JsValue, json: JsValue): Rewrap<this, boolean>;
+  JsonContains(this: Microsoft_EntityFrameworkCore.DbFunctions, json: JsValue, contained: JsValue): Rewrap<this, boolean>;
+  JsonExistAll(this: Microsoft_EntityFrameworkCore.DbFunctions, json: JsValue, ...keys: string[]): Rewrap<this, boolean>;
+  JsonExistAny(this: Microsoft_EntityFrameworkCore.DbFunctions, json: JsValue, ...keys: string[]): Rewrap<this, boolean>;
+  JsonExists(this: Microsoft_EntityFrameworkCore.DbFunctions, json: JsValue, key: string): Rewrap<this, boolean>;
   JsonObjectAgg<T1, T2>(this: Microsoft_EntityFrameworkCore.DbFunctions, keyValuePairs: System_Collections_Generic.IEnumerable_1<System.ValueTuple_2<T1, T2>>): Rewrap<this, string>;
   JsonObjectAgg<T1, T2, TReturn>(this: Microsoft_EntityFrameworkCore.DbFunctions, keyValuePairs: System_Collections_Generic.IEnumerable_1<System.ValueTuple_2<T1, T2>>): Rewrap<this, TReturn>;
-  JsonTypeof(this: Microsoft_EntityFrameworkCore.DbFunctions, json: unknown): Rewrap<this, string>;
+  JsonTypeof(this: Microsoft_EntityFrameworkCore.DbFunctions, json: JsValue): Rewrap<this, string>;
   JsonbAgg<T>(this: Microsoft_EntityFrameworkCore.DbFunctions, input: System_Collections_Generic.IEnumerable_1<T>): Rewrap<this, T[]>;
   JsonbObjectAgg<T1, T2>(this: Microsoft_EntityFrameworkCore.DbFunctions, keyValuePairs: System_Collections_Generic.IEnumerable_1<System.ValueTuple_2<T1, T2>>): Rewrap<this, string>;
   JsonbObjectAgg<T1, T2, TReturn>(this: Microsoft_EntityFrameworkCore.DbFunctions, keyValuePairs: System_Collections_Generic.IEnumerable_1<System.ValueTuple_2<T1, T2>>): Rewrap<this, TReturn>;
@@ -432,21 +430,21 @@ interface __TsonicExtMethods_Microsoft_EntityFrameworkCore {
   Set7BitMac8(this: Microsoft_EntityFrameworkCore.DbFunctions, macAddress: System_Net_NetworkInformation.PhysicalAddress): Rewrap<this, System_Net_NetworkInformation.PhysicalAddress>;
   SetAreNullsDistinct(this: Microsoft_EntityFrameworkCore_Metadata.IConventionIndex, nullsDistinct: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): Rewrap<this, System.Nullable_1<System_Internal.Boolean>>;
   SetAreNullsDistinct(this: Microsoft_EntityFrameworkCore_Metadata.IMutableIndex, nullsDistinct: System.Nullable_1<System_Internal.Boolean>): Rewrap<this, void>;
-  SetCollation(this: Microsoft_EntityFrameworkCore_Metadata.IConventionIndex, collations: System_Collections_Generic.IReadOnlyList_1<System_Internal.String>, fromDataAnnotation?: boolean): Rewrap<this, System_Collections_Generic.IReadOnlyList_1<System_Internal.String> | undefined>;
-  SetCollation(this: Microsoft_EntityFrameworkCore_Metadata.IMutableIndex, collations: System_Collections_Generic.IReadOnlyList_1<System_Internal.String>): Rewrap<this, void>;
-  SetCompressionMethod(this: Microsoft_EntityFrameworkCore_Metadata.IConventionProperty, compressionMethod: string, fromDataAnnotation?: boolean): Rewrap<this, string | undefined>;
-  SetCompressionMethod(this: Microsoft_EntityFrameworkCore_Metadata.IMutableProperty, compressionMethod: string): Rewrap<this, void>;
-  SetDatabaseTemplate(this: Microsoft_EntityFrameworkCore_Metadata.IConventionModel, template: string, fromDataAnnotation?: boolean): Rewrap<this, string | undefined>;
-  SetDatabaseTemplate(this: Microsoft_EntityFrameworkCore_Metadata.IMutableModel, template: string): Rewrap<this, void>;
+  SetCollation(this: Microsoft_EntityFrameworkCore_Metadata.IConventionIndex, collations: System_Collections_Generic.IReadOnlyList_1<System_Internal.String> | null, fromDataAnnotation?: boolean): Rewrap<this, System_Collections_Generic.IReadOnlyList_1<System_Internal.String> | null>;
+  SetCollation(this: Microsoft_EntityFrameworkCore_Metadata.IMutableIndex, collations: System_Collections_Generic.IReadOnlyList_1<System_Internal.String> | null): Rewrap<this, void>;
+  SetCompressionMethod(this: Microsoft_EntityFrameworkCore_Metadata.IConventionProperty, compressionMethod: string | null, fromDataAnnotation?: boolean): Rewrap<this, string | null>;
+  SetCompressionMethod(this: Microsoft_EntityFrameworkCore_Metadata.IMutableProperty, compressionMethod: string | null): Rewrap<this, void>;
+  SetDatabaseTemplate(this: Microsoft_EntityFrameworkCore_Metadata.IConventionModel, template: string | null, fromDataAnnotation?: boolean): Rewrap<this, string | null>;
+  SetDatabaseTemplate(this: Microsoft_EntityFrameworkCore_Metadata.IMutableModel, template: string | null): Rewrap<this, void>;
   SetDbDataSource(this: Microsoft_EntityFrameworkCore_Infrastructure.DatabaseFacade, dataSource: System_Data_Common.DbDataSource): Rewrap<this, void>;
-  SetHiLoSequenceName(this: Microsoft_EntityFrameworkCore_Metadata.IConventionModel, name: string, fromDataAnnotation?: boolean): Rewrap<this, string | undefined>;
-  SetHiLoSequenceName(this: Microsoft_EntityFrameworkCore_Metadata.IConventionProperty, name: string, fromDataAnnotation?: boolean): Rewrap<this, string | undefined>;
-  SetHiLoSequenceName(this: Microsoft_EntityFrameworkCore_Metadata.IMutableModel, name: string): Rewrap<this, void>;
-  SetHiLoSequenceName(this: Microsoft_EntityFrameworkCore_Metadata.IMutableProperty, name: string): Rewrap<this, void>;
-  SetHiLoSequenceSchema(this: Microsoft_EntityFrameworkCore_Metadata.IConventionModel, value: string, fromDataAnnotation?: boolean): Rewrap<this, string | undefined>;
-  SetHiLoSequenceSchema(this: Microsoft_EntityFrameworkCore_Metadata.IConventionProperty, schema: string, fromDataAnnotation?: boolean): Rewrap<this, string | undefined>;
-  SetHiLoSequenceSchema(this: Microsoft_EntityFrameworkCore_Metadata.IMutableModel, value: string): Rewrap<this, void>;
-  SetHiLoSequenceSchema(this: Microsoft_EntityFrameworkCore_Metadata.IMutableProperty, schema: string): Rewrap<this, void>;
+  SetHiLoSequenceName(this: Microsoft_EntityFrameworkCore_Metadata.IConventionModel, name: string | null, fromDataAnnotation?: boolean): Rewrap<this, string | null>;
+  SetHiLoSequenceName(this: Microsoft_EntityFrameworkCore_Metadata.IConventionProperty, name: string | null, fromDataAnnotation?: boolean): Rewrap<this, string | null>;
+  SetHiLoSequenceName(this: Microsoft_EntityFrameworkCore_Metadata.IMutableModel, name: string | null): Rewrap<this, void>;
+  SetHiLoSequenceName(this: Microsoft_EntityFrameworkCore_Metadata.IMutableProperty, name: string | null): Rewrap<this, void>;
+  SetHiLoSequenceSchema(this: Microsoft_EntityFrameworkCore_Metadata.IConventionModel, value: string | null, fromDataAnnotation?: boolean): Rewrap<this, string | null>;
+  SetHiLoSequenceSchema(this: Microsoft_EntityFrameworkCore_Metadata.IConventionProperty, schema: string | null, fromDataAnnotation?: boolean): Rewrap<this, string | null>;
+  SetHiLoSequenceSchema(this: Microsoft_EntityFrameworkCore_Metadata.IMutableModel, value: string | null): Rewrap<this, void>;
+  SetHiLoSequenceSchema(this: Microsoft_EntityFrameworkCore_Metadata.IMutableProperty, schema: string | null): Rewrap<this, void>;
   SetIdentityIncrementBy(this: Microsoft_EntityFrameworkCore_Metadata.IConventionProperty, incrementBy: System.Nullable_1<System_Internal.Int64>, fromDataAnnotation?: boolean): Rewrap<this, System.Nullable_1<System_Internal.Int64>>;
   SetIdentityIncrementBy(this: Microsoft_EntityFrameworkCore_Metadata.IMutableProperty, incrementBy: System.Nullable_1<System_Internal.Int64>): Rewrap<this, void>;
   SetIdentityIsCyclic(this: Microsoft_EntityFrameworkCore_Metadata.IConventionProperty, cyclic: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): Rewrap<this, System.Nullable_1<System_Internal.Boolean>>;
@@ -459,8 +457,8 @@ interface __TsonicExtMethods_Microsoft_EntityFrameworkCore {
   SetIdentityNumbersToCache(this: Microsoft_EntityFrameworkCore_Metadata.IMutableProperty, numbersToCache: System.Nullable_1<System_Internal.Int64>): Rewrap<this, void>;
   SetIdentityStartValue(this: Microsoft_EntityFrameworkCore_Metadata.IConventionProperty, startValue: System.Nullable_1<System_Internal.Int64>, fromDataAnnotation?: boolean): Rewrap<this, System.Nullable_1<System_Internal.Int64>>;
   SetIdentityStartValue(this: Microsoft_EntityFrameworkCore_Metadata.IMutableProperty, startValue: System.Nullable_1<System_Internal.Int64>): Rewrap<this, void>;
-  SetIncludeProperties(this: Microsoft_EntityFrameworkCore_Metadata.IConventionIndex, properties: System_Collections_Generic.IReadOnlyList_1<System_Internal.String>, fromDataAnnotation?: boolean): Rewrap<this, System_Collections_Generic.IReadOnlyList_1<System_Internal.String> | undefined>;
-  SetIncludeProperties(this: Microsoft_EntityFrameworkCore_Metadata.IMutableIndex, properties: System_Collections_Generic.IReadOnlyList_1<System_Internal.String>): Rewrap<this, void>;
+  SetIncludeProperties(this: Microsoft_EntityFrameworkCore_Metadata.IConventionIndex, properties: System_Collections_Generic.IReadOnlyList_1<System_Internal.String> | null, fromDataAnnotation?: boolean): Rewrap<this, System_Collections_Generic.IReadOnlyList_1<System_Internal.String> | null>;
+  SetIncludeProperties(this: Microsoft_EntityFrameworkCore_Metadata.IMutableIndex, properties: System_Collections_Generic.IReadOnlyList_1<System_Internal.String> | null): Rewrap<this, void>;
   SetIsCreatedConcurrently(this: Microsoft_EntityFrameworkCore_Metadata.IConventionIndex, createdConcurrently: System.Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): Rewrap<this, System.Nullable_1<System_Internal.Boolean>>;
   SetIsCreatedConcurrently(this: Microsoft_EntityFrameworkCore_Metadata.IMutableIndex, createdConcurrently: System.Nullable_1<System_Internal.Boolean>): Rewrap<this, void>;
   SetIsUnlogged(this: Microsoft_EntityFrameworkCore_Metadata.IConventionEntityType, unlogged: boolean, fromDataAnnotation?: boolean): Rewrap<this, boolean>;
@@ -469,32 +467,32 @@ interface __TsonicExtMethods_Microsoft_EntityFrameworkCore {
   SetMaskLength(this: Microsoft_EntityFrameworkCore.DbFunctions, cidr: System_Net.IPNetwork, length: int): Rewrap<this, System_Net.IPNetwork>;
   SetMaskLength(this: Microsoft_EntityFrameworkCore.DbFunctions, cidr: NpgsqlTypes.NpgsqlCidr, length: int): Rewrap<this, NpgsqlTypes.NpgsqlCidr>;
   SetMaskLength(this: Microsoft_EntityFrameworkCore.DbFunctions, cidr: System.ValueTuple_2<System_Net.IPAddress, System_Internal.Int32>, length: int): Rewrap<this, System.ValueTuple_2<System_Net.IPAddress, System_Internal.Int32>>;
-  SetMethod(this: Microsoft_EntityFrameworkCore_Metadata.IConventionIndex, method: string, fromDataAnnotation?: boolean): Rewrap<this, string | undefined>;
-  SetMethod(this: Microsoft_EntityFrameworkCore_Metadata.IMutableIndex, method: string): Rewrap<this, void>;
-  SetNullSortOrder(this: Microsoft_EntityFrameworkCore_Metadata.IConventionIndex, nullSortOrder: System_Collections_Generic.IReadOnlyList_1<Npgsql_EntityFrameworkCore_PostgreSQL_Metadata.NullSortOrder>, fromDataAnnotation?: boolean): Rewrap<this, System_Collections_Generic.IReadOnlyList_1<Npgsql_EntityFrameworkCore_PostgreSQL_Metadata.NullSortOrder> | undefined>;
-  SetNullSortOrder(this: Microsoft_EntityFrameworkCore_Metadata.IMutableIndex, nullSortOrder: System_Collections_Generic.IReadOnlyList_1<Npgsql_EntityFrameworkCore_PostgreSQL_Metadata.NullSortOrder>): Rewrap<this, void>;
-  SetOperators(this: Microsoft_EntityFrameworkCore_Metadata.IConventionIndex, operators: System_Collections_Generic.IReadOnlyList_1<System_Internal.String>, fromDataAnnotation?: boolean): Rewrap<this, System_Collections_Generic.IReadOnlyList_1<System_Internal.String> | undefined>;
-  SetOperators(this: Microsoft_EntityFrameworkCore_Metadata.IMutableIndex, operators: System_Collections_Generic.IReadOnlyList_1<System_Internal.String>): Rewrap<this, void>;
-  SetSequenceName(this: Microsoft_EntityFrameworkCore_Metadata.IConventionProperty, name: string, fromDataAnnotation?: boolean): Rewrap<this, string | undefined>;
-  SetSequenceName(this: Microsoft_EntityFrameworkCore_Metadata.IMutableProperty, name: string): Rewrap<this, void>;
-  SetSequenceNameSuffix(this: Microsoft_EntityFrameworkCore_Metadata.IConventionModel, name: string, fromDataAnnotation?: boolean): Rewrap<this, string | undefined>;
-  SetSequenceNameSuffix(this: Microsoft_EntityFrameworkCore_Metadata.IMutableModel, name: string): Rewrap<this, void>;
-  SetSequenceSchema(this: Microsoft_EntityFrameworkCore_Metadata.IConventionModel, value: string, fromDataAnnotation?: boolean): Rewrap<this, string | undefined>;
-  SetSequenceSchema(this: Microsoft_EntityFrameworkCore_Metadata.IConventionProperty, schema: string, fromDataAnnotation?: boolean): Rewrap<this, string | undefined>;
-  SetSequenceSchema(this: Microsoft_EntityFrameworkCore_Metadata.IMutableModel, value: string): Rewrap<this, void>;
-  SetSequenceSchema(this: Microsoft_EntityFrameworkCore_Metadata.IMutableProperty, schema: string): Rewrap<this, void>;
-  SetStorageParameter(this: Microsoft_EntityFrameworkCore_Metadata.IConventionEntityType, parameterName: string, parameterValue: unknown, fromDataAnnotation?: boolean): Rewrap<this, unknown>;
-  SetStorageParameter(this: Microsoft_EntityFrameworkCore_Metadata.IConventionIndex, parameterName: string, parameterValue: unknown, fromDataAnnotation?: boolean): Rewrap<this, unknown>;
-  SetStorageParameter(this: Microsoft_EntityFrameworkCore_Metadata.IMutableEntityType, parameterName: string, parameterValue: unknown): Rewrap<this, void>;
-  SetStorageParameter(this: Microsoft_EntityFrameworkCore_Metadata.IMutableIndex, parameterName: string, parameterValue: unknown): Rewrap<this, void>;
-  SetTablespace(this: Microsoft_EntityFrameworkCore_Metadata.IConventionModel, tablespace: string, fromDataAnnotation?: boolean): Rewrap<this, string | undefined>;
-  SetTablespace(this: Microsoft_EntityFrameworkCore_Metadata.IMutableModel, tablespace: string): Rewrap<this, void>;
-  SetTsVectorConfig(this: Microsoft_EntityFrameworkCore_Metadata.IConventionIndex, config: string, fromDataAnnotation?: boolean): Rewrap<this, string | undefined>;
+  SetMethod(this: Microsoft_EntityFrameworkCore_Metadata.IConventionIndex, method: string | null, fromDataAnnotation?: boolean): Rewrap<this, string | null>;
+  SetMethod(this: Microsoft_EntityFrameworkCore_Metadata.IMutableIndex, method: string | null): Rewrap<this, void>;
+  SetNullSortOrder(this: Microsoft_EntityFrameworkCore_Metadata.IConventionIndex, nullSortOrder: System_Collections_Generic.IReadOnlyList_1<Npgsql_EntityFrameworkCore_PostgreSQL_Metadata.NullSortOrder> | null, fromDataAnnotation?: boolean): Rewrap<this, System_Collections_Generic.IReadOnlyList_1<Npgsql_EntityFrameworkCore_PostgreSQL_Metadata.NullSortOrder> | null>;
+  SetNullSortOrder(this: Microsoft_EntityFrameworkCore_Metadata.IMutableIndex, nullSortOrder: System_Collections_Generic.IReadOnlyList_1<Npgsql_EntityFrameworkCore_PostgreSQL_Metadata.NullSortOrder> | null): Rewrap<this, void>;
+  SetOperators(this: Microsoft_EntityFrameworkCore_Metadata.IConventionIndex, operators: System_Collections_Generic.IReadOnlyList_1<System_Internal.String> | null, fromDataAnnotation?: boolean): Rewrap<this, System_Collections_Generic.IReadOnlyList_1<System_Internal.String> | null>;
+  SetOperators(this: Microsoft_EntityFrameworkCore_Metadata.IMutableIndex, operators: System_Collections_Generic.IReadOnlyList_1<System_Internal.String> | null): Rewrap<this, void>;
+  SetSequenceName(this: Microsoft_EntityFrameworkCore_Metadata.IConventionProperty, name: string | null, fromDataAnnotation?: boolean): Rewrap<this, string | null>;
+  SetSequenceName(this: Microsoft_EntityFrameworkCore_Metadata.IMutableProperty, name: string | null): Rewrap<this, void>;
+  SetSequenceNameSuffix(this: Microsoft_EntityFrameworkCore_Metadata.IConventionModel, name: string | null, fromDataAnnotation?: boolean): Rewrap<this, string | null>;
+  SetSequenceNameSuffix(this: Microsoft_EntityFrameworkCore_Metadata.IMutableModel, name: string | null): Rewrap<this, void>;
+  SetSequenceSchema(this: Microsoft_EntityFrameworkCore_Metadata.IConventionModel, value: string | null, fromDataAnnotation?: boolean): Rewrap<this, string | null>;
+  SetSequenceSchema(this: Microsoft_EntityFrameworkCore_Metadata.IConventionProperty, schema: string | null, fromDataAnnotation?: boolean): Rewrap<this, string | null>;
+  SetSequenceSchema(this: Microsoft_EntityFrameworkCore_Metadata.IMutableModel, value: string | null): Rewrap<this, void>;
+  SetSequenceSchema(this: Microsoft_EntityFrameworkCore_Metadata.IMutableProperty, schema: string | null): Rewrap<this, void>;
+  SetStorageParameter(this: Microsoft_EntityFrameworkCore_Metadata.IConventionEntityType, parameterName: string, parameterValue: JsValue | null, fromDataAnnotation?: boolean): Rewrap<this, JsValue>;
+  SetStorageParameter(this: Microsoft_EntityFrameworkCore_Metadata.IConventionIndex, parameterName: string, parameterValue: JsValue | null, fromDataAnnotation?: boolean): Rewrap<this, JsValue>;
+  SetStorageParameter(this: Microsoft_EntityFrameworkCore_Metadata.IMutableEntityType, parameterName: string, parameterValue: JsValue | null): Rewrap<this, void>;
+  SetStorageParameter(this: Microsoft_EntityFrameworkCore_Metadata.IMutableIndex, parameterName: string, parameterValue: JsValue | null): Rewrap<this, void>;
+  SetTablespace(this: Microsoft_EntityFrameworkCore_Metadata.IConventionModel, tablespace: string | null, fromDataAnnotation?: boolean): Rewrap<this, string | null>;
+  SetTablespace(this: Microsoft_EntityFrameworkCore_Metadata.IMutableModel, tablespace: string | null): Rewrap<this, void>;
+  SetTsVectorConfig(this: Microsoft_EntityFrameworkCore_Metadata.IConventionIndex, config: string | null, fromDataAnnotation?: boolean): Rewrap<this, string | null>;
   SetTsVectorConfig(this: Microsoft_EntityFrameworkCore_Metadata.IConventionProperty, config: string, fromDataAnnotation?: boolean): Rewrap<this, string>;
-  SetTsVectorConfig(this: Microsoft_EntityFrameworkCore_Metadata.IMutableIndex, config: string): Rewrap<this, void>;
-  SetTsVectorConfig(this: Microsoft_EntityFrameworkCore_Metadata.IMutableProperty, config: string): Rewrap<this, void>;
-  SetTsVectorProperties(this: Microsoft_EntityFrameworkCore_Metadata.IConventionProperty, properties: System_Collections_Generic.IReadOnlyList_1<System_Internal.String>, fromDataAnnotation?: boolean): Rewrap<this, System_Collections_Generic.IReadOnlyList_1<System_Internal.String> | undefined>;
-  SetTsVectorProperties(this: Microsoft_EntityFrameworkCore_Metadata.IMutableProperty, properties: System_Collections_Generic.IReadOnlyList_1<System_Internal.String>): Rewrap<this, void>;
+  SetTsVectorConfig(this: Microsoft_EntityFrameworkCore_Metadata.IMutableIndex, config: string | null): Rewrap<this, void>;
+  SetTsVectorConfig(this: Microsoft_EntityFrameworkCore_Metadata.IMutableProperty, config: string | null): Rewrap<this, void>;
+  SetTsVectorProperties(this: Microsoft_EntityFrameworkCore_Metadata.IConventionProperty, properties: System_Collections_Generic.IReadOnlyList_1<System_Internal.String> | null, fromDataAnnotation?: boolean): Rewrap<this, System_Collections_Generic.IReadOnlyList_1<System_Internal.String> | null>;
+  SetTsVectorProperties(this: Microsoft_EntityFrameworkCore_Metadata.IMutableProperty, properties: System_Collections_Generic.IReadOnlyList_1<System_Internal.String> | null): Rewrap<this, void>;
   SetValueGenerationStrategy(this: Microsoft_EntityFrameworkCore_Metadata.IConventionModel, value: System.Nullable_1<Npgsql_EntityFrameworkCore_PostgreSQL_Metadata.NpgsqlValueGenerationStrategy>, fromDataAnnotation?: boolean): Rewrap<this, System.Nullable_1<Npgsql_EntityFrameworkCore_PostgreSQL_Metadata.NpgsqlValueGenerationStrategy>>;
   SetValueGenerationStrategy(this: Microsoft_EntityFrameworkCore_Metadata.IConventionProperty, value: System.Nullable_1<Npgsql_EntityFrameworkCore_PostgreSQL_Metadata.NpgsqlValueGenerationStrategy>, fromDataAnnotation?: boolean): Rewrap<this, System.Nullable_1<Npgsql_EntityFrameworkCore_PostgreSQL_Metadata.NpgsqlValueGenerationStrategy>>;
   SetValueGenerationStrategy(this: Microsoft_EntityFrameworkCore_Metadata.IConventionProperty, value: System.Nullable_1<Npgsql_EntityFrameworkCore_PostgreSQL_Metadata.NpgsqlValueGenerationStrategy>, storeObject: Microsoft_EntityFrameworkCore_Metadata.StoreObjectIdentifier, fromDataAnnotation?: boolean): Rewrap<this, System.Nullable_1<Npgsql_EntityFrameworkCore_PostgreSQL_Metadata.NpgsqlValueGenerationStrategy>>;
@@ -562,16 +560,16 @@ interface __TsonicExtMethods_Microsoft_EntityFrameworkCore {
   Union<T>(this: System_Collections_Generic.List_1<NpgsqlTypes.NpgsqlRange_1<T>>, multirange2: System_Collections_Generic.List_1<NpgsqlTypes.NpgsqlRange_1<T>>): Rewrap<this, System_Collections_Generic.List_1<NpgsqlTypes.NpgsqlRange_1<T>>>;
   UseCockroachDbInterleaveInParent(this: Microsoft_EntityFrameworkCore_Metadata_Builders.EntityTypeBuilder, parentTableType: System.Type, interleavePrefix: System_Collections_Generic.List_1<System_Internal.String>): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.EntityTypeBuilder>;
   UseCockroachDbInterleaveInParent<TEntity>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.EntityTypeBuilder_1<TEntity>, parentTableType: System.Type, interleavePrefix: System_Collections_Generic.List_1<System_Internal.String>): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.EntityTypeBuilder_1<TEntity>>;
-  UseCollation(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder, values: System_Collections_Generic.IReadOnlyList_1<System_Internal.String>, fromDataAnnotation: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder | undefined>;
-  UseCollation(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder, ...values: string[]): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder>;
-  UseCollation<TEntity>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder_1<TEntity>, ...values: string[]): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder_1<TEntity>>;
-  UseCompressionMethod(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder, compressionMethod: string, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder | undefined>;
-  UseCompressionMethod(this: Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder, compressionMethod: string): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder>;
-  UseCompressionMethod<TEntity>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<TEntity>, compressionMethod: string): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<TEntity>>;
+  UseCollation(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder, values: System_Collections_Generic.IReadOnlyList_1<System_Internal.String> | null, fromDataAnnotation: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionIndexBuilder | null>;
+  UseCollation(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder, ...values: string[] | null): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder>;
+  UseCollation<TEntity>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder_1<TEntity>, ...values: string[] | null): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IndexBuilder_1<TEntity>>;
+  UseCompressionMethod(this: Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder, compressionMethod: string | null, fromDataAnnotation?: boolean): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.IConventionPropertyBuilder | null>;
+  UseCompressionMethod(this: Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder, compressionMethod: string | null): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder>;
+  UseCompressionMethod<TEntity>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<TEntity>, compressionMethod: string | null): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<TEntity>>;
   UseDatabaseTemplate(this: Microsoft_EntityFrameworkCore.ModelBuilder, templateDatabaseName: string): Rewrap<this, Microsoft_EntityFrameworkCore.ModelBuilder>;
-  UseHiLo(this: Microsoft_EntityFrameworkCore.ModelBuilder, name?: string, schema?: string): Rewrap<this, Microsoft_EntityFrameworkCore.ModelBuilder>;
-  UseHiLo(this: Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder, name?: string, schema?: string): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder>;
-  UseHiLo<TProperty>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<TProperty>, name?: string, schema?: string): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<TProperty>>;
+  UseHiLo(this: Microsoft_EntityFrameworkCore.ModelBuilder, name?: string | null, schema?: string | null): Rewrap<this, Microsoft_EntityFrameworkCore.ModelBuilder>;
+  UseHiLo(this: Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder, name?: string | null, schema?: string | null): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder>;
+  UseHiLo<TProperty>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<TProperty>, name?: string | null, schema?: string | null): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<TProperty>>;
   UseIdentityAlwaysColumn(this: Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder>;
   UseIdentityAlwaysColumn<TProperty>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<TProperty>): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<TProperty>>;
   UseIdentityAlwaysColumns(this: Microsoft_EntityFrameworkCore.ModelBuilder): Rewrap<this, Microsoft_EntityFrameworkCore.ModelBuilder>;
@@ -581,19 +579,19 @@ interface __TsonicExtMethods_Microsoft_EntityFrameworkCore {
   UseIdentityColumn(this: Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder>;
   UseIdentityColumn<TProperty>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<TProperty>): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<TProperty>>;
   UseIdentityColumns(this: Microsoft_EntityFrameworkCore.ModelBuilder): Rewrap<this, Microsoft_EntityFrameworkCore.ModelBuilder>;
-  UseKeySequences(this: Microsoft_EntityFrameworkCore.ModelBuilder, nameSuffix?: string, schema?: string): Rewrap<this, Microsoft_EntityFrameworkCore.ModelBuilder>;
-  UseNpgsql(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder, npgsqlOptionsAction?: System.Action_1<Npgsql_EntityFrameworkCore_PostgreSQL_Infrastructure.NpgsqlDbContextOptionsBuilder>): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>;
-  UseNpgsql(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder, connectionString: string, npgsqlOptionsAction?: System.Action_1<Npgsql_EntityFrameworkCore_PostgreSQL_Infrastructure.NpgsqlDbContextOptionsBuilder>): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>;
-  UseNpgsql(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder, connection: System_Data_Common.DbConnection, npgsqlOptionsAction?: System.Action_1<Npgsql_EntityFrameworkCore_PostgreSQL_Infrastructure.NpgsqlDbContextOptionsBuilder>): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>;
-  UseNpgsql(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder, connection: System_Data_Common.DbConnection, contextOwnsConnection: boolean, npgsqlOptionsAction?: System.Action_1<Npgsql_EntityFrameworkCore_PostgreSQL_Infrastructure.NpgsqlDbContextOptionsBuilder>): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>;
-  UseNpgsql(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder, dataSource: System_Data_Common.DbDataSource, npgsqlOptionsAction?: System.Action_1<Npgsql_EntityFrameworkCore_PostgreSQL_Infrastructure.NpgsqlDbContextOptionsBuilder>): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>;
-  UseNpgsql<TContext extends Microsoft_EntityFrameworkCore.DbContext>(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>, npgsqlOptionsAction?: System.Action_1<Npgsql_EntityFrameworkCore_PostgreSQL_Infrastructure.NpgsqlDbContextOptionsBuilder>): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>>;
-  UseNpgsql<TContext extends Microsoft_EntityFrameworkCore.DbContext>(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>, connectionString: string, npgsqlOptionsAction?: System.Action_1<Npgsql_EntityFrameworkCore_PostgreSQL_Infrastructure.NpgsqlDbContextOptionsBuilder>): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>>;
-  UseNpgsql<TContext extends Microsoft_EntityFrameworkCore.DbContext>(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>, connection: System_Data_Common.DbConnection, npgsqlOptionsAction?: System.Action_1<Npgsql_EntityFrameworkCore_PostgreSQL_Infrastructure.NpgsqlDbContextOptionsBuilder>): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>>;
-  UseNpgsql<TContext extends Microsoft_EntityFrameworkCore.DbContext>(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>, connection: System_Data_Common.DbConnection, contextOwnsConnection: boolean, npgsqlOptionsAction?: System.Action_1<Npgsql_EntityFrameworkCore_PostgreSQL_Infrastructure.NpgsqlDbContextOptionsBuilder>): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>>;
-  UseNpgsql<TContext extends Microsoft_EntityFrameworkCore.DbContext>(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>, dataSource: System_Data_Common.DbDataSource, npgsqlOptionsAction?: System.Action_1<Npgsql_EntityFrameworkCore_PostgreSQL_Infrastructure.NpgsqlDbContextOptionsBuilder>): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>>;
-  UseSequence(this: Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder, name?: string, schema?: string): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder>;
-  UseSequence<TProperty>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<TProperty>, name?: string, schema?: string): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<TProperty>>;
+  UseKeySequences(this: Microsoft_EntityFrameworkCore.ModelBuilder, nameSuffix?: string | null, schema?: string | null): Rewrap<this, Microsoft_EntityFrameworkCore.ModelBuilder>;
+  UseNpgsql(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder, npgsqlOptionsAction?: System.Action_1<Npgsql_EntityFrameworkCore_PostgreSQL_Infrastructure.NpgsqlDbContextOptionsBuilder> | null): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>;
+  UseNpgsql(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder, connectionString: string | null, npgsqlOptionsAction?: System.Action_1<Npgsql_EntityFrameworkCore_PostgreSQL_Infrastructure.NpgsqlDbContextOptionsBuilder> | null): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>;
+  UseNpgsql(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder, connection: System_Data_Common.DbConnection, npgsqlOptionsAction?: System.Action_1<Npgsql_EntityFrameworkCore_PostgreSQL_Infrastructure.NpgsqlDbContextOptionsBuilder> | null): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>;
+  UseNpgsql(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder, connection: System_Data_Common.DbConnection, contextOwnsConnection: boolean, npgsqlOptionsAction?: System.Action_1<Npgsql_EntityFrameworkCore_PostgreSQL_Infrastructure.NpgsqlDbContextOptionsBuilder> | null): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>;
+  UseNpgsql(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder, dataSource: System_Data_Common.DbDataSource, npgsqlOptionsAction?: System.Action_1<Npgsql_EntityFrameworkCore_PostgreSQL_Infrastructure.NpgsqlDbContextOptionsBuilder> | null): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>;
+  UseNpgsql<TContext extends Microsoft_EntityFrameworkCore.DbContext>(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>, npgsqlOptionsAction?: System.Action_1<Npgsql_EntityFrameworkCore_PostgreSQL_Infrastructure.NpgsqlDbContextOptionsBuilder> | null): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>>;
+  UseNpgsql<TContext extends Microsoft_EntityFrameworkCore.DbContext>(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>, connectionString: string | null, npgsqlOptionsAction?: System.Action_1<Npgsql_EntityFrameworkCore_PostgreSQL_Infrastructure.NpgsqlDbContextOptionsBuilder> | null): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>>;
+  UseNpgsql<TContext extends Microsoft_EntityFrameworkCore.DbContext>(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>, connection: System_Data_Common.DbConnection, npgsqlOptionsAction?: System.Action_1<Npgsql_EntityFrameworkCore_PostgreSQL_Infrastructure.NpgsqlDbContextOptionsBuilder> | null): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>>;
+  UseNpgsql<TContext extends Microsoft_EntityFrameworkCore.DbContext>(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>, connection: System_Data_Common.DbConnection, contextOwnsConnection: boolean, npgsqlOptionsAction?: System.Action_1<Npgsql_EntityFrameworkCore_PostgreSQL_Infrastructure.NpgsqlDbContextOptionsBuilder> | null): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>>;
+  UseNpgsql<TContext extends Microsoft_EntityFrameworkCore.DbContext>(this: Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>, dataSource: System_Data_Common.DbDataSource, npgsqlOptionsAction?: System.Action_1<Npgsql_EntityFrameworkCore_PostgreSQL_Infrastructure.NpgsqlDbContextOptionsBuilder> | null): Rewrap<this, Microsoft_EntityFrameworkCore.DbContextOptionsBuilder_1<TContext>>;
+  UseSequence(this: Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder, name?: string | null, schema?: string | null): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder>;
+  UseSequence<TProperty>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<TProperty>, name?: string | null, schema?: string | null): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<TProperty>>;
   UseSerialColumn(this: Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder>;
   UseSerialColumn<TProperty>(this: Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<TProperty>): Rewrap<this, Microsoft_EntityFrameworkCore_Metadata_Builders.PropertyBuilder_1<TProperty>>;
   UseSerialColumns(this: Microsoft_EntityFrameworkCore.ModelBuilder): Rewrap<this, Microsoft_EntityFrameworkCore.ModelBuilder>;
@@ -618,7 +616,7 @@ interface __TsonicExtMethods_Microsoft_EntityFrameworkCore {
 
 // Generic helper type for extension methods in namespace: Microsoft.EntityFrameworkCore
 interface __TsonicExtApplier_Microsoft_EntityFrameworkCore {
-  __tsonic_shape: unknown;
+  __tsonic_shape: JsValue;
   __tsonic_type: __TsonicExtMethods_Microsoft_EntityFrameworkCore;
 }
 
@@ -635,7 +633,7 @@ interface __TsonicExtMethods_Microsoft_EntityFrameworkCore_Metadata_Internal {
 
 // Generic helper type for extension methods in namespace: Microsoft.EntityFrameworkCore.Metadata.Internal
 interface __TsonicExtApplier_Microsoft_EntityFrameworkCore_Metadata_Internal {
-  __tsonic_shape: unknown;
+  __tsonic_shape: JsValue;
   __tsonic_type: __TsonicExtMethods_Microsoft_EntityFrameworkCore_Metadata_Internal;
 }
 
@@ -647,12 +645,12 @@ export type ExtensionMethods_Microsoft_EntityFrameworkCore_Metadata_Internal<TSh
 // Extension method table for namespace: Microsoft.Extensions.DependencyInjection
 interface __TsonicExtMethods_Microsoft_Extensions_DependencyInjection {
   AddEntityFrameworkNpgsql(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
-  AddNpgsql<TContext extends Microsoft_EntityFrameworkCore.DbContext>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, connectionString: string, npgsqlOptionsAction?: System.Action_1<Npgsql_EntityFrameworkCore_PostgreSQL_Infrastructure.NpgsqlDbContextOptionsBuilder>, optionsAction?: System.Action_1<Microsoft_EntityFrameworkCore.DbContextOptionsBuilder>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddNpgsql<TContext extends Microsoft_EntityFrameworkCore.DbContext>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, connectionString: string | null, npgsqlOptionsAction?: System.Action_1<Npgsql_EntityFrameworkCore_PostgreSQL_Infrastructure.NpgsqlDbContextOptionsBuilder> | null, optionsAction?: System.Action_1<Microsoft_EntityFrameworkCore.DbContextOptionsBuilder> | null): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
 }
 
 // Generic helper type for extension methods in namespace: Microsoft.Extensions.DependencyInjection
 interface __TsonicExtApplier_Microsoft_Extensions_DependencyInjection {
-  __tsonic_shape: unknown;
+  __tsonic_shape: JsValue;
   __tsonic_type: __TsonicExtMethods_Microsoft_Extensions_DependencyInjection;
 }
 
@@ -663,15 +661,15 @@ export type ExtensionMethods_Microsoft_Extensions_DependencyInjection<TShape> =
 
 // Extension method table for namespace: Npgsql.EntityFrameworkCore.PostgreSQL.Extensions.Internal
 interface __TsonicExtMethods_Npgsql_EntityFrameworkCore_PostgreSQL_Extensions_Internal {
-  TryConvertToArray(this: Microsoft_EntityFrameworkCore_Query.ShapedQueryExpression, array: Microsoft_EntityFrameworkCore_Query_SqlExpressions.SqlExpression, ignoreOrderings?: boolean, ignorePredicate?: boolean): Rewrap<this, boolean>;
-  TryExtractArray(this: Microsoft_EntityFrameworkCore_Query.ShapedQueryExpression, array: Microsoft_EntityFrameworkCore_Query_SqlExpressions.SqlExpression, ignoreOrderings?: boolean, ignorePredicate?: boolean): Rewrap<this, boolean>;
-  TryExtractArray(this: Microsoft_EntityFrameworkCore_Query.ShapedQueryExpression, array: Microsoft_EntityFrameworkCore_Query_SqlExpressions.SqlExpression, projectedColumn: Microsoft_EntityFrameworkCore_Query_SqlExpressions.ColumnExpression, ignoreOrderings?: boolean, ignorePredicate?: boolean): Rewrap<this, boolean>;
-  TryExtractJsonArray(this: Microsoft_EntityFrameworkCore_Query.ShapedQueryExpression, jsonArray: Microsoft_EntityFrameworkCore_Query_SqlExpressions.SqlExpression, projectedElement: Microsoft_EntityFrameworkCore_Query_SqlExpressions.SqlExpression, isElementNullable: boolean, ignoreOrderings?: boolean, ignorePredicate?: boolean): Rewrap<this, boolean>;
+  TryConvertToArray(this: Microsoft_EntityFrameworkCore_Query.ShapedQueryExpression, array: Microsoft_EntityFrameworkCore_Query_SqlExpressions.SqlExpression | null, ignoreOrderings?: boolean, ignorePredicate?: boolean): Rewrap<this, boolean>;
+  TryExtractArray(this: Microsoft_EntityFrameworkCore_Query.ShapedQueryExpression, array: Microsoft_EntityFrameworkCore_Query_SqlExpressions.SqlExpression | null, ignoreOrderings?: boolean, ignorePredicate?: boolean): Rewrap<this, boolean>;
+  TryExtractArray(this: Microsoft_EntityFrameworkCore_Query.ShapedQueryExpression, array: Microsoft_EntityFrameworkCore_Query_SqlExpressions.SqlExpression | null, projectedColumn: Microsoft_EntityFrameworkCore_Query_SqlExpressions.ColumnExpression | null, ignoreOrderings?: boolean, ignorePredicate?: boolean): Rewrap<this, boolean>;
+  TryExtractJsonArray(this: Microsoft_EntityFrameworkCore_Query.ShapedQueryExpression, jsonArray: Microsoft_EntityFrameworkCore_Query_SqlExpressions.SqlExpression | null, projectedElement: Microsoft_EntityFrameworkCore_Query_SqlExpressions.SqlExpression | null, isElementNullable: boolean, ignoreOrderings?: boolean, ignorePredicate?: boolean): Rewrap<this, boolean>;
 }
 
 // Generic helper type for extension methods in namespace: Npgsql.EntityFrameworkCore.PostgreSQL.Extensions.Internal
 interface __TsonicExtApplier_Npgsql_EntityFrameworkCore_PostgreSQL_Extensions_Internal {
-  __tsonic_shape: unknown;
+  __tsonic_shape: JsValue;
   __tsonic_type: __TsonicExtMethods_Npgsql_EntityFrameworkCore_PostgreSQL_Extensions_Internal;
 }
 
@@ -682,21 +680,21 @@ export type ExtensionMethods_Npgsql_EntityFrameworkCore_PostgreSQL_Extensions_In
 
 // Extension method table for namespace: Npgsql.EntityFrameworkCore.PostgreSQL.Internal
 interface __TsonicExtMethods_Npgsql_EntityFrameworkCore_PostgreSQL_Internal {
-  CollationFound(this: Microsoft_EntityFrameworkCore_Diagnostics.IDiagnosticsLogger_1<Microsoft_EntityFrameworkCore.DbLoggerCategory_Scaffolding>, schema: string, collationName: string, lcCollate: string, lcCtype: string, provider: string, deterministic: boolean): Rewrap<this, void>;
-  ColumnFound(this: Microsoft_EntityFrameworkCore_Diagnostics.IDiagnosticsLogger_1<Microsoft_EntityFrameworkCore.DbLoggerCategory_Scaffolding>, tableName: string, columnName: string, dataTypeName: string, nullable: boolean, identity: boolean, defaultValue: string, computedValue: string): Rewrap<this, void>;
+  CollationFound(this: Microsoft_EntityFrameworkCore_Diagnostics.IDiagnosticsLogger_1<Microsoft_EntityFrameworkCore.DbLoggerCategory_Scaffolding>, schema: string, collationName: string, lcCollate: string, lcCtype: string, provider: string | null, deterministic: boolean): Rewrap<this, void>;
+  ColumnFound(this: Microsoft_EntityFrameworkCore_Diagnostics.IDiagnosticsLogger_1<Microsoft_EntityFrameworkCore.DbLoggerCategory_Scaffolding>, tableName: string, columnName: string, dataTypeName: string, nullable: boolean, identity: boolean, defaultValue: string | null, computedValue: string | null): Rewrap<this, void>;
   EnumColumnSkippedWarning(this: Microsoft_EntityFrameworkCore_Diagnostics.IDiagnosticsLogger_1<Microsoft_EntityFrameworkCore.DbLoggerCategory_Scaffolding>, columnName: string): Rewrap<this, void>;
   ExpressionIndexSkippedWarning(this: Microsoft_EntityFrameworkCore_Diagnostics.IDiagnosticsLogger_1<Microsoft_EntityFrameworkCore.DbLoggerCategory_Scaffolding>, indexName: string, tableName: string): Rewrap<this, void>;
-  ForeignKeyReferencesMissingPrincipalTableWarning(this: Microsoft_EntityFrameworkCore_Diagnostics.IDiagnosticsLogger_1<Microsoft_EntityFrameworkCore.DbLoggerCategory_Scaffolding>, foreignKeyName: string, tableName: string, principalTableName: string): Rewrap<this, void>;
-  MissingSchemaWarning(this: Microsoft_EntityFrameworkCore_Diagnostics.IDiagnosticsLogger_1<Microsoft_EntityFrameworkCore.DbLoggerCategory_Scaffolding>, schemaName: string): Rewrap<this, void>;
-  MissingTableWarning(this: Microsoft_EntityFrameworkCore_Diagnostics.IDiagnosticsLogger_1<Microsoft_EntityFrameworkCore.DbLoggerCategory_Scaffolding>, tableName: string): Rewrap<this, void>;
-  UniqueConstraintFound(this: Microsoft_EntityFrameworkCore_Diagnostics.IDiagnosticsLogger_1<Microsoft_EntityFrameworkCore.DbLoggerCategory_Scaffolding>, uniqueConstraintName: string, tableName: string): Rewrap<this, void>;
-  UnsupportedColumnConstraintSkippedWarning(this: Microsoft_EntityFrameworkCore_Diagnostics.IDiagnosticsLogger_1<Microsoft_EntityFrameworkCore.DbLoggerCategory_Scaffolding>, indexName: string, tableName: string): Rewrap<this, void>;
+  ForeignKeyReferencesMissingPrincipalTableWarning(this: Microsoft_EntityFrameworkCore_Diagnostics.IDiagnosticsLogger_1<Microsoft_EntityFrameworkCore.DbLoggerCategory_Scaffolding>, foreignKeyName: string | null, tableName: string | null, principalTableName: string | null): Rewrap<this, void>;
+  MissingSchemaWarning(this: Microsoft_EntityFrameworkCore_Diagnostics.IDiagnosticsLogger_1<Microsoft_EntityFrameworkCore.DbLoggerCategory_Scaffolding>, schemaName: string | null): Rewrap<this, void>;
+  MissingTableWarning(this: Microsoft_EntityFrameworkCore_Diagnostics.IDiagnosticsLogger_1<Microsoft_EntityFrameworkCore.DbLoggerCategory_Scaffolding>, tableName: string | null): Rewrap<this, void>;
+  UniqueConstraintFound(this: Microsoft_EntityFrameworkCore_Diagnostics.IDiagnosticsLogger_1<Microsoft_EntityFrameworkCore.DbLoggerCategory_Scaffolding>, uniqueConstraintName: string | null, tableName: string): Rewrap<this, void>;
+  UnsupportedColumnConstraintSkippedWarning(this: Microsoft_EntityFrameworkCore_Diagnostics.IDiagnosticsLogger_1<Microsoft_EntityFrameworkCore.DbLoggerCategory_Scaffolding>, indexName: string | null, tableName: string): Rewrap<this, void>;
   UnsupportedColumnIndexSkippedWarning(this: Microsoft_EntityFrameworkCore_Diagnostics.IDiagnosticsLogger_1<Microsoft_EntityFrameworkCore.DbLoggerCategory_Scaffolding>, indexName: string, tableName: string): Rewrap<this, void>;
 }
 
 // Generic helper type for extension methods in namespace: Npgsql.EntityFrameworkCore.PostgreSQL.Internal
 interface __TsonicExtApplier_Npgsql_EntityFrameworkCore_PostgreSQL_Internal {
-  __tsonic_shape: unknown;
+  __tsonic_shape: JsValue;
   __tsonic_type: __TsonicExtMethods_Npgsql_EntityFrameworkCore_PostgreSQL_Internal;
 }
 
@@ -713,7 +711,7 @@ interface __TsonicExtMethods_Npgsql_EntityFrameworkCore_PostgreSQL_Metadata {
 
 // Generic helper type for extension methods in namespace: Npgsql.EntityFrameworkCore.PostgreSQL.Metadata
 interface __TsonicExtApplier_Npgsql_EntityFrameworkCore_PostgreSQL_Metadata {
-  __tsonic_shape: unknown;
+  __tsonic_shape: JsValue;
   __tsonic_type: __TsonicExtMethods_Npgsql_EntityFrameworkCore_PostgreSQL_Metadata;
 }
 
@@ -732,7 +730,7 @@ interface __TsonicExtMethods_Npgsql_Internal {
 
 // Generic helper type for extension methods in namespace: Npgsql.Internal
 interface __TsonicExtApplier_Npgsql_Internal {
-  __tsonic_shape: unknown;
+  __tsonic_shape: JsValue;
   __tsonic_type: __TsonicExtMethods_Npgsql_Internal;
 }
 
@@ -746,12 +744,12 @@ interface __TsonicExtMethods_Npgsql_Replication {
   CreatePgOutputReplicationSlot(this: Npgsql_Replication.LogicalReplicationConnection, slotName: string, temporarySlot?: boolean, slotSnapshotInitMode?: System.Nullable_1<Npgsql_Replication.LogicalSlotSnapshotInitMode>, twoPhase?: boolean, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task_1<Npgsql_Replication_PgOutput.PgOutputReplicationSlot>>;
   CreateTestDecodingReplicationSlot(this: Npgsql_Replication.LogicalReplicationConnection, slotName: string, temporarySlot?: boolean, slotSnapshotInitMode?: System.Nullable_1<Npgsql_Replication.LogicalSlotSnapshotInitMode>, twoPhase?: boolean, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task_1<Npgsql_Replication_TestDecoding.TestDecodingReplicationSlot>>;
   StartReplication(this: Npgsql_Replication.LogicalReplicationConnection, slot: Npgsql_Replication_PgOutput.PgOutputReplicationSlot, options: Npgsql_Replication_PgOutput.PgOutputReplicationOptions, cancellationToken: System_Threading.CancellationToken, walLocation?: System.Nullable_1<NpgsqlTypes.NpgsqlLogSequenceNumber>): Rewrap<this, System_Collections_Generic.IAsyncEnumerable_1<Npgsql_Replication_PgOutput_Messages.PgOutputReplicationMessage>>;
-  StartReplication(this: Npgsql_Replication.LogicalReplicationConnection, slot: Npgsql_Replication_TestDecoding.TestDecodingReplicationSlot, cancellationToken: System_Threading.CancellationToken, options?: Npgsql_Replication_TestDecoding.TestDecodingOptions, walLocation?: System.Nullable_1<NpgsqlTypes.NpgsqlLogSequenceNumber>): Rewrap<this, System_Collections_Generic.IAsyncEnumerable_1<Npgsql_Replication_TestDecoding.TestDecodingData>>;
+  StartReplication(this: Npgsql_Replication.LogicalReplicationConnection, slot: Npgsql_Replication_TestDecoding.TestDecodingReplicationSlot, cancellationToken: System_Threading.CancellationToken, options?: Npgsql_Replication_TestDecoding.TestDecodingOptions | null, walLocation?: System.Nullable_1<NpgsqlTypes.NpgsqlLogSequenceNumber>): Rewrap<this, System_Collections_Generic.IAsyncEnumerable_1<Npgsql_Replication_TestDecoding.TestDecodingData>>;
 }
 
 // Generic helper type for extension methods in namespace: Npgsql.Replication
 interface __TsonicExtApplier_Npgsql_Replication {
-  __tsonic_shape: unknown;
+  __tsonic_shape: JsValue;
   __tsonic_type: __TsonicExtMethods_Npgsql_Replication;
 }
 
@@ -763,12 +761,12 @@ export type ExtensionMethods_Npgsql_Replication<TShape> =
 // Extension method table for namespace: Npgsql.Replication.Internal
 interface __TsonicExtMethods_Npgsql_Replication_Internal {
   CreateLogicalReplicationSlot(this: Npgsql_Replication.LogicalReplicationConnection, slotName: string, outputPlugin: string, isTemporary?: boolean, slotSnapshotInitMode?: System.Nullable_1<Npgsql_Replication.LogicalSlotSnapshotInitMode>, twoPhase?: boolean, cancellationToken?: System_Threading.CancellationToken): Rewrap<this, System_Threading_Tasks.Task_1<Npgsql_Replication.ReplicationSlotOptions>>;
-  StartLogicalReplication(this: Npgsql_Replication.LogicalReplicationConnection, slot: Npgsql_Replication_Internal.LogicalReplicationSlot, cancellationToken: System_Threading.CancellationToken, walLocation?: System.Nullable_1<NpgsqlTypes.NpgsqlLogSequenceNumber>, options?: System_Collections_Generic.IEnumerable_1<System_Collections_Generic.KeyValuePair_2<System_Internal.String, System_Internal.String>>, bypassingStream?: boolean): Rewrap<this, System_Collections_Generic.IAsyncEnumerable_1<Npgsql_Replication.XLogDataMessage>>;
+  StartLogicalReplication(this: Npgsql_Replication.LogicalReplicationConnection, slot: Npgsql_Replication_Internal.LogicalReplicationSlot, cancellationToken: System_Threading.CancellationToken, walLocation?: System.Nullable_1<NpgsqlTypes.NpgsqlLogSequenceNumber>, options?: System_Collections_Generic.IEnumerable_1<System_Collections_Generic.KeyValuePair_2<System_Internal.String, System_Internal.String>> | null, bypassingStream?: boolean): Rewrap<this, System_Collections_Generic.IAsyncEnumerable_1<Npgsql_Replication.XLogDataMessage>>;
 }
 
 // Generic helper type for extension methods in namespace: Npgsql.Replication.Internal
 interface __TsonicExtApplier_Npgsql_Replication_Internal {
-  __tsonic_shape: unknown;
+  __tsonic_shape: JsValue;
   __tsonic_type: __TsonicExtMethods_Npgsql_Replication_Internal;
 }
 

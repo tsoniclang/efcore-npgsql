@@ -13,10 +13,10 @@ import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString, U
 export { PostgresArrayType as PostgresArrayType } from './Npgsql.PostgresTypes/internal/index.js';
 export { PostgresBaseType as PostgresBaseType } from './Npgsql.PostgresTypes/internal/index.js';
 export { PostgresCompositeType as PostgresCompositeType } from './Npgsql.PostgresTypes/internal/index.js';
+export { PostgresCompositeType_Field as PostgresCompositeType_Field } from './Npgsql.PostgresTypes/internal/index.js';
 export { PostgresDomainType as PostgresDomainType } from './Npgsql.PostgresTypes/internal/index.js';
 export { PostgresEnumType as PostgresEnumType } from './Npgsql.PostgresTypes/internal/index.js';
 export { PostgresMultirangeType as PostgresMultirangeType } from './Npgsql.PostgresTypes/internal/index.js';
 export { PostgresRangeType as PostgresRangeType } from './Npgsql.PostgresTypes/internal/index.js';
 export { PostgresType as PostgresType } from './Npgsql.PostgresTypes/internal/index.js';
 export { UnknownBackendType as UnknownBackendType } from './Npgsql.PostgresTypes/internal/index.js';
-export { PostgresCompositeType_Field as PostgresCompositeType_Field } from './Npgsql.PostgresTypes/internal/index.js';

@@ -2,8 +2,9 @@
 // Namespace: Npgsql.PostgresTypes
 // Assembly: Npgsql
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { IReadOnlyList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
@@ -106,8 +107,8 @@ export type PostgresMultirangeType = PostgresMultirangeType$instance;
 export interface PostgresRangeType$instance extends PostgresType {
     readonly __tsonic_type_Npgsql_PostgresTypes_PostgresRangeType: never;
 
-    get Multirange(): PostgresMultirangeType | undefined;
-    set Multirange(value: PostgresMultirangeType | undefined);
+    get Multirange(): PostgresMultirangeType | null;
+    set Multirange(value: PostgresMultirangeType | null);
     readonly Subtype: PostgresType;
 }
 
@@ -121,16 +122,16 @@ export type PostgresRangeType = PostgresRangeType$instance;
 export interface PostgresType$instance {
     readonly __tsonic_type_Npgsql_PostgresTypes_PostgresType: never;
 
-    get Array(): PostgresArrayType | undefined;
-    set Array(value: PostgresArrayType | undefined);
+    get Array(): PostgresArrayType | null;
+    set Array(value: PostgresArrayType | null);
     readonly DisplayName: string;
     readonly FullName: string;
     readonly InternalName: string;
     readonly Name: string;
     readonly Namespace: string;
     readonly OID: uint;
-    get Range(): PostgresRangeType | undefined;
-    set Range(value: PostgresRangeType | undefined);
+    get Range(): PostgresRangeType | null;
+    set Range(value: PostgresRangeType | null);
     ToString(): string;
 }
 
