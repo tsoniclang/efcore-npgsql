@@ -2,8 +2,9 @@
 // Namespace: Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations
 // Assembly: Npgsql.EntityFrameworkCore.PostgreSQL
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
@@ -23,10 +24,10 @@ export interface NpgsqlCreateDatabaseOperation$instance extends DatabaseOperatio
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_IMutableAnnotatable: never;
 
     Name: string;
-    get Tablespace(): string | undefined;
-    set Tablespace(value: string | undefined);
-    get Template(): string | undefined;
-    set Template(value: string | undefined);
+    get Tablespace(): string | null;
+    set Tablespace(value: string | null);
+    get Template(): string | null;
+    set Template(value: string | null);
 }
 
 

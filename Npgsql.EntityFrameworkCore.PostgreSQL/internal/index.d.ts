@@ -2,8 +2,9 @@
 // Namespace: Npgsql.EntityFrameworkCore.PostgreSQL
 // Assembly: Npgsql.EntityFrameworkCore.PostgreSQL
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
@@ -18,7 +19,7 @@ export interface NpgsqlRetryingExecutionStrategy$instance extends ExecutionStrat
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Storage_IExecutionStrategy: never;
 
-    ShouldRetryOn(exception: Exception): boolean;
+    ShouldRetryOn(exception: Exception | null): boolean;
 }
 
 
@@ -27,9 +28,9 @@ export const NpgsqlRetryingExecutionStrategy: {
     new(dependencies: ExecutionStrategyDependencies): NpgsqlRetryingExecutionStrategy;
     new(context: DbContext, maxRetryCount: int): NpgsqlRetryingExecutionStrategy;
     new(dependencies: ExecutionStrategyDependencies, maxRetryCount: int): NpgsqlRetryingExecutionStrategy;
-    new(dependencies: ExecutionStrategyDependencies, errorCodesToAdd: ICollection_1<System_Internal.String>): NpgsqlRetryingExecutionStrategy;
-    new(context: DbContext, maxRetryCount: int, maxRetryDelay: TimeSpan, errorCodesToAdd: ICollection_1<System_Internal.String>): NpgsqlRetryingExecutionStrategy;
-    new(dependencies: ExecutionStrategyDependencies, maxRetryCount: int, maxRetryDelay: TimeSpan, errorCodesToAdd: ICollection_1<System_Internal.String>): NpgsqlRetryingExecutionStrategy;
+    new(dependencies: ExecutionStrategyDependencies, errorCodesToAdd: ICollection_1<System_Internal.String> | null): NpgsqlRetryingExecutionStrategy;
+    new(context: DbContext, maxRetryCount: int, maxRetryDelay: TimeSpan, errorCodesToAdd: ICollection_1<System_Internal.String> | null): NpgsqlRetryingExecutionStrategy;
+    new(dependencies: ExecutionStrategyDependencies, maxRetryCount: int, maxRetryDelay: TimeSpan, errorCodesToAdd: ICollection_1<System_Internal.String> | null): NpgsqlRetryingExecutionStrategy;
 };
 
 

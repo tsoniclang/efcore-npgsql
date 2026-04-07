@@ -2,8 +2,9 @@
 // Namespace: Npgsql.Replication.TestDecoding
 // Assembly: Npgsql
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import * as Npgsql_Replication_Internal_Internal from "../../Npgsql.Replication.Internal/internal/index.js";
@@ -42,8 +43,8 @@ export interface TestDecodingOptions$instance {
     readonly OnlyLocal: Nullable_1<System_Internal.Boolean>;
     readonly SkipEmptyXacts: Nullable_1<System_Internal.Boolean>;
     readonly StreamChanges: Nullable_1<System_Internal.Boolean>;
-    Equals(other: TestDecodingOptions): boolean;
-    Equals(obj: unknown): boolean;
+    Equals(other: TestDecodingOptions | null): boolean;
+    Equals(obj: JsValue | null): boolean;
     GetHashCode(): int;
 }
 

@@ -2,8 +2,9 @@
 // Namespace: Npgsql.Internal.Postgres
 // Assembly: Npgsql
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
@@ -22,7 +23,7 @@ export interface DataTypeName$instance {
     readonly UnqualifiedName: string;
     readonly Value: string;
     Equals(other: DataTypeName): boolean;
-    Equals(obj: unknown): boolean;
+    Equals(obj: JsValue | null): boolean;
     GetHashCode(): int;
     ToArrayName(): DataTypeName;
     ToDefaultMultirangeName(): DataTypeName;
@@ -33,7 +34,7 @@ export interface DataTypeName$instance {
 export const DataTypeName: {
     new(fullyQualifiedDataTypeName: string): DataTypeName;
     readonly Unspecified: DataTypeName;
-    FromDisplayName(displayName: string, schema?: string): DataTypeName;
+    FromDisplayName(displayName: string, schema?: string | null): DataTypeName;
     GetUnqualifiedName(dataTypeName: string): string;
 };
 
@@ -63,7 +64,7 @@ export interface Oid$instance {
 
     Value: uint;
     Equals(other: Oid): boolean;
-    Equals(obj: unknown): boolean;
+    Equals(obj: JsValue | null): boolean;
     GetHashCode(): int;
     ToString(): string;
 }
@@ -87,7 +88,7 @@ export interface PgTypeId$instance {
     readonly IsOid: boolean;
     readonly Oid: Oid;
     Equals(other: PgTypeId): boolean;
-    Equals(obj: unknown): boolean;
+    Equals(obj: JsValue | null): boolean;
     GetHashCode(): int;
     ToString(): string;
 }

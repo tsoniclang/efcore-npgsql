@@ -2,11 +2,9 @@
 // Namespace: Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal
 // Assembly: Npgsql.EntityFrameworkCore.PostgreSQL
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
-// Import support types from @tsonic/core
-import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
 import type { INpgsqlNameTranslator, NpgsqlDataSourceBuilder, ProvideClientCertificatesCallback, ProvidePasswordCallback } from "../../Npgsql/internal/index.js";
@@ -19,7 +17,7 @@ import type { IDiagnosticsLogger_1 } from "@tsonic/efcore/Microsoft.EntityFramew
 import * as Microsoft_EntityFrameworkCore_Infrastructure_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure/internal/index.js";
 import type { DbContextOptionsExtensionInfo, IDbContextOptions, IDbContextOptionsExtension, IModelValidator, ISingletonOptions, ModelValidatorDependencies, RelationalModelValidator, RelationalModelValidatorDependencies, RelationalOptionsExtension } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure/internal/index.js";
 import type { IEntityType, IKey, IModel, IProperty, StoreObjectIdentifier } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata/internal/index.js";
-import type { DbLoggerCategory$Model$Validation, ParameterTranslationMode } from "@tsonic/efcore/Microsoft.EntityFrameworkCore/internal/index.js";
+import type { DbLoggerCategory_Model_Validation, ParameterTranslationMode } from "@tsonic/efcore/Microsoft.EntityFrameworkCore/internal/index.js";
 import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection/internal/index.js";
 
 export interface INpgsqlSingletonOptions$instance extends ISingletonOptions {
@@ -44,18 +42,18 @@ export interface EnumDefinition$instance {
     readonly __tsonic_iface_System_IEquatable_1: never;
 
     readonly ClrType: Type;
-    readonly Labels: IReadOnlyDictionary_2<unknown, System_Internal.String>;
+    readonly Labels: IReadOnlyDictionary_2<JsValue, System_Internal.String>;
     readonly NameTranslator: INpgsqlNameTranslator;
     readonly StoreTypeName: string;
-    readonly StoreTypeSchema: string | undefined;
-    Equals(obj: unknown): boolean;
-    Equals(other: EnumDefinition): boolean;
+    readonly StoreTypeSchema: string | null;
+    Equals(obj: JsValue | null): boolean;
+    Equals(other: EnumDefinition | null): boolean;
     GetHashCode(): int;
 }
 
 
 export const EnumDefinition: {
-    new(clrType: Type, name: string, schema: string, nameTranslator: INpgsqlNameTranslator): EnumDefinition;
+    new(clrType: Type, name: string | null, schema: string | null, nameTranslator: INpgsqlNameTranslator): EnumDefinition;
 };
 
 
@@ -66,13 +64,13 @@ export interface NpgsqlModelValidator$instance extends RelationalModelValidator 
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_IModelValidator: never;
 
-    Validate(model: IModel, logger: IDiagnosticsLogger_1<DbLoggerCategory$Model$Validation>): void;
-    ValidateCompatible(property: IProperty, duplicateProperty: IProperty, columnName: string, storeObject: StoreObjectIdentifier, logger: IDiagnosticsLogger_1<DbLoggerCategory$Model$Validation>): void;
+    Validate(model: IModel, logger: IDiagnosticsLogger_1<DbLoggerCategory_Model_Validation>): void;
+    ValidateCompatible(property: IProperty, duplicateProperty: IProperty, columnName: string, storeObject: StoreObjectIdentifier, logger: IDiagnosticsLogger_1<DbLoggerCategory_Model_Validation>): void;
     ValidateIdentityVersionCompatibility(model: IModel): void;
     ValidateIndexIncludeProperties(model: IModel): void;
-    ValidateStoredProcedures(model: IModel, logger: IDiagnosticsLogger_1<DbLoggerCategory$Model$Validation>): void;
-    ValidateTypeMappings(model: IModel, logger: IDiagnosticsLogger_1<DbLoggerCategory$Model$Validation>): void;
-    ValidateValueGeneration(entityType: IEntityType, key: IKey, logger: IDiagnosticsLogger_1<DbLoggerCategory$Model$Validation>): void;
+    ValidateStoredProcedures(model: IModel, logger: IDiagnosticsLogger_1<DbLoggerCategory_Model_Validation>): void;
+    ValidateTypeMappings(model: IModel, logger: IDiagnosticsLogger_1<DbLoggerCategory_Model_Validation>): void;
+    ValidateValueGeneration(entityType: IEntityType, key: IKey, logger: IDiagnosticsLogger_1<DbLoggerCategory_Model_Validation>): void;
 }
 
 
@@ -88,44 +86,44 @@ export interface NpgsqlOptionsExtension$instance extends RelationalOptionsExtens
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_IDbContextOptionsExtension: never;
 
-    get AdminDatabase(): string | undefined;
-    set AdminDatabase(value: string | undefined);
-    get DataSource(): DbDataSource | undefined;
-    set DataSource(value: DbDataSource | undefined);
-    get DataSourceBuilderAction(): Action_1<NpgsqlDataSourceBuilder> | undefined;
-    set DataSourceBuilderAction(value: Action_1<NpgsqlDataSourceBuilder> | undefined);
+    get AdminDatabase(): string | null;
+    set AdminDatabase(value: string | null);
+    get DataSource(): DbDataSource | null;
+    set DataSource(value: DbDataSource | null);
+    get DataSourceBuilderAction(): Action_1<NpgsqlDataSourceBuilder> | null;
+    set DataSourceBuilderAction(value: Action_1<NpgsqlDataSourceBuilder> | null);
     readonly EnumDefinitions: IReadOnlyList_1<EnumDefinition>;
     readonly Info: DbContextOptionsExtensionInfo;
     readonly IsPostgresVersionSet: boolean;
     readonly MinBatchSize: Nullable_1<System_Internal.Int32>;
     readonly ParameterizedCollectionMode: ParameterTranslationMode;
     readonly PostgresVersion: Version;
-    get ProvideClientCertificatesCallback(): ProvideClientCertificatesCallback | undefined;
-    set ProvideClientCertificatesCallback(value: ProvideClientCertificatesCallback | undefined);
-    get ProvidePasswordCallback(): ProvidePasswordCallback | undefined;
-    set ProvidePasswordCallback(value: ProvidePasswordCallback | undefined);
-    get RemoteCertificateValidationCallback(): RemoteCertificateValidationCallback | undefined;
-    set RemoteCertificateValidationCallback(value: RemoteCertificateValidationCallback | undefined);
+    get ProvideClientCertificatesCallback(): ProvideClientCertificatesCallback | null;
+    set ProvideClientCertificatesCallback(value: ProvideClientCertificatesCallback | null);
+    get ProvidePasswordCallback(): ProvidePasswordCallback | null;
+    set ProvidePasswordCallback(value: ProvidePasswordCallback | null);
+    get RemoteCertificateValidationCallback(): RemoteCertificateValidationCallback | null;
+    set RemoteCertificateValidationCallback(value: RemoteCertificateValidationCallback | null);
     ReverseNullOrdering: boolean;
     UseRedshift: boolean;
     readonly UserRangeDefinitions: IReadOnlyList_1<UserRangeDefinition>;
     ApplyServices(services: IServiceCollection): void;
     Clone(): RelationalOptionsExtension;
     Validate(options: IDbContextOptions): void;
-    WithAdminDatabase(adminDatabase: string): NpgsqlOptionsExtension;
-    WithConnection(connection: DbConnection): RelationalOptionsExtension;
-    WithConnectionString(connectionString: string): RelationalOptionsExtension;
-    WithDataSource(dataSource: DbDataSource): RelationalOptionsExtension;
+    WithAdminDatabase(adminDatabase: string | null): NpgsqlOptionsExtension;
+    WithConnection(connection: DbConnection | null): RelationalOptionsExtension;
+    WithConnectionString(connectionString: string | null): RelationalOptionsExtension;
+    WithDataSource(dataSource: DbDataSource | null): RelationalOptionsExtension;
     WithDataSourceConfiguration(dataSourceBuilderAction: Action_1<NpgsqlDataSourceBuilder>): NpgsqlOptionsExtension;
-    WithEnumMapping(clrType: Type, enumName: string, schemaName: string, nameTranslator: INpgsqlNameTranslator): NpgsqlOptionsExtension;
-    WithPostgresVersion(postgresVersion: Version): NpgsqlOptionsExtension;
-    WithProvideClientCertificatesCallback(callback: ProvideClientCertificatesCallback): NpgsqlOptionsExtension;
-    WithProvidePasswordCallback(callback: ProvidePasswordCallback): NpgsqlOptionsExtension;
+    WithEnumMapping(clrType: Type, enumName: string | null, schemaName: string | null, nameTranslator: INpgsqlNameTranslator | null): NpgsqlOptionsExtension;
+    WithPostgresVersion(postgresVersion: Version | null): NpgsqlOptionsExtension;
+    WithProvideClientCertificatesCallback(callback: ProvideClientCertificatesCallback | null): NpgsqlOptionsExtension;
+    WithProvidePasswordCallback(callback: ProvidePasswordCallback | null): NpgsqlOptionsExtension;
     WithRedshift(useRedshift: boolean): NpgsqlOptionsExtension;
-    WithRemoteCertificateValidationCallback(callback: RemoteCertificateValidationCallback): NpgsqlOptionsExtension;
+    WithRemoteCertificateValidationCallback(callback: RemoteCertificateValidationCallback | null): NpgsqlOptionsExtension;
     WithUseParameterizedCollectionMode(parameterizedCollectionMode: ParameterTranslationMode): RelationalOptionsExtension;
-    WithUserRangeDefinition<TSubtype>(rangeName: string, schemaName?: string, subtypeName?: string): NpgsqlOptionsExtension;
-    WithUserRangeDefinition(rangeName: string, schemaName: string, subtypeClrType: Type, subtypeName: string): NpgsqlOptionsExtension;
+    WithUserRangeDefinition<TSubtype>(rangeName: string, schemaName?: string | null, subtypeName?: string | null): NpgsqlOptionsExtension;
+    WithUserRangeDefinition(rangeName: string, schemaName: string | null, subtypeClrType: Type, subtypeName: string | null): NpgsqlOptionsExtension;
 }
 
 
@@ -144,19 +142,19 @@ export interface UserRangeDefinition$instance {
     readonly __tsonic_iface_System_IEquatable_1: never;
 
     readonly StoreTypeName: string;
-    readonly StoreTypeSchema: string | undefined;
+    readonly StoreTypeSchema: string | null;
     readonly SubtypeClrType: Type;
-    readonly SubtypeName: string | undefined;
+    readonly SubtypeName: string | null;
     _Clone_$(): UserRangeDefinition;
-    Equals(obj: unknown): boolean;
-    Equals(other: UserRangeDefinition): boolean;
+    Equals(obj: JsValue | null): boolean;
+    Equals(other: UserRangeDefinition | null): boolean;
     GetHashCode(): int;
     ToString(): string;
 }
 
 
 export const UserRangeDefinition: {
-    new(name: string, schema: string, subtypeClrType: Type, subtypeName: string): UserRangeDefinition;
+    new(name: string, schema: string | null, subtypeClrType: Type, subtypeName: string | null): UserRangeDefinition;
 };
 
 

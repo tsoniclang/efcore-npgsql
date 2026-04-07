@@ -12,7 +12,7 @@ import type { CancellationToken } from '@tsonic/dotnet/System.Threading.js';
 import type { Task } from '@tsonic/dotnet/System.Threading.Tasks.js';
 import type { IDiagnosticsLogger, IRelationalCommandDiagnosticsLogger } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Diagnostics.js';
 import type { ICurrentDbContext, IDbContextOptions, IModelRuntimeInitializer } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure.js';
-import type { DbLoggerCategory$Migrations } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.js';
+import type { DbLoggerCategory_Migrations } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.js';
 import type { IDesignTimeModel } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata.js';
 import type { Migrator } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Migrations.Internal.js';
 import type { HistoryRepository, HistoryRepositoryDependencies, HistoryRow, IHistoryRepository, IMigrationCommandExecutor, IMigrationsAssembly, IMigrationsDatabaseLock, IMigrationsModelDiffer, IMigrationsSqlGenerator, IMigrator, LockReleaseBehavior, MigrationCommand } from '@tsonic/efcore/Microsoft.EntityFrameworkCore.Migrations.js';

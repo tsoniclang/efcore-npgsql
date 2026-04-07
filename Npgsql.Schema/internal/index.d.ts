@@ -2,8 +2,9 @@
 // Namespace: Npgsql.Schema
 // Assembly: Npgsql
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
@@ -19,13 +20,13 @@ export interface NpgsqlDbColumn$instance extends DbColumn {
     get AllowDBNull(): Nullable_1<System_Internal.Boolean>;
     set AllowDBNull(value: Nullable_1<System_Internal.Boolean> | boolean);
     BaseCatalogName: string;
-    get BaseColumnName(): string | undefined;
-    set BaseColumnName(value: string | undefined);
-    get BaseSchemaName(): string | undefined;
-    set BaseSchemaName(value: string | undefined);
+    get BaseColumnName(): string | null;
+    set BaseColumnName(value: string | null);
+    get BaseSchemaName(): string | null;
+    set BaseSchemaName(value: string | null);
     BaseServerName: string;
-    get BaseTableName(): string | undefined;
-    set BaseTableName(value: string | undefined);
+    get BaseTableName(): string | null;
+    set BaseTableName(value: string | null);
     get ColumnAttributeNumber(): Nullable_1<System_Internal.Int16>;
     set ColumnAttributeNumber(value: Nullable_1<System_Internal.Int16> | short);
     ColumnName: string;
@@ -33,11 +34,11 @@ export interface NpgsqlDbColumn$instance extends DbColumn {
     set ColumnOrdinal(value: Nullable_1<System_Internal.Int32> | int);
     get ColumnSize(): Nullable_1<System_Internal.Int32>;
     set ColumnSize(value: Nullable_1<System_Internal.Int32> | int);
-    get DataType(): Type | undefined;
-    set DataType(value: Type | undefined);
+    get DataType(): Type | null;
+    set DataType(value: Type | null);
     DataTypeName: string;
-    get DefaultValue(): string | undefined;
-    set DefaultValue(value: string | undefined);
+    get DefaultValue(): string | null;
+    set DefaultValue(value: string | null);
     get IsAliased(): Nullable_1<System_Internal.Boolean>;
     set IsAliased(value: Nullable_1<System_Internal.Boolean> | boolean);
     get IsAutoIncrement(): Nullable_1<System_Internal.Boolean>;
@@ -52,6 +53,7 @@ export interface NpgsqlDbColumn$instance extends DbColumn {
     set IsReadOnly(value: Nullable_1<System_Internal.Boolean> | boolean);
     get IsUnique(): Nullable_1<System_Internal.Boolean>;
     set IsUnique(value: Nullable_1<System_Internal.Boolean> | boolean);
+    readonly Item: JsValue | null;
     get NpgsqlDbType(): Nullable_1<NpgsqlDbType>;
     set NpgsqlDbType(value: Nullable_1<NpgsqlDbType> | NpgsqlDbType);
     get NumericPrecision(): Nullable_1<System_Internal.Int32>;
@@ -61,8 +63,8 @@ export interface NpgsqlDbColumn$instance extends DbColumn {
     PostgresType: PostgresType;
     TableOID: uint;
     TypeOID: uint;
-    get UdtAssemblyQualifiedName(): string | undefined;
-    set UdtAssemblyQualifiedName(value: string | undefined);
+    get UdtAssemblyQualifiedName(): string | null;
+    set UdtAssemblyQualifiedName(value: string | null);
 }
 
 
@@ -71,5 +73,5 @@ export const NpgsqlDbColumn: {
 };
 
 
-export type NpgsqlDbColumn = NpgsqlDbColumn$instance & { readonly [propertyName: string]: unknown | undefined; };
+export type NpgsqlDbColumn = NpgsqlDbColumn$instance;
 

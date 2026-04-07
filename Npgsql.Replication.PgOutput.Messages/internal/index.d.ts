@@ -2,8 +2,9 @@
 // Namespace: Npgsql.Replication.PgOutput.Messages
 // Assembly: Npgsql
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { ReplicationTuple } from "../../Npgsql.Replication.PgOutput/internal/index.js";
@@ -14,69 +15,6 @@ import type { IReadOnlyList_1 } from "@tsonic/dotnet/System.Collections.Generic/
 import type { Stream } from "@tsonic/dotnet/System.IO/internal/index.js";
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Byte, DateTime, Enum, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable, Nullable_1, String as ClrString, UInt32, ValueType } from "@tsonic/dotnet/System/internal/index.js";
-
-export enum CommitMessage_CommitFlags {
-    None = 0
-}
-
-
-export enum CommitPreparedMessage_CommitPreparedFlags {
-    None = 0
-}
-
-
-export enum PrepareMessage_PrepareFlags {
-    None = 0
-}
-
-
-export enum RelationMessage_Column_ColumnFlags {
-    None = 0,
-    PartOfKey = 1
-}
-
-
-export enum RelationMessage_ReplicaIdentitySetting {
-    Default = 100,
-    Nothing = 110,
-    AllColumns = 102,
-    IndexWithIndIsReplIdent = 105
-}
-
-
-export enum RollbackPreparedMessage_RollbackPreparedFlags {
-    None = 0
-}
-
-
-export enum StreamPrepareMessage_StreamPrepareFlags {
-    None = 0
-}
-
-
-export enum TruncateMessage_TruncateOptions {
-    None = 0,
-    Cascade = 1,
-    RestartIdentity = 2
-}
-
-
-export interface RelationMessage_Column$instance {
-    readonly __tsonic_type_Npgsql_Replication_PgOutput_Messages_RelationMessage_Column: never;
-
-    readonly ColumnName: string;
-    readonly DataTypeId: uint;
-    readonly Flags: RelationMessage_Column_ColumnFlags;
-    readonly TypeModifier: int;
-}
-
-
-export const RelationMessage_Column: {
-    new(): RelationMessage_Column;
-};
-
-
-export type RelationMessage_Column = RelationMessage_Column$instance;
 
 export interface RelationMessageColumn$instance {
     readonly __tsonic_type_Npgsql_Replication_PgOutput_Messages_RelationMessageColumn: never;
@@ -137,6 +75,11 @@ export const CommitMessage: {
 
 export type CommitMessage = CommitMessage$instance;
 
+export enum CommitMessage_CommitFlags {
+    None = 0
+}
+
+
 export interface CommitPreparedMessage$instance extends PreparedTransactionControlMessage {
     readonly __tsonic_type_Npgsql_Replication_PgOutput_Messages_CommitPreparedMessage: never;
 
@@ -152,6 +95,11 @@ export const CommitPreparedMessage: {
 
 
 export type CommitPreparedMessage = CommitPreparedMessage$instance;
+
+export enum CommitPreparedMessage_CommitPreparedFlags {
+    None = 0
+}
+
 
 export interface DefaultUpdateMessage$instance extends UpdateMessage {
     readonly __tsonic_type_Npgsql_Replication_PgOutput_Messages_DefaultUpdateMessage: never;
@@ -330,6 +278,11 @@ export const PrepareMessage: {
 
 export type PrepareMessage = PrepareMessage$instance;
 
+export enum PrepareMessage_PrepareFlags {
+    None = 0
+}
+
+
 export interface PrepareMessageBase$instance extends PreparedTransactionControlMessage {
     readonly __tsonic_type_Npgsql_Replication_PgOutput_Messages_PrepareMessageBase: never;
 
@@ -362,6 +315,37 @@ export const RelationMessage: {
 
 export type RelationMessage = RelationMessage$instance;
 
+export enum RelationMessage_ReplicaIdentitySetting {
+    Default = 100,
+    Nothing = 110,
+    AllColumns = 102,
+    IndexWithIndIsReplIdent = 105
+}
+
+
+export interface RelationMessage_Column$instance {
+    readonly __tsonic_type_Npgsql_Replication_PgOutput_Messages_RelationMessage_Column: never;
+
+    readonly ColumnName: string;
+    readonly DataTypeId: uint;
+    readonly Flags: RelationMessage_Column_ColumnFlags;
+    readonly TypeModifier: int;
+}
+
+
+export const RelationMessage_Column: {
+    new(): RelationMessage_Column;
+};
+
+
+export type RelationMessage_Column = RelationMessage_Column$instance;
+
+export enum RelationMessage_Column_ColumnFlags {
+    None = 0,
+    PartOfKey = 1
+}
+
+
 export interface RollbackPreparedMessage$instance extends PreparedTransactionControlMessage {
     readonly __tsonic_type_Npgsql_Replication_PgOutput_Messages_RollbackPreparedMessage: never;
 
@@ -378,6 +362,11 @@ export const RollbackPreparedMessage: {
 
 
 export type RollbackPreparedMessage = RollbackPreparedMessage$instance;
+
+export enum RollbackPreparedMessage_RollbackPreparedFlags {
+    None = 0
+}
+
 
 export interface StreamAbortMessage$instance extends TransactionControlMessage {
     readonly __tsonic_type_Npgsql_Replication_PgOutput_Messages_StreamAbortMessage: never;
@@ -420,6 +409,11 @@ export const StreamPrepareMessage: {
 
 
 export type StreamPrepareMessage = StreamPrepareMessage$instance;
+
+export enum StreamPrepareMessage_StreamPrepareFlags {
+    None = 0
+}
+
 
 export interface StreamStartMessage$instance extends TransactionControlMessage {
     readonly __tsonic_type_Npgsql_Replication_PgOutput_Messages_StreamStartMessage: never;
@@ -486,6 +480,13 @@ export const TruncateMessage: {
 
 
 export type TruncateMessage = TruncateMessage$instance;
+
+export enum TruncateMessage_TruncateOptions {
+    None = 0,
+    Cascade = 1,
+    RestartIdentity = 2
+}
+
 
 export interface TypeMessage$instance extends TransactionalMessage {
     readonly __tsonic_type_Npgsql_Replication_PgOutput_Messages_TypeMessage: never;

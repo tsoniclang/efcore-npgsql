@@ -2,11 +2,9 @@
 // Namespace: Npgsql.EntityFrameworkCore.PostgreSQL.Extensions.Internal
 // Assembly: Npgsql.EntityFrameworkCore.PostgreSQL
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
-// Import support types from @tsonic/core
-import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
@@ -15,10 +13,10 @@ import type { ColumnExpression, SqlExpression } from "@tsonic/efcore/Microsoft.E
 import type { ShapedQueryExpression } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Query/internal/index.js";
 
 export abstract class NpgsqlShapedQueryExpressionExtensions$instance {
-    static TryConvertToArray(source: ShapedQueryExpression, array: SqlExpression, ignoreOrderings?: boolean, ignorePredicate?: boolean): boolean;
-    static TryExtractArray(source: ShapedQueryExpression, array: SqlExpression, projectedColumn: ColumnExpression, ignoreOrderings?: boolean, ignorePredicate?: boolean): boolean;
-    static TryExtractArray(source: ShapedQueryExpression, array: SqlExpression, ignoreOrderings?: boolean, ignorePredicate?: boolean): boolean;
-    static TryExtractJsonArray(source: ShapedQueryExpression, jsonArray: SqlExpression, projectedElement: SqlExpression, isElementNullable: boolean, ignoreOrderings?: boolean, ignorePredicate?: boolean): boolean;
+    static TryConvertToArray(source: ShapedQueryExpression, array: SqlExpression | null, ignoreOrderings?: boolean, ignorePredicate?: boolean): boolean;
+    static TryExtractArray(source: ShapedQueryExpression, array: SqlExpression | null, projectedColumn: ColumnExpression | null, ignoreOrderings?: boolean, ignorePredicate?: boolean): boolean;
+    static TryExtractArray(source: ShapedQueryExpression, array: SqlExpression | null, ignoreOrderings?: boolean, ignorePredicate?: boolean): boolean;
+    static TryExtractJsonArray(source: ShapedQueryExpression, jsonArray: SqlExpression | null, projectedElement: SqlExpression | null, isElementNullable: boolean, ignoreOrderings?: boolean, ignorePredicate?: boolean): boolean;
 }
 
 

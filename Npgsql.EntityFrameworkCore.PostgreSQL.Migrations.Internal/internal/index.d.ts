@@ -2,8 +2,9 @@
 // Namespace: Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal
 // Assembly: Npgsql.EntityFrameworkCore.PostgreSQL
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
@@ -19,7 +20,7 @@ import type { Migrator } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Migr
 import * as Microsoft_EntityFrameworkCore_Migrations_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Migrations/internal/index.js";
 import type { HistoryRepository, HistoryRepositoryDependencies, HistoryRow, IHistoryRepository, IMigrationCommandExecutor, IMigrationsAssembly, IMigrationsDatabaseLock, IMigrationsModelDiffer, IMigrationsSqlGenerator, IMigrator, LockReleaseBehavior, MigrationCommand } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Migrations/internal/index.js";
 import type { IDatabaseCreator, IDatabaseProvider, IExecutionStrategy, IRawSqlCommandBuilder, IRelationalConnection, ISqlGenerationHelper } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage/internal/index.js";
-import type { DbLoggerCategory$Migrations } from "@tsonic/efcore/Microsoft.EntityFrameworkCore/internal/index.js";
+import type { DbLoggerCategory_Migrations } from "@tsonic/efcore/Microsoft.EntityFrameworkCore/internal/index.js";
 
 export interface NpgsqlHistoryRepository$instance extends HistoryRepository {
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Migrations_Internal_NpgsqlHistoryRepository: never;
@@ -39,7 +40,7 @@ export interface NpgsqlHistoryRepository$instance extends HistoryRepository {
     GetCreateCommands(): IReadOnlyList_1<MigrationCommand>;
     GetCreateIfNotExistsScript(): string;
     GetEndIfScript(): string;
-    InterpretExistsResult(value: unknown): boolean;
+    InterpretExistsResult(value: JsValue | null): boolean;
 }
 
 
@@ -55,13 +56,13 @@ export interface NpgsqlMigrator$instance extends Migrator {
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Migrations_IMigrator: never;
 
-    Migrate(targetMigration: string): void;
-    MigrateAsync(targetMigration: string, cancellationToken?: CancellationToken): Task;
+    Migrate(targetMigration: string | null): void;
+    MigrateAsync(targetMigration: string | null, cancellationToken?: CancellationToken): Task;
 }
 
 
 export const NpgsqlMigrator: {
-    new(migrationsAssembly: IMigrationsAssembly, historyRepository: IHistoryRepository, databaseCreator: IDatabaseCreator, migrationsSqlGenerator: IMigrationsSqlGenerator, rawSqlCommandBuilder: IRawSqlCommandBuilder, migrationCommandExecutor: IMigrationCommandExecutor, connection: IRelationalConnection, sqlGenerationHelper: ISqlGenerationHelper, currentContext: ICurrentDbContext, modelRuntimeInitializer: IModelRuntimeInitializer, logger: IDiagnosticsLogger_1<DbLoggerCategory$Migrations>, commandLogger: IRelationalCommandDiagnosticsLogger, databaseProvider: IDatabaseProvider, migrationsModelDiffer: IMigrationsModelDiffer, designTimeModel: IDesignTimeModel, contextOptions: IDbContextOptions, executionStrategy: IExecutionStrategy): NpgsqlMigrator;
+    new(migrationsAssembly: IMigrationsAssembly, historyRepository: IHistoryRepository, databaseCreator: IDatabaseCreator, migrationsSqlGenerator: IMigrationsSqlGenerator, rawSqlCommandBuilder: IRawSqlCommandBuilder, migrationCommandExecutor: IMigrationCommandExecutor, connection: IRelationalConnection, sqlGenerationHelper: ISqlGenerationHelper, currentContext: ICurrentDbContext, modelRuntimeInitializer: IModelRuntimeInitializer, logger: IDiagnosticsLogger_1<DbLoggerCategory_Migrations>, commandLogger: IRelationalCommandDiagnosticsLogger, databaseProvider: IDatabaseProvider, migrationsModelDiffer: IMigrationsModelDiffer, designTimeModel: IDesignTimeModel, contextOptions: IDbContextOptions, executionStrategy: IExecutionStrategy): NpgsqlMigrator;
 };
 
 

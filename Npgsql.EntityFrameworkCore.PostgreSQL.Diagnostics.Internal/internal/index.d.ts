@@ -2,8 +2,9 @@
 // Namespace: Npgsql.EntityFrameworkCore.PostgreSQL.Diagnostics.Internal
 // Assembly: Npgsql.EntityFrameworkCore.PostgreSQL
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
@@ -13,23 +14,23 @@ import type { EventDefinitionBase, RelationalLoggingDefinitions } from "@tsonic/
 export interface NpgsqlLoggingDefinitions$instance extends RelationalLoggingDefinitions {
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Diagnostics_Internal_NpgsqlLoggingDefinitions: never;
 
-    LogFoundDefaultSchema: EventDefinitionBase | undefined;
-    LogFoundColumn: EventDefinitionBase | undefined;
-    LogFoundForeignKey: EventDefinitionBase | undefined;
-    LogFoundCollation: EventDefinitionBase | undefined;
-    LogPrincipalTableNotInSelectionSet: EventDefinitionBase | undefined;
-    LogMissingSchema: EventDefinitionBase | undefined;
-    LogMissingTable: EventDefinitionBase | undefined;
-    LogFoundSequence: EventDefinitionBase | undefined;
-    LogFoundTable: EventDefinitionBase | undefined;
-    LogFoundIndex: EventDefinitionBase | undefined;
-    LogFoundPrimaryKey: EventDefinitionBase | undefined;
-    LogFoundUniqueConstraint: EventDefinitionBase | undefined;
-    LogPrincipalColumnNotFound: EventDefinitionBase | undefined;
-    LogEnumColumnSkipped: EventDefinitionBase | undefined;
-    LogExpressionIndexSkipped: EventDefinitionBase | undefined;
-    LogUnsupportedColumnConstraintSkipped: EventDefinitionBase | undefined;
-    LogUnsupportedColumnIndexSkipped: EventDefinitionBase | undefined;
+    LogFoundDefaultSchema: EventDefinitionBase | null;
+    LogFoundColumn: EventDefinitionBase | null;
+    LogFoundForeignKey: EventDefinitionBase | null;
+    LogFoundCollation: EventDefinitionBase | null;
+    LogPrincipalTableNotInSelectionSet: EventDefinitionBase | null;
+    LogMissingSchema: EventDefinitionBase | null;
+    LogMissingTable: EventDefinitionBase | null;
+    LogFoundSequence: EventDefinitionBase | null;
+    LogFoundTable: EventDefinitionBase | null;
+    LogFoundIndex: EventDefinitionBase | null;
+    LogFoundPrimaryKey: EventDefinitionBase | null;
+    LogFoundUniqueConstraint: EventDefinitionBase | null;
+    LogPrincipalColumnNotFound: EventDefinitionBase | null;
+    LogEnumColumnSkipped: EventDefinitionBase | null;
+    LogExpressionIndexSkipped: EventDefinitionBase | null;
+    LogUnsupportedColumnConstraintSkipped: EventDefinitionBase | null;
+    LogUnsupportedColumnIndexSkipped: EventDefinitionBase | null;
 }
 
 

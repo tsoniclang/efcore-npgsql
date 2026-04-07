@@ -214,7 +214,10 @@
           "isOverride": false,
           "visibility": "Public",
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlArrayTypeMapping\u00603",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "emitSemantics": {
+            "callableStaticAccessorKind": "property"
+          }
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlArrayTypeMapping\u00603::NpgsqlDbType:System.Nullable_1[[NpgsqlTypes.NpgsqlDbType,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]",
@@ -3064,7 +3067,10 @@
           "isOverride": false,
           "visibility": "Public",
           "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlEnumTypeMapping\u002BJsonPgEnumReaderWriter\u00601",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "emitSemantics": {
+            "callableStaticAccessorKind": "property"
+          }
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlEnumTypeMapping\u002BJsonPgEnumReaderWriter\u00601::ConstructorExpression:System.Linq.Expressions.Expression",

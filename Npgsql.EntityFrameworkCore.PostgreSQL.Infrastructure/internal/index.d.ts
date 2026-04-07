@@ -2,8 +2,9 @@
 // Namespace: Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure
 // Assembly: Npgsql.EntityFrameworkCore.PostgreSQL
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
@@ -49,18 +50,18 @@ export interface NpgsqlDbContextOptionsBuilder$instance extends RelationalDbCont
     ConfigureDataSource(dataSourceBuilderAction: Action_1<NpgsqlDataSourceBuilder>): NpgsqlDbContextOptionsBuilder;
     EnableRetryOnFailure(): NpgsqlDbContextOptionsBuilder;
     EnableRetryOnFailure(maxRetryCount: int): NpgsqlDbContextOptionsBuilder;
-    EnableRetryOnFailure(errorCodesToAdd: ICollection_1<System_Internal.String>): NpgsqlDbContextOptionsBuilder;
-    EnableRetryOnFailure(maxRetryCount: int, maxRetryDelay: TimeSpan, errorCodesToAdd: ICollection_1<System_Internal.String>): NpgsqlDbContextOptionsBuilder;
-    MapEnum<T extends number>(enumName?: string, schemaName?: string, nameTranslator?: INpgsqlNameTranslator): NpgsqlDbContextOptionsBuilder;
-    MapEnum(clrType: Type, enumName?: string, schemaName?: string, nameTranslator?: INpgsqlNameTranslator): NpgsqlDbContextOptionsBuilder;
-    MapRange<TSubtype>(rangeName: string, schemaName?: string, subtypeName?: string): NpgsqlDbContextOptionsBuilder;
-    MapRange(rangeName: string, subtypeClrType: Type, schemaName?: string, subtypeName?: string): NpgsqlDbContextOptionsBuilder;
-    ProvideClientCertificatesCallback(callback: ProvideClientCertificatesCallback): NpgsqlDbContextOptionsBuilder;
-    ProvidePasswordCallback(callback: ProvidePasswordCallback): NpgsqlDbContextOptionsBuilder;
-    RemoteCertificateValidationCallback(callback: RemoteCertificateValidationCallback): NpgsqlDbContextOptionsBuilder;
-    SetPostgresVersion(postgresVersion: Version): NpgsqlDbContextOptionsBuilder;
+    EnableRetryOnFailure(errorCodesToAdd: ICollection_1<System_Internal.String> | null): NpgsqlDbContextOptionsBuilder;
+    EnableRetryOnFailure(maxRetryCount: int, maxRetryDelay: TimeSpan, errorCodesToAdd: ICollection_1<System_Internal.String> | null): NpgsqlDbContextOptionsBuilder;
+    MapEnum<T extends number & NonNullable<JsValue>>(enumName?: string | null, schemaName?: string | null, nameTranslator?: INpgsqlNameTranslator | null): NpgsqlDbContextOptionsBuilder;
+    MapEnum(clrType: Type, enumName?: string | null, schemaName?: string | null, nameTranslator?: INpgsqlNameTranslator | null): NpgsqlDbContextOptionsBuilder;
+    MapRange<TSubtype>(rangeName: string, schemaName?: string | null, subtypeName?: string | null): NpgsqlDbContextOptionsBuilder;
+    MapRange(rangeName: string, subtypeClrType: Type, schemaName?: string | null, subtypeName?: string | null): NpgsqlDbContextOptionsBuilder;
+    ProvideClientCertificatesCallback(callback: ProvideClientCertificatesCallback | null): NpgsqlDbContextOptionsBuilder;
+    ProvidePasswordCallback(callback: ProvidePasswordCallback | null): NpgsqlDbContextOptionsBuilder;
+    RemoteCertificateValidationCallback(callback: RemoteCertificateValidationCallback | null): NpgsqlDbContextOptionsBuilder;
+    SetPostgresVersion(postgresVersion: Version | null): NpgsqlDbContextOptionsBuilder;
     SetPostgresVersion(major: int, minor: int): NpgsqlDbContextOptionsBuilder;
-    UseAdminDatabase(dbName: string): NpgsqlDbContextOptionsBuilder;
+    UseAdminDatabase(dbName: string | null): NpgsqlDbContextOptionsBuilder;
     UseRedshift(useRedshift?: boolean): NpgsqlDbContextOptionsBuilder;
 }
 

@@ -2,8 +2,9 @@
 // Namespace: Npgsql.Replication.Internal
 // Assembly: Npgsql
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import * as Npgsql_Replication_Internal from "../../Npgsql.Replication/internal/index.js";
@@ -20,7 +21,7 @@ export interface LogicalReplicationSlot$instance extends ReplicationSlot {
 
     readonly ConsistentPoint: NpgsqlLogSequenceNumber;
     readonly OutputPlugin: string;
-    readonly SnapshotName: string | undefined;
+    readonly SnapshotName: string | null;
 }
 
 
@@ -32,7 +33,7 @@ export type LogicalReplicationSlot = LogicalReplicationSlot$instance;
 
 export abstract class LogicalReplicationConnectionExtensions$instance {
     static CreateLogicalReplicationSlot(connection: LogicalReplicationConnection, slotName: string, outputPlugin: string, isTemporary?: boolean, slotSnapshotInitMode?: Nullable_1<LogicalSlotSnapshotInitMode>, twoPhase?: boolean, cancellationToken?: CancellationToken): Task_1<ReplicationSlotOptions>;
-    static StartLogicalReplication(connection: LogicalReplicationConnection, slot: LogicalReplicationSlot, cancellationToken: CancellationToken, walLocation?: Nullable_1<NpgsqlLogSequenceNumber>, options?: IEnumerable_1<KeyValuePair_2<System_Internal.String, System_Internal.String>>, bypassingStream?: boolean): IAsyncEnumerable_1<XLogDataMessage>;
+    static StartLogicalReplication(connection: LogicalReplicationConnection, slot: LogicalReplicationSlot, cancellationToken: CancellationToken, walLocation?: Nullable_1<NpgsqlLogSequenceNumber>, options?: IEnumerable_1<KeyValuePair_2<System_Internal.String, System_Internal.String>> | null, bypassingStream?: boolean): IAsyncEnumerable_1<XLogDataMessage>;
 }
 
 

@@ -969,342 +969,6 @@
       "constructors": []
     },
     {
-      "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsQuery\u002BNodeKind",
-      "clrName": "NpgsqlTypes.NpgsqlTsQuery\u002BNodeKind",
-      "assemblyName": "Npgsql",
-      "metadataToken": 0,
-      "kind": "Enum",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": true,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Enum",
-        "clrName": "System.Enum"
-      },
-      "interfaces": [
-        {
-          "stableId": "System.Private.CoreLib:System.IComparable",
-          "clrName": "System.IComparable"
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
-          "clrName": "System.ISpanFormattable"
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.IFormattable",
-          "clrName": "System.IFormattable"
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.IConvertible",
-          "clrName": "System.IConvertible"
-        }
-      ],
-      "methods": [],
-      "properties": [],
-      "fields": [
-        {
-          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsQuery\u002BNodeKind::value__System.Int32",
-          "clrName": "value__",
-          "metadataToken": 67110817,
-          "normalizedSignature": "value__|System.Int32|static=false|const=false",
-          "isStatic": false,
-          "isReadOnly": false,
-          "isLiteral": false,
-          "visibility": "Public",
-          "declaringClrType": "NpgsqlTypes.NpgsqlTsQuery\u002BNodeKind",
-          "declaringAssemblyName": "Npgsql"
-        },
-        {
-          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsQuery\u002BNodeKind::EmptyNpgsqlTypes.NpgsqlTsQuery\u002BNodeKind",
-          "clrName": "Empty",
-          "metadataToken": 67110818,
-          "normalizedSignature": "Empty|NpgsqlTypes.NpgsqlTsQuery\u002BNodeKind|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "declaringClrType": "NpgsqlTypes.NpgsqlTsQuery\u002BNodeKind",
-          "declaringAssemblyName": "Npgsql"
-        },
-        {
-          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsQuery\u002BNodeKind::LexemeNpgsqlTypes.NpgsqlTsQuery\u002BNodeKind",
-          "clrName": "Lexeme",
-          "metadataToken": 67110819,
-          "normalizedSignature": "Lexeme|NpgsqlTypes.NpgsqlTsQuery\u002BNodeKind|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "declaringClrType": "NpgsqlTypes.NpgsqlTsQuery\u002BNodeKind",
-          "declaringAssemblyName": "Npgsql"
-        },
-        {
-          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsQuery\u002BNodeKind::NotNpgsqlTypes.NpgsqlTsQuery\u002BNodeKind",
-          "clrName": "Not",
-          "metadataToken": 67110820,
-          "normalizedSignature": "Not|NpgsqlTypes.NpgsqlTsQuery\u002BNodeKind|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "declaringClrType": "NpgsqlTypes.NpgsqlTsQuery\u002BNodeKind",
-          "declaringAssemblyName": "Npgsql"
-        },
-        {
-          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsQuery\u002BNodeKind::AndNpgsqlTypes.NpgsqlTsQuery\u002BNodeKind",
-          "clrName": "And",
-          "metadataToken": 67110821,
-          "normalizedSignature": "And|NpgsqlTypes.NpgsqlTsQuery\u002BNodeKind|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "declaringClrType": "NpgsqlTypes.NpgsqlTsQuery\u002BNodeKind",
-          "declaringAssemblyName": "Npgsql"
-        },
-        {
-          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsQuery\u002BNodeKind::OrNpgsqlTypes.NpgsqlTsQuery\u002BNodeKind",
-          "clrName": "Or",
-          "metadataToken": 67110822,
-          "normalizedSignature": "Or|NpgsqlTypes.NpgsqlTsQuery\u002BNodeKind|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "declaringClrType": "NpgsqlTypes.NpgsqlTsQuery\u002BNodeKind",
-          "declaringAssemblyName": "Npgsql"
-        },
-        {
-          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsQuery\u002BNodeKind::PhraseNpgsqlTypes.NpgsqlTsQuery\u002BNodeKind",
-          "clrName": "Phrase",
-          "metadataToken": 67110823,
-          "normalizedSignature": "Phrase|NpgsqlTypes.NpgsqlTsQuery\u002BNodeKind|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "declaringClrType": "NpgsqlTypes.NpgsqlTsQuery\u002BNodeKind",
-          "declaringAssemblyName": "Npgsql"
-        }
-      ],
-      "events": [],
-      "constructors": []
-    },
-    {
-      "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsQueryLexeme\u002BWeight",
-      "clrName": "NpgsqlTypes.NpgsqlTsQueryLexeme\u002BWeight",
-      "assemblyName": "Npgsql",
-      "metadataToken": 0,
-      "kind": "Enum",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": true,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Enum",
-        "clrName": "System.Enum"
-      },
-      "interfaces": [
-        {
-          "stableId": "System.Private.CoreLib:System.IComparable",
-          "clrName": "System.IComparable"
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
-          "clrName": "System.ISpanFormattable"
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.IFormattable",
-          "clrName": "System.IFormattable"
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.IConvertible",
-          "clrName": "System.IConvertible"
-        }
-      ],
-      "methods": [],
-      "properties": [],
-      "fields": [
-        {
-          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsQueryLexeme\u002BWeight::value__System.Int32",
-          "clrName": "value__",
-          "metadataToken": 67110824,
-          "normalizedSignature": "value__|System.Int32|static=false|const=false",
-          "isStatic": false,
-          "isReadOnly": false,
-          "isLiteral": false,
-          "visibility": "Public",
-          "declaringClrType": "NpgsqlTypes.NpgsqlTsQueryLexeme\u002BWeight",
-          "declaringAssemblyName": "Npgsql"
-        },
-        {
-          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsQueryLexeme\u002BWeight::NoneNpgsqlTypes.NpgsqlTsQueryLexeme\u002BWeight",
-          "clrName": "None",
-          "metadataToken": 67110825,
-          "normalizedSignature": "None|NpgsqlTypes.NpgsqlTsQueryLexeme\u002BWeight|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "declaringClrType": "NpgsqlTypes.NpgsqlTsQueryLexeme\u002BWeight",
-          "declaringAssemblyName": "Npgsql"
-        },
-        {
-          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsQueryLexeme\u002BWeight::DNpgsqlTypes.NpgsqlTsQueryLexeme\u002BWeight",
-          "clrName": "D",
-          "metadataToken": 67110826,
-          "normalizedSignature": "D|NpgsqlTypes.NpgsqlTsQueryLexeme\u002BWeight|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "declaringClrType": "NpgsqlTypes.NpgsqlTsQueryLexeme\u002BWeight",
-          "declaringAssemblyName": "Npgsql"
-        },
-        {
-          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsQueryLexeme\u002BWeight::CNpgsqlTypes.NpgsqlTsQueryLexeme\u002BWeight",
-          "clrName": "C",
-          "metadataToken": 67110827,
-          "normalizedSignature": "C|NpgsqlTypes.NpgsqlTsQueryLexeme\u002BWeight|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "declaringClrType": "NpgsqlTypes.NpgsqlTsQueryLexeme\u002BWeight",
-          "declaringAssemblyName": "Npgsql"
-        },
-        {
-          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsQueryLexeme\u002BWeight::BNpgsqlTypes.NpgsqlTsQueryLexeme\u002BWeight",
-          "clrName": "B",
-          "metadataToken": 67110828,
-          "normalizedSignature": "B|NpgsqlTypes.NpgsqlTsQueryLexeme\u002BWeight|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "declaringClrType": "NpgsqlTypes.NpgsqlTsQueryLexeme\u002BWeight",
-          "declaringAssemblyName": "Npgsql"
-        },
-        {
-          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsQueryLexeme\u002BWeight::ANpgsqlTypes.NpgsqlTsQueryLexeme\u002BWeight",
-          "clrName": "A",
-          "metadataToken": 67110829,
-          "normalizedSignature": "A|NpgsqlTypes.NpgsqlTsQueryLexeme\u002BWeight|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "declaringClrType": "NpgsqlTypes.NpgsqlTsQueryLexeme\u002BWeight",
-          "declaringAssemblyName": "Npgsql"
-        }
-      ],
-      "events": [],
-      "constructors": []
-    },
-    {
-      "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWeight",
-      "clrName": "NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWeight",
-      "assemblyName": "Npgsql",
-      "metadataToken": 0,
-      "kind": "Enum",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": true,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Enum",
-        "clrName": "System.Enum"
-      },
-      "interfaces": [
-        {
-          "stableId": "System.Private.CoreLib:System.IComparable",
-          "clrName": "System.IComparable"
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
-          "clrName": "System.ISpanFormattable"
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.IFormattable",
-          "clrName": "System.IFormattable"
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.IConvertible",
-          "clrName": "System.IConvertible"
-        }
-      ],
-      "methods": [],
-      "properties": [],
-      "fields": [
-        {
-          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWeight::value__System.Int32",
-          "clrName": "value__",
-          "metadataToken": 67113779,
-          "normalizedSignature": "value__|System.Int32|static=false|const=false",
-          "isStatic": false,
-          "isReadOnly": false,
-          "isLiteral": false,
-          "visibility": "Public",
-          "declaringClrType": "NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWeight",
-          "declaringAssemblyName": "Npgsql"
-        },
-        {
-          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWeight::DNpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWeight",
-          "clrName": "D",
-          "metadataToken": 67113780,
-          "normalizedSignature": "D|NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWeight|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "declaringClrType": "NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWeight",
-          "declaringAssemblyName": "Npgsql"
-        },
-        {
-          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWeight::CNpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWeight",
-          "clrName": "C",
-          "metadataToken": 67113781,
-          "normalizedSignature": "C|NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWeight|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "declaringClrType": "NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWeight",
-          "declaringAssemblyName": "Npgsql"
-        },
-        {
-          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWeight::BNpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWeight",
-          "clrName": "B",
-          "metadataToken": 67113782,
-          "normalizedSignature": "B|NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWeight|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "declaringClrType": "NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWeight",
-          "declaringAssemblyName": "Npgsql"
-        },
-        {
-          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWeight::ANpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWeight",
-          "clrName": "A",
-          "metadataToken": 67113783,
-          "normalizedSignature": "A|NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWeight|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "declaringClrType": "NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWeight",
-          "declaringAssemblyName": "Npgsql"
-        }
-      ],
-      "events": [],
-      "constructors": []
-    },
-    {
       "stableId": "Npgsql:NpgsqlTypes.NpgsqlBox",
       "clrName": "NpgsqlTypes.NpgsqlBox",
       "assemblyName": "Npgsql",
@@ -4960,7 +4624,10 @@
           "isLiteral": false,
           "visibility": "Public",
           "declaringClrType": "NpgsqlTypes.NpgsqlRange\u00601",
-          "declaringAssemblyName": "Npgsql"
+          "declaringAssemblyName": "Npgsql",
+          "emitSemantics": {
+            "callableStaticAccessorKind": "field"
+          }
         }
       ],
       "events": [],
@@ -4996,6 +4663,143 @@
           "parameterCount": 6,
           "visibility": "Public",
           "declaringClrType": "NpgsqlTypes.NpgsqlRange\u00601",
+          "declaringAssemblyName": "Npgsql"
+        }
+      ]
+    },
+    {
+      "stableId": "Npgsql:NpgsqlTypes.NpgsqlRange\u00601\u002BRangeTypeConverter",
+      "clrName": "NpgsqlTypes.NpgsqlRange\u00601\u002BRangeTypeConverter",
+      "assemblyName": "Npgsql",
+      "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 1,
+      "baseType": {
+        "stableId": "System.ComponentModel.TypeConverter:System.ComponentModel.TypeConverter",
+        "clrName": "System.ComponentModel.TypeConverter"
+      },
+      "typeParameters": [
+        "T"
+      ],
+      "methods": [
+        {
+          "stableId": "Npgsql:NpgsqlTypes.NpgsqlRange\u00601\u002BRangeTypeConverter::Register():System.Void",
+          "clrName": "Register",
+          "metadataToken": 100668244,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "Register|():System.Void|static=true",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "NpgsqlTypes.NpgsqlRange\u00601\u002BRangeTypeConverter",
+          "declaringAssemblyName": "Npgsql",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql:NpgsqlTypes.NpgsqlRange\u00601\u002BRangeTypeConverter::CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type):System.Boolean",
+          "clrName": "CanConvertFrom",
+          "metadataToken": 100668245,
+          "canonicalSignature": "(System.ComponentModel.ITypeDescriptorContext,System.Type):System.Boolean",
+          "normalizedSignature": "CanConvertFrom|(System.ComponentModel.ITypeDescriptorContext,System.Type):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "NpgsqlTypes.NpgsqlRange\u00601\u002BRangeTypeConverter",
+          "declaringAssemblyName": "Npgsql",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql:NpgsqlTypes.NpgsqlRange\u00601\u002BRangeTypeConverter::CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type):System.Boolean",
+          "clrName": "CanConvertTo",
+          "metadataToken": 100668246,
+          "canonicalSignature": "(System.ComponentModel.ITypeDescriptorContext,System.Type):System.Boolean",
+          "normalizedSignature": "CanConvertTo|(System.ComponentModel.ITypeDescriptorContext,System.Type):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "NpgsqlTypes.NpgsqlRange\u00601\u002BRangeTypeConverter",
+          "declaringAssemblyName": "Npgsql",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql:NpgsqlTypes.NpgsqlRange\u00601\u002BRangeTypeConverter::ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object):System.Object",
+          "clrName": "ConvertFrom",
+          "metadataToken": 100668247,
+          "canonicalSignature": "(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object):System.Object",
+          "normalizedSignature": "ConvertFrom|(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object):System.Object|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 3,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "NpgsqlTypes.NpgsqlRange\u00601\u002BRangeTypeConverter",
+          "declaringAssemblyName": "Npgsql",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql:NpgsqlTypes.NpgsqlRange\u00601\u002BRangeTypeConverter::ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type):System.Object",
+          "clrName": "ConvertTo",
+          "metadataToken": 100668248,
+          "canonicalSignature": "(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type):System.Object",
+          "normalizedSignature": "ConvertTo|(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type):System.Object|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 4,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "NpgsqlTypes.NpgsqlRange\u00601\u002BRangeTypeConverter",
+          "declaringAssemblyName": "Npgsql",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Npgsql:NpgsqlTypes.NpgsqlRange\u00601\u002BRangeTypeConverter::.ctor():void",
+          "metadataToken": 100668249,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Public",
+          "declaringClrType": "NpgsqlTypes.NpgsqlRange\u00601\u002BRangeTypeConverter",
           "declaringAssemblyName": "Npgsql"
         }
       ]
@@ -5193,497 +4997,6 @@
       ]
     },
     {
-      "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsVector\u002BLexeme",
-      "clrName": "NpgsqlTypes.NpgsqlTsVector\u002BLexeme",
-      "assemblyName": "Npgsql",
-      "metadataToken": 0,
-      "kind": "Struct",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": true,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.ValueType",
-        "clrName": "System.ValueType"
-      },
-      "interfaces": [
-        {
-          "stableId": "System.Private.CoreLib:System.IEquatable\u00601",
-          "clrName": "System.IEquatable\u00601",
-          "typeArguments": [
-            "Lexeme"
-          ]
-        }
-      ],
-      "methods": [
-        {
-          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsVector\u002BLexeme::ToString():System.String",
-          "clrName": "ToString",
-          "metadataToken": 100668259,
-          "canonicalSignature": "():System.String",
-          "normalizedSignature": "ToString|():System.String|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": true,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "NpgsqlTypes.NpgsqlTsVector\u002BLexeme",
-          "declaringAssemblyName": "Npgsql",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsVector\u002BLexeme::Equals(NpgsqlTypes.NpgsqlTsVector\u002BLexeme):System.Boolean",
-          "clrName": "Equals",
-          "metadataToken": 100668260,
-          "canonicalSignature": "(NpgsqlTypes.NpgsqlTsVector\u002BLexeme):System.Boolean",
-          "normalizedSignature": "Equals|(NpgsqlTypes.NpgsqlTsVector\u002BLexeme):System.Boolean|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": true,
-          "visibility": "Public",
-          "declaringClrType": "NpgsqlTypes.NpgsqlTsVector\u002BLexeme",
-          "declaringAssemblyName": "Npgsql",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsVector\u002BLexeme::Equals(System.Object):System.Boolean",
-          "clrName": "Equals",
-          "metadataToken": 100668261,
-          "canonicalSignature": "(System.Object):System.Boolean",
-          "normalizedSignature": "Equals|(System.Object):System.Boolean|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": true,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "NpgsqlTypes.NpgsqlTsVector\u002BLexeme",
-          "declaringAssemblyName": "Npgsql",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsVector\u002BLexeme::GetHashCode():System.Int32",
-          "clrName": "GetHashCode",
-          "metadataToken": 100668262,
-          "canonicalSignature": "():System.Int32",
-          "normalizedSignature": "GetHashCode|():System.Int32|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": true,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "NpgsqlTypes.NpgsqlTsVector\u002BLexeme",
-          "declaringAssemblyName": "Npgsql",
-          "isExtensionMethod": false
-        }
-      ],
-      "properties": [
-        {
-          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsVector\u002BLexeme::Text:System.String",
-          "clrName": "Text",
-          "metadataToken": 385877148,
-          "canonicalSignature": ":System.String",
-          "normalizedSignature": "Text|:System.String|static=false|accessor=getset",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": true,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "declaringClrType": "NpgsqlTypes.NpgsqlTsVector\u002BLexeme",
-          "declaringAssemblyName": "Npgsql"
-        },
-        {
-          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsVector\u002BLexeme::Item[System.Int32]:NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWordEntryPos",
-          "clrName": "Item",
-          "metadataToken": 385877149,
-          "canonicalSignature": "[System.Int32]:NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWordEntryPos",
-          "normalizedSignature": "Item|[System.Int32]:NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWordEntryPos|static=false|accessor=getset",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": true,
-          "hasGetter": true,
-          "hasSetter": true,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "declaringClrType": "NpgsqlTypes.NpgsqlTsVector\u002BLexeme",
-          "declaringAssemblyName": "Npgsql"
-        },
-        {
-          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsVector\u002BLexeme::Count:System.Int32",
-          "clrName": "Count",
-          "metadataToken": 385877150,
-          "canonicalSignature": ":System.Int32",
-          "normalizedSignature": "Count|:System.Int32|static=false|accessor=get",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "declaringClrType": "NpgsqlTypes.NpgsqlTsVector\u002BLexeme",
-          "declaringAssemblyName": "Npgsql"
-        }
-      ],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsVector\u002BLexeme::.ctor(System.String):void",
-          "metadataToken": 100668252,
-          "canonicalSignature": "(System.String):void",
-          "normalizedSignature": "constructor|(System.String):void|static=false",
-          "isStatic": false,
-          "parameterCount": 1,
-          "visibility": "Public",
-          "declaringClrType": "NpgsqlTypes.NpgsqlTsVector\u002BLexeme",
-          "declaringAssemblyName": "Npgsql"
-        },
-        {
-          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsVector\u002BLexeme::.ctor(System.String,System.Collections.Generic.List_1[[NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWordEntryPos,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]):void",
-          "metadataToken": 100668253,
-          "canonicalSignature": "(System.String,System.Collections.Generic.List_1[[NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWordEntryPos,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]):void",
-          "normalizedSignature": "constructor|(System.String,System.Collections.Generic.List_1[[NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWordEntryPos,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]):void|static=false",
-          "isStatic": false,
-          "parameterCount": 2,
-          "visibility": "Public",
-          "declaringClrType": "NpgsqlTypes.NpgsqlTsVector\u002BLexeme",
-          "declaringAssemblyName": "Npgsql"
-        }
-      ]
-    },
-    {
-      "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWordEntryPos",
-      "clrName": "NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWordEntryPos",
-      "assemblyName": "Npgsql",
-      "metadataToken": 0,
-      "kind": "Struct",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": true,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.ValueType",
-        "clrName": "System.ValueType"
-      },
-      "interfaces": [
-        {
-          "stableId": "System.Private.CoreLib:System.IEquatable\u00601",
-          "clrName": "System.IEquatable\u00601",
-          "typeArguments": [
-            "WordEntryPos"
-          ]
-        }
-      ],
-      "methods": [
-        {
-          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWordEntryPos::ToString():System.String",
-          "clrName": "ToString",
-          "metadataToken": 100669944,
-          "canonicalSignature": "():System.String",
-          "normalizedSignature": "ToString|():System.String|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": true,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWordEntryPos",
-          "declaringAssemblyName": "Npgsql",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWordEntryPos::Equals(NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWordEntryPos):System.Boolean",
-          "clrName": "Equals",
-          "metadataToken": 100669945,
-          "canonicalSignature": "(NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWordEntryPos):System.Boolean",
-          "normalizedSignature": "Equals|(NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWordEntryPos):System.Boolean|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": true,
-          "visibility": "Public",
-          "declaringClrType": "NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWordEntryPos",
-          "declaringAssemblyName": "Npgsql",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWordEntryPos::Equals(System.Object):System.Boolean",
-          "clrName": "Equals",
-          "metadataToken": 100669946,
-          "canonicalSignature": "(System.Object):System.Boolean",
-          "normalizedSignature": "Equals|(System.Object):System.Boolean|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": true,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWordEntryPos",
-          "declaringAssemblyName": "Npgsql",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWordEntryPos::GetHashCode():System.Int32",
-          "clrName": "GetHashCode",
-          "metadataToken": 100669947,
-          "canonicalSignature": "():System.Int32",
-          "normalizedSignature": "GetHashCode|():System.Int32|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": true,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWordEntryPos",
-          "declaringAssemblyName": "Npgsql",
-          "isExtensionMethod": false
-        }
-      ],
-      "properties": [
-        {
-          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWordEntryPos::Weight:NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWeight",
-          "clrName": "Weight",
-          "metadataToken": 385877412,
-          "canonicalSignature": ":NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWeight",
-          "normalizedSignature": "Weight|:NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWeight|static=false|accessor=get",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "declaringClrType": "NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWordEntryPos",
-          "declaringAssemblyName": "Npgsql"
-        },
-        {
-          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWordEntryPos::Pos:System.Int32",
-          "clrName": "Pos",
-          "metadataToken": 385877413,
-          "canonicalSignature": ":System.Int32",
-          "normalizedSignature": "Pos|:System.Int32|static=false|accessor=get",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "declaringClrType": "NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWordEntryPos",
-          "declaringAssemblyName": "Npgsql"
-        }
-      ],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWordEntryPos::.ctor(System.Int32,NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWeight):void",
-          "metadataToken": 100669941,
-          "canonicalSignature": "(System.Int32,NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWeight):void",
-          "normalizedSignature": "constructor|(System.Int32,NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWeight):void|static=false",
-          "isStatic": false,
-          "parameterCount": 2,
-          "visibility": "Public",
-          "declaringClrType": "NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWordEntryPos",
-          "declaringAssemblyName": "Npgsql"
-        }
-      ]
-    },
-    {
-      "stableId": "Npgsql:NpgsqlTypes.NpgsqlRange\u00601\u002BRangeTypeConverter",
-      "clrName": "NpgsqlTypes.NpgsqlRange\u00601\u002BRangeTypeConverter",
-      "assemblyName": "Npgsql",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 1,
-      "baseType": {
-        "stableId": "System.ComponentModel.TypeConverter:System.ComponentModel.TypeConverter",
-        "clrName": "System.ComponentModel.TypeConverter"
-      },
-      "typeParameters": [
-        "T"
-      ],
-      "methods": [
-        {
-          "stableId": "Npgsql:NpgsqlTypes.NpgsqlRange\u00601\u002BRangeTypeConverter::Register():System.Void",
-          "clrName": "Register",
-          "metadataToken": 100668244,
-          "canonicalSignature": "():System.Void",
-          "normalizedSignature": "Register|():System.Void|static=true",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": true,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "NpgsqlTypes.NpgsqlRange\u00601\u002BRangeTypeConverter",
-          "declaringAssemblyName": "Npgsql",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Npgsql:NpgsqlTypes.NpgsqlRange\u00601\u002BRangeTypeConverter::CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type):System.Boolean",
-          "clrName": "CanConvertFrom",
-          "metadataToken": 100668245,
-          "canonicalSignature": "(System.ComponentModel.ITypeDescriptorContext,System.Type):System.Boolean",
-          "normalizedSignature": "CanConvertFrom|(System.ComponentModel.ITypeDescriptorContext,System.Type):System.Boolean|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 2,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": true,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "NpgsqlTypes.NpgsqlRange\u00601\u002BRangeTypeConverter",
-          "declaringAssemblyName": "Npgsql",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Npgsql:NpgsqlTypes.NpgsqlRange\u00601\u002BRangeTypeConverter::CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type):System.Boolean",
-          "clrName": "CanConvertTo",
-          "metadataToken": 100668246,
-          "canonicalSignature": "(System.ComponentModel.ITypeDescriptorContext,System.Type):System.Boolean",
-          "normalizedSignature": "CanConvertTo|(System.ComponentModel.ITypeDescriptorContext,System.Type):System.Boolean|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 2,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": true,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "NpgsqlTypes.NpgsqlRange\u00601\u002BRangeTypeConverter",
-          "declaringAssemblyName": "Npgsql",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Npgsql:NpgsqlTypes.NpgsqlRange\u00601\u002BRangeTypeConverter::ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object):System.Object",
-          "clrName": "ConvertFrom",
-          "metadataToken": 100668247,
-          "canonicalSignature": "(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object):System.Object",
-          "normalizedSignature": "ConvertFrom|(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object):System.Object|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 3,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": true,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "NpgsqlTypes.NpgsqlRange\u00601\u002BRangeTypeConverter",
-          "declaringAssemblyName": "Npgsql",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Npgsql:NpgsqlTypes.NpgsqlRange\u00601\u002BRangeTypeConverter::ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type):System.Object",
-          "clrName": "ConvertTo",
-          "metadataToken": 100668248,
-          "canonicalSignature": "(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type):System.Object",
-          "normalizedSignature": "ConvertTo|(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type):System.Object|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 4,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": true,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "NpgsqlTypes.NpgsqlRange\u00601\u002BRangeTypeConverter",
-          "declaringAssemblyName": "Npgsql",
-          "isExtensionMethod": false
-        }
-      ],
-      "properties": [],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Npgsql:NpgsqlTypes.NpgsqlRange\u00601\u002BRangeTypeConverter::.ctor():void",
-          "metadataToken": 100668249,
-          "canonicalSignature": "():void",
-          "normalizedSignature": "constructor|():void|static=false",
-          "isStatic": false,
-          "parameterCount": 0,
-          "visibility": "Public",
-          "declaringClrType": "NpgsqlTypes.NpgsqlRange\u00601\u002BRangeTypeConverter",
-          "declaringAssemblyName": "Npgsql"
-        }
-      ]
-    },
-    {
       "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsQuery",
       "clrName": "NpgsqlTypes.NpgsqlTsQuery",
       "assemblyName": "Npgsql",
@@ -5865,6 +5178,130 @@
           "declaringAssemblyName": "Npgsql"
         }
       ]
+    },
+    {
+      "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsQuery\u002BNodeKind",
+      "clrName": "NpgsqlTypes.NpgsqlTsQuery\u002BNodeKind",
+      "assemblyName": "Npgsql",
+      "metadataToken": 0,
+      "kind": "Enum",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
+      "methods": [],
+      "properties": [],
+      "fields": [
+        {
+          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsQuery\u002BNodeKind::value__System.Int32",
+          "clrName": "value__",
+          "metadataToken": 67110817,
+          "normalizedSignature": "value__|System.Int32|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "isLiteral": false,
+          "visibility": "Public",
+          "declaringClrType": "NpgsqlTypes.NpgsqlTsQuery\u002BNodeKind",
+          "declaringAssemblyName": "Npgsql"
+        },
+        {
+          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsQuery\u002BNodeKind::EmptyNpgsqlTypes.NpgsqlTsQuery\u002BNodeKind",
+          "clrName": "Empty",
+          "metadataToken": 67110818,
+          "normalizedSignature": "Empty|NpgsqlTypes.NpgsqlTsQuery\u002BNodeKind|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true,
+          "visibility": "Public",
+          "declaringClrType": "NpgsqlTypes.NpgsqlTsQuery\u002BNodeKind",
+          "declaringAssemblyName": "Npgsql"
+        },
+        {
+          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsQuery\u002BNodeKind::LexemeNpgsqlTypes.NpgsqlTsQuery\u002BNodeKind",
+          "clrName": "Lexeme",
+          "metadataToken": 67110819,
+          "normalizedSignature": "Lexeme|NpgsqlTypes.NpgsqlTsQuery\u002BNodeKind|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true,
+          "visibility": "Public",
+          "declaringClrType": "NpgsqlTypes.NpgsqlTsQuery\u002BNodeKind",
+          "declaringAssemblyName": "Npgsql"
+        },
+        {
+          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsQuery\u002BNodeKind::NotNpgsqlTypes.NpgsqlTsQuery\u002BNodeKind",
+          "clrName": "Not",
+          "metadataToken": 67110820,
+          "normalizedSignature": "Not|NpgsqlTypes.NpgsqlTsQuery\u002BNodeKind|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true,
+          "visibility": "Public",
+          "declaringClrType": "NpgsqlTypes.NpgsqlTsQuery\u002BNodeKind",
+          "declaringAssemblyName": "Npgsql"
+        },
+        {
+          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsQuery\u002BNodeKind::AndNpgsqlTypes.NpgsqlTsQuery\u002BNodeKind",
+          "clrName": "And",
+          "metadataToken": 67110821,
+          "normalizedSignature": "And|NpgsqlTypes.NpgsqlTsQuery\u002BNodeKind|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true,
+          "visibility": "Public",
+          "declaringClrType": "NpgsqlTypes.NpgsqlTsQuery\u002BNodeKind",
+          "declaringAssemblyName": "Npgsql"
+        },
+        {
+          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsQuery\u002BNodeKind::OrNpgsqlTypes.NpgsqlTsQuery\u002BNodeKind",
+          "clrName": "Or",
+          "metadataToken": 67110822,
+          "normalizedSignature": "Or|NpgsqlTypes.NpgsqlTsQuery\u002BNodeKind|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true,
+          "visibility": "Public",
+          "declaringClrType": "NpgsqlTypes.NpgsqlTsQuery\u002BNodeKind",
+          "declaringAssemblyName": "Npgsql"
+        },
+        {
+          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsQuery\u002BNodeKind::PhraseNpgsqlTypes.NpgsqlTsQuery\u002BNodeKind",
+          "clrName": "Phrase",
+          "metadataToken": 67110823,
+          "normalizedSignature": "Phrase|NpgsqlTypes.NpgsqlTsQuery\u002BNodeKind|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true,
+          "visibility": "Public",
+          "declaringClrType": "NpgsqlTypes.NpgsqlTsQuery\u002BNodeKind",
+          "declaringAssemblyName": "Npgsql"
+        }
+      ],
+      "events": [],
+      "constructors": []
     },
     {
       "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsQueryAnd",
@@ -6460,6 +5897,118 @@
       ]
     },
     {
+      "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsQueryLexeme\u002BWeight",
+      "clrName": "NpgsqlTypes.NpgsqlTsQueryLexeme\u002BWeight",
+      "assemblyName": "Npgsql",
+      "metadataToken": 0,
+      "kind": "Enum",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
+      "methods": [],
+      "properties": [],
+      "fields": [
+        {
+          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsQueryLexeme\u002BWeight::value__System.Int32",
+          "clrName": "value__",
+          "metadataToken": 67110824,
+          "normalizedSignature": "value__|System.Int32|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "isLiteral": false,
+          "visibility": "Public",
+          "declaringClrType": "NpgsqlTypes.NpgsqlTsQueryLexeme\u002BWeight",
+          "declaringAssemblyName": "Npgsql"
+        },
+        {
+          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsQueryLexeme\u002BWeight::NoneNpgsqlTypes.NpgsqlTsQueryLexeme\u002BWeight",
+          "clrName": "None",
+          "metadataToken": 67110825,
+          "normalizedSignature": "None|NpgsqlTypes.NpgsqlTsQueryLexeme\u002BWeight|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true,
+          "visibility": "Public",
+          "declaringClrType": "NpgsqlTypes.NpgsqlTsQueryLexeme\u002BWeight",
+          "declaringAssemblyName": "Npgsql"
+        },
+        {
+          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsQueryLexeme\u002BWeight::DNpgsqlTypes.NpgsqlTsQueryLexeme\u002BWeight",
+          "clrName": "D",
+          "metadataToken": 67110826,
+          "normalizedSignature": "D|NpgsqlTypes.NpgsqlTsQueryLexeme\u002BWeight|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true,
+          "visibility": "Public",
+          "declaringClrType": "NpgsqlTypes.NpgsqlTsQueryLexeme\u002BWeight",
+          "declaringAssemblyName": "Npgsql"
+        },
+        {
+          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsQueryLexeme\u002BWeight::CNpgsqlTypes.NpgsqlTsQueryLexeme\u002BWeight",
+          "clrName": "C",
+          "metadataToken": 67110827,
+          "normalizedSignature": "C|NpgsqlTypes.NpgsqlTsQueryLexeme\u002BWeight|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true,
+          "visibility": "Public",
+          "declaringClrType": "NpgsqlTypes.NpgsqlTsQueryLexeme\u002BWeight",
+          "declaringAssemblyName": "Npgsql"
+        },
+        {
+          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsQueryLexeme\u002BWeight::BNpgsqlTypes.NpgsqlTsQueryLexeme\u002BWeight",
+          "clrName": "B",
+          "metadataToken": 67110828,
+          "normalizedSignature": "B|NpgsqlTypes.NpgsqlTsQueryLexeme\u002BWeight|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true,
+          "visibility": "Public",
+          "declaringClrType": "NpgsqlTypes.NpgsqlTsQueryLexeme\u002BWeight",
+          "declaringAssemblyName": "Npgsql"
+        },
+        {
+          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsQueryLexeme\u002BWeight::ANpgsqlTypes.NpgsqlTsQueryLexeme\u002BWeight",
+          "clrName": "A",
+          "metadataToken": 67110829,
+          "normalizedSignature": "A|NpgsqlTypes.NpgsqlTsQueryLexeme\u002BWeight|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true,
+          "visibility": "Public",
+          "declaringClrType": "NpgsqlTypes.NpgsqlTsQueryLexeme\u002BWeight",
+          "declaringAssemblyName": "Npgsql"
+        }
+      ],
+      "events": [],
+      "constructors": []
+    },
+    {
       "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsQueryNot",
       "clrName": "NpgsqlTypes.NpgsqlTsQueryNot",
       "assemblyName": "Npgsql",
@@ -6898,6 +6447,460 @@
       ],
       "events": [],
       "constructors": []
+    },
+    {
+      "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsVector\u002BLexeme",
+      "clrName": "NpgsqlTypes.NpgsqlTsVector\u002BLexeme",
+      "assemblyName": "Npgsql",
+      "metadataToken": 0,
+      "kind": "Struct",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IEquatable\u00601",
+          "clrName": "System.IEquatable\u00601",
+          "typeArguments": [
+            "Lexeme"
+          ]
+        }
+      ],
+      "methods": [
+        {
+          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsVector\u002BLexeme::ToString():System.String",
+          "clrName": "ToString",
+          "metadataToken": 100668259,
+          "canonicalSignature": "():System.String",
+          "normalizedSignature": "ToString|():System.String|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "NpgsqlTypes.NpgsqlTsVector\u002BLexeme",
+          "declaringAssemblyName": "Npgsql",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsVector\u002BLexeme::Equals(NpgsqlTypes.NpgsqlTsVector\u002BLexeme):System.Boolean",
+          "clrName": "Equals",
+          "metadataToken": 100668260,
+          "canonicalSignature": "(NpgsqlTypes.NpgsqlTsVector\u002BLexeme):System.Boolean",
+          "normalizedSignature": "Equals|(NpgsqlTypes.NpgsqlTsVector\u002BLexeme):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
+          "visibility": "Public",
+          "declaringClrType": "NpgsqlTypes.NpgsqlTsVector\u002BLexeme",
+          "declaringAssemblyName": "Npgsql",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsVector\u002BLexeme::Equals(System.Object):System.Boolean",
+          "clrName": "Equals",
+          "metadataToken": 100668261,
+          "canonicalSignature": "(System.Object):System.Boolean",
+          "normalizedSignature": "Equals|(System.Object):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "NpgsqlTypes.NpgsqlTsVector\u002BLexeme",
+          "declaringAssemblyName": "Npgsql",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsVector\u002BLexeme::GetHashCode():System.Int32",
+          "clrName": "GetHashCode",
+          "metadataToken": 100668262,
+          "canonicalSignature": "():System.Int32",
+          "normalizedSignature": "GetHashCode|():System.Int32|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "NpgsqlTypes.NpgsqlTsVector\u002BLexeme",
+          "declaringAssemblyName": "Npgsql",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsVector\u002BLexeme::Text:System.String",
+          "clrName": "Text",
+          "metadataToken": 385877148,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Text|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "visibility": "Public",
+          "declaringClrType": "NpgsqlTypes.NpgsqlTsVector\u002BLexeme",
+          "declaringAssemblyName": "Npgsql"
+        },
+        {
+          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsVector\u002BLexeme::Item[System.Int32]:NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWordEntryPos",
+          "clrName": "Item",
+          "metadataToken": 385877149,
+          "canonicalSignature": "[System.Int32]:NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWordEntryPos",
+          "normalizedSignature": "Item|[System.Int32]:NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWordEntryPos|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": true,
+          "hasGetter": true,
+          "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "visibility": "Public",
+          "declaringClrType": "NpgsqlTypes.NpgsqlTsVector\u002BLexeme",
+          "declaringAssemblyName": "Npgsql"
+        },
+        {
+          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsVector\u002BLexeme::Count:System.Int32",
+          "clrName": "Count",
+          "metadataToken": 385877150,
+          "canonicalSignature": ":System.Int32",
+          "normalizedSignature": "Count|:System.Int32|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "visibility": "Public",
+          "declaringClrType": "NpgsqlTypes.NpgsqlTsVector\u002BLexeme",
+          "declaringAssemblyName": "Npgsql"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsVector\u002BLexeme::.ctor(System.String):void",
+          "metadataToken": 100668252,
+          "canonicalSignature": "(System.String):void",
+          "normalizedSignature": "constructor|(System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "visibility": "Public",
+          "declaringClrType": "NpgsqlTypes.NpgsqlTsVector\u002BLexeme",
+          "declaringAssemblyName": "Npgsql"
+        },
+        {
+          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsVector\u002BLexeme::.ctor(System.String,System.Collections.Generic.List_1[[NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWordEntryPos,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]):void",
+          "metadataToken": 100668253,
+          "canonicalSignature": "(System.String,System.Collections.Generic.List_1[[NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWordEntryPos,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]):void",
+          "normalizedSignature": "constructor|(System.String,System.Collections.Generic.List_1[[NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWordEntryPos,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "visibility": "Public",
+          "declaringClrType": "NpgsqlTypes.NpgsqlTsVector\u002BLexeme",
+          "declaringAssemblyName": "Npgsql"
+        }
+      ]
+    },
+    {
+      "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWeight",
+      "clrName": "NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWeight",
+      "assemblyName": "Npgsql",
+      "metadataToken": 0,
+      "kind": "Enum",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
+      "methods": [],
+      "properties": [],
+      "fields": [
+        {
+          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWeight::value__System.Int32",
+          "clrName": "value__",
+          "metadataToken": 67113779,
+          "normalizedSignature": "value__|System.Int32|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "isLiteral": false,
+          "visibility": "Public",
+          "declaringClrType": "NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWeight",
+          "declaringAssemblyName": "Npgsql"
+        },
+        {
+          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWeight::DNpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWeight",
+          "clrName": "D",
+          "metadataToken": 67113780,
+          "normalizedSignature": "D|NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWeight|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true,
+          "visibility": "Public",
+          "declaringClrType": "NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWeight",
+          "declaringAssemblyName": "Npgsql"
+        },
+        {
+          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWeight::CNpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWeight",
+          "clrName": "C",
+          "metadataToken": 67113781,
+          "normalizedSignature": "C|NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWeight|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true,
+          "visibility": "Public",
+          "declaringClrType": "NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWeight",
+          "declaringAssemblyName": "Npgsql"
+        },
+        {
+          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWeight::BNpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWeight",
+          "clrName": "B",
+          "metadataToken": 67113782,
+          "normalizedSignature": "B|NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWeight|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true,
+          "visibility": "Public",
+          "declaringClrType": "NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWeight",
+          "declaringAssemblyName": "Npgsql"
+        },
+        {
+          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWeight::ANpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWeight",
+          "clrName": "A",
+          "metadataToken": 67113783,
+          "normalizedSignature": "A|NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWeight|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "isLiteral": true,
+          "visibility": "Public",
+          "declaringClrType": "NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWeight",
+          "declaringAssemblyName": "Npgsql"
+        }
+      ],
+      "events": [],
+      "constructors": []
+    },
+    {
+      "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWordEntryPos",
+      "clrName": "NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWordEntryPos",
+      "assemblyName": "Npgsql",
+      "metadataToken": 0,
+      "kind": "Struct",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IEquatable\u00601",
+          "clrName": "System.IEquatable\u00601",
+          "typeArguments": [
+            "WordEntryPos"
+          ]
+        }
+      ],
+      "methods": [
+        {
+          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWordEntryPos::ToString():System.String",
+          "clrName": "ToString",
+          "metadataToken": 100669944,
+          "canonicalSignature": "():System.String",
+          "normalizedSignature": "ToString|():System.String|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWordEntryPos",
+          "declaringAssemblyName": "Npgsql",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWordEntryPos::Equals(NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWordEntryPos):System.Boolean",
+          "clrName": "Equals",
+          "metadataToken": 100669945,
+          "canonicalSignature": "(NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWordEntryPos):System.Boolean",
+          "normalizedSignature": "Equals|(NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWordEntryPos):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
+          "visibility": "Public",
+          "declaringClrType": "NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWordEntryPos",
+          "declaringAssemblyName": "Npgsql",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWordEntryPos::Equals(System.Object):System.Boolean",
+          "clrName": "Equals",
+          "metadataToken": 100669946,
+          "canonicalSignature": "(System.Object):System.Boolean",
+          "normalizedSignature": "Equals|(System.Object):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWordEntryPos",
+          "declaringAssemblyName": "Npgsql",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWordEntryPos::GetHashCode():System.Int32",
+          "clrName": "GetHashCode",
+          "metadataToken": 100669947,
+          "canonicalSignature": "():System.Int32",
+          "normalizedSignature": "GetHashCode|():System.Int32|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWordEntryPos",
+          "declaringAssemblyName": "Npgsql",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWordEntryPos::Weight:NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWeight",
+          "clrName": "Weight",
+          "metadataToken": 385877412,
+          "canonicalSignature": ":NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWeight",
+          "normalizedSignature": "Weight|:NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWeight|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "visibility": "Public",
+          "declaringClrType": "NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWordEntryPos",
+          "declaringAssemblyName": "Npgsql"
+        },
+        {
+          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWordEntryPos::Pos:System.Int32",
+          "clrName": "Pos",
+          "metadataToken": 385877413,
+          "canonicalSignature": ":System.Int32",
+          "normalizedSignature": "Pos|:System.Int32|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "visibility": "Public",
+          "declaringClrType": "NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWordEntryPos",
+          "declaringAssemblyName": "Npgsql"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWordEntryPos::.ctor(System.Int32,NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWeight):void",
+          "metadataToken": 100669941,
+          "canonicalSignature": "(System.Int32,NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWeight):void",
+          "normalizedSignature": "constructor|(System.Int32,NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWeight):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "visibility": "Public",
+          "declaringClrType": "NpgsqlTypes.NpgsqlTsVector\u002BLexeme\u002BWordEntryPos",
+          "declaringAssemblyName": "Npgsql"
+        }
+      ]
     },
     {
       "stableId": "Npgsql:NpgsqlTypes.PgNameAttribute",

@@ -2,8 +2,9 @@
 // Namespace: Npgsql.NameTranslation
 // Assembly: Npgsql
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import * as Npgsql_Internal from "../../Npgsql/internal/index.js";
@@ -45,9 +46,9 @@ export interface NpgsqlSnakeCaseNameTranslator$instance extends Npgsql_Internal.
 
 
 export const NpgsqlSnakeCaseNameTranslator: {
-    new(culture: CultureInfo): NpgsqlSnakeCaseNameTranslator;
-    new(legacyMode: boolean, culture: CultureInfo): NpgsqlSnakeCaseNameTranslator;
-    ConvertToSnakeCase(name: string, culture?: CultureInfo): string;
+    new(culture: CultureInfo | null): NpgsqlSnakeCaseNameTranslator;
+    new(legacyMode: boolean, culture: CultureInfo | null): NpgsqlSnakeCaseNameTranslator;
+    ConvertToSnakeCase(name: string, culture?: CultureInfo | null): string;
 };
 
 

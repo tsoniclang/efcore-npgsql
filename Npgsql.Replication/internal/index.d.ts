@@ -2,8 +2,9 @@
 // Namespace: Npgsql.Replication
 // Assembly: Npgsql
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { PgOutputReplicationMessage } from "../../Npgsql.Replication.PgOutput.Messages/internal/index.js";
@@ -34,7 +35,7 @@ export interface ReplicationSlotOptions$instance {
 
 
 export const ReplicationSlotOptions: {
-    new(slotName: string, consistentPoint: string): ReplicationSlotOptions;
+    new(slotName: string, consistentPoint: string | null): ReplicationSlotOptions;
     new(slotName: string, consistentPoint: NpgsqlLogSequenceNumber): ReplicationSlotOptions;
 };
 
@@ -66,7 +67,7 @@ export interface LogicalReplicationConnection$instance extends ReplicationConnec
 
 export const LogicalReplicationConnection: {
     new(): LogicalReplicationConnection;
-    new(connectionString: string): LogicalReplicationConnection;
+    new(connectionString: string | null): LogicalReplicationConnection;
 };
 
 
@@ -78,8 +79,8 @@ export interface PhysicalReplicationConnection$instance extends ReplicationConne
     readonly __tsonic_iface_System_IAsyncDisposable: never;
 
     CreateReplicationSlot(slotName: string, isTemporary?: boolean, reserveWal?: boolean, cancellationToken?: CancellationToken): Task_1<PhysicalReplicationSlot>;
-    ReadReplicationSlot(slotName: string, cancellationToken?: CancellationToken): Task_1<PhysicalReplicationSlot | undefined>;
-    StartReplication(slot: PhysicalReplicationSlot, walLocation: NpgsqlLogSequenceNumber, cancellationToken: CancellationToken, timeline?: uint): IAsyncEnumerable_1<XLogDataMessage>;
+    ReadReplicationSlot(slotName: string, cancellationToken?: CancellationToken): Task_1<PhysicalReplicationSlot | null>;
+    StartReplication(slot: PhysicalReplicationSlot | null, walLocation: NpgsqlLogSequenceNumber, cancellationToken: CancellationToken, timeline?: uint): IAsyncEnumerable_1<XLogDataMessage>;
     StartReplication(walLocation: NpgsqlLogSequenceNumber, cancellationToken: CancellationToken, timeline?: uint): IAsyncEnumerable_1<XLogDataMessage>;
     StartReplication(slot: PhysicalReplicationSlot, cancellationToken: CancellationToken): IAsyncEnumerable_1<XLogDataMessage>;
 }
@@ -87,7 +88,7 @@ export interface PhysicalReplicationConnection$instance extends ReplicationConne
 
 export const PhysicalReplicationConnection: {
     new(): PhysicalReplicationConnection;
-    new(connectionString: string): PhysicalReplicationConnection;
+    new(connectionString: string | null): PhysicalReplicationConnection;
 };
 
 
@@ -172,7 +173,7 @@ export type ReplicationSlot = ReplicationSlot$instance;
 export interface ReplicationSystemIdentification$instance {
     readonly __tsonic_type_Npgsql_Replication_ReplicationSystemIdentification: never;
 
-    readonly DbName: string | undefined;
+    readonly DbName: string | null;
     readonly SystemId: string;
     readonly Timeline: uint;
     readonly XLogPos: NpgsqlLogSequenceNumber;
@@ -209,7 +210,7 @@ export type PgOutputConnectionExtensions = PgOutputConnectionExtensions$instance
 
 export abstract class TestDecodingConnectionExtensions$instance {
     static CreateTestDecodingReplicationSlot(connection: LogicalReplicationConnection, slotName: string, temporarySlot?: boolean, slotSnapshotInitMode?: Nullable_1<LogicalSlotSnapshotInitMode>, twoPhase?: boolean, cancellationToken?: CancellationToken): Task_1<TestDecodingReplicationSlot>;
-    static StartReplication(connection: LogicalReplicationConnection, slot: TestDecodingReplicationSlot, cancellationToken: CancellationToken, options?: TestDecodingOptions, walLocation?: Nullable_1<NpgsqlLogSequenceNumber>): IAsyncEnumerable_1<TestDecodingData>;
+    static StartReplication(connection: LogicalReplicationConnection, slot: TestDecodingReplicationSlot, cancellationToken: CancellationToken, options?: TestDecodingOptions | null, walLocation?: Nullable_1<NpgsqlLogSequenceNumber>): IAsyncEnumerable_1<TestDecodingData>;
 }
 
 
