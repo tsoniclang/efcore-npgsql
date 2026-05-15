@@ -3,7 +3,7 @@
 // Assembly: Npgsql
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -22,10 +22,10 @@ export interface INpgsqlTypeMapper$instance {
     ConfigureJsonOptions(serializerOptions: JsonSerializerOptions): INpgsqlTypeMapper;
     EnableDynamicJson(jsonbClrTypes?: Type[] | null, jsonClrTypes?: Type[] | null): INpgsqlTypeMapper;
     EnableRecordsAsTuples(): INpgsqlTypeMapper;
-    MapEnum<TEnum extends number & NonNullable<JsValue>>(pgName?: string | null, nameTranslator?: INpgsqlNameTranslator | null): INpgsqlTypeMapper;
+    MapEnum<TEnum extends NonNullable<unknown> & number>(pgName?: string | null, nameTranslator?: INpgsqlNameTranslator | null): INpgsqlTypeMapper;
     MapEnum(clrType: Type, pgName?: string | null, nameTranslator?: INpgsqlNameTranslator | null): INpgsqlTypeMapper;
     Reset(): void;
-    UnmapEnum<TEnum extends number & NonNullable<JsValue>>(pgName?: string | null, nameTranslator?: INpgsqlNameTranslator | null): boolean;
+    UnmapEnum<TEnum extends NonNullable<unknown> & number>(pgName?: string | null, nameTranslator?: INpgsqlNameTranslator | null): boolean;
     UnmapEnum(clrType: Type, pgName?: string | null, nameTranslator?: INpgsqlNameTranslator | null): boolean;
 }
 

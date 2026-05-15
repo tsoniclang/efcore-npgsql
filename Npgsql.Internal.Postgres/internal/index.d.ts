@@ -3,7 +3,7 @@
 // Assembly: Npgsql
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -23,7 +23,7 @@ export interface DataTypeName$instance {
     readonly UnqualifiedName: string;
     readonly Value: string;
     Equals(other: DataTypeName): boolean;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
     ToArrayName(): DataTypeName;
     ToDefaultMultirangeName(): DataTypeName;
@@ -64,7 +64,7 @@ export interface Oid$instance {
 
     Value: uint;
     Equals(other: Oid): boolean;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
     ToString(): string;
 }
@@ -88,7 +88,7 @@ export interface PgTypeId$instance {
     readonly IsOid: boolean;
     readonly Oid: Oid;
     Equals(other: PgTypeId): boolean;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
     ToString(): string;
 }

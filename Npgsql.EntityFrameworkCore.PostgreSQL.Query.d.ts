@@ -5,6 +5,10 @@
 // Import internal declarations
 import * as Internal from './Npgsql.EntityFrameworkCore.PostgreSQL.Query/internal/index.js';
 
+// Core type aliases from @tsonic/core
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
+
 // Cross-namespace type imports for constraints
 import type { PgAllExpression, PgAllOperatorType, PgAnyExpression, PgAnyOperatorType, PgArrayIndexExpression, PgArraySliceExpression, PgFunctionExpression, PgILikeExpression, PgJsonTraversalExpression, PgNewArrayExpression, PgRegexMatchExpression } from './Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.Internal/internal/index.js';
 import type { PgExpressionType } from './Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions/internal/index.js';

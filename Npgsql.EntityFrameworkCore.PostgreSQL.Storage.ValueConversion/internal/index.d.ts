@@ -3,7 +3,7 @@
 // Assembly: Npgsql.EntityFrameworkCore.PostgreSQL
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -12,7 +12,7 @@ import type { IEnumerable } from "@tsonic/dotnet/System.Collections/internal/ind
 import * as Microsoft_EntityFrameworkCore_Storage_ValueConversion_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.ValueConversion/internal/index.js";
 import type { ValueConverter, ValueConverter_2 } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.ValueConversion/internal/index.js";
 
-export interface NpgsqlArrayConverter_3$instance<TModelCollection extends IEnumerable, TConcreteModelCollection extends IEnumerable, TProviderCollection extends IEnumerable> extends ValueConverter_2<TModelCollection, TProviderCollection> {
+export interface NpgsqlArrayConverter_3$instance<TModelCollection extends unknown & IEnumerable, TConcreteModelCollection extends unknown & IEnumerable, TProviderCollection extends unknown & IEnumerable> extends ValueConverter_2<TModelCollection, TProviderCollection> {
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_ValueConversion_NpgsqlArrayConverter_3: never;
 
     readonly ElementConverter: ValueConverter | null;
@@ -20,10 +20,10 @@ export interface NpgsqlArrayConverter_3$instance<TModelCollection extends IEnume
 
 
 export const NpgsqlArrayConverter_3: {
-    new<TModelCollection extends IEnumerable, TConcreteModelCollection extends IEnumerable, TProviderCollection extends IEnumerable>(): NpgsqlArrayConverter_3<TModelCollection, TConcreteModelCollection, TProviderCollection>;
-    new<TModelCollection extends IEnumerable, TConcreteModelCollection extends IEnumerable, TProviderCollection extends IEnumerable>(elementConverter: ValueConverter | null): NpgsqlArrayConverter_3<TModelCollection, TConcreteModelCollection, TProviderCollection>;
+    new<TModelCollection extends unknown & IEnumerable, TConcreteModelCollection extends unknown & IEnumerable, TProviderCollection extends unknown & IEnumerable>(): NpgsqlArrayConverter_3<TModelCollection, TConcreteModelCollection, TProviderCollection>;
+    new<TModelCollection extends unknown & IEnumerable, TConcreteModelCollection extends unknown & IEnumerable, TProviderCollection extends unknown & IEnumerable>(elementConverter: ValueConverter | null): NpgsqlArrayConverter_3<TModelCollection, TConcreteModelCollection, TProviderCollection>;
 };
 
 
-export type NpgsqlArrayConverter_3<TModelCollection extends IEnumerable, TConcreteModelCollection extends IEnumerable, TProviderCollection extends IEnumerable> = NpgsqlArrayConverter_3$instance<TModelCollection, TConcreteModelCollection, TProviderCollection>;
+export type NpgsqlArrayConverter_3<TModelCollection extends unknown & IEnumerable, TConcreteModelCollection extends unknown & IEnumerable, TProviderCollection extends unknown & IEnumerable> = NpgsqlArrayConverter_3$instance<TModelCollection, TConcreteModelCollection, TProviderCollection>;
 

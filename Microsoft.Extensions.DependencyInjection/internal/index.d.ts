@@ -3,7 +3,7 @@
 // Assembly: Microsoft.EntityFrameworkCore, Microsoft.Extensions.Caching.Memory, Microsoft.Extensions.DependencyInjection, Microsoft.Extensions.DependencyInjection.Abstractions, Microsoft.Extensions.Logging, Microsoft.Extensions.Options, Npgsql.EntityFrameworkCore.PostgreSQL
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -15,7 +15,7 @@ import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.
 
 export abstract class NpgsqlServiceCollectionExtensions$instance {
     static AddEntityFrameworkNpgsql(serviceCollection: IServiceCollection): IServiceCollection;
-    static AddNpgsql<TContext extends DbContext>(serviceCollection: IServiceCollection, connectionString: string | null, npgsqlOptionsAction?: Action_1<NpgsqlDbContextOptionsBuilder> | null, optionsAction?: Action_1<DbContextOptionsBuilder> | null): IServiceCollection;
+    static AddNpgsql<TContext extends unknown & DbContext>(serviceCollection: IServiceCollection, connectionString: string | null, npgsqlOptionsAction?: Action_1<NpgsqlDbContextOptionsBuilder> | null, optionsAction?: Action_1<DbContextOptionsBuilder> | null): IServiceCollection;
 }
 
 

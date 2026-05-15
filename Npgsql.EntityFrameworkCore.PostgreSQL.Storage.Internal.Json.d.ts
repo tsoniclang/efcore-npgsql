@@ -5,6 +5,10 @@
 // Import internal declarations
 import * as Internal from './Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Json/internal/index.js';
 
+// Core type aliases from @tsonic/core
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
+
 // Cross-namespace type imports for constraints
 import type { BitArray } from '@tsonic/dotnet/System.Collections.js';
 import type { Object as ClrObject, Void } from '@tsonic/dotnet/System.js';

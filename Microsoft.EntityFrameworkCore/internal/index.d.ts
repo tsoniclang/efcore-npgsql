@@ -3,7 +3,7 @@
 // Assembly: Microsoft.EntityFrameworkCore, Microsoft.EntityFrameworkCore.Abstractions, Microsoft.EntityFrameworkCore.Relational, Npgsql.EntityFrameworkCore.PostgreSQL
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -46,7 +46,7 @@ export interface LTree$instance {
 
     readonly NLevel: int;
     Equals(other: LTree): boolean;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
     Index(other: LTree): int;
     Index(other: LTree, offset: int): int;
@@ -70,17 +70,17 @@ export const LTree: {
 export type LTree = LTree$instance;
 
 export abstract class NpgsqlAggregateDbFunctionsExtensions$instance {
-    static ArrayAgg<T>(_: DbFunctions, input: IEnumerable_1<T>): T[];
+    static ArrayAgg<T extends unknown>(_: DbFunctions, input: IEnumerable_1<T>): T[];
     static Average(_: DbFunctions, input: IEnumerable_1<TimeSpan>): Nullable_1<TimeSpan>;
     static Correlation(_: DbFunctions, values: IEnumerable_1<ValueTuple_2<System_Internal.Double, System_Internal.Double>>): Nullable_1<System_Internal.Double>;
     static CovariancePopulation(_: DbFunctions, values: IEnumerable_1<ValueTuple_2<System_Internal.Double, System_Internal.Double>>): Nullable_1<System_Internal.Double>;
     static CovarianceSample(_: DbFunctions, values: IEnumerable_1<ValueTuple_2<System_Internal.Double, System_Internal.Double>>): Nullable_1<System_Internal.Double>;
-    static JsonAgg<T>(_: DbFunctions, input: IEnumerable_1<T>): T[];
-    static JsonbAgg<T>(_: DbFunctions, input: IEnumerable_1<T>): T[];
-    static JsonbObjectAgg<T1, T2>(_: DbFunctions, keyValuePairs: IEnumerable_1<ValueTuple_2<T1, T2>>): string;
-    static JsonbObjectAgg<T1, T2, TReturn>(_: DbFunctions, keyValuePairs: IEnumerable_1<ValueTuple_2<T1, T2>>): TReturn;
-    static JsonObjectAgg<T1, T2>(_: DbFunctions, keyValuePairs: IEnumerable_1<ValueTuple_2<T1, T2>>): string;
-    static JsonObjectAgg<T1, T2, TReturn>(_: DbFunctions, keyValuePairs: IEnumerable_1<ValueTuple_2<T1, T2>>): TReturn;
+    static JsonAgg<T extends unknown>(_: DbFunctions, input: IEnumerable_1<T>): T[];
+    static JsonbAgg<T extends unknown>(_: DbFunctions, input: IEnumerable_1<T>): T[];
+    static JsonbObjectAgg<T1 extends unknown, T2 extends unknown>(_: DbFunctions, keyValuePairs: IEnumerable_1<ValueTuple_2<T1, T2>>): string;
+    static JsonbObjectAgg<T1 extends unknown, T2 extends unknown, TReturn extends unknown>(_: DbFunctions, keyValuePairs: IEnumerable_1<ValueTuple_2<T1, T2>>): TReturn;
+    static JsonObjectAgg<T1 extends unknown, T2 extends unknown>(_: DbFunctions, keyValuePairs: IEnumerable_1<ValueTuple_2<T1, T2>>): string;
+    static JsonObjectAgg<T1 extends unknown, T2 extends unknown, TReturn extends unknown>(_: DbFunctions, keyValuePairs: IEnumerable_1<ValueTuple_2<T1, T2>>): TReturn;
     static RegrAverageX(_: DbFunctions, values: IEnumerable_1<ValueTuple_2<System_Internal.Double, System_Internal.Double>>): Nullable_1<System_Internal.Double>;
     static RegrAverageY(_: DbFunctions, values: IEnumerable_1<ValueTuple_2<System_Internal.Double, System_Internal.Double>>): Nullable_1<System_Internal.Double>;
     static RegrCount(_: DbFunctions, values: IEnumerable_1<ValueTuple_2<System_Internal.Double, System_Internal.Double>>): Nullable_1<System_Internal.Int64>;
@@ -173,11 +173,11 @@ export abstract class NpgsqlDatabaseModelExtensions$instance {
 export type NpgsqlDatabaseModelExtensions = NpgsqlDatabaseModelExtensions$instance;
 
 export abstract class NpgsqlDbContextOptionsBuilderExtensions$instance {
-    static UseNpgsql<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, npgsqlOptionsAction?: Action_1<NpgsqlDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
-    static UseNpgsql<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connection: DbConnection, npgsqlOptionsAction?: Action_1<NpgsqlDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
-    static UseNpgsql<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connection: DbConnection, contextOwnsConnection: boolean, npgsqlOptionsAction?: Action_1<NpgsqlDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
-    static UseNpgsql<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, dataSource: DbDataSource, npgsqlOptionsAction?: Action_1<NpgsqlDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
-    static UseNpgsql<TContext extends DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connectionString: string | null, npgsqlOptionsAction?: Action_1<NpgsqlDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
+    static UseNpgsql<TContext extends unknown & DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, npgsqlOptionsAction?: Action_1<NpgsqlDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
+    static UseNpgsql<TContext extends unknown & DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connection: DbConnection, npgsqlOptionsAction?: Action_1<NpgsqlDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
+    static UseNpgsql<TContext extends unknown & DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connection: DbConnection, contextOwnsConnection: boolean, npgsqlOptionsAction?: Action_1<NpgsqlDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
+    static UseNpgsql<TContext extends unknown & DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, dataSource: DbDataSource, npgsqlOptionsAction?: Action_1<NpgsqlDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
+    static UseNpgsql<TContext extends unknown & DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connectionString: string | null, npgsqlOptionsAction?: Action_1<NpgsqlDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
     static UseNpgsql(optionsBuilder: DbContextOptionsBuilder, npgsqlOptionsAction?: Action_1<NpgsqlDbContextOptionsBuilder> | null): DbContextOptionsBuilder;
     static UseNpgsql(optionsBuilder: DbContextOptionsBuilder, connection: DbConnection, npgsqlOptionsAction?: Action_1<NpgsqlDbContextOptionsBuilder> | null): DbContextOptionsBuilder;
     static UseNpgsql(optionsBuilder: DbContextOptionsBuilder, connection: DbConnection, contextOwnsConnection: boolean, npgsqlOptionsAction?: Action_1<NpgsqlDbContextOptionsBuilder> | null): DbContextOptionsBuilder;
@@ -209,15 +209,15 @@ export type NpgsqlDbFunctionsExtensions = NpgsqlDbFunctionsExtensions$instance;
 
 export abstract class NpgsqlEntityTypeBuilderExtensions$instance {
     static CanSetIsUnlogged(entityTypeBuilder: IConventionEntityTypeBuilder, unlogged?: boolean, fromDataAnnotation?: boolean): boolean;
-    static CanSetStorageParameter(entityTypeBuilder: IConventionEntityTypeBuilder, parameterName: string, parameterValue: JsValue | null, fromDataAnnotation?: boolean): boolean;
-    static HasGeneratedTsVectorColumn<TEntity>(entityTypeBuilder: EntityTypeBuilder_1<TEntity>, tsVectorPropertyExpression: Expression_1<Func_2<TEntity, NpgsqlTsVector>>, config: string, includeExpression: Expression_1<Func_2<TEntity, JsValue>>): EntityTypeBuilder_1<TEntity>;
-    static HasStorageParameter<TEntity>(entityTypeBuilder: EntityTypeBuilder_1<TEntity>, parameterName: string, parameterValue: JsValue | null): EntityTypeBuilder_1<TEntity>;
-    static HasStorageParameter(entityTypeBuilder: EntityTypeBuilder, parameterName: string, parameterValue: JsValue | null): EntityTypeBuilder;
-    static HasStorageParameter(entityTypeBuilder: IConventionEntityTypeBuilder, parameterName: string, parameterValue: JsValue | null, fromDataAnnotation?: boolean): IConventionEntityTypeBuilder | null;
-    static IsUnlogged<TEntity>(entityTypeBuilder: EntityTypeBuilder_1<TEntity>, unlogged?: boolean): EntityTypeBuilder_1<TEntity>;
+    static CanSetStorageParameter(entityTypeBuilder: IConventionEntityTypeBuilder, parameterName: string, parameterValue: unknown | null, fromDataAnnotation?: boolean): boolean;
+    static HasGeneratedTsVectorColumn<TEntity extends (object | null)>(entityTypeBuilder: EntityTypeBuilder_1<TEntity>, tsVectorPropertyExpression: Expression_1<Func_2<TEntity, NpgsqlTsVector>>, config: string, includeExpression: Expression_1<Func_2<TEntity, unknown>>): EntityTypeBuilder_1<TEntity>;
+    static HasStorageParameter<TEntity extends (object | null)>(entityTypeBuilder: EntityTypeBuilder_1<TEntity>, parameterName: string, parameterValue: unknown | null): EntityTypeBuilder_1<TEntity>;
+    static HasStorageParameter(entityTypeBuilder: EntityTypeBuilder, parameterName: string, parameterValue: unknown | null): EntityTypeBuilder;
+    static HasStorageParameter(entityTypeBuilder: IConventionEntityTypeBuilder, parameterName: string, parameterValue: unknown | null, fromDataAnnotation?: boolean): IConventionEntityTypeBuilder | null;
+    static IsUnlogged<TEntity extends (object | null)>(entityTypeBuilder: EntityTypeBuilder_1<TEntity>, unlogged?: boolean): EntityTypeBuilder_1<TEntity>;
     static IsUnlogged(entityTypeBuilder: EntityTypeBuilder, unlogged?: boolean): EntityTypeBuilder;
     static IsUnlogged(entityTypeBuilder: IConventionEntityTypeBuilder, unlogged?: boolean, fromDataAnnotation?: boolean): IConventionEntityTypeBuilder | null;
-    static UseCockroachDbInterleaveInParent<TEntity>(entityTypeBuilder: EntityTypeBuilder_1<TEntity>, parentTableType: Type, interleavePrefix: List_1<System_Internal.String>): EntityTypeBuilder_1<TEntity>;
+    static UseCockroachDbInterleaveInParent<TEntity extends (object | null)>(entityTypeBuilder: EntityTypeBuilder_1<TEntity>, parentTableType: Type, interleavePrefix: List_1<System_Internal.String>): EntityTypeBuilder_1<TEntity>;
     static UseCockroachDbInterleaveInParent(entityTypeBuilder: EntityTypeBuilder, parentTableType: Type, interleavePrefix: List_1<System_Internal.String>): EntityTypeBuilder;
 }
 
@@ -230,11 +230,11 @@ export abstract class NpgsqlEntityTypeExtensions$instance {
     static GetIsUnloggedConfigurationSource(index: IConventionEntityType): Nullable_1<ConfigurationSource>;
     static GetStorageParameter(entityType: IEntityType, parameterName: string): string | null;
     static GetStorageParameterConfigurationSource(index: IConventionEntityType, parameterName: string): Nullable_1<ConfigurationSource>;
-    static GetStorageParameters(entityType: IReadOnlyEntityType): Dictionary_2<System_Internal.String, JsValue | null>;
+    static GetStorageParameters(entityType: IReadOnlyEntityType): Dictionary_2<System_Internal.String, unknown | null>;
     static SetIsUnlogged(entityType: IConventionEntityType, unlogged: boolean, fromDataAnnotation?: boolean): boolean;
     static SetIsUnlogged(entityType: IMutableEntityType, unlogged: boolean): void;
-    static SetStorageParameter(entityType: IConventionEntityType, parameterName: string, parameterValue: JsValue | null, fromDataAnnotation?: boolean): JsValue;
-    static SetStorageParameter(entityType: IMutableEntityType, parameterName: string, parameterValue: JsValue | null): void;
+    static SetStorageParameter(entityType: IConventionEntityType, parameterName: string, parameterValue: unknown | null, fromDataAnnotation?: boolean): unknown;
+    static SetStorageParameter(entityType: IMutableEntityType, parameterName: string, parameterValue: unknown | null): void;
 }
 
 
@@ -315,7 +315,7 @@ export abstract class NpgsqlFuzzyStringMatchDbFunctionsExtensions$instance {
 export type NpgsqlFuzzyStringMatchDbFunctionsExtensions = NpgsqlFuzzyStringMatchDbFunctionsExtensions$instance;
 
 export abstract class NpgsqlIndexBuilderExtensions$instance {
-    static AreNullsDistinct<TEntity>(indexBuilder: IndexBuilder_1<TEntity>, nullsDistinct?: boolean): IndexBuilder_1<TEntity>;
+    static AreNullsDistinct<TEntity extends unknown>(indexBuilder: IndexBuilder_1<TEntity>, nullsDistinct?: boolean): IndexBuilder_1<TEntity>;
     static AreNullsDistinct(indexBuilder: IConventionIndexBuilder, nullsDistinct?: boolean, fromDataAnnotation?: boolean): IConventionIndexBuilder | null;
     static AreNullsDistinct(indexBuilder: IndexBuilder, nullsDistinct?: boolean): IndexBuilder;
     static CanSetAreNullsDistinct(indexBuilder: IConventionIndexBuilder, nullsDistinct?: boolean, fromDataAnnotation?: boolean): boolean;
@@ -326,32 +326,38 @@ export abstract class NpgsqlIndexBuilderExtensions$instance {
     static CanSetMethod(indexBuilder: IConventionIndexBuilder, method: string | null, fromDataAnnotation?: boolean): boolean;
     static CanSetNullSortOrder(indexBuilder: IConventionIndexBuilder, values: IReadOnlyList_1<NullSortOrder> | null, fromDataAnnotation: boolean): boolean;
     static CanSetOperators(indexBuilder: IConventionIndexBuilder, operators: IReadOnlyList_1<System_Internal.String> | null, fromDataAnnotation: boolean): boolean;
-    static CanSetStorageParameter(indexBuilder: IConventionIndexBuilder, parameterName: string, parameterValue: JsValue | null, fromDataAnnotation?: boolean): boolean;
-    static HasMethod<TEntity>(indexBuilder: IndexBuilder_1<TEntity>, method: string | null): IndexBuilder_1<TEntity>;
+    static CanSetStorageParameter(indexBuilder: IConventionIndexBuilder, parameterName: string, parameterValue: unknown | null, fromDataAnnotation?: boolean): boolean;
+    static HasMethod<TEntity extends unknown>(indexBuilder: IndexBuilder_1<TEntity>, method: string | null): IndexBuilder_1<TEntity>;
     static HasMethod(indexBuilder: IConventionIndexBuilder, method: string | null, fromDataAnnotation?: boolean): IConventionIndexBuilder | null;
     static HasMethod(indexBuilder: IndexBuilder, method: string | null): IndexBuilder;
-    static HasNullSortOrder<TEntity>(indexBuilder: IndexBuilder_1<TEntity>, ...values: NullSortOrder[] | null): IndexBuilder_1<TEntity>;
+    static HasNullSortOrder<TEntity extends unknown>(indexBuilder: IndexBuilder_1<TEntity>, ...values: NullSortOrder[]): IndexBuilder_1<TEntity>;
+    static HasNullSortOrder<TEntity extends unknown>(indexBuilder: IndexBuilder_1<TEntity>, values: NullSortOrder[] | null): IndexBuilder_1<TEntity>;
     static HasNullSortOrder(indexBuilder: IConventionIndexBuilder, values: IReadOnlyList_1<NullSortOrder> | null, fromDataAnnotation: boolean): IConventionIndexBuilder | null;
-    static HasNullSortOrder(indexBuilder: IndexBuilder, ...values: NullSortOrder[] | null): IndexBuilder;
-    static HasOperators<TEntity>(indexBuilder: IndexBuilder_1<TEntity>, ...operators: string[] | null): IndexBuilder_1<TEntity>;
+    static HasNullSortOrder(indexBuilder: IndexBuilder, ...values: NullSortOrder[]): IndexBuilder;
+    static HasNullSortOrder(indexBuilder: IndexBuilder, values: NullSortOrder[] | null): IndexBuilder;
+    static HasOperators<TEntity extends unknown>(indexBuilder: IndexBuilder_1<TEntity>, ...operators: string[]): IndexBuilder_1<TEntity>;
+    static HasOperators<TEntity extends unknown>(indexBuilder: IndexBuilder_1<TEntity>, operators: string[] | null): IndexBuilder_1<TEntity>;
     static HasOperators(indexBuilder: IConventionIndexBuilder, operators: IReadOnlyList_1<System_Internal.String> | null, fromDataAnnotation: boolean): IConventionIndexBuilder | null;
-    static HasOperators(indexBuilder: IndexBuilder, ...operators: string[] | null): IndexBuilder;
-    static HasStorageParameter<TEntity>(indexBuilder: IndexBuilder_1<TEntity>, parameterName: string, parameterValue: JsValue | null): IndexBuilder_1<TEntity>;
-    static HasStorageParameter(indexBuilder: IConventionIndexBuilder, parameterName: string, parameterValue: JsValue | null, fromDataAnnotation?: boolean): IConventionIndexBuilder | null;
-    static HasStorageParameter(indexBuilder: IndexBuilder, parameterName: string, parameterValue: JsValue | null): IndexBuilder;
-    static IncludeProperties<TEntity>(indexBuilder: IndexBuilder_1<TEntity>, includeExpression: Expression_1<Func_2<TEntity, JsValue>>): IndexBuilder_1<TEntity>;
-    static IncludeProperties<TEntity>(indexBuilder: IndexBuilder_1<TEntity>, ...propertyNames: string[]): IndexBuilder_1<TEntity>;
+    static HasOperators(indexBuilder: IndexBuilder, ...operators: string[]): IndexBuilder;
+    static HasOperators(indexBuilder: IndexBuilder, operators: string[] | null): IndexBuilder;
+    static HasStorageParameter<TEntity extends (object | null)>(indexBuilder: IndexBuilder_1<TEntity>, parameterName: string, parameterValue: unknown | null): IndexBuilder_1<TEntity>;
+    static HasStorageParameter(indexBuilder: IConventionIndexBuilder, parameterName: string, parameterValue: unknown | null, fromDataAnnotation?: boolean): IConventionIndexBuilder | null;
+    static HasStorageParameter(indexBuilder: IndexBuilder, parameterName: string, parameterValue: unknown | null): IndexBuilder;
+    static IncludeProperties<TEntity extends unknown>(indexBuilder: IndexBuilder_1<TEntity>, includeExpression: Expression_1<Func_2<TEntity, unknown>>): IndexBuilder_1<TEntity>;
+    static IncludeProperties<TEntity extends unknown>(indexBuilder: IndexBuilder_1<TEntity>, ...propertyNames: string[]): IndexBuilder_1<TEntity>;
     static IncludeProperties(indexBuilder: IConventionIndexBuilder, propertyNames: IReadOnlyList_1<System_Internal.String>, fromDataAnnotation?: boolean): IConventionIndexBuilder | null;
     static IncludeProperties(indexBuilder: IndexBuilder, ...propertyNames: string[]): IndexBuilder;
-    static IsCreatedConcurrently<TEntity>(indexBuilder: IndexBuilder_1<TEntity>, createdConcurrently?: boolean): IndexBuilder_1<TEntity>;
+    static IsCreatedConcurrently<TEntity extends unknown>(indexBuilder: IndexBuilder_1<TEntity>, createdConcurrently?: boolean): IndexBuilder_1<TEntity>;
     static IsCreatedConcurrently(indexBuilder: IConventionIndexBuilder, createdConcurrently: Nullable_1<System_Internal.Boolean>, fromDataAnnotation?: boolean): IConventionIndexBuilder | null;
     static IsCreatedConcurrently(indexBuilder: IndexBuilder, createdConcurrently?: boolean): IndexBuilder;
-    static IsTsVectorExpressionIndex<TEntity>(indexBuilder: IndexBuilder_1<TEntity>, config: string): IndexBuilder_1<TEntity>;
+    static IsTsVectorExpressionIndex<TEntity extends unknown>(indexBuilder: IndexBuilder_1<TEntity>, config: string): IndexBuilder_1<TEntity>;
     static IsTsVectorExpressionIndex(indexBuilder: IConventionIndexBuilder, config: string | null): IConventionIndexBuilder | null;
     static IsTsVectorExpressionIndex(indexBuilder: IndexBuilder, config: string): IndexBuilder;
-    static UseCollation<TEntity>(indexBuilder: IndexBuilder_1<TEntity>, ...values: string[] | null): IndexBuilder_1<TEntity>;
+    static UseCollation<TEntity extends unknown>(indexBuilder: IndexBuilder_1<TEntity>, ...values: string[]): IndexBuilder_1<TEntity>;
+    static UseCollation<TEntity extends unknown>(indexBuilder: IndexBuilder_1<TEntity>, values: string[] | null): IndexBuilder_1<TEntity>;
     static UseCollation(indexBuilder: IConventionIndexBuilder, values: IReadOnlyList_1<System_Internal.String> | null, fromDataAnnotation: boolean): IConventionIndexBuilder | null;
-    static UseCollation(indexBuilder: IndexBuilder, ...values: string[] | null): IndexBuilder;
+    static UseCollation(indexBuilder: IndexBuilder, ...values: string[]): IndexBuilder;
+    static UseCollation(indexBuilder: IndexBuilder, values: string[] | null): IndexBuilder;
 }
 
 
@@ -373,7 +379,7 @@ export abstract class NpgsqlIndexExtensions$instance {
     static GetOperatorsConfigurationSource(index: IConventionIndex): Nullable_1<ConfigurationSource>;
     static GetStorageParameter(index: IIndex, parameterName: string): string | null;
     static GetStorageParameterConfigurationSource(index: IConventionIndex, parameterName: string): Nullable_1<ConfigurationSource>;
-    static GetStorageParameters(index: IReadOnlyIndex): Dictionary_2<System_Internal.String, JsValue | null>;
+    static GetStorageParameters(index: IReadOnlyIndex): Dictionary_2<System_Internal.String, unknown | null>;
     static GetTsVectorConfig(index: IReadOnlyIndex): string | null;
     static GetTsVectorConfigConfigurationSource(index: IConventionIndex): Nullable_1<ConfigurationSource>;
     static IsCreatedConcurrently(index: IReadOnlyIndex): Nullable_1<System_Internal.Boolean>;
@@ -391,8 +397,8 @@ export abstract class NpgsqlIndexExtensions$instance {
     static SetNullSortOrder(index: IMutableIndex, nullSortOrder: IReadOnlyList_1<NullSortOrder> | null): void;
     static SetOperators(index: IConventionIndex, operators: IReadOnlyList_1<System_Internal.String> | null, fromDataAnnotation?: boolean): IReadOnlyList_1<System_Internal.String> | null;
     static SetOperators(index: IMutableIndex, operators: IReadOnlyList_1<System_Internal.String> | null): void;
-    static SetStorageParameter(index: IConventionIndex, parameterName: string, parameterValue: JsValue | null, fromDataAnnotation?: boolean): JsValue;
-    static SetStorageParameter(index: IMutableIndex, parameterName: string, parameterValue: JsValue | null): void;
+    static SetStorageParameter(index: IConventionIndex, parameterName: string, parameterValue: unknown | null, fromDataAnnotation?: boolean): unknown;
+    static SetStorageParameter(index: IMutableIndex, parameterName: string, parameterValue: unknown | null): void;
     static SetTsVectorConfig(index: IConventionIndex, config: string | null, fromDataAnnotation?: boolean): string | null;
     static SetTsVectorConfig(index: IMutableIndex, config: string | null): void;
 }
@@ -401,12 +407,12 @@ export abstract class NpgsqlIndexExtensions$instance {
 export type NpgsqlIndexExtensions = NpgsqlIndexExtensions$instance;
 
 export abstract class NpgsqlJsonDbFunctionsExtensions$instance {
-    static JsonContained(_: DbFunctions, contained: JsValue, json: JsValue): boolean;
-    static JsonContains(_: DbFunctions, json: JsValue, contained: JsValue): boolean;
-    static JsonExistAll(_: DbFunctions, json: JsValue, ...keys: string[]): boolean;
-    static JsonExistAny(_: DbFunctions, json: JsValue, ...keys: string[]): boolean;
-    static JsonExists(_: DbFunctions, json: JsValue, key: string): boolean;
-    static JsonTypeof(_: DbFunctions, json: JsValue): string;
+    static JsonContained(_: DbFunctions, contained: unknown, json: unknown): boolean;
+    static JsonContains(_: DbFunctions, json: unknown, contained: unknown): boolean;
+    static JsonExistAll(_: DbFunctions, json: unknown, ...keys: string[]): boolean;
+    static JsonExistAny(_: DbFunctions, json: unknown, ...keys: string[]): boolean;
+    static JsonExists(_: DbFunctions, json: unknown, key: string): boolean;
+    static JsonTypeof(_: DbFunctions, json: unknown): string;
 }
 
 
@@ -430,7 +436,7 @@ export abstract class NpgsqlModelBuilderExtensions$instance {
     static HasCollation(modelBuilder: ModelBuilder, schema: string | null, name: string, lcCollate: string, lcCtype: string, provider?: string | null, deterministic?: Nullable_1<System_Internal.Boolean>): ModelBuilder;
     static HasHiLoSequence(modelBuilder: IConventionModelBuilder, name: string | null, schema: string | null, fromDataAnnotation?: boolean): IConventionSequenceBuilder | null;
     static HasPostgresEnum(modelBuilder: IConventionModelBuilder, schema: string | null, name: string, labels: string[]): IConventionModelBuilder;
-    static HasPostgresEnum<TEnum extends number & NonNullable<JsValue>>(modelBuilder: ModelBuilder, schema?: string | null, name?: string | null, nameTranslator?: INpgsqlNameTranslator | null): ModelBuilder;
+    static HasPostgresEnum<TEnum extends NonNullable<unknown> & number>(modelBuilder: ModelBuilder, schema?: string | null, name?: string | null, nameTranslator?: INpgsqlNameTranslator | null): ModelBuilder;
     static HasPostgresEnum(modelBuilder: ModelBuilder, schema: string | null, name: string, labels: string[]): ModelBuilder;
     static HasPostgresEnum(modelBuilder: ModelBuilder, name: string, labels: string[]): ModelBuilder;
     static HasPostgresExtension(modelBuilder: IConventionModelBuilder, name: string, fromDataAnnotation?: boolean): IConventionModelBuilder | null;
@@ -500,48 +506,48 @@ export abstract class NpgsqlModelExtensions$instance {
 export type NpgsqlModelExtensions = NpgsqlModelExtensions$instance;
 
 export abstract class NpgsqlMultirangeDbFunctionsExtensions$instance {
-    static ContainedBy<T>(multirange1: List_1<NpgsqlRange_1<T>>, multirange2: List_1<NpgsqlRange_1<T>>): boolean;
-    static ContainedBy<T>(range: NpgsqlRange_1<T>, multirange: List_1<NpgsqlRange_1<T>>): boolean;
-    static ContainedBy<T>(range: NpgsqlRange_1<T>, multirange: NpgsqlRange_1<T>[]): boolean;
-    static ContainedBy<T>(multirange1: NpgsqlRange_1<T>[], multirange2: NpgsqlRange_1<T>[]): boolean;
-    static Contains<T>(multirange1: List_1<NpgsqlRange_1<T>>, multirange2: List_1<NpgsqlRange_1<T>>): boolean;
-    static Contains<T>(multirange1: List_1<NpgsqlRange_1<T>>, multirange2: NpgsqlRange_1<T>): boolean;
-    static Contains<T>(multirange: List_1<NpgsqlRange_1<T>>, value: T): boolean;
-    static Contains<T>(multirange1: NpgsqlRange_1<T>[], multirange2: NpgsqlRange_1<T>): boolean;
-    static Contains<T>(multirange1: NpgsqlRange_1<T>[], multirange2: NpgsqlRange_1<T>[]): boolean;
-    static Contains<T>(multirange: NpgsqlRange_1<T>[], value: T): boolean;
-    static DoesNotExtendLeftOf<T>(multirange1: List_1<NpgsqlRange_1<T>>, multirange2: List_1<NpgsqlRange_1<T>>): boolean;
-    static DoesNotExtendLeftOf<T>(multirange: List_1<NpgsqlRange_1<T>>, range: NpgsqlRange_1<T>): boolean;
-    static DoesNotExtendLeftOf<T>(multirange: NpgsqlRange_1<T>[], range: NpgsqlRange_1<T>): boolean;
-    static DoesNotExtendLeftOf<T>(multirange1: NpgsqlRange_1<T>[], multirange2: NpgsqlRange_1<T>[]): boolean;
-    static DoesNotExtendRightOf<T>(multirange1: List_1<NpgsqlRange_1<T>>, multirange2: List_1<NpgsqlRange_1<T>>): boolean;
-    static DoesNotExtendRightOf<T>(multirange: List_1<NpgsqlRange_1<T>>, range: NpgsqlRange_1<T>): boolean;
-    static DoesNotExtendRightOf<T>(multirange: NpgsqlRange_1<T>[], range: NpgsqlRange_1<T>): boolean;
-    static DoesNotExtendRightOf<T>(multirange1: NpgsqlRange_1<T>[], multirange2: NpgsqlRange_1<T>[]): boolean;
-    static Except<T>(multirange1: List_1<NpgsqlRange_1<T>>, multirange2: List_1<NpgsqlRange_1<T>>): List_1<NpgsqlRange_1<T>>;
-    static Except<T>(multirange1: NpgsqlRange_1<T>[], multirange2: NpgsqlRange_1<T>[]): NpgsqlRange_1<T>[];
-    static Intersect<T>(multirange1: List_1<NpgsqlRange_1<T>>, multirange2: List_1<NpgsqlRange_1<T>>): List_1<NpgsqlRange_1<T>>;
-    static Intersect<T>(multirange1: NpgsqlRange_1<T>[], multirange2: NpgsqlRange_1<T>[]): NpgsqlRange_1<T>[];
-    static IsAdjacentTo<T>(multirange1: List_1<NpgsqlRange_1<T>>, multirange2: List_1<NpgsqlRange_1<T>>): boolean;
-    static IsAdjacentTo<T>(multirange: List_1<NpgsqlRange_1<T>>, range: NpgsqlRange_1<T>): boolean;
-    static IsAdjacentTo<T>(multirange: NpgsqlRange_1<T>[], range: NpgsqlRange_1<T>): boolean;
-    static IsAdjacentTo<T>(multirange1: NpgsqlRange_1<T>[], multirange2: NpgsqlRange_1<T>[]): boolean;
-    static IsStrictlyLeftOf<T>(multirange1: List_1<NpgsqlRange_1<T>>, multirange2: List_1<NpgsqlRange_1<T>>): boolean;
-    static IsStrictlyLeftOf<T>(multirange: List_1<NpgsqlRange_1<T>>, range: NpgsqlRange_1<T>): boolean;
-    static IsStrictlyLeftOf<T>(multirange: NpgsqlRange_1<T>[], range: NpgsqlRange_1<T>): boolean;
-    static IsStrictlyLeftOf<T>(multirange1: NpgsqlRange_1<T>[], multirange2: NpgsqlRange_1<T>[]): boolean;
-    static IsStrictlyRightOf<T>(multirange1: List_1<NpgsqlRange_1<T>>, multirange2: List_1<NpgsqlRange_1<T>>): boolean;
-    static IsStrictlyRightOf<T>(multirange: List_1<NpgsqlRange_1<T>>, range: NpgsqlRange_1<T>): boolean;
-    static IsStrictlyRightOf<T>(multirange: NpgsqlRange_1<T>[], range: NpgsqlRange_1<T>): boolean;
-    static IsStrictlyRightOf<T>(multirange1: NpgsqlRange_1<T>[], multirange2: NpgsqlRange_1<T>[]): boolean;
-    static Merge<T>(multirange: List_1<NpgsqlRange_1<T>>): NpgsqlRange_1<T>;
-    static Merge<T>(multirange: NpgsqlRange_1<T>[]): NpgsqlRange_1<T>;
-    static Overlaps<T>(multirange1: List_1<NpgsqlRange_1<T>>, multirange2: List_1<NpgsqlRange_1<T>>): boolean;
-    static Overlaps<T>(multirange: List_1<NpgsqlRange_1<T>>, range: NpgsqlRange_1<T>): boolean;
-    static Overlaps<T>(multirange: NpgsqlRange_1<T>[], range: NpgsqlRange_1<T>): boolean;
-    static Overlaps<T>(multirange1: NpgsqlRange_1<T>[], multirange2: NpgsqlRange_1<T>[]): boolean;
-    static Union<T>(multirange1: List_1<NpgsqlRange_1<T>>, multirange2: List_1<NpgsqlRange_1<T>>): List_1<NpgsqlRange_1<T>>;
-    static Union<T>(multirange1: NpgsqlRange_1<T>[], multirange2: NpgsqlRange_1<T>[]): NpgsqlRange_1<T>[];
+    static ContainedBy<T extends unknown>(multirange1: List_1<NpgsqlRange_1<T>>, multirange2: List_1<NpgsqlRange_1<T>>): boolean;
+    static ContainedBy<T extends unknown>(range: NpgsqlRange_1<T>, multirange: List_1<NpgsqlRange_1<T>>): boolean;
+    static ContainedBy<T extends unknown>(range: NpgsqlRange_1<T>, multirange: NpgsqlRange_1<T>[]): boolean;
+    static ContainedBy<T extends unknown>(multirange1: NpgsqlRange_1<T>[], multirange2: NpgsqlRange_1<T>[]): boolean;
+    static Contains<T extends unknown>(multirange1: List_1<NpgsqlRange_1<T>>, multirange2: List_1<NpgsqlRange_1<T>>): boolean;
+    static Contains<T extends unknown>(multirange1: List_1<NpgsqlRange_1<T>>, multirange2: NpgsqlRange_1<T>): boolean;
+    static Contains<T extends unknown>(multirange: List_1<NpgsqlRange_1<T>>, value: T): boolean;
+    static Contains<T extends unknown>(multirange1: NpgsqlRange_1<T>[], multirange2: NpgsqlRange_1<T>): boolean;
+    static Contains<T extends unknown>(multirange1: NpgsqlRange_1<T>[], multirange2: NpgsqlRange_1<T>[]): boolean;
+    static Contains<T extends unknown>(multirange: NpgsqlRange_1<T>[], value: T): boolean;
+    static DoesNotExtendLeftOf<T extends unknown>(multirange1: List_1<NpgsqlRange_1<T>>, multirange2: List_1<NpgsqlRange_1<T>>): boolean;
+    static DoesNotExtendLeftOf<T extends unknown>(multirange: List_1<NpgsqlRange_1<T>>, range: NpgsqlRange_1<T>): boolean;
+    static DoesNotExtendLeftOf<T extends unknown>(multirange: NpgsqlRange_1<T>[], range: NpgsqlRange_1<T>): boolean;
+    static DoesNotExtendLeftOf<T extends unknown>(multirange1: NpgsqlRange_1<T>[], multirange2: NpgsqlRange_1<T>[]): boolean;
+    static DoesNotExtendRightOf<T extends unknown>(multirange1: List_1<NpgsqlRange_1<T>>, multirange2: List_1<NpgsqlRange_1<T>>): boolean;
+    static DoesNotExtendRightOf<T extends unknown>(multirange: List_1<NpgsqlRange_1<T>>, range: NpgsqlRange_1<T>): boolean;
+    static DoesNotExtendRightOf<T extends unknown>(multirange: NpgsqlRange_1<T>[], range: NpgsqlRange_1<T>): boolean;
+    static DoesNotExtendRightOf<T extends unknown>(multirange1: NpgsqlRange_1<T>[], multirange2: NpgsqlRange_1<T>[]): boolean;
+    static Except<T extends unknown>(multirange1: List_1<NpgsqlRange_1<T>>, multirange2: List_1<NpgsqlRange_1<T>>): List_1<NpgsqlRange_1<T>>;
+    static Except<T extends unknown>(multirange1: NpgsqlRange_1<T>[], multirange2: NpgsqlRange_1<T>[]): NpgsqlRange_1<T>[];
+    static Intersect<T extends unknown>(multirange1: List_1<NpgsqlRange_1<T>>, multirange2: List_1<NpgsqlRange_1<T>>): List_1<NpgsqlRange_1<T>>;
+    static Intersect<T extends unknown>(multirange1: NpgsqlRange_1<T>[], multirange2: NpgsqlRange_1<T>[]): NpgsqlRange_1<T>[];
+    static IsAdjacentTo<T extends unknown>(multirange1: List_1<NpgsqlRange_1<T>>, multirange2: List_1<NpgsqlRange_1<T>>): boolean;
+    static IsAdjacentTo<T extends unknown>(multirange: List_1<NpgsqlRange_1<T>>, range: NpgsqlRange_1<T>): boolean;
+    static IsAdjacentTo<T extends unknown>(multirange: NpgsqlRange_1<T>[], range: NpgsqlRange_1<T>): boolean;
+    static IsAdjacentTo<T extends unknown>(multirange1: NpgsqlRange_1<T>[], multirange2: NpgsqlRange_1<T>[]): boolean;
+    static IsStrictlyLeftOf<T extends unknown>(multirange1: List_1<NpgsqlRange_1<T>>, multirange2: List_1<NpgsqlRange_1<T>>): boolean;
+    static IsStrictlyLeftOf<T extends unknown>(multirange: List_1<NpgsqlRange_1<T>>, range: NpgsqlRange_1<T>): boolean;
+    static IsStrictlyLeftOf<T extends unknown>(multirange: NpgsqlRange_1<T>[], range: NpgsqlRange_1<T>): boolean;
+    static IsStrictlyLeftOf<T extends unknown>(multirange1: NpgsqlRange_1<T>[], multirange2: NpgsqlRange_1<T>[]): boolean;
+    static IsStrictlyRightOf<T extends unknown>(multirange1: List_1<NpgsqlRange_1<T>>, multirange2: List_1<NpgsqlRange_1<T>>): boolean;
+    static IsStrictlyRightOf<T extends unknown>(multirange: List_1<NpgsqlRange_1<T>>, range: NpgsqlRange_1<T>): boolean;
+    static IsStrictlyRightOf<T extends unknown>(multirange: NpgsqlRange_1<T>[], range: NpgsqlRange_1<T>): boolean;
+    static IsStrictlyRightOf<T extends unknown>(multirange1: NpgsqlRange_1<T>[], multirange2: NpgsqlRange_1<T>[]): boolean;
+    static Merge<T extends unknown>(multirange: List_1<NpgsqlRange_1<T>>): NpgsqlRange_1<T>;
+    static Merge<T extends unknown>(multirange: NpgsqlRange_1<T>[]): NpgsqlRange_1<T>;
+    static Overlaps<T extends unknown>(multirange1: List_1<NpgsqlRange_1<T>>, multirange2: List_1<NpgsqlRange_1<T>>): boolean;
+    static Overlaps<T extends unknown>(multirange: List_1<NpgsqlRange_1<T>>, range: NpgsqlRange_1<T>): boolean;
+    static Overlaps<T extends unknown>(multirange: NpgsqlRange_1<T>[], range: NpgsqlRange_1<T>): boolean;
+    static Overlaps<T extends unknown>(multirange1: NpgsqlRange_1<T>[], multirange2: NpgsqlRange_1<T>[]): boolean;
+    static Union<T extends unknown>(multirange1: List_1<NpgsqlRange_1<T>>, multirange2: List_1<NpgsqlRange_1<T>>): List_1<NpgsqlRange_1<T>>;
+    static Union<T extends unknown>(multirange1: NpgsqlRange_1<T>[], multirange2: NpgsqlRange_1<T>[]): NpgsqlRange_1<T>[];
 }
 
 
@@ -637,9 +643,9 @@ export abstract class NpgsqlPropertyBuilderExtensions$instance {
     static HasHiLoSequence(propertyBuilder: IConventionPropertyBuilder, name: string | null, schema: string | null, fromDataAnnotation?: boolean): IConventionSequenceBuilder | null;
     static HasIdentityOptions(propertyBuilder: IConventionPropertyBuilder, startValue?: Nullable_1<System_Internal.Int64>, incrementBy?: Nullable_1<System_Internal.Int64>, minValue?: Nullable_1<System_Internal.Int64>, maxValue?: Nullable_1<System_Internal.Int64>, cyclic?: Nullable_1<System_Internal.Boolean>, numbersToCache?: Nullable_1<System_Internal.Int64>): IConventionPropertyBuilder | null;
     static HasIdentityOptions(propertyBuilder: PropertyBuilder, startValue?: Nullable_1<System_Internal.Int64>, incrementBy?: Nullable_1<System_Internal.Int64>, minValue?: Nullable_1<System_Internal.Int64>, maxValue?: Nullable_1<System_Internal.Int64>, cyclic?: Nullable_1<System_Internal.Boolean>, numbersToCache?: Nullable_1<System_Internal.Int64>): PropertyBuilder;
-    static HasIdentityOptions<TProperty>(propertyBuilder: PropertyBuilder_1<TProperty>, startValue?: Nullable_1<System_Internal.Int64>, incrementBy?: Nullable_1<System_Internal.Int64>, minValue?: Nullable_1<System_Internal.Int64>, maxValue?: Nullable_1<System_Internal.Int64>, cyclic?: Nullable_1<System_Internal.Boolean>, numbersToCache?: Nullable_1<System_Internal.Int64>): PropertyBuilder_1<TProperty>;
-    static HasPostgresArrayConversion<TElementProperty, TElementProvider>(propertyBuilder: PropertyBuilder_1<TElementProperty[]>, convertToProviderExpression: Expression_1<Func_2<TElementProperty, TElementProvider>>, convertFromProviderExpression: Expression_1<Func_2<TElementProvider, TElementProperty>>): PropertyBuilder_1<TElementProperty[]>;
-    static HasPostgresArrayConversion<TElementProperty, TElementProvider>(propertyBuilder: PropertyBuilder_1<TElementProperty[]>, elementValueConverter: ValueConverter): PropertyBuilder_1<TElementProperty[]>;
+    static HasIdentityOptions<TProperty extends unknown>(propertyBuilder: PropertyBuilder_1<TProperty>, startValue?: Nullable_1<System_Internal.Int64>, incrementBy?: Nullable_1<System_Internal.Int64>, minValue?: Nullable_1<System_Internal.Int64>, maxValue?: Nullable_1<System_Internal.Int64>, cyclic?: Nullable_1<System_Internal.Boolean>, numbersToCache?: Nullable_1<System_Internal.Int64>): PropertyBuilder_1<TProperty>;
+    static HasPostgresArrayConversion<TElementProperty extends unknown, TElementProvider extends unknown>(propertyBuilder: PropertyBuilder_1<TElementProperty[]>, convertToProviderExpression: Expression_1<Func_2<TElementProperty, TElementProvider>>, convertFromProviderExpression: Expression_1<Func_2<TElementProvider, TElementProperty>>): PropertyBuilder_1<TElementProperty[]>;
+    static HasPostgresArrayConversion<TElementProperty extends unknown, TElementProvider extends unknown>(propertyBuilder: PropertyBuilder_1<TElementProperty[]>, elementValueConverter: ValueConverter): PropertyBuilder_1<TElementProperty[]>;
     static HasSequence(propertyBuilder: IConventionPropertyBuilder, name: string | null, schema: string | null, fromDataAnnotation?: boolean): IConventionSequenceBuilder | null;
     static HasValueGenerationStrategy(propertyBuilder: IConventionPropertyBuilder, valueGenerationStrategy: Nullable_1<NpgsqlValueGenerationStrategy>, fromDataAnnotation?: boolean): IConventionPropertyBuilder | null;
     static IsGeneratedTsVectorColumn(propertyBuilder: IConventionPropertyBuilder, config: string, includedPropertyNames: IReadOnlyList_1<System_Internal.String>, fromDataAnnotation?: boolean): IConventionPropertyBuilder | null;
@@ -647,19 +653,19 @@ export abstract class NpgsqlPropertyBuilderExtensions$instance {
     static IsGeneratedTsVectorColumn(propertyBuilder: PropertyBuilder, config: string, ...includedPropertyNames: string[]): PropertyBuilder;
     static UseCompressionMethod(propertyBuilder: IConventionPropertyBuilder, compressionMethod: string | null, fromDataAnnotation?: boolean): IConventionPropertyBuilder | null;
     static UseCompressionMethod(propertyBuilder: PropertyBuilder, compressionMethod: string | null): PropertyBuilder;
-    static UseCompressionMethod<TEntity>(propertyBuilder: PropertyBuilder_1<TEntity>, compressionMethod: string | null): PropertyBuilder_1<TEntity>;
+    static UseCompressionMethod<TEntity extends unknown>(propertyBuilder: PropertyBuilder_1<TEntity>, compressionMethod: string | null): PropertyBuilder_1<TEntity>;
     static UseHiLo(propertyBuilder: PropertyBuilder, name?: string | null, schema?: string | null): PropertyBuilder;
-    static UseHiLo<TProperty>(propertyBuilder: PropertyBuilder_1<TProperty>, name?: string | null, schema?: string | null): PropertyBuilder_1<TProperty>;
+    static UseHiLo<TProperty extends unknown>(propertyBuilder: PropertyBuilder_1<TProperty>, name?: string | null, schema?: string | null): PropertyBuilder_1<TProperty>;
     static UseIdentityAlwaysColumn(propertyBuilder: PropertyBuilder): PropertyBuilder;
-    static UseIdentityAlwaysColumn<TProperty>(propertyBuilder: PropertyBuilder_1<TProperty>): PropertyBuilder_1<TProperty>;
+    static UseIdentityAlwaysColumn<TProperty extends unknown>(propertyBuilder: PropertyBuilder_1<TProperty>): PropertyBuilder_1<TProperty>;
     static UseIdentityByDefaultColumn(propertyBuilder: PropertyBuilder): PropertyBuilder;
-    static UseIdentityByDefaultColumn<TProperty>(propertyBuilder: PropertyBuilder_1<TProperty>): PropertyBuilder_1<TProperty>;
+    static UseIdentityByDefaultColumn<TProperty extends unknown>(propertyBuilder: PropertyBuilder_1<TProperty>): PropertyBuilder_1<TProperty>;
     static UseIdentityColumn(propertyBuilder: PropertyBuilder): PropertyBuilder;
-    static UseIdentityColumn<TProperty>(propertyBuilder: PropertyBuilder_1<TProperty>): PropertyBuilder_1<TProperty>;
+    static UseIdentityColumn<TProperty extends unknown>(propertyBuilder: PropertyBuilder_1<TProperty>): PropertyBuilder_1<TProperty>;
     static UseSequence(propertyBuilder: PropertyBuilder, name?: string | null, schema?: string | null): PropertyBuilder;
-    static UseSequence<TProperty>(propertyBuilder: PropertyBuilder_1<TProperty>, name?: string | null, schema?: string | null): PropertyBuilder_1<TProperty>;
+    static UseSequence<TProperty extends unknown>(propertyBuilder: PropertyBuilder_1<TProperty>, name?: string | null, schema?: string | null): PropertyBuilder_1<TProperty>;
     static UseSerialColumn(propertyBuilder: PropertyBuilder): PropertyBuilder;
-    static UseSerialColumn<TProperty>(propertyBuilder: PropertyBuilder_1<TProperty>): PropertyBuilder_1<TProperty>;
+    static UseSerialColumn<TProperty extends unknown>(propertyBuilder: PropertyBuilder_1<TProperty>): PropertyBuilder_1<TProperty>;
 }
 
 
@@ -754,22 +760,22 @@ export abstract class NpgsqlPropertyExtensions$instance {
 export type NpgsqlPropertyExtensions = NpgsqlPropertyExtensions$instance;
 
 export abstract class NpgsqlRangeDbFunctionsExtensions$instance {
-    static ContainedBy<T>(a: NpgsqlRange_1<T>, b: NpgsqlRange_1<T>): boolean;
-    static Contains<T>(a: NpgsqlRange_1<T>, b: NpgsqlRange_1<T>): boolean;
-    static Contains<T>(range: NpgsqlRange_1<T>, value: T): boolean;
-    static DoesNotExtendLeftOf<T>(a: NpgsqlRange_1<T>, b: NpgsqlRange_1<T>): boolean;
-    static DoesNotExtendRightOf<T>(a: NpgsqlRange_1<T>, b: NpgsqlRange_1<T>): boolean;
-    static Except<T>(a: NpgsqlRange_1<T>, b: NpgsqlRange_1<T>): NpgsqlRange_1<T>;
-    static Intersect<T>(a: NpgsqlRange_1<T>, b: NpgsqlRange_1<T>): NpgsqlRange_1<T>;
-    static IsAdjacentTo<T>(a: NpgsqlRange_1<T>, b: NpgsqlRange_1<T>): boolean;
-    static IsStrictlyLeftOf<T>(a: NpgsqlRange_1<T>, b: NpgsqlRange_1<T>): boolean;
-    static IsStrictlyRightOf<T>(a: NpgsqlRange_1<T>, b: NpgsqlRange_1<T>): boolean;
-    static Merge<T>(a: NpgsqlRange_1<T>, b: NpgsqlRange_1<T>): NpgsqlRange_1<T>;
-    static Overlaps<T>(a: NpgsqlRange_1<T>, b: NpgsqlRange_1<T>): boolean;
-    static RangeAgg<T>(input: IEnumerable_1<NpgsqlRange_1<T>>): NpgsqlRange_1<T>[];
-    static RangeIntersectAgg<T>(input: IEnumerable_1<NpgsqlRange_1<T>>): NpgsqlRange_1<T>;
-    static RangeIntersectAgg<T>(input: IEnumerable_1<NpgsqlRange_1<T>[]>): NpgsqlRange_1<T>[];
-    static Union<T>(a: NpgsqlRange_1<T>, b: NpgsqlRange_1<T>): NpgsqlRange_1<T>;
+    static ContainedBy<T extends unknown>(a: NpgsqlRange_1<T>, b: NpgsqlRange_1<T>): boolean;
+    static Contains<T extends unknown>(a: NpgsqlRange_1<T>, b: NpgsqlRange_1<T>): boolean;
+    static Contains<T extends unknown>(range: NpgsqlRange_1<T>, value: T): boolean;
+    static DoesNotExtendLeftOf<T extends unknown>(a: NpgsqlRange_1<T>, b: NpgsqlRange_1<T>): boolean;
+    static DoesNotExtendRightOf<T extends unknown>(a: NpgsqlRange_1<T>, b: NpgsqlRange_1<T>): boolean;
+    static Except<T extends unknown>(a: NpgsqlRange_1<T>, b: NpgsqlRange_1<T>): NpgsqlRange_1<T>;
+    static Intersect<T extends unknown>(a: NpgsqlRange_1<T>, b: NpgsqlRange_1<T>): NpgsqlRange_1<T>;
+    static IsAdjacentTo<T extends unknown>(a: NpgsqlRange_1<T>, b: NpgsqlRange_1<T>): boolean;
+    static IsStrictlyLeftOf<T extends unknown>(a: NpgsqlRange_1<T>, b: NpgsqlRange_1<T>): boolean;
+    static IsStrictlyRightOf<T extends unknown>(a: NpgsqlRange_1<T>, b: NpgsqlRange_1<T>): boolean;
+    static Merge<T extends unknown>(a: NpgsqlRange_1<T>, b: NpgsqlRange_1<T>): NpgsqlRange_1<T>;
+    static Overlaps<T extends unknown>(a: NpgsqlRange_1<T>, b: NpgsqlRange_1<T>): boolean;
+    static RangeAgg<T extends unknown>(input: IEnumerable_1<NpgsqlRange_1<T>>): NpgsqlRange_1<T>[];
+    static RangeIntersectAgg<T extends unknown>(input: IEnumerable_1<NpgsqlRange_1<T>>): NpgsqlRange_1<T>;
+    static RangeIntersectAgg<T extends unknown>(input: IEnumerable_1<NpgsqlRange_1<T>[]>): NpgsqlRange_1<T>[];
+    static Union<T extends unknown>(a: NpgsqlRange_1<T>, b: NpgsqlRange_1<T>): NpgsqlRange_1<T>;
 }
 
 

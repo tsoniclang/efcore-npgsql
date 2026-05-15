@@ -3,7 +3,7 @@
 // Assembly: Npgsql.EntityFrameworkCore.PostgreSQL
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -52,9 +52,9 @@ export interface NpgsqlDbContextOptionsBuilder$instance extends RelationalDbCont
     EnableRetryOnFailure(maxRetryCount: int): NpgsqlDbContextOptionsBuilder;
     EnableRetryOnFailure(errorCodesToAdd: ICollection_1<System_Internal.String> | null): NpgsqlDbContextOptionsBuilder;
     EnableRetryOnFailure(maxRetryCount: int, maxRetryDelay: TimeSpan, errorCodesToAdd: ICollection_1<System_Internal.String> | null): NpgsqlDbContextOptionsBuilder;
-    MapEnum<T extends number & NonNullable<JsValue>>(enumName?: string | null, schemaName?: string | null, nameTranslator?: INpgsqlNameTranslator | null): NpgsqlDbContextOptionsBuilder;
+    MapEnum<T extends NonNullable<unknown> & number>(enumName?: string | null, schemaName?: string | null, nameTranslator?: INpgsqlNameTranslator | null): NpgsqlDbContextOptionsBuilder;
     MapEnum(clrType: Type, enumName?: string | null, schemaName?: string | null, nameTranslator?: INpgsqlNameTranslator | null): NpgsqlDbContextOptionsBuilder;
-    MapRange<TSubtype>(rangeName: string, schemaName?: string | null, subtypeName?: string | null): NpgsqlDbContextOptionsBuilder;
+    MapRange<TSubtype extends unknown>(rangeName: string, schemaName?: string | null, subtypeName?: string | null): NpgsqlDbContextOptionsBuilder;
     MapRange(rangeName: string, subtypeClrType: Type, schemaName?: string | null, subtypeName?: string | null): NpgsqlDbContextOptionsBuilder;
     ProvideClientCertificatesCallback(callback: ProvideClientCertificatesCallback | null): NpgsqlDbContextOptionsBuilder;
     ProvidePasswordCallback(callback: ProvidePasswordCallback | null): NpgsqlDbContextOptionsBuilder;

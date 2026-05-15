@@ -5,6 +5,10 @@
 // Import internal declarations
 import * as Internal from './Npgsql.Internal/internal/index.js';
 
+// Core type aliases from @tsonic/core
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
+
 // Cross-namespace type imports for constraints
 import type { DataTypeName, Field, PgTypeId } from './Npgsql.Internal.Postgres/internal/index.js';
 import type { PostgresType } from './Npgsql.PostgresTypes/internal/index.js';
@@ -63,16 +67,16 @@ declare const __unspecified: unique symbol;
 export type __ = typeof __unspecified;
 
 export type PgConverter<
-  T1 = __,
+  T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.PgConverter :
-  Internal.PgConverter_1<T1>;
+  [T1] extends [unknown] ? Internal.PgConverter_1<T1> : never;
 
 export type PgConverterResolver<
-  T1 = __,
+  T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.PgConverterResolver :
-  Internal.PgConverterResolver_1<T1>;
+  [T1] extends [unknown] ? Internal.PgConverterResolver_1<T1> : never;
 
 // Extension methods (C# using semantics)
 export type { ExtensionMethods_Npgsql_Internal as ExtensionMethods } from './__internal/extensions/index.js';

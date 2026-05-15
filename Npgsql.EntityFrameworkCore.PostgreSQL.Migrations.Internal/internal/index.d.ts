@@ -3,7 +3,7 @@
 // Assembly: Npgsql.EntityFrameworkCore.PostgreSQL
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -40,7 +40,7 @@ export interface NpgsqlHistoryRepository$instance extends HistoryRepository {
     GetCreateCommands(): IReadOnlyList_1<MigrationCommand>;
     GetCreateIfNotExistsScript(): string;
     GetEndIfScript(): string;
-    InterpretExistsResult(value: JsValue | null): boolean;
+    InterpretExistsResult(value: unknown | null): boolean;
 }
 
 

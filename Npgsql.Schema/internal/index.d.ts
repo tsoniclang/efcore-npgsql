@@ -3,7 +3,7 @@
 // Assembly: Npgsql
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -53,7 +53,7 @@ export interface NpgsqlDbColumn$instance extends DbColumn {
     set IsReadOnly(value: Nullable_1<System_Internal.Boolean> | boolean);
     get IsUnique(): Nullable_1<System_Internal.Boolean>;
     set IsUnique(value: Nullable_1<System_Internal.Boolean> | boolean);
-    readonly Item: JsValue | null;
+    readonly Item: unknown | null;
     get NpgsqlDbType(): Nullable_1<NpgsqlDbType>;
     set NpgsqlDbType(value: Nullable_1<NpgsqlDbType> | NpgsqlDbType);
     get NumericPrecision(): Nullable_1<System_Internal.Int32>;

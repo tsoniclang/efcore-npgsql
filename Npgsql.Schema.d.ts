@@ -5,6 +5,10 @@
 // Import internal declarations
 import * as Internal from './Npgsql.Schema/internal/index.js';
 
+// Core type aliases from @tsonic/core
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
+
 // Cross-namespace type imports for constraints
 import type { PostgresType } from './Npgsql.PostgresTypes/internal/index.js';
 import type { NpgsqlDbType } from './NpgsqlTypes/internal/index.js';

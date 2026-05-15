@@ -3,7 +3,7 @@
 // Assembly: Npgsql.EntityFrameworkCore.PostgreSQL
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -42,11 +42,11 @@ export interface EnumDefinition$instance {
     readonly __tsonic_iface_System_IEquatable_1: never;
 
     readonly ClrType: Type;
-    readonly Labels: IReadOnlyDictionary_2<JsValue, System_Internal.String>;
+    readonly Labels: IReadOnlyDictionary_2<unknown, System_Internal.String>;
     readonly NameTranslator: INpgsqlNameTranslator;
     readonly StoreTypeName: string;
     readonly StoreTypeSchema: string | null;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     Equals(other: EnumDefinition | null): boolean;
     GetHashCode(): int;
 }
@@ -122,7 +122,7 @@ export interface NpgsqlOptionsExtension$instance extends RelationalOptionsExtens
     WithRedshift(useRedshift: boolean): NpgsqlOptionsExtension;
     WithRemoteCertificateValidationCallback(callback: RemoteCertificateValidationCallback | null): NpgsqlOptionsExtension;
     WithUseParameterizedCollectionMode(parameterizedCollectionMode: ParameterTranslationMode): RelationalOptionsExtension;
-    WithUserRangeDefinition<TSubtype>(rangeName: string, schemaName?: string | null, subtypeName?: string | null): NpgsqlOptionsExtension;
+    WithUserRangeDefinition<TSubtype extends unknown>(rangeName: string, schemaName?: string | null, subtypeName?: string | null): NpgsqlOptionsExtension;
     WithUserRangeDefinition(rangeName: string, schemaName: string | null, subtypeClrType: Type, subtypeName: string | null): NpgsqlOptionsExtension;
 }
 
@@ -146,7 +146,7 @@ export interface UserRangeDefinition$instance {
     readonly SubtypeClrType: Type;
     readonly SubtypeName: string | null;
     _Clone_$(): UserRangeDefinition;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     Equals(other: UserRangeDefinition | null): boolean;
     GetHashCode(): int;
     ToString(): string;

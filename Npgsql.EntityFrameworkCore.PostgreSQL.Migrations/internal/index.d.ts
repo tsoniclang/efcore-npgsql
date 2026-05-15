@@ -3,7 +3,7 @@
 // Assembly: Npgsql.EntityFrameworkCore.PostgreSQL
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -26,7 +26,7 @@ export interface NpgsqlMigrationsSqlGenerator$instance extends MigrationsSqlGene
     ApplyTsVectorColumnSql(column: ColumnOperation, model: IModel | null, name: string, schema: string | null, table: string): void;
     ColumnDefinition(schema: string | null, table: string, name: string, operation: ColumnOperation, model: IModel | null, builder: MigrationCommandListBuilder): void;
     ComputedColumnDefinition(schema: string | null, table: string, name: string, operation: ColumnOperation, model: IModel | null, builder: MigrationCommandListBuilder): void;
-    DefaultValue(defaultValue: JsValue | null, defaultValueSql: string | null, columnType: string | null, builder: MigrationCommandListBuilder): void;
+    DefaultValue(defaultValue: unknown | null, defaultValueSql: string | null, columnType: string | null, builder: MigrationCommandListBuilder): void;
     Generate(operations: IReadOnlyList_1<MigrationOperation>, model?: IModel | null, options?: MigrationsSqlGenerationOptions): IReadOnlyList_1<MigrationCommand>;
     Generate(operation: MigrationOperation, model: IModel | null, builder: MigrationCommandListBuilder): void;
     Generate(operation: CreateTableOperation, model: IModel | null, builder: MigrationCommandListBuilder, terminate?: boolean): void;

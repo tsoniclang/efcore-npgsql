@@ -3,7 +3,7 @@
 // Assembly: Npgsql
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -55,7 +55,7 @@ export interface PgOutputReplicationOptions$instance {
     readonly StreamingMode: Nullable_1<PgOutputStreamingMode>;
     readonly TwoPhase: Nullable_1<System_Internal.Boolean>;
     Equals(other: PgOutputReplicationOptions | null): boolean;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
 }
 
@@ -107,8 +107,8 @@ export interface ReplicationValue$instance {
     readonly IsUnchangedToastedValue: boolean;
     Kind: TupleDataKind;
     Length: int;
-    Get<T>(cancellationToken?: CancellationToken): ValueTask_1<T>;
-    Get(cancellationToken?: CancellationToken): ValueTask_1<JsValue>;
+    Get<T extends unknown>(cancellationToken?: CancellationToken): ValueTask_1<T>;
+    Get(cancellationToken?: CancellationToken): ValueTask_1<unknown>;
     GetDataTypeName(): string;
     GetFieldName(): string;
     GetFieldType(): Type;
