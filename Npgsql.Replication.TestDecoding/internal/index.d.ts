@@ -3,7 +3,7 @@
 // Assembly: Npgsql
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -44,7 +44,7 @@ export interface TestDecodingOptions$instance {
     readonly SkipEmptyXacts: Nullable_1<System_Internal.Boolean>;
     readonly StreamChanges: Nullable_1<System_Internal.Boolean>;
     Equals(other: TestDecodingOptions | null): boolean;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
 }
 

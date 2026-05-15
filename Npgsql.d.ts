@@ -5,6 +5,10 @@
 // Import internal declarations
 import * as Internal from './Npgsql/internal/index.js';
 
+// Core type aliases from @tsonic/core
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
+
 // Cross-namespace type imports for constraints
 import type { DbTypeResolverFactory, PgTypeInfoResolverFactory } from './Npgsql.Internal/internal/index.js';
 import type { PostgresType } from './Npgsql.PostgresTypes/internal/index.js';
@@ -92,8 +96,8 @@ declare const __unspecified: unique symbol;
 export type __ = typeof __unspecified;
 
 export type NpgsqlParameter<
-  T1 = __,
+  T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.NpgsqlParameter :
-  Internal.NpgsqlParameter_1<T1>;
+  [T1] extends [unknown] ? Internal.NpgsqlParameter_1<T1> : never;
 

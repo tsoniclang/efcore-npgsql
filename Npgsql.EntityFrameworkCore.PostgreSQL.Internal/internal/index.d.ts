@@ -3,7 +3,7 @@
 // Assembly: Npgsql.EntityFrameworkCore.PostgreSQL
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -91,22 +91,22 @@ export abstract class NpgsqlStrings$instance {
     static readonly RowValueComparisonRequiresTuplesOfSameLength: string;
     static readonly CannotUseDataSourceWithAuthCallbacks: string;
     static readonly TransientExceptionDetected: string;
-    static DuplicateColumnCompressionMethodMismatch(entityType1: JsValue | null, property1: JsValue | null, entityType2: JsValue | null, property2: JsValue | null, columnName: JsValue | null, table: JsValue | null): string;
-    static DuplicateColumnNameValueGenerationStrategyMismatch(entityType1: JsValue | null, property1: JsValue | null, entityType2: JsValue | null, property2: JsValue | null, columnName: JsValue | null, table: JsValue | null): string;
-    static DuplicateIndexCollationMismatch(index1: JsValue | null, entityType1: JsValue | null, index2: JsValue | null, entityType2: JsValue | null, table: JsValue | null, indexName: JsValue | null): string;
-    static DuplicateIndexConcurrentCreationMismatch(index1: JsValue | null, entityType1: JsValue | null, index2: JsValue | null, entityType2: JsValue | null, table: JsValue | null, indexName: JsValue | null): string;
-    static DuplicateIndexIncludedMismatch(index1: JsValue | null, entityType1: JsValue | null, index2: JsValue | null, entityType2: JsValue | null, table: JsValue | null, indexName: JsValue | null, includedColumns1: JsValue | null, includedColumns2: JsValue | null): string;
-    static HeterogeneousTypesInNewArray(type1: JsValue | null, type2: JsValue | null): string;
-    static IdentityBadType(property: JsValue | null, entityType: JsValue | null, propertyType: JsValue | null): string;
-    static IncludePropertyDuplicated(entityType: JsValue | null, property: JsValue | null): string;
-    static IncludePropertyInIndex(entityType: JsValue | null, property: JsValue | null): string;
-    static IncludePropertyNotFound(entityType: JsValue | null, property: JsValue | null): string;
-    static InvalidTableToIncludeInScaffolding(table: JsValue | null): string;
-    static NonKeyValueGeneration(property: JsValue | null, entityType: JsValue | null): string;
-    static SequenceBadType(property: JsValue | null, entityType: JsValue | null, propertyType: JsValue | null): string;
-    static StoredProcedureResultColumnsNotSupported(entityType: JsValue | null, sproc: JsValue | null): string;
-    static StoredProcedureReturnValueNotSupported(entityType: JsValue | null, sproc: JsValue | null): string;
-    static TwoDataSourcesInSameServiceProvider(useInternalServiceProvider: JsValue | null): string;
+    static DuplicateColumnCompressionMethodMismatch(entityType1: unknown | null, property1: unknown | null, entityType2: unknown | null, property2: unknown | null, columnName: unknown | null, table: unknown | null): string;
+    static DuplicateColumnNameValueGenerationStrategyMismatch(entityType1: unknown | null, property1: unknown | null, entityType2: unknown | null, property2: unknown | null, columnName: unknown | null, table: unknown | null): string;
+    static DuplicateIndexCollationMismatch(index1: unknown | null, entityType1: unknown | null, index2: unknown | null, entityType2: unknown | null, table: unknown | null, indexName: unknown | null): string;
+    static DuplicateIndexConcurrentCreationMismatch(index1: unknown | null, entityType1: unknown | null, index2: unknown | null, entityType2: unknown | null, table: unknown | null, indexName: unknown | null): string;
+    static DuplicateIndexIncludedMismatch(index1: unknown | null, entityType1: unknown | null, index2: unknown | null, entityType2: unknown | null, table: unknown | null, indexName: unknown | null, includedColumns1: unknown | null, includedColumns2: unknown | null): string;
+    static HeterogeneousTypesInNewArray(type1: unknown | null, type2: unknown | null): string;
+    static IdentityBadType(property: unknown | null, entityType: unknown | null, propertyType: unknown | null): string;
+    static IncludePropertyDuplicated(entityType: unknown | null, property: unknown | null): string;
+    static IncludePropertyInIndex(entityType: unknown | null, property: unknown | null): string;
+    static IncludePropertyNotFound(entityType: unknown | null, property: unknown | null): string;
+    static InvalidTableToIncludeInScaffolding(table: unknown | null): string;
+    static NonKeyValueGeneration(property: unknown | null, entityType: unknown | null): string;
+    static SequenceBadType(property: unknown | null, entityType: unknown | null, propertyType: unknown | null): string;
+    static StoredProcedureResultColumnsNotSupported(entityType: unknown | null, sproc: unknown | null): string;
+    static StoredProcedureReturnValueNotSupported(entityType: unknown | null, sproc: unknown | null): string;
+    static TwoDataSourcesInSameServiceProvider(useInternalServiceProvider: unknown | null): string;
 }
 
 

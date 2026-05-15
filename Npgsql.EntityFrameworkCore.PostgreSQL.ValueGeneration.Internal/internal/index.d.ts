@@ -3,7 +3,7 @@
 // Assembly: Npgsql.EntityFrameworkCore.PostgreSQL
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -39,7 +39,7 @@ export interface INpgsqlValueGeneratorCache$instance extends Microsoft_EntityFra
 
 export type INpgsqlValueGeneratorCache = INpgsqlValueGeneratorCache$instance;
 
-export interface NpgsqlSequenceHiLoValueGenerator_1$instance<TValue> extends HiLoValueGenerator_1<TValue> {
+export interface NpgsqlSequenceHiLoValueGenerator_1$instance<TValue extends unknown> extends HiLoValueGenerator_1<TValue> {
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_ValueGeneration_Internal_NpgsqlSequenceHiLoValueGenerator_1: never;
 
     readonly GeneratesTemporaryValues: boolean;
@@ -49,11 +49,11 @@ export interface NpgsqlSequenceHiLoValueGenerator_1$instance<TValue> extends HiL
 
 
 export const NpgsqlSequenceHiLoValueGenerator_1: {
-    new<TValue>(rawSqlCommandBuilder: IRawSqlCommandBuilder, sqlGenerator: IUpdateSqlGenerator, generatorState: NpgsqlSequenceValueGeneratorState, connection: INpgsqlRelationalConnection, commandLogger: IRelationalCommandDiagnosticsLogger): NpgsqlSequenceHiLoValueGenerator_1<TValue>;
+    new<TValue extends unknown>(rawSqlCommandBuilder: IRawSqlCommandBuilder, sqlGenerator: IUpdateSqlGenerator, generatorState: NpgsqlSequenceValueGeneratorState, connection: INpgsqlRelationalConnection, commandLogger: IRelationalCommandDiagnosticsLogger): NpgsqlSequenceHiLoValueGenerator_1<TValue>;
 };
 
 
-export type NpgsqlSequenceHiLoValueGenerator_1<TValue> = NpgsqlSequenceHiLoValueGenerator_1$instance<TValue>;
+export type NpgsqlSequenceHiLoValueGenerator_1<TValue extends unknown> = NpgsqlSequenceHiLoValueGenerator_1$instance<TValue>;
 
 export interface NpgsqlSequenceValueGeneratorFactory$instance extends INpgsqlSequenceValueGeneratorFactory$instance {
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_ValueGeneration_Internal_NpgsqlSequenceValueGeneratorFactory: never;

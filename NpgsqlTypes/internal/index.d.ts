@@ -3,7 +3,7 @@
 // Assembly: Npgsql
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -117,7 +117,7 @@ export interface NpgsqlBox$instance {
     Deconstruct(left: double, right: double, bottom: double, top: double): void;
     Deconstruct(left: double, right: double, bottom: double, top: double, width: double, height: double): void;
     Equals(other: NpgsqlBox): boolean;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
     ToString(): string;
 }
@@ -139,7 +139,7 @@ export interface NpgsqlCidr$instance {
     readonly Address: IPAddress;
     readonly Netmask: byte;
     Deconstruct(address: IPAddress, netmask: byte): void;
-    Equals(obj: JsValue): boolean;
+    Equals(obj: unknown): boolean;
     Equals(other: NpgsqlCidr): boolean;
     GetHashCode(): int;
     ToString(): string;
@@ -166,7 +166,7 @@ export interface NpgsqlCircle$instance {
     Deconstruct(x: double, y: double, radius: double): void;
     Deconstruct(center: NpgsqlPoint, radius: double): void;
     Equals(other: NpgsqlCircle): boolean;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
     ToString(): string;
 }
@@ -190,7 +190,7 @@ export interface NpgsqlCube$instance {
     readonly LowerLeft: IReadOnlyList_1<System_Internal.Double>;
     readonly UpperRight: IReadOnlyList_1<System_Internal.Double>;
     Equals(other: NpgsqlCube): boolean;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
     ToString(): string;
     ToSubset(...indexes: int[]): NpgsqlCube;
@@ -217,7 +217,7 @@ export interface NpgsqlInet$instance {
     readonly Address: IPAddress;
     readonly Netmask: byte;
     Deconstruct(address: IPAddress, netmask: byte): void;
-    Equals(obj: JsValue): boolean;
+    Equals(obj: unknown): boolean;
     Equals(other: NpgsqlInet): boolean;
     GetHashCode(): int;
     ToString(): string;
@@ -242,7 +242,7 @@ export interface NpgsqlInterval$instance {
     readonly Months: int;
     readonly Time: long;
     Equals(other: NpgsqlInterval): boolean;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
 }
 
@@ -264,7 +264,7 @@ export interface NpgsqlLine$instance {
     C: double;
     Deconstruct(a: double, b: double, c: double): void;
     Equals(other: NpgsqlLine): boolean;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
     ToString(): string;
 }
@@ -285,7 +285,7 @@ export interface NpgsqlLogSequenceNumber$instance {
 
     CompareTo(value: NpgsqlLogSequenceNumber): int;
     Equals(other: NpgsqlLogSequenceNumber): boolean;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
     ToString(): string;
 }
@@ -314,7 +314,7 @@ export interface NpgsqlLSeg$instance {
     Start: NpgsqlPoint;
     Deconstruct(start: NpgsqlPoint, end: NpgsqlPoint): void;
     Equals(other: NpgsqlLSeg): boolean;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
     ToString(): string;
 }
@@ -346,7 +346,7 @@ export interface NpgsqlPath$instance {
     Contains(item: NpgsqlPoint): boolean;
     CopyTo(array: NpgsqlPoint[], arrayIndex: int): void;
     Equals(other: NpgsqlPath): boolean;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetEnumerator(): IEnumerator_1<NpgsqlPoint>;
     GetHashCode(): int;
     IndexOf(item: NpgsqlPoint): int;
@@ -379,7 +379,7 @@ export interface NpgsqlPoint$instance {
     Y: double;
     Deconstruct(x: double, y: double): void;
     Equals(other: NpgsqlPoint): boolean;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
     ToString(): string;
 }
@@ -409,7 +409,7 @@ export interface NpgsqlPolygon$instance {
     Contains(item: NpgsqlPoint): boolean;
     CopyTo(array: NpgsqlPoint[], arrayIndex: int): void;
     Equals(other: NpgsqlPolygon): boolean;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetEnumerator(): IEnumerator_1<NpgsqlPoint>;
     GetHashCode(): int;
     IndexOf(item: NpgsqlPoint): int;
@@ -430,7 +430,7 @@ export const NpgsqlPolygon: {
 
 export type NpgsqlPolygon = NpgsqlPolygon$instance & { [index: number]: NpgsqlPoint; };
 
-export interface NpgsqlRange_1$instance<T> {
+export interface NpgsqlRange_1$instance<T extends unknown> {
     readonly __tsonic_type_NpgsqlTypes_NpgsqlRange_1: never;
 
     readonly __tsonic_iface_System_IEquatable_1: never;
@@ -442,7 +442,7 @@ export interface NpgsqlRange_1$instance<T> {
     readonly UpperBound: T;
     readonly UpperBoundInfinite: boolean;
     readonly UpperBoundIsInclusive: boolean;
-    Equals(o: JsValue | null): boolean;
+    Equals(o: unknown | null): boolean;
     Equals(other: NpgsqlRange_1<T>): boolean;
     GetHashCode(): int;
     ToString(): string;
@@ -450,33 +450,33 @@ export interface NpgsqlRange_1$instance<T> {
 
 
 export const NpgsqlRange_1: {
-    new<T>(lowerBound: T, upperBound: T): NpgsqlRange_1<T>;
-    new<T>(lowerBound: T, lowerBoundIsInclusive: boolean, upperBound: T, upperBoundIsInclusive: boolean): NpgsqlRange_1<T>;
-    new<T>(lowerBound: T, lowerBoundIsInclusive: boolean, lowerBoundInfinite: boolean, upperBound: T, upperBoundIsInclusive: boolean, upperBoundInfinite: boolean): NpgsqlRange_1<T>;
-    readonly Empty: <T>() => NpgsqlRange_1<T>;
-    Parse<T>(value: string): NpgsqlRange_1<T>;
+    new<T extends unknown>(lowerBound: T, upperBound: T): NpgsqlRange_1<T>;
+    new<T extends unknown>(lowerBound: T, lowerBoundIsInclusive: boolean, upperBound: T, upperBoundIsInclusive: boolean): NpgsqlRange_1<T>;
+    new<T extends unknown>(lowerBound: T, lowerBoundIsInclusive: boolean, lowerBoundInfinite: boolean, upperBound: T, upperBoundIsInclusive: boolean, upperBoundInfinite: boolean): NpgsqlRange_1<T>;
+    readonly Empty: <T extends unknown>() => NpgsqlRange_1<T>;
+    Parse<T extends unknown>(value: string): NpgsqlRange_1<T>;
 };
 
 
-export type NpgsqlRange_1<T> = NpgsqlRange_1$instance<T>;
+export type NpgsqlRange_1<T extends unknown> = NpgsqlRange_1$instance<T>;
 
-export interface NpgsqlRange_1_RangeTypeConverter$instance<T> extends TypeConverter {
+export interface NpgsqlRange_1_RangeTypeConverter$instance<T extends unknown> extends TypeConverter {
     readonly __tsonic_type_NpgsqlTypes_NpgsqlRange_1_RangeTypeConverter: never;
 
     CanConvertFrom(context: ITypeDescriptorContext | null, sourceType: Type): boolean;
     CanConvertTo(context: ITypeDescriptorContext | null, destinationType: Type | null): boolean;
-    ConvertFrom(context: ITypeDescriptorContext | null, culture: CultureInfo | null, value: JsValue): JsValue | null;
-    ConvertTo(context: ITypeDescriptorContext | null, culture: CultureInfo | null, value: JsValue | null, destinationType: Type): JsValue | null;
+    ConvertFrom(context: ITypeDescriptorContext | null, culture: CultureInfo | null, value: unknown): unknown | null;
+    ConvertTo(context: ITypeDescriptorContext | null, culture: CultureInfo | null, value: unknown | null, destinationType: Type): unknown | null;
 }
 
 
 export const NpgsqlRange_1_RangeTypeConverter: {
-    new<T>(): NpgsqlRange_1_RangeTypeConverter<T>;
-    Register<T>(): void;
+    new<T extends unknown>(): NpgsqlRange_1_RangeTypeConverter<T>;
+    Register<T extends unknown>(): void;
 };
 
 
-export type NpgsqlRange_1_RangeTypeConverter<T> = NpgsqlRange_1_RangeTypeConverter$instance<T>;
+export type NpgsqlRange_1_RangeTypeConverter<T extends unknown> = NpgsqlRange_1_RangeTypeConverter$instance<T>;
 
 export interface NpgsqlTid$instance {
     readonly __tsonic_type_NpgsqlTypes_NpgsqlTid: never;
@@ -487,7 +487,7 @@ export interface NpgsqlTid$instance {
     readonly OffsetNumber: ushort;
     Deconstruct(blockNumber: uint, offsetNumber: ushort): void;
     Equals(other: NpgsqlTid): boolean;
-    Equals(o: JsValue | null): boolean;
+    Equals(o: unknown | null): boolean;
     GetHashCode(): int;
     ToString(): string;
 }
@@ -506,7 +506,7 @@ export interface NpgsqlTsQuery$instance {
     readonly __tsonic_iface_System_IEquatable_1: never;
 
     readonly Kind: NpgsqlTsQuery_NodeKind;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     Equals(other: NpgsqlTsQuery | null): boolean;
     GetHashCode(): int;
     ToString(): string;
@@ -537,7 +537,7 @@ export interface NpgsqlTsQueryAnd$instance extends NpgsqlTsQueryBinOp {
     readonly __tsonic_iface_System_IEquatable_1: never;
 
     Equals(other: NpgsqlTsQuery | null): boolean;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
 }
 
@@ -571,7 +571,7 @@ export interface NpgsqlTsQueryEmpty$instance extends NpgsqlTsQuery {
     readonly __tsonic_iface_System_IEquatable_1: never;
 
     Equals(other: NpgsqlTsQuery | null): boolean;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
 }
 
@@ -590,7 +590,7 @@ export interface NpgsqlTsQueryFollowedBy$instance extends NpgsqlTsQueryBinOp {
 
     Distance: short;
     Equals(other: NpgsqlTsQuery | null): boolean;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
 }
 
@@ -611,7 +611,7 @@ export interface NpgsqlTsQueryLexeme$instance extends NpgsqlTsQuery {
     Text: string;
     Weights: NpgsqlTsQueryLexeme_Weight;
     Equals(other: NpgsqlTsQuery | null): boolean;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
 }
 
@@ -641,7 +641,7 @@ export interface NpgsqlTsQueryNot$instance extends NpgsqlTsQuery {
 
     Child: NpgsqlTsQuery;
     Equals(other: NpgsqlTsQuery | null): boolean;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
 }
 
@@ -659,7 +659,7 @@ export interface NpgsqlTsQueryOr$instance extends NpgsqlTsQueryBinOp {
     readonly __tsonic_iface_System_IEquatable_1: never;
 
     Equals(other: NpgsqlTsQuery | null): boolean;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
 }
 
@@ -680,7 +680,7 @@ export interface NpgsqlTsVector$instance {
 
     readonly Count: int;
     Equals(other: NpgsqlTsVector | null): boolean;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetEnumerator(): IEnumerator_1<NpgsqlTsVector_Lexeme>;
     GetHashCode(): int;
     ToString(): string;
@@ -703,7 +703,7 @@ export interface NpgsqlTsVector_Lexeme$instance {
     readonly Count: int;
     Text: string;
     Equals(o: NpgsqlTsVector_Lexeme): boolean;
-    Equals(o: JsValue | null): boolean;
+    Equals(o: unknown | null): boolean;
     GetHashCode(): int;
     ToString(): string;
 }
@@ -733,7 +733,7 @@ export interface NpgsqlTsVector_Lexeme_WordEntryPos$instance {
     readonly Pos: int;
     readonly Weight: NpgsqlTsVector_Lexeme_Weight;
     Equals(o: NpgsqlTsVector_Lexeme_WordEntryPos): boolean;
-    Equals(o: JsValue | null): boolean;
+    Equals(o: unknown | null): boolean;
     GetHashCode(): int;
     ToString(): string;
 }
