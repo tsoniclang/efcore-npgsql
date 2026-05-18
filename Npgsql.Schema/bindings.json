@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Npgsql:Npgsql.Schema.NpgsqlDbColumn",
-      "clrName": "Npgsql.Schema.NpgsqlDbColumn",
-      "assemblyName": "Npgsql",
+      "targetName": "Npgsql.Schema.NpgsqlDbColumn",
+      "ownerIdentity": "Npgsql",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -17,13 +17,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Data.Common:System.Data.Common.DbColumn",
-        "clrName": "System.Data.Common.DbColumn"
+        "targetName": "System.Data.Common.DbColumn"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Npgsql:Npgsql.Schema.NpgsqlDbColumn::AllowDBNull:System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "AllowDBNull",
+          "targetName": "AllowDBNull",
           "metadataToken": 385876518,
           "canonicalSignature": ":System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "AllowDBNull|:System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -37,12 +37,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Schema.NpgsqlDbColumn",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Schema.NpgsqlDbColumn",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.Schema.NpgsqlDbColumn::BaseCatalogName:System.String",
-          "clrName": "BaseCatalogName",
+          "targetName": "BaseCatalogName",
           "metadataToken": 385876519,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "BaseCatalogName|:System.String|static=false|accessor=getset",
@@ -56,12 +56,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Schema.NpgsqlDbColumn",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Schema.NpgsqlDbColumn",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.Schema.NpgsqlDbColumn::BaseColumnName:System.String",
-          "clrName": "BaseColumnName",
+          "targetName": "BaseColumnName",
           "metadataToken": 385876520,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "BaseColumnName|:System.String|static=false|accessor=getset",
@@ -75,12 +75,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Schema.NpgsqlDbColumn",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Schema.NpgsqlDbColumn",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.Schema.NpgsqlDbColumn::BaseSchemaName:System.String",
-          "clrName": "BaseSchemaName",
+          "targetName": "BaseSchemaName",
           "metadataToken": 385876521,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "BaseSchemaName|:System.String|static=false|accessor=getset",
@@ -94,12 +94,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Schema.NpgsqlDbColumn",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Schema.NpgsqlDbColumn",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.Schema.NpgsqlDbColumn::BaseServerName:System.String",
-          "clrName": "BaseServerName",
+          "targetName": "BaseServerName",
           "metadataToken": 385876522,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "BaseServerName|:System.String|static=false|accessor=getset",
@@ -113,12 +113,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Schema.NpgsqlDbColumn",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Schema.NpgsqlDbColumn",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.Schema.NpgsqlDbColumn::BaseTableName:System.String",
-          "clrName": "BaseTableName",
+          "targetName": "BaseTableName",
           "metadataToken": 385876523,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "BaseTableName|:System.String|static=false|accessor=getset",
@@ -132,12 +132,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Schema.NpgsqlDbColumn",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Schema.NpgsqlDbColumn",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.Schema.NpgsqlDbColumn::ColumnName:System.String",
-          "clrName": "ColumnName",
+          "targetName": "ColumnName",
           "metadataToken": 385876524,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "ColumnName|:System.String|static=false|accessor=getset",
@@ -151,12 +151,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Schema.NpgsqlDbColumn",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Schema.NpgsqlDbColumn",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.Schema.NpgsqlDbColumn::ColumnOrdinal:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "ColumnOrdinal",
+          "targetName": "ColumnOrdinal",
           "metadataToken": 385876525,
           "canonicalSignature": ":System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "ColumnOrdinal|:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -170,12 +170,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Schema.NpgsqlDbColumn",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Schema.NpgsqlDbColumn",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.Schema.NpgsqlDbColumn::ColumnSize:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "ColumnSize",
+          "targetName": "ColumnSize",
           "metadataToken": 385876526,
           "canonicalSignature": ":System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "ColumnSize|:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -189,12 +189,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Schema.NpgsqlDbColumn",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Schema.NpgsqlDbColumn",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.Schema.NpgsqlDbColumn::IsAliased:System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "IsAliased",
+          "targetName": "IsAliased",
           "metadataToken": 385876527,
           "canonicalSignature": ":System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "IsAliased|:System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -208,12 +208,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Schema.NpgsqlDbColumn",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Schema.NpgsqlDbColumn",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.Schema.NpgsqlDbColumn::IsAutoIncrement:System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "IsAutoIncrement",
+          "targetName": "IsAutoIncrement",
           "metadataToken": 385876528,
           "canonicalSignature": ":System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "IsAutoIncrement|:System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -227,12 +227,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Schema.NpgsqlDbColumn",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Schema.NpgsqlDbColumn",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.Schema.NpgsqlDbColumn::IsIdentity:System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "IsIdentity",
+          "targetName": "IsIdentity",
           "metadataToken": 385876529,
           "canonicalSignature": ":System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "IsIdentity|:System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -246,12 +246,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Schema.NpgsqlDbColumn",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Schema.NpgsqlDbColumn",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.Schema.NpgsqlDbColumn::IsKey:System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "IsKey",
+          "targetName": "IsKey",
           "metadataToken": 385876530,
           "canonicalSignature": ":System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "IsKey|:System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -265,12 +265,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Schema.NpgsqlDbColumn",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Schema.NpgsqlDbColumn",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.Schema.NpgsqlDbColumn::IsLong:System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "IsLong",
+          "targetName": "IsLong",
           "metadataToken": 385876531,
           "canonicalSignature": ":System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "IsLong|:System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -284,12 +284,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Schema.NpgsqlDbColumn",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Schema.NpgsqlDbColumn",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.Schema.NpgsqlDbColumn::IsReadOnly:System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "IsReadOnly",
+          "targetName": "IsReadOnly",
           "metadataToken": 385876532,
           "canonicalSignature": ":System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "IsReadOnly|:System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -303,12 +303,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Schema.NpgsqlDbColumn",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Schema.NpgsqlDbColumn",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.Schema.NpgsqlDbColumn::IsUnique:System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "IsUnique",
+          "targetName": "IsUnique",
           "metadataToken": 385876533,
           "canonicalSignature": ":System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "IsUnique|:System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -322,12 +322,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Schema.NpgsqlDbColumn",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Schema.NpgsqlDbColumn",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.Schema.NpgsqlDbColumn::NumericPrecision:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "NumericPrecision",
+          "targetName": "NumericPrecision",
           "metadataToken": 385876534,
           "canonicalSignature": ":System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "NumericPrecision|:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -341,12 +341,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Schema.NpgsqlDbColumn",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Schema.NpgsqlDbColumn",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.Schema.NpgsqlDbColumn::NumericScale:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "NumericScale",
+          "targetName": "NumericScale",
           "metadataToken": 385876535,
           "canonicalSignature": ":System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "NumericScale|:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -360,12 +360,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Schema.NpgsqlDbColumn",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Schema.NpgsqlDbColumn",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.Schema.NpgsqlDbColumn::UdtAssemblyQualifiedName:System.String",
-          "clrName": "UdtAssemblyQualifiedName",
+          "targetName": "UdtAssemblyQualifiedName",
           "metadataToken": 385876536,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "UdtAssemblyQualifiedName|:System.String|static=false|accessor=getset",
@@ -379,12 +379,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Schema.NpgsqlDbColumn",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Schema.NpgsqlDbColumn",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.Schema.NpgsqlDbColumn::DataType:System.Type",
-          "clrName": "DataType",
+          "targetName": "DataType",
           "metadataToken": 385876537,
           "canonicalSignature": ":System.Type",
           "normalizedSignature": "DataType|:System.Type|static=false|accessor=getset",
@@ -398,12 +398,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Schema.NpgsqlDbColumn",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Schema.NpgsqlDbColumn",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.Schema.NpgsqlDbColumn::DataTypeName:System.String",
-          "clrName": "DataTypeName",
+          "targetName": "DataTypeName",
           "metadataToken": 385876538,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "DataTypeName|:System.String|static=false|accessor=getset",
@@ -417,12 +417,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Schema.NpgsqlDbColumn",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Schema.NpgsqlDbColumn",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.Schema.NpgsqlDbColumn::PostgresType:Npgsql.PostgresTypes.PostgresType",
-          "clrName": "PostgresType",
+          "targetName": "PostgresType",
           "metadataToken": 385876539,
           "canonicalSignature": ":Npgsql.PostgresTypes.PostgresType",
           "normalizedSignature": "PostgresType|:Npgsql.PostgresTypes.PostgresType|static=false|accessor=getset",
@@ -436,12 +436,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Schema.NpgsqlDbColumn",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Schema.NpgsqlDbColumn",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.Schema.NpgsqlDbColumn::TypeOID:System.UInt32",
-          "clrName": "TypeOID",
+          "targetName": "TypeOID",
           "metadataToken": 385876540,
           "canonicalSignature": ":System.UInt32",
           "normalizedSignature": "TypeOID|:System.UInt32|static=false|accessor=getset",
@@ -455,12 +455,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Schema.NpgsqlDbColumn",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Schema.NpgsqlDbColumn",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.Schema.NpgsqlDbColumn::TableOID:System.UInt32",
-          "clrName": "TableOID",
+          "targetName": "TableOID",
           "metadataToken": 385876541,
           "canonicalSignature": ":System.UInt32",
           "normalizedSignature": "TableOID|:System.UInt32|static=false|accessor=getset",
@@ -474,12 +474,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Schema.NpgsqlDbColumn",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Schema.NpgsqlDbColumn",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.Schema.NpgsqlDbColumn::ColumnAttributeNumber:System.Nullable_1[[System.Int16,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "ColumnAttributeNumber",
+          "targetName": "ColumnAttributeNumber",
           "metadataToken": 385876542,
           "canonicalSignature": ":System.Nullable_1[[System.Int16,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "ColumnAttributeNumber|:System.Nullable_1[[System.Int16,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -493,12 +493,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Schema.NpgsqlDbColumn",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Schema.NpgsqlDbColumn",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.Schema.NpgsqlDbColumn::DefaultValue:System.String",
-          "clrName": "DefaultValue",
+          "targetName": "DefaultValue",
           "metadataToken": 385876543,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "DefaultValue|:System.String|static=false|accessor=getset",
@@ -512,12 +512,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Schema.NpgsqlDbColumn",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Schema.NpgsqlDbColumn",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.Schema.NpgsqlDbColumn::NpgsqlDbType:System.Nullable_1[[NpgsqlTypes.NpgsqlDbType,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]",
-          "clrName": "NpgsqlDbType",
+          "targetName": "NpgsqlDbType",
           "metadataToken": 385876544,
           "canonicalSignature": ":System.Nullable_1[[NpgsqlTypes.NpgsqlDbType,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]",
           "normalizedSignature": "NpgsqlDbType|:System.Nullable_1[[NpgsqlTypes.NpgsqlDbType,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]|static=false|accessor=getset",
@@ -531,12 +531,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Schema.NpgsqlDbColumn",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Schema.NpgsqlDbColumn",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.Schema.NpgsqlDbColumn::Item[System.String]:System.Object",
-          "clrName": "Item",
+          "targetName": "Item",
           "metadataToken": 385876545,
           "canonicalSignature": "[System.String]:System.Object",
           "normalizedSignature": "Item|[System.String]:System.Object|static=false|accessor=get",
@@ -550,8 +550,8 @@
           "isVirtual": true,
           "isOverride": true,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Schema.NpgsqlDbColumn",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Schema.NpgsqlDbColumn",
+          "ownerIdentity": "Npgsql"
         }
       ],
       "fields": [],
@@ -565,8 +565,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Schema.NpgsqlDbColumn",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Schema.NpgsqlDbColumn",
+          "ownerIdentity": "Npgsql"
         }
       ]
     }

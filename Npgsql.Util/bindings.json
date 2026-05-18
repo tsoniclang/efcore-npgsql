@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Npgsql:Npgsql.Util.NpgsqlTimeout",
-      "clrName": "Npgsql.Util.NpgsqlTimeout",
-      "assemblyName": "Npgsql",
+      "targetName": "Npgsql.Util.NpgsqlTimeout",
+      "ownerIdentity": "Npgsql",
       "metadataToken": 0,
       "kind": "Struct",
       "accessibility": "Public",
@@ -17,7 +17,7 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.ValueType",
-        "clrName": "System.ValueType"
+        "targetName": "System.ValueType"
       },
       "methods": [],
       "properties": [],

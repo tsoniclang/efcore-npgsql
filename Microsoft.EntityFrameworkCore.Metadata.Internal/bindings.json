@@ -8,8 +8,8 @@
   "types": [
     {
       "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Microsoft.EntityFrameworkCore.Metadata.Internal.NpgsqlIndexExtensions",
-      "clrName": "Microsoft.EntityFrameworkCore.Metadata.Internal.NpgsqlIndexExtensions",
-      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "targetName": "Microsoft.EntityFrameworkCore.Metadata.Internal.NpgsqlIndexExtensions",
+      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -19,12 +19,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Microsoft.EntityFrameworkCore.Metadata.Internal.NpgsqlIndexExtensions::AreCompatibleForNpgsql(Microsoft.EntityFrameworkCore.Metadata.IReadOnlyIndex,Microsoft.EntityFrameworkCore.Metadata.IReadOnlyIndex,Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier\u0026,System.Boolean):System.Boolean",
-          "clrName": "AreCompatibleForNpgsql",
+          "targetName": "AreCompatibleForNpgsql",
           "metadataToken": 100664043,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IReadOnlyIndex,Microsoft.EntityFrameworkCore.Metadata.IReadOnlyIndex,Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier\u0026,System.Boolean):System.Boolean",
           "normalizedSignature": "AreCompatibleForNpgsql|(Microsoft.EntityFrameworkCore.Metadata.IReadOnlyIndex,Microsoft.EntityFrameworkCore.Metadata.IReadOnlyIndex,Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier\u0026,System.Boolean):System.Boolean|static=true",
@@ -38,8 +38,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Metadata.Internal.NpgsqlIndexExtensions",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Metadata.Internal.NpgsqlIndexExtensions",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": true,
           "parameterModifiers": [
             {

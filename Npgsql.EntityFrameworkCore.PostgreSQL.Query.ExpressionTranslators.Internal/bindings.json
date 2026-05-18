@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlAggregateMethodCallTranslatorProvider",
-      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlAggregateMethodCallTranslatorProvider",
-      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlAggregateMethodCallTranslatorProvider",
+      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -17,12 +17,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Query.RelationalAggregateMethodCallTranslatorProvider",
-        "clrName": "Microsoft.EntityFrameworkCore.Query.RelationalAggregateMethodCallTranslatorProvider"
+        "targetName": "Microsoft.EntityFrameworkCore.Query.RelationalAggregateMethodCallTranslatorProvider"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Query.IAggregateMethodCallTranslatorProvider",
-          "clrName": "Microsoft.EntityFrameworkCore.Query.IAggregateMethodCallTranslatorProvider"
+          "targetName": "Microsoft.EntityFrameworkCore.Query.IAggregateMethodCallTranslatorProvider"
         }
       ],
       "methods": [],
@@ -38,15 +38,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlAggregateMethodCallTranslatorProvider",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlAggregateMethodCallTranslatorProvider",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
       ]
     },
     {
       "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlArrayMethodTranslator",
-      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlArrayMethodTranslator",
-      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlArrayMethodTranslator",
+      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -56,18 +56,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator",
-          "clrName": "Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator"
+          "targetName": "Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator"
         }
       ],
       "methods": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlArrayMethodTranslator::Translate(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
-          "clrName": "Translate",
+          "targetName": "Translate",
           "metadataToken": 100664827,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "Translate|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
@@ -81,8 +81,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlArrayMethodTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlArrayMethodTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         }
       ],
@@ -98,15 +98,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlArrayMethodTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlArrayMethodTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
       ]
     },
     {
       "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlBigIntegerMemberTranslator",
-      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlBigIntegerMemberTranslator",
-      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlBigIntegerMemberTranslator",
+      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -116,18 +116,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Query.IMemberTranslator",
-          "clrName": "Microsoft.EntityFrameworkCore.Query.IMemberTranslator"
+          "targetName": "Microsoft.EntityFrameworkCore.Query.IMemberTranslator"
         }
       ],
       "methods": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlBigIntegerMemberTranslator::Translate(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MemberInfo,System.Type,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
-          "clrName": "Translate",
+          "targetName": "Translate",
           "metadataToken": 100664832,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MemberInfo,System.Type,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "Translate|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MemberInfo,System.Type,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
@@ -141,8 +141,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlBigIntegerMemberTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlBigIntegerMemberTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         }
       ],
@@ -158,15 +158,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlBigIntegerMemberTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlBigIntegerMemberTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
       ]
     },
     {
       "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlByteArrayMethodTranslator",
-      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlByteArrayMethodTranslator",
-      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlByteArrayMethodTranslator",
+      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -176,18 +176,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator",
-          "clrName": "Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator"
+          "targetName": "Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator"
         }
       ],
       "methods": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlByteArrayMethodTranslator::Translate(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
-          "clrName": "Translate",
+          "targetName": "Translate",
           "metadataToken": 100664835,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "Translate|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
@@ -201,8 +201,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlByteArrayMethodTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlByteArrayMethodTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         }
       ],
@@ -218,15 +218,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlByteArrayMethodTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlByteArrayMethodTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
       ]
     },
     {
       "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlConvertTranslator",
-      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlConvertTranslator",
-      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlConvertTranslator",
+      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -236,18 +236,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator",
-          "clrName": "Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator"
+          "targetName": "Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator"
         }
       ],
       "methods": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlConvertTranslator::Translate(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
-          "clrName": "Translate",
+          "targetName": "Translate",
           "metadataToken": 100664837,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "Translate|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
@@ -261,8 +261,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlConvertTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlConvertTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         }
       ],
@@ -278,15 +278,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlConvertTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlConvertTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
       ]
     },
     {
       "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlCubeTranslator",
-      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlCubeTranslator",
-      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlCubeTranslator",
+      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -296,22 +296,22 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator",
-          "clrName": "Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator"
+          "targetName": "Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Query.IMemberTranslator",
-          "clrName": "Microsoft.EntityFrameworkCore.Query.IMemberTranslator"
+          "targetName": "Microsoft.EntityFrameworkCore.Query.IMemberTranslator"
         }
       ],
       "methods": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlCubeTranslator::Translate(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
-          "clrName": "Translate",
+          "targetName": "Translate",
           "metadataToken": 100664840,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "Translate|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
@@ -325,13 +325,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlCubeTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlCubeTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlCubeTranslator::Translate(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MemberInfo,System.Type,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
-          "clrName": "Translate",
+          "targetName": "Translate",
           "metadataToken": 100664841,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MemberInfo,System.Type,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "Translate|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MemberInfo,System.Type,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
@@ -345,8 +345,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlCubeTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlCubeTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         }
       ],
@@ -362,15 +362,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlCubeTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlCubeTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
       ]
     },
     {
       "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlDateTimeMemberTranslator",
-      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlDateTimeMemberTranslator",
-      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlDateTimeMemberTranslator",
+      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -380,18 +380,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Query.IMemberTranslator",
-          "clrName": "Microsoft.EntityFrameworkCore.Query.IMemberTranslator"
+          "targetName": "Microsoft.EntityFrameworkCore.Query.IMemberTranslator"
         }
       ],
       "methods": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlDateTimeMemberTranslator::Translate(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MemberInfo,System.Type,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
-          "clrName": "Translate",
+          "targetName": "Translate",
           "metadataToken": 100664844,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MemberInfo,System.Type,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "Translate|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MemberInfo,System.Type,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
@@ -405,8 +405,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlDateTimeMemberTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlDateTimeMemberTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         }
       ],
@@ -422,15 +422,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlDateTimeMemberTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlDateTimeMemberTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
       ]
     },
     {
       "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlDateTimeMethodTranslator",
-      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlDateTimeMethodTranslator",
-      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlDateTimeMethodTranslator",
+      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -440,18 +440,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator",
-          "clrName": "Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator"
+          "targetName": "Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator"
         }
       ],
       "methods": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlDateTimeMethodTranslator::Translate(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
-          "clrName": "Translate",
+          "targetName": "Translate",
           "metadataToken": 100664852,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "Translate|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
@@ -465,8 +465,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlDateTimeMethodTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlDateTimeMethodTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         }
       ],
@@ -482,15 +482,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlDateTimeMethodTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlDateTimeMethodTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
       ]
     },
     {
       "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlFullTextSearchMethodTranslator",
-      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlFullTextSearchMethodTranslator",
-      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlFullTextSearchMethodTranslator",
+      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -500,18 +500,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator",
-          "clrName": "Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator"
+          "targetName": "Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator"
         }
       ],
       "methods": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlFullTextSearchMethodTranslator::Translate(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
-          "clrName": "Translate",
+          "targetName": "Translate",
           "metadataToken": 100664861,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "Translate|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
@@ -525,8 +525,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlFullTextSearchMethodTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlFullTextSearchMethodTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         }
       ],
@@ -542,15 +542,15 @@
           "isStatic": false,
           "parameterCount": 3,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlFullTextSearchMethodTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlFullTextSearchMethodTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
       ]
     },
     {
       "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlFuzzyStringMatchMethodTranslator",
-      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlFuzzyStringMatchMethodTranslator",
-      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlFuzzyStringMatchMethodTranslator",
+      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -560,18 +560,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator",
-          "clrName": "Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator"
+          "targetName": "Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator"
         }
       ],
       "methods": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlFuzzyStringMatchMethodTranslator::Translate(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
-          "clrName": "Translate",
+          "targetName": "Translate",
           "metadataToken": 100664868,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "Translate|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
@@ -585,8 +585,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlFuzzyStringMatchMethodTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlFuzzyStringMatchMethodTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         }
       ],
@@ -602,15 +602,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlFuzzyStringMatchMethodTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlFuzzyStringMatchMethodTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
       ]
     },
     {
       "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlGuidTranslator",
-      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlGuidTranslator",
-      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlGuidTranslator",
+      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -620,18 +620,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator",
-          "clrName": "Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator"
+          "targetName": "Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator"
         }
       ],
       "methods": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlGuidTranslator::Translate(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
-          "clrName": "Translate",
+          "targetName": "Translate",
           "metadataToken": 100664871,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "Translate|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
@@ -645,8 +645,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlGuidTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlGuidTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         }
       ],
@@ -662,15 +662,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlGuidTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlGuidTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
       ]
     },
     {
       "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlJsonDbFunctionsTranslator",
-      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlJsonDbFunctionsTranslator",
-      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlJsonDbFunctionsTranslator",
+      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -680,18 +680,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator",
-          "clrName": "Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator"
+          "targetName": "Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator"
         }
       ],
       "methods": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlJsonDbFunctionsTranslator::Translate(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
-          "clrName": "Translate",
+          "targetName": "Translate",
           "metadataToken": 100664873,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "Translate|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
@@ -705,8 +705,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlJsonDbFunctionsTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlJsonDbFunctionsTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         }
       ],
@@ -722,15 +722,15 @@
           "isStatic": false,
           "parameterCount": 3,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlJsonDbFunctionsTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlJsonDbFunctionsTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
       ]
     },
     {
       "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlJsonDomTranslator",
-      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlJsonDomTranslator",
-      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlJsonDomTranslator",
+      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -740,22 +740,22 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Query.IMemberTranslator",
-          "clrName": "Microsoft.EntityFrameworkCore.Query.IMemberTranslator"
+          "targetName": "Microsoft.EntityFrameworkCore.Query.IMemberTranslator"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator",
-          "clrName": "Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator"
+          "targetName": "Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator"
         }
       ],
       "methods": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlJsonDomTranslator::Translate(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MemberInfo,System.Type,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
-          "clrName": "Translate",
+          "targetName": "Translate",
           "metadataToken": 100664879,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MemberInfo,System.Type,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "Translate|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MemberInfo,System.Type,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
@@ -769,13 +769,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlJsonDomTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlJsonDomTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlJsonDomTranslator::Translate(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
-          "clrName": "Translate",
+          "targetName": "Translate",
           "metadataToken": 100664880,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "Translate|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
@@ -789,8 +789,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlJsonDomTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlJsonDomTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         }
       ],
@@ -806,15 +806,15 @@
           "isStatic": false,
           "parameterCount": 3,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlJsonDomTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlJsonDomTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
       ]
     },
     {
       "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlJsonPocoTranslator",
-      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlJsonPocoTranslator",
-      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlJsonPocoTranslator",
+      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -824,22 +824,22 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Query.IMemberTranslator",
-          "clrName": "Microsoft.EntityFrameworkCore.Query.IMemberTranslator"
+          "targetName": "Microsoft.EntityFrameworkCore.Query.IMemberTranslator"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator",
-          "clrName": "Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator"
+          "targetName": "Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator"
         }
       ],
       "methods": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlJsonPocoTranslator::Translate(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
-          "clrName": "Translate",
+          "targetName": "Translate",
           "metadataToken": 100664883,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "Translate|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
@@ -853,13 +853,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlJsonPocoTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlJsonPocoTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlJsonPocoTranslator::Translate(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MemberInfo,System.Type,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
-          "clrName": "Translate",
+          "targetName": "Translate",
           "metadataToken": 100664884,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MemberInfo,System.Type,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "Translate|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MemberInfo,System.Type,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
@@ -873,13 +873,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlJsonPocoTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlJsonPocoTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlJsonPocoTranslator::TranslateMemberAccess(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Type):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
-          "clrName": "TranslateMemberAccess",
+          "targetName": "TranslateMemberAccess",
           "metadataToken": 100664885,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Type):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "TranslateMemberAccess|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Type):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
@@ -893,13 +893,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlJsonPocoTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlJsonPocoTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlJsonPocoTranslator::TranslateArrayLength(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
-          "clrName": "TranslateArrayLength",
+          "targetName": "TranslateArrayLength",
           "metadataToken": 100664886,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "TranslateArrayLength|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
@@ -913,8 +913,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlJsonPocoTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlJsonPocoTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         }
       ],
@@ -930,15 +930,15 @@
           "isStatic": false,
           "parameterCount": 3,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlJsonPocoTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlJsonPocoTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
       ]
     },
     {
       "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlLikeTranslator",
-      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlLikeTranslator",
-      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlLikeTranslator",
+      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -948,18 +948,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator",
-          "clrName": "Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator"
+          "targetName": "Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator"
         }
       ],
       "methods": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlLikeTranslator::Translate(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
-          "clrName": "Translate",
+          "targetName": "Translate",
           "metadataToken": 100664890,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "Translate|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
@@ -973,8 +973,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlLikeTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlLikeTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         }
       ],
@@ -990,15 +990,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlLikeTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlLikeTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
       ]
     },
     {
       "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlLTreeTranslator",
-      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlLTreeTranslator",
-      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlLTreeTranslator",
+      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1008,22 +1008,22 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator",
-          "clrName": "Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator"
+          "targetName": "Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Query.IMemberTranslator",
-          "clrName": "Microsoft.EntityFrameworkCore.Query.IMemberTranslator"
+          "targetName": "Microsoft.EntityFrameworkCore.Query.IMemberTranslator"
         }
       ],
       "methods": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlLTreeTranslator::Translate(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
-          "clrName": "Translate",
+          "targetName": "Translate",
           "metadataToken": 100664893,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "Translate|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
@@ -1037,13 +1037,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlLTreeTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlLTreeTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlLTreeTranslator::Translate(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MemberInfo,System.Type,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
-          "clrName": "Translate",
+          "targetName": "Translate",
           "metadataToken": 100664894,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MemberInfo,System.Type,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "Translate|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MemberInfo,System.Type,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
@@ -1057,8 +1057,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlLTreeTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlLTreeTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         }
       ],
@@ -1074,15 +1074,15 @@
           "isStatic": false,
           "parameterCount": 3,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlLTreeTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlLTreeTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
       ]
     },
     {
       "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlMathTranslator",
-      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlMathTranslator",
-      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlMathTranslator",
+      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1092,18 +1092,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator",
-          "clrName": "Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator"
+          "targetName": "Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator"
         }
       ],
       "methods": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlMathTranslator::Translate(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
-          "clrName": "Translate",
+          "targetName": "Translate",
           "metadataToken": 100664897,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "Translate|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
@@ -1117,8 +1117,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlMathTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlMathTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         }
       ],
@@ -1134,15 +1134,15 @@
           "isStatic": false,
           "parameterCount": 3,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlMathTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlMathTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
       ]
     },
     {
       "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlMemberTranslatorProvider",
-      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlMemberTranslatorProvider",
-      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlMemberTranslatorProvider",
+      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1152,19 +1152,19 @@
       "arity": 0,
       "baseType": {
         "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Query.RelationalMemberTranslatorProvider",
-        "clrName": "Microsoft.EntityFrameworkCore.Query.RelationalMemberTranslatorProvider"
+        "targetName": "Microsoft.EntityFrameworkCore.Query.RelationalMemberTranslatorProvider"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Query.IMemberTranslatorProvider",
-          "clrName": "Microsoft.EntityFrameworkCore.Query.IMemberTranslatorProvider"
+          "targetName": "Microsoft.EntityFrameworkCore.Query.IMemberTranslatorProvider"
         }
       ],
       "methods": [],
       "properties": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlMemberTranslatorProvider::JsonPocoTranslator:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlJsonPocoTranslator",
-          "clrName": "JsonPocoTranslator",
+          "targetName": "JsonPocoTranslator",
           "metadataToken": 385876082,
           "canonicalSignature": ":Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlJsonPocoTranslator",
           "normalizedSignature": "JsonPocoTranslator|:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlJsonPocoTranslator|static=false|accessor=get",
@@ -1178,8 +1178,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlMemberTranslatorProvider",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlMemberTranslatorProvider",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
       ],
       "fields": [],
@@ -1193,15 +1193,15 @@
           "isStatic": false,
           "parameterCount": 4,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlMemberTranslatorProvider",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlMemberTranslatorProvider",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
       ]
     },
     {
       "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlMethodCallTranslatorProvider",
-      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlMethodCallTranslatorProvider",
-      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlMethodCallTranslatorProvider",
+      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1211,19 +1211,19 @@
       "arity": 0,
       "baseType": {
         "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Query.RelationalMethodCallTranslatorProvider",
-        "clrName": "Microsoft.EntityFrameworkCore.Query.RelationalMethodCallTranslatorProvider"
+        "targetName": "Microsoft.EntityFrameworkCore.Query.RelationalMethodCallTranslatorProvider"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Query.IMethodCallTranslatorProvider",
-          "clrName": "Microsoft.EntityFrameworkCore.Query.IMethodCallTranslatorProvider"
+          "targetName": "Microsoft.EntityFrameworkCore.Query.IMethodCallTranslatorProvider"
         }
       ],
       "methods": [],
       "properties": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlMethodCallTranslatorProvider::LTreeTranslator:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlLTreeTranslator",
-          "clrName": "LTreeTranslator",
+          "targetName": "LTreeTranslator",
           "metadataToken": 385876083,
           "canonicalSignature": ":Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlLTreeTranslator",
           "normalizedSignature": "LTreeTranslator|:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlLTreeTranslator|static=false|accessor=get",
@@ -1237,8 +1237,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlMethodCallTranslatorProvider",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlMethodCallTranslatorProvider",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
       ],
       "fields": [],
@@ -1252,15 +1252,15 @@
           "isStatic": false,
           "parameterCount": 3,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlMethodCallTranslatorProvider",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlMethodCallTranslatorProvider",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
       ]
     },
     {
       "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlMiscAggregateMethodTranslator",
-      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlMiscAggregateMethodTranslator",
-      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlMiscAggregateMethodTranslator",
+      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1270,18 +1270,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Query.IAggregateMethodCallTranslator",
-          "clrName": "Microsoft.EntityFrameworkCore.Query.IAggregateMethodCallTranslator"
+          "targetName": "Microsoft.EntityFrameworkCore.Query.IAggregateMethodCallTranslator"
         }
       ],
       "methods": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlMiscAggregateMethodTranslator::Translate(System.Reflection.MethodInfo,Microsoft.EntityFrameworkCore.Query.EnumerableExpression,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
-          "clrName": "Translate",
+          "targetName": "Translate",
           "metadataToken": 100664904,
           "canonicalSignature": "(System.Reflection.MethodInfo,Microsoft.EntityFrameworkCore.Query.EnumerableExpression,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "Translate|(System.Reflection.MethodInfo,Microsoft.EntityFrameworkCore.Query.EnumerableExpression,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
@@ -1295,8 +1295,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlMiscAggregateMethodTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlMiscAggregateMethodTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         }
       ],
@@ -1312,15 +1312,15 @@
           "isStatic": false,
           "parameterCount": 3,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlMiscAggregateMethodTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlMiscAggregateMethodTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
       ]
     },
     {
       "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlNetworkTranslator",
-      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlNetworkTranslator",
-      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlNetworkTranslator",
+      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1330,18 +1330,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator",
-          "clrName": "Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator"
+          "targetName": "Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator"
         }
       ],
       "methods": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlNetworkTranslator::Translate(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
-          "clrName": "Translate",
+          "targetName": "Translate",
           "metadataToken": 100664907,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "Translate|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
@@ -1355,8 +1355,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlNetworkTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlNetworkTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         }
       ],
@@ -1372,15 +1372,15 @@
           "isStatic": false,
           "parameterCount": 3,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlNetworkTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlNetworkTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
       ]
     },
     {
       "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlObjectToStringTranslator",
-      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlObjectToStringTranslator",
-      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlObjectToStringTranslator",
+      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1390,18 +1390,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator",
-          "clrName": "Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator"
+          "targetName": "Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator"
         }
       ],
       "methods": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlObjectToStringTranslator::Translate(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
-          "clrName": "Translate",
+          "targetName": "Translate",
           "metadataToken": 100664914,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "Translate|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
@@ -1415,8 +1415,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlObjectToStringTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlObjectToStringTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         }
       ],
@@ -1432,15 +1432,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlObjectToStringTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlObjectToStringTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
       ]
     },
     {
       "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlQueryableAggregateMethodTranslator",
-      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlQueryableAggregateMethodTranslator",
-      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlQueryableAggregateMethodTranslator",
+      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1450,18 +1450,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Query.IAggregateMethodCallTranslator",
-          "clrName": "Microsoft.EntityFrameworkCore.Query.IAggregateMethodCallTranslator"
+          "targetName": "Microsoft.EntityFrameworkCore.Query.IAggregateMethodCallTranslator"
         }
       ],
       "methods": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlQueryableAggregateMethodTranslator::Translate(System.Reflection.MethodInfo,Microsoft.EntityFrameworkCore.Query.EnumerableExpression,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
-          "clrName": "Translate",
+          "targetName": "Translate",
           "metadataToken": 100664917,
           "canonicalSignature": "(System.Reflection.MethodInfo,Microsoft.EntityFrameworkCore.Query.EnumerableExpression,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "Translate|(System.Reflection.MethodInfo,Microsoft.EntityFrameworkCore.Query.EnumerableExpression,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
@@ -1475,8 +1475,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlQueryableAggregateMethodTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlQueryableAggregateMethodTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         }
       ],
@@ -1492,15 +1492,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlQueryableAggregateMethodTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlQueryableAggregateMethodTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
       ]
     },
     {
       "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlRandomTranslator",
-      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlRandomTranslator",
-      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlRandomTranslator",
+      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1510,18 +1510,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator",
-          "clrName": "Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator"
+          "targetName": "Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator"
         }
       ],
       "methods": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlRandomTranslator::Translate(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
-          "clrName": "Translate",
+          "targetName": "Translate",
           "metadataToken": 100664919,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "Translate|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
@@ -1535,8 +1535,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlRandomTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlRandomTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         }
       ],
@@ -1552,15 +1552,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlRandomTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlRandomTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
       ]
     },
     {
       "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlRangeTranslator",
-      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlRangeTranslator",
-      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlRangeTranslator",
+      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1570,22 +1570,22 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator",
-          "clrName": "Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator"
+          "targetName": "Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Query.IMemberTranslator",
-          "clrName": "Microsoft.EntityFrameworkCore.Query.IMemberTranslator"
+          "targetName": "Microsoft.EntityFrameworkCore.Query.IMemberTranslator"
         }
       ],
       "methods": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlRangeTranslator::Translate(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
-          "clrName": "Translate",
+          "targetName": "Translate",
           "metadataToken": 100664922,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "Translate|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
@@ -1599,13 +1599,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlRangeTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlRangeTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlRangeTranslator::Translate(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MemberInfo,System.Type,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
-          "clrName": "Translate",
+          "targetName": "Translate",
           "metadataToken": 100664923,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MemberInfo,System.Type,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "Translate|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MemberInfo,System.Type,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
@@ -1619,8 +1619,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlRangeTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlRangeTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         }
       ],
@@ -1636,15 +1636,15 @@
           "isStatic": false,
           "parameterCount": 4,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlRangeTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlRangeTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
       ]
     },
     {
       "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlRegexTranslator",
-      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlRegexTranslator",
-      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlRegexTranslator",
+      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1654,18 +1654,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator",
-          "clrName": "Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator"
+          "targetName": "Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator"
         }
       ],
       "methods": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlRegexTranslator::Translate(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
-          "clrName": "Translate",
+          "targetName": "Translate",
           "metadataToken": 100664927,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "Translate|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
@@ -1679,8 +1679,8 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlRegexTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlRegexTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         }
       ],
@@ -1696,15 +1696,15 @@
           "isStatic": false,
           "parameterCount": 3,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlRegexTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlRegexTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
       ]
     },
     {
       "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlRowValueTranslator",
-      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlRowValueTranslator",
-      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlRowValueTranslator",
+      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1714,18 +1714,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator",
-          "clrName": "Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator"
+          "targetName": "Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator"
         }
       ],
       "methods": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlRowValueTranslator::Translate(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
-          "clrName": "Translate",
+          "targetName": "Translate",
           "metadataToken": 100664934,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "Translate|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
@@ -1739,8 +1739,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlRowValueTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlRowValueTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         }
       ],
@@ -1756,15 +1756,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlRowValueTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlRowValueTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
       ]
     },
     {
       "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlStatisticsAggregateMethodTranslator",
-      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlStatisticsAggregateMethodTranslator",
-      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlStatisticsAggregateMethodTranslator",
+      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1774,18 +1774,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Query.IAggregateMethodCallTranslator",
-          "clrName": "Microsoft.EntityFrameworkCore.Query.IAggregateMethodCallTranslator"
+          "targetName": "Microsoft.EntityFrameworkCore.Query.IAggregateMethodCallTranslator"
         }
       ],
       "methods": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlStatisticsAggregateMethodTranslator::Translate(System.Reflection.MethodInfo,Microsoft.EntityFrameworkCore.Query.EnumerableExpression,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
-          "clrName": "Translate",
+          "targetName": "Translate",
           "metadataToken": 100664937,
           "canonicalSignature": "(System.Reflection.MethodInfo,Microsoft.EntityFrameworkCore.Query.EnumerableExpression,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "Translate|(System.Reflection.MethodInfo,Microsoft.EntityFrameworkCore.Query.EnumerableExpression,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
@@ -1799,8 +1799,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlStatisticsAggregateMethodTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlStatisticsAggregateMethodTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         }
       ],
@@ -1816,15 +1816,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlStatisticsAggregateMethodTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlStatisticsAggregateMethodTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
       ]
     },
     {
       "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlStringMemberTranslator",
-      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlStringMemberTranslator",
-      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlStringMemberTranslator",
+      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1834,18 +1834,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Query.IMemberTranslator",
-          "clrName": "Microsoft.EntityFrameworkCore.Query.IMemberTranslator"
+          "targetName": "Microsoft.EntityFrameworkCore.Query.IMemberTranslator"
         }
       ],
       "methods": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlStringMemberTranslator::Translate(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MemberInfo,System.Type,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
-          "clrName": "Translate",
+          "targetName": "Translate",
           "metadataToken": 100664939,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MemberInfo,System.Type,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "Translate|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MemberInfo,System.Type,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
@@ -1859,8 +1859,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlStringMemberTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlStringMemberTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         }
       ],
@@ -1876,15 +1876,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlStringMemberTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlStringMemberTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
       ]
     },
     {
       "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlStringMethodTranslator",
-      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlStringMethodTranslator",
-      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlStringMethodTranslator",
+      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1894,18 +1894,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator",
-          "clrName": "Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator"
+          "targetName": "Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator"
         }
       ],
       "methods": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlStringMethodTranslator::Translate(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
-          "clrName": "Translate",
+          "targetName": "Translate",
           "metadataToken": 100664941,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "Translate|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
@@ -1919,8 +1919,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlStringMethodTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlStringMethodTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         }
       ],
@@ -1936,15 +1936,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlStringMethodTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlStringMethodTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
       ]
     },
     {
       "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlTimeSpanMemberTranslator",
-      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlTimeSpanMemberTranslator",
-      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlTimeSpanMemberTranslator",
+      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1954,18 +1954,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Query.IMemberTranslator",
-          "clrName": "Microsoft.EntityFrameworkCore.Query.IMemberTranslator"
+          "targetName": "Microsoft.EntityFrameworkCore.Query.IMemberTranslator"
         }
       ],
       "methods": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlTimeSpanMemberTranslator::Translate(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MemberInfo,System.Type,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
-          "clrName": "Translate",
+          "targetName": "Translate",
           "metadataToken": 100664947,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MemberInfo,System.Type,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "Translate|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MemberInfo,System.Type,Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
@@ -1979,8 +1979,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlTimeSpanMemberTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlTimeSpanMemberTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         }
       ],
@@ -1996,15 +1996,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlTimeSpanMemberTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlTimeSpanMemberTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
       ]
     },
     {
       "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlTrigramsMethodTranslator",
-      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlTrigramsMethodTranslator",
-      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlTrigramsMethodTranslator",
+      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -2014,18 +2014,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator",
-          "clrName": "Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator"
+          "targetName": "Microsoft.EntityFrameworkCore.Query.IMethodCallTranslator"
         }
       ],
       "methods": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlTrigramsMethodTranslator::Translate(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
-          "clrName": "Translate",
+          "targetName": "Translate",
           "metadataToken": 100664954,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression",
           "normalizedSignature": "Translate|(Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,System.Reflection.MethodInfo,System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BQuery,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression|static=false",
@@ -2039,8 +2039,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlTrigramsMethodTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlTrigramsMethodTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         }
       ],
@@ -2056,8 +2056,8 @@
           "isStatic": false,
           "parameterCount": 3,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlTrigramsMethodTranslator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.ExpressionTranslators.Internal.NpgsqlTrigramsMethodTranslator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
       ]
     }

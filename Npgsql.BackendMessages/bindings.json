@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Npgsql:Npgsql.BackendMessages.FieldDescription",
-      "clrName": "Npgsql.BackendMessages.FieldDescription",
-      "assemblyName": "Npgsql",
+      "targetName": "Npgsql.BackendMessages.FieldDescription",
+      "ownerIdentity": "Npgsql",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -17,12 +17,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Npgsql:Npgsql.BackendMessages.FieldDescription::ToString():System.String",
-          "clrName": "ToString",
+          "targetName": "ToString",
           "metadataToken": 100668174,
           "canonicalSignature": "():System.String",
           "normalizedSignature": "ToString|():System.String|static=false",
@@ -36,15 +36,15 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.BackendMessages.FieldDescription",
-          "declaringAssemblyName": "Npgsql",
+          "ownerQualifiedName": "Npgsql.BackendMessages.FieldDescription",
+          "ownerIdentity": "Npgsql",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Npgsql:Npgsql.BackendMessages.FieldDescription::TypeSize:System.Int16",
-          "clrName": "TypeSize",
+          "targetName": "TypeSize",
           "metadataToken": 385877116,
           "canonicalSignature": ":System.Int16",
           "normalizedSignature": "TypeSize|:System.Int16|static=false|accessor=getset",
@@ -58,12 +58,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.BackendMessages.FieldDescription",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.BackendMessages.FieldDescription",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.BackendMessages.FieldDescription::TypeModifier:System.Int32",
-          "clrName": "TypeModifier",
+          "targetName": "TypeModifier",
           "metadataToken": 385877117,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "TypeModifier|:System.Int32|static=false|accessor=getset",
@@ -77,8 +77,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.BackendMessages.FieldDescription",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.BackendMessages.FieldDescription",
+          "ownerIdentity": "Npgsql"
         }
       ],
       "fields": [],
