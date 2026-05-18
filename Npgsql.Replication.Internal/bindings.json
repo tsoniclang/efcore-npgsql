@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Npgsql:Npgsql.Replication.Internal.LogicalReplicationSlot",
-      "clrName": "Npgsql.Replication.Internal.LogicalReplicationSlot",
-      "assemblyName": "Npgsql",
+      "targetName": "Npgsql.Replication.Internal.LogicalReplicationSlot",
+      "ownerIdentity": "Npgsql",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -17,13 +17,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "Npgsql:Npgsql.Replication.ReplicationSlot",
-        "clrName": "Npgsql.Replication.ReplicationSlot"
+        "targetName": "Npgsql.Replication.ReplicationSlot"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Npgsql:Npgsql.Replication.Internal.LogicalReplicationSlot::SnapshotName:System.String",
-          "clrName": "SnapshotName",
+          "targetName": "SnapshotName",
           "metadataToken": 385876666,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "SnapshotName|:System.String|static=false|accessor=get",
@@ -37,12 +37,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Replication.Internal.LogicalReplicationSlot",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Replication.Internal.LogicalReplicationSlot",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.Replication.Internal.LogicalReplicationSlot::OutputPlugin:System.String",
-          "clrName": "OutputPlugin",
+          "targetName": "OutputPlugin",
           "metadataToken": 385876667,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "OutputPlugin|:System.String|static=false|accessor=get",
@@ -56,12 +56,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Replication.Internal.LogicalReplicationSlot",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Replication.Internal.LogicalReplicationSlot",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.Replication.Internal.LogicalReplicationSlot::ConsistentPoint:NpgsqlTypes.NpgsqlLogSequenceNumber",
-          "clrName": "ConsistentPoint",
+          "targetName": "ConsistentPoint",
           "metadataToken": 385876668,
           "canonicalSignature": ":NpgsqlTypes.NpgsqlLogSequenceNumber",
           "normalizedSignature": "ConsistentPoint|:NpgsqlTypes.NpgsqlLogSequenceNumber|static=false|accessor=get",
@@ -75,8 +75,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Replication.Internal.LogicalReplicationSlot",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Replication.Internal.LogicalReplicationSlot",
+          "ownerIdentity": "Npgsql"
         }
       ],
       "fields": [],
@@ -90,15 +90,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Protected",
-          "declaringClrType": "Npgsql.Replication.Internal.LogicalReplicationSlot",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Replication.Internal.LogicalReplicationSlot",
+          "ownerIdentity": "Npgsql"
         }
       ]
     },
     {
       "stableId": "Npgsql:Npgsql.Replication.Internal.LogicalReplicationConnectionExtensions",
-      "clrName": "Npgsql.Replication.Internal.LogicalReplicationConnectionExtensions",
-      "assemblyName": "Npgsql",
+      "targetName": "Npgsql.Replication.Internal.LogicalReplicationConnectionExtensions",
+      "ownerIdentity": "Npgsql",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -108,12 +108,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Npgsql:Npgsql.Replication.Internal.LogicalReplicationConnectionExtensions::CreateLogicalReplicationSlot(Npgsql.Replication.LogicalReplicationConnection,System.String,System.String,System.Boolean,System.Nullable_1[[Npgsql.Replication.LogicalSlotSnapshotInitMode,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]],System.Boolean,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Npgsql.Replication.ReplicationSlotOptions,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]",
-          "clrName": "CreateLogicalReplicationSlot",
+          "targetName": "CreateLogicalReplicationSlot",
           "metadataToken": 100666167,
           "canonicalSignature": "(Npgsql.Replication.LogicalReplicationConnection,System.String,System.String,System.Boolean,System.Nullable_1[[Npgsql.Replication.LogicalSlotSnapshotInitMode,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]],System.Boolean,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Npgsql.Replication.ReplicationSlotOptions,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]",
           "normalizedSignature": "CreateLogicalReplicationSlot|(Npgsql.Replication.LogicalReplicationConnection,System.String,System.String,System.Boolean,System.Nullable_1[[Npgsql.Replication.LogicalSlotSnapshotInitMode,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]],System.Boolean,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Npgsql.Replication.ReplicationSlotOptions,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]|static=true",
@@ -127,13 +127,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Replication.Internal.LogicalReplicationConnectionExtensions",
-          "declaringAssemblyName": "Npgsql",
+          "ownerQualifiedName": "Npgsql.Replication.Internal.LogicalReplicationConnectionExtensions",
+          "ownerIdentity": "Npgsql",
           "isExtensionMethod": true
         },
         {
           "stableId": "Npgsql:Npgsql.Replication.Internal.LogicalReplicationConnectionExtensions::StartLogicalReplication(Npgsql.Replication.LogicalReplicationConnection,Npgsql.Replication.Internal.LogicalReplicationSlot,System.Threading.CancellationToken,System.Nullable_1[[NpgsqlTypes.NpgsqlLogSequenceNumber,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]],System.Collections.Generic.IEnumerable_1[[System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Boolean):System.Collections.Generic.IAsyncEnumerable_1[[Npgsql.Replication.XLogDataMessage,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]",
-          "clrName": "StartLogicalReplication",
+          "targetName": "StartLogicalReplication",
           "metadataToken": 100666168,
           "canonicalSignature": "(Npgsql.Replication.LogicalReplicationConnection,Npgsql.Replication.Internal.LogicalReplicationSlot,System.Threading.CancellationToken,System.Nullable_1[[NpgsqlTypes.NpgsqlLogSequenceNumber,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]],System.Collections.Generic.IEnumerable_1[[System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Boolean):System.Collections.Generic.IAsyncEnumerable_1[[Npgsql.Replication.XLogDataMessage,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]",
           "normalizedSignature": "StartLogicalReplication|(Npgsql.Replication.LogicalReplicationConnection,Npgsql.Replication.Internal.LogicalReplicationSlot,System.Threading.CancellationToken,System.Nullable_1[[NpgsqlTypes.NpgsqlLogSequenceNumber,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]],System.Collections.Generic.IEnumerable_1[[System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Boolean):System.Collections.Generic.IAsyncEnumerable_1[[Npgsql.Replication.XLogDataMessage,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]|static=true",
@@ -147,8 +147,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Replication.Internal.LogicalReplicationConnectionExtensions",
-          "declaringAssemblyName": "Npgsql",
+          "ownerQualifiedName": "Npgsql.Replication.Internal.LogicalReplicationConnectionExtensions",
+          "ownerIdentity": "Npgsql",
           "isExtensionMethod": true
         }
       ],

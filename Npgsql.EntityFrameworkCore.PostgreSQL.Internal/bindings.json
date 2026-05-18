@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlSingletonOptions",
-      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlSingletonOptions",
-      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlSingletonOptions",
+      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -17,22 +17,22 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.INpgsqlSingletonOptions",
-          "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.INpgsqlSingletonOptions"
+          "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.INpgsqlSingletonOptions"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Infrastructure.ISingletonOptions",
-          "clrName": "Microsoft.EntityFrameworkCore.Infrastructure.ISingletonOptions"
+          "targetName": "Microsoft.EntityFrameworkCore.Infrastructure.ISingletonOptions"
         }
       ],
       "methods": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlSingletonOptions::Initialize(Microsoft.EntityFrameworkCore.Infrastructure.IDbContextOptions):System.Void",
-          "clrName": "Initialize",
+          "targetName": "Initialize",
           "metadataToken": 100665416,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Infrastructure.IDbContextOptions):System.Void",
           "normalizedSignature": "Initialize|(Microsoft.EntityFrameworkCore.Infrastructure.IDbContextOptions):System.Void|static=false",
@@ -46,13 +46,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlSingletonOptions",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlSingletonOptions",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlSingletonOptions::Validate(Microsoft.EntityFrameworkCore.Infrastructure.IDbContextOptions):System.Void",
-          "clrName": "Validate",
+          "targetName": "Validate",
           "metadataToken": 100665417,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Infrastructure.IDbContextOptions):System.Void",
           "normalizedSignature": "Validate|(Microsoft.EntityFrameworkCore.Infrastructure.IDbContextOptions):System.Void|static=false",
@@ -66,15 +66,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlSingletonOptions",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlSingletonOptions",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlSingletonOptions::PostgresVersion:System.Version",
-          "clrName": "PostgresVersion",
+          "targetName": "PostgresVersion",
           "metadataToken": 385876184,
           "canonicalSignature": ":System.Version",
           "normalizedSignature": "PostgresVersion|:System.Version|static=false|accessor=getset",
@@ -88,12 +88,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlSingletonOptions",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlSingletonOptions",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlSingletonOptions::IsPostgresVersionSet:System.Boolean",
-          "clrName": "IsPostgresVersionSet",
+          "targetName": "IsPostgresVersionSet",
           "metadataToken": 385876185,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "IsPostgresVersionSet|:System.Boolean|static=false|accessor=getset",
@@ -107,12 +107,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlSingletonOptions",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlSingletonOptions",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlSingletonOptions::UseRedshift:System.Boolean",
-          "clrName": "UseRedshift",
+          "targetName": "UseRedshift",
           "metadataToken": 385876186,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "UseRedshift|:System.Boolean|static=false|accessor=getset",
@@ -126,12 +126,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlSingletonOptions",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlSingletonOptions",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlSingletonOptions::ReverseNullOrderingEnabled:System.Boolean",
-          "clrName": "ReverseNullOrderingEnabled",
+          "targetName": "ReverseNullOrderingEnabled",
           "metadataToken": 385876187,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "ReverseNullOrderingEnabled|:System.Boolean|static=false|accessor=getset",
@@ -145,12 +145,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlSingletonOptions",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlSingletonOptions",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlSingletonOptions::EnumDefinitions:System.Collections.Generic.IReadOnlyList_1[[Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.EnumDefinition,Npgsql.EntityFrameworkCore.PostgreSQL,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]",
-          "clrName": "EnumDefinitions",
+          "targetName": "EnumDefinitions",
           "metadataToken": 385876188,
           "canonicalSignature": ":System.Collections.Generic.IReadOnlyList_1[[Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.EnumDefinition,Npgsql.EntityFrameworkCore.PostgreSQL,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]",
           "normalizedSignature": "EnumDefinitions|:System.Collections.Generic.IReadOnlyList_1[[Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.EnumDefinition,Npgsql.EntityFrameworkCore.PostgreSQL,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]|static=false|accessor=getset",
@@ -164,12 +164,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlSingletonOptions",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlSingletonOptions",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlSingletonOptions::UserRangeDefinitions:System.Collections.Generic.IReadOnlyList_1[[Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.UserRangeDefinition,Npgsql.EntityFrameworkCore.PostgreSQL,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]",
-          "clrName": "UserRangeDefinitions",
+          "targetName": "UserRangeDefinitions",
           "metadataToken": 385876189,
           "canonicalSignature": ":System.Collections.Generic.IReadOnlyList_1[[Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.UserRangeDefinition,Npgsql.EntityFrameworkCore.PostgreSQL,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]",
           "normalizedSignature": "UserRangeDefinitions|:System.Collections.Generic.IReadOnlyList_1[[Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.UserRangeDefinition,Npgsql.EntityFrameworkCore.PostgreSQL,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]|static=false|accessor=getset",
@@ -183,12 +183,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlSingletonOptions",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlSingletonOptions",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.INpgsqlSingletonOptions::EnumDefinitions:System.Collections.Generic.IReadOnlyList_1[[Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.EnumDefinition,Npgsql.EntityFrameworkCore.PostgreSQL,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]",
-          "clrName": "EnumDefinitions",
+          "targetName": "EnumDefinitions",
           "metadataToken": 385876205,
           "canonicalSignature": ":System.Collections.Generic.IReadOnlyList_1[[Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.EnumDefinition,Npgsql.EntityFrameworkCore.PostgreSQL,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]",
           "normalizedSignature": "EnumDefinitions|:System.Collections.Generic.IReadOnlyList_1[[Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.EnumDefinition,Npgsql.EntityFrameworkCore.PostgreSQL,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]|static=false|accessor=get",
@@ -203,12 +203,12 @@
           "isOverride": false,
           "visibility": "Public",
           "sourceInterface": "Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.INpgsqlSingletonOptions",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.INpgsqlSingletonOptions",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.INpgsqlSingletonOptions",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.INpgsqlSingletonOptions::PostgresVersion:System.Version",
-          "clrName": "PostgresVersion",
+          "targetName": "PostgresVersion",
           "metadataToken": 385876201,
           "canonicalSignature": ":System.Version",
           "normalizedSignature": "PostgresVersion|:System.Version|static=false|accessor=get",
@@ -223,12 +223,12 @@
           "isOverride": false,
           "visibility": "Public",
           "sourceInterface": "Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.INpgsqlSingletonOptions",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.INpgsqlSingletonOptions",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.INpgsqlSingletonOptions",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.INpgsqlSingletonOptions::IsPostgresVersionSet:System.Boolean",
-          "clrName": "IsPostgresVersionSet",
+          "targetName": "IsPostgresVersionSet",
           "metadataToken": 385876202,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "IsPostgresVersionSet|:System.Boolean|static=false|accessor=get",
@@ -243,12 +243,12 @@
           "isOverride": false,
           "visibility": "Public",
           "sourceInterface": "Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.INpgsqlSingletonOptions",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.INpgsqlSingletonOptions",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.INpgsqlSingletonOptions",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.INpgsqlSingletonOptions::UseRedshift:System.Boolean",
-          "clrName": "UseRedshift",
+          "targetName": "UseRedshift",
           "metadataToken": 385876203,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "UseRedshift|:System.Boolean|static=false|accessor=get",
@@ -263,12 +263,12 @@
           "isOverride": false,
           "visibility": "Public",
           "sourceInterface": "Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.INpgsqlSingletonOptions",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.INpgsqlSingletonOptions",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.INpgsqlSingletonOptions",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.INpgsqlSingletonOptions::ReverseNullOrderingEnabled:System.Boolean",
-          "clrName": "ReverseNullOrderingEnabled",
+          "targetName": "ReverseNullOrderingEnabled",
           "metadataToken": 385876204,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "ReverseNullOrderingEnabled|:System.Boolean|static=false|accessor=get",
@@ -283,12 +283,12 @@
           "isOverride": false,
           "visibility": "Public",
           "sourceInterface": "Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.INpgsqlSingletonOptions",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.INpgsqlSingletonOptions",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.INpgsqlSingletonOptions",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.INpgsqlSingletonOptions::UserRangeDefinitions:System.Collections.Generic.IReadOnlyList_1[[Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.UserRangeDefinition,Npgsql.EntityFrameworkCore.PostgreSQL,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]",
-          "clrName": "UserRangeDefinitions",
+          "targetName": "UserRangeDefinitions",
           "metadataToken": 385876206,
           "canonicalSignature": ":System.Collections.Generic.IReadOnlyList_1[[Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.UserRangeDefinition,Npgsql.EntityFrameworkCore.PostgreSQL,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]",
           "normalizedSignature": "UserRangeDefinitions|:System.Collections.Generic.IReadOnlyList_1[[Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.UserRangeDefinition,Npgsql.EntityFrameworkCore.PostgreSQL,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]|static=false|accessor=get",
@@ -303,8 +303,8 @@
           "isOverride": false,
           "visibility": "Public",
           "sourceInterface": "Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.INpgsqlSingletonOptions",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.INpgsqlSingletonOptions",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.INpgsqlSingletonOptions",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
       ],
       "fields": [],
@@ -318,15 +318,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlSingletonOptions",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlSingletonOptions",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
       ]
     },
     {
       "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlLoggerExtensions",
-      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlLoggerExtensions",
-      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlLoggerExtensions",
+      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -336,12 +336,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlLoggerExtensions::MissingSchemaWarning(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BScaffolding,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.String):System.Void",
-          "clrName": "MissingSchemaWarning",
+          "targetName": "MissingSchemaWarning",
           "metadataToken": 100665393,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BScaffolding,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.String):System.Void",
           "normalizedSignature": "MissingSchemaWarning|(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BScaffolding,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.String):System.Void|static=true",
@@ -355,13 +355,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlLoggerExtensions",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlLoggerExtensions",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": true
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlLoggerExtensions::MissingTableWarning(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BScaffolding,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.String):System.Void",
-          "clrName": "MissingTableWarning",
+          "targetName": "MissingTableWarning",
           "metadataToken": 100665394,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BScaffolding,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.String):System.Void",
           "normalizedSignature": "MissingTableWarning|(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BScaffolding,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.String):System.Void|static=true",
@@ -375,13 +375,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlLoggerExtensions",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlLoggerExtensions",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": true
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlLoggerExtensions::ForeignKeyReferencesMissingPrincipalTableWarning(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BScaffolding,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.String,System.String,System.String):System.Void",
-          "clrName": "ForeignKeyReferencesMissingPrincipalTableWarning",
+          "targetName": "ForeignKeyReferencesMissingPrincipalTableWarning",
           "metadataToken": 100665395,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BScaffolding,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.String,System.String,System.String):System.Void",
           "normalizedSignature": "ForeignKeyReferencesMissingPrincipalTableWarning|(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BScaffolding,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.String,System.String,System.String):System.Void|static=true",
@@ -395,13 +395,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlLoggerExtensions",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlLoggerExtensions",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": true
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlLoggerExtensions::ColumnFound(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BScaffolding,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.String,System.String,System.String,System.Boolean,System.Boolean,System.String,System.String):System.Void",
-          "clrName": "ColumnFound",
+          "targetName": "ColumnFound",
           "metadataToken": 100665396,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BScaffolding,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.String,System.String,System.String,System.Boolean,System.Boolean,System.String,System.String):System.Void",
           "normalizedSignature": "ColumnFound|(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BScaffolding,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.String,System.String,System.String,System.Boolean,System.Boolean,System.String,System.String):System.Void|static=true",
@@ -415,13 +415,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlLoggerExtensions",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlLoggerExtensions",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": true
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlLoggerExtensions::CollationFound(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BScaffolding,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.String,System.String,System.String,System.String,System.String,System.Boolean):System.Void",
-          "clrName": "CollationFound",
+          "targetName": "CollationFound",
           "metadataToken": 100665397,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BScaffolding,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.String,System.String,System.String,System.String,System.String,System.Boolean):System.Void",
           "normalizedSignature": "CollationFound|(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BScaffolding,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.String,System.String,System.String,System.String,System.String,System.Boolean):System.Void|static=true",
@@ -435,13 +435,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlLoggerExtensions",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlLoggerExtensions",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": true
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlLoggerExtensions::UniqueConstraintFound(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BScaffolding,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.String,System.String):System.Void",
-          "clrName": "UniqueConstraintFound",
+          "targetName": "UniqueConstraintFound",
           "metadataToken": 100665398,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BScaffolding,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.String,System.String):System.Void",
           "normalizedSignature": "UniqueConstraintFound|(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BScaffolding,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.String,System.String):System.Void|static=true",
@@ -455,13 +455,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlLoggerExtensions",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlLoggerExtensions",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": true
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlLoggerExtensions::EnumColumnSkippedWarning(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BScaffolding,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.String):System.Void",
-          "clrName": "EnumColumnSkippedWarning",
+          "targetName": "EnumColumnSkippedWarning",
           "metadataToken": 100665399,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BScaffolding,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.String):System.Void",
           "normalizedSignature": "EnumColumnSkippedWarning|(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BScaffolding,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.String):System.Void|static=true",
@@ -475,13 +475,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlLoggerExtensions",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlLoggerExtensions",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": true
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlLoggerExtensions::ExpressionIndexSkippedWarning(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BScaffolding,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.String,System.String):System.Void",
-          "clrName": "ExpressionIndexSkippedWarning",
+          "targetName": "ExpressionIndexSkippedWarning",
           "metadataToken": 100665400,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BScaffolding,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.String,System.String):System.Void",
           "normalizedSignature": "ExpressionIndexSkippedWarning|(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BScaffolding,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.String,System.String):System.Void|static=true",
@@ -495,13 +495,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlLoggerExtensions",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlLoggerExtensions",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": true
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlLoggerExtensions::UnsupportedColumnIndexSkippedWarning(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BScaffolding,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.String,System.String):System.Void",
-          "clrName": "UnsupportedColumnIndexSkippedWarning",
+          "targetName": "UnsupportedColumnIndexSkippedWarning",
           "metadataToken": 100665401,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BScaffolding,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.String,System.String):System.Void",
           "normalizedSignature": "UnsupportedColumnIndexSkippedWarning|(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BScaffolding,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.String,System.String):System.Void|static=true",
@@ -515,13 +515,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlLoggerExtensions",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlLoggerExtensions",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": true
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlLoggerExtensions::UnsupportedColumnConstraintSkippedWarning(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BScaffolding,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.String,System.String):System.Void",
-          "clrName": "UnsupportedColumnConstraintSkippedWarning",
+          "targetName": "UnsupportedColumnConstraintSkippedWarning",
           "metadataToken": 100665402,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BScaffolding,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.String,System.String):System.Void",
           "normalizedSignature": "UnsupportedColumnConstraintSkippedWarning|(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger_1[[Microsoft.EntityFrameworkCore.DbLoggerCategory\u002BScaffolding,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.String,System.String):System.Void|static=true",
@@ -535,8 +535,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlLoggerExtensions",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlLoggerExtensions",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": true
         }
       ],
@@ -547,8 +547,8 @@
     },
     {
       "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlResources",
-      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlResources",
-      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlResources",
+      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -558,12 +558,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlResources::LogEnumColumnSkipped(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger):Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "LogEnumColumnSkipped",
+          "targetName": "LogEnumColumnSkipped",
           "metadataToken": 100665442,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger):Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "LogEnumColumnSkipped|(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger):Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=true",
@@ -577,13 +577,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlResources",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlResources",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlResources::LogExpressionIndexSkipped(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger):Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "LogExpressionIndexSkipped",
+          "targetName": "LogExpressionIndexSkipped",
           "metadataToken": 100665443,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger):Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "LogExpressionIndexSkipped|(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger):Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=true",
@@ -597,13 +597,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlResources",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlResources",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlResources::LogFoundCollation(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger):Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition_6[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "LogFoundCollation",
+          "targetName": "LogFoundCollation",
           "metadataToken": 100665444,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger):Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition_6[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "LogFoundCollation|(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger):Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition_6[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=true",
@@ -617,13 +617,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlResources",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlResources",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlResources::LogFoundColumn(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger):Microsoft.EntityFrameworkCore.Diagnostics.FallbackEventDefinition",
-          "clrName": "LogFoundColumn",
+          "targetName": "LogFoundColumn",
           "metadataToken": 100665445,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger):Microsoft.EntityFrameworkCore.Diagnostics.FallbackEventDefinition",
           "normalizedSignature": "LogFoundColumn|(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger):Microsoft.EntityFrameworkCore.Diagnostics.FallbackEventDefinition|static=true",
@@ -637,13 +637,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlResources",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlResources",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlResources::LogFoundForeignKey(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger):Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition_4[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "LogFoundForeignKey",
+          "targetName": "LogFoundForeignKey",
           "metadataToken": 100665446,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger):Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition_4[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "LogFoundForeignKey|(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger):Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition_4[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=true",
@@ -657,13 +657,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlResources",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlResources",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlResources::LogFoundIndex(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger):Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition_3[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "LogFoundIndex",
+          "targetName": "LogFoundIndex",
           "metadataToken": 100665447,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger):Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition_3[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "LogFoundIndex|(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger):Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition_3[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=true",
@@ -677,13 +677,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlResources",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlResources",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlResources::LogFoundPrimaryKey(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger):Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "LogFoundPrimaryKey",
+          "targetName": "LogFoundPrimaryKey",
           "metadataToken": 100665448,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger):Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "LogFoundPrimaryKey|(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger):Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=true",
@@ -697,13 +697,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlResources",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlResources",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlResources::LogFoundSequence(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger):Microsoft.EntityFrameworkCore.Diagnostics.FallbackEventDefinition",
-          "clrName": "LogFoundSequence",
+          "targetName": "LogFoundSequence",
           "metadataToken": 100665449,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger):Microsoft.EntityFrameworkCore.Diagnostics.FallbackEventDefinition",
           "normalizedSignature": "LogFoundSequence|(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger):Microsoft.EntityFrameworkCore.Diagnostics.FallbackEventDefinition|static=true",
@@ -717,13 +717,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlResources",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlResources",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlResources::LogFoundTable(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger):Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "LogFoundTable",
+          "targetName": "LogFoundTable",
           "metadataToken": 100665450,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger):Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "LogFoundTable|(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger):Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=true",
@@ -737,13 +737,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlResources",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlResources",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlResources::LogFoundUniqueConstraint(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger):Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "LogFoundUniqueConstraint",
+          "targetName": "LogFoundUniqueConstraint",
           "metadataToken": 100665451,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger):Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "LogFoundUniqueConstraint|(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger):Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=true",
@@ -757,13 +757,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlResources",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlResources",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlResources::LogMissingSchema(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger):Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "LogMissingSchema",
+          "targetName": "LogMissingSchema",
           "metadataToken": 100665452,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger):Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "LogMissingSchema|(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger):Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=true",
@@ -777,13 +777,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlResources",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlResources",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlResources::LogMissingTable(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger):Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "LogMissingTable",
+          "targetName": "LogMissingTable",
           "metadataToken": 100665453,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger):Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "LogMissingTable|(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger):Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=true",
@@ -797,13 +797,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlResources",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlResources",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlResources::LogPrincipalColumnNotFound(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger):Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition_4[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "LogPrincipalColumnNotFound",
+          "targetName": "LogPrincipalColumnNotFound",
           "metadataToken": 100665454,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger):Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition_4[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "LogPrincipalColumnNotFound|(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger):Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition_4[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=true",
@@ -817,13 +817,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlResources",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlResources",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlResources::LogPrincipalTableNotInSelectionSet(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger):Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition_3[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "LogPrincipalTableNotInSelectionSet",
+          "targetName": "LogPrincipalTableNotInSelectionSet",
           "metadataToken": 100665455,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger):Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition_3[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "LogPrincipalTableNotInSelectionSet|(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger):Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition_3[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=true",
@@ -837,13 +837,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlResources",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlResources",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlResources::LogUnsupportedColumnConstraintSkipped(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger):Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "LogUnsupportedColumnConstraintSkipped",
+          "targetName": "LogUnsupportedColumnConstraintSkipped",
           "metadataToken": 100665456,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger):Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "LogUnsupportedColumnConstraintSkipped|(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger):Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=true",
@@ -857,13 +857,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlResources",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlResources",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlResources::LogUnsupportedColumnIndexSkipped(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger):Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "LogUnsupportedColumnIndexSkipped",
+          "targetName": "LogUnsupportedColumnIndexSkipped",
           "metadataToken": 100665457,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger):Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "LogUnsupportedColumnIndexSkipped|(Microsoft.EntityFrameworkCore.Diagnostics.IDiagnosticsLogger):Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=true",
@@ -877,8 +877,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlResources",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlResources",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         }
       ],
@@ -889,8 +889,8 @@
     },
     {
       "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings",
-      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings",
-      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings",
+      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -900,12 +900,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings::DuplicateColumnCompressionMethodMismatch(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object):System.String",
-          "clrName": "DuplicateColumnCompressionMethodMismatch",
+          "targetName": "DuplicateColumnCompressionMethodMismatch",
           "metadataToken": 100665419,
           "canonicalSignature": "(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object):System.String",
           "normalizedSignature": "DuplicateColumnCompressionMethodMismatch|(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object):System.String|static=true",
@@ -919,13 +919,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings::DuplicateColumnNameValueGenerationStrategyMismatch(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object):System.String",
-          "clrName": "DuplicateColumnNameValueGenerationStrategyMismatch",
+          "targetName": "DuplicateColumnNameValueGenerationStrategyMismatch",
           "metadataToken": 100665420,
           "canonicalSignature": "(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object):System.String",
           "normalizedSignature": "DuplicateColumnNameValueGenerationStrategyMismatch|(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object):System.String|static=true",
@@ -939,13 +939,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings::DuplicateIndexCollationMismatch(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object):System.String",
-          "clrName": "DuplicateIndexCollationMismatch",
+          "targetName": "DuplicateIndexCollationMismatch",
           "metadataToken": 100665421,
           "canonicalSignature": "(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object):System.String",
           "normalizedSignature": "DuplicateIndexCollationMismatch|(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object):System.String|static=true",
@@ -959,13 +959,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings::DuplicateIndexConcurrentCreationMismatch(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object):System.String",
-          "clrName": "DuplicateIndexConcurrentCreationMismatch",
+          "targetName": "DuplicateIndexConcurrentCreationMismatch",
           "metadataToken": 100665422,
           "canonicalSignature": "(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object):System.String",
           "normalizedSignature": "DuplicateIndexConcurrentCreationMismatch|(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object):System.String|static=true",
@@ -979,13 +979,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings::DuplicateIndexIncludedMismatch(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object):System.String",
-          "clrName": "DuplicateIndexIncludedMismatch",
+          "targetName": "DuplicateIndexIncludedMismatch",
           "metadataToken": 100665423,
           "canonicalSignature": "(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object):System.String",
           "normalizedSignature": "DuplicateIndexIncludedMismatch|(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object):System.String|static=true",
@@ -999,13 +999,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings::HeterogeneousTypesInNewArray(System.Object,System.Object):System.String",
-          "clrName": "HeterogeneousTypesInNewArray",
+          "targetName": "HeterogeneousTypesInNewArray",
           "metadataToken": 100665426,
           "canonicalSignature": "(System.Object,System.Object):System.String",
           "normalizedSignature": "HeterogeneousTypesInNewArray|(System.Object,System.Object):System.String|static=true",
@@ -1019,13 +1019,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings::IdentityBadType(System.Object,System.Object,System.Object):System.String",
-          "clrName": "IdentityBadType",
+          "targetName": "IdentityBadType",
           "metadataToken": 100665427,
           "canonicalSignature": "(System.Object,System.Object,System.Object):System.String",
           "normalizedSignature": "IdentityBadType|(System.Object,System.Object,System.Object):System.String|static=true",
@@ -1039,13 +1039,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings::IncludePropertyDuplicated(System.Object,System.Object):System.String",
-          "clrName": "IncludePropertyDuplicated",
+          "targetName": "IncludePropertyDuplicated",
           "metadataToken": 100665428,
           "canonicalSignature": "(System.Object,System.Object):System.String",
           "normalizedSignature": "IncludePropertyDuplicated|(System.Object,System.Object):System.String|static=true",
@@ -1059,13 +1059,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings::IncludePropertyInIndex(System.Object,System.Object):System.String",
-          "clrName": "IncludePropertyInIndex",
+          "targetName": "IncludePropertyInIndex",
           "metadataToken": 100665429,
           "canonicalSignature": "(System.Object,System.Object):System.String",
           "normalizedSignature": "IncludePropertyInIndex|(System.Object,System.Object):System.String|static=true",
@@ -1079,13 +1079,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings::IncludePropertyNotFound(System.Object,System.Object):System.String",
-          "clrName": "IncludePropertyNotFound",
+          "targetName": "IncludePropertyNotFound",
           "metadataToken": 100665430,
           "canonicalSignature": "(System.Object,System.Object):System.String",
           "normalizedSignature": "IncludePropertyNotFound|(System.Object,System.Object):System.String|static=true",
@@ -1099,13 +1099,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings::InvalidTableToIncludeInScaffolding(System.Object):System.String",
-          "clrName": "InvalidTableToIncludeInScaffolding",
+          "targetName": "InvalidTableToIncludeInScaffolding",
           "metadataToken": 100665431,
           "canonicalSignature": "(System.Object):System.String",
           "normalizedSignature": "InvalidTableToIncludeInScaffolding|(System.Object):System.String|static=true",
@@ -1119,13 +1119,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings::NonKeyValueGeneration(System.Object,System.Object):System.String",
-          "clrName": "NonKeyValueGeneration",
+          "targetName": "NonKeyValueGeneration",
           "metadataToken": 100665432,
           "canonicalSignature": "(System.Object,System.Object):System.String",
           "normalizedSignature": "NonKeyValueGeneration|(System.Object,System.Object):System.String|static=true",
@@ -1139,13 +1139,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings::SequenceBadType(System.Object,System.Object,System.Object):System.String",
-          "clrName": "SequenceBadType",
+          "targetName": "SequenceBadType",
           "metadataToken": 100665435,
           "canonicalSignature": "(System.Object,System.Object,System.Object):System.String",
           "normalizedSignature": "SequenceBadType|(System.Object,System.Object,System.Object):System.String|static=true",
@@ -1159,13 +1159,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings::StoredProcedureResultColumnsNotSupported(System.Object,System.Object):System.String",
-          "clrName": "StoredProcedureResultColumnsNotSupported",
+          "targetName": "StoredProcedureResultColumnsNotSupported",
           "metadataToken": 100665436,
           "canonicalSignature": "(System.Object,System.Object):System.String",
           "normalizedSignature": "StoredProcedureResultColumnsNotSupported|(System.Object,System.Object):System.String|static=true",
@@ -1179,13 +1179,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings::StoredProcedureReturnValueNotSupported(System.Object,System.Object):System.String",
-          "clrName": "StoredProcedureReturnValueNotSupported",
+          "targetName": "StoredProcedureReturnValueNotSupported",
           "metadataToken": 100665437,
           "canonicalSignature": "(System.Object,System.Object):System.String",
           "normalizedSignature": "StoredProcedureReturnValueNotSupported|(System.Object,System.Object):System.String|static=true",
@@ -1199,13 +1199,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings::TwoDataSourcesInSameServiceProvider(System.Object):System.String",
-          "clrName": "TwoDataSourcesInSameServiceProvider",
+          "targetName": "TwoDataSourcesInSameServiceProvider",
           "metadataToken": 100665438,
           "canonicalSignature": "(System.Object):System.String",
           "normalizedSignature": "TwoDataSourcesInSameServiceProvider|(System.Object):System.String|static=true",
@@ -1219,15 +1219,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings::DataSourceAndConfigNotSupported:System.String",
-          "clrName": "DataSourceAndConfigNotSupported",
+          "targetName": "DataSourceAndConfigNotSupported",
           "metadataToken": 385876190,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "DataSourceAndConfigNotSupported|:System.String|static=true|accessor=get",
@@ -1241,12 +1241,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings::Ef7JsonMappingNotSupported:System.String",
-          "clrName": "Ef7JsonMappingNotSupported",
+          "targetName": "Ef7JsonMappingNotSupported",
           "metadataToken": 385876191,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Ef7JsonMappingNotSupported|:System.String|static=true|accessor=get",
@@ -1260,12 +1260,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings::FreeTextFunctionOnClient:System.String",
-          "clrName": "FreeTextFunctionOnClient",
+          "targetName": "FreeTextFunctionOnClient",
           "metadataToken": 385876192,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "FreeTextFunctionOnClient|:System.String|static=true|accessor=get",
@@ -1279,12 +1279,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings::RowValueComparisonRequiresTuplesOfSameLength:System.String",
-          "clrName": "RowValueComparisonRequiresTuplesOfSameLength",
+          "targetName": "RowValueComparisonRequiresTuplesOfSameLength",
           "metadataToken": 385876193,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "RowValueComparisonRequiresTuplesOfSameLength|:System.String|static=true|accessor=get",
@@ -1298,12 +1298,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings::CannotUseDataSourceWithAuthCallbacks:System.String",
-          "clrName": "CannotUseDataSourceWithAuthCallbacks",
+          "targetName": "CannotUseDataSourceWithAuthCallbacks",
           "metadataToken": 385876194,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "CannotUseDataSourceWithAuthCallbacks|:System.String|static=true|accessor=get",
@@ -1317,12 +1317,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings::TransientExceptionDetected:System.String",
-          "clrName": "TransientExceptionDetected",
+          "targetName": "TransientExceptionDetected",
           "metadataToken": 385876195,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "TransientExceptionDetected|:System.String|static=true|accessor=get",
@@ -1336,8 +1336,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Internal.NpgsqlStrings",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
       ],
       "fields": [],

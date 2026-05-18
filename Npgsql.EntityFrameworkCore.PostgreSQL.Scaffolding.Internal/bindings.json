@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Scaffolding.Internal.NpgsqlCodeGenerator",
-      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Scaffolding.Internal.NpgsqlCodeGenerator",
-      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Scaffolding.Internal.NpgsqlCodeGenerator",
+      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -17,18 +17,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Scaffolding.ProviderCodeGenerator",
-        "clrName": "Microsoft.EntityFrameworkCore.Scaffolding.ProviderCodeGenerator"
+        "targetName": "Microsoft.EntityFrameworkCore.Scaffolding.ProviderCodeGenerator"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Scaffolding.IProviderConfigurationCodeGenerator",
-          "clrName": "Microsoft.EntityFrameworkCore.Scaffolding.IProviderConfigurationCodeGenerator"
+          "targetName": "Microsoft.EntityFrameworkCore.Scaffolding.IProviderConfigurationCodeGenerator"
         }
       ],
       "methods": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Scaffolding.Internal.NpgsqlCodeGenerator::GenerateUseProvider(System.String,Microsoft.EntityFrameworkCore.Design.MethodCallCodeFragment):Microsoft.EntityFrameworkCore.Design.MethodCallCodeFragment",
-          "clrName": "GenerateUseProvider",
+          "targetName": "GenerateUseProvider",
           "metadataToken": 100664607,
           "canonicalSignature": "(System.String,Microsoft.EntityFrameworkCore.Design.MethodCallCodeFragment):Microsoft.EntityFrameworkCore.Design.MethodCallCodeFragment",
           "normalizedSignature": "GenerateUseProvider|(System.String,Microsoft.EntityFrameworkCore.Design.MethodCallCodeFragment):Microsoft.EntityFrameworkCore.Design.MethodCallCodeFragment|static=false",
@@ -42,8 +42,8 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Scaffolding.Internal.NpgsqlCodeGenerator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Scaffolding.Internal.NpgsqlCodeGenerator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         }
       ],
@@ -59,15 +59,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Scaffolding.Internal.NpgsqlCodeGenerator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Scaffolding.Internal.NpgsqlCodeGenerator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
       ]
     },
     {
       "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Scaffolding.Internal.NpgsqlDatabaseModelFactory",
-      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Scaffolding.Internal.NpgsqlDatabaseModelFactory",
-      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Scaffolding.Internal.NpgsqlDatabaseModelFactory",
+      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -77,18 +77,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Scaffolding.DatabaseModelFactory",
-        "clrName": "Microsoft.EntityFrameworkCore.Scaffolding.DatabaseModelFactory"
+        "targetName": "Microsoft.EntityFrameworkCore.Scaffolding.DatabaseModelFactory"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Scaffolding.IDatabaseModelFactory",
-          "clrName": "Microsoft.EntityFrameworkCore.Scaffolding.IDatabaseModelFactory"
+          "targetName": "Microsoft.EntityFrameworkCore.Scaffolding.IDatabaseModelFactory"
         }
       ],
       "methods": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Scaffolding.Internal.NpgsqlDatabaseModelFactory::Create(System.String,Microsoft.EntityFrameworkCore.Scaffolding.DatabaseModelFactoryOptions):Microsoft.EntityFrameworkCore.Scaffolding.Metadata.DatabaseModel",
-          "clrName": "Create",
+          "targetName": "Create",
           "metadataToken": 100664610,
           "canonicalSignature": "(System.String,Microsoft.EntityFrameworkCore.Scaffolding.DatabaseModelFactoryOptions):Microsoft.EntityFrameworkCore.Scaffolding.Metadata.DatabaseModel",
           "normalizedSignature": "Create|(System.String,Microsoft.EntityFrameworkCore.Scaffolding.DatabaseModelFactoryOptions):Microsoft.EntityFrameworkCore.Scaffolding.Metadata.DatabaseModel|static=false",
@@ -102,13 +102,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Scaffolding.Internal.NpgsqlDatabaseModelFactory",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Scaffolding.Internal.NpgsqlDatabaseModelFactory",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Scaffolding.Internal.NpgsqlDatabaseModelFactory::Create(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Scaffolding.DatabaseModelFactoryOptions):Microsoft.EntityFrameworkCore.Scaffolding.Metadata.DatabaseModel",
-          "clrName": "Create",
+          "targetName": "Create",
           "metadataToken": 100664611,
           "canonicalSignature": "(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Scaffolding.DatabaseModelFactoryOptions):Microsoft.EntityFrameworkCore.Scaffolding.Metadata.DatabaseModel",
           "normalizedSignature": "Create|(System.Data.Common.DbConnection,Microsoft.EntityFrameworkCore.Scaffolding.DatabaseModelFactoryOptions):Microsoft.EntityFrameworkCore.Scaffolding.Metadata.DatabaseModel|static=false",
@@ -122,8 +122,8 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Scaffolding.Internal.NpgsqlDatabaseModelFactory",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Scaffolding.Internal.NpgsqlDatabaseModelFactory",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         }
       ],
@@ -139,8 +139,8 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Scaffolding.Internal.NpgsqlDatabaseModelFactory",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Scaffolding.Internal.NpgsqlDatabaseModelFactory",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
       ]
     }

@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.NpgsqlRetryingExecutionStrategy",
-      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.NpgsqlRetryingExecutionStrategy",
-      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.NpgsqlRetryingExecutionStrategy",
+      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -17,18 +17,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy",
-        "clrName": "Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy"
+        "targetName": "Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Storage.IExecutionStrategy",
-          "clrName": "Microsoft.EntityFrameworkCore.Storage.IExecutionStrategy"
+          "targetName": "Microsoft.EntityFrameworkCore.Storage.IExecutionStrategy"
         }
       ],
       "methods": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.NpgsqlRetryingExecutionStrategy::ShouldRetryOn(System.Exception):System.Boolean",
-          "clrName": "ShouldRetryOn",
+          "targetName": "ShouldRetryOn",
           "metadataToken": 100664056,
           "canonicalSignature": "(System.Exception):System.Boolean",
           "normalizedSignature": "ShouldRetryOn|(System.Exception):System.Boolean|static=false",
@@ -42,8 +42,8 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.NpgsqlRetryingExecutionStrategy",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.NpgsqlRetryingExecutionStrategy",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         }
       ],
@@ -59,8 +59,8 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.NpgsqlRetryingExecutionStrategy",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.NpgsqlRetryingExecutionStrategy",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.NpgsqlRetryingExecutionStrategy::.ctor(Microsoft.EntityFrameworkCore.Storage.ExecutionStrategyDependencies):void",
@@ -70,8 +70,8 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.NpgsqlRetryingExecutionStrategy",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.NpgsqlRetryingExecutionStrategy",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.NpgsqlRetryingExecutionStrategy::.ctor(Microsoft.EntityFrameworkCore.DbContext,System.Int32):void",
@@ -81,8 +81,8 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.NpgsqlRetryingExecutionStrategy",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.NpgsqlRetryingExecutionStrategy",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.NpgsqlRetryingExecutionStrategy::.ctor(Microsoft.EntityFrameworkCore.Storage.ExecutionStrategyDependencies,System.Int32):void",
@@ -92,8 +92,8 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.NpgsqlRetryingExecutionStrategy",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.NpgsqlRetryingExecutionStrategy",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.NpgsqlRetryingExecutionStrategy::.ctor(Microsoft.EntityFrameworkCore.Storage.ExecutionStrategyDependencies,System.Collections.Generic.ICollection_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void",
@@ -103,8 +103,8 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.NpgsqlRetryingExecutionStrategy",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.NpgsqlRetryingExecutionStrategy",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.NpgsqlRetryingExecutionStrategy::.ctor(Microsoft.EntityFrameworkCore.DbContext,System.Int32,System.TimeSpan,System.Collections.Generic.ICollection_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void",
@@ -114,8 +114,8 @@
           "isStatic": false,
           "parameterCount": 4,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.NpgsqlRetryingExecutionStrategy",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.NpgsqlRetryingExecutionStrategy",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.NpgsqlRetryingExecutionStrategy::.ctor(Microsoft.EntityFrameworkCore.Storage.ExecutionStrategyDependencies,System.Int32,System.TimeSpan,System.Collections.Generic.ICollection_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void",
@@ -125,8 +125,8 @@
           "isStatic": false,
           "parameterCount": 4,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.NpgsqlRetryingExecutionStrategy",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.NpgsqlRetryingExecutionStrategy",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
       ]
     }

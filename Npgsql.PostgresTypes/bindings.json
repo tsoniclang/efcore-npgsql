@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresArrayType",
-      "clrName": "Npgsql.PostgresTypes.PostgresArrayType",
-      "assemblyName": "Npgsql",
+      "targetName": "Npgsql.PostgresTypes.PostgresArrayType",
+      "ownerIdentity": "Npgsql",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -17,13 +17,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresType",
-        "clrName": "Npgsql.PostgresTypes.PostgresType"
+        "targetName": "Npgsql.PostgresTypes.PostgresType"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresArrayType::Element:Npgsql.PostgresTypes.PostgresType",
-          "clrName": "Element",
+          "targetName": "Element",
           "metadataToken": 385876701,
           "canonicalSignature": ":Npgsql.PostgresTypes.PostgresType",
           "normalizedSignature": "Element|:Npgsql.PostgresTypes.PostgresType|static=false|accessor=get",
@@ -37,8 +37,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.PostgresTypes.PostgresArrayType",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.PostgresTypes.PostgresArrayType",
+          "ownerIdentity": "Npgsql"
         }
       ],
       "fields": [],
@@ -52,15 +52,15 @@
           "isStatic": false,
           "parameterCount": 4,
           "visibility": "ProtectedInternal",
-          "declaringClrType": "Npgsql.PostgresTypes.PostgresArrayType",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.PostgresTypes.PostgresArrayType",
+          "ownerIdentity": "Npgsql"
         }
       ]
     },
     {
       "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresBaseType",
-      "clrName": "Npgsql.PostgresTypes.PostgresBaseType",
-      "assemblyName": "Npgsql",
+      "targetName": "Npgsql.PostgresTypes.PostgresBaseType",
+      "ownerIdentity": "Npgsql",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -70,7 +70,7 @@
       "arity": 0,
       "baseType": {
         "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresType",
-        "clrName": "Npgsql.PostgresTypes.PostgresType"
+        "targetName": "Npgsql.PostgresTypes.PostgresType"
       },
       "methods": [],
       "properties": [],
@@ -85,15 +85,15 @@
           "isStatic": false,
           "parameterCount": 3,
           "visibility": "ProtectedInternal",
-          "declaringClrType": "Npgsql.PostgresTypes.PostgresBaseType",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.PostgresTypes.PostgresBaseType",
+          "ownerIdentity": "Npgsql"
         }
       ]
     },
     {
       "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresCompositeType",
-      "clrName": "Npgsql.PostgresTypes.PostgresCompositeType",
-      "assemblyName": "Npgsql",
+      "targetName": "Npgsql.PostgresTypes.PostgresCompositeType",
+      "ownerIdentity": "Npgsql",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -103,13 +103,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresType",
-        "clrName": "Npgsql.PostgresTypes.PostgresType"
+        "targetName": "Npgsql.PostgresTypes.PostgresType"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresCompositeType::Fields:System.Collections.Generic.IReadOnlyList_1[[Npgsql.PostgresTypes.PostgresCompositeType\u002BField,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]",
-          "clrName": "Fields",
+          "targetName": "Fields",
           "metadataToken": 385876702,
           "canonicalSignature": ":System.Collections.Generic.IReadOnlyList_1[[Npgsql.PostgresTypes.PostgresCompositeType\u002BField,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]",
           "normalizedSignature": "Fields|:System.Collections.Generic.IReadOnlyList_1[[Npgsql.PostgresTypes.PostgresCompositeType\u002BField,Npgsql,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]|static=false|accessor=get",
@@ -123,8 +123,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.PostgresTypes.PostgresCompositeType",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.PostgresTypes.PostgresCompositeType",
+          "ownerIdentity": "Npgsql"
         }
       ],
       "fields": [],
@@ -133,8 +133,8 @@
     },
     {
       "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresCompositeType\u002BField",
-      "clrName": "Npgsql.PostgresTypes.PostgresCompositeType\u002BField",
-      "assemblyName": "Npgsql",
+      "targetName": "Npgsql.PostgresTypes.PostgresCompositeType\u002BField",
+      "ownerIdentity": "Npgsql",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -144,12 +144,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresCompositeType\u002BField::ToString():System.String",
-          "clrName": "ToString",
+          "targetName": "ToString",
           "metadataToken": 100669297,
           "canonicalSignature": "():System.String",
           "normalizedSignature": "ToString|():System.String|static=false",
@@ -163,15 +163,15 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.PostgresTypes.PostgresCompositeType\u002BField",
-          "declaringAssemblyName": "Npgsql",
+          "ownerQualifiedName": "Npgsql.PostgresTypes.PostgresCompositeType\u002BField",
+          "ownerIdentity": "Npgsql",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresCompositeType\u002BField::Name:System.String",
-          "clrName": "Name",
+          "targetName": "Name",
           "metadataToken": 385877336,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Name|:System.String|static=false|accessor=get",
@@ -185,12 +185,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.PostgresTypes.PostgresCompositeType\u002BField",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.PostgresTypes.PostgresCompositeType\u002BField",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresCompositeType\u002BField::Type:Npgsql.PostgresTypes.PostgresType",
-          "clrName": "Type",
+          "targetName": "Type",
           "metadataToken": 385877337,
           "canonicalSignature": ":Npgsql.PostgresTypes.PostgresType",
           "normalizedSignature": "Type|:Npgsql.PostgresTypes.PostgresType|static=false|accessor=get",
@@ -204,8 +204,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.PostgresTypes.PostgresCompositeType\u002BField",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.PostgresTypes.PostgresCompositeType\u002BField",
+          "ownerIdentity": "Npgsql"
         }
       ],
       "fields": [],
@@ -214,8 +214,8 @@
     },
     {
       "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresDomainType",
-      "clrName": "Npgsql.PostgresTypes.PostgresDomainType",
-      "assemblyName": "Npgsql",
+      "targetName": "Npgsql.PostgresTypes.PostgresDomainType",
+      "ownerIdentity": "Npgsql",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -225,13 +225,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresType",
-        "clrName": "Npgsql.PostgresTypes.PostgresType"
+        "targetName": "Npgsql.PostgresTypes.PostgresType"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresDomainType::BaseType:Npgsql.PostgresTypes.PostgresType",
-          "clrName": "BaseType",
+          "targetName": "BaseType",
           "metadataToken": 385876704,
           "canonicalSignature": ":Npgsql.PostgresTypes.PostgresType",
           "normalizedSignature": "BaseType|:Npgsql.PostgresTypes.PostgresType|static=false|accessor=get",
@@ -245,12 +245,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.PostgresTypes.PostgresDomainType",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.PostgresTypes.PostgresDomainType",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresDomainType::NotNull:System.Boolean",
-          "clrName": "NotNull",
+          "targetName": "NotNull",
           "metadataToken": 385876705,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "NotNull|:System.Boolean|static=false|accessor=get",
@@ -264,8 +264,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.PostgresTypes.PostgresDomainType",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.PostgresTypes.PostgresDomainType",
+          "ownerIdentity": "Npgsql"
         }
       ],
       "fields": [],
@@ -279,15 +279,15 @@
           "isStatic": false,
           "parameterCount": 5,
           "visibility": "ProtectedInternal",
-          "declaringClrType": "Npgsql.PostgresTypes.PostgresDomainType",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.PostgresTypes.PostgresDomainType",
+          "ownerIdentity": "Npgsql"
         }
       ]
     },
     {
       "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresEnumType",
-      "clrName": "Npgsql.PostgresTypes.PostgresEnumType",
-      "assemblyName": "Npgsql",
+      "targetName": "Npgsql.PostgresTypes.PostgresEnumType",
+      "ownerIdentity": "Npgsql",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -297,13 +297,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresType",
-        "clrName": "Npgsql.PostgresTypes.PostgresType"
+        "targetName": "Npgsql.PostgresTypes.PostgresType"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresEnumType::Labels:System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "Labels",
+          "targetName": "Labels",
           "metadataToken": 385876706,
           "canonicalSignature": ":System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "Labels|:System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
@@ -317,8 +317,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.PostgresTypes.PostgresEnumType",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.PostgresTypes.PostgresEnumType",
+          "ownerIdentity": "Npgsql"
         }
       ],
       "fields": [],
@@ -332,15 +332,15 @@
           "isStatic": false,
           "parameterCount": 3,
           "visibility": "ProtectedInternal",
-          "declaringClrType": "Npgsql.PostgresTypes.PostgresEnumType",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.PostgresTypes.PostgresEnumType",
+          "ownerIdentity": "Npgsql"
         }
       ]
     },
     {
       "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresMultirangeType",
-      "clrName": "Npgsql.PostgresTypes.PostgresMultirangeType",
-      "assemblyName": "Npgsql",
+      "targetName": "Npgsql.PostgresTypes.PostgresMultirangeType",
+      "ownerIdentity": "Npgsql",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -350,13 +350,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresType",
-        "clrName": "Npgsql.PostgresTypes.PostgresType"
+        "targetName": "Npgsql.PostgresTypes.PostgresType"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresMultirangeType::Subrange:Npgsql.PostgresTypes.PostgresRangeType",
-          "clrName": "Subrange",
+          "targetName": "Subrange",
           "metadataToken": 385876708,
           "canonicalSignature": ":Npgsql.PostgresTypes.PostgresRangeType",
           "normalizedSignature": "Subrange|:Npgsql.PostgresTypes.PostgresRangeType|static=false|accessor=get",
@@ -370,8 +370,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.PostgresTypes.PostgresMultirangeType",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.PostgresTypes.PostgresMultirangeType",
+          "ownerIdentity": "Npgsql"
         }
       ],
       "fields": [],
@@ -385,15 +385,15 @@
           "isStatic": false,
           "parameterCount": 4,
           "visibility": "ProtectedInternal",
-          "declaringClrType": "Npgsql.PostgresTypes.PostgresMultirangeType",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.PostgresTypes.PostgresMultirangeType",
+          "ownerIdentity": "Npgsql"
         }
       ]
     },
     {
       "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresRangeType",
-      "clrName": "Npgsql.PostgresTypes.PostgresRangeType",
-      "assemblyName": "Npgsql",
+      "targetName": "Npgsql.PostgresTypes.PostgresRangeType",
+      "ownerIdentity": "Npgsql",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -403,13 +403,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresType",
-        "clrName": "Npgsql.PostgresTypes.PostgresType"
+        "targetName": "Npgsql.PostgresTypes.PostgresType"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresRangeType::Subtype:Npgsql.PostgresTypes.PostgresType",
-          "clrName": "Subtype",
+          "targetName": "Subtype",
           "metadataToken": 385876709,
           "canonicalSignature": ":Npgsql.PostgresTypes.PostgresType",
           "normalizedSignature": "Subtype|:Npgsql.PostgresTypes.PostgresType|static=false|accessor=get",
@@ -423,12 +423,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.PostgresTypes.PostgresRangeType",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.PostgresTypes.PostgresRangeType",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresRangeType::Multirange:Npgsql.PostgresTypes.PostgresMultirangeType",
-          "clrName": "Multirange",
+          "targetName": "Multirange",
           "metadataToken": 385876710,
           "canonicalSignature": ":Npgsql.PostgresTypes.PostgresMultirangeType",
           "normalizedSignature": "Multirange|:Npgsql.PostgresTypes.PostgresMultirangeType|static=false|accessor=getset",
@@ -442,8 +442,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.PostgresTypes.PostgresRangeType",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.PostgresTypes.PostgresRangeType",
+          "ownerIdentity": "Npgsql"
         }
       ],
       "fields": [],
@@ -457,15 +457,15 @@
           "isStatic": false,
           "parameterCount": 4,
           "visibility": "ProtectedInternal",
-          "declaringClrType": "Npgsql.PostgresTypes.PostgresRangeType",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.PostgresTypes.PostgresRangeType",
+          "ownerIdentity": "Npgsql"
         }
       ]
     },
     {
       "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresType",
-      "clrName": "Npgsql.PostgresTypes.PostgresType",
-      "assemblyName": "Npgsql",
+      "targetName": "Npgsql.PostgresTypes.PostgresType",
+      "ownerIdentity": "Npgsql",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -475,12 +475,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresType::ToString():System.String",
-          "clrName": "ToString",
+          "targetName": "ToString",
           "metadataToken": 100666262,
           "canonicalSignature": "():System.String",
           "normalizedSignature": "ToString|():System.String|static=false",
@@ -494,15 +494,15 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.PostgresTypes.PostgresType",
-          "declaringAssemblyName": "Npgsql",
+          "ownerQualifiedName": "Npgsql.PostgresTypes.PostgresType",
+          "ownerIdentity": "Npgsql",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresType::OID:System.UInt32",
-          "clrName": "OID",
+          "targetName": "OID",
           "metadataToken": 385876711,
           "canonicalSignature": ":System.UInt32",
           "normalizedSignature": "OID|:System.UInt32|static=false|accessor=get",
@@ -516,12 +516,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.PostgresTypes.PostgresType",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.PostgresTypes.PostgresType",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresType::Namespace:System.String",
-          "clrName": "Namespace",
+          "targetName": "Namespace",
           "metadataToken": 385876712,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Namespace|:System.String|static=false|accessor=get",
@@ -535,12 +535,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.PostgresTypes.PostgresType",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.PostgresTypes.PostgresType",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresType::Name:System.String",
-          "clrName": "Name",
+          "targetName": "Name",
           "metadataToken": 385876713,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Name|:System.String|static=false|accessor=get",
@@ -554,12 +554,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.PostgresTypes.PostgresType",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.PostgresTypes.PostgresType",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresType::FullName:System.String",
-          "clrName": "FullName",
+          "targetName": "FullName",
           "metadataToken": 385876714,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "FullName|:System.String|static=false|accessor=get",
@@ -573,12 +573,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.PostgresTypes.PostgresType",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.PostgresTypes.PostgresType",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresType::DisplayName:System.String",
-          "clrName": "DisplayName",
+          "targetName": "DisplayName",
           "metadataToken": 385876716,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "DisplayName|:System.String|static=false|accessor=get",
@@ -592,12 +592,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.PostgresTypes.PostgresType",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.PostgresTypes.PostgresType",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresType::InternalName:System.String",
-          "clrName": "InternalName",
+          "targetName": "InternalName",
           "metadataToken": 385876717,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "InternalName|:System.String|static=false|accessor=get",
@@ -611,12 +611,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.PostgresTypes.PostgresType",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.PostgresTypes.PostgresType",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresType::Array:Npgsql.PostgresTypes.PostgresArrayType",
-          "clrName": "Array",
+          "targetName": "Array",
           "metadataToken": 385876718,
           "canonicalSignature": ":Npgsql.PostgresTypes.PostgresArrayType",
           "normalizedSignature": "Array|:Npgsql.PostgresTypes.PostgresArrayType|static=false|accessor=getset",
@@ -630,12 +630,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.PostgresTypes.PostgresType",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.PostgresTypes.PostgresType",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresType::Range:Npgsql.PostgresTypes.PostgresRangeType",
-          "clrName": "Range",
+          "targetName": "Range",
           "metadataToken": 385876719,
           "canonicalSignature": ":Npgsql.PostgresTypes.PostgresRangeType",
           "normalizedSignature": "Range|:Npgsql.PostgresTypes.PostgresRangeType|static=false|accessor=getset",
@@ -649,8 +649,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.PostgresTypes.PostgresType",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.PostgresTypes.PostgresType",
+          "ownerIdentity": "Npgsql"
         }
       ],
       "fields": [],
@@ -659,8 +659,8 @@
     },
     {
       "stableId": "Npgsql:Npgsql.PostgresTypes.UnknownBackendType",
-      "clrName": "Npgsql.PostgresTypes.UnknownBackendType",
-      "assemblyName": "Npgsql",
+      "targetName": "Npgsql.PostgresTypes.UnknownBackendType",
+      "ownerIdentity": "Npgsql",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -670,7 +670,7 @@
       "arity": 0,
       "baseType": {
         "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresType",
-        "clrName": "Npgsql.PostgresTypes.PostgresType"
+        "targetName": "Npgsql.PostgresTypes.PostgresType"
       },
       "methods": [],
       "properties": [],

@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Npgsql:Npgsql.Replication.TestDecoding.TestDecodingData",
-      "clrName": "Npgsql.Replication.TestDecoding.TestDecodingData",
-      "assemblyName": "Npgsql",
+      "targetName": "Npgsql.Replication.TestDecoding.TestDecodingData",
+      "ownerIdentity": "Npgsql",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -17,12 +17,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "Npgsql:Npgsql.Replication.ReplicationMessage",
-        "clrName": "Npgsql.Replication.ReplicationMessage"
+        "targetName": "Npgsql.Replication.ReplicationMessage"
       },
       "methods": [
         {
           "stableId": "Npgsql:Npgsql.Replication.TestDecoding.TestDecodingData::ToString():System.String",
-          "clrName": "ToString",
+          "targetName": "ToString",
           "metadataToken": 100665916,
           "canonicalSignature": "():System.String",
           "normalizedSignature": "ToString|():System.String|static=false",
@@ -36,13 +36,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Replication.TestDecoding.TestDecodingData",
-          "declaringAssemblyName": "Npgsql",
+          "ownerQualifiedName": "Npgsql.Replication.TestDecoding.TestDecodingData",
+          "ownerIdentity": "Npgsql",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql:Npgsql.Replication.TestDecoding.TestDecodingData::Clone():Npgsql.Replication.TestDecoding.TestDecodingData",
-          "clrName": "Clone",
+          "targetName": "Clone",
           "metadataToken": 100665917,
           "canonicalSignature": "():Npgsql.Replication.TestDecoding.TestDecodingData",
           "normalizedSignature": "Clone|():Npgsql.Replication.TestDecoding.TestDecodingData|static=false",
@@ -56,15 +56,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Replication.TestDecoding.TestDecodingData",
-          "declaringAssemblyName": "Npgsql",
+          "ownerQualifiedName": "Npgsql.Replication.TestDecoding.TestDecodingData",
+          "ownerIdentity": "Npgsql",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Npgsql:Npgsql.Replication.TestDecoding.TestDecodingData::Data:System.String",
-          "clrName": "Data",
+          "targetName": "Data",
           "metadataToken": 385876578,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Data|:System.String|static=false|accessor=getset",
@@ -78,8 +78,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Replication.TestDecoding.TestDecodingData",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Replication.TestDecoding.TestDecodingData",
+          "ownerIdentity": "Npgsql"
         }
       ],
       "fields": [],
@@ -93,15 +93,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Replication.TestDecoding.TestDecodingData",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Replication.TestDecoding.TestDecodingData",
+          "ownerIdentity": "Npgsql"
         }
       ]
     },
     {
       "stableId": "Npgsql:Npgsql.Replication.TestDecoding.TestDecodingOptions",
-      "clrName": "Npgsql.Replication.TestDecoding.TestDecodingOptions",
-      "assemblyName": "Npgsql",
+      "targetName": "Npgsql.Replication.TestDecoding.TestDecodingOptions",
+      "ownerIdentity": "Npgsql",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -111,12 +111,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.IEquatable\u00601",
-          "clrName": "System.IEquatable\u00601",
+          "targetName": "System.IEquatable\u00601",
           "typeArguments": [
             "TestDecodingOptions"
           ]
@@ -125,7 +125,7 @@
       "methods": [
         {
           "stableId": "Npgsql:Npgsql.Replication.TestDecoding.TestDecodingOptions::Equals(Npgsql.Replication.TestDecoding.TestDecodingOptions):System.Boolean",
-          "clrName": "Equals",
+          "targetName": "Equals",
           "metadataToken": 100665928,
           "canonicalSignature": "(Npgsql.Replication.TestDecoding.TestDecodingOptions):System.Boolean",
           "normalizedSignature": "Equals|(Npgsql.Replication.TestDecoding.TestDecodingOptions):System.Boolean|static=false",
@@ -139,13 +139,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Replication.TestDecoding.TestDecodingOptions",
-          "declaringAssemblyName": "Npgsql",
+          "ownerQualifiedName": "Npgsql.Replication.TestDecoding.TestDecodingOptions",
+          "ownerIdentity": "Npgsql",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql:Npgsql.Replication.TestDecoding.TestDecodingOptions::Equals(System.Object):System.Boolean",
-          "clrName": "Equals",
+          "targetName": "Equals",
           "metadataToken": 100665929,
           "canonicalSignature": "(System.Object):System.Boolean",
           "normalizedSignature": "Equals|(System.Object):System.Boolean|static=false",
@@ -159,13 +159,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Replication.TestDecoding.TestDecodingOptions",
-          "declaringAssemblyName": "Npgsql",
+          "ownerQualifiedName": "Npgsql.Replication.TestDecoding.TestDecodingOptions",
+          "ownerIdentity": "Npgsql",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql:Npgsql.Replication.TestDecoding.TestDecodingOptions::GetHashCode():System.Int32",
-          "clrName": "GetHashCode",
+          "targetName": "GetHashCode",
           "metadataToken": 100665930,
           "canonicalSignature": "():System.Int32",
           "normalizedSignature": "GetHashCode|():System.Int32|static=false",
@@ -179,15 +179,15 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Replication.TestDecoding.TestDecodingOptions",
-          "declaringAssemblyName": "Npgsql",
+          "ownerQualifiedName": "Npgsql.Replication.TestDecoding.TestDecodingOptions",
+          "ownerIdentity": "Npgsql",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Npgsql:Npgsql.Replication.TestDecoding.TestDecodingOptions::IncludeXids:System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "IncludeXids",
+          "targetName": "IncludeXids",
           "metadataToken": 385876579,
           "canonicalSignature": ":System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "IncludeXids|:System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
@@ -201,12 +201,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Replication.TestDecoding.TestDecodingOptions",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Replication.TestDecoding.TestDecodingOptions",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.Replication.TestDecoding.TestDecodingOptions::IncludeTimestamp:System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "IncludeTimestamp",
+          "targetName": "IncludeTimestamp",
           "metadataToken": 385876580,
           "canonicalSignature": ":System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "IncludeTimestamp|:System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
@@ -220,12 +220,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Replication.TestDecoding.TestDecodingOptions",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Replication.TestDecoding.TestDecodingOptions",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.Replication.TestDecoding.TestDecodingOptions::ForceBinary:System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "ForceBinary",
+          "targetName": "ForceBinary",
           "metadataToken": 385876581,
           "canonicalSignature": ":System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "ForceBinary|:System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
@@ -239,12 +239,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Replication.TestDecoding.TestDecodingOptions",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Replication.TestDecoding.TestDecodingOptions",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.Replication.TestDecoding.TestDecodingOptions::SkipEmptyXacts:System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "SkipEmptyXacts",
+          "targetName": "SkipEmptyXacts",
           "metadataToken": 385876582,
           "canonicalSignature": ":System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "SkipEmptyXacts|:System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
@@ -258,12 +258,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Replication.TestDecoding.TestDecodingOptions",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Replication.TestDecoding.TestDecodingOptions",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.Replication.TestDecoding.TestDecodingOptions::OnlyLocal:System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "OnlyLocal",
+          "targetName": "OnlyLocal",
           "metadataToken": 385876583,
           "canonicalSignature": ":System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "OnlyLocal|:System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
@@ -277,12 +277,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Replication.TestDecoding.TestDecodingOptions",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Replication.TestDecoding.TestDecodingOptions",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.Replication.TestDecoding.TestDecodingOptions::IncludeRewrites:System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "IncludeRewrites",
+          "targetName": "IncludeRewrites",
           "metadataToken": 385876584,
           "canonicalSignature": ":System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "IncludeRewrites|:System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
@@ -296,12 +296,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Replication.TestDecoding.TestDecodingOptions",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Replication.TestDecoding.TestDecodingOptions",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.Replication.TestDecoding.TestDecodingOptions::StreamChanges:System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "StreamChanges",
+          "targetName": "StreamChanges",
           "metadataToken": 385876585,
           "canonicalSignature": ":System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "StreamChanges|:System.Nullable_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
@@ -315,8 +315,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Replication.TestDecoding.TestDecodingOptions",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Replication.TestDecoding.TestDecodingOptions",
+          "ownerIdentity": "Npgsql"
         }
       ],
       "fields": [],
@@ -330,15 +330,15 @@
           "isStatic": false,
           "parameterCount": 7,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Replication.TestDecoding.TestDecodingOptions",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Replication.TestDecoding.TestDecodingOptions",
+          "ownerIdentity": "Npgsql"
         }
       ]
     },
     {
       "stableId": "Npgsql:Npgsql.Replication.TestDecoding.TestDecodingReplicationSlot",
-      "clrName": "Npgsql.Replication.TestDecoding.TestDecodingReplicationSlot",
-      "assemblyName": "Npgsql",
+      "targetName": "Npgsql.Replication.TestDecoding.TestDecodingReplicationSlot",
+      "ownerIdentity": "Npgsql",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -348,7 +348,7 @@
       "arity": 0,
       "baseType": {
         "stableId": "Npgsql:Npgsql.Replication.Internal.LogicalReplicationSlot",
-        "clrName": "Npgsql.Replication.Internal.LogicalReplicationSlot"
+        "targetName": "Npgsql.Replication.Internal.LogicalReplicationSlot"
       },
       "methods": [],
       "properties": [],
@@ -363,8 +363,8 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Replication.TestDecoding.TestDecodingReplicationSlot",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Replication.TestDecoding.TestDecodingReplicationSlot",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.Replication.TestDecoding.TestDecodingReplicationSlot::.ctor(Npgsql.Replication.ReplicationSlotOptions):void",
@@ -374,8 +374,8 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Replication.TestDecoding.TestDecodingReplicationSlot",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Replication.TestDecoding.TestDecodingReplicationSlot",
+          "ownerIdentity": "Npgsql"
         }
       ]
     }

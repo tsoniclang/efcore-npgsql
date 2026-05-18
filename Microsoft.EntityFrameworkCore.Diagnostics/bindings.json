@@ -9,8 +9,8 @@
   "types": [
     {
       "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Microsoft.EntityFrameworkCore.Diagnostics.NpgsqlEfEventId",
-      "clrName": "Microsoft.EntityFrameworkCore.Diagnostics.NpgsqlEfEventId",
-      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "targetName": "Microsoft.EntityFrameworkCore.Diagnostics.NpgsqlEfEventId",
+      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -20,202 +20,202 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [],
       "fields": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Microsoft.EntityFrameworkCore.Diagnostics.NpgsqlEfEventId::ColumnFoundMicrosoft.Extensions.Logging.EventId",
-          "clrName": "ColumnFound",
+          "targetName": "ColumnFound",
           "metadataToken": 67108908,
           "normalizedSignature": "ColumnFound|Microsoft.Extensions.Logging.EventId|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.NpgsqlEfEventId",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Diagnostics.NpgsqlEfEventId",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Microsoft.EntityFrameworkCore.Diagnostics.NpgsqlEfEventId::MissingSchemaWarningMicrosoft.Extensions.Logging.EventId",
-          "clrName": "MissingSchemaWarning",
+          "targetName": "MissingSchemaWarning",
           "metadataToken": 67108909,
           "normalizedSignature": "MissingSchemaWarning|Microsoft.Extensions.Logging.EventId|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.NpgsqlEfEventId",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Diagnostics.NpgsqlEfEventId",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Microsoft.EntityFrameworkCore.Diagnostics.NpgsqlEfEventId::CollationFoundMicrosoft.Extensions.Logging.EventId",
-          "clrName": "CollationFound",
+          "targetName": "CollationFound",
           "metadataToken": 67108910,
           "normalizedSignature": "CollationFound|Microsoft.Extensions.Logging.EventId|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.NpgsqlEfEventId",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Diagnostics.NpgsqlEfEventId",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Microsoft.EntityFrameworkCore.Diagnostics.NpgsqlEfEventId::MissingTableWarningMicrosoft.Extensions.Logging.EventId",
-          "clrName": "MissingTableWarning",
+          "targetName": "MissingTableWarning",
           "metadataToken": 67108911,
           "normalizedSignature": "MissingTableWarning|Microsoft.Extensions.Logging.EventId|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.NpgsqlEfEventId",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Diagnostics.NpgsqlEfEventId",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Microsoft.EntityFrameworkCore.Diagnostics.NpgsqlEfEventId::ForeignKeyReferencesMissingPrincipalTableWarningMicrosoft.Extensions.Logging.EventId",
-          "clrName": "ForeignKeyReferencesMissingPrincipalTableWarning",
+          "targetName": "ForeignKeyReferencesMissingPrincipalTableWarning",
           "metadataToken": 67108912,
           "normalizedSignature": "ForeignKeyReferencesMissingPrincipalTableWarning|Microsoft.Extensions.Logging.EventId|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.NpgsqlEfEventId",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Diagnostics.NpgsqlEfEventId",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Microsoft.EntityFrameworkCore.Diagnostics.NpgsqlEfEventId::TableFoundMicrosoft.Extensions.Logging.EventId",
-          "clrName": "TableFound",
+          "targetName": "TableFound",
           "metadataToken": 67108913,
           "normalizedSignature": "TableFound|Microsoft.Extensions.Logging.EventId|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.NpgsqlEfEventId",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Diagnostics.NpgsqlEfEventId",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Microsoft.EntityFrameworkCore.Diagnostics.NpgsqlEfEventId::SequenceFoundMicrosoft.Extensions.Logging.EventId",
-          "clrName": "SequenceFound",
+          "targetName": "SequenceFound",
           "metadataToken": 67108914,
           "normalizedSignature": "SequenceFound|Microsoft.Extensions.Logging.EventId|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.NpgsqlEfEventId",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Diagnostics.NpgsqlEfEventId",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Microsoft.EntityFrameworkCore.Diagnostics.NpgsqlEfEventId::PrimaryKeyFoundMicrosoft.Extensions.Logging.EventId",
-          "clrName": "PrimaryKeyFound",
+          "targetName": "PrimaryKeyFound",
           "metadataToken": 67108915,
           "normalizedSignature": "PrimaryKeyFound|Microsoft.Extensions.Logging.EventId|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.NpgsqlEfEventId",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Diagnostics.NpgsqlEfEventId",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Microsoft.EntityFrameworkCore.Diagnostics.NpgsqlEfEventId::UniqueConstraintFoundMicrosoft.Extensions.Logging.EventId",
-          "clrName": "UniqueConstraintFound",
+          "targetName": "UniqueConstraintFound",
           "metadataToken": 67108916,
           "normalizedSignature": "UniqueConstraintFound|Microsoft.Extensions.Logging.EventId|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.NpgsqlEfEventId",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Diagnostics.NpgsqlEfEventId",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Microsoft.EntityFrameworkCore.Diagnostics.NpgsqlEfEventId::IndexFoundMicrosoft.Extensions.Logging.EventId",
-          "clrName": "IndexFound",
+          "targetName": "IndexFound",
           "metadataToken": 67108917,
           "normalizedSignature": "IndexFound|Microsoft.Extensions.Logging.EventId|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.NpgsqlEfEventId",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Diagnostics.NpgsqlEfEventId",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Microsoft.EntityFrameworkCore.Diagnostics.NpgsqlEfEventId::ForeignKeyFoundMicrosoft.Extensions.Logging.EventId",
-          "clrName": "ForeignKeyFound",
+          "targetName": "ForeignKeyFound",
           "metadataToken": 67108918,
           "normalizedSignature": "ForeignKeyFound|Microsoft.Extensions.Logging.EventId|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.NpgsqlEfEventId",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Diagnostics.NpgsqlEfEventId",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Microsoft.EntityFrameworkCore.Diagnostics.NpgsqlEfEventId::ForeignKeyPrincipalColumnMissingWarningMicrosoft.Extensions.Logging.EventId",
-          "clrName": "ForeignKeyPrincipalColumnMissingWarning",
+          "targetName": "ForeignKeyPrincipalColumnMissingWarning",
           "metadataToken": 67108919,
           "normalizedSignature": "ForeignKeyPrincipalColumnMissingWarning|Microsoft.Extensions.Logging.EventId|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.NpgsqlEfEventId",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Diagnostics.NpgsqlEfEventId",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Microsoft.EntityFrameworkCore.Diagnostics.NpgsqlEfEventId::EnumColumnSkippedWarningMicrosoft.Extensions.Logging.EventId",
-          "clrName": "EnumColumnSkippedWarning",
+          "targetName": "EnumColumnSkippedWarning",
           "metadataToken": 67108920,
           "normalizedSignature": "EnumColumnSkippedWarning|Microsoft.Extensions.Logging.EventId|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.NpgsqlEfEventId",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Diagnostics.NpgsqlEfEventId",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Microsoft.EntityFrameworkCore.Diagnostics.NpgsqlEfEventId::ExpressionIndexSkippedWarningMicrosoft.Extensions.Logging.EventId",
-          "clrName": "ExpressionIndexSkippedWarning",
+          "targetName": "ExpressionIndexSkippedWarning",
           "metadataToken": 67108921,
           "normalizedSignature": "ExpressionIndexSkippedWarning|Microsoft.Extensions.Logging.EventId|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.NpgsqlEfEventId",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Diagnostics.NpgsqlEfEventId",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Microsoft.EntityFrameworkCore.Diagnostics.NpgsqlEfEventId::UnsupportedColumnIndexSkippedWarningMicrosoft.Extensions.Logging.EventId",
-          "clrName": "UnsupportedColumnIndexSkippedWarning",
+          "targetName": "UnsupportedColumnIndexSkippedWarning",
           "metadataToken": 67108922,
           "normalizedSignature": "UnsupportedColumnIndexSkippedWarning|Microsoft.Extensions.Logging.EventId|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.NpgsqlEfEventId",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Diagnostics.NpgsqlEfEventId",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Microsoft.EntityFrameworkCore.Diagnostics.NpgsqlEfEventId::UnsupportedColumnConstraintSkippedWarningMicrosoft.Extensions.Logging.EventId",
-          "clrName": "UnsupportedColumnConstraintSkippedWarning",
+          "targetName": "UnsupportedColumnConstraintSkippedWarning",
           "metadataToken": 67108923,
           "normalizedSignature": "UnsupportedColumnConstraintSkippedWarning|Microsoft.Extensions.Logging.EventId|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.EntityFrameworkCore.Diagnostics.NpgsqlEfEventId",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Microsoft.EntityFrameworkCore.Diagnostics.NpgsqlEfEventId",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
       ],
       "events": [],

@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository",
-      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository",
-      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository",
+      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -17,18 +17,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Migrations.HistoryRepository",
-        "clrName": "Microsoft.EntityFrameworkCore.Migrations.HistoryRepository"
+        "targetName": "Microsoft.EntityFrameworkCore.Migrations.HistoryRepository"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Migrations.IHistoryRepository",
-          "clrName": "Microsoft.EntityFrameworkCore.Migrations.IHistoryRepository"
+          "targetName": "Microsoft.EntityFrameworkCore.Migrations.IHistoryRepository"
         }
       ],
       "methods": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository::AcquireDatabaseLock():Microsoft.EntityFrameworkCore.Migrations.IMigrationsDatabaseLock",
-          "clrName": "AcquireDatabaseLock",
+          "targetName": "AcquireDatabaseLock",
           "metadataToken": 100665211,
           "canonicalSignature": "():Microsoft.EntityFrameworkCore.Migrations.IMigrationsDatabaseLock",
           "normalizedSignature": "AcquireDatabaseLock|():Microsoft.EntityFrameworkCore.Migrations.IMigrationsDatabaseLock|static=false",
@@ -42,13 +42,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository::AcquireDatabaseLockAsync(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Microsoft.EntityFrameworkCore.Migrations.IMigrationsDatabaseLock,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "AcquireDatabaseLockAsync",
+          "targetName": "AcquireDatabaseLockAsync",
           "metadataToken": 100665212,
           "canonicalSignature": "(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Microsoft.EntityFrameworkCore.Migrations.IMigrationsDatabaseLock,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "AcquireDatabaseLockAsync|(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Microsoft.EntityFrameworkCore.Migrations.IMigrationsDatabaseLock,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
@@ -62,13 +62,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository::InterpretExistsResult(System.Object):System.Boolean",
-          "clrName": "InterpretExistsResult",
+          "targetName": "InterpretExistsResult",
           "metadataToken": 100665215,
           "canonicalSignature": "(System.Object):System.Boolean",
           "normalizedSignature": "InterpretExistsResult|(System.Object):System.Boolean|static=false",
@@ -82,13 +82,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository::GetCreateCommands():System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Migrations.MigrationCommand,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "GetCreateCommands",
+          "targetName": "GetCreateCommands",
           "metadataToken": 100665216,
           "canonicalSignature": "():System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Migrations.MigrationCommand,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "GetCreateCommands|():System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Migrations.MigrationCommand,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
@@ -102,13 +102,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository::GetCreateIfNotExistsScript():System.String",
-          "clrName": "GetCreateIfNotExistsScript",
+          "targetName": "GetCreateIfNotExistsScript",
           "metadataToken": 100665221,
           "canonicalSignature": "():System.String",
           "normalizedSignature": "GetCreateIfNotExistsScript|():System.String|static=false",
@@ -122,13 +122,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository::GetBeginIfNotExistsScript(System.String):System.String",
-          "clrName": "GetBeginIfNotExistsScript",
+          "targetName": "GetBeginIfNotExistsScript",
           "metadataToken": 100665222,
           "canonicalSignature": "(System.String):System.String",
           "normalizedSignature": "GetBeginIfNotExistsScript|(System.String):System.String|static=false",
@@ -142,13 +142,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository::GetBeginIfExistsScript(System.String):System.String",
-          "clrName": "GetBeginIfExistsScript",
+          "targetName": "GetBeginIfExistsScript",
           "metadataToken": 100665223,
           "canonicalSignature": "(System.String):System.String",
           "normalizedSignature": "GetBeginIfExistsScript|(System.String):System.String|static=false",
@@ -162,13 +162,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository::GetEndIfScript():System.String",
-          "clrName": "GetEndIfScript",
+          "targetName": "GetEndIfScript",
           "metadataToken": 100665224,
           "canonicalSignature": "():System.String",
           "normalizedSignature": "GetEndIfScript|():System.String|static=false",
@@ -182,13 +182,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository::GetAppliedMigrations():System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Migrations.HistoryRow,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "GetAppliedMigrations",
+          "targetName": "GetAppliedMigrations",
           "metadataToken": 100665225,
           "canonicalSignature": "():System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Migrations.HistoryRow,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "GetAppliedMigrations|():System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Migrations.HistoryRow,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
@@ -202,13 +202,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository::GetAppliedMigrationsAsync(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Migrations.HistoryRow,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "GetAppliedMigrationsAsync",
+          "targetName": "GetAppliedMigrationsAsync",
           "metadataToken": 100665226,
           "canonicalSignature": "(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Migrations.HistoryRow,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "GetAppliedMigrationsAsync|(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Collections.Generic.IReadOnlyList_1[[Microsoft.EntityFrameworkCore.Migrations.HistoryRow,Microsoft.EntityFrameworkCore.Relational,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
@@ -222,13 +222,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository::Exists():System.Boolean",
-          "clrName": "Exists",
+          "targetName": "Exists",
           "metadataToken": 100665227,
           "canonicalSignature": "():System.Boolean",
           "normalizedSignature": "Exists|():System.Boolean|static=false",
@@ -242,13 +242,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository::ExistsAsync(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "ExistsAsync",
+          "targetName": "ExistsAsync",
           "metadataToken": 100665228,
           "canonicalSignature": "(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "ExistsAsync|(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
@@ -262,15 +262,15 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository::LockReleaseBehavior:Microsoft.EntityFrameworkCore.Migrations.LockReleaseBehavior",
-          "clrName": "LockReleaseBehavior",
+          "targetName": "LockReleaseBehavior",
           "metadataToken": 385876138,
           "canonicalSignature": ":Microsoft.EntityFrameworkCore.Migrations.LockReleaseBehavior",
           "normalizedSignature": "LockReleaseBehavior|:Microsoft.EntityFrameworkCore.Migrations.LockReleaseBehavior|static=false|accessor=get",
@@ -284,12 +284,12 @@
           "isVirtual": true,
           "isOverride": true,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository::ExistsSql:System.String",
-          "clrName": "ExistsSql",
+          "targetName": "ExistsSql",
           "metadataToken": 385876139,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "ExistsSql|:System.String|static=false|accessor=get",
@@ -303,8 +303,8 @@
           "isVirtual": true,
           "isOverride": true,
           "visibility": "Protected",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
       ],
       "fields": [],
@@ -318,15 +318,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlHistoryRepository",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
       ]
     },
     {
       "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlMigrator",
-      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlMigrator",
-      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlMigrator",
+      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -336,18 +336,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Migrations.Internal.Migrator",
-        "clrName": "Microsoft.EntityFrameworkCore.Migrations.Internal.Migrator"
+        "targetName": "Microsoft.EntityFrameworkCore.Migrations.Internal.Migrator"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Migrations.IMigrator",
-          "clrName": "Microsoft.EntityFrameworkCore.Migrations.IMigrator"
+          "targetName": "Microsoft.EntityFrameworkCore.Migrations.IMigrator"
         }
       ],
       "methods": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlMigrator::Migrate(System.String):System.Void",
-          "clrName": "Migrate",
+          "targetName": "Migrate",
           "metadataToken": 100665232,
           "canonicalSignature": "(System.String):System.Void",
           "normalizedSignature": "Migrate|(System.String):System.Void|static=false",
@@ -361,13 +361,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlMigrator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlMigrator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlMigrator::MigrateAsync(System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task",
-          "clrName": "MigrateAsync",
+          "targetName": "MigrateAsync",
           "metadataToken": 100665233,
           "canonicalSignature": "(System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "normalizedSignature": "MigrateAsync|(System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
@@ -381,8 +381,8 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlMigrator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlMigrator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         }
       ],
@@ -398,8 +398,8 @@
           "isStatic": false,
           "parameterCount": 17,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlMigrator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Internal.NpgsqlMigrator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
       ]
     }

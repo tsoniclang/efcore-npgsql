@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.ValueConversion.NpgsqlArrayConverter\u00603",
-      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.ValueConversion.NpgsqlArrayConverter\u00603",
-      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.ValueConversion.NpgsqlArrayConverter\u00603",
+      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -17,7 +17,7 @@
       "arity": 3,
       "baseType": {
         "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter\u00602",
-        "clrName": "Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter\u00602",
+        "targetName": "Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter\u00602",
         "typeArguments": [
           "TModelCollection",
           "TProviderCollection"
@@ -32,7 +32,7 @@
       "properties": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.ValueConversion.NpgsqlArrayConverter\u00603::ElementConverter:Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter",
-          "clrName": "ElementConverter",
+          "targetName": "ElementConverter",
           "metadataToken": 385875992,
           "canonicalSignature": ":Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter",
           "normalizedSignature": "ElementConverter|:Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter|static=false|accessor=get",
@@ -46,8 +46,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.ValueConversion.NpgsqlArrayConverter\u00603",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.ValueConversion.NpgsqlArrayConverter\u00603",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
       ],
       "fields": [],
@@ -61,8 +61,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.ValueConversion.NpgsqlArrayConverter\u00603",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.ValueConversion.NpgsqlArrayConverter\u00603",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.ValueConversion.NpgsqlArrayConverter\u00603::.ctor(Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter):void",
@@ -72,8 +72,8 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.ValueConversion.NpgsqlArrayConverter\u00603",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.ValueConversion.NpgsqlArrayConverter\u00603",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
       ]
     }

@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Npgsql:Npgsql.Internal.Postgres.DataTypeName",
-      "clrName": "Npgsql.Internal.Postgres.DataTypeName",
-      "assemblyName": "Npgsql",
+      "targetName": "Npgsql.Internal.Postgres.DataTypeName",
+      "ownerIdentity": "Npgsql",
       "metadataToken": 0,
       "kind": "Struct",
       "accessibility": "Public",
@@ -17,12 +17,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.ValueType",
-        "clrName": "System.ValueType"
+        "targetName": "System.ValueType"
       },
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.IEquatable\u00601",
-          "clrName": "System.IEquatable\u00601",
+          "targetName": "System.IEquatable\u00601",
           "typeArguments": [
             "DataTypeName"
           ]
@@ -31,7 +31,7 @@
       "methods": [
         {
           "stableId": "Npgsql:Npgsql.Internal.Postgres.DataTypeName::GetUnqualifiedName(System.String):System.String",
-          "clrName": "GetUnqualifiedName",
+          "targetName": "GetUnqualifiedName",
           "metadataToken": 100667263,
           "canonicalSignature": "(System.String):System.String",
           "normalizedSignature": "GetUnqualifiedName|(System.String):System.String|static=true",
@@ -45,13 +45,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Internal.Postgres.DataTypeName",
-          "declaringAssemblyName": "Npgsql",
+          "ownerQualifiedName": "Npgsql.Internal.Postgres.DataTypeName",
+          "ownerIdentity": "Npgsql",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql:Npgsql.Internal.Postgres.DataTypeName::ToArrayName():Npgsql.Internal.Postgres.DataTypeName",
-          "clrName": "ToArrayName",
+          "targetName": "ToArrayName",
           "metadataToken": 100667267,
           "canonicalSignature": "():Npgsql.Internal.Postgres.DataTypeName",
           "normalizedSignature": "ToArrayName|():Npgsql.Internal.Postgres.DataTypeName|static=false",
@@ -65,13 +65,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Internal.Postgres.DataTypeName",
-          "declaringAssemblyName": "Npgsql",
+          "ownerQualifiedName": "Npgsql.Internal.Postgres.DataTypeName",
+          "ownerIdentity": "Npgsql",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql:Npgsql.Internal.Postgres.DataTypeName::ToDefaultMultirangeName():Npgsql.Internal.Postgres.DataTypeName",
-          "clrName": "ToDefaultMultirangeName",
+          "targetName": "ToDefaultMultirangeName",
           "metadataToken": 100667268,
           "canonicalSignature": "():Npgsql.Internal.Postgres.DataTypeName",
           "normalizedSignature": "ToDefaultMultirangeName|():Npgsql.Internal.Postgres.DataTypeName|static=false",
@@ -85,13 +85,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Internal.Postgres.DataTypeName",
-          "declaringAssemblyName": "Npgsql",
+          "ownerQualifiedName": "Npgsql.Internal.Postgres.DataTypeName",
+          "ownerIdentity": "Npgsql",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql:Npgsql.Internal.Postgres.DataTypeName::FromDisplayName(System.String,System.String):Npgsql.Internal.Postgres.DataTypeName",
-          "clrName": "FromDisplayName",
+          "targetName": "FromDisplayName",
           "metadataToken": 100667269,
           "canonicalSignature": "(System.String,System.String):Npgsql.Internal.Postgres.DataTypeName",
           "normalizedSignature": "FromDisplayName|(System.String,System.String):Npgsql.Internal.Postgres.DataTypeName|static=true",
@@ -105,13 +105,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Internal.Postgres.DataTypeName",
-          "declaringAssemblyName": "Npgsql",
+          "ownerQualifiedName": "Npgsql.Internal.Postgres.DataTypeName",
+          "ownerIdentity": "Npgsql",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql:Npgsql.Internal.Postgres.DataTypeName::ToString():System.String",
-          "clrName": "ToString",
+          "targetName": "ToString",
           "metadataToken": 100667274,
           "canonicalSignature": "():System.String",
           "normalizedSignature": "ToString|():System.String|static=false",
@@ -125,13 +125,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Internal.Postgres.DataTypeName",
-          "declaringAssemblyName": "Npgsql",
+          "ownerQualifiedName": "Npgsql.Internal.Postgres.DataTypeName",
+          "ownerIdentity": "Npgsql",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql:Npgsql.Internal.Postgres.DataTypeName::Equals(Npgsql.Internal.Postgres.DataTypeName):System.Boolean",
-          "clrName": "Equals",
+          "targetName": "Equals",
           "metadataToken": 100667275,
           "canonicalSignature": "(Npgsql.Internal.Postgres.DataTypeName):System.Boolean",
           "normalizedSignature": "Equals|(Npgsql.Internal.Postgres.DataTypeName):System.Boolean|static=false",
@@ -145,13 +145,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Internal.Postgres.DataTypeName",
-          "declaringAssemblyName": "Npgsql",
+          "ownerQualifiedName": "Npgsql.Internal.Postgres.DataTypeName",
+          "ownerIdentity": "Npgsql",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql:Npgsql.Internal.Postgres.DataTypeName::Equals(System.Object):System.Boolean",
-          "clrName": "Equals",
+          "targetName": "Equals",
           "metadataToken": 100667276,
           "canonicalSignature": "(System.Object):System.Boolean",
           "normalizedSignature": "Equals|(System.Object):System.Boolean|static=false",
@@ -165,13 +165,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Internal.Postgres.DataTypeName",
-          "declaringAssemblyName": "Npgsql",
+          "ownerQualifiedName": "Npgsql.Internal.Postgres.DataTypeName",
+          "ownerIdentity": "Npgsql",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql:Npgsql.Internal.Postgres.DataTypeName::GetHashCode():System.Int32",
-          "clrName": "GetHashCode",
+          "targetName": "GetHashCode",
           "metadataToken": 100667277,
           "canonicalSignature": "():System.Int32",
           "normalizedSignature": "GetHashCode|():System.Int32|static=false",
@@ -185,15 +185,15 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Internal.Postgres.DataTypeName",
-          "declaringAssemblyName": "Npgsql",
+          "ownerQualifiedName": "Npgsql.Internal.Postgres.DataTypeName",
+          "ownerIdentity": "Npgsql",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Npgsql:Npgsql.Internal.Postgres.DataTypeName::DisplayName:System.String",
-          "clrName": "DisplayName",
+          "targetName": "DisplayName",
           "metadataToken": 385876927,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "DisplayName|:System.String|static=false|accessor=get",
@@ -207,12 +207,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Internal.Postgres.DataTypeName",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Internal.Postgres.DataTypeName",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.Internal.Postgres.DataTypeName::UnqualifiedDisplayName:System.String",
-          "clrName": "UnqualifiedDisplayName",
+          "targetName": "UnqualifiedDisplayName",
           "metadataToken": 385876928,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "UnqualifiedDisplayName|:System.String|static=false|accessor=get",
@@ -226,12 +226,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Internal.Postgres.DataTypeName",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Internal.Postgres.DataTypeName",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.Internal.Postgres.DataTypeName::Schema:System.String",
-          "clrName": "Schema",
+          "targetName": "Schema",
           "metadataToken": 385876930,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Schema|:System.String|static=false|accessor=get",
@@ -245,12 +245,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Internal.Postgres.DataTypeName",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Internal.Postgres.DataTypeName",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.Internal.Postgres.DataTypeName::UnqualifiedName:System.String",
-          "clrName": "UnqualifiedName",
+          "targetName": "UnqualifiedName",
           "metadataToken": 385876932,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "UnqualifiedName|:System.String|static=false|accessor=get",
@@ -264,12 +264,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Internal.Postgres.DataTypeName",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Internal.Postgres.DataTypeName",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.Internal.Postgres.DataTypeName::Value:System.String",
-          "clrName": "Value",
+          "targetName": "Value",
           "metadataToken": 385876933,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Value|:System.String|static=false|accessor=get",
@@ -283,12 +283,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Internal.Postgres.DataTypeName",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Internal.Postgres.DataTypeName",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.Internal.Postgres.DataTypeName::Unspecified:Npgsql.Internal.Postgres.DataTypeName",
-          "clrName": "Unspecified",
+          "targetName": "Unspecified",
           "metadataToken": 385876935,
           "canonicalSignature": ":Npgsql.Internal.Postgres.DataTypeName",
           "normalizedSignature": "Unspecified|:Npgsql.Internal.Postgres.DataTypeName|static=true|accessor=get",
@@ -302,12 +302,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Internal.Postgres.DataTypeName",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Internal.Postgres.DataTypeName",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.Internal.Postgres.DataTypeName::IsUnqualified:System.Boolean",
-          "clrName": "IsUnqualified",
+          "targetName": "IsUnqualified",
           "metadataToken": 385876936,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "IsUnqualified|:System.Boolean|static=false|accessor=get",
@@ -321,12 +321,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Internal.Postgres.DataTypeName",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Internal.Postgres.DataTypeName",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.Internal.Postgres.DataTypeName::IsArray:System.Boolean",
-          "clrName": "IsArray",
+          "targetName": "IsArray",
           "metadataToken": 385876937,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "IsArray|:System.Boolean|static=false|accessor=get",
@@ -340,8 +340,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Internal.Postgres.DataTypeName",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Internal.Postgres.DataTypeName",
+          "ownerIdentity": "Npgsql"
         }
       ],
       "fields": [],
@@ -355,15 +355,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Internal.Postgres.DataTypeName",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Internal.Postgres.DataTypeName",
+          "ownerIdentity": "Npgsql"
         }
       ]
     },
     {
       "stableId": "Npgsql:Npgsql.Internal.Postgres.Field",
-      "clrName": "Npgsql.Internal.Postgres.Field",
-      "assemblyName": "Npgsql",
+      "targetName": "Npgsql.Internal.Postgres.Field",
+      "ownerIdentity": "Npgsql",
       "metadataToken": 0,
       "kind": "Struct",
       "accessibility": "Public",
@@ -373,13 +373,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.ValueType",
-        "clrName": "System.ValueType"
+        "targetName": "System.ValueType"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Npgsql:Npgsql.Internal.Postgres.Field::Name:System.String",
-          "clrName": "Name",
+          "targetName": "Name",
           "metadataToken": 385877004,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Name|:System.String|static=false|accessor=getset",
@@ -393,12 +393,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Internal.Postgres.Field",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Internal.Postgres.Field",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.Internal.Postgres.Field::PgTypeId:Npgsql.Internal.Postgres.PgTypeId",
-          "clrName": "PgTypeId",
+          "targetName": "PgTypeId",
           "metadataToken": 385877005,
           "canonicalSignature": ":Npgsql.Internal.Postgres.PgTypeId",
           "normalizedSignature": "PgTypeId|:Npgsql.Internal.Postgres.PgTypeId|static=false|accessor=getset",
@@ -412,12 +412,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Internal.Postgres.Field",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Internal.Postgres.Field",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.Internal.Postgres.Field::TypeModifier:System.Int32",
-          "clrName": "TypeModifier",
+          "targetName": "TypeModifier",
           "metadataToken": 385877006,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "TypeModifier|:System.Int32|static=false|accessor=getset",
@@ -431,8 +431,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Internal.Postgres.Field",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Internal.Postgres.Field",
+          "ownerIdentity": "Npgsql"
         }
       ],
       "fields": [],
@@ -446,15 +446,15 @@
           "isStatic": false,
           "parameterCount": 3,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Internal.Postgres.Field",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Internal.Postgres.Field",
+          "ownerIdentity": "Npgsql"
         }
       ]
     },
     {
       "stableId": "Npgsql:Npgsql.Internal.Postgres.Oid",
-      "clrName": "Npgsql.Internal.Postgres.Oid",
-      "assemblyName": "Npgsql",
+      "targetName": "Npgsql.Internal.Postgres.Oid",
+      "ownerIdentity": "Npgsql",
       "metadataToken": 0,
       "kind": "Struct",
       "accessibility": "Public",
@@ -464,12 +464,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.ValueType",
-        "clrName": "System.ValueType"
+        "targetName": "System.ValueType"
       },
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.IEquatable\u00601",
-          "clrName": "System.IEquatable\u00601",
+          "targetName": "System.IEquatable\u00601",
           "typeArguments": [
             "Oid"
           ]
@@ -478,7 +478,7 @@
       "methods": [
         {
           "stableId": "Npgsql:Npgsql.Internal.Postgres.Oid::ToString():System.String",
-          "clrName": "ToString",
+          "targetName": "ToString",
           "metadataToken": 100667360,
           "canonicalSignature": "():System.String",
           "normalizedSignature": "ToString|():System.String|static=false",
@@ -492,13 +492,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Internal.Postgres.Oid",
-          "declaringAssemblyName": "Npgsql",
+          "ownerQualifiedName": "Npgsql.Internal.Postgres.Oid",
+          "ownerIdentity": "Npgsql",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql:Npgsql.Internal.Postgres.Oid::Equals(Npgsql.Internal.Postgres.Oid):System.Boolean",
-          "clrName": "Equals",
+          "targetName": "Equals",
           "metadataToken": 100667361,
           "canonicalSignature": "(Npgsql.Internal.Postgres.Oid):System.Boolean",
           "normalizedSignature": "Equals|(Npgsql.Internal.Postgres.Oid):System.Boolean|static=false",
@@ -512,13 +512,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Internal.Postgres.Oid",
-          "declaringAssemblyName": "Npgsql",
+          "ownerQualifiedName": "Npgsql.Internal.Postgres.Oid",
+          "ownerIdentity": "Npgsql",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql:Npgsql.Internal.Postgres.Oid::Equals(System.Object):System.Boolean",
-          "clrName": "Equals",
+          "targetName": "Equals",
           "metadataToken": 100667362,
           "canonicalSignature": "(System.Object):System.Boolean",
           "normalizedSignature": "Equals|(System.Object):System.Boolean|static=false",
@@ -532,13 +532,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Internal.Postgres.Oid",
-          "declaringAssemblyName": "Npgsql",
+          "ownerQualifiedName": "Npgsql.Internal.Postgres.Oid",
+          "ownerIdentity": "Npgsql",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql:Npgsql.Internal.Postgres.Oid::GetHashCode():System.Int32",
-          "clrName": "GetHashCode",
+          "targetName": "GetHashCode",
           "metadataToken": 100667363,
           "canonicalSignature": "():System.Int32",
           "normalizedSignature": "GetHashCode|():System.Int32|static=false",
@@ -552,15 +552,15 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Internal.Postgres.Oid",
-          "declaringAssemblyName": "Npgsql",
+          "ownerQualifiedName": "Npgsql.Internal.Postgres.Oid",
+          "ownerIdentity": "Npgsql",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Npgsql:Npgsql.Internal.Postgres.Oid::Value:System.UInt32",
-          "clrName": "Value",
+          "targetName": "Value",
           "metadataToken": 385877007,
           "canonicalSignature": ":System.UInt32",
           "normalizedSignature": "Value|:System.UInt32|static=false|accessor=getset",
@@ -574,12 +574,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Internal.Postgres.Oid",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Internal.Postgres.Oid",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.Internal.Postgres.Oid::Unspecified:Npgsql.Internal.Postgres.Oid",
-          "clrName": "Unspecified",
+          "targetName": "Unspecified",
           "metadataToken": 385877008,
           "canonicalSignature": ":Npgsql.Internal.Postgres.Oid",
           "normalizedSignature": "Unspecified|:Npgsql.Internal.Postgres.Oid|static=true|accessor=get",
@@ -593,8 +593,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Internal.Postgres.Oid",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Internal.Postgres.Oid",
+          "ownerIdentity": "Npgsql"
         }
       ],
       "fields": [],
@@ -608,15 +608,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Internal.Postgres.Oid",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Internal.Postgres.Oid",
+          "ownerIdentity": "Npgsql"
         }
       ]
     },
     {
       "stableId": "Npgsql:Npgsql.Internal.Postgres.PgTypeId",
-      "clrName": "Npgsql.Internal.Postgres.PgTypeId",
-      "assemblyName": "Npgsql",
+      "targetName": "Npgsql.Internal.Postgres.PgTypeId",
+      "ownerIdentity": "Npgsql",
       "metadataToken": 0,
       "kind": "Struct",
       "accessibility": "Public",
@@ -626,12 +626,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.ValueType",
-        "clrName": "System.ValueType"
+        "targetName": "System.ValueType"
       },
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.IEquatable\u00601",
-          "clrName": "System.IEquatable\u00601",
+          "targetName": "System.IEquatable\u00601",
           "typeArguments": [
             "PgTypeId"
           ]
@@ -640,7 +640,7 @@
       "methods": [
         {
           "stableId": "Npgsql:Npgsql.Internal.Postgres.PgTypeId::ToString():System.String",
-          "clrName": "ToString",
+          "targetName": "ToString",
           "metadataToken": 100667374,
           "canonicalSignature": "():System.String",
           "normalizedSignature": "ToString|():System.String|static=false",
@@ -654,13 +654,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Internal.Postgres.PgTypeId",
-          "declaringAssemblyName": "Npgsql",
+          "ownerQualifiedName": "Npgsql.Internal.Postgres.PgTypeId",
+          "ownerIdentity": "Npgsql",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql:Npgsql.Internal.Postgres.PgTypeId::Equals(Npgsql.Internal.Postgres.PgTypeId):System.Boolean",
-          "clrName": "Equals",
+          "targetName": "Equals",
           "metadataToken": 100667375,
           "canonicalSignature": "(Npgsql.Internal.Postgres.PgTypeId):System.Boolean",
           "normalizedSignature": "Equals|(Npgsql.Internal.Postgres.PgTypeId):System.Boolean|static=false",
@@ -674,13 +674,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Internal.Postgres.PgTypeId",
-          "declaringAssemblyName": "Npgsql",
+          "ownerQualifiedName": "Npgsql.Internal.Postgres.PgTypeId",
+          "ownerIdentity": "Npgsql",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql:Npgsql.Internal.Postgres.PgTypeId::Equals(System.Object):System.Boolean",
-          "clrName": "Equals",
+          "targetName": "Equals",
           "metadataToken": 100667376,
           "canonicalSignature": "(System.Object):System.Boolean",
           "normalizedSignature": "Equals|(System.Object):System.Boolean|static=false",
@@ -694,13 +694,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Internal.Postgres.PgTypeId",
-          "declaringAssemblyName": "Npgsql",
+          "ownerQualifiedName": "Npgsql.Internal.Postgres.PgTypeId",
+          "ownerIdentity": "Npgsql",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql:Npgsql.Internal.Postgres.PgTypeId::GetHashCode():System.Int32",
-          "clrName": "GetHashCode",
+          "targetName": "GetHashCode",
           "metadataToken": 100667377,
           "canonicalSignature": "():System.Int32",
           "normalizedSignature": "GetHashCode|():System.Int32|static=false",
@@ -714,15 +714,15 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Internal.Postgres.PgTypeId",
-          "declaringAssemblyName": "Npgsql",
+          "ownerQualifiedName": "Npgsql.Internal.Postgres.PgTypeId",
+          "ownerIdentity": "Npgsql",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Npgsql:Npgsql.Internal.Postgres.PgTypeId::IsDataTypeName:System.Boolean",
-          "clrName": "IsDataTypeName",
+          "targetName": "IsDataTypeName",
           "metadataToken": 385877009,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "IsDataTypeName|:System.Boolean|static=false|accessor=get",
@@ -736,12 +736,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Internal.Postgres.PgTypeId",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Internal.Postgres.PgTypeId",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.Internal.Postgres.PgTypeId::IsOid:System.Boolean",
-          "clrName": "IsOid",
+          "targetName": "IsOid",
           "metadataToken": 385877010,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "IsOid|:System.Boolean|static=false|accessor=get",
@@ -755,12 +755,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Internal.Postgres.PgTypeId",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Internal.Postgres.PgTypeId",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.Internal.Postgres.PgTypeId::DataTypeName:Npgsql.Internal.Postgres.DataTypeName",
-          "clrName": "DataTypeName",
+          "targetName": "DataTypeName",
           "metadataToken": 385877011,
           "canonicalSignature": ":Npgsql.Internal.Postgres.DataTypeName",
           "normalizedSignature": "DataTypeName|:Npgsql.Internal.Postgres.DataTypeName|static=false|accessor=get",
@@ -774,12 +774,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Internal.Postgres.PgTypeId",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Internal.Postgres.PgTypeId",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.Internal.Postgres.PgTypeId::Oid:Npgsql.Internal.Postgres.Oid",
-          "clrName": "Oid",
+          "targetName": "Oid",
           "metadataToken": 385877012,
           "canonicalSignature": ":Npgsql.Internal.Postgres.Oid",
           "normalizedSignature": "Oid|:Npgsql.Internal.Postgres.Oid|static=false|accessor=get",
@@ -793,8 +793,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Internal.Postgres.PgTypeId",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Internal.Postgres.PgTypeId",
+          "ownerIdentity": "Npgsql"
         }
       ],
       "fields": [],
@@ -808,8 +808,8 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Internal.Postgres.PgTypeId",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Internal.Postgres.PgTypeId",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.Internal.Postgres.PgTypeId::.ctor(Npgsql.Internal.Postgres.Oid):void",
@@ -819,8 +819,8 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.Internal.Postgres.PgTypeId",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.Internal.Postgres.PgTypeId",
+          "ownerIdentity": "Npgsql"
         }
       ]
     }

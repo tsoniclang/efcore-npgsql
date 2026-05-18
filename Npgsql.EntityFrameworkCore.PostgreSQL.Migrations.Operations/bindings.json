@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlCreateDatabaseOperation",
-      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlCreateDatabaseOperation",
-      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlCreateDatabaseOperation",
+      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -17,27 +17,27 @@
       "arity": 0,
       "baseType": {
         "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Migrations.Operations.DatabaseOperation",
-        "clrName": "Microsoft.EntityFrameworkCore.Migrations.Operations.DatabaseOperation"
+        "targetName": "Microsoft.EntityFrameworkCore.Migrations.Operations.DatabaseOperation"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Infrastructure.IAnnotatable",
-          "clrName": "Microsoft.EntityFrameworkCore.Infrastructure.IAnnotatable"
+          "targetName": "Microsoft.EntityFrameworkCore.Infrastructure.IAnnotatable"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Infrastructure.IReadOnlyAnnotatable",
-          "clrName": "Microsoft.EntityFrameworkCore.Infrastructure.IReadOnlyAnnotatable"
+          "targetName": "Microsoft.EntityFrameworkCore.Infrastructure.IReadOnlyAnnotatable"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.IMutableAnnotatable",
-          "clrName": "Microsoft.EntityFrameworkCore.Metadata.IMutableAnnotatable"
+          "targetName": "Microsoft.EntityFrameworkCore.Metadata.IMutableAnnotatable"
         }
       ],
       "methods": [],
       "properties": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlCreateDatabaseOperation::Name:System.String",
-          "clrName": "Name",
+          "targetName": "Name",
           "metadataToken": 385876134,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Name|:System.String|static=false|accessor=getset",
@@ -51,12 +51,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlCreateDatabaseOperation",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlCreateDatabaseOperation",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlCreateDatabaseOperation::Template:System.String",
-          "clrName": "Template",
+          "targetName": "Template",
           "metadataToken": 385876135,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Template|:System.String|static=false|accessor=getset",
@@ -70,12 +70,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlCreateDatabaseOperation",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlCreateDatabaseOperation",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         },
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlCreateDatabaseOperation::Tablespace:System.String",
-          "clrName": "Tablespace",
+          "targetName": "Tablespace",
           "metadataToken": 385876136,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Tablespace|:System.String|static=false|accessor=getset",
@@ -89,8 +89,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlCreateDatabaseOperation",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlCreateDatabaseOperation",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
       ],
       "fields": [],
@@ -104,15 +104,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlCreateDatabaseOperation",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlCreateDatabaseOperation",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
       ]
     },
     {
       "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlDropDatabaseOperation",
-      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlDropDatabaseOperation",
-      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlDropDatabaseOperation",
+      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -122,27 +122,27 @@
       "arity": 0,
       "baseType": {
         "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Migrations.Operations.MigrationOperation",
-        "clrName": "Microsoft.EntityFrameworkCore.Migrations.Operations.MigrationOperation"
+        "targetName": "Microsoft.EntityFrameworkCore.Migrations.Operations.MigrationOperation"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Infrastructure.IAnnotatable",
-          "clrName": "Microsoft.EntityFrameworkCore.Infrastructure.IAnnotatable"
+          "targetName": "Microsoft.EntityFrameworkCore.Infrastructure.IAnnotatable"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Infrastructure.IReadOnlyAnnotatable",
-          "clrName": "Microsoft.EntityFrameworkCore.Infrastructure.IReadOnlyAnnotatable"
+          "targetName": "Microsoft.EntityFrameworkCore.Infrastructure.IReadOnlyAnnotatable"
         },
         {
           "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.IMutableAnnotatable",
-          "clrName": "Microsoft.EntityFrameworkCore.Metadata.IMutableAnnotatable"
+          "targetName": "Microsoft.EntityFrameworkCore.Metadata.IMutableAnnotatable"
         }
       ],
       "methods": [],
       "properties": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlDropDatabaseOperation::Name:System.String",
-          "clrName": "Name",
+          "targetName": "Name",
           "metadataToken": 385876137,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Name|:System.String|static=false|accessor=getset",
@@ -156,8 +156,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlDropDatabaseOperation",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlDropDatabaseOperation",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
       ],
       "fields": [],
@@ -171,8 +171,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlDropDatabaseOperation",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlDropDatabaseOperation",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
       ]
     }

@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Npgsql:Npgsql.TypeMapping.INpgsqlTypeMapper",
-      "clrName": "Npgsql.TypeMapping.INpgsqlTypeMapper",
-      "assemblyName": "Npgsql",
+      "targetName": "Npgsql.TypeMapping.INpgsqlTypeMapper",
+      "ownerIdentity": "Npgsql",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -18,7 +18,7 @@
       "methods": [
         {
           "stableId": "Npgsql:Npgsql.TypeMapping.INpgsqlTypeMapper::MapEnum(System.String,Npgsql.INpgsqlNameTranslator):Npgsql.TypeMapping.INpgsqlTypeMapper",
-          "clrName": "MapEnum",
+          "targetName": "MapEnum",
           "metadataToken": 100665710,
           "canonicalSignature": "(System.String,Npgsql.INpgsqlNameTranslator):Npgsql.TypeMapping.INpgsqlTypeMapper",
           "normalizedSignature": "MapEnum|(System.String,Npgsql.INpgsqlNameTranslator):Npgsql.TypeMapping.INpgsqlTypeMapper|static=false",
@@ -32,13 +32,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.TypeMapping.INpgsqlTypeMapper",
-          "declaringAssemblyName": "Npgsql",
+          "ownerQualifiedName": "Npgsql.TypeMapping.INpgsqlTypeMapper",
+          "ownerIdentity": "Npgsql",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql:Npgsql.TypeMapping.INpgsqlTypeMapper::UnmapEnum(System.String,Npgsql.INpgsqlNameTranslator):System.Boolean",
-          "clrName": "UnmapEnum",
+          "targetName": "UnmapEnum",
           "metadataToken": 100665711,
           "canonicalSignature": "(System.String,Npgsql.INpgsqlNameTranslator):System.Boolean",
           "normalizedSignature": "UnmapEnum|(System.String,Npgsql.INpgsqlNameTranslator):System.Boolean|static=false",
@@ -52,13 +52,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.TypeMapping.INpgsqlTypeMapper",
-          "declaringAssemblyName": "Npgsql",
+          "ownerQualifiedName": "Npgsql.TypeMapping.INpgsqlTypeMapper",
+          "ownerIdentity": "Npgsql",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql:Npgsql.TypeMapping.INpgsqlTypeMapper::MapEnum(System.Type,System.String,Npgsql.INpgsqlNameTranslator):Npgsql.TypeMapping.INpgsqlTypeMapper",
-          "clrName": "MapEnum",
+          "targetName": "MapEnum",
           "metadataToken": 100665712,
           "canonicalSignature": "(System.Type,System.String,Npgsql.INpgsqlNameTranslator):Npgsql.TypeMapping.INpgsqlTypeMapper",
           "normalizedSignature": "MapEnum|(System.Type,System.String,Npgsql.INpgsqlNameTranslator):Npgsql.TypeMapping.INpgsqlTypeMapper|static=false",
@@ -72,13 +72,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.TypeMapping.INpgsqlTypeMapper",
-          "declaringAssemblyName": "Npgsql",
+          "ownerQualifiedName": "Npgsql.TypeMapping.INpgsqlTypeMapper",
+          "ownerIdentity": "Npgsql",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql:Npgsql.TypeMapping.INpgsqlTypeMapper::UnmapEnum(System.Type,System.String,Npgsql.INpgsqlNameTranslator):System.Boolean",
-          "clrName": "UnmapEnum",
+          "targetName": "UnmapEnum",
           "metadataToken": 100665713,
           "canonicalSignature": "(System.Type,System.String,Npgsql.INpgsqlNameTranslator):System.Boolean",
           "normalizedSignature": "UnmapEnum|(System.Type,System.String,Npgsql.INpgsqlNameTranslator):System.Boolean|static=false",
@@ -92,13 +92,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.TypeMapping.INpgsqlTypeMapper",
-          "declaringAssemblyName": "Npgsql",
+          "ownerQualifiedName": "Npgsql.TypeMapping.INpgsqlTypeMapper",
+          "ownerIdentity": "Npgsql",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql:Npgsql.TypeMapping.INpgsqlTypeMapper::AddTypeInfoResolverFactory(Npgsql.Internal.PgTypeInfoResolverFactory):System.Void",
-          "clrName": "AddTypeInfoResolverFactory",
+          "targetName": "AddTypeInfoResolverFactory",
           "metadataToken": 100665718,
           "canonicalSignature": "(Npgsql.Internal.PgTypeInfoResolverFactory):System.Void",
           "normalizedSignature": "AddTypeInfoResolverFactory|(Npgsql.Internal.PgTypeInfoResolverFactory):System.Void|static=false",
@@ -112,13 +112,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.TypeMapping.INpgsqlTypeMapper",
-          "declaringAssemblyName": "Npgsql",
+          "ownerQualifiedName": "Npgsql.TypeMapping.INpgsqlTypeMapper",
+          "ownerIdentity": "Npgsql",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql:Npgsql.TypeMapping.INpgsqlTypeMapper::AddDbTypeResolverFactory(Npgsql.Internal.DbTypeResolverFactory):System.Void",
-          "clrName": "AddDbTypeResolverFactory",
+          "targetName": "AddDbTypeResolverFactory",
           "metadataToken": 100665719,
           "canonicalSignature": "(Npgsql.Internal.DbTypeResolverFactory):System.Void",
           "normalizedSignature": "AddDbTypeResolverFactory|(Npgsql.Internal.DbTypeResolverFactory):System.Void|static=false",
@@ -132,13 +132,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.TypeMapping.INpgsqlTypeMapper",
-          "declaringAssemblyName": "Npgsql",
+          "ownerQualifiedName": "Npgsql.TypeMapping.INpgsqlTypeMapper",
+          "ownerIdentity": "Npgsql",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql:Npgsql.TypeMapping.INpgsqlTypeMapper::ConfigureJsonOptions(System.Text.Json.JsonSerializerOptions):Npgsql.TypeMapping.INpgsqlTypeMapper",
-          "clrName": "ConfigureJsonOptions",
+          "targetName": "ConfigureJsonOptions",
           "metadataToken": 100665720,
           "canonicalSignature": "(System.Text.Json.JsonSerializerOptions):Npgsql.TypeMapping.INpgsqlTypeMapper",
           "normalizedSignature": "ConfigureJsonOptions|(System.Text.Json.JsonSerializerOptions):Npgsql.TypeMapping.INpgsqlTypeMapper|static=false",
@@ -152,13 +152,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.TypeMapping.INpgsqlTypeMapper",
-          "declaringAssemblyName": "Npgsql",
+          "ownerQualifiedName": "Npgsql.TypeMapping.INpgsqlTypeMapper",
+          "ownerIdentity": "Npgsql",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql:Npgsql.TypeMapping.INpgsqlTypeMapper::EnableDynamicJson(System.Type[],System.Type[]):Npgsql.TypeMapping.INpgsqlTypeMapper",
-          "clrName": "EnableDynamicJson",
+          "targetName": "EnableDynamicJson",
           "metadataToken": 100665721,
           "canonicalSignature": "(System.Type[],System.Type[]):Npgsql.TypeMapping.INpgsqlTypeMapper",
           "normalizedSignature": "EnableDynamicJson|(System.Type[],System.Type[]):Npgsql.TypeMapping.INpgsqlTypeMapper|static=false",
@@ -172,13 +172,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.TypeMapping.INpgsqlTypeMapper",
-          "declaringAssemblyName": "Npgsql",
+          "ownerQualifiedName": "Npgsql.TypeMapping.INpgsqlTypeMapper",
+          "ownerIdentity": "Npgsql",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql:Npgsql.TypeMapping.INpgsqlTypeMapper::EnableRecordsAsTuples():Npgsql.TypeMapping.INpgsqlTypeMapper",
-          "clrName": "EnableRecordsAsTuples",
+          "targetName": "EnableRecordsAsTuples",
           "metadataToken": 100665722,
           "canonicalSignature": "():Npgsql.TypeMapping.INpgsqlTypeMapper",
           "normalizedSignature": "EnableRecordsAsTuples|():Npgsql.TypeMapping.INpgsqlTypeMapper|static=false",
@@ -192,13 +192,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.TypeMapping.INpgsqlTypeMapper",
-          "declaringAssemblyName": "Npgsql",
+          "ownerQualifiedName": "Npgsql.TypeMapping.INpgsqlTypeMapper",
+          "ownerIdentity": "Npgsql",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql:Npgsql.TypeMapping.INpgsqlTypeMapper::Reset():System.Void",
-          "clrName": "Reset",
+          "targetName": "Reset",
           "metadataToken": 100665724,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Reset|():System.Void|static=false",
@@ -212,15 +212,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.TypeMapping.INpgsqlTypeMapper",
-          "declaringAssemblyName": "Npgsql",
+          "ownerQualifiedName": "Npgsql.TypeMapping.INpgsqlTypeMapper",
+          "ownerIdentity": "Npgsql",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Npgsql:Npgsql.TypeMapping.INpgsqlTypeMapper::DefaultNameTranslator:Npgsql.INpgsqlNameTranslator",
-          "clrName": "DefaultNameTranslator",
+          "targetName": "DefaultNameTranslator",
           "metadataToken": 385876513,
           "canonicalSignature": ":Npgsql.INpgsqlNameTranslator",
           "normalizedSignature": "DefaultNameTranslator|:Npgsql.INpgsqlNameTranslator|static=false|accessor=getset",
@@ -234,8 +234,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.TypeMapping.INpgsqlTypeMapper",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.TypeMapping.INpgsqlTypeMapper",
+          "ownerIdentity": "Npgsql"
         }
       ],
       "fields": [],
@@ -244,8 +244,8 @@
     },
     {
       "stableId": "Npgsql:Npgsql.TypeMapping.UserTypeMapping",
-      "clrName": "Npgsql.TypeMapping.UserTypeMapping",
-      "assemblyName": "Npgsql",
+      "targetName": "Npgsql.TypeMapping.UserTypeMapping",
+      "ownerIdentity": "Npgsql",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -255,13 +255,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Npgsql:Npgsql.TypeMapping.UserTypeMapping::PgTypeName:System.String",
-          "clrName": "PgTypeName",
+          "targetName": "PgTypeName",
           "metadataToken": 385876514,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "PgTypeName|:System.String|static=false|accessor=get",
@@ -275,12 +275,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.TypeMapping.UserTypeMapping",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.TypeMapping.UserTypeMapping",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.TypeMapping.UserTypeMapping::ClrType:System.Type",
-          "clrName": "ClrType",
+          "targetName": "ClrType",
           "metadataToken": 385876515,
           "canonicalSignature": ":System.Type",
           "normalizedSignature": "ClrType|:System.Type|static=false|accessor=get",
@@ -294,8 +294,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.TypeMapping.UserTypeMapping",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.TypeMapping.UserTypeMapping",
+          "ownerIdentity": "Npgsql"
         }
       ],
       "fields": [],

@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Npgsql:Npgsql.NameTranslation.NpgsqlNullNameTranslator",
-      "clrName": "Npgsql.NameTranslation.NpgsqlNullNameTranslator",
-      "assemblyName": "Npgsql",
+      "targetName": "Npgsql.NameTranslation.NpgsqlNullNameTranslator",
+      "ownerIdentity": "Npgsql",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -17,18 +17,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Npgsql:Npgsql.INpgsqlNameTranslator",
-          "clrName": "Npgsql.INpgsqlNameTranslator"
+          "targetName": "Npgsql.INpgsqlNameTranslator"
         }
       ],
       "methods": [
         {
           "stableId": "Npgsql:Npgsql.NameTranslation.NpgsqlNullNameTranslator::TranslateTypeName(System.String):System.String",
-          "clrName": "TranslateTypeName",
+          "targetName": "TranslateTypeName",
           "metadataToken": 100666267,
           "canonicalSignature": "(System.String):System.String",
           "normalizedSignature": "TranslateTypeName|(System.String):System.String|static=false",
@@ -42,13 +42,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.NameTranslation.NpgsqlNullNameTranslator",
-          "declaringAssemblyName": "Npgsql",
+          "ownerQualifiedName": "Npgsql.NameTranslation.NpgsqlNullNameTranslator",
+          "ownerIdentity": "Npgsql",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql:Npgsql.NameTranslation.NpgsqlNullNameTranslator::TranslateMemberName(System.String):System.String",
-          "clrName": "TranslateMemberName",
+          "targetName": "TranslateMemberName",
           "metadataToken": 100666268,
           "canonicalSignature": "(System.String):System.String",
           "normalizedSignature": "TranslateMemberName|(System.String):System.String|static=false",
@@ -62,13 +62,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.NameTranslation.NpgsqlNullNameTranslator",
-          "declaringAssemblyName": "Npgsql",
+          "ownerQualifiedName": "Npgsql.NameTranslation.NpgsqlNullNameTranslator",
+          "ownerIdentity": "Npgsql",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql:Npgsql.INpgsqlNameTranslator::TranslateTypeName(System.String):System.String",
-          "clrName": "TranslateTypeName",
+          "targetName": "TranslateTypeName",
           "metadataToken": 100663746,
           "canonicalSignature": "(System.String):System.String",
           "normalizedSignature": "TranslateTypeName|(System.String):System.String|static=false",
@@ -82,8 +82,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.INpgsqlNameTranslator",
-          "declaringAssemblyName": "Npgsql",
+          "ownerQualifiedName": "Npgsql.INpgsqlNameTranslator",
+          "ownerIdentity": "Npgsql",
           "isExtensionMethod": false,
           "sourceInterface": "Npgsql.INpgsqlNameTranslator"
         }
@@ -100,15 +100,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.NameTranslation.NpgsqlNullNameTranslator",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.NameTranslation.NpgsqlNullNameTranslator",
+          "ownerIdentity": "Npgsql"
         }
       ]
     },
     {
       "stableId": "Npgsql:Npgsql.NameTranslation.NpgsqlSnakeCaseNameTranslator",
-      "clrName": "Npgsql.NameTranslation.NpgsqlSnakeCaseNameTranslator",
-      "assemblyName": "Npgsql",
+      "targetName": "Npgsql.NameTranslation.NpgsqlSnakeCaseNameTranslator",
+      "ownerIdentity": "Npgsql",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -118,18 +118,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Npgsql:Npgsql.INpgsqlNameTranslator",
-          "clrName": "Npgsql.INpgsqlNameTranslator"
+          "targetName": "Npgsql.INpgsqlNameTranslator"
         }
       ],
       "methods": [
         {
           "stableId": "Npgsql:Npgsql.NameTranslation.NpgsqlSnakeCaseNameTranslator::TranslateTypeName(System.String):System.String",
-          "clrName": "TranslateTypeName",
+          "targetName": "TranslateTypeName",
           "metadataToken": 100666274,
           "canonicalSignature": "(System.String):System.String",
           "normalizedSignature": "TranslateTypeName|(System.String):System.String|static=false",
@@ -143,13 +143,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.NameTranslation.NpgsqlSnakeCaseNameTranslator",
-          "declaringAssemblyName": "Npgsql",
+          "ownerQualifiedName": "Npgsql.NameTranslation.NpgsqlSnakeCaseNameTranslator",
+          "ownerIdentity": "Npgsql",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql:Npgsql.NameTranslation.NpgsqlSnakeCaseNameTranslator::TranslateMemberName(System.String):System.String",
-          "clrName": "TranslateMemberName",
+          "targetName": "TranslateMemberName",
           "metadataToken": 100666275,
           "canonicalSignature": "(System.String):System.String",
           "normalizedSignature": "TranslateMemberName|(System.String):System.String|static=false",
@@ -163,13 +163,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.NameTranslation.NpgsqlSnakeCaseNameTranslator",
-          "declaringAssemblyName": "Npgsql",
+          "ownerQualifiedName": "Npgsql.NameTranslation.NpgsqlSnakeCaseNameTranslator",
+          "ownerIdentity": "Npgsql",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql:Npgsql.NameTranslation.NpgsqlSnakeCaseNameTranslator::ConvertToSnakeCase(System.String,System.Globalization.CultureInfo):System.String",
-          "clrName": "ConvertToSnakeCase",
+          "targetName": "ConvertToSnakeCase",
           "metadataToken": 100666276,
           "canonicalSignature": "(System.String,System.Globalization.CultureInfo):System.String",
           "normalizedSignature": "ConvertToSnakeCase|(System.String,System.Globalization.CultureInfo):System.String|static=true",
@@ -183,13 +183,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.NameTranslation.NpgsqlSnakeCaseNameTranslator",
-          "declaringAssemblyName": "Npgsql",
+          "ownerQualifiedName": "Npgsql.NameTranslation.NpgsqlSnakeCaseNameTranslator",
+          "ownerIdentity": "Npgsql",
           "isExtensionMethod": false
         },
         {
           "stableId": "Npgsql:Npgsql.INpgsqlNameTranslator::TranslateTypeName(System.String):System.String",
-          "clrName": "TranslateTypeName",
+          "targetName": "TranslateTypeName",
           "metadataToken": 100663746,
           "canonicalSignature": "(System.String):System.String",
           "normalizedSignature": "TranslateTypeName|(System.String):System.String|static=false",
@@ -203,8 +203,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.INpgsqlNameTranslator",
-          "declaringAssemblyName": "Npgsql",
+          "ownerQualifiedName": "Npgsql.INpgsqlNameTranslator",
+          "ownerIdentity": "Npgsql",
           "isExtensionMethod": false,
           "sourceInterface": "Npgsql.INpgsqlNameTranslator"
         }
@@ -221,8 +221,8 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.NameTranslation.NpgsqlSnakeCaseNameTranslator",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.NameTranslation.NpgsqlSnakeCaseNameTranslator",
+          "ownerIdentity": "Npgsql"
         },
         {
           "stableId": "Npgsql:Npgsql.NameTranslation.NpgsqlSnakeCaseNameTranslator::.ctor(System.Boolean,System.Globalization.CultureInfo):void",
@@ -232,8 +232,8 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.NameTranslation.NpgsqlSnakeCaseNameTranslator",
-          "declaringAssemblyName": "Npgsql"
+          "ownerQualifiedName": "Npgsql.NameTranslation.NpgsqlSnakeCaseNameTranslator",
+          "ownerIdentity": "Npgsql"
         }
       ]
     }

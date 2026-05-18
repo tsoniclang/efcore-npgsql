@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.NpgsqlSequentialGuidValueGenerator",
-      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.NpgsqlSequentialGuidValueGenerator",
-      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.NpgsqlSequentialGuidValueGenerator",
+      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -17,7 +17,7 @@
       "arity": 0,
       "baseType": {
         "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.ValueGeneration.ValueGenerator\u00601",
-        "clrName": "Microsoft.EntityFrameworkCore.ValueGeneration.ValueGenerator\u00601",
+        "targetName": "Microsoft.EntityFrameworkCore.ValueGeneration.ValueGenerator\u00601",
         "typeArguments": [
           "Guid"
         ]
@@ -25,7 +25,7 @@
       "methods": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.NpgsqlSequentialGuidValueGenerator::Next(Microsoft.EntityFrameworkCore.ChangeTracking.EntityEntry):System.Guid",
-          "clrName": "Next",
+          "targetName": "Next",
           "metadataToken": 100664057,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.ChangeTracking.EntityEntry):System.Guid",
           "normalizedSignature": "Next|(Microsoft.EntityFrameworkCore.ChangeTracking.EntityEntry):System.Guid|static=false",
@@ -39,15 +39,15 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.NpgsqlSequentialGuidValueGenerator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.NpgsqlSequentialGuidValueGenerator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.NpgsqlSequentialGuidValueGenerator::GeneratesTemporaryValues:System.Boolean",
-          "clrName": "GeneratesTemporaryValues",
+          "targetName": "GeneratesTemporaryValues",
           "metadataToken": 385875986,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "GeneratesTemporaryValues|:System.Boolean|static=false|accessor=get",
@@ -61,8 +61,8 @@
           "isVirtual": true,
           "isOverride": true,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.NpgsqlSequentialGuidValueGenerator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.NpgsqlSequentialGuidValueGenerator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
       ],
       "fields": [],
@@ -76,15 +76,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.NpgsqlSequentialGuidValueGenerator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.NpgsqlSequentialGuidValueGenerator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
       ]
     },
     {
       "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.NpgsqlSequentialStringValueGenerator",
-      "clrName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.NpgsqlSequentialStringValueGenerator",
-      "assemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.NpgsqlSequentialStringValueGenerator",
+      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -94,7 +94,7 @@
       "arity": 0,
       "baseType": {
         "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.ValueGeneration.ValueGenerator\u00601",
-        "clrName": "Microsoft.EntityFrameworkCore.ValueGeneration.ValueGenerator\u00601",
+        "targetName": "Microsoft.EntityFrameworkCore.ValueGeneration.ValueGenerator\u00601",
         "typeArguments": [
           "String"
         ]
@@ -102,7 +102,7 @@
       "methods": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.NpgsqlSequentialStringValueGenerator::Next(Microsoft.EntityFrameworkCore.ChangeTracking.EntityEntry):System.String",
-          "clrName": "Next",
+          "targetName": "Next",
           "metadataToken": 100664061,
           "canonicalSignature": "(Microsoft.EntityFrameworkCore.ChangeTracking.EntityEntry):System.String",
           "normalizedSignature": "Next|(Microsoft.EntityFrameworkCore.ChangeTracking.EntityEntry):System.String|static=false",
@@ -116,15 +116,15 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.NpgsqlSequentialStringValueGenerator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL",
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.NpgsqlSequentialStringValueGenerator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.NpgsqlSequentialStringValueGenerator::GeneratesTemporaryValues:System.Boolean",
-          "clrName": "GeneratesTemporaryValues",
+          "targetName": "GeneratesTemporaryValues",
           "metadataToken": 385875987,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "GeneratesTemporaryValues|:System.Boolean|static=false|accessor=get",
@@ -138,8 +138,8 @@
           "isVirtual": true,
           "isOverride": true,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.NpgsqlSequentialStringValueGenerator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.NpgsqlSequentialStringValueGenerator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
       ],
       "fields": [],
@@ -153,8 +153,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.NpgsqlSequentialStringValueGenerator",
-          "declaringAssemblyName": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.NpgsqlSequentialStringValueGenerator",
+          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
         }
       ]
     }
