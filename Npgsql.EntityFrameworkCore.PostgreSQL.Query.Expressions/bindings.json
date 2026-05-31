@@ -1,420 +1,425 @@
 {
-  "namespace": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions",
-  "contributingAssemblies": [
-    "Npgsql.EntityFrameworkCore.PostgreSQL"
-  ],
-  "types": [
-    {
-      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
-      "metadataToken": 0,
-      "kind": "Enum",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": true,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Enum",
-        "targetName": "System.Enum"
-      },
-      "interfaces": [
-        {
-          "stableId": "System.Private.CoreLib:System.IComparable",
-          "targetName": "System.IComparable"
+  "schema": "tsonic.bindings",
+  "provider": {
+    "namespace": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions",
+    "ownerIdentities": [
+      "Npgsql.EntityFrameworkCore.PostgreSQL"
+    ]
+  },
+  "targetSurface": {
+    "types": [
+      {
+        "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+        "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+        "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
+        "metadataToken": 0,
+        "kind": "Enum",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": true,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Enum",
+          "targetName": "System.Enum"
         },
-        {
-          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
-          "targetName": "System.ISpanFormattable"
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.IFormattable",
-          "targetName": "System.IFormattable"
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.IConvertible",
-          "targetName": "System.IConvertible"
-        }
-      ],
-      "methods": [],
-      "properties": [],
-      "fields": [
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType::value__System.Int32",
-          "targetName": "value__",
-          "metadataToken": 67109406,
-          "normalizedSignature": "value__|System.Int32|static=false|const=false",
-          "isStatic": false,
-          "isReadOnly": false,
-          "isLiteral": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-        },
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType::ContainsNpgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-          "targetName": "Contains",
-          "metadataToken": 67109407,
-          "normalizedSignature": "Contains|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-        },
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType::ContainedByNpgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-          "targetName": "ContainedBy",
-          "metadataToken": 67109408,
-          "normalizedSignature": "ContainedBy|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-        },
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType::OverlapsNpgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-          "targetName": "Overlaps",
-          "metadataToken": 67109409,
-          "normalizedSignature": "Overlaps|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-        },
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType::DistanceNpgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-          "targetName": "Distance",
-          "metadataToken": 67109410,
-          "normalizedSignature": "Distance|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-        },
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType::NetworkContainedByOrEqualNpgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-          "targetName": "NetworkContainedByOrEqual",
-          "metadataToken": 67109411,
-          "normalizedSignature": "NetworkContainedByOrEqual|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-        },
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType::NetworkContainsOrEqualNpgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-          "targetName": "NetworkContainsOrEqual",
-          "metadataToken": 67109412,
-          "normalizedSignature": "NetworkContainsOrEqual|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-        },
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType::NetworkContainsOrContainedByNpgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-          "targetName": "NetworkContainsOrContainedBy",
-          "metadataToken": 67109413,
-          "normalizedSignature": "NetworkContainsOrContainedBy|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-        },
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType::RangeIsStrictlyLeftOfNpgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-          "targetName": "RangeIsStrictlyLeftOf",
-          "metadataToken": 67109414,
-          "normalizedSignature": "RangeIsStrictlyLeftOf|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-        },
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType::RangeIsStrictlyRightOfNpgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-          "targetName": "RangeIsStrictlyRightOf",
-          "metadataToken": 67109415,
-          "normalizedSignature": "RangeIsStrictlyRightOf|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-        },
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType::RangeDoesNotExtendRightOfNpgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-          "targetName": "RangeDoesNotExtendRightOf",
-          "metadataToken": 67109416,
-          "normalizedSignature": "RangeDoesNotExtendRightOf|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-        },
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType::RangeDoesNotExtendLeftOfNpgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-          "targetName": "RangeDoesNotExtendLeftOf",
-          "metadataToken": 67109417,
-          "normalizedSignature": "RangeDoesNotExtendLeftOf|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-        },
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType::RangeIsAdjacentToNpgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-          "targetName": "RangeIsAdjacentTo",
-          "metadataToken": 67109418,
-          "normalizedSignature": "RangeIsAdjacentTo|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-        },
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType::RangeUnionNpgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-          "targetName": "RangeUnion",
-          "metadataToken": 67109419,
-          "normalizedSignature": "RangeUnion|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-        },
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType::RangeIntersectNpgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-          "targetName": "RangeIntersect",
-          "metadataToken": 67109420,
-          "normalizedSignature": "RangeIntersect|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-        },
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType::RangeExceptNpgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-          "targetName": "RangeExcept",
-          "metadataToken": 67109421,
-          "normalizedSignature": "RangeExcept|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-        },
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType::TextSearchMatchNpgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-          "targetName": "TextSearchMatch",
-          "metadataToken": 67109422,
-          "normalizedSignature": "TextSearchMatch|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-        },
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType::TextSearchAndNpgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-          "targetName": "TextSearchAnd",
-          "metadataToken": 67109423,
-          "normalizedSignature": "TextSearchAnd|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-        },
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType::TextSearchOrNpgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-          "targetName": "TextSearchOr",
-          "metadataToken": 67109424,
-          "normalizedSignature": "TextSearchOr|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-        },
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType::JsonExistsNpgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-          "targetName": "JsonExists",
-          "metadataToken": 67109425,
-          "normalizedSignature": "JsonExists|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-        },
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType::JsonExistsAnyNpgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-          "targetName": "JsonExistsAny",
-          "metadataToken": 67109426,
-          "normalizedSignature": "JsonExistsAny|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-        },
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType::JsonExistsAllNpgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-          "targetName": "JsonExistsAll",
-          "metadataToken": 67109427,
-          "normalizedSignature": "JsonExistsAll|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-        },
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType::LTreeMatchesNpgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-          "targetName": "LTreeMatches",
-          "metadataToken": 67109428,
-          "normalizedSignature": "LTreeMatches|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-        },
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType::LTreeMatchesAnyNpgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-          "targetName": "LTreeMatchesAny",
-          "metadataToken": 67109429,
-          "normalizedSignature": "LTreeMatchesAny|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-        },
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType::LTreeFirstAncestorNpgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-          "targetName": "LTreeFirstAncestor",
-          "metadataToken": 67109430,
-          "normalizedSignature": "LTreeFirstAncestor|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-        },
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType::LTreeFirstDescendentNpgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-          "targetName": "LTreeFirstDescendent",
-          "metadataToken": 67109431,
-          "normalizedSignature": "LTreeFirstDescendent|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-        },
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType::LTreeFirstMatchesNpgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-          "targetName": "LTreeFirstMatches",
-          "metadataToken": 67109432,
-          "normalizedSignature": "LTreeFirstMatches|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-        },
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType::CubeNthCoordinateNpgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-          "targetName": "CubeNthCoordinate",
-          "metadataToken": 67109433,
-          "normalizedSignature": "CubeNthCoordinate|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-        },
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType::CubeNthCoordinateKnnNpgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-          "targetName": "CubeNthCoordinateKnn",
-          "metadataToken": 67109434,
-          "normalizedSignature": "CubeNthCoordinateKnn|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-        },
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType::CubeDistanceTaxicabNpgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-          "targetName": "CubeDistanceTaxicab",
-          "metadataToken": 67109435,
-          "normalizedSignature": "CubeDistanceTaxicab|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-        },
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType::CubeDistanceChebyshevNpgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-          "targetName": "CubeDistanceChebyshev",
-          "metadataToken": 67109436,
-          "normalizedSignature": "CubeDistanceChebyshev|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-        }
-      ],
-      "events": [],
-      "constructors": []
-    }
-  ]
+        "interfaces": [
+          {
+            "stableId": "System.Private.CoreLib:System.IComparable",
+            "targetName": "System.IComparable"
+          },
+          {
+            "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+            "targetName": "System.ISpanFormattable"
+          },
+          {
+            "stableId": "System.Private.CoreLib:System.IFormattable",
+            "targetName": "System.IFormattable"
+          },
+          {
+            "stableId": "System.Private.CoreLib:System.IConvertible",
+            "targetName": "System.IConvertible"
+          }
+        ],
+        "methods": [],
+        "properties": [],
+        "fields": [
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType::value__System.Int32",
+            "targetName": "value__",
+            "metadataToken": 67109406,
+            "normalizedSignature": "value__|System.Int32|static=false|const=false",
+            "isStatic": false,
+            "isReadOnly": false,
+            "isLiteral": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          },
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType::ContainsNpgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+            "targetName": "Contains",
+            "metadataToken": 67109407,
+            "normalizedSignature": "Contains|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType|static=true|const=true",
+            "isStatic": true,
+            "isReadOnly": false,
+            "isLiteral": true,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          },
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType::ContainedByNpgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+            "targetName": "ContainedBy",
+            "metadataToken": 67109408,
+            "normalizedSignature": "ContainedBy|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType|static=true|const=true",
+            "isStatic": true,
+            "isReadOnly": false,
+            "isLiteral": true,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          },
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType::OverlapsNpgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+            "targetName": "Overlaps",
+            "metadataToken": 67109409,
+            "normalizedSignature": "Overlaps|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType|static=true|const=true",
+            "isStatic": true,
+            "isReadOnly": false,
+            "isLiteral": true,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          },
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType::DistanceNpgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+            "targetName": "Distance",
+            "metadataToken": 67109410,
+            "normalizedSignature": "Distance|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType|static=true|const=true",
+            "isStatic": true,
+            "isReadOnly": false,
+            "isLiteral": true,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          },
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType::NetworkContainedByOrEqualNpgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+            "targetName": "NetworkContainedByOrEqual",
+            "metadataToken": 67109411,
+            "normalizedSignature": "NetworkContainedByOrEqual|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType|static=true|const=true",
+            "isStatic": true,
+            "isReadOnly": false,
+            "isLiteral": true,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          },
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType::NetworkContainsOrEqualNpgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+            "targetName": "NetworkContainsOrEqual",
+            "metadataToken": 67109412,
+            "normalizedSignature": "NetworkContainsOrEqual|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType|static=true|const=true",
+            "isStatic": true,
+            "isReadOnly": false,
+            "isLiteral": true,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          },
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType::NetworkContainsOrContainedByNpgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+            "targetName": "NetworkContainsOrContainedBy",
+            "metadataToken": 67109413,
+            "normalizedSignature": "NetworkContainsOrContainedBy|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType|static=true|const=true",
+            "isStatic": true,
+            "isReadOnly": false,
+            "isLiteral": true,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          },
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType::RangeIsStrictlyLeftOfNpgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+            "targetName": "RangeIsStrictlyLeftOf",
+            "metadataToken": 67109414,
+            "normalizedSignature": "RangeIsStrictlyLeftOf|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType|static=true|const=true",
+            "isStatic": true,
+            "isReadOnly": false,
+            "isLiteral": true,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          },
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType::RangeIsStrictlyRightOfNpgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+            "targetName": "RangeIsStrictlyRightOf",
+            "metadataToken": 67109415,
+            "normalizedSignature": "RangeIsStrictlyRightOf|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType|static=true|const=true",
+            "isStatic": true,
+            "isReadOnly": false,
+            "isLiteral": true,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          },
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType::RangeDoesNotExtendRightOfNpgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+            "targetName": "RangeDoesNotExtendRightOf",
+            "metadataToken": 67109416,
+            "normalizedSignature": "RangeDoesNotExtendRightOf|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType|static=true|const=true",
+            "isStatic": true,
+            "isReadOnly": false,
+            "isLiteral": true,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          },
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType::RangeDoesNotExtendLeftOfNpgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+            "targetName": "RangeDoesNotExtendLeftOf",
+            "metadataToken": 67109417,
+            "normalizedSignature": "RangeDoesNotExtendLeftOf|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType|static=true|const=true",
+            "isStatic": true,
+            "isReadOnly": false,
+            "isLiteral": true,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          },
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType::RangeIsAdjacentToNpgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+            "targetName": "RangeIsAdjacentTo",
+            "metadataToken": 67109418,
+            "normalizedSignature": "RangeIsAdjacentTo|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType|static=true|const=true",
+            "isStatic": true,
+            "isReadOnly": false,
+            "isLiteral": true,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          },
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType::RangeUnionNpgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+            "targetName": "RangeUnion",
+            "metadataToken": 67109419,
+            "normalizedSignature": "RangeUnion|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType|static=true|const=true",
+            "isStatic": true,
+            "isReadOnly": false,
+            "isLiteral": true,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          },
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType::RangeIntersectNpgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+            "targetName": "RangeIntersect",
+            "metadataToken": 67109420,
+            "normalizedSignature": "RangeIntersect|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType|static=true|const=true",
+            "isStatic": true,
+            "isReadOnly": false,
+            "isLiteral": true,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          },
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType::RangeExceptNpgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+            "targetName": "RangeExcept",
+            "metadataToken": 67109421,
+            "normalizedSignature": "RangeExcept|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType|static=true|const=true",
+            "isStatic": true,
+            "isReadOnly": false,
+            "isLiteral": true,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          },
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType::TextSearchMatchNpgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+            "targetName": "TextSearchMatch",
+            "metadataToken": 67109422,
+            "normalizedSignature": "TextSearchMatch|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType|static=true|const=true",
+            "isStatic": true,
+            "isReadOnly": false,
+            "isLiteral": true,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          },
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType::TextSearchAndNpgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+            "targetName": "TextSearchAnd",
+            "metadataToken": 67109423,
+            "normalizedSignature": "TextSearchAnd|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType|static=true|const=true",
+            "isStatic": true,
+            "isReadOnly": false,
+            "isLiteral": true,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          },
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType::TextSearchOrNpgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+            "targetName": "TextSearchOr",
+            "metadataToken": 67109424,
+            "normalizedSignature": "TextSearchOr|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType|static=true|const=true",
+            "isStatic": true,
+            "isReadOnly": false,
+            "isLiteral": true,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          },
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType::JsonExistsNpgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+            "targetName": "JsonExists",
+            "metadataToken": 67109425,
+            "normalizedSignature": "JsonExists|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType|static=true|const=true",
+            "isStatic": true,
+            "isReadOnly": false,
+            "isLiteral": true,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          },
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType::JsonExistsAnyNpgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+            "targetName": "JsonExistsAny",
+            "metadataToken": 67109426,
+            "normalizedSignature": "JsonExistsAny|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType|static=true|const=true",
+            "isStatic": true,
+            "isReadOnly": false,
+            "isLiteral": true,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          },
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType::JsonExistsAllNpgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+            "targetName": "JsonExistsAll",
+            "metadataToken": 67109427,
+            "normalizedSignature": "JsonExistsAll|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType|static=true|const=true",
+            "isStatic": true,
+            "isReadOnly": false,
+            "isLiteral": true,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          },
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType::LTreeMatchesNpgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+            "targetName": "LTreeMatches",
+            "metadataToken": 67109428,
+            "normalizedSignature": "LTreeMatches|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType|static=true|const=true",
+            "isStatic": true,
+            "isReadOnly": false,
+            "isLiteral": true,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          },
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType::LTreeMatchesAnyNpgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+            "targetName": "LTreeMatchesAny",
+            "metadataToken": 67109429,
+            "normalizedSignature": "LTreeMatchesAny|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType|static=true|const=true",
+            "isStatic": true,
+            "isReadOnly": false,
+            "isLiteral": true,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          },
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType::LTreeFirstAncestorNpgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+            "targetName": "LTreeFirstAncestor",
+            "metadataToken": 67109430,
+            "normalizedSignature": "LTreeFirstAncestor|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType|static=true|const=true",
+            "isStatic": true,
+            "isReadOnly": false,
+            "isLiteral": true,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          },
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType::LTreeFirstDescendentNpgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+            "targetName": "LTreeFirstDescendent",
+            "metadataToken": 67109431,
+            "normalizedSignature": "LTreeFirstDescendent|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType|static=true|const=true",
+            "isStatic": true,
+            "isReadOnly": false,
+            "isLiteral": true,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          },
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType::LTreeFirstMatchesNpgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+            "targetName": "LTreeFirstMatches",
+            "metadataToken": 67109432,
+            "normalizedSignature": "LTreeFirstMatches|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType|static=true|const=true",
+            "isStatic": true,
+            "isReadOnly": false,
+            "isLiteral": true,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          },
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType::CubeNthCoordinateNpgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+            "targetName": "CubeNthCoordinate",
+            "metadataToken": 67109433,
+            "normalizedSignature": "CubeNthCoordinate|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType|static=true|const=true",
+            "isStatic": true,
+            "isReadOnly": false,
+            "isLiteral": true,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          },
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType::CubeNthCoordinateKnnNpgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+            "targetName": "CubeNthCoordinateKnn",
+            "metadataToken": 67109434,
+            "normalizedSignature": "CubeNthCoordinateKnn|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType|static=true|const=true",
+            "isStatic": true,
+            "isReadOnly": false,
+            "isLiteral": true,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          },
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType::CubeDistanceTaxicabNpgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+            "targetName": "CubeDistanceTaxicab",
+            "metadataToken": 67109435,
+            "normalizedSignature": "CubeDistanceTaxicab|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType|static=true|const=true",
+            "isStatic": true,
+            "isReadOnly": false,
+            "isLiteral": true,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          },
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType::CubeDistanceChebyshevNpgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+            "targetName": "CubeDistanceChebyshev",
+            "metadataToken": 67109436,
+            "normalizedSignature": "CubeDistanceChebyshev|Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType|static=true|const=true",
+            "isStatic": true,
+            "isReadOnly": false,
+            "isLiteral": true,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Expressions.PgExpressionType",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          }
+        ],
+        "events": [],
+        "constructors": []
+      }
+    ]
+  }
 }

@@ -1,862 +1,867 @@
 {
-  "namespace": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions",
-  "contributingAssemblies": [
-    "Npgsql.EntityFrameworkCore.PostgreSQL"
-  ],
-  "types": [
-    {
-      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlConventionSetBuilder",
-      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlConventionSetBuilder",
-      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilder",
-        "targetName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilder"
+  "schema": "tsonic.bindings",
+  "provider": {
+    "namespace": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions",
+    "ownerIdentities": [
+      "Npgsql.EntityFrameworkCore.PostgreSQL"
+    ]
+  },
+  "targetSurface": {
+    "types": [
+      {
+        "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlConventionSetBuilder",
+        "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlConventionSetBuilder",
+        "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilder",
+          "targetName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilder"
+        },
+        "interfaces": [
+          {
+            "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.IProviderConventionSetBuilder",
+            "targetName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.IProviderConventionSetBuilder"
+          }
+        ],
+        "methods": [
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlConventionSetBuilder::CreateConventionSet():Microsoft.EntityFrameworkCore.Metadata.Conventions.ConventionSet",
+            "targetName": "CreateConventionSet",
+            "metadataToken": 100665351,
+            "canonicalSignature": "():Microsoft.EntityFrameworkCore.Metadata.Conventions.ConventionSet",
+            "normalizedSignature": "CreateConventionSet|():Microsoft.EntityFrameworkCore.Metadata.Conventions.ConventionSet|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 0,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": true,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlConventionSetBuilder",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "isExtensionMethod": false
+          },
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlConventionSetBuilder::Build():Microsoft.EntityFrameworkCore.Metadata.Conventions.ConventionSet",
+            "targetName": "Build",
+            "metadataToken": 100665352,
+            "canonicalSignature": "():Microsoft.EntityFrameworkCore.Metadata.Conventions.ConventionSet",
+            "normalizedSignature": "Build|():Microsoft.EntityFrameworkCore.Metadata.Conventions.ConventionSet|static=true",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 0,
+            "isStatic": true,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlConventionSetBuilder",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "isExtensionMethod": false
+          },
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlConventionSetBuilder::CreateModelBuilder():Microsoft.EntityFrameworkCore.ModelBuilder",
+            "targetName": "CreateModelBuilder",
+            "metadataToken": 100665353,
+            "canonicalSignature": "():Microsoft.EntityFrameworkCore.ModelBuilder",
+            "normalizedSignature": "CreateModelBuilder|():Microsoft.EntityFrameworkCore.ModelBuilder|static=true",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 0,
+            "isStatic": true,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlConventionSetBuilder",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "isExtensionMethod": false
+          }
+        ],
+        "properties": [],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlConventionSetBuilder::.ctor(Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies,Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies,Microsoft.EntityFrameworkCore.Storage.IRelationalTypeMappingSource,Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.INpgsqlSingletonOptions):void",
+            "metadataToken": 100665350,
+            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies,Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies,Microsoft.EntityFrameworkCore.Storage.IRelationalTypeMappingSource,Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.INpgsqlSingletonOptions):void",
+            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies,Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies,Microsoft.EntityFrameworkCore.Storage.IRelationalTypeMappingSource,Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.INpgsqlSingletonOptions):void|static=false",
+            "isStatic": false,
+            "parameterCount": 4,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlConventionSetBuilder",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          }
+        ]
       },
-      "interfaces": [
-        {
-          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.IProviderConventionSetBuilder",
-          "targetName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.IProviderConventionSetBuilder"
-        }
-      ],
-      "methods": [
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlConventionSetBuilder::CreateConventionSet():Microsoft.EntityFrameworkCore.Metadata.Conventions.ConventionSet",
-          "targetName": "CreateConventionSet",
-          "metadataToken": 100665351,
-          "canonicalSignature": "():Microsoft.EntityFrameworkCore.Metadata.Conventions.ConventionSet",
-          "normalizedSignature": "CreateConventionSet|():Microsoft.EntityFrameworkCore.Metadata.Conventions.ConventionSet|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": true,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlConventionSetBuilder",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
-          "isExtensionMethod": false
+      {
+        "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlPostgresModelFinalizingConvention",
+        "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlPostgresModelFinalizingConvention",
+        "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Object",
+          "targetName": "System.Object"
         },
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlConventionSetBuilder::Build():Microsoft.EntityFrameworkCore.Metadata.Conventions.ConventionSet",
-          "targetName": "Build",
-          "metadataToken": 100665352,
-          "canonicalSignature": "():Microsoft.EntityFrameworkCore.Metadata.Conventions.ConventionSet",
-          "normalizedSignature": "Build|():Microsoft.EntityFrameworkCore.Metadata.Conventions.ConventionSet|static=true",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": true,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlConventionSetBuilder",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlConventionSetBuilder::CreateModelBuilder():Microsoft.EntityFrameworkCore.ModelBuilder",
-          "targetName": "CreateModelBuilder",
-          "metadataToken": 100665353,
-          "canonicalSignature": "():Microsoft.EntityFrameworkCore.ModelBuilder",
-          "normalizedSignature": "CreateModelBuilder|():Microsoft.EntityFrameworkCore.ModelBuilder|static=true",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": true,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlConventionSetBuilder",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
-          "isExtensionMethod": false
-        }
-      ],
-      "properties": [],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlConventionSetBuilder::.ctor(Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies,Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies,Microsoft.EntityFrameworkCore.Storage.IRelationalTypeMappingSource,Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.INpgsqlSingletonOptions):void",
-          "metadataToken": 100665350,
-          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies,Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies,Microsoft.EntityFrameworkCore.Storage.IRelationalTypeMappingSource,Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.INpgsqlSingletonOptions):void",
-          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies,Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies,Microsoft.EntityFrameworkCore.Storage.IRelationalTypeMappingSource,Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.INpgsqlSingletonOptions):void|static=false",
-          "isStatic": false,
-          "parameterCount": 4,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlConventionSetBuilder",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-        }
-      ]
-    },
-    {
-      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlPostgresModelFinalizingConvention",
-      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlPostgresModelFinalizingConvention",
-      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Object",
-        "targetName": "System.Object"
+        "interfaces": [
+          {
+            "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IModelFinalizingConvention",
+            "targetName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IModelFinalizingConvention"
+          },
+          {
+            "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IConvention",
+            "targetName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IConvention"
+          }
+        ],
+        "methods": [
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlPostgresModelFinalizingConvention::ProcessModelFinalizing(Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionModelBuilder,Microsoft.EntityFrameworkCore.Metadata.Conventions.IConventionContext_1[[Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionModelBuilder,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
+            "targetName": "ProcessModelFinalizing",
+            "metadataToken": 100665356,
+            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionModelBuilder,Microsoft.EntityFrameworkCore.Metadata.Conventions.IConventionContext_1[[Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionModelBuilder,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
+            "normalizedSignature": "ProcessModelFinalizing|(Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionModelBuilder,Microsoft.EntityFrameworkCore.Metadata.Conventions.IConventionContext_1[[Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionModelBuilder,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 2,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlPostgresModelFinalizingConvention",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "isExtensionMethod": false
+          },
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlPostgresModelFinalizingConvention::SetupEnums(Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionModelBuilder):System.Void",
+            "targetName": "SetupEnums",
+            "metadataToken": 100665357,
+            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionModelBuilder):System.Void",
+            "normalizedSignature": "SetupEnums|(Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionModelBuilder):System.Void|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 1,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Protected",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlPostgresModelFinalizingConvention",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "isExtensionMethod": false
+          },
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlPostgresModelFinalizingConvention::DiscoverPostgresExtensions(Microsoft.EntityFrameworkCore.Metadata.IConventionProperty,Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping,Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionModelBuilder):System.Void",
+            "targetName": "DiscoverPostgresExtensions",
+            "metadataToken": 100665358,
+            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IConventionProperty,Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping,Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionModelBuilder):System.Void",
+            "normalizedSignature": "DiscoverPostgresExtensions|(Microsoft.EntityFrameworkCore.Metadata.IConventionProperty,Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping,Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionModelBuilder):System.Void|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 3,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Protected",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlPostgresModelFinalizingConvention",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "isExtensionMethod": false
+          },
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlPostgresModelFinalizingConvention::ProcessRowVersionProperty(Microsoft.EntityFrameworkCore.Metadata.IConventionProperty,Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping):System.Void",
+            "targetName": "ProcessRowVersionProperty",
+            "metadataToken": 100665359,
+            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IConventionProperty,Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping):System.Void",
+            "normalizedSignature": "ProcessRowVersionProperty|(Microsoft.EntityFrameworkCore.Metadata.IConventionProperty,Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping):System.Void|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 2,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Protected",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlPostgresModelFinalizingConvention",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "isExtensionMethod": false
+          }
+        ],
+        "properties": [],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlPostgresModelFinalizingConvention::.ctor(Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlTypeMappingSource,System.Collections.Generic.IReadOnlyList_1[[Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.EnumDefinition,Npgsql.EntityFrameworkCore.PostgreSQL,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]):void",
+            "metadataToken": 100665355,
+            "canonicalSignature": "(Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlTypeMappingSource,System.Collections.Generic.IReadOnlyList_1[[Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.EnumDefinition,Npgsql.EntityFrameworkCore.PostgreSQL,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]):void",
+            "normalizedSignature": "constructor|(Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlTypeMappingSource,System.Collections.Generic.IReadOnlyList_1[[Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.EnumDefinition,Npgsql.EntityFrameworkCore.PostgreSQL,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]):void|static=false",
+            "isStatic": false,
+            "parameterCount": 2,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlPostgresModelFinalizingConvention",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          }
+        ]
       },
-      "interfaces": [
-        {
-          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IModelFinalizingConvention",
-          "targetName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IModelFinalizingConvention"
+      {
+        "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlRuntimeModelConvention",
+        "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlRuntimeModelConvention",
+        "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Metadata.Conventions.RelationalRuntimeModelConvention",
+          "targetName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.RelationalRuntimeModelConvention"
         },
-        {
-          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IConvention",
-          "targetName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IConvention"
-        }
-      ],
-      "methods": [
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlPostgresModelFinalizingConvention::ProcessModelFinalizing(Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionModelBuilder,Microsoft.EntityFrameworkCore.Metadata.Conventions.IConventionContext_1[[Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionModelBuilder,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
-          "targetName": "ProcessModelFinalizing",
-          "metadataToken": 100665356,
-          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionModelBuilder,Microsoft.EntityFrameworkCore.Metadata.Conventions.IConventionContext_1[[Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionModelBuilder,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
-          "normalizedSignature": "ProcessModelFinalizing|(Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionModelBuilder,Microsoft.EntityFrameworkCore.Metadata.Conventions.IConventionContext_1[[Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionModelBuilder,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 2,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlPostgresModelFinalizingConvention",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlPostgresModelFinalizingConvention::SetupEnums(Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionModelBuilder):System.Void",
-          "targetName": "SetupEnums",
-          "metadataToken": 100665357,
-          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionModelBuilder):System.Void",
-          "normalizedSignature": "SetupEnums|(Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionModelBuilder):System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Protected",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlPostgresModelFinalizingConvention",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlPostgresModelFinalizingConvention::DiscoverPostgresExtensions(Microsoft.EntityFrameworkCore.Metadata.IConventionProperty,Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping,Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionModelBuilder):System.Void",
-          "targetName": "DiscoverPostgresExtensions",
-          "metadataToken": 100665358,
-          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IConventionProperty,Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping,Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionModelBuilder):System.Void",
-          "normalizedSignature": "DiscoverPostgresExtensions|(Microsoft.EntityFrameworkCore.Metadata.IConventionProperty,Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping,Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionModelBuilder):System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 3,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Protected",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlPostgresModelFinalizingConvention",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlPostgresModelFinalizingConvention::ProcessRowVersionProperty(Microsoft.EntityFrameworkCore.Metadata.IConventionProperty,Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping):System.Void",
-          "targetName": "ProcessRowVersionProperty",
-          "metadataToken": 100665359,
-          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IConventionProperty,Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping):System.Void",
-          "normalizedSignature": "ProcessRowVersionProperty|(Microsoft.EntityFrameworkCore.Metadata.IConventionProperty,Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping):System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 2,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Protected",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlPostgresModelFinalizingConvention",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
-          "isExtensionMethod": false
-        }
-      ],
-      "properties": [],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlPostgresModelFinalizingConvention::.ctor(Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlTypeMappingSource,System.Collections.Generic.IReadOnlyList_1[[Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.EnumDefinition,Npgsql.EntityFrameworkCore.PostgreSQL,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]):void",
-          "metadataToken": 100665355,
-          "canonicalSignature": "(Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlTypeMappingSource,System.Collections.Generic.IReadOnlyList_1[[Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.EnumDefinition,Npgsql.EntityFrameworkCore.PostgreSQL,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]):void",
-          "normalizedSignature": "constructor|(Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlTypeMappingSource,System.Collections.Generic.IReadOnlyList_1[[Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.EnumDefinition,Npgsql.EntityFrameworkCore.PostgreSQL,Version=10.0.0.0,Culture=neutral,PublicKeyToken=5d8b90d52f46fda7]]):void|static=false",
-          "isStatic": false,
-          "parameterCount": 2,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlPostgresModelFinalizingConvention",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-        }
-      ]
-    },
-    {
-      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlRuntimeModelConvention",
-      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlRuntimeModelConvention",
-      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Metadata.Conventions.RelationalRuntimeModelConvention",
-        "targetName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.RelationalRuntimeModelConvention"
+        "interfaces": [
+          {
+            "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IModelFinalizedConvention",
+            "targetName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IModelFinalizedConvention"
+          },
+          {
+            "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IConvention",
+            "targetName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IConvention"
+          }
+        ],
+        "methods": [
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlRuntimeModelConvention::ProcessModelAnnotations(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Metadata.RuntimeModel,System.Boolean):System.Void",
+            "targetName": "ProcessModelAnnotations",
+            "metadataToken": 100665361,
+            "canonicalSignature": "(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Metadata.RuntimeModel,System.Boolean):System.Void",
+            "normalizedSignature": "ProcessModelAnnotations|(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Metadata.RuntimeModel,System.Boolean):System.Void|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 4,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": true,
+            "isSealed": false,
+            "visibility": "Protected",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlRuntimeModelConvention",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "isExtensionMethod": false
+          },
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlRuntimeModelConvention::ProcessEntityTypeAnnotations(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.EntityFrameworkCore.Metadata.IEntityType,Microsoft.EntityFrameworkCore.Metadata.RuntimeEntityType,System.Boolean):System.Void",
+            "targetName": "ProcessEntityTypeAnnotations",
+            "metadataToken": 100665362,
+            "canonicalSignature": "(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.EntityFrameworkCore.Metadata.IEntityType,Microsoft.EntityFrameworkCore.Metadata.RuntimeEntityType,System.Boolean):System.Void",
+            "normalizedSignature": "ProcessEntityTypeAnnotations|(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.EntityFrameworkCore.Metadata.IEntityType,Microsoft.EntityFrameworkCore.Metadata.RuntimeEntityType,System.Boolean):System.Void|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 4,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": true,
+            "isSealed": false,
+            "visibility": "Protected",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlRuntimeModelConvention",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "isExtensionMethod": false
+          },
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlRuntimeModelConvention::ProcessPropertyAnnotations(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.EntityFrameworkCore.Metadata.IProperty,Microsoft.EntityFrameworkCore.Metadata.RuntimeProperty,System.Boolean):System.Void",
+            "targetName": "ProcessPropertyAnnotations",
+            "metadataToken": 100665363,
+            "canonicalSignature": "(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.EntityFrameworkCore.Metadata.IProperty,Microsoft.EntityFrameworkCore.Metadata.RuntimeProperty,System.Boolean):System.Void",
+            "normalizedSignature": "ProcessPropertyAnnotations|(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.EntityFrameworkCore.Metadata.IProperty,Microsoft.EntityFrameworkCore.Metadata.RuntimeProperty,System.Boolean):System.Void|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 4,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": true,
+            "isSealed": false,
+            "visibility": "Protected",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlRuntimeModelConvention",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "isExtensionMethod": false
+          },
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlRuntimeModelConvention::ProcessIndexAnnotations(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.EntityFrameworkCore.Metadata.IIndex,Microsoft.EntityFrameworkCore.Metadata.RuntimeIndex,System.Boolean):System.Void",
+            "targetName": "ProcessIndexAnnotations",
+            "metadataToken": 100665364,
+            "canonicalSignature": "(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.EntityFrameworkCore.Metadata.IIndex,Microsoft.EntityFrameworkCore.Metadata.RuntimeIndex,System.Boolean):System.Void",
+            "normalizedSignature": "ProcessIndexAnnotations|(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.EntityFrameworkCore.Metadata.IIndex,Microsoft.EntityFrameworkCore.Metadata.RuntimeIndex,System.Boolean):System.Void|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 4,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": true,
+            "isSealed": false,
+            "visibility": "Protected",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlRuntimeModelConvention",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "isExtensionMethod": false
+          }
+        ],
+        "properties": [],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlRuntimeModelConvention::.ctor(Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies,Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies):void",
+            "metadataToken": 100665360,
+            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies,Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies):void",
+            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies,Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies):void|static=false",
+            "isStatic": false,
+            "parameterCount": 2,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlRuntimeModelConvention",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          }
+        ]
       },
-      "interfaces": [
-        {
-          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IModelFinalizedConvention",
-          "targetName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IModelFinalizedConvention"
+      {
+        "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlSharedTableConvention",
+        "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlSharedTableConvention",
+        "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Metadata.Conventions.SharedTableConvention",
+          "targetName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SharedTableConvention"
         },
-        {
-          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IConvention",
-          "targetName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IConvention"
-        }
-      ],
-      "methods": [
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlRuntimeModelConvention::ProcessModelAnnotations(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Metadata.RuntimeModel,System.Boolean):System.Void",
-          "targetName": "ProcessModelAnnotations",
-          "metadataToken": 100665361,
-          "canonicalSignature": "(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Metadata.RuntimeModel,System.Boolean):System.Void",
-          "normalizedSignature": "ProcessModelAnnotations|(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.EntityFrameworkCore.Metadata.IModel,Microsoft.EntityFrameworkCore.Metadata.RuntimeModel,System.Boolean):System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 4,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": true,
-          "isSealed": false,
-          "visibility": "Protected",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlRuntimeModelConvention",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlRuntimeModelConvention::ProcessEntityTypeAnnotations(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.EntityFrameworkCore.Metadata.IEntityType,Microsoft.EntityFrameworkCore.Metadata.RuntimeEntityType,System.Boolean):System.Void",
-          "targetName": "ProcessEntityTypeAnnotations",
-          "metadataToken": 100665362,
-          "canonicalSignature": "(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.EntityFrameworkCore.Metadata.IEntityType,Microsoft.EntityFrameworkCore.Metadata.RuntimeEntityType,System.Boolean):System.Void",
-          "normalizedSignature": "ProcessEntityTypeAnnotations|(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.EntityFrameworkCore.Metadata.IEntityType,Microsoft.EntityFrameworkCore.Metadata.RuntimeEntityType,System.Boolean):System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 4,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": true,
-          "isSealed": false,
-          "visibility": "Protected",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlRuntimeModelConvention",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlRuntimeModelConvention::ProcessPropertyAnnotations(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.EntityFrameworkCore.Metadata.IProperty,Microsoft.EntityFrameworkCore.Metadata.RuntimeProperty,System.Boolean):System.Void",
-          "targetName": "ProcessPropertyAnnotations",
-          "metadataToken": 100665363,
-          "canonicalSignature": "(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.EntityFrameworkCore.Metadata.IProperty,Microsoft.EntityFrameworkCore.Metadata.RuntimeProperty,System.Boolean):System.Void",
-          "normalizedSignature": "ProcessPropertyAnnotations|(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.EntityFrameworkCore.Metadata.IProperty,Microsoft.EntityFrameworkCore.Metadata.RuntimeProperty,System.Boolean):System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 4,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": true,
-          "isSealed": false,
-          "visibility": "Protected",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlRuntimeModelConvention",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlRuntimeModelConvention::ProcessIndexAnnotations(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.EntityFrameworkCore.Metadata.IIndex,Microsoft.EntityFrameworkCore.Metadata.RuntimeIndex,System.Boolean):System.Void",
-          "targetName": "ProcessIndexAnnotations",
-          "metadataToken": 100665364,
-          "canonicalSignature": "(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.EntityFrameworkCore.Metadata.IIndex,Microsoft.EntityFrameworkCore.Metadata.RuntimeIndex,System.Boolean):System.Void",
-          "normalizedSignature": "ProcessIndexAnnotations|(System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.EntityFrameworkCore.Metadata.IIndex,Microsoft.EntityFrameworkCore.Metadata.RuntimeIndex,System.Boolean):System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 4,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": true,
-          "isSealed": false,
-          "visibility": "Protected",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlRuntimeModelConvention",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
-          "isExtensionMethod": false
-        }
-      ],
-      "properties": [],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlRuntimeModelConvention::.ctor(Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies,Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies):void",
-          "metadataToken": 100665360,
-          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies,Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies):void",
-          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies,Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies):void|static=false",
-          "isStatic": false,
-          "parameterCount": 2,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlRuntimeModelConvention",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-        }
-      ]
-    },
-    {
-      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlSharedTableConvention",
-      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlSharedTableConvention",
-      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Metadata.Conventions.SharedTableConvention",
-        "targetName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.SharedTableConvention"
+        "interfaces": [
+          {
+            "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IModelFinalizingConvention",
+            "targetName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IModelFinalizingConvention"
+          },
+          {
+            "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IConvention",
+            "targetName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IConvention"
+          }
+        ],
+        "methods": [
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlSharedTableConvention::AreCompatible(Microsoft.EntityFrameworkCore.Metadata.IReadOnlyIndex,Microsoft.EntityFrameworkCore.Metadata.IReadOnlyIndex,Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier&):System.Boolean",
+            "targetName": "AreCompatible",
+            "metadataToken": 100665366,
+            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IReadOnlyIndex,Microsoft.EntityFrameworkCore.Metadata.IReadOnlyIndex,Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier&):System.Boolean",
+            "normalizedSignature": "AreCompatible|(Microsoft.EntityFrameworkCore.Metadata.IReadOnlyIndex,Microsoft.EntityFrameworkCore.Metadata.IReadOnlyIndex,Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier&):System.Boolean|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 3,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": true,
+            "isSealed": false,
+            "visibility": "Protected",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlSharedTableConvention",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "isExtensionMethod": false,
+            "parameterModifiers": [
+              {
+                "index": 2,
+                "modifier": "in"
+              }
+            ]
+          }
+        ],
+        "properties": [
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlSharedTableConvention::KeysUniqueAcrossTables:System.Boolean",
+            "targetName": "KeysUniqueAcrossTables",
+            "metadataToken": 385876173,
+            "canonicalSignature": ":System.Boolean",
+            "normalizedSignature": "KeysUniqueAcrossTables|:System.Boolean|static=false|accessor=get",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": false,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": true,
+            "visibility": "Protected",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlSharedTableConvention",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          },
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlSharedTableConvention::ForeignKeysUniqueAcrossTables:System.Boolean",
+            "targetName": "ForeignKeysUniqueAcrossTables",
+            "metadataToken": 385876174,
+            "canonicalSignature": ":System.Boolean",
+            "normalizedSignature": "ForeignKeysUniqueAcrossTables|:System.Boolean|static=false|accessor=get",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": false,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": true,
+            "visibility": "Protected",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlSharedTableConvention",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          },
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlSharedTableConvention::IndexesUniqueAcrossTables:System.Boolean",
+            "targetName": "IndexesUniqueAcrossTables",
+            "metadataToken": 385876175,
+            "canonicalSignature": ":System.Boolean",
+            "normalizedSignature": "IndexesUniqueAcrossTables|:System.Boolean|static=false|accessor=get",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": false,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": true,
+            "visibility": "Protected",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlSharedTableConvention",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          },
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlSharedTableConvention::CheckConstraintsUniqueAcrossTables:System.Boolean",
+            "targetName": "CheckConstraintsUniqueAcrossTables",
+            "metadataToken": 385876176,
+            "canonicalSignature": ":System.Boolean",
+            "normalizedSignature": "CheckConstraintsUniqueAcrossTables|:System.Boolean|static=false|accessor=get",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": false,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": true,
+            "visibility": "Protected",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlSharedTableConvention",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          }
+        ],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlSharedTableConvention::.ctor(Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies,Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies):void",
+            "metadataToken": 100665365,
+            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies,Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies):void",
+            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies,Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies):void|static=false",
+            "isStatic": false,
+            "parameterCount": 2,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlSharedTableConvention",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          }
+        ]
       },
-      "interfaces": [
-        {
-          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IModelFinalizingConvention",
-          "targetName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IModelFinalizingConvention"
+      {
+        "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlStoreGenerationConvention",
+        "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlStoreGenerationConvention",
+        "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Metadata.Conventions.StoreGenerationConvention",
+          "targetName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.StoreGenerationConvention"
         },
-        {
-          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IConvention",
-          "targetName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IConvention"
-        }
-      ],
-      "methods": [
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlSharedTableConvention::AreCompatible(Microsoft.EntityFrameworkCore.Metadata.IReadOnlyIndex,Microsoft.EntityFrameworkCore.Metadata.IReadOnlyIndex,Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier\u0026):System.Boolean",
-          "targetName": "AreCompatible",
-          "metadataToken": 100665366,
-          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IReadOnlyIndex,Microsoft.EntityFrameworkCore.Metadata.IReadOnlyIndex,Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier\u0026):System.Boolean",
-          "normalizedSignature": "AreCompatible|(Microsoft.EntityFrameworkCore.Metadata.IReadOnlyIndex,Microsoft.EntityFrameworkCore.Metadata.IReadOnlyIndex,Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier\u0026):System.Boolean|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 3,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": true,
-          "isSealed": false,
-          "visibility": "Protected",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlSharedTableConvention",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
-          "isExtensionMethod": false,
-          "parameterModifiers": [
-            {
-              "index": 2,
-              "modifier": "in"
-            }
-          ]
-        }
-      ],
-      "properties": [
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlSharedTableConvention::KeysUniqueAcrossTables:System.Boolean",
-          "targetName": "KeysUniqueAcrossTables",
-          "metadataToken": 385876173,
-          "canonicalSignature": ":System.Boolean",
-          "normalizedSignature": "KeysUniqueAcrossTables|:System.Boolean|static=false|accessor=get",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": true,
-          "visibility": "Protected",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlSharedTableConvention",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-        },
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlSharedTableConvention::ForeignKeysUniqueAcrossTables:System.Boolean",
-          "targetName": "ForeignKeysUniqueAcrossTables",
-          "metadataToken": 385876174,
-          "canonicalSignature": ":System.Boolean",
-          "normalizedSignature": "ForeignKeysUniqueAcrossTables|:System.Boolean|static=false|accessor=get",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": true,
-          "visibility": "Protected",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlSharedTableConvention",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-        },
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlSharedTableConvention::IndexesUniqueAcrossTables:System.Boolean",
-          "targetName": "IndexesUniqueAcrossTables",
-          "metadataToken": 385876175,
-          "canonicalSignature": ":System.Boolean",
-          "normalizedSignature": "IndexesUniqueAcrossTables|:System.Boolean|static=false|accessor=get",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": true,
-          "visibility": "Protected",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlSharedTableConvention",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-        },
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlSharedTableConvention::CheckConstraintsUniqueAcrossTables:System.Boolean",
-          "targetName": "CheckConstraintsUniqueAcrossTables",
-          "metadataToken": 385876176,
-          "canonicalSignature": ":System.Boolean",
-          "normalizedSignature": "CheckConstraintsUniqueAcrossTables|:System.Boolean|static=false|accessor=get",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": true,
-          "visibility": "Protected",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlSharedTableConvention",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-        }
-      ],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlSharedTableConvention::.ctor(Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies,Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies):void",
-          "metadataToken": 100665365,
-          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies,Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies):void",
-          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies,Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies):void|static=false",
-          "isStatic": false,
-          "parameterCount": 2,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlSharedTableConvention",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-        }
-      ]
-    },
-    {
-      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlStoreGenerationConvention",
-      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlStoreGenerationConvention",
-      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Metadata.Conventions.StoreGenerationConvention",
-        "targetName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.StoreGenerationConvention"
+        "interfaces": [
+          {
+            "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IPropertyAnnotationChangedConvention",
+            "targetName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IPropertyAnnotationChangedConvention"
+          },
+          {
+            "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IConvention",
+            "targetName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IConvention"
+          },
+          {
+            "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IModelFinalizingConvention",
+            "targetName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IModelFinalizingConvention"
+          }
+        ],
+        "methods": [
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlStoreGenerationConvention::ProcessPropertyAnnotationChanged(Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionPropertyBuilder,System.String,Microsoft.EntityFrameworkCore.Metadata.IConventionAnnotation,Microsoft.EntityFrameworkCore.Metadata.IConventionAnnotation,Microsoft.EntityFrameworkCore.Metadata.Conventions.IConventionContext_1[[Microsoft.EntityFrameworkCore.Metadata.IConventionAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
+            "targetName": "ProcessPropertyAnnotationChanged",
+            "metadataToken": 100665372,
+            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionPropertyBuilder,System.String,Microsoft.EntityFrameworkCore.Metadata.IConventionAnnotation,Microsoft.EntityFrameworkCore.Metadata.IConventionAnnotation,Microsoft.EntityFrameworkCore.Metadata.Conventions.IConventionContext_1[[Microsoft.EntityFrameworkCore.Metadata.IConventionAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
+            "normalizedSignature": "ProcessPropertyAnnotationChanged|(Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionPropertyBuilder,System.String,Microsoft.EntityFrameworkCore.Metadata.IConventionAnnotation,Microsoft.EntityFrameworkCore.Metadata.IConventionAnnotation,Microsoft.EntityFrameworkCore.Metadata.Conventions.IConventionContext_1[[Microsoft.EntityFrameworkCore.Metadata.IConventionAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 5,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": true,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlStoreGenerationConvention",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "isExtensionMethod": false
+          },
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlStoreGenerationConvention::Validate(Microsoft.EntityFrameworkCore.Metadata.IConventionProperty,Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier&):System.Void",
+            "targetName": "Validate",
+            "metadataToken": 100665373,
+            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IConventionProperty,Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier&):System.Void",
+            "normalizedSignature": "Validate|(Microsoft.EntityFrameworkCore.Metadata.IConventionProperty,Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier&):System.Void|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 2,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": true,
+            "isSealed": false,
+            "visibility": "Protected",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlStoreGenerationConvention",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "isExtensionMethod": false,
+            "parameterModifiers": [
+              {
+                "index": 1,
+                "modifier": "in"
+              }
+            ]
+          }
+        ],
+        "properties": [],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlStoreGenerationConvention::.ctor(Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies,Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies):void",
+            "metadataToken": 100665371,
+            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies,Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies):void",
+            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies,Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies):void|static=false",
+            "isStatic": false,
+            "parameterCount": 2,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlStoreGenerationConvention",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          }
+        ]
       },
-      "interfaces": [
-        {
-          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IPropertyAnnotationChangedConvention",
-          "targetName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IPropertyAnnotationChangedConvention"
+      {
+        "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlValueGenerationConvention",
+        "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlValueGenerationConvention",
+        "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Metadata.Conventions.RelationalValueGenerationConvention",
+          "targetName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.RelationalValueGenerationConvention"
         },
-        {
-          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IConvention",
-          "targetName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IConvention"
-        },
-        {
-          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IModelFinalizingConvention",
-          "targetName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IModelFinalizingConvention"
-        }
-      ],
-      "methods": [
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlStoreGenerationConvention::ProcessPropertyAnnotationChanged(Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionPropertyBuilder,System.String,Microsoft.EntityFrameworkCore.Metadata.IConventionAnnotation,Microsoft.EntityFrameworkCore.Metadata.IConventionAnnotation,Microsoft.EntityFrameworkCore.Metadata.Conventions.IConventionContext_1[[Microsoft.EntityFrameworkCore.Metadata.IConventionAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
-          "targetName": "ProcessPropertyAnnotationChanged",
-          "metadataToken": 100665372,
-          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionPropertyBuilder,System.String,Microsoft.EntityFrameworkCore.Metadata.IConventionAnnotation,Microsoft.EntityFrameworkCore.Metadata.IConventionAnnotation,Microsoft.EntityFrameworkCore.Metadata.Conventions.IConventionContext_1[[Microsoft.EntityFrameworkCore.Metadata.IConventionAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
-          "normalizedSignature": "ProcessPropertyAnnotationChanged|(Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionPropertyBuilder,System.String,Microsoft.EntityFrameworkCore.Metadata.IConventionAnnotation,Microsoft.EntityFrameworkCore.Metadata.IConventionAnnotation,Microsoft.EntityFrameworkCore.Metadata.Conventions.IConventionContext_1[[Microsoft.EntityFrameworkCore.Metadata.IConventionAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 5,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": true,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlStoreGenerationConvention",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlStoreGenerationConvention::Validate(Microsoft.EntityFrameworkCore.Metadata.IConventionProperty,Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier\u0026):System.Void",
-          "targetName": "Validate",
-          "metadataToken": 100665373,
-          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IConventionProperty,Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier\u0026):System.Void",
-          "normalizedSignature": "Validate|(Microsoft.EntityFrameworkCore.Metadata.IConventionProperty,Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier\u0026):System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 2,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": true,
-          "isSealed": false,
-          "visibility": "Protected",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlStoreGenerationConvention",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
-          "isExtensionMethod": false,
-          "parameterModifiers": [
-            {
-              "index": 1,
-              "modifier": "in"
-            }
-          ]
-        }
-      ],
-      "properties": [],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlStoreGenerationConvention::.ctor(Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies,Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies):void",
-          "metadataToken": 100665371,
-          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies,Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies):void",
-          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies,Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies):void|static=false",
-          "isStatic": false,
-          "parameterCount": 2,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlStoreGenerationConvention",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-        }
-      ]
-    },
-    {
-      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlValueGenerationConvention",
-      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlValueGenerationConvention",
-      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Metadata.Conventions.RelationalValueGenerationConvention",
-        "targetName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.RelationalValueGenerationConvention"
+        "interfaces": [
+          {
+            "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IEntityTypePrimaryKeyChangedConvention",
+            "targetName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IEntityTypePrimaryKeyChangedConvention"
+          },
+          {
+            "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IConvention",
+            "targetName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IConvention"
+          },
+          {
+            "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IForeignKeyAddedConvention",
+            "targetName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IForeignKeyAddedConvention"
+          },
+          {
+            "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IForeignKeyRemovedConvention",
+            "targetName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IForeignKeyRemovedConvention"
+          },
+          {
+            "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IForeignKeyPropertiesChangedConvention",
+            "targetName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IForeignKeyPropertiesChangedConvention"
+          },
+          {
+            "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IEntityTypeBaseTypeChangedConvention",
+            "targetName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IEntityTypeBaseTypeChangedConvention"
+          },
+          {
+            "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IForeignKeyOwnershipChangedConvention",
+            "targetName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IForeignKeyOwnershipChangedConvention"
+          },
+          {
+            "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IPropertyAnnotationChangedConvention",
+            "targetName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IPropertyAnnotationChangedConvention"
+          },
+          {
+            "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IEntityTypeAnnotationChangedConvention",
+            "targetName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IEntityTypeAnnotationChangedConvention"
+          }
+        ],
+        "methods": [
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlValueGenerationConvention::ProcessPropertyAnnotationChanged(Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionPropertyBuilder,System.String,Microsoft.EntityFrameworkCore.Metadata.IConventionAnnotation,Microsoft.EntityFrameworkCore.Metadata.IConventionAnnotation,Microsoft.EntityFrameworkCore.Metadata.Conventions.IConventionContext_1[[Microsoft.EntityFrameworkCore.Metadata.IConventionAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
+            "targetName": "ProcessPropertyAnnotationChanged",
+            "metadataToken": 100665375,
+            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionPropertyBuilder,System.String,Microsoft.EntityFrameworkCore.Metadata.IConventionAnnotation,Microsoft.EntityFrameworkCore.Metadata.IConventionAnnotation,Microsoft.EntityFrameworkCore.Metadata.Conventions.IConventionContext_1[[Microsoft.EntityFrameworkCore.Metadata.IConventionAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
+            "normalizedSignature": "ProcessPropertyAnnotationChanged|(Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionPropertyBuilder,System.String,Microsoft.EntityFrameworkCore.Metadata.IConventionAnnotation,Microsoft.EntityFrameworkCore.Metadata.IConventionAnnotation,Microsoft.EntityFrameworkCore.Metadata.Conventions.IConventionContext_1[[Microsoft.EntityFrameworkCore.Metadata.IConventionAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 5,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": true,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlValueGenerationConvention",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "isExtensionMethod": false
+          },
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlValueGenerationConvention::GetValueGenerated(Microsoft.EntityFrameworkCore.Metadata.IConventionProperty):System.Nullable_1[[Microsoft.EntityFrameworkCore.Metadata.ValueGenerated,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+            "targetName": "GetValueGenerated",
+            "metadataToken": 100665376,
+            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IConventionProperty):System.Nullable_1[[Microsoft.EntityFrameworkCore.Metadata.ValueGenerated,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+            "normalizedSignature": "GetValueGenerated|(Microsoft.EntityFrameworkCore.Metadata.IConventionProperty):System.Nullable_1[[Microsoft.EntityFrameworkCore.Metadata.ValueGenerated,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 1,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": true,
+            "isSealed": false,
+            "visibility": "Protected",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlValueGenerationConvention",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "isExtensionMethod": false
+          },
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlValueGenerationConvention::GetValueGenerated(Microsoft.EntityFrameworkCore.Metadata.IReadOnlyProperty,Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier&):System.Nullable_1[[Microsoft.EntityFrameworkCore.Metadata.ValueGenerated,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+            "targetName": "GetValueGenerated",
+            "metadataToken": 100665377,
+            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IReadOnlyProperty,Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier&):System.Nullable_1[[Microsoft.EntityFrameworkCore.Metadata.ValueGenerated,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+            "normalizedSignature": "GetValueGenerated|(Microsoft.EntityFrameworkCore.Metadata.IReadOnlyProperty,Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier&):System.Nullable_1[[Microsoft.EntityFrameworkCore.Metadata.ValueGenerated,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=true",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 2,
+            "isStatic": true,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlValueGenerationConvention",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "isExtensionMethod": false,
+            "parameterModifiers": [
+              {
+                "index": 1,
+                "modifier": "in"
+              }
+            ]
+          }
+        ],
+        "properties": [],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlValueGenerationConvention::.ctor(Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies,Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies):void",
+            "metadataToken": 100665374,
+            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies,Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies):void",
+            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies,Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies):void|static=false",
+            "isStatic": false,
+            "parameterCount": 2,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlValueGenerationConvention",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          }
+        ]
       },
-      "interfaces": [
-        {
-          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IEntityTypePrimaryKeyChangedConvention",
-          "targetName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IEntityTypePrimaryKeyChangedConvention"
+      {
+        "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlValueGenerationStrategyConvention",
+        "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlValueGenerationStrategyConvention",
+        "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Object",
+          "targetName": "System.Object"
         },
-        {
-          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IConvention",
-          "targetName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IConvention"
-        },
-        {
-          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IForeignKeyAddedConvention",
-          "targetName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IForeignKeyAddedConvention"
-        },
-        {
-          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IForeignKeyRemovedConvention",
-          "targetName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IForeignKeyRemovedConvention"
-        },
-        {
-          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IForeignKeyPropertiesChangedConvention",
-          "targetName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IForeignKeyPropertiesChangedConvention"
-        },
-        {
-          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IEntityTypeBaseTypeChangedConvention",
-          "targetName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IEntityTypeBaseTypeChangedConvention"
-        },
-        {
-          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IForeignKeyOwnershipChangedConvention",
-          "targetName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IForeignKeyOwnershipChangedConvention"
-        },
-        {
-          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IPropertyAnnotationChangedConvention",
-          "targetName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IPropertyAnnotationChangedConvention"
-        },
-        {
-          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IEntityTypeAnnotationChangedConvention",
-          "targetName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IEntityTypeAnnotationChangedConvention"
-        }
-      ],
-      "methods": [
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlValueGenerationConvention::ProcessPropertyAnnotationChanged(Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionPropertyBuilder,System.String,Microsoft.EntityFrameworkCore.Metadata.IConventionAnnotation,Microsoft.EntityFrameworkCore.Metadata.IConventionAnnotation,Microsoft.EntityFrameworkCore.Metadata.Conventions.IConventionContext_1[[Microsoft.EntityFrameworkCore.Metadata.IConventionAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
-          "targetName": "ProcessPropertyAnnotationChanged",
-          "metadataToken": 100665375,
-          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionPropertyBuilder,System.String,Microsoft.EntityFrameworkCore.Metadata.IConventionAnnotation,Microsoft.EntityFrameworkCore.Metadata.IConventionAnnotation,Microsoft.EntityFrameworkCore.Metadata.Conventions.IConventionContext_1[[Microsoft.EntityFrameworkCore.Metadata.IConventionAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
-          "normalizedSignature": "ProcessPropertyAnnotationChanged|(Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionPropertyBuilder,System.String,Microsoft.EntityFrameworkCore.Metadata.IConventionAnnotation,Microsoft.EntityFrameworkCore.Metadata.IConventionAnnotation,Microsoft.EntityFrameworkCore.Metadata.Conventions.IConventionContext_1[[Microsoft.EntityFrameworkCore.Metadata.IConventionAnnotation,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 5,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": true,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlValueGenerationConvention",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlValueGenerationConvention::GetValueGenerated(Microsoft.EntityFrameworkCore.Metadata.IConventionProperty):System.Nullable_1[[Microsoft.EntityFrameworkCore.Metadata.ValueGenerated,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "targetName": "GetValueGenerated",
-          "metadataToken": 100665376,
-          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IConventionProperty):System.Nullable_1[[Microsoft.EntityFrameworkCore.Metadata.ValueGenerated,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "normalizedSignature": "GetValueGenerated|(Microsoft.EntityFrameworkCore.Metadata.IConventionProperty):System.Nullable_1[[Microsoft.EntityFrameworkCore.Metadata.ValueGenerated,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": true,
-          "isSealed": false,
-          "visibility": "Protected",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlValueGenerationConvention",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlValueGenerationConvention::GetValueGenerated(Microsoft.EntityFrameworkCore.Metadata.IReadOnlyProperty,Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier\u0026):System.Nullable_1[[Microsoft.EntityFrameworkCore.Metadata.ValueGenerated,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "targetName": "GetValueGenerated",
-          "metadataToken": 100665377,
-          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IReadOnlyProperty,Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier\u0026):System.Nullable_1[[Microsoft.EntityFrameworkCore.Metadata.ValueGenerated,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "normalizedSignature": "GetValueGenerated|(Microsoft.EntityFrameworkCore.Metadata.IReadOnlyProperty,Microsoft.EntityFrameworkCore.Metadata.StoreObjectIdentifier\u0026):System.Nullable_1[[Microsoft.EntityFrameworkCore.Metadata.ValueGenerated,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=true",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 2,
-          "isStatic": true,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlValueGenerationConvention",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
-          "isExtensionMethod": false,
-          "parameterModifiers": [
-            {
-              "index": 1,
-              "modifier": "in"
-            }
-          ]
-        }
-      ],
-      "properties": [],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlValueGenerationConvention::.ctor(Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies,Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies):void",
-          "metadataToken": 100665374,
-          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies,Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies):void",
-          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies,Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies):void|static=false",
-          "isStatic": false,
-          "parameterCount": 2,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlValueGenerationConvention",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-        }
-      ]
-    },
-    {
-      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlValueGenerationStrategyConvention",
-      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlValueGenerationStrategyConvention",
-      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Object",
-        "targetName": "System.Object"
-      },
-      "interfaces": [
-        {
-          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IModelInitializedConvention",
-          "targetName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IModelInitializedConvention"
-        },
-        {
-          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IConvention",
-          "targetName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IConvention"
-        },
-        {
-          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IModelFinalizingConvention",
-          "targetName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IModelFinalizingConvention"
-        }
-      ],
-      "methods": [
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlValueGenerationStrategyConvention::ProcessModelInitialized(Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionModelBuilder,Microsoft.EntityFrameworkCore.Metadata.Conventions.IConventionContext_1[[Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionModelBuilder,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
-          "targetName": "ProcessModelInitialized",
-          "metadataToken": 100665382,
-          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionModelBuilder,Microsoft.EntityFrameworkCore.Metadata.Conventions.IConventionContext_1[[Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionModelBuilder,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
-          "normalizedSignature": "ProcessModelInitialized|(Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionModelBuilder,Microsoft.EntityFrameworkCore.Metadata.Conventions.IConventionContext_1[[Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionModelBuilder,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 2,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlValueGenerationStrategyConvention",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlValueGenerationStrategyConvention::ProcessModelFinalizing(Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionModelBuilder,Microsoft.EntityFrameworkCore.Metadata.Conventions.IConventionContext_1[[Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionModelBuilder,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
-          "targetName": "ProcessModelFinalizing",
-          "metadataToken": 100665383,
-          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionModelBuilder,Microsoft.EntityFrameworkCore.Metadata.Conventions.IConventionContext_1[[Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionModelBuilder,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
-          "normalizedSignature": "ProcessModelFinalizing|(Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionModelBuilder,Microsoft.EntityFrameworkCore.Metadata.Conventions.IConventionContext_1[[Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionModelBuilder,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 2,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlValueGenerationStrategyConvention",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
-          "isExtensionMethod": false
-        }
-      ],
-      "properties": [
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlValueGenerationStrategyConvention::Dependencies:Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies",
-          "targetName": "Dependencies",
-          "metadataToken": 385876177,
-          "canonicalSignature": ":Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies",
-          "normalizedSignature": "Dependencies|:Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies|static=false|accessor=get",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "visibility": "Protected",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlValueGenerationStrategyConvention",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-        },
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlValueGenerationStrategyConvention::RelationalDependencies:Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies",
-          "targetName": "RelationalDependencies",
-          "metadataToken": 385876178,
-          "canonicalSignature": ":Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies",
-          "normalizedSignature": "RelationalDependencies|:Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies|static=false|accessor=get",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "visibility": "Protected",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlValueGenerationStrategyConvention",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-        }
-      ],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlValueGenerationStrategyConvention::.ctor(Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies,Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies,System.Version):void",
-          "metadataToken": 100665379,
-          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies,Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies,System.Version):void",
-          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies,Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies,System.Version):void|static=false",
-          "isStatic": false,
-          "parameterCount": 3,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlValueGenerationStrategyConvention",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-        }
-      ]
-    }
-  ]
+        "interfaces": [
+          {
+            "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IModelInitializedConvention",
+            "targetName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IModelInitializedConvention"
+          },
+          {
+            "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IConvention",
+            "targetName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IConvention"
+          },
+          {
+            "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.Conventions.IModelFinalizingConvention",
+            "targetName": "Microsoft.EntityFrameworkCore.Metadata.Conventions.IModelFinalizingConvention"
+          }
+        ],
+        "methods": [
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlValueGenerationStrategyConvention::ProcessModelInitialized(Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionModelBuilder,Microsoft.EntityFrameworkCore.Metadata.Conventions.IConventionContext_1[[Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionModelBuilder,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
+            "targetName": "ProcessModelInitialized",
+            "metadataToken": 100665382,
+            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionModelBuilder,Microsoft.EntityFrameworkCore.Metadata.Conventions.IConventionContext_1[[Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionModelBuilder,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
+            "normalizedSignature": "ProcessModelInitialized|(Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionModelBuilder,Microsoft.EntityFrameworkCore.Metadata.Conventions.IConventionContext_1[[Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionModelBuilder,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 2,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlValueGenerationStrategyConvention",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "isExtensionMethod": false
+          },
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlValueGenerationStrategyConvention::ProcessModelFinalizing(Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionModelBuilder,Microsoft.EntityFrameworkCore.Metadata.Conventions.IConventionContext_1[[Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionModelBuilder,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
+            "targetName": "ProcessModelFinalizing",
+            "metadataToken": 100665383,
+            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionModelBuilder,Microsoft.EntityFrameworkCore.Metadata.Conventions.IConventionContext_1[[Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionModelBuilder,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
+            "normalizedSignature": "ProcessModelFinalizing|(Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionModelBuilder,Microsoft.EntityFrameworkCore.Metadata.Conventions.IConventionContext_1[[Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionModelBuilder,Microsoft.EntityFrameworkCore,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 2,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlValueGenerationStrategyConvention",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "isExtensionMethod": false
+          }
+        ],
+        "properties": [
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlValueGenerationStrategyConvention::Dependencies:Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies",
+            "targetName": "Dependencies",
+            "metadataToken": 385876177,
+            "canonicalSignature": ":Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies",
+            "normalizedSignature": "Dependencies|:Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies|static=false|accessor=get",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": false,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "visibility": "Protected",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlValueGenerationStrategyConvention",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          },
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlValueGenerationStrategyConvention::RelationalDependencies:Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies",
+            "targetName": "RelationalDependencies",
+            "metadataToken": 385876178,
+            "canonicalSignature": ":Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies",
+            "normalizedSignature": "RelationalDependencies|:Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies|static=false|accessor=get",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": false,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "visibility": "Protected",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlValueGenerationStrategyConvention",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          }
+        ],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlValueGenerationStrategyConvention::.ctor(Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies,Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies,System.Version):void",
+            "metadataToken": 100665379,
+            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies,Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies,System.Version):void",
+            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.ProviderConventionSetBuilderDependencies,Microsoft.EntityFrameworkCore.Metadata.Conventions.Infrastructure.RelationalConventionSetBuilderDependencies,System.Version):void|static=false",
+            "isStatic": false,
+            "parameterCount": 3,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Metadata.Conventions.NpgsqlValueGenerationStrategyConvention",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          }
+        ]
+      }
+    ]
+  }
 }

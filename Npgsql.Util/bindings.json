@@ -1,29 +1,34 @@
 {
-  "namespace": "Npgsql.Util",
-  "contributingAssemblies": [
-    "Npgsql"
-  ],
-  "types": [
-    {
-      "stableId": "Npgsql:Npgsql.Util.NpgsqlTimeout",
-      "targetName": "Npgsql.Util.NpgsqlTimeout",
-      "ownerIdentity": "Npgsql",
-      "metadataToken": 0,
-      "kind": "Struct",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": true,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.ValueType",
-        "targetName": "System.ValueType"
-      },
-      "methods": [],
-      "properties": [],
-      "fields": [],
-      "events": [],
-      "constructors": []
-    }
-  ]
+  "schema": "tsonic.bindings",
+  "provider": {
+    "namespace": "Npgsql.Util",
+    "ownerIdentities": [
+      "Npgsql"
+    ]
+  },
+  "targetSurface": {
+    "types": [
+      {
+        "stableId": "Npgsql:Npgsql.Util.NpgsqlTimeout",
+        "targetName": "Npgsql.Util.NpgsqlTimeout",
+        "ownerIdentity": "Npgsql",
+        "metadataToken": 0,
+        "kind": "Struct",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": true,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.ValueType",
+          "targetName": "System.ValueType"
+        },
+        "methods": [],
+        "properties": [],
+        "fields": [],
+        "events": [],
+        "constructors": []
+      }
+    ]
+  }
 }

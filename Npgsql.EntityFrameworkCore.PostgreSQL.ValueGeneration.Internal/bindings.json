@@ -1,521 +1,526 @@
 {
-  "namespace": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal",
-  "contributingAssemblies": [
-    "Npgsql.EntityFrameworkCore.PostgreSQL"
-  ],
-  "types": [
-    {
-      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.INpgsqlSequenceValueGeneratorFactory",
-      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.INpgsqlSequenceValueGeneratorFactory",
-      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
-      "metadataToken": 0,
-      "kind": "Interface",
-      "accessibility": "Public",
-      "isAbstract": true,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "methods": [
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.INpgsqlSequenceValueGeneratorFactory::TryCreate(Microsoft.EntityFrameworkCore.Metadata.IProperty,System.Type,Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorState,Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection,Microsoft.EntityFrameworkCore.Storage.IRawSqlCommandBuilder,Microsoft.EntityFrameworkCore.Diagnostics.IRelationalCommandDiagnosticsLogger):Microsoft.EntityFrameworkCore.ValueGeneration.ValueGenerator",
-          "targetName": "TryCreate",
-          "metadataToken": 100664063,
-          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IProperty,System.Type,Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorState,Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection,Microsoft.EntityFrameworkCore.Storage.IRawSqlCommandBuilder,Microsoft.EntityFrameworkCore.Diagnostics.IRelationalCommandDiagnosticsLogger):Microsoft.EntityFrameworkCore.ValueGeneration.ValueGenerator",
-          "normalizedSignature": "TryCreate|(Microsoft.EntityFrameworkCore.Metadata.IProperty,System.Type,Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorState,Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection,Microsoft.EntityFrameworkCore.Storage.IRawSqlCommandBuilder,Microsoft.EntityFrameworkCore.Diagnostics.IRelationalCommandDiagnosticsLogger):Microsoft.EntityFrameworkCore.ValueGeneration.ValueGenerator|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 6,
-          "isStatic": false,
-          "isAbstract": true,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.INpgsqlSequenceValueGeneratorFactory",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
-          "isExtensionMethod": false
-        }
-      ],
-      "properties": [],
-      "fields": [],
-      "events": [],
-      "constructors": []
-    },
-    {
-      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.INpgsqlValueGeneratorCache",
-      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.INpgsqlValueGeneratorCache",
-      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
-      "metadataToken": 0,
-      "kind": "Interface",
-      "accessibility": "Public",
-      "isAbstract": true,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "interfaces": [
-        {
-          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.ValueGeneration.IValueGeneratorCache",
-          "targetName": "Microsoft.EntityFrameworkCore.ValueGeneration.IValueGeneratorCache"
-        }
-      ],
-      "methods": [
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.INpgsqlValueGeneratorCache::GetOrAddSequenceState(Microsoft.EntityFrameworkCore.Metadata.IProperty,Microsoft.EntityFrameworkCore.Storage.IRelationalConnection):Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorState",
-          "targetName": "GetOrAddSequenceState",
-          "metadataToken": 100664064,
-          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IProperty,Microsoft.EntityFrameworkCore.Storage.IRelationalConnection):Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorState",
-          "normalizedSignature": "GetOrAddSequenceState|(Microsoft.EntityFrameworkCore.Metadata.IProperty,Microsoft.EntityFrameworkCore.Storage.IRelationalConnection):Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorState|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 2,
-          "isStatic": false,
-          "isAbstract": true,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.INpgsqlValueGeneratorCache",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
-          "isExtensionMethod": false
-        }
-      ],
-      "properties": [],
-      "fields": [],
-      "events": [],
-      "constructors": []
-    },
-    {
-      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceHiLoValueGenerator\u00601",
-      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceHiLoValueGenerator\u00601",
-      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 1,
-      "baseType": {
-        "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.ValueGeneration.HiLoValueGenerator\u00601",
-        "targetName": "Microsoft.EntityFrameworkCore.ValueGeneration.HiLoValueGenerator\u00601",
-        "typeArguments": [
-          "TValue"
-        ]
+  "schema": "tsonic.bindings",
+  "provider": {
+    "namespace": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal",
+    "ownerIdentities": [
+      "Npgsql.EntityFrameworkCore.PostgreSQL"
+    ]
+  },
+  "targetSurface": {
+    "types": [
+      {
+        "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.INpgsqlSequenceValueGeneratorFactory",
+        "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.INpgsqlSequenceValueGeneratorFactory",
+        "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
+        "metadataToken": 0,
+        "kind": "Interface",
+        "accessibility": "Public",
+        "isAbstract": true,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "methods": [
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.INpgsqlSequenceValueGeneratorFactory::TryCreate(Microsoft.EntityFrameworkCore.Metadata.IProperty,System.Type,Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorState,Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection,Microsoft.EntityFrameworkCore.Storage.IRawSqlCommandBuilder,Microsoft.EntityFrameworkCore.Diagnostics.IRelationalCommandDiagnosticsLogger):Microsoft.EntityFrameworkCore.ValueGeneration.ValueGenerator",
+            "targetName": "TryCreate",
+            "metadataToken": 100664063,
+            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IProperty,System.Type,Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorState,Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection,Microsoft.EntityFrameworkCore.Storage.IRawSqlCommandBuilder,Microsoft.EntityFrameworkCore.Diagnostics.IRelationalCommandDiagnosticsLogger):Microsoft.EntityFrameworkCore.ValueGeneration.ValueGenerator",
+            "normalizedSignature": "TryCreate|(Microsoft.EntityFrameworkCore.Metadata.IProperty,System.Type,Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorState,Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection,Microsoft.EntityFrameworkCore.Storage.IRawSqlCommandBuilder,Microsoft.EntityFrameworkCore.Diagnostics.IRelationalCommandDiagnosticsLogger):Microsoft.EntityFrameworkCore.ValueGeneration.ValueGenerator|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 6,
+            "isStatic": false,
+            "isAbstract": true,
+            "isVirtual": true,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.INpgsqlSequenceValueGeneratorFactory",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "isExtensionMethod": false
+          }
+        ],
+        "properties": [],
+        "fields": [],
+        "events": [],
+        "constructors": []
       },
-      "typeParameters": [
-        "TValue"
-      ],
-      "methods": [
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceHiLoValueGenerator\u00601::GetNewLowValue():System.Int64",
-          "targetName": "GetNewLowValue",
-          "metadataToken": 100664066,
-          "canonicalSignature": "():System.Int64",
-          "normalizedSignature": "GetNewLowValue|():System.Int64|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": true,
-          "isSealed": false,
-          "visibility": "Protected",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceHiLoValueGenerator\u00601",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceHiLoValueGenerator\u00601::GetNewLowValueAsync(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "targetName": "GetNewLowValueAsync",
-          "metadataToken": 100664067,
-          "canonicalSignature": "(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "normalizedSignature": "GetNewLowValueAsync|(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": true,
-          "isSealed": false,
-          "visibility": "Protected",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceHiLoValueGenerator\u00601",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
-          "isExtensionMethod": false
-        }
-      ],
-      "properties": [
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceHiLoValueGenerator\u00601::GeneratesTemporaryValues:System.Boolean",
-          "targetName": "GeneratesTemporaryValues",
-          "metadataToken": 385875988,
-          "canonicalSignature": ":System.Boolean",
-          "normalizedSignature": "GeneratesTemporaryValues|:System.Boolean|static=false|accessor=get",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": true,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceHiLoValueGenerator\u00601",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-        }
-      ],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceHiLoValueGenerator\u00601::.ctor(Microsoft.EntityFrameworkCore.Storage.IRawSqlCommandBuilder,Microsoft.EntityFrameworkCore.Update.IUpdateSqlGenerator,Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorState,Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection,Microsoft.EntityFrameworkCore.Diagnostics.IRelationalCommandDiagnosticsLogger):void",
-          "metadataToken": 100664065,
-          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.IRawSqlCommandBuilder,Microsoft.EntityFrameworkCore.Update.IUpdateSqlGenerator,Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorState,Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection,Microsoft.EntityFrameworkCore.Diagnostics.IRelationalCommandDiagnosticsLogger):void",
-          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.IRawSqlCommandBuilder,Microsoft.EntityFrameworkCore.Update.IUpdateSqlGenerator,Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorState,Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection,Microsoft.EntityFrameworkCore.Diagnostics.IRelationalCommandDiagnosticsLogger):void|static=false",
-          "isStatic": false,
-          "parameterCount": 5,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceHiLoValueGenerator\u00601",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-        }
-      ]
-    },
-    {
-      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorFactory",
-      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorFactory",
-      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Object",
-        "targetName": "System.Object"
+      {
+        "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.INpgsqlValueGeneratorCache",
+        "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.INpgsqlValueGeneratorCache",
+        "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
+        "metadataToken": 0,
+        "kind": "Interface",
+        "accessibility": "Public",
+        "isAbstract": true,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "interfaces": [
+          {
+            "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.ValueGeneration.IValueGeneratorCache",
+            "targetName": "Microsoft.EntityFrameworkCore.ValueGeneration.IValueGeneratorCache"
+          }
+        ],
+        "methods": [
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.INpgsqlValueGeneratorCache::GetOrAddSequenceState(Microsoft.EntityFrameworkCore.Metadata.IProperty,Microsoft.EntityFrameworkCore.Storage.IRelationalConnection):Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorState",
+            "targetName": "GetOrAddSequenceState",
+            "metadataToken": 100664064,
+            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IProperty,Microsoft.EntityFrameworkCore.Storage.IRelationalConnection):Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorState",
+            "normalizedSignature": "GetOrAddSequenceState|(Microsoft.EntityFrameworkCore.Metadata.IProperty,Microsoft.EntityFrameworkCore.Storage.IRelationalConnection):Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorState|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 2,
+            "isStatic": false,
+            "isAbstract": true,
+            "isVirtual": true,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.INpgsqlValueGeneratorCache",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "isExtensionMethod": false
+          }
+        ],
+        "properties": [],
+        "fields": [],
+        "events": [],
+        "constructors": []
       },
-      "interfaces": [
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.INpgsqlSequenceValueGeneratorFactory",
-          "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.INpgsqlSequenceValueGeneratorFactory"
-        }
-      ],
-      "methods": [
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorFactory::TryCreate(Microsoft.EntityFrameworkCore.Metadata.IProperty,System.Type,Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorState,Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection,Microsoft.EntityFrameworkCore.Storage.IRawSqlCommandBuilder,Microsoft.EntityFrameworkCore.Diagnostics.IRelationalCommandDiagnosticsLogger):Microsoft.EntityFrameworkCore.ValueGeneration.ValueGenerator",
-          "targetName": "TryCreate",
-          "metadataToken": 100664070,
-          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IProperty,System.Type,Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorState,Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection,Microsoft.EntityFrameworkCore.Storage.IRawSqlCommandBuilder,Microsoft.EntityFrameworkCore.Diagnostics.IRelationalCommandDiagnosticsLogger):Microsoft.EntityFrameworkCore.ValueGeneration.ValueGenerator",
-          "normalizedSignature": "TryCreate|(Microsoft.EntityFrameworkCore.Metadata.IProperty,System.Type,Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorState,Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection,Microsoft.EntityFrameworkCore.Storage.IRawSqlCommandBuilder,Microsoft.EntityFrameworkCore.Diagnostics.IRelationalCommandDiagnosticsLogger):Microsoft.EntityFrameworkCore.ValueGeneration.ValueGenerator|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 6,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorFactory",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.INpgsqlSequenceValueGeneratorFactory::TryCreate(Microsoft.EntityFrameworkCore.Metadata.IProperty,System.Type,Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorState,Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection,Microsoft.EntityFrameworkCore.Storage.IRawSqlCommandBuilder,Microsoft.EntityFrameworkCore.Diagnostics.IRelationalCommandDiagnosticsLogger):Microsoft.EntityFrameworkCore.ValueGeneration.ValueGenerator",
-          "targetName": "TryCreate",
-          "metadataToken": 100664063,
-          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IProperty,System.Type,Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorState,Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection,Microsoft.EntityFrameworkCore.Storage.IRawSqlCommandBuilder,Microsoft.EntityFrameworkCore.Diagnostics.IRelationalCommandDiagnosticsLogger):Microsoft.EntityFrameworkCore.ValueGeneration.ValueGenerator",
-          "normalizedSignature": "TryCreate|(Microsoft.EntityFrameworkCore.Metadata.IProperty,System.Type,Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorState,Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection,Microsoft.EntityFrameworkCore.Storage.IRawSqlCommandBuilder,Microsoft.EntityFrameworkCore.Diagnostics.IRelationalCommandDiagnosticsLogger):Microsoft.EntityFrameworkCore.ValueGeneration.ValueGenerator|static=false",
-          "emitScope": "ViewOnly",
-          "provenance": "ExplicitView",
-          "arity": 0,
-          "parameterCount": 6,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.INpgsqlSequenceValueGeneratorFactory",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
-          "isExtensionMethod": false,
-          "sourceInterface": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.INpgsqlSequenceValueGeneratorFactory"
-        }
-      ],
-      "properties": [],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorFactory::.ctor(Microsoft.EntityFrameworkCore.Update.IUpdateSqlGenerator):void",
-          "metadataToken": 100664069,
-          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Update.IUpdateSqlGenerator):void",
-          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Update.IUpdateSqlGenerator):void|static=false",
-          "isStatic": false,
-          "parameterCount": 1,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorFactory",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-        }
-      ]
-    },
-    {
-      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorState",
-      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorState",
-      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.ValueGeneration.HiLoValueGeneratorState",
-        "targetName": "Microsoft.EntityFrameworkCore.ValueGeneration.HiLoValueGeneratorState"
-      },
-      "interfaces": [
-        {
-          "stableId": "System.Private.CoreLib:System.IDisposable",
-          "targetName": "System.IDisposable"
-        }
-      ],
-      "methods": [],
-      "properties": [
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorState::Sequence:Microsoft.EntityFrameworkCore.Metadata.ISequence",
-          "targetName": "Sequence",
-          "metadataToken": 385875989,
-          "canonicalSignature": ":Microsoft.EntityFrameworkCore.Metadata.ISequence",
-          "normalizedSignature": "Sequence|:Microsoft.EntityFrameworkCore.Metadata.ISequence|static=false|accessor=get",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorState",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-        }
-      ],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorState::.ctor(Microsoft.EntityFrameworkCore.Metadata.ISequence):void",
-          "metadataToken": 100664071,
-          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.ISequence):void",
-          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Metadata.ISequence):void|static=false",
-          "isStatic": false,
-          "parameterCount": 1,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorState",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-        }
-      ]
-    },
-    {
-      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlValueGeneratorCache",
-      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlValueGeneratorCache",
-      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.ValueGeneration.ValueGeneratorCache",
-        "targetName": "Microsoft.EntityFrameworkCore.ValueGeneration.ValueGeneratorCache"
-      },
-      "interfaces": [
-        {
-          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.ValueGeneration.IValueGeneratorCache",
-          "targetName": "Microsoft.EntityFrameworkCore.ValueGeneration.IValueGeneratorCache"
-        },
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.INpgsqlValueGeneratorCache",
-          "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.INpgsqlValueGeneratorCache"
-        }
-      ],
-      "methods": [
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlValueGeneratorCache::GetOrAddSequenceState(Microsoft.EntityFrameworkCore.Metadata.IProperty,Microsoft.EntityFrameworkCore.Storage.IRelationalConnection):Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorState",
-          "targetName": "GetOrAddSequenceState",
-          "metadataToken": 100664074,
-          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IProperty,Microsoft.EntityFrameworkCore.Storage.IRelationalConnection):Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorState",
-          "normalizedSignature": "GetOrAddSequenceState|(Microsoft.EntityFrameworkCore.Metadata.IProperty,Microsoft.EntityFrameworkCore.Storage.IRelationalConnection):Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorState|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 2,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlValueGeneratorCache",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.INpgsqlValueGeneratorCache::GetOrAddSequenceState(Microsoft.EntityFrameworkCore.Metadata.IProperty,Microsoft.EntityFrameworkCore.Storage.IRelationalConnection):Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorState",
-          "targetName": "GetOrAddSequenceState",
-          "metadataToken": 100664064,
-          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IProperty,Microsoft.EntityFrameworkCore.Storage.IRelationalConnection):Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorState",
-          "normalizedSignature": "GetOrAddSequenceState|(Microsoft.EntityFrameworkCore.Metadata.IProperty,Microsoft.EntityFrameworkCore.Storage.IRelationalConnection):Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorState|static=false",
-          "emitScope": "ViewOnly",
-          "provenance": "ExplicitView",
-          "arity": 0,
-          "parameterCount": 2,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.INpgsqlValueGeneratorCache",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
-          "isExtensionMethod": false,
-          "sourceInterface": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.INpgsqlValueGeneratorCache"
-        }
-      ],
-      "properties": [],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlValueGeneratorCache::.ctor(Microsoft.EntityFrameworkCore.ValueGeneration.ValueGeneratorCacheDependencies):void",
-          "metadataToken": 100664073,
-          "canonicalSignature": "(Microsoft.EntityFrameworkCore.ValueGeneration.ValueGeneratorCacheDependencies):void",
-          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.ValueGeneration.ValueGeneratorCacheDependencies):void|static=false",
-          "isStatic": false,
-          "parameterCount": 1,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlValueGeneratorCache",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-        }
-      ]
-    },
-    {
-      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlValueGeneratorSelector",
-      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlValueGeneratorSelector",
-      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.ValueGeneration.RelationalValueGeneratorSelector",
-        "targetName": "Microsoft.EntityFrameworkCore.ValueGeneration.RelationalValueGeneratorSelector"
-      },
-      "interfaces": [
-        {
-          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.ValueGeneration.IValueGeneratorSelector",
-          "targetName": "Microsoft.EntityFrameworkCore.ValueGeneration.IValueGeneratorSelector"
-        }
-      ],
-      "methods": [
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlValueGeneratorSelector::TrySelect(Microsoft.EntityFrameworkCore.Metadata.IProperty,Microsoft.EntityFrameworkCore.Metadata.ITypeBase,Microsoft.EntityFrameworkCore.ValueGeneration.ValueGenerator\u0026):System.Boolean",
-          "targetName": "TrySelect",
-          "metadataToken": 100664078,
-          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IProperty,Microsoft.EntityFrameworkCore.Metadata.ITypeBase,Microsoft.EntityFrameworkCore.ValueGeneration.ValueGenerator\u0026):System.Boolean",
-          "normalizedSignature": "TrySelect|(Microsoft.EntityFrameworkCore.Metadata.IProperty,Microsoft.EntityFrameworkCore.Metadata.ITypeBase,Microsoft.EntityFrameworkCore.ValueGeneration.ValueGenerator\u0026):System.Boolean|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 3,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": true,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlValueGeneratorSelector",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
-          "isExtensionMethod": false,
-          "parameterModifiers": [
-            {
-              "index": 2,
-              "modifier": "out"
-            }
+      {
+        "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceHiLoValueGenerator`1",
+        "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceHiLoValueGenerator`1",
+        "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 1,
+        "baseType": {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.ValueGeneration.HiLoValueGenerator`1",
+          "targetName": "Microsoft.EntityFrameworkCore.ValueGeneration.HiLoValueGenerator`1",
+          "typeArguments": [
+            "TValue"
           ]
         },
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlValueGeneratorSelector::FindForType(Microsoft.EntityFrameworkCore.Metadata.IProperty,Microsoft.EntityFrameworkCore.Metadata.ITypeBase,System.Type):Microsoft.EntityFrameworkCore.ValueGeneration.ValueGenerator",
-          "targetName": "FindForType",
-          "metadataToken": 100664079,
-          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IProperty,Microsoft.EntityFrameworkCore.Metadata.ITypeBase,System.Type):Microsoft.EntityFrameworkCore.ValueGeneration.ValueGenerator",
-          "normalizedSignature": "FindForType|(Microsoft.EntityFrameworkCore.Metadata.IProperty,Microsoft.EntityFrameworkCore.Metadata.ITypeBase,System.Type):Microsoft.EntityFrameworkCore.ValueGeneration.ValueGenerator|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 3,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": true,
-          "isSealed": false,
-          "visibility": "Protected",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlValueGeneratorSelector",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
-          "isExtensionMethod": false
-        }
-      ],
-      "properties": [
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlValueGeneratorSelector::Cache:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.INpgsqlValueGeneratorCache",
-          "targetName": "Cache",
-          "metadataToken": 385875990,
-          "canonicalSignature": ":Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.INpgsqlValueGeneratorCache",
-          "normalizedSignature": "Cache|:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.INpgsqlValueGeneratorCache|static=false|accessor=get",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlValueGeneratorSelector",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-        }
-      ],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlValueGeneratorSelector::.ctor(Microsoft.EntityFrameworkCore.ValueGeneration.ValueGeneratorSelectorDependencies,Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.INpgsqlSequenceValueGeneratorFactory,Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection,Microsoft.EntityFrameworkCore.Storage.IRawSqlCommandBuilder,Microsoft.EntityFrameworkCore.Diagnostics.IRelationalCommandDiagnosticsLogger):void",
-          "metadataToken": 100664076,
-          "canonicalSignature": "(Microsoft.EntityFrameworkCore.ValueGeneration.ValueGeneratorSelectorDependencies,Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.INpgsqlSequenceValueGeneratorFactory,Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection,Microsoft.EntityFrameworkCore.Storage.IRawSqlCommandBuilder,Microsoft.EntityFrameworkCore.Diagnostics.IRelationalCommandDiagnosticsLogger):void",
-          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.ValueGeneration.ValueGeneratorSelectorDependencies,Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.INpgsqlSequenceValueGeneratorFactory,Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection,Microsoft.EntityFrameworkCore.Storage.IRawSqlCommandBuilder,Microsoft.EntityFrameworkCore.Diagnostics.IRelationalCommandDiagnosticsLogger):void|static=false",
-          "isStatic": false,
-          "parameterCount": 5,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlValueGeneratorSelector",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-        }
-      ]
-    }
-  ]
+        "typeParameters": [
+          "TValue"
+        ],
+        "methods": [
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceHiLoValueGenerator`1::GetNewLowValue():System.Int64",
+            "targetName": "GetNewLowValue",
+            "metadataToken": 100664066,
+            "canonicalSignature": "():System.Int64",
+            "normalizedSignature": "GetNewLowValue|():System.Int64|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 0,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": true,
+            "isSealed": false,
+            "visibility": "Protected",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceHiLoValueGenerator`1",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "isExtensionMethod": false
+          },
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceHiLoValueGenerator`1::GetNewLowValueAsync(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+            "targetName": "GetNewLowValueAsync",
+            "metadataToken": 100664067,
+            "canonicalSignature": "(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+            "normalizedSignature": "GetNewLowValueAsync|(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 1,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": true,
+            "isSealed": false,
+            "visibility": "Protected",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceHiLoValueGenerator`1",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "isExtensionMethod": false
+          }
+        ],
+        "properties": [
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceHiLoValueGenerator`1::GeneratesTemporaryValues:System.Boolean",
+            "targetName": "GeneratesTemporaryValues",
+            "metadataToken": 385875988,
+            "canonicalSignature": ":System.Boolean",
+            "normalizedSignature": "GeneratesTemporaryValues|:System.Boolean|static=false|accessor=get",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": false,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": true,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceHiLoValueGenerator`1",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          }
+        ],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceHiLoValueGenerator`1::.ctor(Microsoft.EntityFrameworkCore.Storage.IRawSqlCommandBuilder,Microsoft.EntityFrameworkCore.Update.IUpdateSqlGenerator,Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorState,Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection,Microsoft.EntityFrameworkCore.Diagnostics.IRelationalCommandDiagnosticsLogger):void",
+            "metadataToken": 100664065,
+            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.IRawSqlCommandBuilder,Microsoft.EntityFrameworkCore.Update.IUpdateSqlGenerator,Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorState,Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection,Microsoft.EntityFrameworkCore.Diagnostics.IRelationalCommandDiagnosticsLogger):void",
+            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.IRawSqlCommandBuilder,Microsoft.EntityFrameworkCore.Update.IUpdateSqlGenerator,Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorState,Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection,Microsoft.EntityFrameworkCore.Diagnostics.IRelationalCommandDiagnosticsLogger):void|static=false",
+            "isStatic": false,
+            "parameterCount": 5,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceHiLoValueGenerator`1",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          }
+        ]
+      },
+      {
+        "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorFactory",
+        "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorFactory",
+        "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Object",
+          "targetName": "System.Object"
+        },
+        "interfaces": [
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.INpgsqlSequenceValueGeneratorFactory",
+            "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.INpgsqlSequenceValueGeneratorFactory"
+          }
+        ],
+        "methods": [
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorFactory::TryCreate(Microsoft.EntityFrameworkCore.Metadata.IProperty,System.Type,Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorState,Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection,Microsoft.EntityFrameworkCore.Storage.IRawSqlCommandBuilder,Microsoft.EntityFrameworkCore.Diagnostics.IRelationalCommandDiagnosticsLogger):Microsoft.EntityFrameworkCore.ValueGeneration.ValueGenerator",
+            "targetName": "TryCreate",
+            "metadataToken": 100664070,
+            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IProperty,System.Type,Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorState,Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection,Microsoft.EntityFrameworkCore.Storage.IRawSqlCommandBuilder,Microsoft.EntityFrameworkCore.Diagnostics.IRelationalCommandDiagnosticsLogger):Microsoft.EntityFrameworkCore.ValueGeneration.ValueGenerator",
+            "normalizedSignature": "TryCreate|(Microsoft.EntityFrameworkCore.Metadata.IProperty,System.Type,Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorState,Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection,Microsoft.EntityFrameworkCore.Storage.IRawSqlCommandBuilder,Microsoft.EntityFrameworkCore.Diagnostics.IRelationalCommandDiagnosticsLogger):Microsoft.EntityFrameworkCore.ValueGeneration.ValueGenerator|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 6,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorFactory",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "isExtensionMethod": false
+          },
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.INpgsqlSequenceValueGeneratorFactory::TryCreate(Microsoft.EntityFrameworkCore.Metadata.IProperty,System.Type,Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorState,Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection,Microsoft.EntityFrameworkCore.Storage.IRawSqlCommandBuilder,Microsoft.EntityFrameworkCore.Diagnostics.IRelationalCommandDiagnosticsLogger):Microsoft.EntityFrameworkCore.ValueGeneration.ValueGenerator",
+            "targetName": "TryCreate",
+            "metadataToken": 100664063,
+            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IProperty,System.Type,Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorState,Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection,Microsoft.EntityFrameworkCore.Storage.IRawSqlCommandBuilder,Microsoft.EntityFrameworkCore.Diagnostics.IRelationalCommandDiagnosticsLogger):Microsoft.EntityFrameworkCore.ValueGeneration.ValueGenerator",
+            "normalizedSignature": "TryCreate|(Microsoft.EntityFrameworkCore.Metadata.IProperty,System.Type,Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorState,Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection,Microsoft.EntityFrameworkCore.Storage.IRawSqlCommandBuilder,Microsoft.EntityFrameworkCore.Diagnostics.IRelationalCommandDiagnosticsLogger):Microsoft.EntityFrameworkCore.ValueGeneration.ValueGenerator|static=false",
+            "emitScope": "ViewOnly",
+            "provenance": "ExplicitView",
+            "arity": 0,
+            "parameterCount": 6,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.INpgsqlSequenceValueGeneratorFactory",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "isExtensionMethod": false,
+            "sourceInterface": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.INpgsqlSequenceValueGeneratorFactory"
+          }
+        ],
+        "properties": [],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorFactory::.ctor(Microsoft.EntityFrameworkCore.Update.IUpdateSqlGenerator):void",
+            "metadataToken": 100664069,
+            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Update.IUpdateSqlGenerator):void",
+            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Update.IUpdateSqlGenerator):void|static=false",
+            "isStatic": false,
+            "parameterCount": 1,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorFactory",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          }
+        ]
+      },
+      {
+        "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorState",
+        "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorState",
+        "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.ValueGeneration.HiLoValueGeneratorState",
+          "targetName": "Microsoft.EntityFrameworkCore.ValueGeneration.HiLoValueGeneratorState"
+        },
+        "interfaces": [
+          {
+            "stableId": "System.Private.CoreLib:System.IDisposable",
+            "targetName": "System.IDisposable"
+          }
+        ],
+        "methods": [],
+        "properties": [
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorState::Sequence:Microsoft.EntityFrameworkCore.Metadata.ISequence",
+            "targetName": "Sequence",
+            "metadataToken": 385875989,
+            "canonicalSignature": ":Microsoft.EntityFrameworkCore.Metadata.ISequence",
+            "normalizedSignature": "Sequence|:Microsoft.EntityFrameworkCore.Metadata.ISequence|static=false|accessor=get",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": false,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorState",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          }
+        ],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorState::.ctor(Microsoft.EntityFrameworkCore.Metadata.ISequence):void",
+            "metadataToken": 100664071,
+            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.ISequence):void",
+            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Metadata.ISequence):void|static=false",
+            "isStatic": false,
+            "parameterCount": 1,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorState",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          }
+        ]
+      },
+      {
+        "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlValueGeneratorCache",
+        "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlValueGeneratorCache",
+        "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.ValueGeneration.ValueGeneratorCache",
+          "targetName": "Microsoft.EntityFrameworkCore.ValueGeneration.ValueGeneratorCache"
+        },
+        "interfaces": [
+          {
+            "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.ValueGeneration.IValueGeneratorCache",
+            "targetName": "Microsoft.EntityFrameworkCore.ValueGeneration.IValueGeneratorCache"
+          },
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.INpgsqlValueGeneratorCache",
+            "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.INpgsqlValueGeneratorCache"
+          }
+        ],
+        "methods": [
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlValueGeneratorCache::GetOrAddSequenceState(Microsoft.EntityFrameworkCore.Metadata.IProperty,Microsoft.EntityFrameworkCore.Storage.IRelationalConnection):Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorState",
+            "targetName": "GetOrAddSequenceState",
+            "metadataToken": 100664074,
+            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IProperty,Microsoft.EntityFrameworkCore.Storage.IRelationalConnection):Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorState",
+            "normalizedSignature": "GetOrAddSequenceState|(Microsoft.EntityFrameworkCore.Metadata.IProperty,Microsoft.EntityFrameworkCore.Storage.IRelationalConnection):Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorState|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 2,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlValueGeneratorCache",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "isExtensionMethod": false
+          },
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.INpgsqlValueGeneratorCache::GetOrAddSequenceState(Microsoft.EntityFrameworkCore.Metadata.IProperty,Microsoft.EntityFrameworkCore.Storage.IRelationalConnection):Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorState",
+            "targetName": "GetOrAddSequenceState",
+            "metadataToken": 100664064,
+            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IProperty,Microsoft.EntityFrameworkCore.Storage.IRelationalConnection):Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorState",
+            "normalizedSignature": "GetOrAddSequenceState|(Microsoft.EntityFrameworkCore.Metadata.IProperty,Microsoft.EntityFrameworkCore.Storage.IRelationalConnection):Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlSequenceValueGeneratorState|static=false",
+            "emitScope": "ViewOnly",
+            "provenance": "ExplicitView",
+            "arity": 0,
+            "parameterCount": 2,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.INpgsqlValueGeneratorCache",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "isExtensionMethod": false,
+            "sourceInterface": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.INpgsqlValueGeneratorCache"
+          }
+        ],
+        "properties": [],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlValueGeneratorCache::.ctor(Microsoft.EntityFrameworkCore.ValueGeneration.ValueGeneratorCacheDependencies):void",
+            "metadataToken": 100664073,
+            "canonicalSignature": "(Microsoft.EntityFrameworkCore.ValueGeneration.ValueGeneratorCacheDependencies):void",
+            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.ValueGeneration.ValueGeneratorCacheDependencies):void|static=false",
+            "isStatic": false,
+            "parameterCount": 1,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlValueGeneratorCache",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          }
+        ]
+      },
+      {
+        "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlValueGeneratorSelector",
+        "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlValueGeneratorSelector",
+        "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.ValueGeneration.RelationalValueGeneratorSelector",
+          "targetName": "Microsoft.EntityFrameworkCore.ValueGeneration.RelationalValueGeneratorSelector"
+        },
+        "interfaces": [
+          {
+            "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.ValueGeneration.IValueGeneratorSelector",
+            "targetName": "Microsoft.EntityFrameworkCore.ValueGeneration.IValueGeneratorSelector"
+          }
+        ],
+        "methods": [
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlValueGeneratorSelector::TrySelect(Microsoft.EntityFrameworkCore.Metadata.IProperty,Microsoft.EntityFrameworkCore.Metadata.ITypeBase,Microsoft.EntityFrameworkCore.ValueGeneration.ValueGenerator&):System.Boolean",
+            "targetName": "TrySelect",
+            "metadataToken": 100664078,
+            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IProperty,Microsoft.EntityFrameworkCore.Metadata.ITypeBase,Microsoft.EntityFrameworkCore.ValueGeneration.ValueGenerator&):System.Boolean",
+            "normalizedSignature": "TrySelect|(Microsoft.EntityFrameworkCore.Metadata.IProperty,Microsoft.EntityFrameworkCore.Metadata.ITypeBase,Microsoft.EntityFrameworkCore.ValueGeneration.ValueGenerator&):System.Boolean|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 3,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": true,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlValueGeneratorSelector",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "isExtensionMethod": false,
+            "parameterModifiers": [
+              {
+                "index": 2,
+                "modifier": "out"
+              }
+            ]
+          },
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlValueGeneratorSelector::FindForType(Microsoft.EntityFrameworkCore.Metadata.IProperty,Microsoft.EntityFrameworkCore.Metadata.ITypeBase,System.Type):Microsoft.EntityFrameworkCore.ValueGeneration.ValueGenerator",
+            "targetName": "FindForType",
+            "metadataToken": 100664079,
+            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Metadata.IProperty,Microsoft.EntityFrameworkCore.Metadata.ITypeBase,System.Type):Microsoft.EntityFrameworkCore.ValueGeneration.ValueGenerator",
+            "normalizedSignature": "FindForType|(Microsoft.EntityFrameworkCore.Metadata.IProperty,Microsoft.EntityFrameworkCore.Metadata.ITypeBase,System.Type):Microsoft.EntityFrameworkCore.ValueGeneration.ValueGenerator|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 3,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": true,
+            "isSealed": false,
+            "visibility": "Protected",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlValueGeneratorSelector",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "isExtensionMethod": false
+          }
+        ],
+        "properties": [
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlValueGeneratorSelector::Cache:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.INpgsqlValueGeneratorCache",
+            "targetName": "Cache",
+            "metadataToken": 385875990,
+            "canonicalSignature": ":Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.INpgsqlValueGeneratorCache",
+            "normalizedSignature": "Cache|:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.INpgsqlValueGeneratorCache|static=false|accessor=get",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": false,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlValueGeneratorSelector",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          }
+        ],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlValueGeneratorSelector::.ctor(Microsoft.EntityFrameworkCore.ValueGeneration.ValueGeneratorSelectorDependencies,Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.INpgsqlSequenceValueGeneratorFactory,Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection,Microsoft.EntityFrameworkCore.Storage.IRawSqlCommandBuilder,Microsoft.EntityFrameworkCore.Diagnostics.IRelationalCommandDiagnosticsLogger):void",
+            "metadataToken": 100664076,
+            "canonicalSignature": "(Microsoft.EntityFrameworkCore.ValueGeneration.ValueGeneratorSelectorDependencies,Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.INpgsqlSequenceValueGeneratorFactory,Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection,Microsoft.EntityFrameworkCore.Storage.IRawSqlCommandBuilder,Microsoft.EntityFrameworkCore.Diagnostics.IRelationalCommandDiagnosticsLogger):void",
+            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.ValueGeneration.ValueGeneratorSelectorDependencies,Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.INpgsqlSequenceValueGeneratorFactory,Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.INpgsqlRelationalConnection,Microsoft.EntityFrameworkCore.Storage.IRawSqlCommandBuilder,Microsoft.EntityFrameworkCore.Diagnostics.IRelationalCommandDiagnosticsLogger):void|static=false",
+            "isStatic": false,
+            "parameterCount": 5,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.ValueGeneration.Internal.NpgsqlValueGeneratorSelector",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          }
+        ]
+      }
+    ]
+  }
 }

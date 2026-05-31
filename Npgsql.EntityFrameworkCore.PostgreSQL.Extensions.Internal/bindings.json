@@ -1,146 +1,151 @@
 {
-  "namespace": "Npgsql.EntityFrameworkCore.PostgreSQL.Extensions.Internal",
-  "contributingAssemblies": [
-    "Npgsql.EntityFrameworkCore.PostgreSQL"
-  ],
-  "types": [
-    {
-      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Extensions.Internal.NpgsqlShapedQueryExpressionExtensions",
-      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Extensions.Internal.NpgsqlShapedQueryExpressionExtensions",
-      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
-      "metadataToken": 0,
-      "kind": "StaticNamespace",
-      "accessibility": "Public",
-      "isAbstract": true,
-      "isSealed": true,
-      "isStatic": true,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Object",
-        "targetName": "System.Object"
-      },
-      "methods": [
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Extensions.Internal.NpgsqlShapedQueryExpressionExtensions::TryExtractArray(Microsoft.EntityFrameworkCore.Query.ShapedQueryExpression,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression\u0026,System.Boolean,System.Boolean):System.Boolean",
-          "targetName": "TryExtractArray",
-          "metadataToken": 100665564,
-          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.ShapedQueryExpression,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression\u0026,System.Boolean,System.Boolean):System.Boolean",
-          "normalizedSignature": "TryExtractArray|(Microsoft.EntityFrameworkCore.Query.ShapedQueryExpression,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression\u0026,System.Boolean,System.Boolean):System.Boolean|static=true",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 4,
-          "isStatic": true,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Extensions.Internal.NpgsqlShapedQueryExpressionExtensions",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
-          "isExtensionMethod": true,
-          "parameterModifiers": [
-            {
-              "index": 1,
-              "modifier": "out"
-            }
-          ]
+  "schema": "tsonic.bindings",
+  "provider": {
+    "namespace": "Npgsql.EntityFrameworkCore.PostgreSQL.Extensions.Internal",
+    "ownerIdentities": [
+      "Npgsql.EntityFrameworkCore.PostgreSQL"
+    ]
+  },
+  "targetSurface": {
+    "types": [
+      {
+        "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Extensions.Internal.NpgsqlShapedQueryExpressionExtensions",
+        "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Extensions.Internal.NpgsqlShapedQueryExpressionExtensions",
+        "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
+        "metadataToken": 0,
+        "kind": "StaticNamespace",
+        "accessibility": "Public",
+        "isAbstract": true,
+        "isSealed": true,
+        "isStatic": true,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Object",
+          "targetName": "System.Object"
         },
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Extensions.Internal.NpgsqlShapedQueryExpressionExtensions::TryExtractArray(Microsoft.EntityFrameworkCore.Query.ShapedQueryExpression,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression\u0026,Microsoft.EntityFrameworkCore.Query.SqlExpressions.ColumnExpression\u0026,System.Boolean,System.Boolean):System.Boolean",
-          "targetName": "TryExtractArray",
-          "metadataToken": 100665565,
-          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.ShapedQueryExpression,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression\u0026,Microsoft.EntityFrameworkCore.Query.SqlExpressions.ColumnExpression\u0026,System.Boolean,System.Boolean):System.Boolean",
-          "normalizedSignature": "TryExtractArray|(Microsoft.EntityFrameworkCore.Query.ShapedQueryExpression,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression\u0026,Microsoft.EntityFrameworkCore.Query.SqlExpressions.ColumnExpression\u0026,System.Boolean,System.Boolean):System.Boolean|static=true",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 5,
-          "isStatic": true,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Extensions.Internal.NpgsqlShapedQueryExpressionExtensions",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
-          "isExtensionMethod": true,
-          "parameterModifiers": [
-            {
-              "index": 1,
-              "modifier": "out"
-            },
-            {
-              "index": 2,
-              "modifier": "out"
-            }
-          ]
-        },
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Extensions.Internal.NpgsqlShapedQueryExpressionExtensions::TryExtractJsonArray(Microsoft.EntityFrameworkCore.Query.ShapedQueryExpression,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression\u0026,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression\u0026,System.Boolean\u0026,System.Boolean,System.Boolean):System.Boolean",
-          "targetName": "TryExtractJsonArray",
-          "metadataToken": 100665566,
-          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.ShapedQueryExpression,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression\u0026,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression\u0026,System.Boolean\u0026,System.Boolean,System.Boolean):System.Boolean",
-          "normalizedSignature": "TryExtractJsonArray|(Microsoft.EntityFrameworkCore.Query.ShapedQueryExpression,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression\u0026,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression\u0026,System.Boolean\u0026,System.Boolean,System.Boolean):System.Boolean|static=true",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 6,
-          "isStatic": true,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Extensions.Internal.NpgsqlShapedQueryExpressionExtensions",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
-          "isExtensionMethod": true,
-          "parameterModifiers": [
-            {
-              "index": 1,
-              "modifier": "out"
-            },
-            {
-              "index": 2,
-              "modifier": "out"
-            },
-            {
-              "index": 3,
-              "modifier": "out"
-            }
-          ]
-        },
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Extensions.Internal.NpgsqlShapedQueryExpressionExtensions::TryConvertToArray(Microsoft.EntityFrameworkCore.Query.ShapedQueryExpression,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression\u0026,System.Boolean,System.Boolean):System.Boolean",
-          "targetName": "TryConvertToArray",
-          "metadataToken": 100665567,
-          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.ShapedQueryExpression,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression\u0026,System.Boolean,System.Boolean):System.Boolean",
-          "normalizedSignature": "TryConvertToArray|(Microsoft.EntityFrameworkCore.Query.ShapedQueryExpression,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression\u0026,System.Boolean,System.Boolean):System.Boolean|static=true",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 4,
-          "isStatic": true,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Extensions.Internal.NpgsqlShapedQueryExpressionExtensions",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
-          "isExtensionMethod": true,
-          "parameterModifiers": [
-            {
-              "index": 1,
-              "modifier": "out"
-            }
-          ]
-        }
-      ],
-      "properties": [],
-      "fields": [],
-      "events": [],
-      "constructors": []
-    }
-  ]
+        "methods": [
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Extensions.Internal.NpgsqlShapedQueryExpressionExtensions::TryExtractArray(Microsoft.EntityFrameworkCore.Query.ShapedQueryExpression,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression&,System.Boolean,System.Boolean):System.Boolean",
+            "targetName": "TryExtractArray",
+            "metadataToken": 100665564,
+            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.ShapedQueryExpression,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression&,System.Boolean,System.Boolean):System.Boolean",
+            "normalizedSignature": "TryExtractArray|(Microsoft.EntityFrameworkCore.Query.ShapedQueryExpression,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression&,System.Boolean,System.Boolean):System.Boolean|static=true",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 4,
+            "isStatic": true,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Extensions.Internal.NpgsqlShapedQueryExpressionExtensions",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "isExtensionMethod": true,
+            "parameterModifiers": [
+              {
+                "index": 1,
+                "modifier": "out"
+              }
+            ]
+          },
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Extensions.Internal.NpgsqlShapedQueryExpressionExtensions::TryExtractArray(Microsoft.EntityFrameworkCore.Query.ShapedQueryExpression,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression&,Microsoft.EntityFrameworkCore.Query.SqlExpressions.ColumnExpression&,System.Boolean,System.Boolean):System.Boolean",
+            "targetName": "TryExtractArray",
+            "metadataToken": 100665565,
+            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.ShapedQueryExpression,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression&,Microsoft.EntityFrameworkCore.Query.SqlExpressions.ColumnExpression&,System.Boolean,System.Boolean):System.Boolean",
+            "normalizedSignature": "TryExtractArray|(Microsoft.EntityFrameworkCore.Query.ShapedQueryExpression,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression&,Microsoft.EntityFrameworkCore.Query.SqlExpressions.ColumnExpression&,System.Boolean,System.Boolean):System.Boolean|static=true",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 5,
+            "isStatic": true,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Extensions.Internal.NpgsqlShapedQueryExpressionExtensions",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "isExtensionMethod": true,
+            "parameterModifiers": [
+              {
+                "index": 1,
+                "modifier": "out"
+              },
+              {
+                "index": 2,
+                "modifier": "out"
+              }
+            ]
+          },
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Extensions.Internal.NpgsqlShapedQueryExpressionExtensions::TryExtractJsonArray(Microsoft.EntityFrameworkCore.Query.ShapedQueryExpression,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression&,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression&,System.Boolean&,System.Boolean,System.Boolean):System.Boolean",
+            "targetName": "TryExtractJsonArray",
+            "metadataToken": 100665566,
+            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.ShapedQueryExpression,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression&,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression&,System.Boolean&,System.Boolean,System.Boolean):System.Boolean",
+            "normalizedSignature": "TryExtractJsonArray|(Microsoft.EntityFrameworkCore.Query.ShapedQueryExpression,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression&,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression&,System.Boolean&,System.Boolean,System.Boolean):System.Boolean|static=true",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 6,
+            "isStatic": true,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Extensions.Internal.NpgsqlShapedQueryExpressionExtensions",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "isExtensionMethod": true,
+            "parameterModifiers": [
+              {
+                "index": 1,
+                "modifier": "out"
+              },
+              {
+                "index": 2,
+                "modifier": "out"
+              },
+              {
+                "index": 3,
+                "modifier": "out"
+              }
+            ]
+          },
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Extensions.Internal.NpgsqlShapedQueryExpressionExtensions::TryConvertToArray(Microsoft.EntityFrameworkCore.Query.ShapedQueryExpression,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression&,System.Boolean,System.Boolean):System.Boolean",
+            "targetName": "TryConvertToArray",
+            "metadataToken": 100665567,
+            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Query.ShapedQueryExpression,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression&,System.Boolean,System.Boolean):System.Boolean",
+            "normalizedSignature": "TryConvertToArray|(Microsoft.EntityFrameworkCore.Query.ShapedQueryExpression,Microsoft.EntityFrameworkCore.Query.SqlExpressions.SqlExpression&,System.Boolean,System.Boolean):System.Boolean|static=true",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 4,
+            "isStatic": true,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Extensions.Internal.NpgsqlShapedQueryExpressionExtensions",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
+            "isExtensionMethod": true,
+            "parameterModifiers": [
+              {
+                "index": 1,
+                "modifier": "out"
+              }
+            ]
+          }
+        ],
+        "properties": [],
+        "fields": [],
+        "events": [],
+        "constructors": []
+      }
+    ]
+  }
 }

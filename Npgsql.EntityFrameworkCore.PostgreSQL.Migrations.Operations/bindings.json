@@ -1,180 +1,185 @@
 {
-  "namespace": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations",
-  "contributingAssemblies": [
-    "Npgsql.EntityFrameworkCore.PostgreSQL"
-  ],
-  "types": [
-    {
-      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlCreateDatabaseOperation",
-      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlCreateDatabaseOperation",
-      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Migrations.Operations.DatabaseOperation",
-        "targetName": "Microsoft.EntityFrameworkCore.Migrations.Operations.DatabaseOperation"
+  "schema": "tsonic.bindings",
+  "provider": {
+    "namespace": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations",
+    "ownerIdentities": [
+      "Npgsql.EntityFrameworkCore.PostgreSQL"
+    ]
+  },
+  "targetSurface": {
+    "types": [
+      {
+        "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlCreateDatabaseOperation",
+        "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlCreateDatabaseOperation",
+        "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Migrations.Operations.DatabaseOperation",
+          "targetName": "Microsoft.EntityFrameworkCore.Migrations.Operations.DatabaseOperation"
+        },
+        "interfaces": [
+          {
+            "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Infrastructure.IAnnotatable",
+            "targetName": "Microsoft.EntityFrameworkCore.Infrastructure.IAnnotatable"
+          },
+          {
+            "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Infrastructure.IReadOnlyAnnotatable",
+            "targetName": "Microsoft.EntityFrameworkCore.Infrastructure.IReadOnlyAnnotatable"
+          },
+          {
+            "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.IMutableAnnotatable",
+            "targetName": "Microsoft.EntityFrameworkCore.Metadata.IMutableAnnotatable"
+          }
+        ],
+        "methods": [],
+        "properties": [
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlCreateDatabaseOperation::Name:System.String",
+            "targetName": "Name",
+            "metadataToken": 385876134,
+            "canonicalSignature": ":System.String",
+            "normalizedSignature": "Name|:System.String|static=false|accessor=getset",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": true,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlCreateDatabaseOperation",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          },
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlCreateDatabaseOperation::Template:System.String",
+            "targetName": "Template",
+            "metadataToken": 385876135,
+            "canonicalSignature": ":System.String",
+            "normalizedSignature": "Template|:System.String|static=false|accessor=getset",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": true,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlCreateDatabaseOperation",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          },
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlCreateDatabaseOperation::Tablespace:System.String",
+            "targetName": "Tablespace",
+            "metadataToken": 385876136,
+            "canonicalSignature": ":System.String",
+            "normalizedSignature": "Tablespace|:System.String|static=false|accessor=getset",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": true,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlCreateDatabaseOperation",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          }
+        ],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlCreateDatabaseOperation::.ctor():void",
+            "metadataToken": 100665205,
+            "canonicalSignature": "():void",
+            "normalizedSignature": "constructor|():void|static=false",
+            "isStatic": false,
+            "parameterCount": 0,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlCreateDatabaseOperation",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          }
+        ]
       },
-      "interfaces": [
-        {
-          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Infrastructure.IAnnotatable",
-          "targetName": "Microsoft.EntityFrameworkCore.Infrastructure.IAnnotatable"
+      {
+        "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlDropDatabaseOperation",
+        "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlDropDatabaseOperation",
+        "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Migrations.Operations.MigrationOperation",
+          "targetName": "Microsoft.EntityFrameworkCore.Migrations.Operations.MigrationOperation"
         },
-        {
-          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Infrastructure.IReadOnlyAnnotatable",
-          "targetName": "Microsoft.EntityFrameworkCore.Infrastructure.IReadOnlyAnnotatable"
-        },
-        {
-          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.IMutableAnnotatable",
-          "targetName": "Microsoft.EntityFrameworkCore.Metadata.IMutableAnnotatable"
-        }
-      ],
-      "methods": [],
-      "properties": [
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlCreateDatabaseOperation::Name:System.String",
-          "targetName": "Name",
-          "metadataToken": 385876134,
-          "canonicalSignature": ":System.String",
-          "normalizedSignature": "Name|:System.String|static=false|accessor=getset",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": true,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlCreateDatabaseOperation",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-        },
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlCreateDatabaseOperation::Template:System.String",
-          "targetName": "Template",
-          "metadataToken": 385876135,
-          "canonicalSignature": ":System.String",
-          "normalizedSignature": "Template|:System.String|static=false|accessor=getset",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": true,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlCreateDatabaseOperation",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-        },
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlCreateDatabaseOperation::Tablespace:System.String",
-          "targetName": "Tablespace",
-          "metadataToken": 385876136,
-          "canonicalSignature": ":System.String",
-          "normalizedSignature": "Tablespace|:System.String|static=false|accessor=getset",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": true,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlCreateDatabaseOperation",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-        }
-      ],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlCreateDatabaseOperation::.ctor():void",
-          "metadataToken": 100665205,
-          "canonicalSignature": "():void",
-          "normalizedSignature": "constructor|():void|static=false",
-          "isStatic": false,
-          "parameterCount": 0,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlCreateDatabaseOperation",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-        }
-      ]
-    },
-    {
-      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlDropDatabaseOperation",
-      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlDropDatabaseOperation",
-      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "Microsoft.EntityFrameworkCore.Relational:Microsoft.EntityFrameworkCore.Migrations.Operations.MigrationOperation",
-        "targetName": "Microsoft.EntityFrameworkCore.Migrations.Operations.MigrationOperation"
-      },
-      "interfaces": [
-        {
-          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Infrastructure.IAnnotatable",
-          "targetName": "Microsoft.EntityFrameworkCore.Infrastructure.IAnnotatable"
-        },
-        {
-          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Infrastructure.IReadOnlyAnnotatable",
-          "targetName": "Microsoft.EntityFrameworkCore.Infrastructure.IReadOnlyAnnotatable"
-        },
-        {
-          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.IMutableAnnotatable",
-          "targetName": "Microsoft.EntityFrameworkCore.Metadata.IMutableAnnotatable"
-        }
-      ],
-      "methods": [],
-      "properties": [
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlDropDatabaseOperation::Name:System.String",
-          "targetName": "Name",
-          "metadataToken": 385876137,
-          "canonicalSignature": ":System.String",
-          "normalizedSignature": "Name|:System.String|static=false|accessor=getset",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": true,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlDropDatabaseOperation",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-        }
-      ],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlDropDatabaseOperation::.ctor():void",
-          "metadataToken": 100665208,
-          "canonicalSignature": "():void",
-          "normalizedSignature": "constructor|():void|static=false",
-          "isStatic": false,
-          "parameterCount": 0,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlDropDatabaseOperation",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-        }
-      ]
-    }
-  ]
+        "interfaces": [
+          {
+            "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Infrastructure.IAnnotatable",
+            "targetName": "Microsoft.EntityFrameworkCore.Infrastructure.IAnnotatable"
+          },
+          {
+            "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Infrastructure.IReadOnlyAnnotatable",
+            "targetName": "Microsoft.EntityFrameworkCore.Infrastructure.IReadOnlyAnnotatable"
+          },
+          {
+            "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Metadata.IMutableAnnotatable",
+            "targetName": "Microsoft.EntityFrameworkCore.Metadata.IMutableAnnotatable"
+          }
+        ],
+        "methods": [],
+        "properties": [
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlDropDatabaseOperation::Name:System.String",
+            "targetName": "Name",
+            "metadataToken": 385876137,
+            "canonicalSignature": ":System.String",
+            "normalizedSignature": "Name|:System.String|static=false|accessor=getset",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": true,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlDropDatabaseOperation",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          }
+        ],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlDropDatabaseOperation::.ctor():void",
+            "metadataToken": 100665208,
+            "canonicalSignature": "():void",
+            "normalizedSignature": "constructor|():void|static=false",
+            "isStatic": false,
+            "parameterCount": 0,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Migrations.Operations.NpgsqlDropDatabaseOperation",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          }
+        ]
+      }
+    ]
+  }
 }
