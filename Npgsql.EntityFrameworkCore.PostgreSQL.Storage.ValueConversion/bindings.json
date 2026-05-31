@@ -1,81 +1,86 @@
 {
-  "namespace": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.ValueConversion",
-  "contributingAssemblies": [
-    "Npgsql.EntityFrameworkCore.PostgreSQL"
-  ],
-  "types": [
-    {
-      "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.ValueConversion.NpgsqlArrayConverter\u00603",
-      "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.ValueConversion.NpgsqlArrayConverter\u00603",
-      "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 3,
-      "baseType": {
-        "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter\u00602",
-        "targetName": "Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter\u00602",
-        "typeArguments": [
-          "TModelCollection",
-          "TProviderCollection"
-        ]
-      },
-      "typeParameters": [
-        "TModelCollection",
-        "TConcreteModelCollection",
-        "TProviderCollection"
-      ],
-      "methods": [],
-      "properties": [
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.ValueConversion.NpgsqlArrayConverter\u00603::ElementConverter:Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter",
-          "targetName": "ElementConverter",
-          "metadataToken": 385875992,
-          "canonicalSignature": ":Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter",
-          "normalizedSignature": "ElementConverter|:Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter|static=false|accessor=get",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.ValueConversion.NpgsqlArrayConverter\u00603",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-        }
-      ],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.ValueConversion.NpgsqlArrayConverter\u00603::.ctor():void",
-          "metadataToken": 100664111,
-          "canonicalSignature": "():void",
-          "normalizedSignature": "constructor|():void|static=false",
-          "isStatic": false,
-          "parameterCount": 0,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.ValueConversion.NpgsqlArrayConverter\u00603",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
+  "schema": "tsonic.bindings",
+  "provider": {
+    "namespace": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.ValueConversion",
+    "ownerIdentities": [
+      "Npgsql.EntityFrameworkCore.PostgreSQL"
+    ]
+  },
+  "targetSurface": {
+    "types": [
+      {
+        "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.ValueConversion.NpgsqlArrayConverter`3",
+        "targetName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.ValueConversion.NpgsqlArrayConverter`3",
+        "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 3,
+        "baseType": {
+          "stableId": "Microsoft.EntityFrameworkCore:Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter`2",
+          "targetName": "Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter`2",
+          "typeArguments": [
+            "TModelCollection",
+            "TProviderCollection"
+          ]
         },
-        {
-          "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.ValueConversion.NpgsqlArrayConverter\u00603::.ctor(Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter):void",
-          "metadataToken": 100664112,
-          "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter):void",
-          "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter):void|static=false",
-          "isStatic": false,
-          "parameterCount": 1,
-          "visibility": "Public",
-          "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.ValueConversion.NpgsqlArrayConverter\u00603",
-          "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-        }
-      ]
-    }
-  ]
+        "typeParameters": [
+          "TModelCollection",
+          "TConcreteModelCollection",
+          "TProviderCollection"
+        ],
+        "methods": [],
+        "properties": [
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.ValueConversion.NpgsqlArrayConverter`3::ElementConverter:Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter",
+            "targetName": "ElementConverter",
+            "metadataToken": 385875992,
+            "canonicalSignature": ":Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter",
+            "normalizedSignature": "ElementConverter|:Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter|static=false|accessor=get",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": false,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.ValueConversion.NpgsqlArrayConverter`3",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          }
+        ],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.ValueConversion.NpgsqlArrayConverter`3::.ctor():void",
+            "metadataToken": 100664111,
+            "canonicalSignature": "():void",
+            "normalizedSignature": "constructor|():void|static=false",
+            "isStatic": false,
+            "parameterCount": 0,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.ValueConversion.NpgsqlArrayConverter`3",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          },
+          {
+            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.ValueConversion.NpgsqlArrayConverter`3::.ctor(Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter):void",
+            "metadataToken": 100664112,
+            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter):void",
+            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter):void|static=false",
+            "isStatic": false,
+            "parameterCount": 1,
+            "visibility": "Public",
+            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.ValueConversion.NpgsqlArrayConverter`3",
+            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
+          }
+        ]
+      }
+    ]
+  }
 }
