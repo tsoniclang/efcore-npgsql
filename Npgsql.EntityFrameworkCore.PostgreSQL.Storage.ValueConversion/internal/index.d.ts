@@ -26,4 +26,3 @@ export const NpgsqlArrayConverter_3: {
 
 
 export type NpgsqlArrayConverter_3<TModelCollection extends unknown & IEnumerable, TConcreteModelCollection extends unknown & IEnumerable, TProviderCollection extends unknown & IEnumerable> = NpgsqlArrayConverter_3$instance<TModelCollection, TConcreteModelCollection, TProviderCollection>;
-

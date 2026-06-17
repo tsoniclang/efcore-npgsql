@@ -72,4 +72,3 @@ export const NpgsqlDbContextOptionsBuilder: {
 
 
 export type NpgsqlDbContextOptionsBuilder = NpgsqlDbContextOptionsBuilder$instance;
-

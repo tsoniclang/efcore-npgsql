@@ -57,5 +57,3 @@ export interface __NpgsqlSnakeCaseNameTranslator$views {
 }
 
 export type NpgsqlSnakeCaseNameTranslator = NpgsqlSnakeCaseNameTranslator$instance & __NpgsqlSnakeCaseNameTranslator$views;
-
-

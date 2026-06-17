@@ -408,4 +408,3 @@ export const NpgsqlUnnestPostprocessor: {
 
 
 export type NpgsqlUnnestPostprocessor = NpgsqlUnnestPostprocessor$instance;
-

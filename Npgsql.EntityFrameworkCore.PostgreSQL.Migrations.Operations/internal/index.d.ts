@@ -55,4 +55,3 @@ export const NpgsqlDropDatabaseOperation: {
 
 
 export type NpgsqlDropDatabaseOperation = NpgsqlDropDatabaseOperation$instance;
-

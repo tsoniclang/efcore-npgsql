@@ -21,4 +21,3 @@ export abstract class NpgsqlShapedQueryExpressionExtensions$instance {
 
 
 export type NpgsqlShapedQueryExpressionExtensions = NpgsqlShapedQueryExpressionExtensions$instance;
-

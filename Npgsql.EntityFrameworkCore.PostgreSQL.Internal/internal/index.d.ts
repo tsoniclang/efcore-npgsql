@@ -111,4 +111,3 @@ export abstract class NpgsqlStrings$instance {
 
 
 export type NpgsqlStrings = NpgsqlStrings$instance;
-

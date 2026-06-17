@@ -20,4 +20,3 @@ export abstract class NpgsqlServiceCollectionExtensions$instance {
 
 
 export type NpgsqlServiceCollectionExtensions = NpgsqlServiceCollectionExtensions$instance;
-

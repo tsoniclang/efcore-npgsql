@@ -40,4 +40,3 @@ export const NpgsqlLoggingDefinitions: {
 
 
 export type NpgsqlLoggingDefinitions = NpgsqlLoggingDefinitions$instance;
-

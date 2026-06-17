@@ -220,4 +220,3 @@ export const NpgsqlTypeMappingSource: {
 
 
 export type NpgsqlTypeMappingSource = NpgsqlTypeMappingSource$instance;
-

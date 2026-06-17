@@ -32,4 +32,3 @@ export abstract class NpgsqlEfEventId$instance {
 
 
 export type NpgsqlEfEventId = NpgsqlEfEventId$instance;
-

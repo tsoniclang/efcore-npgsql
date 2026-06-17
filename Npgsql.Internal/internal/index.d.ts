@@ -674,4 +674,3 @@ export abstract class TypeInfoMappingHelpers$instance {
 
 
 export type TypeInfoMappingHelpers = TypeInfoMappingHelpers$instance;
-

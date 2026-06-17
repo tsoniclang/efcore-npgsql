@@ -38,4 +38,3 @@ export abstract class LogicalReplicationConnectionExtensions$instance {
 
 
 export type LogicalReplicationConnectionExtensions = LogicalReplicationConnectionExtensions$instance;
-

@@ -81,4 +81,3 @@ export const NpgsqlDesignTimeServices: {
 
 
 export type NpgsqlDesignTimeServices = NpgsqlDesignTimeServices$instance;
-

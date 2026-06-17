@@ -42,4 +42,3 @@ export const NpgsqlSequentialStringValueGenerator: {
 
 
 export type NpgsqlSequentialStringValueGenerator = NpgsqlSequentialStringValueGenerator$instance;
-

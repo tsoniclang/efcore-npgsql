@@ -74,4 +74,3 @@ export const NpgsqlDbColumn: {
 
 
 export type NpgsqlDbColumn = NpgsqlDbColumn$instance;
-

@@ -544,4 +544,3 @@ export const NpgsqlTrigramsMethodTranslator: {
 
 
 export type NpgsqlTrigramsMethodTranslator = NpgsqlTrigramsMethodTranslator$instance;
-

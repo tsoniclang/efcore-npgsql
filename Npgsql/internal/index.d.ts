@@ -1846,4 +1846,3 @@ export abstract class PostgresErrorCodes$instance {
 
 
 export type PostgresErrorCodes = PostgresErrorCodes$instance;
-

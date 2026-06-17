@@ -24,4 +24,3 @@ export const FieldDescription: {
 
 
 export type FieldDescription = FieldDescription$instance;
-

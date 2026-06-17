@@ -774,4 +774,3 @@ export type ExtensionMethods_Npgsql_Replication_Internal<TShape> =
   TShape extends null | undefined ? TShape
   : TShape extends void ? void
   : TShape & __TsonicWithExt<TShape, "Npgsql.Replication.Internal", __TsonicExtApplier_Npgsql_Replication_Internal> & __TsonicExtMethods_Npgsql_Replication_Internal;
-

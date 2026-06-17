@@ -73,4 +73,3 @@ export const NpgsqlMigrationsSqlGenerator: {
 
 
 export type NpgsqlMigrationsSqlGenerator = NpgsqlMigrationsSqlGenerator$instance;
-

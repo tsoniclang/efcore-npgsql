@@ -50,4 +50,3 @@ export const JsonMacaddrReaderWriter: {
 
 
 export type JsonMacaddrReaderWriter = JsonMacaddrReaderWriter$instance;
-

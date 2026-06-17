@@ -42,5 +42,3 @@ export enum PgExpressionType {
     CubeDistanceTaxicab = 28,
     CubeDistanceChebyshev = 29
 }
-
-

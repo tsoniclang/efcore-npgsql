@@ -45,4 +45,3 @@ export const UserTypeMapping: {
 
 
 export type UserTypeMapping = UserTypeMapping$instance;
-

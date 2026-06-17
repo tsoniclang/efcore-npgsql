@@ -69,4 +69,3 @@ export const TestDecodingReplicationSlot: {
 
 
 export type TestDecodingReplicationSlot = TestDecodingReplicationSlot$instance;
-

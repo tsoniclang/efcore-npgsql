@@ -101,4 +101,3 @@ export const PgTypeId: {
 
 
 export type PgTypeId = PgTypeId$instance;
-

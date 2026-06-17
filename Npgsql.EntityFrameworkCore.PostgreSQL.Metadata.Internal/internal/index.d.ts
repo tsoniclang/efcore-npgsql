@@ -110,4 +110,3 @@ export abstract class NpgsqlAnnotationNames$instance {
 
 
 export type NpgsqlAnnotationNames = NpgsqlAnnotationNames$instance;
-

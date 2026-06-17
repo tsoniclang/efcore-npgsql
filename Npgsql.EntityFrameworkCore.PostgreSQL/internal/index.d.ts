@@ -35,4 +35,3 @@ export const NpgsqlRetryingExecutionStrategy: {
 
 
 export type NpgsqlRetryingExecutionStrategy = NpgsqlRetryingExecutionStrategy$instance;
-

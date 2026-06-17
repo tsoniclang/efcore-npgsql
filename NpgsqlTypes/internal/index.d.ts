@@ -759,4 +759,3 @@ export const PgNameAttribute: {
 
 
 export type PgNameAttribute = PgNameAttribute$instance;
-

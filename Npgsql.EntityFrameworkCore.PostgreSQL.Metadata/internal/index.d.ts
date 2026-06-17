@@ -155,4 +155,3 @@ export abstract class NpgsqlValueGenerationStrategyExtensions$instance {
 
 
 export type NpgsqlValueGenerationStrategyExtensions = NpgsqlValueGenerationStrategyExtensions$instance;
-

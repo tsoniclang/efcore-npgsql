@@ -1478,5 +1478,3 @@ export interface __NpgsqlVarbitTypeMapping$views {
 }
 
 export type NpgsqlVarbitTypeMapping = NpgsqlVarbitTypeMapping$instance & __NpgsqlVarbitTypeMapping$views;
-
-

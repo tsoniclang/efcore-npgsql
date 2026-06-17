@@ -112,4 +112,3 @@ export const NpgsqlUpdateSqlGenerator: {
 
 
 export type NpgsqlUpdateSqlGenerator = NpgsqlUpdateSqlGenerator$instance;
-

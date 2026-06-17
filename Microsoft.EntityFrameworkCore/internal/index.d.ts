@@ -800,4 +800,3 @@ export abstract class NpgsqlTrigramsDbFunctionsExtensions$instance {
 
 
 export type NpgsqlTrigramsDbFunctionsExtensions = NpgsqlTrigramsDbFunctionsExtensions$instance;
-

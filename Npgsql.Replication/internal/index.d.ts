@@ -215,4 +215,3 @@ export abstract class TestDecodingConnectionExtensions$instance {
 
 
 export type TestDecodingConnectionExtensions = TestDecodingConnectionExtensions$instance;
-

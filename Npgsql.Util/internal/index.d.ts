@@ -22,4 +22,3 @@ export const NpgsqlTimeout: {
 
 
 export type NpgsqlTimeout = NpgsqlTimeout$instance;
-

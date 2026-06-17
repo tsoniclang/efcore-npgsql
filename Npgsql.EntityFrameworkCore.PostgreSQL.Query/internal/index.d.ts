@@ -53,4 +53,3 @@ export const NpgsqlSqlExpressionFactory: {
 
 
 export type NpgsqlSqlExpressionFactory = NpgsqlSqlExpressionFactory$instance;
-

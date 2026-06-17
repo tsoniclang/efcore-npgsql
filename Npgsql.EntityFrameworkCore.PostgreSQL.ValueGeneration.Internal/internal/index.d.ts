@@ -131,4 +131,3 @@ export const NpgsqlValueGeneratorSelector: {
 
 
 export type NpgsqlValueGeneratorSelector = NpgsqlValueGeneratorSelector$instance;
-

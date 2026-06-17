@@ -165,4 +165,3 @@ export const NpgsqlValueGenerationStrategyConvention: {
 
 
 export type NpgsqlValueGenerationStrategyConvention = NpgsqlValueGenerationStrategyConvention$instance;
-

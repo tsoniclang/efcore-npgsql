@@ -49,4 +49,3 @@ export const NpgsqlDatabaseModelFactory: {
 
 
 export type NpgsqlDatabaseModelFactory = NpgsqlDatabaseModelFactory$instance;
-
