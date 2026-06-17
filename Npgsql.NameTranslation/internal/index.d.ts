@@ -13,7 +13,7 @@ import type { CultureInfo } from "@tsonic/dotnet/System.Globalization/internal/i
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface NpgsqlNullNameTranslator$instance extends Npgsql_Internal.INpgsqlNameTranslator$instance {
+export interface NpgsqlNullNameTranslator$instance {
     readonly __tsonic_type_Npgsql_NameTranslation_NpgsqlNullNameTranslator: never;
 
     readonly __tsonic_iface_Npgsql_INpgsqlNameTranslator: never;
@@ -35,7 +35,7 @@ export interface __NpgsqlNullNameTranslator$views {
 export type NpgsqlNullNameTranslator = NpgsqlNullNameTranslator$instance & __NpgsqlNullNameTranslator$views;
 
 
-export interface NpgsqlSnakeCaseNameTranslator$instance extends Npgsql_Internal.INpgsqlNameTranslator$instance {
+export interface NpgsqlSnakeCaseNameTranslator$instance {
     readonly __tsonic_type_Npgsql_NameTranslation_NpgsqlSnakeCaseNameTranslator: never;
 
     readonly __tsonic_iface_Npgsql_INpgsqlNameTranslator: never;

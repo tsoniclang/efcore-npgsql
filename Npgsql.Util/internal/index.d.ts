@@ -12,6 +12,7 @@ import type { ValueType } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface NpgsqlTimeout$instance {
     readonly __tsonic_type_Npgsql_Util_NpgsqlTimeout: never;
+    readonly __tsonic_type_System_ValueType: never;
 
 }
 

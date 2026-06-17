@@ -19,15 +19,18 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Byte, DateTime, Enum, IAsyncDisposable, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable, Nullable_1, Object as ClrObject, String as ClrString, TimeSpan, UInt32, ValueType, Version, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export enum LogicalSlotSnapshotInitMode {
-    Export = 0,
-    Use = 1,
-    NoExport = 2
-}
+export type LogicalSlotSnapshotInitMode = number & { readonly __tsonic_type_Npgsql_Replication_LogicalSlotSnapshotInitMode: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const LogicalSlotSnapshotInitMode: {
+    readonly Export: LogicalSlotSnapshotInitMode;
+    readonly Use: LogicalSlotSnapshotInitMode;
+    readonly NoExport: LogicalSlotSnapshotInitMode;
+};
 
 
 export interface ReplicationSlotOptions$instance {
     readonly __tsonic_type_Npgsql_Replication_ReplicationSlotOptions: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly ConsistentPoint: NpgsqlLogSequenceNumber;
     readonly SlotName: string;
@@ -44,6 +47,7 @@ export type ReplicationSlotOptions = ReplicationSlotOptions$instance;
 
 export interface TimelineHistoryFile$instance {
     readonly __tsonic_type_Npgsql_Replication_TimelineHistoryFile: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly Content: byte[];
     readonly FileName: string;
@@ -57,8 +61,9 @@ export const TimelineHistoryFile: {
 
 export type TimelineHistoryFile = TimelineHistoryFile$instance;
 
-export interface LogicalReplicationConnection$instance extends ReplicationConnection {
+export interface LogicalReplicationConnection$instance extends ReplicationConnection$instance {
     readonly __tsonic_type_Npgsql_Replication_LogicalReplicationConnection: never;
+    readonly __tsonic_type_Npgsql_Replication_ReplicationConnection: never;
 
     readonly __tsonic_iface_System_IAsyncDisposable: never;
 
@@ -73,16 +78,17 @@ export const LogicalReplicationConnection: {
 
 export type LogicalReplicationConnection = LogicalReplicationConnection$instance;
 
-export interface PhysicalReplicationConnection$instance extends ReplicationConnection {
+export interface PhysicalReplicationConnection$instance extends ReplicationConnection$instance {
     readonly __tsonic_type_Npgsql_Replication_PhysicalReplicationConnection: never;
+    readonly __tsonic_type_Npgsql_Replication_ReplicationConnection: never;
 
     readonly __tsonic_iface_System_IAsyncDisposable: never;
 
     CreateReplicationSlot(slotName: string, isTemporary?: boolean, reserveWal?: boolean, cancellationToken?: CancellationToken): Task_1<PhysicalReplicationSlot>;
     ReadReplicationSlot(slotName: string, cancellationToken?: CancellationToken): Task_1<PhysicalReplicationSlot | null>;
     StartReplication(slot: PhysicalReplicationSlot | null, walLocation: NpgsqlLogSequenceNumber, cancellationToken: CancellationToken, timeline?: uint): IAsyncEnumerable_1<XLogDataMessage>;
-    StartReplication(walLocation: NpgsqlLogSequenceNumber, cancellationToken: CancellationToken, timeline?: uint): IAsyncEnumerable_1<XLogDataMessage>;
     StartReplication(slot: PhysicalReplicationSlot, cancellationToken: CancellationToken): IAsyncEnumerable_1<XLogDataMessage>;
+    StartReplication(walLocation: NpgsqlLogSequenceNumber, cancellationToken: CancellationToken, timeline?: uint): IAsyncEnumerable_1<XLogDataMessage>;
 }
 
 
@@ -94,8 +100,9 @@ export const PhysicalReplicationConnection: {
 
 export type PhysicalReplicationConnection = PhysicalReplicationConnection$instance;
 
-export interface PhysicalReplicationSlot$instance extends ReplicationSlot {
+export interface PhysicalReplicationSlot$instance extends ReplicationSlot$instance {
     readonly __tsonic_type_Npgsql_Replication_PhysicalReplicationSlot: never;
+    readonly __tsonic_type_Npgsql_Replication_ReplicationSlot: never;
 
     readonly RestartLsn: Nullable_1<NpgsqlLogSequenceNumber>;
     readonly RestartTimeline: Nullable_1<System_Internal.UInt32>;
@@ -119,7 +126,7 @@ export interface ReplicationConnection$instance {
     readonly Encoding: Encoding;
     LastAppliedLsn: NpgsqlLogSequenceNumber;
     LastFlushedLsn: NpgsqlLogSequenceNumber;
-    LastReceivedLsn: NpgsqlLogSequenceNumber;
+    readonly LastReceivedLsn: NpgsqlLogSequenceNumber;
     readonly PostgreSqlVersion: Version;
     readonly ProcessID: int;
     readonly ServerVersion: string;
@@ -145,13 +152,13 @@ export type ReplicationConnection = ReplicationConnection$instance;
 export interface ReplicationMessage$instance {
     readonly __tsonic_type_Npgsql_Replication_ReplicationMessage: never;
 
-    ServerClock: DateTime;
-    WalEnd: NpgsqlLogSequenceNumber;
-    WalStart: NpgsqlLogSequenceNumber;
+    readonly ServerClock: DateTime;
+    readonly WalEnd: NpgsqlLogSequenceNumber;
+    readonly WalStart: NpgsqlLogSequenceNumber;
 }
 
 
-export const ReplicationMessage: (abstract new() => ReplicationMessage) & {
+export const ReplicationMessage: {
 };
 
 
@@ -186,10 +193,11 @@ export const ReplicationSystemIdentification: {
 
 export type ReplicationSystemIdentification = ReplicationSystemIdentification$instance;
 
-export interface XLogDataMessage$instance extends ReplicationMessage {
+export interface XLogDataMessage$instance extends ReplicationMessage$instance {
+    readonly __tsonic_type_Npgsql_Replication_ReplicationMessage: never;
     readonly __tsonic_type_Npgsql_Replication_XLogDataMessage: never;
 
-    Data: Stream;
+    readonly Data: Stream;
 }
 
 

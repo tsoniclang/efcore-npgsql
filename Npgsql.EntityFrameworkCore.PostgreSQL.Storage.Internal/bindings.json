@@ -838,12 +838,12 @@
             "targetName": "DataSource",
             "metadataToken": 385875998,
             "canonicalSignature": ":System.Data.Common.DbDataSource",
-            "normalizedSignature": "DataSource|:System.Data.Common.DbDataSource|static=false|accessor=getset",
+            "normalizedSignature": "DataSource|:System.Data.Common.DbDataSource|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": true,
@@ -979,17 +979,6 @@
             "isStatic": false,
             "parameterCount": 3,
             "visibility": "Public",
-            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlRelationalConnection",
-            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-          },
-          {
-            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlRelationalConnection::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalConnectionDependencies,System.Data.Common.DbDataSource):void",
-            "metadataToken": 100664159,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalConnectionDependencies,System.Data.Common.DbDataSource):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalConnectionDependencies,System.Data.Common.DbDataSource):void|static=false",
-            "isStatic": false,
-            "parameterCount": 2,
-            "visibility": "Protected",
             "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlRelationalConnection",
             "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
           }

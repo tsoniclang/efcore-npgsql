@@ -5169,19 +5169,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsQuery::.ctor(NpgsqlTypes.NpgsqlTsQuery+NodeKind):void",
-            "metadataToken": 100663377,
-            "canonicalSignature": "(NpgsqlTypes.NpgsqlTsQuery+NodeKind):void",
-            "normalizedSignature": "constructor|(NpgsqlTypes.NpgsqlTsQuery+NodeKind):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
-            "ownerQualifiedName": "NpgsqlTypes.NpgsqlTsQuery",
-            "ownerIdentity": "Npgsql"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsQuery+NodeKind",
@@ -5477,19 +5465,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsQueryBinOp::.ctor(NpgsqlTypes.NpgsqlTsQuery+NodeKind,NpgsqlTypes.NpgsqlTsQuery,NpgsqlTypes.NpgsqlTsQuery):void",
-            "metadataToken": 100663412,
-            "canonicalSignature": "(NpgsqlTypes.NpgsqlTsQuery+NodeKind,NpgsqlTypes.NpgsqlTsQuery,NpgsqlTypes.NpgsqlTsQuery):void",
-            "normalizedSignature": "constructor|(NpgsqlTypes.NpgsqlTsQuery+NodeKind,NpgsqlTypes.NpgsqlTsQuery,NpgsqlTypes.NpgsqlTsQuery):void|static=false",
-            "isStatic": false,
-            "parameterCount": 3,
-            "visibility": "Protected",
-            "ownerQualifiedName": "NpgsqlTypes.NpgsqlTsQueryBinOp",
-            "ownerIdentity": "Npgsql"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Npgsql:NpgsqlTypes.NpgsqlTsQueryEmpty",
@@ -6583,12 +6559,12 @@
             "targetName": "Item",
             "metadataToken": 385877149,
             "canonicalSignature": "[System.Int32]:NpgsqlTypes.NpgsqlTsVector+Lexeme+WordEntryPos",
-            "normalizedSignature": "Item|[System.Int32]:NpgsqlTypes.NpgsqlTsVector+Lexeme+WordEntryPos|static=false|accessor=getset",
+            "normalizedSignature": "Item|[System.Int32]:NpgsqlTypes.NpgsqlTsVector+Lexeme+WordEntryPos|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": true,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,

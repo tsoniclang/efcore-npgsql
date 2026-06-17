@@ -39,75 +39,91 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Action_1, Action_2, Array as ClrArray, AsyncCallback, Boolean as ClrBoolean, Byte, Char, DateTime, Decimal, Double, Enum, EventArgs, EventHandler, Exception, Func_1, Func_2, Func_3, Guid, IAsyncDisposable, IAsyncResult, ICloneable, IComparable, IConvertible, IDisposable, IFormattable, Int16, Int32, Int64, IntPtr, IServiceProvider, ISpanFormattable, Memory_1, MulticastDelegate, Nullable_1, Object as ClrObject, ReadOnlyMemory_1, ReadOnlySpan_1, Single, Span_1, String as ClrString, TimeSpan, Type, UInt32, UInt64, ValueType, Version, Void } from "@tsonic/dotnet/System/internal/index.js";
 import type { ILoggerFactory } from "@tsonic/microsoft-extensions/Microsoft.Extensions.Logging/internal/index.js";
 
-export enum ArrayNullabilityMode {
-    Never = 0,
-    Always = 1,
-    PerInstance = 2
-}
+export type ArrayNullabilityMode = number & { readonly __tsonic_type_Npgsql_ArrayNullabilityMode: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const ArrayNullabilityMode: {
+    readonly Never: ArrayNullabilityMode;
+    readonly Always: ArrayNullabilityMode;
+    readonly PerInstance: ArrayNullabilityMode;
+};
 
 
-export enum ChannelBinding {
-    Disable = 0,
-    Prefer = 1,
-    Require = 2
-}
+export type ChannelBinding = number & { readonly __tsonic_type_Npgsql_ChannelBinding: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const ChannelBinding: {
+    readonly Disable: ChannelBinding;
+    readonly Prefer: ChannelBinding;
+    readonly Require: ChannelBinding;
+};
 
 
-export enum GssEncryptionMode {
-    Disable = 0,
-    Prefer = 1,
-    Require = 2
-}
+export type GssEncryptionMode = number & { readonly __tsonic_type_Npgsql_GssEncryptionMode: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const GssEncryptionMode: {
+    readonly Disable: GssEncryptionMode;
+    readonly Prefer: GssEncryptionMode;
+    readonly Require: GssEncryptionMode;
+};
 
 
-export enum ServerCompatibilityMode {
-    None = 0,
-    Redshift = 1,
-    NoTypeLoading = 2
-}
+export type ServerCompatibilityMode = number & { readonly __tsonic_type_Npgsql_ServerCompatibilityMode: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const ServerCompatibilityMode: {
+    readonly None: ServerCompatibilityMode;
+    readonly Redshift: ServerCompatibilityMode;
+    readonly NoTypeLoading: ServerCompatibilityMode;
+};
 
 
-export enum SslMode {
-    Disable = 0,
-    Allow = 1,
-    Prefer = 2,
-    Require = 3,
-    VerifyCA = 4,
-    VerifyFull = 5
-}
+export type SslMode = number & { readonly __tsonic_type_Npgsql_SslMode: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const SslMode: {
+    readonly Disable: SslMode;
+    readonly Allow: SslMode;
+    readonly Prefer: SslMode;
+    readonly Require: SslMode;
+    readonly VerifyCA: SslMode;
+    readonly VerifyFull: SslMode;
+};
 
 
-export enum SslNegotiation {
-    Postgres = 0,
-    Direct = 1
-}
+export type SslNegotiation = number & { readonly __tsonic_type_Npgsql_SslNegotiation: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const SslNegotiation: {
+    readonly Postgres: SslNegotiation;
+    readonly Direct: SslNegotiation;
+};
 
 
-export enum StatementType {
-    Unknown = 0,
-    Select = 1,
-    Insert = 2,
-    Delete = 3,
-    Update = 4,
-    CreateTableAs = 5,
-    Move = 6,
-    Fetch = 7,
-    Copy = 8,
-    Other = 9,
-    Merge = 10,
-    Call = 11
-}
+export type StatementType = number & { readonly __tsonic_type_Npgsql_StatementType: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const StatementType: {
+    readonly Unknown: StatementType;
+    readonly Select: StatementType;
+    readonly Insert: StatementType;
+    readonly Delete: StatementType;
+    readonly Update: StatementType;
+    readonly CreateTableAs: StatementType;
+    readonly Move: StatementType;
+    readonly Fetch: StatementType;
+    readonly Copy: StatementType;
+    readonly Other: StatementType;
+    readonly Merge: StatementType;
+    readonly Call: StatementType;
+};
 
 
-export enum TargetSessionAttributes {
-    Any = 0,
-    ReadWrite = 1,
-    ReadOnly = 2,
-    Primary = 3,
-    Standby = 4,
-    PreferPrimary = 5,
-    PreferStandby = 6
-}
+export type TargetSessionAttributes = number & { readonly __tsonic_type_Npgsql_TargetSessionAttributes: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const TargetSessionAttributes: {
+    readonly Any: TargetSessionAttributes;
+    readonly ReadWrite: TargetSessionAttributes;
+    readonly ReadOnly: TargetSessionAttributes;
+    readonly Primary: TargetSessionAttributes;
+    readonly Standby: TargetSessionAttributes;
+    readonly PreferPrimary: TargetSessionAttributes;
+    readonly PreferStandby: TargetSessionAttributes;
+};
 
 
 export type NoticeEventHandler = (sender: unknown, e: NpgsqlNoticeEventArgs) => void;
@@ -137,39 +153,28 @@ export interface INpgsqlNameTranslator$instance {
 
 export type INpgsqlNameTranslator = INpgsqlNameTranslator$instance;
 
-export interface NpgsqlBatch$instance extends DbBatch {
+export interface NpgsqlBatch$instance extends System_Data_Common_Internal.DbBatch {
     readonly __tsonic_type_Npgsql_NpgsqlBatch: never;
+    readonly __tsonic_type_System_Data_Common_DbBatch: never;
 
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    readonly BatchCommands: NpgsqlBatchCommandCollection;
-    get Connection(): NpgsqlConnection | null;
-    set Connection(value: NpgsqlConnection | null);
-    readonly DbBatchCommands: DbBatchCommandCollection;
-    get DbConnection(): DbConnection | null;
-    set DbConnection(value: DbConnection | null);
-    get DbTransaction(): DbTransaction | null;
-    set DbTransaction(value: DbTransaction | null);
     EnableErrorBarriers: boolean;
-    Timeout: int;
-    get Transaction(): NpgsqlTransaction | null;
-    set Transaction(value: NpgsqlTransaction | null);
-    Cancel(): void;
-    CreateBatchCommand(): NpgsqlBatchCommand;
-    CreateDbBatchCommand(): DbBatchCommand;
-    Dispose(): void;
-    ExecuteDbDataReader(behavior: CommandBehavior): DbDataReader;
-    ExecuteDbDataReaderAsync(behavior: CommandBehavior, cancellationToken: CancellationToken): Task_1<DbDataReader>;
-    ExecuteNonQuery(): int;
-    ExecuteNonQueryAsync(cancellationToken?: CancellationToken): Task_1<System_Internal.Int32>;
-    ExecuteReader(behavior?: CommandBehavior): NpgsqlDataReader;
-    ExecuteReaderAsync(cancellationToken?: CancellationToken): Task_1<NpgsqlDataReader>;
-    ExecuteReaderAsync(behavior: CommandBehavior, cancellationToken?: CancellationToken): Task_1<NpgsqlDataReader>;
-    ExecuteScalar(): unknown | null;
-    ExecuteScalarAsync(cancellationToken?: CancellationToken): Task_1<unknown | null>;
-    Prepare(): void;
-    PrepareAsync(cancellationToken?: CancellationToken): Task;
+    Cancel: System_Data_Common_Internal.DbBatch["Cancel"] & (() => void);
+    CreateBatchCommand: System_Data_Common_Internal.DbBatch["CreateBatchCommand"] & (() => NpgsqlBatchCommand);
+    CreateDbBatchCommand: System_Data_Common_Internal.DbBatch["CreateDbBatchCommand"] & (() => DbBatchCommand);
+    Dispose: System_Data_Common_Internal.DbBatch["Dispose"] & (() => void);
+    ExecuteDbDataReader: System_Data_Common_Internal.DbBatch["ExecuteDbDataReader"] & ((behavior: CommandBehavior) => DbDataReader);
+    ExecuteDbDataReaderAsync: System_Data_Common_Internal.DbBatch["ExecuteDbDataReaderAsync"] & ((behavior: CommandBehavior, cancellationToken: CancellationToken) => Task_1<DbDataReader>);
+    ExecuteNonQuery: System_Data_Common_Internal.DbBatch["ExecuteNonQuery"] & (() => int);
+    ExecuteNonQueryAsync: System_Data_Common_Internal.DbBatch["ExecuteNonQueryAsync"] & ((cancellationToken?: CancellationToken) => Task_1<System_Internal.Int32>);
+    ExecuteReader: System_Data_Common_Internal.DbBatch["ExecuteReader"] & ((behavior?: CommandBehavior) => NpgsqlDataReader);
+    ExecuteReaderAsync: System_Data_Common_Internal.DbBatch["ExecuteReaderAsync"] & ((behavior: CommandBehavior, cancellationToken?: CancellationToken) => Task_1<NpgsqlDataReader>) & ((cancellationToken?: CancellationToken) => Task_1<NpgsqlDataReader>);
+    ExecuteScalar: System_Data_Common_Internal.DbBatch["ExecuteScalar"] & (() => unknown | null);
+    ExecuteScalarAsync: System_Data_Common_Internal.DbBatch["ExecuteScalarAsync"] & ((cancellationToken?: CancellationToken) => Task_1<unknown | null>);
+    Prepare: System_Data_Common_Internal.DbBatch["Prepare"] & (() => void);
+    PrepareAsync: System_Data_Common_Internal.DbBatch["PrepareAsync"] & ((cancellationToken?: CancellationToken) => Task);
 }
 
 
@@ -180,21 +185,16 @@ export const NpgsqlBatch: {
 
 export type NpgsqlBatch = NpgsqlBatch$instance;
 
-export interface NpgsqlBatchCommand$instance extends DbBatchCommand {
+export interface NpgsqlBatchCommand$instance extends System_Data_Common_Internal.DbBatchCommand {
     readonly __tsonic_type_Npgsql_NpgsqlBatchCommand: never;
+    readonly __tsonic_type_System_Data_Common_DbBatchCommand: never;
 
     get AppendErrorBarrier(): Nullable_1<System_Internal.Boolean>;
     set AppendErrorBarrier(value: Nullable_1<System_Internal.Boolean> | boolean);
-    readonly CanCreateParameter: boolean;
-    CommandText: string;
-    CommandType: CommandType;
-    readonly DbParameterCollection: DbParameterCollection;
-    OID: uint;
-    readonly Parameters: NpgsqlParameterCollection;
-    readonly RecordsAffected: int;
-    Rows: ulong;
-    StatementType: StatementType;
-    CreateParameter(): NpgsqlParameter;
+    readonly OID: uint;
+    readonly Rows: ulong;
+    readonly StatementType: StatementType;
+    CreateParameter: System_Data_Common_Internal.DbBatchCommand["CreateParameter"] & (() => NpgsqlParameter);
     ToString(): string;
 }
 
@@ -207,33 +207,26 @@ export const NpgsqlBatchCommand: {
 
 export type NpgsqlBatchCommand = NpgsqlBatchCommand$instance;
 
-export interface NpgsqlBatchCommandCollection$instance extends DbBatchCommandCollection {
+export interface NpgsqlBatchCommandCollection$instance extends System_Data_Common_Internal.DbBatchCommandCollection {
     readonly __tsonic_type_Npgsql_NpgsqlBatchCommandCollection: never;
+    readonly __tsonic_type_System_Data_Common_DbBatchCommandCollection: never;
 
     readonly __tsonic_iface_System_Collections_Generic_ICollection_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IList_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
-    readonly Count: int;
-    readonly IsReadOnly: boolean;
-    Add(item: NpgsqlBatchCommand): void;
-    Add(item: DbBatchCommand): void;
-    Clear(): void;
-    Contains(item: NpgsqlBatchCommand): boolean;
-    Contains(item: DbBatchCommand): boolean;
-    CopyTo(array: NpgsqlBatchCommand[], arrayIndex: int): void;
-    CopyTo(array: DbBatchCommand[], arrayIndex: int): void;
-    GetBatchCommand(index: int): DbBatchCommand;
-    GetEnumerator(): IEnumerator_1<DbBatchCommand>;
-    IndexOf(item: NpgsqlBatchCommand): int;
-    IndexOf(item: DbBatchCommand): int;
-    Insert(index: int, item: NpgsqlBatchCommand): void;
-    Insert(index: int, item: DbBatchCommand): void;
-    Remove(item: NpgsqlBatchCommand): boolean;
-    Remove(item: DbBatchCommand): boolean;
-    RemoveAt(index: int): void;
-    SetBatchCommand(index: int, batchCommand: DbBatchCommand): void;
+    Add: System_Data_Common_Internal.DbBatchCommandCollection["Add"] & ((item: DbBatchCommand) => void) & ((item: NpgsqlBatchCommand) => void);
+    Clear: System_Data_Common_Internal.DbBatchCommandCollection["Clear"] & (() => void);
+    Contains: System_Data_Common_Internal.DbBatchCommandCollection["Contains"] & ((item: DbBatchCommand) => boolean) & ((item: NpgsqlBatchCommand) => boolean);
+    CopyTo: System_Data_Common_Internal.DbBatchCommandCollection["CopyTo"] & ((array: DbBatchCommand[], arrayIndex: int) => void) & ((array: NpgsqlBatchCommand[], arrayIndex: int) => void);
+    GetBatchCommand: System_Data_Common_Internal.DbBatchCommandCollection["GetBatchCommand"] & ((index: int) => DbBatchCommand);
+    GetEnumerator: System_Data_Common_Internal.DbBatchCommandCollection["GetEnumerator"] & (() => IEnumerator_1<DbBatchCommand>);
+    IndexOf: System_Data_Common_Internal.DbBatchCommandCollection["IndexOf"] & ((item: DbBatchCommand) => int) & ((item: NpgsqlBatchCommand) => int);
+    Insert: System_Data_Common_Internal.DbBatchCommandCollection["Insert"] & ((index: int, item: DbBatchCommand) => void) & ((index: int, item: NpgsqlBatchCommand) => void);
+    Remove: System_Data_Common_Internal.DbBatchCommandCollection["Remove"] & ((item: DbBatchCommand) => boolean) & ((item: NpgsqlBatchCommand) => boolean);
+    RemoveAt: System_Data_Common_Internal.DbBatchCommandCollection["RemoveAt"] & ((index: int) => void);
+    SetBatchCommand: System_Data_Common_Internal.DbBatchCommandCollection["SetBatchCommand"] & ((index: int, batchCommand: DbBatchCommand) => void);
 }
 
 
@@ -290,11 +283,11 @@ export interface NpgsqlBinaryImporter$instance {
     StartRow(): void;
     StartRowAsync(cancellationToken?: CancellationToken): Task;
     Write<T extends unknown>(value: T): void;
-    Write<T extends unknown>(value: T, npgsqlDbType: NpgsqlDbType): void;
     Write<T extends unknown>(value: T, dataTypeName: string): void;
+    Write<T extends unknown>(value: T, npgsqlDbType: NpgsqlDbType): void;
     WriteAsync<T extends unknown>(value: T, cancellationToken?: CancellationToken): Task;
-    WriteAsync<T extends unknown>(value: T, npgsqlDbType: NpgsqlDbType, cancellationToken?: CancellationToken): Task;
     WriteAsync<T extends unknown>(value: T, dataTypeName: string, cancellationToken?: CancellationToken): Task;
+    WriteAsync<T extends unknown>(value: T, npgsqlDbType: NpgsqlDbType, cancellationToken?: CancellationToken): Task;
     WriteNull(): void;
     WriteNullAsync(cancellationToken?: CancellationToken): Task;
     WriteRow(...values: (unknown | null)[]): void;
@@ -308,8 +301,11 @@ export const NpgsqlBinaryImporter: {
 
 export type NpgsqlBinaryImporter = NpgsqlBinaryImporter$instance;
 
-export interface NpgsqlCommand$instance extends DbCommand {
+export interface NpgsqlCommand$instance extends System_Data_Common_Internal.DbCommand {
     readonly __tsonic_type_Npgsql_NpgsqlCommand: never;
+    readonly __tsonic_type_System_ComponentModel_Component: never;
+    readonly __tsonic_type_System_Data_Common_DbCommand: never;
+    readonly __tsonic_type_System_MarshalByRefObject: never;
 
     readonly __tsonic_iface_System_ComponentModel_IComponent: never;
     readonly __tsonic_iface_System_Data_IDbCommand: never;
@@ -318,41 +314,25 @@ export interface NpgsqlCommand$instance extends DbCommand {
     readonly __tsonic_iface_System_IDisposable: never;
 
     AllResultTypesAreUnknown: boolean;
-    CommandText: string;
-    CommandTimeout: int;
-    CommandType: CommandType;
-    get Connection(): NpgsqlConnection | null;
-    set Connection(value: NpgsqlConnection | null);
-    get DbConnection(): DbConnection | null;
-    set DbConnection(value: DbConnection | null);
-    readonly DbParameterCollection: DbParameterCollection;
-    get DbTransaction(): DbTransaction | null;
-    set DbTransaction(value: DbTransaction | null);
-    DesignTimeVisible: boolean;
     readonly IsPrepared: boolean;
-    readonly Parameters: NpgsqlParameterCollection;
     readonly Statements: IReadOnlyList_1<NpgsqlBatchCommand>;
-    get Transaction(): NpgsqlTransaction | null;
-    set Transaction(value: NpgsqlTransaction | null);
     get UnknownResultTypeList(): boolean[] | null;
     set UnknownResultTypeList(value: boolean[] | null);
-    UpdatedRowSource: UpdateRowSource;
-    Cancel(): void;
+    Cancel: System_Data_Common_Internal.DbCommand["Cancel"] & (() => void);
     Clone(): NpgsqlCommand;
-    CreateDbParameter(): DbParameter;
-    CreateParameter(): NpgsqlParameter;
-    Dispose(disposing: boolean): void;
-    ExecuteDbDataReader(behavior: CommandBehavior): DbDataReader;
-    ExecuteDbDataReaderAsync(behavior: CommandBehavior, cancellationToken: CancellationToken): Task_1<DbDataReader>;
-    ExecuteNonQuery(): int;
-    ExecuteNonQueryAsync(cancellationToken: CancellationToken): Task_1<System_Internal.Int32>;
-    ExecuteReader(behavior?: CommandBehavior): NpgsqlDataReader;
-    ExecuteReaderAsync(cancellationToken?: CancellationToken): Task_1<NpgsqlDataReader>;
-    ExecuteReaderAsync(behavior: CommandBehavior, cancellationToken?: CancellationToken): Task_1<NpgsqlDataReader>;
-    ExecuteScalar(): unknown | null;
-    ExecuteScalarAsync(cancellationToken: CancellationToken): Task_1<unknown | null>;
-    Prepare(): void;
-    PrepareAsync(cancellationToken?: CancellationToken): Task;
+    CreateDbParameter: System_Data_Common_Internal.DbCommand["CreateDbParameter"] & (() => DbParameter);
+    CreateParameter: System_Data_Common_Internal.DbCommand["CreateParameter"] & (() => NpgsqlParameter);
+    Dispose: System_Data_Common_Internal.DbCommand["Dispose"] & ((disposing: boolean) => void);
+    ExecuteDbDataReader: System_Data_Common_Internal.DbCommand["ExecuteDbDataReader"] & ((behavior: CommandBehavior) => DbDataReader);
+    ExecuteDbDataReaderAsync: System_Data_Common_Internal.DbCommand["ExecuteDbDataReaderAsync"] & ((behavior: CommandBehavior, cancellationToken: CancellationToken) => Task_1<DbDataReader>);
+    ExecuteNonQuery: System_Data_Common_Internal.DbCommand["ExecuteNonQuery"] & (() => int);
+    ExecuteNonQueryAsync: System_Data_Common_Internal.DbCommand["ExecuteNonQueryAsync"] & ((cancellationToken: CancellationToken) => Task_1<System_Internal.Int32>);
+    ExecuteReader: System_Data_Common_Internal.DbCommand["ExecuteReader"] & ((behavior?: CommandBehavior) => NpgsqlDataReader);
+    ExecuteReaderAsync: System_Data_Common_Internal.DbCommand["ExecuteReaderAsync"] & ((behavior: CommandBehavior, cancellationToken?: CancellationToken) => Task_1<NpgsqlDataReader>) & ((cancellationToken?: CancellationToken) => Task_1<NpgsqlDataReader>);
+    ExecuteScalar: System_Data_Common_Internal.DbCommand["ExecuteScalar"] & (() => unknown | null);
+    ExecuteScalarAsync: System_Data_Common_Internal.DbCommand["ExecuteScalarAsync"] & ((cancellationToken: CancellationToken) => Task_1<unknown | null>);
+    Prepare: System_Data_Common_Internal.DbCommand["Prepare"] & (() => void);
+    PrepareAsync: System_Data_Common_Internal.DbCommand["PrepareAsync"] & ((cancellationToken?: CancellationToken) => Task);
     Unprepare(): void;
     UnprepareAsync(cancellationToken?: CancellationToken): Task;
 }
@@ -368,27 +348,24 @@ export const NpgsqlCommand: {
 
 export type NpgsqlCommand = NpgsqlCommand$instance;
 
-export interface NpgsqlCommandBuilder$instance extends DbCommandBuilder {
+export interface NpgsqlCommandBuilder$instance extends System_Data_Common_Internal.DbCommandBuilder {
     readonly __tsonic_type_Npgsql_NpgsqlCommandBuilder: never;
+    readonly __tsonic_type_System_ComponentModel_Component: never;
+    readonly __tsonic_type_System_Data_Common_DbCommandBuilder: never;
+    readonly __tsonic_type_System_MarshalByRefObject: never;
 
     readonly __tsonic_iface_System_ComponentModel_IComponent: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    QuotePrefix: string;
-    QuoteSuffix: string;
-    ApplyParameterInfo(p: DbParameter, row: DataRow, statementType: StatementType_Data, whereClause: boolean): void;
-    GetDeleteCommand(): NpgsqlCommand;
-    GetDeleteCommand(useColumnsForParameterNames: boolean): NpgsqlCommand;
-    GetInsertCommand(): NpgsqlCommand;
-    GetInsertCommand(useColumnsForParameterNames: boolean): NpgsqlCommand;
-    GetParameterName(parameterOrdinal: int): string;
-    GetParameterName(parameterName: string): string;
-    GetParameterPlaceholder(parameterOrdinal: int): string;
-    GetUpdateCommand(): NpgsqlCommand;
-    GetUpdateCommand(useColumnsForParameterNames: boolean): NpgsqlCommand;
-    QuoteIdentifier(unquotedIdentifier: string): string;
-    SetRowUpdatingHandler(adapter: DbDataAdapter): void;
-    UnquoteIdentifier(quotedIdentifier: string): string;
+    ApplyParameterInfo: System_Data_Common_Internal.DbCommandBuilder["ApplyParameterInfo"] & ((p: DbParameter, row: DataRow, statementType: StatementType_Data, whereClause: boolean) => void);
+    GetDeleteCommand: System_Data_Common_Internal.DbCommandBuilder["GetDeleteCommand"] & (() => NpgsqlCommand) & ((useColumnsForParameterNames: boolean) => NpgsqlCommand);
+    GetInsertCommand: System_Data_Common_Internal.DbCommandBuilder["GetInsertCommand"] & (() => NpgsqlCommand) & ((useColumnsForParameterNames: boolean) => NpgsqlCommand);
+    GetParameterName: System_Data_Common_Internal.DbCommandBuilder["GetParameterName"] & ((parameterName: string) => string) & ((parameterOrdinal: int) => string);
+    GetParameterPlaceholder: System_Data_Common_Internal.DbCommandBuilder["GetParameterPlaceholder"] & ((parameterOrdinal: int) => string);
+    GetUpdateCommand: System_Data_Common_Internal.DbCommandBuilder["GetUpdateCommand"] & (() => NpgsqlCommand) & ((useColumnsForParameterNames: boolean) => NpgsqlCommand);
+    QuoteIdentifier: System_Data_Common_Internal.DbCommandBuilder["QuoteIdentifier"] & ((unquotedIdentifier: string) => string);
+    SetRowUpdatingHandler: System_Data_Common_Internal.DbCommandBuilder["SetRowUpdatingHandler"] & ((adapter: DbDataAdapter) => void);
+    UnquoteIdentifier: System_Data_Common_Internal.DbCommandBuilder["UnquoteIdentifier"] & ((quotedIdentifier: string) => string);
 }
 
 
@@ -401,8 +378,11 @@ export const NpgsqlCommandBuilder: {
 
 export type NpgsqlCommandBuilder = NpgsqlCommandBuilder$instance;
 
-export interface NpgsqlConnection$instance extends DbConnection {
+export interface NpgsqlConnection$instance extends System_Data_Common_Internal.DbConnection {
     readonly __tsonic_type_Npgsql_NpgsqlConnection: never;
+    readonly __tsonic_type_System_ComponentModel_Component: never;
+    readonly __tsonic_type_System_Data_Common_DbConnection: never;
+    readonly __tsonic_type_System_MarshalByRefObject: never;
 
     readonly __tsonic_iface_System_ComponentModel_IComponent: never;
     readonly __tsonic_iface_System_Data_IDbConnection: never;
@@ -410,14 +390,8 @@ export interface NpgsqlConnection$instance extends DbConnection {
     readonly __tsonic_iface_System_ICloneable: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    readonly CanCreateBatch: boolean;
     readonly CommandTimeout: int;
-    ConnectionString: string;
-    readonly ConnectionTimeout: int;
-    readonly Database: string;
-    readonly DataSource: string;
-    readonly DbProviderFactory: DbProviderFactory;
-    FullState: ConnectionState;
+    readonly FullState: ConnectionState;
     readonly HasIntegerDateTimes: boolean;
     readonly Host: string | null;
     readonly Port: int;
@@ -428,10 +402,8 @@ export interface NpgsqlConnection$instance extends DbConnection {
     set ProvideClientCertificatesCallback(value: ProvideClientCertificatesCallback | null);
     get ProvidePasswordCallback(): ProvidePasswordCallback | null;
     set ProvidePasswordCallback(value: ProvidePasswordCallback | null);
-    readonly ServerVersion: string;
     get SslClientAuthenticationOptionsCallback(): Action_1<SslClientAuthenticationOptions> | null;
     set SslClientAuthenticationOptionsCallback(value: Action_1<SslClientAuthenticationOptions> | null);
-    readonly State: ConnectionState;
     readonly Timezone: string;
     readonly TypeMapper: INpgsqlTypeMapper;
     get UserCertificateValidationCallback(): RemoteCertificateValidationCallback | null;
@@ -441,47 +413,41 @@ export interface NpgsqlConnection$instance extends DbConnection {
     BeginBinaryExportAsync(copyToCommand: string, cancellationToken?: CancellationToken): Task_1<NpgsqlBinaryExporter>;
     BeginBinaryImport(copyFromCommand: string): NpgsqlBinaryImporter;
     BeginBinaryImportAsync(copyFromCommand: string, cancellationToken?: CancellationToken): Task_1<NpgsqlBinaryImporter>;
-    BeginDbTransaction(isolationLevel: IsolationLevel): DbTransaction;
-    BeginDbTransactionAsync(isolationLevel: IsolationLevel, cancellationToken: CancellationToken): ValueTask_1<DbTransaction>;
+    BeginDbTransaction: System_Data_Common_Internal.DbConnection["BeginDbTransaction"] & ((isolationLevel: IsolationLevel) => DbTransaction);
+    BeginDbTransactionAsync: System_Data_Common_Internal.DbConnection["BeginDbTransactionAsync"] & ((isolationLevel: IsolationLevel, cancellationToken: CancellationToken) => ValueTask_1<DbTransaction>);
     BeginRawBinaryCopy(copyCommand: string): NpgsqlRawCopyStream;
     BeginRawBinaryCopyAsync(copyCommand: string, cancellationToken?: CancellationToken): Task_1<NpgsqlRawCopyStream>;
     BeginTextExport(copyToCommand: string): NpgsqlCopyTextReader;
     BeginTextExportAsync(copyToCommand: string, cancellationToken?: CancellationToken): Task_1<NpgsqlCopyTextReader>;
     BeginTextImport(copyFromCommand: string): NpgsqlCopyTextWriter;
     BeginTextImportAsync(copyFromCommand: string, cancellationToken?: CancellationToken): Task_1<NpgsqlCopyTextWriter>;
-    BeginTransaction(): NpgsqlTransaction;
-    BeginTransaction(level: IsolationLevel): NpgsqlTransaction;
-    BeginTransactionAsync(cancellationToken?: CancellationToken): ValueTask_1<NpgsqlTransaction>;
-    BeginTransactionAsync(level: IsolationLevel, cancellationToken?: CancellationToken): ValueTask_1<NpgsqlTransaction>;
-    ChangeDatabase(dbName: string): void;
+    BeginTransaction: System_Data_Common_Internal.DbConnection["BeginTransaction"] & (() => NpgsqlTransaction) & ((level: IsolationLevel) => NpgsqlTransaction);
+    BeginTransactionAsync: System_Data_Common_Internal.DbConnection["BeginTransactionAsync"] & ((cancellationToken?: CancellationToken) => ValueTask_1<NpgsqlTransaction>) & ((level: IsolationLevel, cancellationToken?: CancellationToken) => ValueTask_1<NpgsqlTransaction>);
+    ChangeDatabase: System_Data_Common_Internal.DbConnection["ChangeDatabase"] & ((dbName: string) => void);
     CloneWith(connectionString: string): NpgsqlConnection;
     CloneWithAsync(connectionString: string, cancellationToken?: CancellationToken): ValueTask_1<NpgsqlConnection>;
-    Close(): void;
-    CloseAsync(): Task;
-    CreateBatch(): NpgsqlBatch;
-    CreateCommand(): NpgsqlCommand;
-    CreateDbBatch(): DbBatch;
-    CreateDbCommand(): DbCommand;
-    Dispose(disposing: boolean): void;
-    DisposeAsync(): ValueTask;
-    EnlistTransaction(transaction: Transaction | null): void;
-    GetSchema(): DataTable;
-    GetSchema(collectionName: string | null): DataTable;
-    GetSchema(collectionName: string | null, restrictions: (string | null)[] | null): DataTable;
-    GetSchemaAsync(cancellationToken?: CancellationToken): Task_1<DataTable>;
-    GetSchemaAsync(collectionName: string, cancellationToken?: CancellationToken): Task_1<DataTable>;
-    GetSchemaAsync(collectionName: string, restrictions: (string | null)[] | null, cancellationToken?: CancellationToken): Task_1<DataTable>;
-    Open(): void;
-    OpenAsync(cancellationToken: CancellationToken): Task;
+    Close: System_Data_Common_Internal.DbConnection["Close"] & (() => void);
+    CloseAsync: System_Data_Common_Internal.DbConnection["CloseAsync"] & (() => Task);
+    CreateBatch: System_Data_Common_Internal.DbConnection["CreateBatch"] & (() => NpgsqlBatch);
+    CreateCommand: System_Data_Common_Internal.DbConnection["CreateCommand"] & (() => NpgsqlCommand);
+    CreateDbBatch: System_Data_Common_Internal.DbConnection["CreateDbBatch"] & (() => DbBatch);
+    CreateDbCommand: System_Data_Common_Internal.DbConnection["CreateDbCommand"] & (() => DbCommand);
+    Dispose: System_Data_Common_Internal.DbConnection["Dispose"] & ((disposing: boolean) => void);
+    DisposeAsync: System_Data_Common_Internal.DbConnection["DisposeAsync"] & (() => ValueTask);
+    EnlistTransaction: System_Data_Common_Internal.DbConnection["EnlistTransaction"] & ((transaction: Transaction | null) => void);
+    GetSchema: System_Data_Common_Internal.DbConnection["GetSchema"] & (() => DataTable) & ((collectionName: string | null) => DataTable) & ((collectionName: string | null, restrictions: (string | null)[] | null) => DataTable);
+    GetSchemaAsync: System_Data_Common_Internal.DbConnection["GetSchemaAsync"] & ((cancellationToken?: CancellationToken) => Task_1<DataTable>) & ((collectionName: string, cancellationToken?: CancellationToken) => Task_1<DataTable>) & ((collectionName: string, restrictions: (string | null)[] | null, cancellationToken?: CancellationToken) => Task_1<DataTable>);
+    Open: System_Data_Common_Internal.DbConnection["Open"] & (() => void);
+    OpenAsync: System_Data_Common_Internal.DbConnection["OpenAsync"] & ((cancellationToken: CancellationToken) => Task);
     ReloadTypes(): void;
     ReloadTypesAsync(cancellationToken?: CancellationToken): Task;
     UnprepareAll(): void;
-    Wait(timeout: int): boolean;
-    Wait(timeout: TimeSpan): boolean;
     Wait(): void;
-    WaitAsync(timeout: int, cancellationToken?: CancellationToken): Task_1<System_Internal.Boolean>;
-    WaitAsync(timeout: TimeSpan, cancellationToken?: CancellationToken): Task_1<System_Internal.Boolean>;
+    Wait(timeout: TimeSpan): boolean;
+    Wait(timeout: int): boolean;
     WaitAsync(cancellationToken?: CancellationToken): Task;
+    WaitAsync(timeout: TimeSpan, cancellationToken?: CancellationToken): Task_1<System_Internal.Boolean>;
+    WaitAsync(timeout: int, cancellationToken?: CancellationToken): Task_1<System_Internal.Boolean>;
 }
 
 
@@ -497,8 +463,9 @@ export const NpgsqlConnection: {
 
 export type NpgsqlConnection = NpgsqlConnection$instance;
 
-export interface NpgsqlConnectionStringBuilder$instance extends DbConnectionStringBuilder {
+export interface NpgsqlConnectionStringBuilder$instance extends System_Data_Common_Internal.DbConnectionStringBuilder {
     readonly __tsonic_type_Npgsql_NpgsqlConnectionStringBuilder: never;
+    readonly __tsonic_type_System_Data_Common_DbConnectionStringBuilder: never;
 
     readonly __tsonic_iface_System_Collections_Generic_ICollection_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IDictionary_2: never;
@@ -533,10 +500,8 @@ export interface NpgsqlConnectionStringBuilder$instance extends DbConnectionStri
     IncludeFailedBatchedCommand: boolean;
     IncludeRealm: boolean;
     InternalCommandTimeout: int;
-    Item: unknown;
     KeepAlive: int;
     KerberosServiceName: string;
-    readonly Keys: ICollection_1<System_Internal.String>;
     LoadBalanceHosts: boolean;
     LoadTableComposites: boolean;
     LogParameters: boolean;
@@ -583,21 +548,19 @@ export interface NpgsqlConnectionStringBuilder$instance extends DbConnectionStri
     TrustServerCertificate: boolean;
     get Username(): string | null;
     set Username(value: string | null);
-    readonly Values: ICollection_1<unknown | null>;
     WriteBufferSize: int;
     WriteCoalescingBufferThresholdBytes: int;
-    Add(item: KeyValuePair_2<System_Internal.String, unknown>): void;
-    Clear(): void;
+    Add: System_Data_Common_Internal.DbConnectionStringBuilder["Add"] & ((item: KeyValuePair_2<System_Internal.String, unknown>) => void);
+    Clear: System_Data_Common_Internal.DbConnectionStringBuilder["Clear"] & (() => void);
     Contains(item: KeyValuePair_2<System_Internal.String, unknown>): boolean;
-    ContainsKey(keyword: string): boolean;
+    ContainsKey: System_Data_Common_Internal.DbConnectionStringBuilder["ContainsKey"] & ((keyword: string) => boolean);
     CopyTo(array: KeyValuePair_2<System_Internal.String, unknown>[], arrayIndex: int): void;
     Equals(obj: unknown | null): boolean;
     GetEnumerator(): IEnumerator_1<KeyValuePair_2<System_Internal.String, unknown>>;
     GetHashCode(): int;
-    GetProperties(propertyDescriptors: Hashtable): void;
-    Remove(keyword: string): boolean;
-    Remove(item: KeyValuePair_2<System_Internal.String, unknown>): boolean;
-    TryGetValue(keyword: string, value: unknown | null): boolean;
+    GetProperties: System_Data_Common_Internal.DbConnectionStringBuilder["GetProperties"] & ((propertyDescriptors: Hashtable) => void);
+    Remove: System_Data_Common_Internal.DbConnectionStringBuilder["Remove"] & ((item: KeyValuePair_2<System_Internal.String, unknown>) => boolean) & ((keyword: string) => boolean);
+    TryGetValue: System_Data_Common_Internal.DbConnectionStringBuilder["TryGetValue"] & ((keyword: string, value: unknown | null) => boolean);
 }
 
 
@@ -610,8 +573,11 @@ export const NpgsqlConnectionStringBuilder: {
 
 export type NpgsqlConnectionStringBuilder = NpgsqlConnectionStringBuilder$instance;
 
-export interface NpgsqlCopyTextReader$instance extends StreamReader {
+export interface NpgsqlCopyTextReader$instance extends System_IO_Internal.StreamReader {
     readonly __tsonic_type_Npgsql_NpgsqlCopyTextReader: never;
+    readonly __tsonic_type_System_IO_StreamReader: never;
+    readonly __tsonic_type_System_IO_TextReader: never;
+    readonly __tsonic_type_System_MarshalByRefObject: never;
 
     readonly __tsonic_iface_Npgsql_ICancelable: never;
     readonly __tsonic_iface_System_IAsyncDisposable: never;
@@ -630,8 +596,11 @@ export const NpgsqlCopyTextReader: {
 
 export type NpgsqlCopyTextReader = NpgsqlCopyTextReader$instance;
 
-export interface NpgsqlCopyTextWriter$instance extends StreamWriter {
+export interface NpgsqlCopyTextWriter$instance extends System_IO_Internal.StreamWriter {
     readonly __tsonic_type_Npgsql_NpgsqlCopyTextWriter: never;
+    readonly __tsonic_type_System_IO_StreamWriter: never;
+    readonly __tsonic_type_System_IO_TextWriter: never;
+    readonly __tsonic_type_System_MarshalByRefObject: never;
 
     readonly __tsonic_iface_Npgsql_ICancelable: never;
     readonly __tsonic_iface_System_IAsyncDisposable: never;
@@ -649,8 +618,12 @@ export const NpgsqlCopyTextWriter: {
 
 export type NpgsqlCopyTextWriter = NpgsqlCopyTextWriter$instance;
 
-export interface NpgsqlDataAdapter$instance extends DbDataAdapter {
+export interface NpgsqlDataAdapter$instance extends System_Data_Common_Internal.DbDataAdapter {
     readonly __tsonic_type_Npgsql_NpgsqlDataAdapter: never;
+    readonly __tsonic_type_System_ComponentModel_Component: never;
+    readonly __tsonic_type_System_Data_Common_DataAdapter: never;
+    readonly __tsonic_type_System_Data_Common_DbDataAdapter: never;
+    readonly __tsonic_type_System_MarshalByRefObject: never;
 
     readonly __tsonic_iface_System_ComponentModel_IComponent: never;
     readonly __tsonic_iface_System_Data_IDataAdapter: never;
@@ -658,18 +631,10 @@ export interface NpgsqlDataAdapter$instance extends DbDataAdapter {
     readonly __tsonic_iface_System_ICloneable: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    get DeleteCommand(): NpgsqlCommand | null;
-    set DeleteCommand(value: NpgsqlCommand | null);
-    get InsertCommand(): NpgsqlCommand | null;
-    set InsertCommand(value: NpgsqlCommand | null);
-    get SelectCommand(): NpgsqlCommand | null;
-    set SelectCommand(value: NpgsqlCommand | null);
-    get UpdateCommand(): NpgsqlCommand | null;
-    set UpdateCommand(value: NpgsqlCommand | null);
-    CreateRowUpdatedEvent(dataRow: DataRow, command: IDbCommand | null, statementType: StatementType_Data, tableMapping: DataTableMapping): RowUpdatedEventArgs;
-    CreateRowUpdatingEvent(dataRow: DataRow, command: IDbCommand | null, statementType: StatementType_Data, tableMapping: DataTableMapping): RowUpdatingEventArgs;
-    OnRowUpdated(value: RowUpdatedEventArgs): void;
-    OnRowUpdating(value: RowUpdatingEventArgs): void;
+    CreateRowUpdatedEvent: System_Data_Common_Internal.DbDataAdapter["CreateRowUpdatedEvent"] & ((dataRow: DataRow, command: IDbCommand | null, statementType: StatementType_Data, tableMapping: DataTableMapping) => RowUpdatedEventArgs);
+    CreateRowUpdatingEvent: System_Data_Common_Internal.DbDataAdapter["CreateRowUpdatingEvent"] & ((dataRow: DataRow, command: IDbCommand | null, statementType: StatementType_Data, tableMapping: DataTableMapping) => RowUpdatingEventArgs);
+    OnRowUpdated: System_Data_Common_Internal.DbDataAdapter["OnRowUpdated"] & ((value: RowUpdatedEventArgs) => void);
+    OnRowUpdating: System_Data_Common_Internal.DbDataAdapter["OnRowUpdating"] & ((value: RowUpdatingEventArgs) => void);
 }
 
 
@@ -683,8 +648,10 @@ export const NpgsqlDataAdapter: {
 
 export type NpgsqlDataAdapter = NpgsqlDataAdapter$instance;
 
-export interface NpgsqlDataReader$instance extends DbDataReader {
+export interface NpgsqlDataReader$instance extends System_Data_Common_Internal.DbDataReader {
     readonly __tsonic_type_Npgsql_NpgsqlDataReader: never;
+    readonly __tsonic_type_System_Data_Common_DbDataReader: never;
+    readonly __tsonic_type_System_MarshalByRefObject: never;
 
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
     readonly __tsonic_iface_System_Data_Common_IDbColumnSchemaGenerator: never;
@@ -693,62 +660,56 @@ export interface NpgsqlDataReader$instance extends DbDataReader {
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    readonly Depth: int;
-    readonly FieldCount: int;
-    readonly HasRows: boolean;
-    readonly IsClosed: boolean;
     readonly IsOnRow: boolean;
-    readonly RecordsAffected: int;
     readonly Rows: ulong;
     readonly Statements: IReadOnlyList_1<NpgsqlBatchCommand>;
-    Close(): void;
-    CloseAsync(): Task;
-    Dispose(disposing: boolean): void;
-    DisposeAsync(): ValueTask;
-    get_Item(ordinal: int): unknown;
-    get_Item(name: string): unknown;
-    GetBoolean(ordinal: int): boolean;
-    GetByte(ordinal: int): byte;
-    GetBytes(ordinal: int, dataOffset: long, buffer: byte[] | null, bufferOffset: int, length: int): long;
-    GetChar(ordinal: int): char;
-    GetChars(ordinal: int, dataOffset: long, buffer: char[] | null, bufferOffset: int, length: int): long;
+    Close: System_Data_Common_Internal.DbDataReader["Close"] & (() => void);
+    CloseAsync: System_Data_Common_Internal.DbDataReader["CloseAsync"] & (() => Task);
+    Dispose: System_Data_Common_Internal.DbDataReader["Dispose"] & ((disposing: boolean) => void);
+    DisposeAsync: System_Data_Common_Internal.DbDataReader["DisposeAsync"] & (() => ValueTask);
+    get_Item: System_Data_Common_Internal.DbDataReader["get_Item"] & ((name: string) => unknown) & ((ordinal: int) => unknown);
+    GetBoolean: System_Data_Common_Internal.DbDataReader["GetBoolean"] & ((ordinal: int) => boolean);
+    GetByte: System_Data_Common_Internal.DbDataReader["GetByte"] & ((ordinal: int) => byte);
+    GetBytes: System_Data_Common_Internal.DbDataReader["GetBytes"] & ((ordinal: int, dataOffset: long, buffer: byte[] | null, bufferOffset: int, length: int) => long);
+    GetChar: System_Data_Common_Internal.DbDataReader["GetChar"] & ((ordinal: int) => char);
+    GetChars: System_Data_Common_Internal.DbDataReader["GetChars"] & ((ordinal: int, dataOffset: long, buffer: char[] | null, bufferOffset: int, length: int) => long);
     GetColumnSchema(): ReadOnlyCollection_1<NpgsqlDbColumn>;
-    GetColumnSchemaAsync(cancellationToken?: CancellationToken): Task_1<ReadOnlyCollection_1<DbColumn>>;
-    GetData(ordinal: int): NpgsqlNestedDataReader;
-    GetDataTypeName(ordinal: int): string;
+    GetColumnSchemaAsync: System_Data_Common_Internal.DbDataReader["GetColumnSchemaAsync"] & ((cancellationToken?: CancellationToken) => Task_1<ReadOnlyCollection_1<DbColumn>>);
+    GetData: System_Data_Common_Internal.DbDataReader["GetData"] & ((ordinal: int) => NpgsqlNestedDataReader);
+    GetDataTypeName: System_Data_Common_Internal.DbDataReader["GetDataTypeName"] & ((ordinal: int) => string);
     GetDataTypeOID(ordinal: int): uint;
-    GetDateTime(ordinal: int): DateTime;
-    GetDbDataReader(ordinal: int): DbDataReader;
-    GetDecimal(ordinal: int): decimal;
-    GetDouble(ordinal: int): double;
-    GetEnumerator(): IEnumerator;
-    GetFieldType(ordinal: int): Type;
-    GetFieldValue<T extends unknown>(ordinal: int): T;
-    GetFieldValueAsync<T extends unknown>(ordinal: int, cancellationToken: CancellationToken): Task_1<T>;
-    GetFloat(ordinal: int): float;
-    GetGuid(ordinal: int): Guid;
-    GetInt16(ordinal: int): short;
-    GetInt32(ordinal: int): int;
-    GetInt64(ordinal: int): long;
-    GetName(ordinal: int): string;
-    GetOrdinal(name: string): int;
+    GetDateTime: System_Data_Common_Internal.DbDataReader["GetDateTime"] & ((ordinal: int) => DateTime);
+    GetDbDataReader: System_Data_Common_Internal.DbDataReader["GetDbDataReader"] & ((ordinal: int) => DbDataReader);
+    GetDecimal: System_Data_Common_Internal.DbDataReader["GetDecimal"] & ((ordinal: int) => decimal);
+    GetDouble: System_Data_Common_Internal.DbDataReader["GetDouble"] & ((ordinal: int) => double);
+    GetEnumerator: System_Data_Common_Internal.DbDataReader["GetEnumerator"] & (() => IEnumerator);
+    GetFieldType: System_Data_Common_Internal.DbDataReader["GetFieldType"] & ((ordinal: int) => Type);
+    GetFieldValue: System_Data_Common_Internal.DbDataReader["GetFieldValue"] & (<T extends unknown>(ordinal: int) => T);
+    GetFieldValueAsync: System_Data_Common_Internal.DbDataReader["GetFieldValueAsync"] & (<T extends unknown>(ordinal: int, cancellationToken: CancellationToken) => Task_1<T>);
+    GetFloat: System_Data_Common_Internal.DbDataReader["GetFloat"] & ((ordinal: int) => float);
+    GetGuid: System_Data_Common_Internal.DbDataReader["GetGuid"] & ((ordinal: int) => Guid);
+    GetInt16: System_Data_Common_Internal.DbDataReader["GetInt16"] & ((ordinal: int) => short);
+    GetInt32: System_Data_Common_Internal.DbDataReader["GetInt32"] & ((ordinal: int) => int);
+    GetInt64: System_Data_Common_Internal.DbDataReader["GetInt64"] & ((ordinal: int) => long);
+    GetName: System_Data_Common_Internal.DbDataReader["GetName"] & ((ordinal: int) => string);
+    GetOrdinal: System_Data_Common_Internal.DbDataReader["GetOrdinal"] & ((name: string) => int);
     GetPostgresType(ordinal: int): PostgresType;
-    GetSchemaTable(): DataTable | null;
-    GetSchemaTableAsync(cancellationToken?: CancellationToken): Task_1<DataTable | null>;
-    GetStream(ordinal: int): Stream;
+    GetSchemaTable: System_Data_Common_Internal.DbDataReader["GetSchemaTable"] & (() => DataTable | null);
+    GetSchemaTableAsync: System_Data_Common_Internal.DbDataReader["GetSchemaTableAsync"] & ((cancellationToken?: CancellationToken) => Task_1<DataTable | null>);
+    GetStream: System_Data_Common_Internal.DbDataReader["GetStream"] & ((ordinal: int) => Stream);
     GetStreamAsync(ordinal: int, cancellationToken?: CancellationToken): Task_1<Stream>;
-    GetString(ordinal: int): string;
-    GetTextReader(ordinal: int): TextReader;
+    GetString: System_Data_Common_Internal.DbDataReader["GetString"] & ((ordinal: int) => string);
+    GetTextReader: System_Data_Common_Internal.DbDataReader["GetTextReader"] & ((ordinal: int) => TextReader);
     GetTextReaderAsync(ordinal: int, cancellationToken?: CancellationToken): Task_1<TextReader>;
     GetTimeSpan(ordinal: int): TimeSpan;
-    GetValue(ordinal: int): unknown;
-    GetValues(values: unknown[]): int;
-    IsDBNull(ordinal: int): boolean;
-    IsDBNullAsync(ordinal: int, cancellationToken: CancellationToken): Task_1<System_Internal.Boolean>;
-    NextResult(): boolean;
-    NextResultAsync(cancellationToken: CancellationToken): Task_1<System_Internal.Boolean>;
-    Read(): boolean;
-    ReadAsync(cancellationToken: CancellationToken): Task_1<System_Internal.Boolean>;
+    GetValue: System_Data_Common_Internal.DbDataReader["GetValue"] & ((ordinal: int) => unknown);
+    GetValues: System_Data_Common_Internal.DbDataReader["GetValues"] & ((values: unknown[]) => int);
+    IsDBNull: System_Data_Common_Internal.DbDataReader["IsDBNull"] & ((ordinal: int) => boolean);
+    IsDBNullAsync: System_Data_Common_Internal.DbDataReader["IsDBNullAsync"] & ((ordinal: int, cancellationToken: CancellationToken) => Task_1<System_Internal.Boolean>);
+    NextResult: System_Data_Common_Internal.DbDataReader["NextResult"] & (() => boolean);
+    NextResultAsync: System_Data_Common_Internal.DbDataReader["NextResultAsync"] & ((cancellationToken: CancellationToken) => Task_1<System_Internal.Boolean>);
+    Read: System_Data_Common_Internal.DbDataReader["Read"] & (() => boolean);
+    ReadAsync: System_Data_Common_Internal.DbDataReader["ReadAsync"] & ((cancellationToken: CancellationToken) => Task_1<System_Internal.Boolean>);
 }
 
 
@@ -758,29 +719,29 @@ export const NpgsqlDataReader: {
 
 export type NpgsqlDataReader = NpgsqlDataReader$instance;
 
-export interface NpgsqlDataSource$instance extends DbDataSource {
+export interface NpgsqlDataSource$instance extends System_Data_Common_Internal.DbDataSource {
     readonly __tsonic_type_Npgsql_NpgsqlDataSource: never;
+    readonly __tsonic_type_System_Data_Common_DbDataSource: never;
 
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    readonly ConnectionString: string;
     Password: string;
     Clear(): void;
-    CreateBatch(): NpgsqlBatch;
-    CreateCommand(commandText?: string | null): NpgsqlCommand;
-    CreateConnection(): NpgsqlConnection;
-    CreateDbBatch(): DbBatch;
-    CreateDbCommand(commandText?: string | null): DbCommand;
-    CreateDbConnection(): DbConnection;
-    Dispose(disposing: boolean): void;
+    CreateBatch: System_Data_Common_Internal.DbDataSource["CreateBatch"] & (() => NpgsqlBatch);
+    CreateCommand: System_Data_Common_Internal.DbDataSource["CreateCommand"] & ((commandText?: string | null) => NpgsqlCommand);
+    CreateConnection: System_Data_Common_Internal.DbDataSource["CreateConnection"] & (() => NpgsqlConnection);
+    CreateDbBatch: System_Data_Common_Internal.DbDataSource["CreateDbBatch"] & (() => DbBatch);
+    CreateDbCommand: System_Data_Common_Internal.DbDataSource["CreateDbCommand"] & ((commandText?: string | null) => DbCommand);
+    CreateDbConnection: System_Data_Common_Internal.DbDataSource["CreateDbConnection"] & (() => DbConnection);
+    Dispose: System_Data_Common_Internal.DbDataSource["Dispose"] & ((disposing: boolean) => void);
     DisposeAsyncBase(): ValueTask;
-    DisposeAsyncCore(): ValueTask;
+    DisposeAsyncCore: System_Data_Common_Internal.DbDataSource["DisposeAsyncCore"] & (() => ValueTask);
     DisposeBase(): void;
-    OpenConnection(): NpgsqlConnection;
-    OpenConnectionAsync(cancellationToken?: CancellationToken): ValueTask_1<NpgsqlConnection>;
-    OpenDbConnection(): DbConnection;
-    OpenDbConnectionAsync(cancellationToken?: CancellationToken): ValueTask_1<DbConnection>;
+    OpenConnection: System_Data_Common_Internal.DbDataSource["OpenConnection"] & (() => NpgsqlConnection);
+    OpenConnectionAsync: System_Data_Common_Internal.DbDataSource["OpenConnectionAsync"] & ((cancellationToken?: CancellationToken) => ValueTask_1<NpgsqlConnection>);
+    OpenDbConnection: System_Data_Common_Internal.DbDataSource["OpenDbConnection"] & (() => DbConnection);
+    OpenDbConnectionAsync: System_Data_Common_Internal.DbDataSource["OpenDbConnectionAsync"] & ((cancellationToken?: CancellationToken) => ValueTask_1<DbConnection>);
     ReloadTypes(): void;
     ReloadTypesAsync(cancellationToken?: CancellationToken): Task;
 }
@@ -814,14 +775,14 @@ export interface NpgsqlDataSourceBuilder$instance {
     EnableParameterLogging(parameterLoggingEnabled?: boolean): NpgsqlDataSourceBuilder;
     EnableRecordsAsTuples(): NpgsqlDataSourceBuilder;
     EnableUnmappedTypes(): NpgsqlDataSourceBuilder;
-    MapComposite<T extends unknown>(pgName?: string | null, nameTranslator?: INpgsqlNameTranslator | null): NpgsqlDataSourceBuilder;
     MapComposite(clrType: Type, pgName?: string | null, nameTranslator?: INpgsqlNameTranslator | null): NpgsqlDataSourceBuilder;
-    MapEnum<TEnum extends NonNullable<unknown> & number>(pgName?: string | null, nameTranslator?: INpgsqlNameTranslator | null): NpgsqlDataSourceBuilder;
+    MapComposite<T extends unknown>(pgName?: string | null, nameTranslator?: INpgsqlNameTranslator | null): NpgsqlDataSourceBuilder;
     MapEnum(clrType: Type, pgName?: string | null, nameTranslator?: INpgsqlNameTranslator | null): NpgsqlDataSourceBuilder;
-    UnmapComposite<T extends unknown>(pgName?: string | null, nameTranslator?: INpgsqlNameTranslator | null): boolean;
+    MapEnum<TEnum extends { readonly __tsonic_type_System_ValueType: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never }>(pgName?: string | null, nameTranslator?: INpgsqlNameTranslator | null): NpgsqlDataSourceBuilder;
     UnmapComposite(clrType: Type, pgName?: string | null, nameTranslator?: INpgsqlNameTranslator | null): boolean;
-    UnmapEnum<TEnum extends NonNullable<unknown> & number>(pgName?: string | null, nameTranslator?: INpgsqlNameTranslator | null): boolean;
+    UnmapComposite<T extends unknown>(pgName?: string | null, nameTranslator?: INpgsqlNameTranslator | null): boolean;
     UnmapEnum(clrType: Type, pgName?: string | null, nameTranslator?: INpgsqlNameTranslator | null): boolean;
+    UnmapEnum<TEnum extends { readonly __tsonic_type_System_ValueType: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never }>(pgName?: string | null, nameTranslator?: INpgsqlNameTranslator | null): boolean;
     UseClientCertificate(clientCertificate: X509Certificate | null): NpgsqlDataSourceBuilder;
     UseClientCertificates(clientCertificates: X509CertificateCollection | null): NpgsqlDataSourceBuilder;
     UseClientCertificatesCallback(clientCertificatesCallback: Action_1<X509CertificateCollection> | null): NpgsqlDataSourceBuilder;
@@ -851,15 +812,15 @@ export interface __NpgsqlDataSourceBuilder$views {
 export type NpgsqlDataSourceBuilder = NpgsqlDataSourceBuilder$instance & __NpgsqlDataSourceBuilder$views;
 
 
-export interface NpgsqlException$instance extends DbException {
+export interface NpgsqlException$instance extends System_Data_Common_Internal.DbException {
     readonly __tsonic_type_Npgsql_NpgsqlException: never;
+    readonly __tsonic_type_System_Data_Common_DbException: never;
+    readonly __tsonic_type_System_Exception: never;
+    readonly __tsonic_type_System_Runtime_InteropServices_ExternalException: never;
+    readonly __tsonic_type_System_SystemException: never;
 
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
-    get BatchCommand(): NpgsqlBatchCommand | null;
-    set BatchCommand(value: NpgsqlBatchCommand | null);
-    readonly DbBatchCommand: DbBatchCommand | null;
-    readonly IsTransient: boolean;
 }
 
 
@@ -872,23 +833,21 @@ export const NpgsqlException: {
 
 export type NpgsqlException = NpgsqlException$instance;
 
-export interface NpgsqlFactory$instance extends DbProviderFactory {
+export interface NpgsqlFactory$instance extends System_Data_Common_Internal.DbProviderFactory {
     readonly __tsonic_type_Npgsql_NpgsqlFactory: never;
+    readonly __tsonic_type_System_Data_Common_DbProviderFactory: never;
 
     readonly __tsonic_iface_System_IServiceProvider: never;
 
-    readonly CanCreateBatch: boolean;
-    readonly CanCreateCommandBuilder: boolean;
-    readonly CanCreateDataAdapter: boolean;
-    CreateBatch(): DbBatch;
-    CreateBatchCommand(): DbBatchCommand;
-    CreateCommand(): DbCommand;
-    CreateCommandBuilder(): DbCommandBuilder;
-    CreateConnection(): DbConnection;
-    CreateConnectionStringBuilder(): DbConnectionStringBuilder;
-    CreateDataAdapter(): DbDataAdapter;
-    CreateDataSource(connectionString: string): DbDataSource;
-    CreateParameter(): DbParameter;
+    CreateBatch: System_Data_Common_Internal.DbProviderFactory["CreateBatch"] & (() => DbBatch);
+    CreateBatchCommand: System_Data_Common_Internal.DbProviderFactory["CreateBatchCommand"] & (() => DbBatchCommand);
+    CreateCommand: System_Data_Common_Internal.DbProviderFactory["CreateCommand"] & (() => DbCommand);
+    CreateCommandBuilder: System_Data_Common_Internal.DbProviderFactory["CreateCommandBuilder"] & (() => DbCommandBuilder);
+    CreateConnection: System_Data_Common_Internal.DbProviderFactory["CreateConnection"] & (() => DbConnection);
+    CreateConnectionStringBuilder: System_Data_Common_Internal.DbProviderFactory["CreateConnectionStringBuilder"] & (() => DbConnectionStringBuilder);
+    CreateDataAdapter: System_Data_Common_Internal.DbProviderFactory["CreateDataAdapter"] & (() => DbDataAdapter);
+    CreateDataSource: System_Data_Common_Internal.DbProviderFactory["CreateDataSource"] & ((connectionString: string) => DbDataSource);
+    CreateParameter: System_Data_Common_Internal.DbProviderFactory["CreateParameter"] & (() => DbParameter);
     GetService(serviceType: Type): unknown | null;
 }
 
@@ -927,31 +886,26 @@ export const NpgsqlLargeObjectManager: {
 
 export type NpgsqlLargeObjectManager = NpgsqlLargeObjectManager$instance;
 
-export interface NpgsqlLargeObjectStream$instance extends Stream {
+export interface NpgsqlLargeObjectStream$instance extends System_IO_Internal.Stream {
     readonly __tsonic_type_Npgsql_NpgsqlLargeObjectStream: never;
+    readonly __tsonic_type_System_IO_Stream: never;
+    readonly __tsonic_type_System_MarshalByRefObject: never;
 
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    readonly CanRead: boolean;
-    readonly CanSeek: boolean;
-    readonly CanTimeout: boolean;
-    readonly CanWrite: boolean;
     readonly Has64BitSupport: boolean;
-    readonly Length: long;
-    Position: long;
-    Close(): void;
-    Dispose(disposing: boolean): void;
-    Flush(): void;
+    Close: System_IO_Internal.Stream["Close"] & (() => void);
+    Dispose: System_IO_Internal.Stream["Dispose"] & ((disposing: boolean) => void);
+    Flush: System_IO_Internal.Stream["Flush"] & (() => void);
     GetLengthAsync(cancellationToken?: CancellationToken): Task_1<System_Internal.Int64>;
-    Read(buffer: byte[], offset: int, count: int): int;
-    ReadAsync(buffer: byte[], offset: int, count: int, cancellationToken: CancellationToken): Task_1<System_Internal.Int32>;
-    Seek(offset: long, origin: SeekOrigin): long;
+    Read: System_IO_Internal.Stream["Read"] & ((buffer: byte[], offset: int, count: int) => int);
+    ReadAsync: System_IO_Internal.Stream["ReadAsync"] & ((buffer: byte[], offset: int, count: int, cancellationToken: CancellationToken) => Task_1<System_Internal.Int32>);
+    Seek: System_IO_Internal.Stream["Seek"] & ((offset: long, origin: SeekOrigin) => long);
     SeekAsync(offset: long, origin: SeekOrigin, cancellationToken?: CancellationToken): Task_1<System_Internal.Int64>;
-    SetLength(value: long): void;
-    SetLength(value: long, cancellationToken: CancellationToken): Task;
-    Write(buffer: byte[], offset: int, count: int): void;
-    WriteAsync(buffer: byte[], offset: int, count: int, cancellationToken: CancellationToken): Task;
+    SetLength: System_IO_Internal.Stream["SetLength"] & ((value: long) => void) & ((value: long, cancellationToken: CancellationToken) => Task);
+    Write: System_IO_Internal.Stream["Write"] & ((buffer: byte[], offset: int, count: int) => void);
+    WriteAsync: System_IO_Internal.Stream["WriteAsync"] & ((buffer: byte[], offset: int, count: int, cancellationToken: CancellationToken) => Task);
 }
 
 
@@ -987,20 +941,19 @@ export const NpgsqlMetricsOptions: {
 
 export type NpgsqlMetricsOptions = NpgsqlMetricsOptions$instance;
 
-export interface NpgsqlMultiHostDataSource$instance extends NpgsqlDataSource {
+export interface NpgsqlMultiHostDataSource$instance extends NpgsqlDataSource$instance {
+    readonly __tsonic_type_Npgsql_NpgsqlDataSource: never;
     readonly __tsonic_type_Npgsql_NpgsqlMultiHostDataSource: never;
+    readonly __tsonic_type_System_Data_Common_DbDataSource: never;
 
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    Clear(): void;
+    Clear: NpgsqlDataSource$instance["Clear"] & (() => void);
     ClearDatabaseStates(): void;
-    CreateConnection(targetSessionAttributes: TargetSessionAttributes): NpgsqlConnection;
-    CreateConnection(): NpgsqlConnection;
-    OpenConnection(targetSessionAttributes: TargetSessionAttributes): NpgsqlConnection;
-    OpenConnection(): NpgsqlConnection;
-    OpenConnectionAsync(targetSessionAttributes: TargetSessionAttributes, cancellationToken?: CancellationToken): ValueTask_1<NpgsqlConnection>;
-    OpenConnectionAsync(cancellationToken?: CancellationToken): ValueTask_1<NpgsqlConnection>;
+    CreateConnection: NpgsqlDataSource$instance["CreateConnection"] & (() => NpgsqlConnection) & ((targetSessionAttributes: TargetSessionAttributes) => NpgsqlConnection);
+    OpenConnection: NpgsqlDataSource$instance["OpenConnection"] & (() => NpgsqlConnection) & ((targetSessionAttributes: TargetSessionAttributes) => NpgsqlConnection);
+    OpenConnectionAsync: NpgsqlDataSource$instance["OpenConnectionAsync"] & ((cancellationToken?: CancellationToken) => ValueTask_1<NpgsqlConnection>) & ((targetSessionAttributes: TargetSessionAttributes, cancellationToken?: CancellationToken) => ValueTask_1<NpgsqlConnection>);
     WithTargetSession(targetSessionAttributes: TargetSessionAttributes): NpgsqlDataSource;
 }
 
@@ -1011,8 +964,10 @@ export const NpgsqlMultiHostDataSource: {
 
 export type NpgsqlMultiHostDataSource = NpgsqlMultiHostDataSource$instance;
 
-export interface NpgsqlNestedDataReader$instance extends DbDataReader {
+export interface NpgsqlNestedDataReader$instance extends System_Data_Common_Internal.DbDataReader {
     readonly __tsonic_type_Npgsql_NpgsqlNestedDataReader: never;
+    readonly __tsonic_type_System_Data_Common_DbDataReader: never;
+    readonly __tsonic_type_System_MarshalByRefObject: never;
 
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
     readonly __tsonic_iface_System_Data_IDataReader: never;
@@ -1020,42 +975,36 @@ export interface NpgsqlNestedDataReader$instance extends DbDataReader {
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    readonly Depth: int;
-    readonly FieldCount: int;
-    readonly HasRows: boolean;
-    readonly IsClosed: boolean;
-    readonly RecordsAffected: int;
-    Close(): void;
-    Dispose(disposing: boolean): void;
-    get_Item(ordinal: int): unknown;
-    get_Item(name: string): unknown;
-    GetBoolean(ordinal: int): boolean;
-    GetByte(ordinal: int): byte;
-    GetBytes(ordinal: int, dataOffset: long, buffer: byte[] | null, bufferOffset: int, length: int): long;
-    GetChar(ordinal: int): char;
-    GetChars(ordinal: int, dataOffset: long, buffer: char[] | null, bufferOffset: int, length: int): long;
-    GetData(ordinal: int): NpgsqlNestedDataReader;
-    GetDataTypeName(ordinal: int): string;
-    GetDateTime(ordinal: int): DateTime;
-    GetDbDataReader(ordinal: int): DbDataReader;
-    GetDecimal(ordinal: int): decimal;
-    GetDouble(ordinal: int): double;
-    GetEnumerator(): IEnumerator;
-    GetFieldType(ordinal: int): Type;
-    GetFieldValue<T extends unknown>(ordinal: int): T;
-    GetFloat(ordinal: int): float;
-    GetGuid(ordinal: int): Guid;
-    GetInt16(ordinal: int): short;
-    GetInt32(ordinal: int): int;
-    GetInt64(ordinal: int): long;
-    GetName(ordinal: int): string;
-    GetOrdinal(name: string): int;
-    GetString(ordinal: int): string;
-    GetValue(ordinal: int): unknown;
-    GetValues(values: unknown[]): int;
-    IsDBNull(ordinal: int): boolean;
-    NextResult(): boolean;
-    Read(): boolean;
+    Close: System_Data_Common_Internal.DbDataReader["Close"] & (() => void);
+    Dispose: System_Data_Common_Internal.DbDataReader["Dispose"] & ((disposing: boolean) => void);
+    get_Item: System_Data_Common_Internal.DbDataReader["get_Item"] & ((name: string) => unknown) & ((ordinal: int) => unknown);
+    GetBoolean: System_Data_Common_Internal.DbDataReader["GetBoolean"] & ((ordinal: int) => boolean);
+    GetByte: System_Data_Common_Internal.DbDataReader["GetByte"] & ((ordinal: int) => byte);
+    GetBytes: System_Data_Common_Internal.DbDataReader["GetBytes"] & ((ordinal: int, dataOffset: long, buffer: byte[] | null, bufferOffset: int, length: int) => long);
+    GetChar: System_Data_Common_Internal.DbDataReader["GetChar"] & ((ordinal: int) => char);
+    GetChars: System_Data_Common_Internal.DbDataReader["GetChars"] & ((ordinal: int, dataOffset: long, buffer: char[] | null, bufferOffset: int, length: int) => long);
+    GetData: System_Data_Common_Internal.DbDataReader["GetData"] & ((ordinal: int) => NpgsqlNestedDataReader);
+    GetDataTypeName: System_Data_Common_Internal.DbDataReader["GetDataTypeName"] & ((ordinal: int) => string);
+    GetDateTime: System_Data_Common_Internal.DbDataReader["GetDateTime"] & ((ordinal: int) => DateTime);
+    GetDbDataReader: System_Data_Common_Internal.DbDataReader["GetDbDataReader"] & ((ordinal: int) => DbDataReader);
+    GetDecimal: System_Data_Common_Internal.DbDataReader["GetDecimal"] & ((ordinal: int) => decimal);
+    GetDouble: System_Data_Common_Internal.DbDataReader["GetDouble"] & ((ordinal: int) => double);
+    GetEnumerator: System_Data_Common_Internal.DbDataReader["GetEnumerator"] & (() => IEnumerator);
+    GetFieldType: System_Data_Common_Internal.DbDataReader["GetFieldType"] & ((ordinal: int) => Type);
+    GetFieldValue: System_Data_Common_Internal.DbDataReader["GetFieldValue"] & (<T extends unknown>(ordinal: int) => T);
+    GetFloat: System_Data_Common_Internal.DbDataReader["GetFloat"] & ((ordinal: int) => float);
+    GetGuid: System_Data_Common_Internal.DbDataReader["GetGuid"] & ((ordinal: int) => Guid);
+    GetInt16: System_Data_Common_Internal.DbDataReader["GetInt16"] & ((ordinal: int) => short);
+    GetInt32: System_Data_Common_Internal.DbDataReader["GetInt32"] & ((ordinal: int) => int);
+    GetInt64: System_Data_Common_Internal.DbDataReader["GetInt64"] & ((ordinal: int) => long);
+    GetName: System_Data_Common_Internal.DbDataReader["GetName"] & ((ordinal: int) => string);
+    GetOrdinal: System_Data_Common_Internal.DbDataReader["GetOrdinal"] & ((name: string) => int);
+    GetString: System_Data_Common_Internal.DbDataReader["GetString"] & ((ordinal: int) => string);
+    GetValue: System_Data_Common_Internal.DbDataReader["GetValue"] & ((ordinal: int) => unknown);
+    GetValues: System_Data_Common_Internal.DbDataReader["GetValues"] & ((values: unknown[]) => int);
+    IsDBNull: System_Data_Common_Internal.DbDataReader["IsDBNull"] & ((ordinal: int) => boolean);
+    NextResult: System_Data_Common_Internal.DbDataReader["NextResult"] & (() => boolean);
+    Read: System_Data_Common_Internal.DbDataReader["Read"] & (() => boolean);
 }
 
 
@@ -1065,8 +1014,9 @@ export const NpgsqlNestedDataReader: {
 
 export type NpgsqlNestedDataReader = NpgsqlNestedDataReader$instance;
 
-export interface NpgsqlNoticeEventArgs$instance extends EventArgs {
+export interface NpgsqlNoticeEventArgs$instance extends System_Internal.EventArgs {
     readonly __tsonic_type_Npgsql_NpgsqlNoticeEventArgs: never;
+    readonly __tsonic_type_System_EventArgs: never;
 
     readonly Notice: PostgresNotice;
 }
@@ -1078,8 +1028,9 @@ export const NpgsqlNoticeEventArgs: {
 
 export type NpgsqlNoticeEventArgs = NpgsqlNoticeEventArgs$instance;
 
-export interface NpgsqlNotificationEventArgs$instance extends EventArgs {
+export interface NpgsqlNotificationEventArgs$instance extends System_Internal.EventArgs {
     readonly __tsonic_type_Npgsql_NpgsqlNotificationEventArgs: never;
+    readonly __tsonic_type_System_EventArgs: never;
 
     readonly Channel: string;
     readonly Payload: string;
@@ -1093,8 +1044,13 @@ export const NpgsqlNotificationEventArgs: {
 
 export type NpgsqlNotificationEventArgs = NpgsqlNotificationEventArgs$instance;
 
-export interface NpgsqlOperationInProgressException$instance extends NpgsqlException {
+export interface NpgsqlOperationInProgressException$instance extends NpgsqlException$instance {
+    readonly __tsonic_type_Npgsql_NpgsqlException: never;
     readonly __tsonic_type_Npgsql_NpgsqlOperationInProgressException: never;
+    readonly __tsonic_type_System_Data_Common_DbException: never;
+    readonly __tsonic_type_System_Exception: never;
+    readonly __tsonic_type_System_Runtime_InteropServices_ExternalException: never;
+    readonly __tsonic_type_System_SystemException: never;
 
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
@@ -1109,8 +1065,10 @@ export const NpgsqlOperationInProgressException: {
 
 export type NpgsqlOperationInProgressException = NpgsqlOperationInProgressException$instance;
 
-export interface NpgsqlParameter$instance extends DbParameter {
+export interface NpgsqlParameter$instance extends System_Data_Common_Internal.DbParameter {
     readonly __tsonic_type_Npgsql_NpgsqlParameter: never;
+    readonly __tsonic_type_System_Data_Common_DbParameter: never;
+    readonly __tsonic_type_System_MarshalByRefObject: never;
 
     readonly __tsonic_iface_System_Data_IDataParameter: never;
     readonly __tsonic_iface_System_Data_IDbDataParameter: never;
@@ -1120,25 +1078,12 @@ export interface NpgsqlParameter$instance extends DbParameter {
     set Collection(value: NpgsqlParameterCollection | null);
     get DataTypeName(): string | null;
     set DataTypeName(value: string | null);
-    DbType: DbType;
-    Direction: ParameterDirection;
-    IsNullable: boolean;
     NpgsqlDbType: NpgsqlDbType;
     get NpgsqlValue(): unknown | null;
     set NpgsqlValue(value: unknown | null);
-    ParameterName: string;
-    get PostgresType(): PostgresType | null;
-    set PostgresType(value: PostgresType | null);
-    Precision: byte;
-    Scale: byte;
-    Size: int;
-    SourceColumn: string;
-    SourceColumnNullMapping: boolean;
-    SourceVersion: DataRowVersion;
-    get Value(): unknown | null;
-    set Value(value: unknown | null);
+    readonly PostgresType: PostgresType | null;
     Clone(): NpgsqlParameter;
-    ResetDbType(): void;
+    ResetDbType: System_Data_Common_Internal.DbParameter["ResetDbType"] & (() => void);
 }
 
 
@@ -1158,16 +1103,17 @@ export const NpgsqlParameter: {
 
 export type NpgsqlParameter = NpgsqlParameter$instance;
 
-export interface NpgsqlParameter_1$instance<T extends unknown> extends NpgsqlParameter {
+export interface NpgsqlParameter_1$instance<T extends unknown> extends NpgsqlParameter$instance {
+    readonly __tsonic_type_Npgsql_NpgsqlParameter: never;
     readonly __tsonic_type_Npgsql_NpgsqlParameter_1: never;
+    readonly __tsonic_type_System_Data_Common_DbParameter: never;
+    readonly __tsonic_type_System_MarshalByRefObject: never;
 
     readonly __tsonic_iface_System_Data_IDataParameter: never;
     readonly __tsonic_iface_System_Data_IDbDataParameter: never;
     readonly __tsonic_iface_System_ICloneable: never;
 
     TypedValue: T | null;
-    get Value(): unknown | null;
-    set Value(value: unknown | null);
 }
 
 
@@ -1181,8 +1127,10 @@ export const NpgsqlParameter_1: {
 
 export type NpgsqlParameter_1<T extends unknown> = NpgsqlParameter_1$instance<T>;
 
-export interface NpgsqlParameterCollection$instance extends DbParameterCollection {
+export interface NpgsqlParameterCollection$instance extends System_Data_Common_Internal.DbParameterCollection {
     readonly __tsonic_type_Npgsql_NpgsqlParameterCollection: never;
+    readonly __tsonic_type_System_Data_Common_DbParameterCollection: never;
+    readonly __tsonic_type_System_MarshalByRefObject: never;
 
     readonly __tsonic_iface_System_Collections_Generic_ICollection_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
@@ -1192,48 +1140,26 @@ export interface NpgsqlParameterCollection$instance extends DbParameterCollectio
     readonly __tsonic_iface_System_Collections_IList: never;
     readonly __tsonic_iface_System_Data_IDataParameterCollection: never;
 
-    readonly Count: int;
-    readonly IsFixedSize: boolean;
-    readonly IsReadOnly: boolean;
-    readonly IsSynchronized: boolean;
-    readonly SyncRoot: unknown;
-    Add(value: NpgsqlParameter): NpgsqlParameter;
-    Add(parameterName: string, parameterType: NpgsqlDbType): NpgsqlParameter;
-    Add(parameterName: string, parameterType: NpgsqlDbType, size: int): NpgsqlParameter;
-    Add(parameterName: string, parameterType: NpgsqlDbType, size: int, sourceColumn: string): NpgsqlParameter;
-    Add(value: unknown): int;
-    AddRange(values: ClrArray): void;
-    AddWithValue(parameterName: string, value: unknown): NpgsqlParameter;
-    AddWithValue(parameterName: string, parameterType: NpgsqlDbType, value: unknown): NpgsqlParameter;
-    AddWithValue(parameterName: string, parameterType: NpgsqlDbType, size: int, value: unknown): NpgsqlParameter;
+    Add: System_Data_Common_Internal.DbParameterCollection["Add"] & ((parameterName: string, parameterType: NpgsqlDbType) => NpgsqlParameter) & ((parameterName: string, parameterType: NpgsqlDbType, size: int) => NpgsqlParameter) & ((parameterName: string, parameterType: NpgsqlDbType, size: int, sourceColumn: string) => NpgsqlParameter) & ((value: NpgsqlParameter) => NpgsqlParameter) & ((value: unknown) => int);
+    AddRange: System_Data_Common_Internal.DbParameterCollection["AddRange"] & ((values: ClrArray) => void);
     AddWithValue(parameterName: string, parameterType: NpgsqlDbType, size: int, sourceColumn: string | null, value: unknown): NpgsqlParameter;
-    AddWithValue(value: unknown): NpgsqlParameter;
+    AddWithValue(parameterName: string, parameterType: NpgsqlDbType, size: int, value: unknown): NpgsqlParameter;
+    AddWithValue(parameterName: string, parameterType: NpgsqlDbType, value: unknown): NpgsqlParameter;
+    AddWithValue(parameterName: string, value: unknown): NpgsqlParameter;
     AddWithValue(parameterType: NpgsqlDbType, value: unknown): NpgsqlParameter;
-    Clear(): void;
-    Contains(parameterName: string): boolean;
-    Contains(value: unknown): boolean;
-    Contains(item: NpgsqlParameter): boolean;
-    CopyTo(array: ClrArray, index: int): void;
-    CopyTo(array: NpgsqlParameter[], arrayIndex: int): void;
-    get_Item(parameterName: string): NpgsqlParameter;
-    get_Item(index: int): NpgsqlParameter;
-    GetEnumerator(): IEnumerator;
-    GetParameter(parameterName: string): DbParameter;
-    GetParameter(index: int): DbParameter;
-    IndexOf(parameterName: string): int;
-    IndexOf(value: unknown): int;
-    IndexOf(item: NpgsqlParameter): int;
-    Insert(index: int, value: unknown): void;
-    Insert(index: int, item: NpgsqlParameter): void;
-    Remove(parameterName: string): void;
-    Remove(value: unknown): void;
-    Remove(item: NpgsqlParameter): boolean;
-    RemoveAt(parameterName: string): void;
-    RemoveAt(index: int): void;
-    set_Item(parameterName: string, value: NpgsqlParameter): void;
-    set_Item(index: int, value: NpgsqlParameter): void;
-    SetParameter(parameterName: string, value: DbParameter): void;
-    SetParameter(index: int, value: DbParameter): void;
+    AddWithValue(value: unknown): NpgsqlParameter;
+    Clear: System_Data_Common_Internal.DbParameterCollection["Clear"] & (() => void);
+    Contains: System_Data_Common_Internal.DbParameterCollection["Contains"] & ((item: NpgsqlParameter) => boolean) & ((parameterName: string) => boolean) & ((value: unknown) => boolean);
+    CopyTo: System_Data_Common_Internal.DbParameterCollection["CopyTo"] & ((array: ClrArray, index: int) => void) & ((array: NpgsqlParameter[], arrayIndex: int) => void);
+    get_Item: System_Data_Common_Internal.DbParameterCollection["get_Item"] & ((index: int) => NpgsqlParameter) & ((parameterName: string) => NpgsqlParameter);
+    GetEnumerator: System_Data_Common_Internal.DbParameterCollection["GetEnumerator"] & (() => IEnumerator);
+    GetParameter: System_Data_Common_Internal.DbParameterCollection["GetParameter"] & ((index: int) => DbParameter) & ((parameterName: string) => DbParameter);
+    IndexOf: System_Data_Common_Internal.DbParameterCollection["IndexOf"] & ((item: NpgsqlParameter) => int) & ((parameterName: string) => int) & ((value: unknown) => int);
+    Insert: System_Data_Common_Internal.DbParameterCollection["Insert"] & ((index: int, item: NpgsqlParameter) => void) & ((index: int, value: unknown) => void);
+    Remove: System_Data_Common_Internal.DbParameterCollection["Remove"] & ((item: NpgsqlParameter) => boolean) & ((parameterName: string) => void) & ((value: unknown) => void);
+    RemoveAt: System_Data_Common_Internal.DbParameterCollection["RemoveAt"] & ((index: int) => void) & ((parameterName: string) => void);
+    set_Item: System_Data_Common_Internal.DbParameterCollection["set_Item"] & ((index: int, value: NpgsqlParameter) => void) & ((parameterName: string, value: NpgsqlParameter) => void);
+    SetParameter: System_Data_Common_Internal.DbParameterCollection["SetParameter"] & ((index: int, value: DbParameter) => void) & ((parameterName: string, value: DbParameter) => void);
     ToArray(): NpgsqlParameter[];
     TryGetValue(parameterName: string, parameter: NpgsqlParameter | null): boolean;
 }
@@ -1245,37 +1171,27 @@ export const NpgsqlParameterCollection: {
 
 export type NpgsqlParameterCollection = NpgsqlParameterCollection$instance;
 
-export interface NpgsqlRawCopyStream$instance extends Stream {
+export interface NpgsqlRawCopyStream$instance extends System_IO_Internal.Stream {
     readonly __tsonic_type_Npgsql_NpgsqlRawCopyStream: never;
+    readonly __tsonic_type_System_IO_Stream: never;
+    readonly __tsonic_type_System_MarshalByRefObject: never;
 
     readonly __tsonic_iface_Npgsql_ICancelable: never;
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    readonly CanRead: boolean;
-    readonly CanSeek: boolean;
-    readonly CanTimeout: boolean;
-    readonly CanWrite: boolean;
-    readonly Length: long;
-    Position: long;
-    ReadTimeout: int;
-    WriteTimeout: int;
     Cancel(): void;
     CancelAsync(): Task;
-    Dispose(disposing: boolean): void;
-    DisposeAsync(): ValueTask;
-    Flush(): void;
-    FlushAsync(cancellationToken: CancellationToken): Task;
-    Read(buffer: byte[], offset: int, count: int): int;
-    Read(span: Span_1<System_Internal.Byte>): int;
-    ReadAsync(buffer: byte[], offset: int, count: int, cancellationToken: CancellationToken): Task_1<System_Internal.Int32>;
-    ReadAsync(buffer: Memory_1<System_Internal.Byte>, cancellationToken: CancellationToken): ValueTask_1<System_Internal.Int32>;
-    Seek(offset: long, origin: SeekOrigin): long;
-    SetLength(value: long): void;
-    Write(buffer: byte[], offset: int, count: int): void;
-    Write(buffer: ReadOnlySpan_1<System_Internal.Byte>): void;
-    WriteAsync(buffer: byte[], offset: int, count: int, cancellationToken: CancellationToken): Task;
-    WriteAsync(buffer: ReadOnlyMemory_1<System_Internal.Byte>, cancellationToken?: CancellationToken): ValueTask;
+    Dispose: System_IO_Internal.Stream["Dispose"] & ((disposing: boolean) => void);
+    DisposeAsync: System_IO_Internal.Stream["DisposeAsync"] & (() => ValueTask);
+    Flush: System_IO_Internal.Stream["Flush"] & (() => void);
+    FlushAsync: System_IO_Internal.Stream["FlushAsync"] & ((cancellationToken: CancellationToken) => Task);
+    Read: System_IO_Internal.Stream["Read"] & ((buffer: byte[], offset: int, count: int) => int) & ((span: Span_1<System_Internal.Byte>) => int);
+    ReadAsync: System_IO_Internal.Stream["ReadAsync"] & ((buffer: Memory_1<System_Internal.Byte>, cancellationToken: CancellationToken) => ValueTask_1<System_Internal.Int32>) & ((buffer: byte[], offset: int, count: int, cancellationToken: CancellationToken) => Task_1<System_Internal.Int32>);
+    Seek: System_IO_Internal.Stream["Seek"] & ((offset: long, origin: SeekOrigin) => long);
+    SetLength: System_IO_Internal.Stream["SetLength"] & ((value: long) => void);
+    Write: System_IO_Internal.Stream["Write"] & ((buffer: ReadOnlySpan_1<System_Internal.Byte>) => void) & ((buffer: byte[], offset: int, count: int) => void);
+    WriteAsync: System_IO_Internal.Stream["WriteAsync"] & ((buffer: ReadOnlyMemory_1<System_Internal.Byte>, cancellationToken?: CancellationToken) => ValueTask) & ((buffer: byte[], offset: int, count: int, cancellationToken: CancellationToken) => Task);
 }
 
 
@@ -1285,8 +1201,10 @@ export const NpgsqlRawCopyStream: {
 
 export type NpgsqlRawCopyStream = NpgsqlRawCopyStream$instance;
 
-export interface NpgsqlRowUpdatedEventArgs$instance extends RowUpdatedEventArgs {
+export interface NpgsqlRowUpdatedEventArgs$instance extends System_Data_Common_Internal.RowUpdatedEventArgs {
     readonly __tsonic_type_Npgsql_NpgsqlRowUpdatedEventArgs: never;
+    readonly __tsonic_type_System_Data_Common_RowUpdatedEventArgs: never;
+    readonly __tsonic_type_System_EventArgs: never;
 
 }
 
@@ -1298,8 +1216,10 @@ export const NpgsqlRowUpdatedEventArgs: {
 
 export type NpgsqlRowUpdatedEventArgs = NpgsqlRowUpdatedEventArgs$instance;
 
-export interface NpgsqlRowUpdatingEventArgs$instance extends RowUpdatingEventArgs {
+export interface NpgsqlRowUpdatingEventArgs$instance extends System_Data_Common_Internal.RowUpdatingEventArgs {
     readonly __tsonic_type_Npgsql_NpgsqlRowUpdatingEventArgs: never;
+    readonly __tsonic_type_System_Data_Common_RowUpdatingEventArgs: never;
+    readonly __tsonic_type_System_EventArgs: never;
 
 }
 
@@ -1344,14 +1264,14 @@ export interface NpgsqlSlimDataSourceBuilder$instance {
     EnableRecordsAsTuples(): NpgsqlSlimDataSourceBuilder;
     EnableTransportSecurity(): NpgsqlSlimDataSourceBuilder;
     EnableUnmappedTypes(): NpgsqlSlimDataSourceBuilder;
-    MapComposite<T extends unknown>(pgName?: string | null, nameTranslator?: INpgsqlNameTranslator | null): NpgsqlSlimDataSourceBuilder;
     MapComposite(clrType: Type, pgName?: string | null, nameTranslator?: INpgsqlNameTranslator | null): NpgsqlSlimDataSourceBuilder;
-    MapEnum<TEnum extends NonNullable<unknown> & number>(pgName?: string | null, nameTranslator?: INpgsqlNameTranslator | null): NpgsqlSlimDataSourceBuilder;
+    MapComposite<T extends unknown>(pgName?: string | null, nameTranslator?: INpgsqlNameTranslator | null): NpgsqlSlimDataSourceBuilder;
     MapEnum(clrType: Type, pgName?: string | null, nameTranslator?: INpgsqlNameTranslator | null): NpgsqlSlimDataSourceBuilder;
-    UnmapComposite<T extends unknown>(pgName?: string | null, nameTranslator?: INpgsqlNameTranslator | null): boolean;
+    MapEnum<TEnum extends { readonly __tsonic_type_System_ValueType: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never }>(pgName?: string | null, nameTranslator?: INpgsqlNameTranslator | null): NpgsqlSlimDataSourceBuilder;
     UnmapComposite(clrType: Type, pgName?: string | null, nameTranslator?: INpgsqlNameTranslator | null): boolean;
-    UnmapEnum<TEnum extends NonNullable<unknown> & number>(pgName?: string | null, nameTranslator?: INpgsqlNameTranslator | null): boolean;
+    UnmapComposite<T extends unknown>(pgName?: string | null, nameTranslator?: INpgsqlNameTranslator | null): boolean;
     UnmapEnum(clrType: Type, pgName?: string | null, nameTranslator?: INpgsqlNameTranslator | null): boolean;
+    UnmapEnum<TEnum extends { readonly __tsonic_type_System_ValueType: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never }>(pgName?: string | null, nameTranslator?: INpgsqlNameTranslator | null): boolean;
     UseClientCertificate(clientCertificate: X509Certificate | null): NpgsqlSlimDataSourceBuilder;
     UseClientCertificates(clientCertificates: X509CertificateCollection | null): NpgsqlSlimDataSourceBuilder;
     UseClientCertificatesCallback(clientCertificatesCallback: Action_1<X509CertificateCollection> | null): NpgsqlSlimDataSourceBuilder;
@@ -1404,29 +1324,25 @@ export const NpgsqlTracingOptionsBuilder: {
 
 export type NpgsqlTracingOptionsBuilder = NpgsqlTracingOptionsBuilder$instance;
 
-export interface NpgsqlTransaction$instance extends DbTransaction {
+export interface NpgsqlTransaction$instance extends System_Data_Common_Internal.DbTransaction {
     readonly __tsonic_type_Npgsql_NpgsqlTransaction: never;
+    readonly __tsonic_type_System_Data_Common_DbTransaction: never;
+    readonly __tsonic_type_System_MarshalByRefObject: never;
 
     readonly __tsonic_iface_System_Data_IDbTransaction: never;
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    readonly Connection: NpgsqlConnection | null;
-    readonly DbConnection: DbConnection | null;
-    readonly IsolationLevel: IsolationLevel;
-    readonly SupportsSavepoints: boolean;
-    Commit(): void;
-    CommitAsync(cancellationToken?: CancellationToken): Task;
-    Dispose(disposing: boolean): void;
-    DisposeAsync(): ValueTask;
-    Release(name: string): void;
-    ReleaseAsync(name: string, cancellationToken?: CancellationToken): Task;
-    Rollback(): void;
-    Rollback(name: string): void;
-    RollbackAsync(cancellationToken?: CancellationToken): Task;
-    RollbackAsync(name: string, cancellationToken?: CancellationToken): Task;
-    Save(name: string): void;
-    SaveAsync(name: string, cancellationToken?: CancellationToken): Task;
+    Commit: System_Data_Common_Internal.DbTransaction["Commit"] & (() => void);
+    CommitAsync: System_Data_Common_Internal.DbTransaction["CommitAsync"] & ((cancellationToken?: CancellationToken) => Task);
+    Dispose: System_Data_Common_Internal.DbTransaction["Dispose"] & ((disposing: boolean) => void);
+    DisposeAsync: System_Data_Common_Internal.DbTransaction["DisposeAsync"] & (() => ValueTask);
+    Release: System_Data_Common_Internal.DbTransaction["Release"] & ((name: string) => void);
+    ReleaseAsync: System_Data_Common_Internal.DbTransaction["ReleaseAsync"] & ((name: string, cancellationToken?: CancellationToken) => Task);
+    Rollback: System_Data_Common_Internal.DbTransaction["Rollback"] & (() => void) & ((name: string) => void);
+    RollbackAsync: System_Data_Common_Internal.DbTransaction["RollbackAsync"] & ((cancellationToken?: CancellationToken) => Task) & ((name: string, cancellationToken?: CancellationToken) => Task);
+    Save: System_Data_Common_Internal.DbTransaction["Save"] & ((name: string) => void);
+    SaveAsync: System_Data_Common_Internal.DbTransaction["SaveAsync"] & ((name: string, cancellationToken?: CancellationToken) => Task);
 }
 
 
@@ -1451,8 +1367,13 @@ export const NpgsqlTypeLoadingOptionsBuilder: {
 
 export type NpgsqlTypeLoadingOptionsBuilder = NpgsqlTypeLoadingOptionsBuilder$instance;
 
-export interface PostgresException$instance extends NpgsqlException {
+export interface PostgresException$instance extends NpgsqlException$instance {
+    readonly __tsonic_type_Npgsql_NpgsqlException: never;
     readonly __tsonic_type_Npgsql_PostgresException: never;
+    readonly __tsonic_type_System_Data_Common_DbException: never;
+    readonly __tsonic_type_System_Exception: never;
+    readonly __tsonic_type_System_Runtime_InteropServices_ExternalException: never;
+    readonly __tsonic_type_System_SystemException: never;
 
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
@@ -1465,18 +1386,16 @@ export interface PostgresException$instance extends NpgsqlException {
     readonly InternalPosition: int;
     readonly InternalQuery: string | null;
     readonly InvariantSeverity: string;
-    readonly IsTransient: boolean;
     readonly Line: string | null;
     readonly MessageText: string;
     readonly Position: int;
     readonly Routine: string | null;
     readonly SchemaName: string | null;
     readonly Severity: string;
-    readonly SqlState: string;
     readonly TableName: string | null;
     readonly Where: string | null;
-    GetObjectData(info: SerializationInfo, context: StreamingContext): void;
-    ToString(): string;
+    GetObjectData: NpgsqlException$instance["GetObjectData"] & ((info: SerializationInfo, context: StreamingContext) => void);
+    ToString: NpgsqlException$instance["ToString"] & (() => string);
 }
 
 

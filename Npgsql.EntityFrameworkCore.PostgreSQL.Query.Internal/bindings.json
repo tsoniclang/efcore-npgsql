@@ -765,17 +765,6 @@
             "visibility": "Public",
             "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQueryableMethodTranslatingExpressionVisitor",
             "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-          },
-          {
-            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQueryableMethodTranslatingExpressionVisitor::.ctor(Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQueryableMethodTranslatingExpressionVisitor):void",
-            "metadataToken": 100664683,
-            "canonicalSignature": "(Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQueryableMethodTranslatingExpressionVisitor):void",
-            "normalizedSignature": "constructor|(Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQueryableMethodTranslatingExpressionVisitor):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Query.Internal.NpgsqlQueryableMethodTranslatingExpressionVisitor",
-            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
           }
         ]
       },

@@ -84,19 +84,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlArrayTypeMapping::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "metadataToken": 100664198,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlArrayTypeMapping",
-            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlArrayTypeMapping`3",
@@ -267,17 +255,6 @@
             "visibility": "Public",
             "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlArrayTypeMapping`3",
             "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-          },
-          {
-            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlArrayTypeMapping`3::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "metadataToken": 100664205,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlArrayTypeMapping`3",
-            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
           }
         ]
       },
@@ -396,17 +373,6 @@
             "isStatic": false,
             "parameterCount": 0,
             "visibility": "Public",
-            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlBigIntegerTypeMapping",
-            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-          },
-          {
-            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlBigIntegerTypeMapping::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "metadataToken": 100664214,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
             "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlBigIntegerTypeMapping",
             "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
           }
@@ -671,17 +637,6 @@
             "visibility": "Public",
             "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlBitTypeMapping",
             "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-          },
-          {
-            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlBitTypeMapping::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "metadataToken": 100664220,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlBitTypeMapping",
-            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
           }
         ]
       },
@@ -774,17 +729,6 @@
             "isStatic": false,
             "parameterCount": 0,
             "visibility": "Public",
-            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlBoolTypeMapping",
-            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-          },
-          {
-            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlBoolTypeMapping::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "metadataToken": 100664227,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
             "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlBoolTypeMapping",
             "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
           }
@@ -927,17 +871,6 @@
             "visibility": "Public",
             "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlBoxTypeMapping",
             "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-          },
-          {
-            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlBoxTypeMapping::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "metadataToken": 100664348,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlBoxTypeMapping",
-            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
           }
         ]
       },
@@ -1030,17 +963,6 @@
             "isStatic": false,
             "parameterCount": 0,
             "visibility": "Public",
-            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlByteArrayTypeMapping",
-            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-          },
-          {
-            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlByteArrayTypeMapping::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "metadataToken": 100664233,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
             "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlByteArrayTypeMapping",
             "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
           }
@@ -1180,17 +1102,6 @@
             "isStatic": false,
             "parameterCount": 1,
             "visibility": "Public",
-            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlCharacterCharTypeMapping",
-            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-          },
-          {
-            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlCharacterCharTypeMapping::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "metadataToken": 100664240,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
             "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlCharacterCharTypeMapping",
             "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
           }
@@ -1411,17 +1322,6 @@
             "visibility": "Public",
             "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlCharacterStringTypeMapping",
             "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-          },
-          {
-            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlCharacterStringTypeMapping::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "metadataToken": 100664248,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlCharacterStringTypeMapping",
-            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
           }
         ]
       },
@@ -1560,17 +1460,6 @@
             "isStatic": false,
             "parameterCount": 0,
             "visibility": "Public",
-            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlCidrTypeMapping",
-            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-          },
-          {
-            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlCidrTypeMapping::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "metadataToken": 100664263,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
             "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlCidrTypeMapping",
             "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
           }
@@ -1835,17 +1724,6 @@
             "visibility": "Public",
             "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlCircleTypeMapping",
             "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-          },
-          {
-            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlCircleTypeMapping::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "metadataToken": 100664369,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlCircleTypeMapping",
-            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
           }
         ]
       },
@@ -1986,17 +1864,6 @@
             "visibility": "Public",
             "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlCubeTypeMapping",
             "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-          },
-          {
-            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlCubeTypeMapping::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "metadataToken": 100664270,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlCubeTypeMapping",
-            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
           }
         ]
       },
@@ -2135,17 +2002,6 @@
             "isStatic": false,
             "parameterCount": 0,
             "visibility": "Public",
-            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlDateOnlyTypeMapping",
-            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-          },
-          {
-            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlDateOnlyTypeMapping::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "metadataToken": 100664277,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
             "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlDateOnlyTypeMapping",
             "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
           }
@@ -2410,17 +2266,6 @@
             "visibility": "Public",
             "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlDateTimeDateTypeMapping",
             "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-          },
-          {
-            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlDateTimeDateTypeMapping::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "metadataToken": 100664285,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlDateTimeDateTypeMapping",
-            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
           }
         ]
       },
@@ -2682,17 +2527,6 @@
             "visibility": "Public",
             "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlDecimalTypeMapping",
             "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-          },
-          {
-            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlDecimalTypeMapping::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "metadataToken": 100664293,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlDecimalTypeMapping",
-            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
           }
         ]
       },
@@ -2785,17 +2619,6 @@
             "isStatic": false,
             "parameterCount": 0,
             "visibility": "Public",
-            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlDoubleTypeMapping",
-            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-          },
-          {
-            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlDoubleTypeMapping::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "metadataToken": 100664300,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
             "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlDoubleTypeMapping",
             "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
           }
@@ -2968,17 +2791,6 @@
             "isStatic": false,
             "parameterCount": 4,
             "visibility": "Public",
-            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlEnumTypeMapping",
-            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-          },
-          {
-            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlEnumTypeMapping::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters,System.String,System.Collections.Generic.IReadOnlyDictionary_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void",
-            "metadataToken": 100664308,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters,System.String,System.Collections.Generic.IReadOnlyDictionary_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters,System.String,System.Collections.Generic.IReadOnlyDictionary_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
-            "isStatic": false,
-            "parameterCount": 3,
-            "visibility": "Protected",
             "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlEnumTypeMapping",
             "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
           }
@@ -3277,17 +3089,6 @@
             "visibility": "Public",
             "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlFloatTypeMapping",
             "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-          },
-          {
-            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlFloatTypeMapping::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "metadataToken": 100664321,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlFloatTypeMapping",
-            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
           }
         ]
       },
@@ -3406,17 +3207,6 @@
             "isStatic": false,
             "parameterCount": 1,
             "visibility": "Public",
-            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlHstoreTypeMapping",
-            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-          },
-          {
-            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlHstoreTypeMapping::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "metadataToken": 100664376,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
             "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlHstoreTypeMapping",
             "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
           }
@@ -3557,17 +3347,6 @@
             "isStatic": false,
             "parameterCount": 1,
             "visibility": "Public",
-            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlInetTypeMapping",
-            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-          },
-          {
-            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlInetTypeMapping::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "metadataToken": 100664383,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
             "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlInetTypeMapping",
             "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
           }
@@ -4014,17 +3793,6 @@
             "visibility": "Public",
             "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlIntervalTypeMapping",
             "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-          },
-          {
-            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlIntervalTypeMapping::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "metadataToken": 100664390,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlIntervalTypeMapping",
-            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
           }
         ]
       },
@@ -4326,17 +4094,6 @@
             "visibility": "Public",
             "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlJsonTypeMapping",
             "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-          },
-          {
-            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlJsonTypeMapping::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters,NpgsqlTypes.NpgsqlDbType):void",
-            "metadataToken": 100664400,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters,NpgsqlTypes.NpgsqlDbType):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters,NpgsqlTypes.NpgsqlDbType):void|static=false",
-            "isStatic": false,
-            "parameterCount": 2,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlJsonTypeMapping",
-            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
           }
         ]
       },
@@ -4475,17 +4232,6 @@
             "isStatic": false,
             "parameterCount": 0,
             "visibility": "Public",
-            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlLegacyCidrTypeMapping",
-            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-          },
-          {
-            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlLegacyCidrTypeMapping::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "metadataToken": 100664256,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
             "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlLegacyCidrTypeMapping",
             "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
           }
@@ -4750,17 +4496,6 @@
             "visibility": "Public",
             "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlLineSegmentTypeMapping",
             "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-          },
-          {
-            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlLineSegmentTypeMapping::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "metadataToken": 100664341,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlLineSegmentTypeMapping",
-            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
           }
         ]
       },
@@ -4901,17 +4636,6 @@
             "visibility": "Public",
             "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlLineTypeMapping",
             "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-          },
-          {
-            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlLineTypeMapping::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "metadataToken": 100664334,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlLineTypeMapping",
-            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
           }
         ]
       },
@@ -5050,17 +4774,6 @@
             "isStatic": false,
             "parameterCount": 0,
             "visibility": "Public",
-            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlLTreeTypeMapping",
-            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-          },
-          {
-            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlLTreeTypeMapping::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "metadataToken": 100664409,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
             "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlLTreeTypeMapping",
             "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
           }
@@ -5325,17 +5038,6 @@
             "visibility": "Public",
             "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlMacaddr8TypeMapping",
             "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-          },
-          {
-            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlMacaddr8TypeMapping::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "metadataToken": 100664415,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlMacaddr8TypeMapping",
-            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
           }
         ]
       },
@@ -5476,17 +5178,6 @@
             "visibility": "Public",
             "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlMacaddrTypeMapping",
             "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-          },
-          {
-            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlMacaddrTypeMapping::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "metadataToken": 100664422,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlMacaddrTypeMapping",
-            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
           }
         ]
       },
@@ -5579,17 +5270,6 @@
             "isStatic": false,
             "parameterCount": 0,
             "visibility": "Public",
-            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlMoneyTypeMapping",
-            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-          },
-          {
-            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlMoneyTypeMapping::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "metadataToken": 100664429,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
             "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlMoneyTypeMapping",
             "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
           }
@@ -5784,17 +5464,6 @@
             "visibility": "Public",
             "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlMultirangeTypeMapping",
             "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-          },
-          {
-            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlMultirangeTypeMapping::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters,NpgsqlTypes.NpgsqlDbType):void",
-            "metadataToken": 100664437,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters,NpgsqlTypes.NpgsqlDbType):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters,NpgsqlTypes.NpgsqlDbType):void|static=false",
-            "isStatic": false,
-            "parameterCount": 2,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlMultirangeTypeMapping",
-            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
           }
         ]
       },
@@ -5935,17 +5604,6 @@
             "visibility": "Public",
             "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlPathTypeMapping",
             "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-          },
-          {
-            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlPathTypeMapping::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "metadataToken": 100664355,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlPathTypeMapping",
-            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
           }
         ]
       },
@@ -6084,17 +5742,6 @@
             "isStatic": false,
             "parameterCount": 0,
             "visibility": "Public",
-            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlPgLsnTypeMapping",
-            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-          },
-          {
-            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlPgLsnTypeMapping::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "metadataToken": 100664446,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
             "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlPgLsnTypeMapping",
             "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
           }
@@ -6347,17 +5994,6 @@
             "visibility": "Public",
             "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlPointTypeMapping",
             "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-          },
-          {
-            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlPointTypeMapping::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "metadataToken": 100664327,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlPointTypeMapping",
-            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
           }
         ]
       },
@@ -6496,17 +6132,6 @@
             "isStatic": false,
             "parameterCount": 0,
             "visibility": "Public",
-            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlPolygonTypeMapping",
-            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-          },
-          {
-            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlPolygonTypeMapping::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "metadataToken": 100664362,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
             "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlPolygonTypeMapping",
             "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
           }
@@ -6776,19 +6401,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlRangeTypeMapping::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters,NpgsqlTypes.NpgsqlDbType,Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping):void",
-            "metadataToken": 100664458,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters,NpgsqlTypes.NpgsqlDbType,Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters,NpgsqlTypes.NpgsqlDbType,Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping):void|static=false",
-            "isStatic": false,
-            "parameterCount": 3,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlRangeTypeMapping",
-            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlRegconfigTypeMapping",
@@ -6905,17 +6518,6 @@
             "isStatic": false,
             "parameterCount": 0,
             "visibility": "Public",
-            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlRegconfigTypeMapping",
-            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-          },
-          {
-            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlRegconfigTypeMapping::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "metadataToken": 100664470,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
             "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlRegconfigTypeMapping",
             "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
           }
@@ -7038,17 +6640,6 @@
             "visibility": "Public",
             "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlRegdictionaryTypeMapping",
             "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-          },
-          {
-            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlRegdictionaryTypeMapping::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "metadataToken": 100664477,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlRegdictionaryTypeMapping",
-            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
           }
         ]
       },
@@ -7141,17 +6732,6 @@
             "isStatic": false,
             "parameterCount": 1,
             "visibility": "Public",
-            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlRowValueTypeMapping",
-            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-          },
-          {
-            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlRowValueTypeMapping::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "metadataToken": 100664483,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
             "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlRowValueTypeMapping",
             "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
           }
@@ -7311,17 +6891,6 @@
             "isStatic": false,
             "parameterCount": 2,
             "visibility": "Public",
-            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlStringTypeMapping",
-            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-          },
-          {
-            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlStringTypeMapping::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters,NpgsqlTypes.NpgsqlDbType):void",
-            "metadataToken": 100664490,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters,NpgsqlTypes.NpgsqlDbType):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters,NpgsqlTypes.NpgsqlDbType):void|static=false",
-            "isStatic": false,
-            "parameterCount": 2,
-            "visibility": "Protected",
             "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlStringTypeMapping",
             "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
           }
@@ -7498,17 +7067,6 @@
             "visibility": "Public",
             "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlStructuralJsonTypeMapping",
             "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-          },
-          {
-            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlStructuralJsonTypeMapping::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters,NpgsqlTypes.NpgsqlDbType):void",
-            "metadataToken": 100664499,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters,NpgsqlTypes.NpgsqlDbType):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters,NpgsqlTypes.NpgsqlDbType):void|static=false",
-            "isStatic": false,
-            "parameterCount": 2,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlStructuralJsonTypeMapping",
-            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
           }
         ]
       },
@@ -7647,17 +7205,6 @@
             "isStatic": false,
             "parameterCount": 0,
             "visibility": "Public",
-            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlTidTypeMapping",
-            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-          },
-          {
-            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlTidTypeMapping::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "metadataToken": 100664507,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
             "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlTidTypeMapping",
             "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
           }
@@ -7818,17 +7365,6 @@
             "isStatic": false,
             "parameterCount": 0,
             "visibility": "Public",
-            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlTimestampTypeMapping",
-            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-          },
-          {
-            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlTimestampTypeMapping::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "metadataToken": 100664514,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
             "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlTimestampTypeMapping",
             "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
           }
@@ -8111,17 +7647,6 @@
             "isStatic": false,
             "parameterCount": 1,
             "visibility": "Public",
-            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlTimestampTzTypeMapping",
-            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-          },
-          {
-            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlTimestampTzTypeMapping::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "metadataToken": 100664524,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
             "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlTimestampTzTypeMapping",
             "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
           }
@@ -8528,17 +8053,6 @@
             "visibility": "Public",
             "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlTimeTypeMapping",
             "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-          },
-          {
-            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlTimeTypeMapping::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "metadataToken": 100664535,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlTimeTypeMapping",
-            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
           }
         ]
       },
@@ -8697,17 +8211,6 @@
             "isStatic": false,
             "parameterCount": 0,
             "visibility": "Public",
-            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlTimeTzTypeMapping",
-            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-          },
-          {
-            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlTimeTzTypeMapping::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "metadataToken": 100664543,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
             "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlTimeTzTypeMapping",
             "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
           }
@@ -8940,17 +8443,6 @@
             "visibility": "Public",
             "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlTsQueryTypeMapping",
             "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-          },
-          {
-            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlTsQueryTypeMapping::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "metadataToken": 100664551,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlTsQueryTypeMapping",
-            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
           }
         ]
       },
@@ -9023,17 +8515,6 @@
             "isStatic": false,
             "parameterCount": 0,
             "visibility": "Public",
-            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlTsRankingNormalizationTypeMapping",
-            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-          },
-          {
-            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlTsRankingNormalizationTypeMapping::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "metadataToken": 100664557,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
             "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlTsRankingNormalizationTypeMapping",
             "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
           }
@@ -9154,17 +8635,6 @@
             "isStatic": false,
             "parameterCount": 0,
             "visibility": "Public",
-            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlTsVectorTypeMapping",
-            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-          },
-          {
-            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlTsVectorTypeMapping::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "metadataToken": 100664562,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
             "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlTsVectorTypeMapping",
             "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
           }
@@ -9327,17 +8797,6 @@
             "visibility": "Public",
             "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlTypeMapping",
             "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-          },
-          {
-            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlTypeMapping::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters,NpgsqlTypes.NpgsqlDbType):void",
-            "metadataToken": 100664568,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters,NpgsqlTypes.NpgsqlDbType):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters,NpgsqlTypes.NpgsqlDbType):void|static=false",
-            "isStatic": false,
-            "parameterCount": 2,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlTypeMapping",
-            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
           }
         ]
       },
@@ -9438,17 +8897,6 @@
             "visibility": "Public",
             "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlUIntTypeMapping",
             "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-          },
-          {
-            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlUIntTypeMapping::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters,NpgsqlTypes.NpgsqlDbType):void",
-            "metadataToken": 100664576,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters,NpgsqlTypes.NpgsqlDbType):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters,NpgsqlTypes.NpgsqlDbType):void|static=false",
-            "isStatic": false,
-            "parameterCount": 2,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlUIntTypeMapping",
-            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
           }
         ]
       },
@@ -9547,17 +8995,6 @@
             "isStatic": false,
             "parameterCount": 2,
             "visibility": "Public",
-            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlULongTypeMapping",
-            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-          },
-          {
-            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlULongTypeMapping::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters,NpgsqlTypes.NpgsqlDbType):void",
-            "metadataToken": 100664581,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters,NpgsqlTypes.NpgsqlDbType):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters,NpgsqlTypes.NpgsqlDbType):void|static=false",
-            "isStatic": false,
-            "parameterCount": 2,
-            "visibility": "Protected",
             "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlULongTypeMapping",
             "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
           }
@@ -9698,17 +9135,6 @@
             "isStatic": false,
             "parameterCount": 0,
             "visibility": "Public",
-            "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlVarbitTypeMapping",
-            "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
-          },
-          {
-            "stableId": "Npgsql.EntityFrameworkCore.PostgreSQL:Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlVarbitTypeMapping::.ctor(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "metadataToken": 100664586,
-            "canonicalSignature": "(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void",
-            "normalizedSignature": "constructor|(Microsoft.EntityFrameworkCore.Storage.RelationalTypeMapping+RelationalTypeMappingParameters):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
             "ownerQualifiedName": "Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.Mapping.NpgsqlVarbitTypeMapping",
             "ownerIdentity": "Npgsql.EntityFrameworkCore.PostgreSQL"
           }

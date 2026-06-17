@@ -11,33 +11,36 @@ import type { IReadOnlyList_1 } from "@tsonic/dotnet/System.Collections.Generic/
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString, UInt32 } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface PostgresArrayType$instance extends PostgresType {
+export interface PostgresArrayType$instance extends PostgresType$instance {
     readonly __tsonic_type_Npgsql_PostgresTypes_PostgresArrayType: never;
+    readonly __tsonic_type_Npgsql_PostgresTypes_PostgresType: never;
 
     readonly Element: PostgresType;
 }
 
 
-export const PostgresArrayType: (abstract new(ns: string, name: string, oid: uint, elementPostgresType: PostgresType) => PostgresArrayType) & {
+export const PostgresArrayType: {
 };
 
 
 export type PostgresArrayType = PostgresArrayType$instance;
 
-export interface PostgresBaseType$instance extends PostgresType {
+export interface PostgresBaseType$instance extends PostgresType$instance {
     readonly __tsonic_type_Npgsql_PostgresTypes_PostgresBaseType: never;
+    readonly __tsonic_type_Npgsql_PostgresTypes_PostgresType: never;
 
 }
 
 
-export const PostgresBaseType: (abstract new(ns: string, name: string, oid: uint) => PostgresBaseType) & {
+export const PostgresBaseType: {
 };
 
 
 export type PostgresBaseType = PostgresBaseType$instance;
 
-export interface PostgresCompositeType$instance extends PostgresType {
+export interface PostgresCompositeType$instance extends PostgresType$instance {
     readonly __tsonic_type_Npgsql_PostgresTypes_PostgresCompositeType: never;
+    readonly __tsonic_type_Npgsql_PostgresTypes_PostgresType: never;
 
     readonly Fields: IReadOnlyList_1<PostgresCompositeType_Field>;
 }
@@ -64,56 +67,59 @@ export const PostgresCompositeType_Field: {
 
 export type PostgresCompositeType_Field = PostgresCompositeType_Field$instance;
 
-export interface PostgresDomainType$instance extends PostgresType {
+export interface PostgresDomainType$instance extends PostgresType$instance {
     readonly __tsonic_type_Npgsql_PostgresTypes_PostgresDomainType: never;
+    readonly __tsonic_type_Npgsql_PostgresTypes_PostgresType: never;
 
     readonly BaseType: PostgresType;
     readonly NotNull: boolean;
 }
 
 
-export const PostgresDomainType: (abstract new(ns: string, name: string, oid: uint, baseType: PostgresType, notNull: boolean) => PostgresDomainType) & {
+export const PostgresDomainType: {
 };
 
 
 export type PostgresDomainType = PostgresDomainType$instance;
 
-export interface PostgresEnumType$instance extends PostgresType {
+export interface PostgresEnumType$instance extends PostgresType$instance {
     readonly __tsonic_type_Npgsql_PostgresTypes_PostgresEnumType: never;
+    readonly __tsonic_type_Npgsql_PostgresTypes_PostgresType: never;
 
     readonly Labels: IReadOnlyList_1<System_Internal.String>;
 }
 
 
-export const PostgresEnumType: (abstract new(ns: string, name: string, oid: uint) => PostgresEnumType) & {
+export const PostgresEnumType: {
 };
 
 
 export type PostgresEnumType = PostgresEnumType$instance;
 
-export interface PostgresMultirangeType$instance extends PostgresType {
+export interface PostgresMultirangeType$instance extends PostgresType$instance {
     readonly __tsonic_type_Npgsql_PostgresTypes_PostgresMultirangeType: never;
+    readonly __tsonic_type_Npgsql_PostgresTypes_PostgresType: never;
 
     readonly Subrange: PostgresRangeType;
 }
 
 
-export const PostgresMultirangeType: (abstract new(ns: string, name: string, oid: uint, rangePostgresType: PostgresRangeType) => PostgresMultirangeType) & {
+export const PostgresMultirangeType: {
 };
 
 
 export type PostgresMultirangeType = PostgresMultirangeType$instance;
 
-export interface PostgresRangeType$instance extends PostgresType {
+export interface PostgresRangeType$instance extends PostgresType$instance {
     readonly __tsonic_type_Npgsql_PostgresTypes_PostgresRangeType: never;
+    readonly __tsonic_type_Npgsql_PostgresTypes_PostgresType: never;
 
-    get Multirange(): PostgresMultirangeType | null;
-    set Multirange(value: PostgresMultirangeType | null);
+    readonly Multirange: PostgresMultirangeType | null;
     readonly Subtype: PostgresType;
 }
 
 
-export const PostgresRangeType: (abstract new(ns: string, name: string, oid: uint, subtypePostgresType: PostgresType) => PostgresRangeType) & {
+export const PostgresRangeType: {
 };
 
 
@@ -122,16 +128,14 @@ export type PostgresRangeType = PostgresRangeType$instance;
 export interface PostgresType$instance {
     readonly __tsonic_type_Npgsql_PostgresTypes_PostgresType: never;
 
-    get Array(): PostgresArrayType | null;
-    set Array(value: PostgresArrayType | null);
+    readonly Array: PostgresArrayType | null;
     readonly DisplayName: string;
     readonly FullName: string;
     readonly InternalName: string;
     readonly Name: string;
     readonly Namespace: string;
     readonly OID: uint;
-    get Range(): PostgresRangeType | null;
-    set Range(value: PostgresRangeType | null);
+    readonly Range: PostgresRangeType | null;
     ToString(): string;
 }
 
@@ -142,7 +146,8 @@ export const PostgresType: {
 
 export type PostgresType = PostgresType$instance;
 
-export interface UnknownBackendType$instance extends PostgresType {
+export interface UnknownBackendType$instance extends PostgresType$instance {
+    readonly __tsonic_type_Npgsql_PostgresTypes_PostgresType: never;
     readonly __tsonic_type_Npgsql_PostgresTypes_UnknownBackendType: never;
 
 }

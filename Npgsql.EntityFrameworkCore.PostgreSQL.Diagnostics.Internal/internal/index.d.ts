@@ -11,7 +11,9 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import * as Microsoft_EntityFrameworkCore_Diagnostics_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Diagnostics/internal/index.js";
 import type { EventDefinitionBase, RelationalLoggingDefinitions } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Diagnostics/internal/index.js";
 
-export interface NpgsqlLoggingDefinitions$instance extends RelationalLoggingDefinitions {
+export interface NpgsqlLoggingDefinitions$instance extends Microsoft_EntityFrameworkCore_Diagnostics_Internal.RelationalLoggingDefinitions {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Diagnostics_LoggingDefinitions: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Diagnostics_RelationalLoggingDefinitions: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Diagnostics_Internal_NpgsqlLoggingDefinitions: never;
 
     LogFoundDefaultSchema: EventDefinitionBase | null;

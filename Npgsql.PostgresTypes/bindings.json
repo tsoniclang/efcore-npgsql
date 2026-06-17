@@ -47,19 +47,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresArrayType::.ctor(System.String,System.String,System.UInt32,Npgsql.PostgresTypes.PostgresType):void",
-            "metadataToken": 100666209,
-            "canonicalSignature": "(System.String,System.String,System.UInt32,Npgsql.PostgresTypes.PostgresType):void",
-            "normalizedSignature": "constructor|(System.String,System.String,System.UInt32,Npgsql.PostgresTypes.PostgresType):void|static=false",
-            "isStatic": false,
-            "parameterCount": 4,
-            "visibility": "ProtectedInternal",
-            "ownerQualifiedName": "Npgsql.PostgresTypes.PostgresArrayType",
-            "ownerIdentity": "Npgsql"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresBaseType",
@@ -80,19 +68,7 @@
         "properties": [],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresBaseType::.ctor(System.String,System.String,System.UInt32):void",
-            "metadataToken": 100666213,
-            "canonicalSignature": "(System.String,System.String,System.UInt32):void",
-            "normalizedSignature": "constructor|(System.String,System.String,System.UInt32):void|static=false",
-            "isStatic": false,
-            "parameterCount": 3,
-            "visibility": "ProtectedInternal",
-            "ownerQualifiedName": "Npgsql.PostgresTypes.PostgresBaseType",
-            "ownerIdentity": "Npgsql"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresCompositeType",
@@ -274,19 +250,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresDomainType::.ctor(System.String,System.String,System.UInt32,Npgsql.PostgresTypes.PostgresType,System.Boolean):void",
-            "metadataToken": 100666223,
-            "canonicalSignature": "(System.String,System.String,System.UInt32,Npgsql.PostgresTypes.PostgresType,System.Boolean):void",
-            "normalizedSignature": "constructor|(System.String,System.String,System.UInt32,Npgsql.PostgresTypes.PostgresType,System.Boolean):void|static=false",
-            "isStatic": false,
-            "parameterCount": 5,
-            "visibility": "ProtectedInternal",
-            "ownerQualifiedName": "Npgsql.PostgresTypes.PostgresDomainType",
-            "ownerIdentity": "Npgsql"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresEnumType",
@@ -327,19 +291,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresEnumType::.ctor(System.String,System.String,System.UInt32):void",
-            "metadataToken": 100666228,
-            "canonicalSignature": "(System.String,System.String,System.UInt32):void",
-            "normalizedSignature": "constructor|(System.String,System.String,System.UInt32):void|static=false",
-            "isStatic": false,
-            "parameterCount": 3,
-            "visibility": "ProtectedInternal",
-            "ownerQualifiedName": "Npgsql.PostgresTypes.PostgresEnumType",
-            "ownerIdentity": "Npgsql"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresMultirangeType",
@@ -380,19 +332,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresMultirangeType::.ctor(System.String,System.String,System.UInt32,Npgsql.PostgresTypes.PostgresRangeType):void",
-            "metadataToken": 100666239,
-            "canonicalSignature": "(System.String,System.String,System.UInt32,Npgsql.PostgresTypes.PostgresRangeType):void",
-            "normalizedSignature": "constructor|(System.String,System.String,System.UInt32,Npgsql.PostgresTypes.PostgresRangeType):void|static=false",
-            "isStatic": false,
-            "parameterCount": 4,
-            "visibility": "ProtectedInternal",
-            "ownerQualifiedName": "Npgsql.PostgresTypes.PostgresMultirangeType",
-            "ownerIdentity": "Npgsql"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresRangeType",
@@ -435,12 +375,12 @@
             "targetName": "Multirange",
             "metadataToken": 385876710,
             "canonicalSignature": ":Npgsql.PostgresTypes.PostgresMultirangeType",
-            "normalizedSignature": "Multirange|:Npgsql.PostgresTypes.PostgresMultirangeType|static=false|accessor=getset",
+            "normalizedSignature": "Multirange|:Npgsql.PostgresTypes.PostgresMultirangeType|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
@@ -452,19 +392,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresRangeType::.ctor(System.String,System.String,System.UInt32,Npgsql.PostgresTypes.PostgresType):void",
-            "metadataToken": 100666244,
-            "canonicalSignature": "(System.String,System.String,System.UInt32,Npgsql.PostgresTypes.PostgresType):void",
-            "normalizedSignature": "constructor|(System.String,System.String,System.UInt32,Npgsql.PostgresTypes.PostgresType):void|static=false",
-            "isStatic": false,
-            "parameterCount": 4,
-            "visibility": "ProtectedInternal",
-            "ownerQualifiedName": "Npgsql.PostgresTypes.PostgresRangeType",
-            "ownerIdentity": "Npgsql"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Npgsql:Npgsql.PostgresTypes.PostgresType",
@@ -623,12 +551,12 @@
             "targetName": "Array",
             "metadataToken": 385876718,
             "canonicalSignature": ":Npgsql.PostgresTypes.PostgresArrayType",
-            "normalizedSignature": "Array|:Npgsql.PostgresTypes.PostgresArrayType|static=false|accessor=getset",
+            "normalizedSignature": "Array|:Npgsql.PostgresTypes.PostgresArrayType|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
@@ -642,12 +570,12 @@
             "targetName": "Range",
             "metadataToken": 385876719,
             "canonicalSignature": ":Npgsql.PostgresTypes.PostgresRangeType",
-            "normalizedSignature": "Range|:Npgsql.PostgresTypes.PostgresRangeType|static=false|accessor=getset",
+            "normalizedSignature": "Range|:Npgsql.PostgresTypes.PostgresRangeType|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,

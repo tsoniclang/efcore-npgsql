@@ -18,12 +18,13 @@ import type { Object as ClrObject, Void } from "@tsonic/dotnet/System/internal/i
 import * as Microsoft_EntityFrameworkCore_Storage_Json_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.Json/internal/index.js";
 import type { JsonValueReaderWriter_1, Utf8JsonReaderManager } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.Json/internal/index.js";
 
-export interface JsonBitArrayReaderWriter$instance extends JsonValueReaderWriter_1<BitArray> {
+export interface JsonBitArrayReaderWriter$instance extends Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<BitArray> {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_Json_JsonValueReaderWriter: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_Json_JsonValueReaderWriter_1: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Json_JsonBitArrayReaderWriter: never;
 
-    readonly ConstructorExpression: Expression;
-    FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown | null): BitArray;
-    ToJsonTyped(writer: Utf8JsonWriter, value: BitArray): void;
+    FromJsonTyped: Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<BitArray>["FromJsonTyped"] & ((manager: Utf8JsonReaderManager, existingObject?: unknown | null) => BitArray);
+    ToJsonTyped: Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<BitArray>["ToJsonTyped"] & ((writer: Utf8JsonWriter, value: BitArray) => void);
 }
 
 
@@ -35,12 +36,13 @@ export const JsonBitArrayReaderWriter: {
 
 export type JsonBitArrayReaderWriter = JsonBitArrayReaderWriter$instance;
 
-export interface JsonMacaddrReaderWriter$instance extends JsonValueReaderWriter_1<PhysicalAddress> {
+export interface JsonMacaddrReaderWriter$instance extends Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<PhysicalAddress> {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_Json_JsonValueReaderWriter: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_Json_JsonValueReaderWriter_1: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Json_JsonMacaddrReaderWriter: never;
 
-    readonly ConstructorExpression: Expression;
-    FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown | null): PhysicalAddress;
-    ToJsonTyped(writer: Utf8JsonWriter, value: PhysicalAddress): void;
+    FromJsonTyped: Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<PhysicalAddress>["FromJsonTyped"] & ((manager: Utf8JsonReaderManager, existingObject?: unknown | null) => PhysicalAddress);
+    ToJsonTyped: Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<PhysicalAddress>["ToJsonTyped"] & ((writer: Utf8JsonWriter, value: PhysicalAddress) => void);
 }
 
 

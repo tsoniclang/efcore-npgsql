@@ -19,88 +19,91 @@ import type { StringBuilder } from "@tsonic/dotnet/System.Text/internal/index.js
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Attribute, Boolean as ClrBoolean, Byte, Char, Double, Enum, IComparable, IComparable_1, IConvertible, IEquatable_1, IFormattable, Int16, Int32, Int64, ISpanFormattable, Object as ClrObject, ReadOnlySpan_1, String as ClrString, Type, UInt16, UInt32, UInt64, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export enum NpgsqlDbType {
-    Bigint = 1,
-    Double = 8,
-    Integer = 9,
-    Numeric = 13,
-    Real = 17,
-    Smallint = 18,
-    Money = 12,
-    Boolean = 2,
-    Box = 3,
-    Circle = 5,
-    Line = 10,
-    LSeg = 11,
-    Path = 14,
-    Point = 15,
-    Polygon = 16,
-    Cube = 63,
-    Char = 6,
-    Text = 19,
-    Varchar = 22,
-    Name = 32,
-    Citext = 51,
-    InternalChar = 38,
-    Bytea = 4,
-    Date = 7,
-    Time = 20,
-    Timestamp = 21,
-    TimestampTz = 26,
-    Interval = 30,
-    TimeTz = 31,
-    Abstime = 33,
-    Inet = 24,
-    Cidr = 44,
-    MacAddr = 34,
-    MacAddr8 = 54,
-    Bit = 25,
-    Varbit = 39,
-    TsVector = 45,
-    TsQuery = 46,
-    Regconfig = 56,
-    Uuid = 27,
-    Xml = 28,
-    Json = 35,
-    Jsonb = 36,
-    JsonPath = 57,
-    Hstore = 37,
-    Refcursor = 23,
-    Oidvector = 29,
-    Int2Vector = 52,
-    Oid = 41,
-    Xid = 42,
-    Xid8 = 64,
-    Cid = 43,
-    Regtype = 49,
-    Tid = 53,
-    PgLsn = 59,
-    Unknown = 40,
-    Geometry = 50,
-    Geography = 55,
-    LTree = 60,
-    LQuery = 61,
-    LTxtQuery = 62,
-    IntegerRange = 1073741833,
-    BigIntRange = 1073741825,
-    NumericRange = 1073741837,
-    TimestampRange = 1073741845,
-    TimestampTzRange = 1073741850,
-    DateRange = 1073741831,
-    IntegerMultirange = 536870921,
-    BigIntMultirange = 536870913,
-    NumericMultirange = 536870925,
-    TimestampMultirange = 536870933,
-    TimestampTzMultirange = 536870938,
-    DateMultirange = 536870919,
-    Array = -2147483648,
-    Range = 1073741824,
-    Multirange = 536870912
-}
+export type NpgsqlDbType = number & { readonly __tsonic_type_NpgsqlTypes_NpgsqlDbType: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const NpgsqlDbType: {
+    readonly Bigint: NpgsqlDbType;
+    readonly Double: NpgsqlDbType;
+    readonly Integer: NpgsqlDbType;
+    readonly Numeric: NpgsqlDbType;
+    readonly Real: NpgsqlDbType;
+    readonly Smallint: NpgsqlDbType;
+    readonly Money: NpgsqlDbType;
+    readonly Boolean: NpgsqlDbType;
+    readonly Box: NpgsqlDbType;
+    readonly Circle: NpgsqlDbType;
+    readonly Line: NpgsqlDbType;
+    readonly LSeg: NpgsqlDbType;
+    readonly Path: NpgsqlDbType;
+    readonly Point: NpgsqlDbType;
+    readonly Polygon: NpgsqlDbType;
+    readonly Cube: NpgsqlDbType;
+    readonly Char: NpgsqlDbType;
+    readonly Text: NpgsqlDbType;
+    readonly Varchar: NpgsqlDbType;
+    readonly Name: NpgsqlDbType;
+    readonly Citext: NpgsqlDbType;
+    readonly InternalChar: NpgsqlDbType;
+    readonly Bytea: NpgsqlDbType;
+    readonly Date: NpgsqlDbType;
+    readonly Time: NpgsqlDbType;
+    readonly Timestamp: NpgsqlDbType;
+    readonly TimestampTz: NpgsqlDbType;
+    readonly Interval: NpgsqlDbType;
+    readonly TimeTz: NpgsqlDbType;
+    readonly Abstime: NpgsqlDbType;
+    readonly Inet: NpgsqlDbType;
+    readonly Cidr: NpgsqlDbType;
+    readonly MacAddr: NpgsqlDbType;
+    readonly MacAddr8: NpgsqlDbType;
+    readonly Bit: NpgsqlDbType;
+    readonly Varbit: NpgsqlDbType;
+    readonly TsVector: NpgsqlDbType;
+    readonly TsQuery: NpgsqlDbType;
+    readonly Regconfig: NpgsqlDbType;
+    readonly Uuid: NpgsqlDbType;
+    readonly Xml: NpgsqlDbType;
+    readonly Json: NpgsqlDbType;
+    readonly Jsonb: NpgsqlDbType;
+    readonly JsonPath: NpgsqlDbType;
+    readonly Hstore: NpgsqlDbType;
+    readonly Refcursor: NpgsqlDbType;
+    readonly Oidvector: NpgsqlDbType;
+    readonly Int2Vector: NpgsqlDbType;
+    readonly Oid: NpgsqlDbType;
+    readonly Xid: NpgsqlDbType;
+    readonly Xid8: NpgsqlDbType;
+    readonly Cid: NpgsqlDbType;
+    readonly Regtype: NpgsqlDbType;
+    readonly Tid: NpgsqlDbType;
+    readonly PgLsn: NpgsqlDbType;
+    readonly Unknown: NpgsqlDbType;
+    readonly Geometry: NpgsqlDbType;
+    readonly Geography: NpgsqlDbType;
+    readonly LTree: NpgsqlDbType;
+    readonly LQuery: NpgsqlDbType;
+    readonly LTxtQuery: NpgsqlDbType;
+    readonly IntegerRange: NpgsqlDbType;
+    readonly BigIntRange: NpgsqlDbType;
+    readonly NumericRange: NpgsqlDbType;
+    readonly TimestampRange: NpgsqlDbType;
+    readonly TimestampTzRange: NpgsqlDbType;
+    readonly DateRange: NpgsqlDbType;
+    readonly IntegerMultirange: NpgsqlDbType;
+    readonly BigIntMultirange: NpgsqlDbType;
+    readonly NumericMultirange: NpgsqlDbType;
+    readonly TimestampMultirange: NpgsqlDbType;
+    readonly TimestampTzMultirange: NpgsqlDbType;
+    readonly DateMultirange: NpgsqlDbType;
+    readonly Array: NpgsqlDbType;
+    readonly Range: NpgsqlDbType;
+    readonly Multirange: NpgsqlDbType;
+};
 
 
 export interface NpgsqlBox$instance {
     readonly __tsonic_type_NpgsqlTypes_NpgsqlBox: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly __tsonic_iface_System_IEquatable_1: never;
 
@@ -113,11 +116,11 @@ export interface NpgsqlBox$instance {
     readonly Top: double;
     UpperRight: NpgsqlPoint;
     readonly Width: double;
-    Deconstruct(lowerLeft: NpgsqlPoint, upperRight: NpgsqlPoint): void;
     Deconstruct(left: double, right: double, bottom: double, top: double): void;
     Deconstruct(left: double, right: double, bottom: double, top: double, width: double, height: double): void;
-    Equals(other: NpgsqlBox): boolean;
+    Deconstruct(lowerLeft: NpgsqlPoint, upperRight: NpgsqlPoint): void;
     Equals(obj: unknown | null): boolean;
+    Equals(other: NpgsqlBox): boolean;
     GetHashCode(): int;
     ToString(): string;
 }
@@ -133,6 +136,7 @@ export type NpgsqlBox = NpgsqlBox$instance;
 
 export interface NpgsqlCidr$instance {
     readonly __tsonic_type_NpgsqlTypes_NpgsqlCidr: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly __tsonic_iface_System_IEquatable_1: never;
 
@@ -156,6 +160,7 @@ export type NpgsqlCidr = NpgsqlCidr$instance;
 
 export interface NpgsqlCircle$instance {
     readonly __tsonic_type_NpgsqlTypes_NpgsqlCircle: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly __tsonic_iface_System_IEquatable_1: never;
 
@@ -163,10 +168,10 @@ export interface NpgsqlCircle$instance {
     Radius: double;
     X: double;
     Y: double;
-    Deconstruct(x: double, y: double, radius: double): void;
     Deconstruct(center: NpgsqlPoint, radius: double): void;
-    Equals(other: NpgsqlCircle): boolean;
+    Deconstruct(x: double, y: double, radius: double): void;
     Equals(obj: unknown | null): boolean;
+    Equals(other: NpgsqlCircle): boolean;
     GetHashCode(): int;
     ToString(): string;
 }
@@ -182,6 +187,7 @@ export type NpgsqlCircle = NpgsqlCircle$instance;
 
 export interface NpgsqlCube$instance {
     readonly __tsonic_type_NpgsqlTypes_NpgsqlCube: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly __tsonic_iface_System_IEquatable_1: never;
 
@@ -189,8 +195,8 @@ export interface NpgsqlCube$instance {
     readonly IsPoint: boolean;
     readonly LowerLeft: IReadOnlyList_1<System_Internal.Double>;
     readonly UpperRight: IReadOnlyList_1<System_Internal.Double>;
-    Equals(other: NpgsqlCube): boolean;
     Equals(obj: unknown | null): boolean;
+    Equals(other: NpgsqlCube): boolean;
     GetHashCode(): int;
     ToString(): string;
     ToSubset(...indexes: int[]): NpgsqlCube;
@@ -211,6 +217,7 @@ export type NpgsqlCube = NpgsqlCube$instance;
 
 export interface NpgsqlInet$instance {
     readonly __tsonic_type_NpgsqlTypes_NpgsqlInet: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly __tsonic_iface_System_IEquatable_1: never;
 
@@ -235,14 +242,15 @@ export type NpgsqlInet = NpgsqlInet$instance;
 
 export interface NpgsqlInterval$instance {
     readonly __tsonic_type_NpgsqlTypes_NpgsqlInterval: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly __tsonic_iface_System_IEquatable_1: never;
 
     readonly Days: int;
     readonly Months: int;
     readonly Time: long;
-    Equals(other: NpgsqlInterval): boolean;
     Equals(obj: unknown | null): boolean;
+    Equals(other: NpgsqlInterval): boolean;
     GetHashCode(): int;
 }
 
@@ -256,6 +264,7 @@ export type NpgsqlInterval = NpgsqlInterval$instance;
 
 export interface NpgsqlLine$instance {
     readonly __tsonic_type_NpgsqlTypes_NpgsqlLine: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly __tsonic_iface_System_IEquatable_1: never;
 
@@ -263,8 +272,8 @@ export interface NpgsqlLine$instance {
     B: double;
     C: double;
     Deconstruct(a: double, b: double, c: double): void;
-    Equals(other: NpgsqlLine): boolean;
     Equals(obj: unknown | null): boolean;
+    Equals(other: NpgsqlLine): boolean;
     GetHashCode(): int;
     ToString(): string;
 }
@@ -279,13 +288,14 @@ export type NpgsqlLine = NpgsqlLine$instance;
 
 export interface NpgsqlLogSequenceNumber$instance {
     readonly __tsonic_type_NpgsqlTypes_NpgsqlLogSequenceNumber: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly __tsonic_iface_System_IComparable_1: never;
     readonly __tsonic_iface_System_IEquatable_1: never;
 
     CompareTo(value: NpgsqlLogSequenceNumber): int;
-    Equals(other: NpgsqlLogSequenceNumber): boolean;
     Equals(obj: unknown | null): boolean;
+    Equals(other: NpgsqlLogSequenceNumber): boolean;
     GetHashCode(): int;
     ToString(): string;
 }
@@ -307,14 +317,15 @@ export type NpgsqlLogSequenceNumber = NpgsqlLogSequenceNumber$instance;
 
 export interface NpgsqlLSeg$instance {
     readonly __tsonic_type_NpgsqlTypes_NpgsqlLSeg: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly __tsonic_iface_System_IEquatable_1: never;
 
     End: NpgsqlPoint;
     Start: NpgsqlPoint;
     Deconstruct(start: NpgsqlPoint, end: NpgsqlPoint): void;
-    Equals(other: NpgsqlLSeg): boolean;
     Equals(obj: unknown | null): boolean;
+    Equals(other: NpgsqlLSeg): boolean;
     GetHashCode(): int;
     ToString(): string;
 }
@@ -330,6 +341,7 @@ export type NpgsqlLSeg = NpgsqlLSeg$instance;
 
 export interface NpgsqlPath$instance {
     readonly __tsonic_type_NpgsqlTypes_NpgsqlPath: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly __tsonic_iface_System_Collections_Generic_ICollection_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
@@ -345,8 +357,8 @@ export interface NpgsqlPath$instance {
     Clear(): void;
     Contains(item: NpgsqlPoint): boolean;
     CopyTo(array: NpgsqlPoint[], arrayIndex: int): void;
-    Equals(other: NpgsqlPath): boolean;
     Equals(obj: unknown | null): boolean;
+    Equals(other: NpgsqlPath): boolean;
     GetEnumerator(): IEnumerator_1<NpgsqlPoint>;
     GetHashCode(): int;
     IndexOf(item: NpgsqlPoint): int;
@@ -372,14 +384,15 @@ export type NpgsqlPath = NpgsqlPath$instance & { [index: number]: NpgsqlPoint; }
 
 export interface NpgsqlPoint$instance {
     readonly __tsonic_type_NpgsqlTypes_NpgsqlPoint: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly __tsonic_iface_System_IEquatable_1: never;
 
     X: double;
     Y: double;
     Deconstruct(x: double, y: double): void;
-    Equals(other: NpgsqlPoint): boolean;
     Equals(obj: unknown | null): boolean;
+    Equals(other: NpgsqlPoint): boolean;
     GetHashCode(): int;
     ToString(): string;
 }
@@ -394,6 +407,7 @@ export type NpgsqlPoint = NpgsqlPoint$instance;
 
 export interface NpgsqlPolygon$instance {
     readonly __tsonic_type_NpgsqlTypes_NpgsqlPolygon: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly __tsonic_iface_System_Collections_Generic_ICollection_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
@@ -408,8 +422,8 @@ export interface NpgsqlPolygon$instance {
     Clear(): void;
     Contains(item: NpgsqlPoint): boolean;
     CopyTo(array: NpgsqlPoint[], arrayIndex: int): void;
-    Equals(other: NpgsqlPolygon): boolean;
     Equals(obj: unknown | null): boolean;
+    Equals(other: NpgsqlPolygon): boolean;
     GetEnumerator(): IEnumerator_1<NpgsqlPoint>;
     GetHashCode(): int;
     IndexOf(item: NpgsqlPoint): int;
@@ -432,6 +446,7 @@ export type NpgsqlPolygon = NpgsqlPolygon$instance & { [index: number]: NpgsqlPo
 
 export interface NpgsqlRange_1$instance<T extends unknown> {
     readonly __tsonic_type_NpgsqlTypes_NpgsqlRange_1: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly __tsonic_iface_System_IEquatable_1: never;
 
@@ -460,13 +475,14 @@ export const NpgsqlRange_1: {
 
 export type NpgsqlRange_1<T extends unknown> = NpgsqlRange_1$instance<T>;
 
-export interface NpgsqlRange_1_RangeTypeConverter$instance<T extends unknown> extends TypeConverter {
+export interface NpgsqlRange_1_RangeTypeConverter$instance<T extends unknown> extends System_ComponentModel_Internal.TypeConverter {
     readonly __tsonic_type_NpgsqlTypes_NpgsqlRange_1_RangeTypeConverter: never;
+    readonly __tsonic_type_System_ComponentModel_TypeConverter: never;
 
-    CanConvertFrom(context: ITypeDescriptorContext | null, sourceType: Type): boolean;
-    CanConvertTo(context: ITypeDescriptorContext | null, destinationType: Type | null): boolean;
-    ConvertFrom(context: ITypeDescriptorContext | null, culture: CultureInfo | null, value: unknown): unknown | null;
-    ConvertTo(context: ITypeDescriptorContext | null, culture: CultureInfo | null, value: unknown | null, destinationType: Type): unknown | null;
+    CanConvertFrom: System_ComponentModel_Internal.TypeConverter["CanConvertFrom"] & ((context: ITypeDescriptorContext | null, sourceType: Type) => boolean);
+    CanConvertTo: System_ComponentModel_Internal.TypeConverter["CanConvertTo"] & ((context: ITypeDescriptorContext | null, destinationType: Type | null) => boolean);
+    ConvertFrom: System_ComponentModel_Internal.TypeConverter["ConvertFrom"] & ((context: ITypeDescriptorContext | null, culture: CultureInfo | null, value: unknown) => unknown | null);
+    ConvertTo: System_ComponentModel_Internal.TypeConverter["ConvertTo"] & ((context: ITypeDescriptorContext | null, culture: CultureInfo | null, value: unknown | null, destinationType: Type) => unknown | null);
 }
 
 
@@ -480,14 +496,15 @@ export type NpgsqlRange_1_RangeTypeConverter<T extends unknown> = NpgsqlRange_1_
 
 export interface NpgsqlTid$instance {
     readonly __tsonic_type_NpgsqlTypes_NpgsqlTid: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly __tsonic_iface_System_IEquatable_1: never;
 
     readonly BlockNumber: uint;
     readonly OffsetNumber: ushort;
     Deconstruct(blockNumber: uint, offsetNumber: ushort): void;
-    Equals(other: NpgsqlTid): boolean;
     Equals(o: unknown | null): boolean;
+    Equals(other: NpgsqlTid): boolean;
     GetHashCode(): int;
     ToString(): string;
 }
@@ -514,31 +531,34 @@ export interface NpgsqlTsQuery$instance {
 }
 
 
-export const NpgsqlTsQuery: (abstract new(kind: NpgsqlTsQuery_NodeKind) => NpgsqlTsQuery) & {
+export const NpgsqlTsQuery: {
     Parse(value: string): NpgsqlTsQuery;
 };
 
 
 export type NpgsqlTsQuery = NpgsqlTsQuery$instance;
 
-export enum NpgsqlTsQuery_NodeKind {
-    Empty = -1,
-    Lexeme = 0,
-    Not = 1,
-    And = 2,
-    Or = 3,
-    Phrase = 4
-}
+export type NpgsqlTsQuery_NodeKind = number & { readonly __tsonic_type_NpgsqlTypes_NpgsqlTsQuery_NodeKind: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const NpgsqlTsQuery_NodeKind: {
+    readonly Empty: NpgsqlTsQuery_NodeKind;
+    readonly Lexeme: NpgsqlTsQuery_NodeKind;
+    readonly Not: NpgsqlTsQuery_NodeKind;
+    readonly And: NpgsqlTsQuery_NodeKind;
+    readonly Or: NpgsqlTsQuery_NodeKind;
+    readonly Phrase: NpgsqlTsQuery_NodeKind;
+};
 
 
-export interface NpgsqlTsQueryAnd$instance extends NpgsqlTsQueryBinOp {
+export interface NpgsqlTsQueryAnd$instance extends NpgsqlTsQueryBinOp$instance {
+    readonly __tsonic_type_NpgsqlTypes_NpgsqlTsQuery: never;
     readonly __tsonic_type_NpgsqlTypes_NpgsqlTsQueryAnd: never;
+    readonly __tsonic_type_NpgsqlTypes_NpgsqlTsQueryBinOp: never;
 
     readonly __tsonic_iface_System_IEquatable_1: never;
 
-    Equals(other: NpgsqlTsQuery | null): boolean;
-    Equals(obj: unknown | null): boolean;
-    GetHashCode(): int;
+    Equals: NpgsqlTsQueryBinOp$instance["Equals"] & ((obj: unknown | null) => boolean) & ((other: NpgsqlTsQuery | null) => boolean);
+    GetHashCode: NpgsqlTsQueryBinOp$instance["GetHashCode"] & (() => int);
 }
 
 
@@ -549,7 +569,8 @@ export const NpgsqlTsQueryAnd: {
 
 export type NpgsqlTsQueryAnd = NpgsqlTsQueryAnd$instance;
 
-export interface NpgsqlTsQueryBinOp$instance extends NpgsqlTsQuery {
+export interface NpgsqlTsQueryBinOp$instance extends NpgsqlTsQuery$instance {
+    readonly __tsonic_type_NpgsqlTypes_NpgsqlTsQuery: never;
     readonly __tsonic_type_NpgsqlTypes_NpgsqlTsQueryBinOp: never;
 
     readonly __tsonic_iface_System_IEquatable_1: never;
@@ -559,20 +580,20 @@ export interface NpgsqlTsQueryBinOp$instance extends NpgsqlTsQuery {
 }
 
 
-export const NpgsqlTsQueryBinOp: (abstract new(kind: NpgsqlTsQuery_NodeKind, left: NpgsqlTsQuery, right: NpgsqlTsQuery) => NpgsqlTsQueryBinOp) & {
+export const NpgsqlTsQueryBinOp: {
 };
 
 
 export type NpgsqlTsQueryBinOp = NpgsqlTsQueryBinOp$instance;
 
-export interface NpgsqlTsQueryEmpty$instance extends NpgsqlTsQuery {
+export interface NpgsqlTsQueryEmpty$instance extends NpgsqlTsQuery$instance {
+    readonly __tsonic_type_NpgsqlTypes_NpgsqlTsQuery: never;
     readonly __tsonic_type_NpgsqlTypes_NpgsqlTsQueryEmpty: never;
 
     readonly __tsonic_iface_System_IEquatable_1: never;
 
-    Equals(other: NpgsqlTsQuery | null): boolean;
-    Equals(obj: unknown | null): boolean;
-    GetHashCode(): int;
+    Equals: NpgsqlTsQuery$instance["Equals"] & ((obj: unknown | null) => boolean) & ((other: NpgsqlTsQuery | null) => boolean);
+    GetHashCode: NpgsqlTsQuery$instance["GetHashCode"] & (() => int);
 }
 
 
@@ -583,15 +604,16 @@ export const NpgsqlTsQueryEmpty: {
 
 export type NpgsqlTsQueryEmpty = NpgsqlTsQueryEmpty$instance;
 
-export interface NpgsqlTsQueryFollowedBy$instance extends NpgsqlTsQueryBinOp {
+export interface NpgsqlTsQueryFollowedBy$instance extends NpgsqlTsQueryBinOp$instance {
+    readonly __tsonic_type_NpgsqlTypes_NpgsqlTsQuery: never;
+    readonly __tsonic_type_NpgsqlTypes_NpgsqlTsQueryBinOp: never;
     readonly __tsonic_type_NpgsqlTypes_NpgsqlTsQueryFollowedBy: never;
 
     readonly __tsonic_iface_System_IEquatable_1: never;
 
     Distance: short;
-    Equals(other: NpgsqlTsQuery | null): boolean;
-    Equals(obj: unknown | null): boolean;
-    GetHashCode(): int;
+    Equals: NpgsqlTsQueryBinOp$instance["Equals"] & ((obj: unknown | null) => boolean) & ((other: NpgsqlTsQuery | null) => boolean);
+    GetHashCode: NpgsqlTsQueryBinOp$instance["GetHashCode"] & (() => int);
 }
 
 
@@ -602,7 +624,8 @@ export const NpgsqlTsQueryFollowedBy: {
 
 export type NpgsqlTsQueryFollowedBy = NpgsqlTsQueryFollowedBy$instance;
 
-export interface NpgsqlTsQueryLexeme$instance extends NpgsqlTsQuery {
+export interface NpgsqlTsQueryLexeme$instance extends NpgsqlTsQuery$instance {
+    readonly __tsonic_type_NpgsqlTypes_NpgsqlTsQuery: never;
     readonly __tsonic_type_NpgsqlTypes_NpgsqlTsQueryLexeme: never;
 
     readonly __tsonic_iface_System_IEquatable_1: never;
@@ -610,9 +633,8 @@ export interface NpgsqlTsQueryLexeme$instance extends NpgsqlTsQuery {
     IsPrefixSearch: boolean;
     Text: string;
     Weights: NpgsqlTsQueryLexeme_Weight;
-    Equals(other: NpgsqlTsQuery | null): boolean;
-    Equals(obj: unknown | null): boolean;
-    GetHashCode(): int;
+    Equals: NpgsqlTsQuery$instance["Equals"] & ((obj: unknown | null) => boolean) & ((other: NpgsqlTsQuery | null) => boolean);
+    GetHashCode: NpgsqlTsQuery$instance["GetHashCode"] & (() => int);
 }
 
 
@@ -625,24 +647,26 @@ export const NpgsqlTsQueryLexeme: {
 
 export type NpgsqlTsQueryLexeme = NpgsqlTsQueryLexeme$instance;
 
-export enum NpgsqlTsQueryLexeme_Weight {
-    None = 0,
-    D = 1,
-    C = 2,
-    B = 4,
-    A = 8
-}
+export type NpgsqlTsQueryLexeme_Weight = number & { readonly __tsonic_type_NpgsqlTypes_NpgsqlTsQueryLexeme_Weight: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const NpgsqlTsQueryLexeme_Weight: {
+    readonly None: NpgsqlTsQueryLexeme_Weight;
+    readonly D: NpgsqlTsQueryLexeme_Weight;
+    readonly C: NpgsqlTsQueryLexeme_Weight;
+    readonly B: NpgsqlTsQueryLexeme_Weight;
+    readonly A: NpgsqlTsQueryLexeme_Weight;
+};
 
 
-export interface NpgsqlTsQueryNot$instance extends NpgsqlTsQuery {
+export interface NpgsqlTsQueryNot$instance extends NpgsqlTsQuery$instance {
+    readonly __tsonic_type_NpgsqlTypes_NpgsqlTsQuery: never;
     readonly __tsonic_type_NpgsqlTypes_NpgsqlTsQueryNot: never;
 
     readonly __tsonic_iface_System_IEquatable_1: never;
 
     Child: NpgsqlTsQuery;
-    Equals(other: NpgsqlTsQuery | null): boolean;
-    Equals(obj: unknown | null): boolean;
-    GetHashCode(): int;
+    Equals: NpgsqlTsQuery$instance["Equals"] & ((obj: unknown | null) => boolean) & ((other: NpgsqlTsQuery | null) => boolean);
+    GetHashCode: NpgsqlTsQuery$instance["GetHashCode"] & (() => int);
 }
 
 
@@ -653,14 +677,15 @@ export const NpgsqlTsQueryNot: {
 
 export type NpgsqlTsQueryNot = NpgsqlTsQueryNot$instance;
 
-export interface NpgsqlTsQueryOr$instance extends NpgsqlTsQueryBinOp {
+export interface NpgsqlTsQueryOr$instance extends NpgsqlTsQueryBinOp$instance {
+    readonly __tsonic_type_NpgsqlTypes_NpgsqlTsQuery: never;
+    readonly __tsonic_type_NpgsqlTypes_NpgsqlTsQueryBinOp: never;
     readonly __tsonic_type_NpgsqlTypes_NpgsqlTsQueryOr: never;
 
     readonly __tsonic_iface_System_IEquatable_1: never;
 
-    Equals(other: NpgsqlTsQuery | null): boolean;
-    Equals(obj: unknown | null): boolean;
-    GetHashCode(): int;
+    Equals: NpgsqlTsQueryBinOp$instance["Equals"] & ((obj: unknown | null) => boolean) & ((other: NpgsqlTsQuery | null) => boolean);
+    GetHashCode: NpgsqlTsQueryBinOp$instance["GetHashCode"] & (() => int);
 }
 
 
@@ -679,8 +704,8 @@ export interface NpgsqlTsVector$instance {
     readonly __tsonic_iface_System_IEquatable_1: never;
 
     readonly Count: int;
-    Equals(other: NpgsqlTsVector | null): boolean;
     Equals(obj: unknown | null): boolean;
+    Equals(other: NpgsqlTsVector | null): boolean;
     GetEnumerator(): IEnumerator_1<NpgsqlTsVector_Lexeme>;
     GetHashCode(): int;
     ToString(): string;
@@ -697,6 +722,7 @@ export type NpgsqlTsVector = NpgsqlTsVector$instance & { readonly [index: number
 
 export interface NpgsqlTsVector_Lexeme$instance {
     readonly __tsonic_type_NpgsqlTypes_NpgsqlTsVector_Lexeme: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly __tsonic_iface_System_IEquatable_1: never;
 
@@ -715,18 +741,21 @@ export const NpgsqlTsVector_Lexeme: {
 };
 
 
-export type NpgsqlTsVector_Lexeme = NpgsqlTsVector_Lexeme$instance & { [index: number]: NpgsqlTsVector_Lexeme_WordEntryPos; };
+export type NpgsqlTsVector_Lexeme = NpgsqlTsVector_Lexeme$instance & { readonly [index: number]: NpgsqlTsVector_Lexeme_WordEntryPos; };
 
-export enum NpgsqlTsVector_Lexeme_Weight {
-    D = 0,
-    C = 1,
-    B = 2,
-    A = 3
-}
+export type NpgsqlTsVector_Lexeme_Weight = number & { readonly __tsonic_type_NpgsqlTypes_NpgsqlTsVector_Lexeme_Weight: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const NpgsqlTsVector_Lexeme_Weight: {
+    readonly D: NpgsqlTsVector_Lexeme_Weight;
+    readonly C: NpgsqlTsVector_Lexeme_Weight;
+    readonly B: NpgsqlTsVector_Lexeme_Weight;
+    readonly A: NpgsqlTsVector_Lexeme_Weight;
+};
 
 
 export interface NpgsqlTsVector_Lexeme_WordEntryPos$instance {
     readonly __tsonic_type_NpgsqlTypes_NpgsqlTsVector_Lexeme_WordEntryPos: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly __tsonic_iface_System_IEquatable_1: never;
 
@@ -746,8 +775,9 @@ export const NpgsqlTsVector_Lexeme_WordEntryPos: {
 
 export type NpgsqlTsVector_Lexeme_WordEntryPos = NpgsqlTsVector_Lexeme_WordEntryPos$instance;
 
-export interface PgNameAttribute$instance extends Attribute {
+export interface PgNameAttribute$instance extends System_Internal.Attribute {
     readonly __tsonic_type_NpgsqlTypes_PgNameAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
     readonly PgName: string;
 }

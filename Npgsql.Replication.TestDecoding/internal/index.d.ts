@@ -15,10 +15,11 @@ import type { NpgsqlLogSequenceNumber } from "../../NpgsqlTypes/internal/index.j
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, DateTime, IEquatable_1, Int32, Nullable_1, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface TestDecodingData$instance extends ReplicationMessage {
+export interface TestDecodingData$instance extends Npgsql_Replication_Internal.ReplicationMessage$instance {
+    readonly __tsonic_type_Npgsql_Replication_ReplicationMessage: never;
     readonly __tsonic_type_Npgsql_Replication_TestDecoding_TestDecodingData: never;
 
-    Data: string;
+    readonly Data: string;
     Clone(): TestDecodingData;
     ToString(): string;
 }
@@ -43,8 +44,8 @@ export interface TestDecodingOptions$instance {
     readonly OnlyLocal: Nullable_1<System_Internal.Boolean>;
     readonly SkipEmptyXacts: Nullable_1<System_Internal.Boolean>;
     readonly StreamChanges: Nullable_1<System_Internal.Boolean>;
-    Equals(other: TestDecodingOptions | null): boolean;
     Equals(obj: unknown | null): boolean;
+    Equals(other: TestDecodingOptions | null): boolean;
     GetHashCode(): int;
 }
 
@@ -56,7 +57,9 @@ export const TestDecodingOptions: {
 
 export type TestDecodingOptions = TestDecodingOptions$instance;
 
-export interface TestDecodingReplicationSlot$instance extends LogicalReplicationSlot {
+export interface TestDecodingReplicationSlot$instance extends Npgsql_Replication_Internal_Internal.LogicalReplicationSlot$instance {
+    readonly __tsonic_type_Npgsql_Replication_Internal_LogicalReplicationSlot: never;
+    readonly __tsonic_type_Npgsql_Replication_ReplicationSlot: never;
     readonly __tsonic_type_Npgsql_Replication_TestDecoding_TestDecodingReplicationSlot: never;
 
 }

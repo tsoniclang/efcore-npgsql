@@ -23,12 +23,12 @@ export interface NpgsqlSingletonOptions$instance {
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_ISingletonOptions: never;
     readonly __tsonic_iface_Npgsql_EntityFrameworkCore_PostgreSQL_Infrastructure_Internal_INpgsqlSingletonOptions: never;
 
-    EnumDefinitions: IReadOnlyList_1<EnumDefinition>;
-    IsPostgresVersionSet: boolean;
-    PostgresVersion: Version;
-    ReverseNullOrderingEnabled: boolean;
-    UseRedshift: boolean;
-    UserRangeDefinitions: IReadOnlyList_1<UserRangeDefinition>;
+    readonly EnumDefinitions: IReadOnlyList_1<EnumDefinition>;
+    readonly IsPostgresVersionSet: boolean;
+    readonly PostgresVersion: Version;
+    readonly ReverseNullOrderingEnabled: boolean;
+    readonly UseRedshift: boolean;
+    readonly UserRangeDefinitions: IReadOnlyList_1<UserRangeDefinition>;
     Initialize(options: IDbContextOptions): void;
     Validate(options: IDbContextOptions): void;
 }

@@ -85,19 +85,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Npgsql:Npgsql.Replication.Internal.LogicalReplicationSlot::.ctor(System.String,Npgsql.Replication.ReplicationSlotOptions):void",
-            "metadataToken": 100666170,
-            "canonicalSignature": "(System.String,Npgsql.Replication.ReplicationSlotOptions):void",
-            "normalizedSignature": "constructor|(System.String,Npgsql.Replication.ReplicationSlotOptions):void|static=false",
-            "isStatic": false,
-            "parameterCount": 2,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Npgsql.Replication.Internal.LogicalReplicationSlot",
-            "ownerIdentity": "Npgsql"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Npgsql:Npgsql.Replication.Internal.LogicalReplicationConnectionExtensions",

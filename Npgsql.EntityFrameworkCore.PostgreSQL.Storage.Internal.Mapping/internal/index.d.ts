@@ -38,27 +38,31 @@ export interface INpgsqlTypeMapping$instance {
 
 export type INpgsqlTypeMapping = INpgsqlTypeMapping$instance;
 
-export interface NpgsqlArrayTypeMapping$instance extends RelationalTypeMapping {
+export interface NpgsqlArrayTypeMapping$instance extends Microsoft_EntityFrameworkCore_Storage_Internal.RelationalTypeMapping {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_CoreTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_RelationalTypeMapping: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlArrayTypeMapping: never;
 
-    readonly ElementTypeMapping: RelationalTypeMapping;
 }
 
 
-export const NpgsqlArrayTypeMapping: (abstract new(parameters: RelationalTypeMapping_RelationalTypeMappingParameters) => NpgsqlArrayTypeMapping) & {
+export const NpgsqlArrayTypeMapping: {
 };
 
 
 export type NpgsqlArrayTypeMapping = NpgsqlArrayTypeMapping$instance;
 
-export interface NpgsqlArrayTypeMapping_3$instance<TCollection extends unknown, TConcreteCollection extends unknown, TElement extends unknown> extends NpgsqlArrayTypeMapping {
+export interface NpgsqlArrayTypeMapping_3$instance<TCollection extends unknown, TConcreteCollection extends unknown, TElement extends unknown> extends NpgsqlArrayTypeMapping$instance {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_CoreTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_RelationalTypeMapping: never;
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlArrayTypeMapping: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlArrayTypeMapping_3: never;
 
     readonly NpgsqlDbType: Nullable_1<NpgsqlDbType>;
-    Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
-    ConfigureParameter(parameter: DbParameter): void;
-    CreateParameter(command: DbCommand, name: string, value: unknown | null, nullable?: Nullable_1<System_Internal.Boolean>, direction?: ParameterDirection): DbParameter;
-    GenerateNonNullSqlLiteral(value: unknown): string;
+    Clone: NpgsqlArrayTypeMapping$instance["Clone"] & ((parameters: RelationalTypeMapping_RelationalTypeMappingParameters) => RelationalTypeMapping);
+    ConfigureParameter: NpgsqlArrayTypeMapping$instance["ConfigureParameter"] & ((parameter: DbParameter) => void);
+    CreateParameter: NpgsqlArrayTypeMapping$instance["CreateParameter"] & ((command: DbCommand, name: string, value: unknown | null, nullable?: Nullable_1<System_Internal.Boolean>, direction?: ParameterDirection) => DbParameter);
+    GenerateNonNullSqlLiteral: NpgsqlArrayTypeMapping$instance["GenerateNonNullSqlLiteral"] & ((value: unknown) => string);
 }
 
 
@@ -71,13 +75,16 @@ export const NpgsqlArrayTypeMapping_3: {
 
 export type NpgsqlArrayTypeMapping_3<TCollection extends unknown, TConcreteCollection extends unknown, TElement extends unknown> = NpgsqlArrayTypeMapping_3$instance<TCollection, TConcreteCollection, TElement>;
 
-export interface NpgsqlBigIntegerTypeMapping$instance extends NpgsqlTypeMapping$instance, INpgsqlTypeMapping$instance {
+export interface NpgsqlBigIntegerTypeMapping$instance extends NpgsqlTypeMapping$instance {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_CoreTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_RelationalTypeMapping: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlBigIntegerTypeMapping: never;
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlTypeMapping: never;
 
     readonly __tsonic_iface_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_INpgsqlTypeMapping: never;
 
-    Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
-    ProcessStoreType(parameters: RelationalTypeMapping_RelationalTypeMappingParameters, storeType: string, _: string): string;
+    Clone: NpgsqlTypeMapping$instance["Clone"] & ((parameters: RelationalTypeMapping_RelationalTypeMappingParameters) => RelationalTypeMapping);
+    ProcessStoreType: NpgsqlTypeMapping$instance["ProcessStoreType"] & ((parameters: RelationalTypeMapping_RelationalTypeMappingParameters, storeType: string, _: string) => string);
 }
 
 
@@ -94,12 +101,13 @@ export interface __NpgsqlBigIntegerTypeMapping$views {
 export type NpgsqlBigIntegerTypeMapping = NpgsqlBigIntegerTypeMapping$instance & __NpgsqlBigIntegerTypeMapping$views;
 
 
-export interface NpgsqlBigIntegerTypeMapping_JsonBigIntegerReaderWriter$instance extends JsonValueReaderWriter_1<BigInteger> {
+export interface NpgsqlBigIntegerTypeMapping_JsonBigIntegerReaderWriter$instance extends Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<BigInteger> {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_Json_JsonValueReaderWriter: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_Json_JsonValueReaderWriter_1: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlBigIntegerTypeMapping_JsonBigIntegerReaderWriter: never;
 
-    readonly ConstructorExpression: Expression;
-    FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown | null): BigInteger;
-    ToJsonTyped(writer: Utf8JsonWriter, value: BigInteger): void;
+    FromJsonTyped: Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<BigInteger>["FromJsonTyped"] & ((manager: Utf8JsonReaderManager, existingObject?: unknown | null) => BigInteger);
+    ToJsonTyped: Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<BigInteger>["ToJsonTyped"] & ((writer: Utf8JsonWriter, value: BigInteger) => void);
 }
 
 
@@ -111,14 +119,17 @@ export const NpgsqlBigIntegerTypeMapping_JsonBigIntegerReaderWriter: {
 
 export type NpgsqlBigIntegerTypeMapping_JsonBigIntegerReaderWriter = NpgsqlBigIntegerTypeMapping_JsonBigIntegerReaderWriter$instance;
 
-export interface NpgsqlBitTypeMapping$instance extends NpgsqlTypeMapping$instance, INpgsqlTypeMapping$instance {
+export interface NpgsqlBitTypeMapping$instance extends NpgsqlTypeMapping$instance {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_CoreTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_RelationalTypeMapping: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlBitTypeMapping: never;
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlTypeMapping: never;
 
     readonly __tsonic_iface_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_INpgsqlTypeMapping: never;
 
-    Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
-    GenerateCodeLiteral(value: unknown): Expression;
-    GenerateNonNullSqlLiteral(value: unknown): string;
+    Clone: NpgsqlTypeMapping$instance["Clone"] & ((parameters: RelationalTypeMapping_RelationalTypeMappingParameters) => RelationalTypeMapping);
+    GenerateCodeLiteral: NpgsqlTypeMapping$instance["GenerateCodeLiteral"] & ((value: unknown) => Expression);
+    GenerateNonNullSqlLiteral: NpgsqlTypeMapping$instance["GenerateNonNullSqlLiteral"] & ((value: unknown) => string);
 }
 
 
@@ -135,11 +146,14 @@ export interface __NpgsqlBitTypeMapping$views {
 export type NpgsqlBitTypeMapping = NpgsqlBitTypeMapping$instance & __NpgsqlBitTypeMapping$views;
 
 
-export interface NpgsqlBoolTypeMapping$instance extends BoolTypeMapping {
+export interface NpgsqlBoolTypeMapping$instance extends Microsoft_EntityFrameworkCore_Storage_Internal.BoolTypeMapping {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_BoolTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_CoreTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_RelationalTypeMapping: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlBoolTypeMapping: never;
 
-    Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
-    GenerateNonNullSqlLiteral(value: unknown): string;
+    Clone: Microsoft_EntityFrameworkCore_Storage_Internal.BoolTypeMapping["Clone"] & ((parameters: RelationalTypeMapping_RelationalTypeMappingParameters) => RelationalTypeMapping);
+    GenerateNonNullSqlLiteral: Microsoft_EntityFrameworkCore_Storage_Internal.BoolTypeMapping["GenerateNonNullSqlLiteral"] & ((value: unknown) => string);
 }
 
 
@@ -151,14 +165,17 @@ export const NpgsqlBoolTypeMapping: {
 
 export type NpgsqlBoolTypeMapping = NpgsqlBoolTypeMapping$instance;
 
-export interface NpgsqlBoxTypeMapping$instance extends NpgsqlTypeMapping$instance, INpgsqlTypeMapping$instance {
+export interface NpgsqlBoxTypeMapping$instance extends NpgsqlTypeMapping$instance {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_CoreTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_RelationalTypeMapping: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlBoxTypeMapping: never;
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlTypeMapping: never;
 
     readonly __tsonic_iface_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_INpgsqlTypeMapping: never;
 
-    Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
-    GenerateCodeLiteral(value: unknown): Expression;
-    GenerateNonNullSqlLiteral(value: unknown): string;
+    Clone: NpgsqlTypeMapping$instance["Clone"] & ((parameters: RelationalTypeMapping_RelationalTypeMappingParameters) => RelationalTypeMapping);
+    GenerateCodeLiteral: NpgsqlTypeMapping$instance["GenerateCodeLiteral"] & ((value: unknown) => Expression);
+    GenerateNonNullSqlLiteral: NpgsqlTypeMapping$instance["GenerateNonNullSqlLiteral"] & ((value: unknown) => string);
 }
 
 
@@ -175,11 +192,13 @@ export interface __NpgsqlBoxTypeMapping$views {
 export type NpgsqlBoxTypeMapping = NpgsqlBoxTypeMapping$instance & __NpgsqlBoxTypeMapping$views;
 
 
-export interface NpgsqlByteArrayTypeMapping$instance extends RelationalTypeMapping {
+export interface NpgsqlByteArrayTypeMapping$instance extends Microsoft_EntityFrameworkCore_Storage_Internal.RelationalTypeMapping {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_CoreTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_RelationalTypeMapping: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlByteArrayTypeMapping: never;
 
-    Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
-    GenerateNonNullSqlLiteral(value: unknown): string;
+    Clone: Microsoft_EntityFrameworkCore_Storage_Internal.RelationalTypeMapping["Clone"] & ((parameters: RelationalTypeMapping_RelationalTypeMappingParameters) => RelationalTypeMapping);
+    GenerateNonNullSqlLiteral: Microsoft_EntityFrameworkCore_Storage_Internal.RelationalTypeMapping["GenerateNonNullSqlLiteral"] & ((value: unknown) => string);
 }
 
 
@@ -191,14 +210,17 @@ export const NpgsqlByteArrayTypeMapping: {
 
 export type NpgsqlByteArrayTypeMapping = NpgsqlByteArrayTypeMapping$instance;
 
-export interface NpgsqlCharacterCharTypeMapping$instance extends CharTypeMapping, INpgsqlTypeMapping$instance {
+export interface NpgsqlCharacterCharTypeMapping$instance extends Microsoft_EntityFrameworkCore_Storage_Internal.CharTypeMapping {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_CharTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_CoreTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_RelationalTypeMapping: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlCharacterCharTypeMapping: never;
 
     readonly __tsonic_iface_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_INpgsqlTypeMapping: never;
 
     readonly NpgsqlDbType: NpgsqlDbType;
-    Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
-    ConfigureParameter(parameter: DbParameter): void;
+    Clone: Microsoft_EntityFrameworkCore_Storage_Internal.CharTypeMapping["Clone"] & ((parameters: RelationalTypeMapping_RelationalTypeMappingParameters) => RelationalTypeMapping);
+    ConfigureParameter: Microsoft_EntityFrameworkCore_Storage_Internal.CharTypeMapping["ConfigureParameter"] & ((parameter: DbParameter) => void);
 }
 
 
@@ -215,16 +237,17 @@ export interface __NpgsqlCharacterCharTypeMapping$views {
 export type NpgsqlCharacterCharTypeMapping = NpgsqlCharacterCharTypeMapping$instance & __NpgsqlCharacterCharTypeMapping$views;
 
 
-export interface NpgsqlCharacterStringTypeMapping$instance extends NpgsqlStringTypeMapping$instance, INpgsqlTypeMapping$instance {
+export interface NpgsqlCharacterStringTypeMapping$instance extends NpgsqlStringTypeMapping$instance {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_CoreTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_RelationalTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_StringTypeMapping: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlCharacterStringTypeMapping: never;
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlStringTypeMapping: never;
 
     readonly __tsonic_iface_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_INpgsqlTypeMapping: never;
 
-    readonly Comparer: ValueComparer;
-    readonly KeyComparer: ValueComparer;
-    Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
-    Clone(npgsqlDbType: NpgsqlDbType): NpgsqlStringTypeMapping;
-    ConfigureParameter(parameter: DbParameter): void;
+    Clone: NpgsqlStringTypeMapping$instance["Clone"] & ((npgsqlDbType: NpgsqlDbType) => NpgsqlStringTypeMapping) & ((parameters: RelationalTypeMapping_RelationalTypeMappingParameters) => RelationalTypeMapping);
+    ConfigureParameter: NpgsqlStringTypeMapping$instance["ConfigureParameter"] & ((parameter: DbParameter) => void);
 }
 
 
@@ -242,14 +265,17 @@ export interface __NpgsqlCharacterStringTypeMapping$views {
 export type NpgsqlCharacterStringTypeMapping = NpgsqlCharacterStringTypeMapping$instance & __NpgsqlCharacterStringTypeMapping$views;
 
 
-export interface NpgsqlCidrTypeMapping$instance extends NpgsqlTypeMapping$instance, INpgsqlTypeMapping$instance {
+export interface NpgsqlCidrTypeMapping$instance extends NpgsqlTypeMapping$instance {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_CoreTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_RelationalTypeMapping: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlCidrTypeMapping: never;
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlTypeMapping: never;
 
     readonly __tsonic_iface_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_INpgsqlTypeMapping: never;
 
-    Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
-    GenerateCodeLiteral(value: unknown): Expression;
-    GenerateNonNullSqlLiteral(value: unknown): string;
+    Clone: NpgsqlTypeMapping$instance["Clone"] & ((parameters: RelationalTypeMapping_RelationalTypeMappingParameters) => RelationalTypeMapping);
+    GenerateCodeLiteral: NpgsqlTypeMapping$instance["GenerateCodeLiteral"] & ((value: unknown) => Expression);
+    GenerateNonNullSqlLiteral: NpgsqlTypeMapping$instance["GenerateNonNullSqlLiteral"] & ((value: unknown) => string);
 }
 
 
@@ -266,12 +292,13 @@ export interface __NpgsqlCidrTypeMapping$views {
 export type NpgsqlCidrTypeMapping = NpgsqlCidrTypeMapping$instance & __NpgsqlCidrTypeMapping$views;
 
 
-export interface NpgsqlCidrTypeMapping_JsonCidrReaderWriter$instance extends JsonValueReaderWriter_1<IPNetwork> {
+export interface NpgsqlCidrTypeMapping_JsonCidrReaderWriter$instance extends Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<IPNetwork> {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_Json_JsonValueReaderWriter: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_Json_JsonValueReaderWriter_1: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlCidrTypeMapping_JsonCidrReaderWriter: never;
 
-    readonly ConstructorExpression: Expression;
-    FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown | null): IPNetwork;
-    ToJsonTyped(writer: Utf8JsonWriter, ipNetwork: IPNetwork): void;
+    FromJsonTyped: Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<IPNetwork>["FromJsonTyped"] & ((manager: Utf8JsonReaderManager, existingObject?: unknown | null) => IPNetwork);
+    ToJsonTyped: Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<IPNetwork>["ToJsonTyped"] & ((writer: Utf8JsonWriter, ipNetwork: IPNetwork) => void);
 }
 
 
@@ -283,14 +310,17 @@ export const NpgsqlCidrTypeMapping_JsonCidrReaderWriter: {
 
 export type NpgsqlCidrTypeMapping_JsonCidrReaderWriter = NpgsqlCidrTypeMapping_JsonCidrReaderWriter$instance;
 
-export interface NpgsqlCircleTypeMapping$instance extends NpgsqlTypeMapping$instance, INpgsqlTypeMapping$instance {
+export interface NpgsqlCircleTypeMapping$instance extends NpgsqlTypeMapping$instance {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_CoreTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_RelationalTypeMapping: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlCircleTypeMapping: never;
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlTypeMapping: never;
 
     readonly __tsonic_iface_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_INpgsqlTypeMapping: never;
 
-    Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
-    GenerateCodeLiteral(value: unknown): Expression;
-    GenerateNonNullSqlLiteral(value: unknown): string;
+    Clone: NpgsqlTypeMapping$instance["Clone"] & ((parameters: RelationalTypeMapping_RelationalTypeMappingParameters) => RelationalTypeMapping);
+    GenerateCodeLiteral: NpgsqlTypeMapping$instance["GenerateCodeLiteral"] & ((value: unknown) => Expression);
+    GenerateNonNullSqlLiteral: NpgsqlTypeMapping$instance["GenerateNonNullSqlLiteral"] & ((value: unknown) => string);
 }
 
 
@@ -307,14 +337,17 @@ export interface __NpgsqlCircleTypeMapping$views {
 export type NpgsqlCircleTypeMapping = NpgsqlCircleTypeMapping$instance & __NpgsqlCircleTypeMapping$views;
 
 
-export interface NpgsqlCubeTypeMapping$instance extends NpgsqlTypeMapping$instance, INpgsqlTypeMapping$instance {
+export interface NpgsqlCubeTypeMapping$instance extends NpgsqlTypeMapping$instance {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_CoreTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_RelationalTypeMapping: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlCubeTypeMapping: never;
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlTypeMapping: never;
 
     readonly __tsonic_iface_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_INpgsqlTypeMapping: never;
 
-    Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
-    GenerateCodeLiteral(value: unknown): Expression;
-    GenerateNonNullSqlLiteral(value: unknown): string;
+    Clone: NpgsqlTypeMapping$instance["Clone"] & ((parameters: RelationalTypeMapping_RelationalTypeMappingParameters) => RelationalTypeMapping);
+    GenerateCodeLiteral: NpgsqlTypeMapping$instance["GenerateCodeLiteral"] & ((value: unknown) => Expression);
+    GenerateNonNullSqlLiteral: NpgsqlTypeMapping$instance["GenerateNonNullSqlLiteral"] & ((value: unknown) => string);
 }
 
 
@@ -331,14 +364,17 @@ export interface __NpgsqlCubeTypeMapping$views {
 export type NpgsqlCubeTypeMapping = NpgsqlCubeTypeMapping$instance & __NpgsqlCubeTypeMapping$views;
 
 
-export interface NpgsqlDateOnlyTypeMapping$instance extends NpgsqlTypeMapping$instance, INpgsqlTypeMapping$instance {
+export interface NpgsqlDateOnlyTypeMapping$instance extends NpgsqlTypeMapping$instance {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_CoreTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_RelationalTypeMapping: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlDateOnlyTypeMapping: never;
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlTypeMapping: never;
 
     readonly __tsonic_iface_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_INpgsqlTypeMapping: never;
 
-    Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
-    GenerateEmbeddedNonNullSqlLiteral(value: unknown): string;
-    GenerateNonNullSqlLiteral(value: unknown): string;
+    Clone: NpgsqlTypeMapping$instance["Clone"] & ((parameters: RelationalTypeMapping_RelationalTypeMappingParameters) => RelationalTypeMapping);
+    GenerateEmbeddedNonNullSqlLiteral: NpgsqlTypeMapping$instance["GenerateEmbeddedNonNullSqlLiteral"] & ((value: unknown) => string);
+    GenerateNonNullSqlLiteral: NpgsqlTypeMapping$instance["GenerateNonNullSqlLiteral"] & ((value: unknown) => string);
 }
 
 
@@ -355,12 +391,13 @@ export interface __NpgsqlDateOnlyTypeMapping$views {
 export type NpgsqlDateOnlyTypeMapping = NpgsqlDateOnlyTypeMapping$instance & __NpgsqlDateOnlyTypeMapping$views;
 
 
-export interface NpgsqlDateOnlyTypeMapping_NpgsqlJsonDateOnlyReaderWriter$instance extends JsonValueReaderWriter_1<DateOnly> {
+export interface NpgsqlDateOnlyTypeMapping_NpgsqlJsonDateOnlyReaderWriter$instance extends Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<DateOnly> {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_Json_JsonValueReaderWriter: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_Json_JsonValueReaderWriter_1: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlDateOnlyTypeMapping_NpgsqlJsonDateOnlyReaderWriter: never;
 
-    readonly ConstructorExpression: Expression;
-    FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown | null): DateOnly;
-    ToJsonTyped(writer: Utf8JsonWriter, value: DateOnly): void;
+    FromJsonTyped: Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<DateOnly>["FromJsonTyped"] & ((manager: Utf8JsonReaderManager, existingObject?: unknown | null) => DateOnly);
+    ToJsonTyped: Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<DateOnly>["ToJsonTyped"] & ((writer: Utf8JsonWriter, value: DateOnly) => void);
 }
 
 
@@ -372,14 +409,17 @@ export const NpgsqlDateOnlyTypeMapping_NpgsqlJsonDateOnlyReaderWriter: {
 
 export type NpgsqlDateOnlyTypeMapping_NpgsqlJsonDateOnlyReaderWriter = NpgsqlDateOnlyTypeMapping_NpgsqlJsonDateOnlyReaderWriter$instance;
 
-export interface NpgsqlDateTimeDateTypeMapping$instance extends NpgsqlTypeMapping$instance, INpgsqlTypeMapping$instance {
+export interface NpgsqlDateTimeDateTypeMapping$instance extends NpgsqlTypeMapping$instance {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_CoreTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_RelationalTypeMapping: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlDateTimeDateTypeMapping: never;
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlTypeMapping: never;
 
     readonly __tsonic_iface_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_INpgsqlTypeMapping: never;
 
-    Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
-    GenerateEmbeddedNonNullSqlLiteral(value: unknown): string;
-    GenerateNonNullSqlLiteral(value: unknown): string;
+    Clone: NpgsqlTypeMapping$instance["Clone"] & ((parameters: RelationalTypeMapping_RelationalTypeMappingParameters) => RelationalTypeMapping);
+    GenerateEmbeddedNonNullSqlLiteral: NpgsqlTypeMapping$instance["GenerateEmbeddedNonNullSqlLiteral"] & ((value: unknown) => string);
+    GenerateNonNullSqlLiteral: NpgsqlTypeMapping$instance["GenerateNonNullSqlLiteral"] & ((value: unknown) => string);
 }
 
 
@@ -396,12 +436,13 @@ export interface __NpgsqlDateTimeDateTypeMapping$views {
 export type NpgsqlDateTimeDateTypeMapping = NpgsqlDateTimeDateTypeMapping$instance & __NpgsqlDateTimeDateTypeMapping$views;
 
 
-export interface NpgsqlDateTimeDateTypeMapping_NpgsqlJsonDateTimeReaderWriter$instance extends JsonValueReaderWriter_1<DateTime> {
+export interface NpgsqlDateTimeDateTypeMapping_NpgsqlJsonDateTimeReaderWriter$instance extends Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<DateTime> {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_Json_JsonValueReaderWriter: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_Json_JsonValueReaderWriter_1: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlDateTimeDateTypeMapping_NpgsqlJsonDateTimeReaderWriter: never;
 
-    readonly ConstructorExpression: Expression;
-    FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown | null): DateTime;
-    ToJsonTyped(writer: Utf8JsonWriter, value: DateTime): void;
+    FromJsonTyped: Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<DateTime>["FromJsonTyped"] & ((manager: Utf8JsonReaderManager, existingObject?: unknown | null) => DateTime);
+    ToJsonTyped: Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<DateTime>["ToJsonTyped"] & ((writer: Utf8JsonWriter, value: DateTime) => void);
 }
 
 
@@ -413,14 +454,16 @@ export const NpgsqlDateTimeDateTypeMapping_NpgsqlJsonDateTimeReaderWriter: {
 
 export type NpgsqlDateTimeDateTypeMapping_NpgsqlJsonDateTimeReaderWriter = NpgsqlDateTimeDateTypeMapping_NpgsqlJsonDateTimeReaderWriter$instance;
 
-export interface NpgsqlDecimalTypeMapping$instance extends NpgsqlTypeMapping$instance, INpgsqlTypeMapping$instance {
+export interface NpgsqlDecimalTypeMapping$instance extends NpgsqlTypeMapping$instance {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_CoreTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_RelationalTypeMapping: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlDecimalTypeMapping: never;
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlTypeMapping: never;
 
     readonly __tsonic_iface_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_INpgsqlTypeMapping: never;
 
-    readonly SqlLiteralFormatString: string;
-    Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
-    ProcessStoreType(parameters: RelationalTypeMapping_RelationalTypeMappingParameters, storeType: string, _: string): string;
+    Clone: NpgsqlTypeMapping$instance["Clone"] & ((parameters: RelationalTypeMapping_RelationalTypeMappingParameters) => RelationalTypeMapping);
+    ProcessStoreType: NpgsqlTypeMapping$instance["ProcessStoreType"] & ((parameters: RelationalTypeMapping_RelationalTypeMappingParameters, storeType: string, _: string) => string);
 }
 
 
@@ -437,11 +480,14 @@ export interface __NpgsqlDecimalTypeMapping$views {
 export type NpgsqlDecimalTypeMapping = NpgsqlDecimalTypeMapping$instance & __NpgsqlDecimalTypeMapping$views;
 
 
-export interface NpgsqlDoubleTypeMapping$instance extends DoubleTypeMapping {
+export interface NpgsqlDoubleTypeMapping$instance extends Microsoft_EntityFrameworkCore_Storage_Internal.DoubleTypeMapping {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_CoreTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_DoubleTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_RelationalTypeMapping: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlDoubleTypeMapping: never;
 
-    Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
-    GenerateNonNullSqlLiteral(value: unknown): string;
+    Clone: Microsoft_EntityFrameworkCore_Storage_Internal.DoubleTypeMapping["Clone"] & ((parameters: RelationalTypeMapping_RelationalTypeMappingParameters) => RelationalTypeMapping);
+    GenerateNonNullSqlLiteral: Microsoft_EntityFrameworkCore_Storage_Internal.DoubleTypeMapping["GenerateNonNullSqlLiteral"] & ((value: unknown) => string);
 }
 
 
@@ -453,15 +499,16 @@ export const NpgsqlDoubleTypeMapping: {
 
 export type NpgsqlDoubleTypeMapping = NpgsqlDoubleTypeMapping$instance;
 
-export interface NpgsqlEnumTypeMapping$instance extends RelationalTypeMapping {
+export interface NpgsqlEnumTypeMapping$instance extends Microsoft_EntityFrameworkCore_Storage_Internal.RelationalTypeMapping {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_CoreTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_RelationalTypeMapping: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlEnumTypeMapping: never;
 
     readonly Labels: IReadOnlyDictionary_2<unknown, System_Internal.String>;
     readonly UnquotedStoreType: string;
-    Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
-    Clone(unquotedStoreType: string, labels: IReadOnlyDictionary_2<unknown, System_Internal.String>): NpgsqlEnumTypeMapping;
-    ConfigureParameter(parameter: DbParameter): void;
-    GenerateNonNullSqlLiteral(value: unknown): string;
+    Clone: Microsoft_EntityFrameworkCore_Storage_Internal.RelationalTypeMapping["Clone"] & ((parameters: RelationalTypeMapping_RelationalTypeMappingParameters) => RelationalTypeMapping) & ((unquotedStoreType: string, labels: IReadOnlyDictionary_2<unknown, System_Internal.String>) => NpgsqlEnumTypeMapping);
+    ConfigureParameter: Microsoft_EntityFrameworkCore_Storage_Internal.RelationalTypeMapping["ConfigureParameter"] & ((parameter: DbParameter) => void);
+    GenerateNonNullSqlLiteral: Microsoft_EntityFrameworkCore_Storage_Internal.RelationalTypeMapping["GenerateNonNullSqlLiteral"] & ((value: unknown) => string);
 }
 
 
@@ -473,27 +520,31 @@ export const NpgsqlEnumTypeMapping: {
 
 export type NpgsqlEnumTypeMapping = NpgsqlEnumTypeMapping$instance;
 
-export interface NpgsqlEnumTypeMapping_JsonPgEnumReaderWriter_1$instance<T extends NonNullable<unknown>> extends JsonValueReaderWriter_1<T> {
+export interface NpgsqlEnumTypeMapping_JsonPgEnumReaderWriter_1$instance<T extends { readonly __tsonic_type_System_ValueType: never }> extends Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<T> {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_Json_JsonValueReaderWriter: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_Json_JsonValueReaderWriter_1: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlEnumTypeMapping_JsonPgEnumReaderWriter_1: never;
 
-    readonly ConstructorExpression: Expression;
-    FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown | null): T;
-    ToJsonTyped(writer: Utf8JsonWriter, value: T): void;
+    FromJsonTyped: Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<T>["FromJsonTyped"] & ((manager: Utf8JsonReaderManager, existingObject?: unknown | null) => T);
+    ToJsonTyped: Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<T>["ToJsonTyped"] & ((writer: Utf8JsonWriter, value: T) => void);
 }
 
 
 export const NpgsqlEnumTypeMapping_JsonPgEnumReaderWriter_1: {
-    new<T extends NonNullable<unknown>>(): NpgsqlEnumTypeMapping_JsonPgEnumReaderWriter_1<T>;
-    readonly Instance: <T extends NonNullable<unknown>>() => NpgsqlEnumTypeMapping_JsonPgEnumReaderWriter_1<T>;
+    new<T extends { readonly __tsonic_type_System_ValueType: never }>(): NpgsqlEnumTypeMapping_JsonPgEnumReaderWriter_1<T>;
+    readonly Instance: <T extends { readonly __tsonic_type_System_ValueType: never }>() => NpgsqlEnumTypeMapping_JsonPgEnumReaderWriter_1<T>;
 };
 
 
-export type NpgsqlEnumTypeMapping_JsonPgEnumReaderWriter_1<T extends NonNullable<unknown>> = NpgsqlEnumTypeMapping_JsonPgEnumReaderWriter_1$instance<T>;
+export type NpgsqlEnumTypeMapping_JsonPgEnumReaderWriter_1<T extends { readonly __tsonic_type_System_ValueType: never }> = NpgsqlEnumTypeMapping_JsonPgEnumReaderWriter_1$instance<T>;
 
-export interface NpgsqlEStringTypeMapping$instance extends StringTypeMapping {
+export interface NpgsqlEStringTypeMapping$instance extends Microsoft_EntityFrameworkCore_Storage_Internal.StringTypeMapping {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_CoreTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_RelationalTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_StringTypeMapping: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlEStringTypeMapping: never;
 
-    GenerateNonNullSqlLiteral(value: unknown): string;
+    GenerateNonNullSqlLiteral: Microsoft_EntityFrameworkCore_Storage_Internal.StringTypeMapping["GenerateNonNullSqlLiteral"] & ((value: unknown) => string);
 }
 
 
@@ -505,11 +556,14 @@ export const NpgsqlEStringTypeMapping: {
 
 export type NpgsqlEStringTypeMapping = NpgsqlEStringTypeMapping$instance;
 
-export interface NpgsqlFloatTypeMapping$instance extends FloatTypeMapping {
+export interface NpgsqlFloatTypeMapping$instance extends Microsoft_EntityFrameworkCore_Storage_Internal.FloatTypeMapping {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_CoreTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_FloatTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_RelationalTypeMapping: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlFloatTypeMapping: never;
 
-    Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
-    GenerateNonNullSqlLiteral(value: unknown): string;
+    Clone: Microsoft_EntityFrameworkCore_Storage_Internal.FloatTypeMapping["Clone"] & ((parameters: RelationalTypeMapping_RelationalTypeMappingParameters) => RelationalTypeMapping);
+    GenerateNonNullSqlLiteral: Microsoft_EntityFrameworkCore_Storage_Internal.FloatTypeMapping["GenerateNonNullSqlLiteral"] & ((value: unknown) => string);
 }
 
 
@@ -521,13 +575,16 @@ export const NpgsqlFloatTypeMapping: {
 
 export type NpgsqlFloatTypeMapping = NpgsqlFloatTypeMapping$instance;
 
-export interface NpgsqlHstoreTypeMapping$instance extends NpgsqlTypeMapping$instance, INpgsqlTypeMapping$instance {
+export interface NpgsqlHstoreTypeMapping$instance extends NpgsqlTypeMapping$instance {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_CoreTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_RelationalTypeMapping: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlHstoreTypeMapping: never;
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlTypeMapping: never;
 
     readonly __tsonic_iface_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_INpgsqlTypeMapping: never;
 
-    Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
-    GenerateNonNullSqlLiteral(value: unknown): string;
+    Clone: NpgsqlTypeMapping$instance["Clone"] & ((parameters: RelationalTypeMapping_RelationalTypeMappingParameters) => RelationalTypeMapping);
+    GenerateNonNullSqlLiteral: NpgsqlTypeMapping$instance["GenerateNonNullSqlLiteral"] & ((value: unknown) => string);
 }
 
 
@@ -544,14 +601,17 @@ export interface __NpgsqlHstoreTypeMapping$views {
 export type NpgsqlHstoreTypeMapping = NpgsqlHstoreTypeMapping$instance & __NpgsqlHstoreTypeMapping$views;
 
 
-export interface NpgsqlInetTypeMapping$instance extends NpgsqlTypeMapping$instance, INpgsqlTypeMapping$instance {
+export interface NpgsqlInetTypeMapping$instance extends NpgsqlTypeMapping$instance {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_CoreTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_RelationalTypeMapping: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlInetTypeMapping: never;
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlTypeMapping: never;
 
     readonly __tsonic_iface_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_INpgsqlTypeMapping: never;
 
-    Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
-    GenerateCodeLiteral(value: unknown): Expression;
-    GenerateNonNullSqlLiteral(value: unknown): string;
+    Clone: NpgsqlTypeMapping$instance["Clone"] & ((parameters: RelationalTypeMapping_RelationalTypeMappingParameters) => RelationalTypeMapping);
+    GenerateCodeLiteral: NpgsqlTypeMapping$instance["GenerateCodeLiteral"] & ((value: unknown) => Expression);
+    GenerateNonNullSqlLiteral: NpgsqlTypeMapping$instance["GenerateNonNullSqlLiteral"] & ((value: unknown) => string);
 }
 
 
@@ -568,12 +628,13 @@ export interface __NpgsqlInetTypeMapping$views {
 export type NpgsqlInetTypeMapping = NpgsqlInetTypeMapping$instance & __NpgsqlInetTypeMapping$views;
 
 
-export interface NpgsqlInetTypeMapping_JsonIPAddressReaderWriter$instance extends JsonValueReaderWriter_1<IPAddress> {
+export interface NpgsqlInetTypeMapping_JsonIPAddressReaderWriter$instance extends Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<IPAddress> {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_Json_JsonValueReaderWriter: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_Json_JsonValueReaderWriter_1: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlInetTypeMapping_JsonIPAddressReaderWriter: never;
 
-    readonly ConstructorExpression: Expression;
-    FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown | null): IPAddress;
-    ToJsonTyped(writer: Utf8JsonWriter, value: IPAddress): void;
+    FromJsonTyped: Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<IPAddress>["FromJsonTyped"] & ((manager: Utf8JsonReaderManager, existingObject?: unknown | null) => IPAddress);
+    ToJsonTyped: Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<IPAddress>["ToJsonTyped"] & ((writer: Utf8JsonWriter, value: IPAddress) => void);
 }
 
 
@@ -585,12 +646,13 @@ export const NpgsqlInetTypeMapping_JsonIPAddressReaderWriter: {
 
 export type NpgsqlInetTypeMapping_JsonIPAddressReaderWriter = NpgsqlInetTypeMapping_JsonIPAddressReaderWriter$instance;
 
-export interface NpgsqlInetTypeMapping_JsonNpgsqlInetReaderWriter$instance extends JsonValueReaderWriter_1<NpgsqlInet> {
+export interface NpgsqlInetTypeMapping_JsonNpgsqlInetReaderWriter$instance extends Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<NpgsqlInet> {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_Json_JsonValueReaderWriter: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_Json_JsonValueReaderWriter_1: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlInetTypeMapping_JsonNpgsqlInetReaderWriter: never;
 
-    readonly ConstructorExpression: Expression;
-    FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown | null): NpgsqlInet;
-    ToJsonTyped(writer: Utf8JsonWriter, value: NpgsqlInet): void;
+    FromJsonTyped: Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<NpgsqlInet>["FromJsonTyped"] & ((manager: Utf8JsonReaderManager, existingObject?: unknown | null) => NpgsqlInet);
+    ToJsonTyped: Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<NpgsqlInet>["ToJsonTyped"] & ((writer: Utf8JsonWriter, value: NpgsqlInet) => void);
 }
 
 
@@ -602,15 +664,18 @@ export const NpgsqlInetTypeMapping_JsonNpgsqlInetReaderWriter: {
 
 export type NpgsqlInetTypeMapping_JsonNpgsqlInetReaderWriter = NpgsqlInetTypeMapping_JsonNpgsqlInetReaderWriter$instance;
 
-export interface NpgsqlIntervalTypeMapping$instance extends NpgsqlTypeMapping$instance, INpgsqlTypeMapping$instance {
+export interface NpgsqlIntervalTypeMapping$instance extends NpgsqlTypeMapping$instance {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_CoreTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_RelationalTypeMapping: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlIntervalTypeMapping: never;
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlTypeMapping: never;
 
     readonly __tsonic_iface_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_INpgsqlTypeMapping: never;
 
-    Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
-    GenerateEmbeddedNonNullSqlLiteral(value: unknown): string;
-    GenerateNonNullSqlLiteral(value: unknown): string;
-    ProcessStoreType(parameters: RelationalTypeMapping_RelationalTypeMappingParameters, storeType: string, _: string): string;
+    Clone: NpgsqlTypeMapping$instance["Clone"] & ((parameters: RelationalTypeMapping_RelationalTypeMappingParameters) => RelationalTypeMapping);
+    GenerateEmbeddedNonNullSqlLiteral: NpgsqlTypeMapping$instance["GenerateEmbeddedNonNullSqlLiteral"] & ((value: unknown) => string);
+    GenerateNonNullSqlLiteral: NpgsqlTypeMapping$instance["GenerateNonNullSqlLiteral"] & ((value: unknown) => string);
+    ProcessStoreType: NpgsqlTypeMapping$instance["ProcessStoreType"] & ((parameters: RelationalTypeMapping_RelationalTypeMappingParameters, storeType: string, _: string) => string);
 }
 
 
@@ -629,12 +694,13 @@ export interface __NpgsqlIntervalTypeMapping$views {
 export type NpgsqlIntervalTypeMapping = NpgsqlIntervalTypeMapping$instance & __NpgsqlIntervalTypeMapping$views;
 
 
-export interface NpgsqlIntervalTypeMapping_NpgsqlJsonTimeSpanReaderWriter$instance extends JsonValueReaderWriter_1<TimeSpan> {
+export interface NpgsqlIntervalTypeMapping_NpgsqlJsonTimeSpanReaderWriter$instance extends Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<TimeSpan> {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_Json_JsonValueReaderWriter: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_Json_JsonValueReaderWriter_1: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlIntervalTypeMapping_NpgsqlJsonTimeSpanReaderWriter: never;
 
-    readonly ConstructorExpression: Expression;
-    FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown | null): TimeSpan;
-    ToJsonTyped(writer: Utf8JsonWriter, value: TimeSpan): void;
+    FromJsonTyped: Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<TimeSpan>["FromJsonTyped"] & ((manager: Utf8JsonReaderManager, existingObject?: unknown | null) => TimeSpan);
+    ToJsonTyped: Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<TimeSpan>["ToJsonTyped"] & ((writer: Utf8JsonWriter, value: TimeSpan) => void);
 }
 
 
@@ -646,16 +712,19 @@ export const NpgsqlIntervalTypeMapping_NpgsqlJsonTimeSpanReaderWriter: {
 
 export type NpgsqlIntervalTypeMapping_NpgsqlJsonTimeSpanReaderWriter = NpgsqlIntervalTypeMapping_NpgsqlJsonTimeSpanReaderWriter$instance;
 
-export interface NpgsqlJsonTypeMapping$instance extends NpgsqlTypeMapping$instance, INpgsqlTypeMapping$instance {
+export interface NpgsqlJsonTypeMapping$instance extends NpgsqlTypeMapping$instance {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_CoreTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_RelationalTypeMapping: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlJsonTypeMapping: never;
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlTypeMapping: never;
 
     readonly __tsonic_iface_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_INpgsqlTypeMapping: never;
 
     readonly IsJsonb: boolean;
-    Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
+    Clone: NpgsqlTypeMapping$instance["Clone"] & ((parameters: RelationalTypeMapping_RelationalTypeMappingParameters) => RelationalTypeMapping);
     EscapeSqlLiteral(literal: string): string;
-    GenerateCodeLiteral(value: unknown): Expression;
-    GenerateNonNullSqlLiteral(value: unknown): string;
+    GenerateCodeLiteral: NpgsqlTypeMapping$instance["GenerateCodeLiteral"] & ((value: unknown) => Expression);
+    GenerateNonNullSqlLiteral: NpgsqlTypeMapping$instance["GenerateNonNullSqlLiteral"] & ((value: unknown) => string);
 }
 
 
@@ -672,14 +741,17 @@ export interface __NpgsqlJsonTypeMapping$views {
 export type NpgsqlJsonTypeMapping = NpgsqlJsonTypeMapping$instance & __NpgsqlJsonTypeMapping$views;
 
 
-export interface NpgsqlLegacyCidrTypeMapping$instance extends NpgsqlTypeMapping$instance, INpgsqlTypeMapping$instance {
+export interface NpgsqlLegacyCidrTypeMapping$instance extends NpgsqlTypeMapping$instance {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_CoreTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_RelationalTypeMapping: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlLegacyCidrTypeMapping: never;
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlTypeMapping: never;
 
     readonly __tsonic_iface_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_INpgsqlTypeMapping: never;
 
-    Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
-    GenerateCodeLiteral(value: unknown): Expression;
-    GenerateNonNullSqlLiteral(value: unknown): string;
+    Clone: NpgsqlTypeMapping$instance["Clone"] & ((parameters: RelationalTypeMapping_RelationalTypeMappingParameters) => RelationalTypeMapping);
+    GenerateCodeLiteral: NpgsqlTypeMapping$instance["GenerateCodeLiteral"] & ((value: unknown) => Expression);
+    GenerateNonNullSqlLiteral: NpgsqlTypeMapping$instance["GenerateNonNullSqlLiteral"] & ((value: unknown) => string);
 }
 
 
@@ -696,12 +768,13 @@ export interface __NpgsqlLegacyCidrTypeMapping$views {
 export type NpgsqlLegacyCidrTypeMapping = NpgsqlLegacyCidrTypeMapping$instance & __NpgsqlLegacyCidrTypeMapping$views;
 
 
-export interface NpgsqlLegacyCidrTypeMapping_JsonCidrLegacyReaderWriter$instance extends JsonValueReaderWriter_1<NpgsqlCidr> {
+export interface NpgsqlLegacyCidrTypeMapping_JsonCidrLegacyReaderWriter$instance extends Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<NpgsqlCidr> {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_Json_JsonValueReaderWriter: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_Json_JsonValueReaderWriter_1: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlLegacyCidrTypeMapping_JsonCidrLegacyReaderWriter: never;
 
-    readonly ConstructorExpression: Expression;
-    FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown | null): NpgsqlCidr;
-    ToJsonTyped(writer: Utf8JsonWriter, value: NpgsqlCidr): void;
+    FromJsonTyped: Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<NpgsqlCidr>["FromJsonTyped"] & ((manager: Utf8JsonReaderManager, existingObject?: unknown | null) => NpgsqlCidr);
+    ToJsonTyped: Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<NpgsqlCidr>["ToJsonTyped"] & ((writer: Utf8JsonWriter, value: NpgsqlCidr) => void);
 }
 
 
@@ -713,14 +786,17 @@ export const NpgsqlLegacyCidrTypeMapping_JsonCidrLegacyReaderWriter: {
 
 export type NpgsqlLegacyCidrTypeMapping_JsonCidrLegacyReaderWriter = NpgsqlLegacyCidrTypeMapping_JsonCidrLegacyReaderWriter$instance;
 
-export interface NpgsqlLineSegmentTypeMapping$instance extends NpgsqlTypeMapping$instance, INpgsqlTypeMapping$instance {
+export interface NpgsqlLineSegmentTypeMapping$instance extends NpgsqlTypeMapping$instance {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_CoreTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_RelationalTypeMapping: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlLineSegmentTypeMapping: never;
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlTypeMapping: never;
 
     readonly __tsonic_iface_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_INpgsqlTypeMapping: never;
 
-    Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
-    GenerateCodeLiteral(value: unknown): Expression;
-    GenerateNonNullSqlLiteral(value: unknown): string;
+    Clone: NpgsqlTypeMapping$instance["Clone"] & ((parameters: RelationalTypeMapping_RelationalTypeMappingParameters) => RelationalTypeMapping);
+    GenerateCodeLiteral: NpgsqlTypeMapping$instance["GenerateCodeLiteral"] & ((value: unknown) => Expression);
+    GenerateNonNullSqlLiteral: NpgsqlTypeMapping$instance["GenerateNonNullSqlLiteral"] & ((value: unknown) => string);
 }
 
 
@@ -737,14 +813,17 @@ export interface __NpgsqlLineSegmentTypeMapping$views {
 export type NpgsqlLineSegmentTypeMapping = NpgsqlLineSegmentTypeMapping$instance & __NpgsqlLineSegmentTypeMapping$views;
 
 
-export interface NpgsqlLineTypeMapping$instance extends NpgsqlTypeMapping$instance, INpgsqlTypeMapping$instance {
+export interface NpgsqlLineTypeMapping$instance extends NpgsqlTypeMapping$instance {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_CoreTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_RelationalTypeMapping: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlLineTypeMapping: never;
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlTypeMapping: never;
 
     readonly __tsonic_iface_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_INpgsqlTypeMapping: never;
 
-    Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
-    GenerateCodeLiteral(value: unknown): Expression;
-    GenerateNonNullSqlLiteral(value: unknown): string;
+    Clone: NpgsqlTypeMapping$instance["Clone"] & ((parameters: RelationalTypeMapping_RelationalTypeMappingParameters) => RelationalTypeMapping);
+    GenerateCodeLiteral: NpgsqlTypeMapping$instance["GenerateCodeLiteral"] & ((value: unknown) => Expression);
+    GenerateNonNullSqlLiteral: NpgsqlTypeMapping$instance["GenerateNonNullSqlLiteral"] & ((value: unknown) => string);
 }
 
 
@@ -761,14 +840,17 @@ export interface __NpgsqlLineTypeMapping$views {
 export type NpgsqlLineTypeMapping = NpgsqlLineTypeMapping$instance & __NpgsqlLineTypeMapping$views;
 
 
-export interface NpgsqlLTreeTypeMapping$instance extends NpgsqlStringTypeMapping$instance, INpgsqlTypeMapping$instance {
+export interface NpgsqlLTreeTypeMapping$instance extends NpgsqlStringTypeMapping$instance {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_CoreTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_RelationalTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_StringTypeMapping: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlLTreeTypeMapping: never;
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlStringTypeMapping: never;
 
     readonly __tsonic_iface_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_INpgsqlTypeMapping: never;
 
-    Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
-    Clone(npgsqlDbType: NpgsqlDbType): NpgsqlStringTypeMapping;
-    GenerateCodeLiteral(value: unknown): Expression;
+    Clone: NpgsqlStringTypeMapping$instance["Clone"] & ((npgsqlDbType: NpgsqlDbType) => NpgsqlStringTypeMapping) & ((parameters: RelationalTypeMapping_RelationalTypeMappingParameters) => RelationalTypeMapping);
+    GenerateCodeLiteral: NpgsqlStringTypeMapping$instance["GenerateCodeLiteral"] & ((value: unknown) => Expression);
 }
 
 
@@ -784,12 +866,13 @@ export interface __NpgsqlLTreeTypeMapping$views {
 export type NpgsqlLTreeTypeMapping = NpgsqlLTreeTypeMapping$instance & __NpgsqlLTreeTypeMapping$views;
 
 
-export interface NpgsqlLTreeTypeMapping_JsonLTreeReaderWriter$instance extends JsonValueReaderWriter_1<LTree> {
+export interface NpgsqlLTreeTypeMapping_JsonLTreeReaderWriter$instance extends Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<LTree> {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_Json_JsonValueReaderWriter: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_Json_JsonValueReaderWriter_1: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlLTreeTypeMapping_JsonLTreeReaderWriter: never;
 
-    readonly ConstructorExpression: Expression;
-    FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown | null): LTree;
-    ToJsonTyped(writer: Utf8JsonWriter, value: LTree): void;
+    FromJsonTyped: Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<LTree>["FromJsonTyped"] & ((manager: Utf8JsonReaderManager, existingObject?: unknown | null) => LTree);
+    ToJsonTyped: Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<LTree>["ToJsonTyped"] & ((writer: Utf8JsonWriter, value: LTree) => void);
 }
 
 
@@ -801,14 +884,17 @@ export const NpgsqlLTreeTypeMapping_JsonLTreeReaderWriter: {
 
 export type NpgsqlLTreeTypeMapping_JsonLTreeReaderWriter = NpgsqlLTreeTypeMapping_JsonLTreeReaderWriter$instance;
 
-export interface NpgsqlMacaddr8TypeMapping$instance extends NpgsqlTypeMapping$instance, INpgsqlTypeMapping$instance {
+export interface NpgsqlMacaddr8TypeMapping$instance extends NpgsqlTypeMapping$instance {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_CoreTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_RelationalTypeMapping: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlMacaddr8TypeMapping: never;
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlTypeMapping: never;
 
     readonly __tsonic_iface_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_INpgsqlTypeMapping: never;
 
-    Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
-    GenerateCodeLiteral(value: unknown): Expression;
-    GenerateNonNullSqlLiteral(value: unknown): string;
+    Clone: NpgsqlTypeMapping$instance["Clone"] & ((parameters: RelationalTypeMapping_RelationalTypeMappingParameters) => RelationalTypeMapping);
+    GenerateCodeLiteral: NpgsqlTypeMapping$instance["GenerateCodeLiteral"] & ((value: unknown) => Expression);
+    GenerateNonNullSqlLiteral: NpgsqlTypeMapping$instance["GenerateNonNullSqlLiteral"] & ((value: unknown) => string);
 }
 
 
@@ -825,14 +911,17 @@ export interface __NpgsqlMacaddr8TypeMapping$views {
 export type NpgsqlMacaddr8TypeMapping = NpgsqlMacaddr8TypeMapping$instance & __NpgsqlMacaddr8TypeMapping$views;
 
 
-export interface NpgsqlMacaddrTypeMapping$instance extends NpgsqlTypeMapping$instance, INpgsqlTypeMapping$instance {
+export interface NpgsqlMacaddrTypeMapping$instance extends NpgsqlTypeMapping$instance {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_CoreTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_RelationalTypeMapping: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlMacaddrTypeMapping: never;
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlTypeMapping: never;
 
     readonly __tsonic_iface_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_INpgsqlTypeMapping: never;
 
-    Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
-    GenerateCodeLiteral(value: unknown): Expression;
-    GenerateNonNullSqlLiteral(value: unknown): string;
+    Clone: NpgsqlTypeMapping$instance["Clone"] & ((parameters: RelationalTypeMapping_RelationalTypeMappingParameters) => RelationalTypeMapping);
+    GenerateCodeLiteral: NpgsqlTypeMapping$instance["GenerateCodeLiteral"] & ((value: unknown) => Expression);
+    GenerateNonNullSqlLiteral: NpgsqlTypeMapping$instance["GenerateNonNullSqlLiteral"] & ((value: unknown) => string);
 }
 
 
@@ -849,11 +938,14 @@ export interface __NpgsqlMacaddrTypeMapping$views {
 export type NpgsqlMacaddrTypeMapping = NpgsqlMacaddrTypeMapping$instance & __NpgsqlMacaddrTypeMapping$views;
 
 
-export interface NpgsqlMoneyTypeMapping$instance extends DecimalTypeMapping {
+export interface NpgsqlMoneyTypeMapping$instance extends Microsoft_EntityFrameworkCore_Storage_Internal.DecimalTypeMapping {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_CoreTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_DecimalTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_RelationalTypeMapping: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlMoneyTypeMapping: never;
 
-    Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
-    GenerateNonNullSqlLiteral(value: unknown): string;
+    Clone: Microsoft_EntityFrameworkCore_Storage_Internal.DecimalTypeMapping["Clone"] & ((parameters: RelationalTypeMapping_RelationalTypeMappingParameters) => RelationalTypeMapping);
+    GenerateNonNullSqlLiteral: Microsoft_EntityFrameworkCore_Storage_Internal.DecimalTypeMapping["GenerateNonNullSqlLiteral"] & ((value: unknown) => string);
 }
 
 
@@ -865,16 +957,18 @@ export const NpgsqlMoneyTypeMapping: {
 
 export type NpgsqlMoneyTypeMapping = NpgsqlMoneyTypeMapping$instance;
 
-export interface NpgsqlMultirangeTypeMapping$instance extends RelationalTypeMapping {
+export interface NpgsqlMultirangeTypeMapping$instance extends Microsoft_EntityFrameworkCore_Storage_Internal.RelationalTypeMapping {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_CoreTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_RelationalTypeMapping: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlMultirangeTypeMapping: never;
 
     readonly NpgsqlDbType: NpgsqlDbType;
     readonly RangeMapping: NpgsqlRangeTypeMapping;
     readonly SubtypeMapping: RelationalTypeMapping;
-    Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
-    ConfigureParameter(parameter: DbParameter): void;
-    GenerateCodeLiteral(value: unknown): Expression;
-    GenerateNonNullSqlLiteral(value: unknown): string;
+    Clone: Microsoft_EntityFrameworkCore_Storage_Internal.RelationalTypeMapping["Clone"] & ((parameters: RelationalTypeMapping_RelationalTypeMappingParameters) => RelationalTypeMapping);
+    ConfigureParameter: Microsoft_EntityFrameworkCore_Storage_Internal.RelationalTypeMapping["ConfigureParameter"] & ((parameter: DbParameter) => void);
+    GenerateCodeLiteral: Microsoft_EntityFrameworkCore_Storage_Internal.RelationalTypeMapping["GenerateCodeLiteral"] & ((value: unknown) => Expression);
+    GenerateNonNullSqlLiteral: Microsoft_EntityFrameworkCore_Storage_Internal.RelationalTypeMapping["GenerateNonNullSqlLiteral"] & ((value: unknown) => string);
 }
 
 
@@ -886,14 +980,17 @@ export const NpgsqlMultirangeTypeMapping: {
 
 export type NpgsqlMultirangeTypeMapping = NpgsqlMultirangeTypeMapping$instance;
 
-export interface NpgsqlPathTypeMapping$instance extends NpgsqlTypeMapping$instance, INpgsqlTypeMapping$instance {
+export interface NpgsqlPathTypeMapping$instance extends NpgsqlTypeMapping$instance {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_CoreTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_RelationalTypeMapping: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlPathTypeMapping: never;
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlTypeMapping: never;
 
     readonly __tsonic_iface_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_INpgsqlTypeMapping: never;
 
-    Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
-    GenerateCodeLiteral(value: unknown): Expression;
-    GenerateNonNullSqlLiteral(value: unknown): string;
+    Clone: NpgsqlTypeMapping$instance["Clone"] & ((parameters: RelationalTypeMapping_RelationalTypeMappingParameters) => RelationalTypeMapping);
+    GenerateCodeLiteral: NpgsqlTypeMapping$instance["GenerateCodeLiteral"] & ((value: unknown) => Expression);
+    GenerateNonNullSqlLiteral: NpgsqlTypeMapping$instance["GenerateNonNullSqlLiteral"] & ((value: unknown) => string);
 }
 
 
@@ -910,14 +1007,17 @@ export interface __NpgsqlPathTypeMapping$views {
 export type NpgsqlPathTypeMapping = NpgsqlPathTypeMapping$instance & __NpgsqlPathTypeMapping$views;
 
 
-export interface NpgsqlPgLsnTypeMapping$instance extends NpgsqlTypeMapping$instance, INpgsqlTypeMapping$instance {
+export interface NpgsqlPgLsnTypeMapping$instance extends NpgsqlTypeMapping$instance {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_CoreTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_RelationalTypeMapping: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlPgLsnTypeMapping: never;
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlTypeMapping: never;
 
     readonly __tsonic_iface_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_INpgsqlTypeMapping: never;
 
-    Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
-    GenerateCodeLiteral(value: unknown): Expression;
-    GenerateNonNullSqlLiteral(value: unknown): string;
+    Clone: NpgsqlTypeMapping$instance["Clone"] & ((parameters: RelationalTypeMapping_RelationalTypeMappingParameters) => RelationalTypeMapping);
+    GenerateCodeLiteral: NpgsqlTypeMapping$instance["GenerateCodeLiteral"] & ((value: unknown) => Expression);
+    GenerateNonNullSqlLiteral: NpgsqlTypeMapping$instance["GenerateNonNullSqlLiteral"] & ((value: unknown) => string);
 }
 
 
@@ -934,12 +1034,13 @@ export interface __NpgsqlPgLsnTypeMapping$views {
 export type NpgsqlPgLsnTypeMapping = NpgsqlPgLsnTypeMapping$instance & __NpgsqlPgLsnTypeMapping$views;
 
 
-export interface NpgsqlPgLsnTypeMapping_JsonLogSequenceNumberReaderWriter$instance extends JsonValueReaderWriter_1<NpgsqlLogSequenceNumber> {
+export interface NpgsqlPgLsnTypeMapping_JsonLogSequenceNumberReaderWriter$instance extends Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<NpgsqlLogSequenceNumber> {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_Json_JsonValueReaderWriter: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_Json_JsonValueReaderWriter_1: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlPgLsnTypeMapping_JsonLogSequenceNumberReaderWriter: never;
 
-    readonly ConstructorExpression: Expression;
-    FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown | null): NpgsqlLogSequenceNumber;
-    ToJsonTyped(writer: Utf8JsonWriter, value: NpgsqlLogSequenceNumber): void;
+    FromJsonTyped: Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<NpgsqlLogSequenceNumber>["FromJsonTyped"] & ((manager: Utf8JsonReaderManager, existingObject?: unknown | null) => NpgsqlLogSequenceNumber);
+    ToJsonTyped: Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<NpgsqlLogSequenceNumber>["ToJsonTyped"] & ((writer: Utf8JsonWriter, value: NpgsqlLogSequenceNumber) => void);
 }
 
 
@@ -950,14 +1051,17 @@ export const NpgsqlPgLsnTypeMapping_JsonLogSequenceNumberReaderWriter: {
 
 export type NpgsqlPgLsnTypeMapping_JsonLogSequenceNumberReaderWriter = NpgsqlPgLsnTypeMapping_JsonLogSequenceNumberReaderWriter$instance;
 
-export interface NpgsqlPointTypeMapping$instance extends NpgsqlTypeMapping$instance, INpgsqlTypeMapping$instance {
+export interface NpgsqlPointTypeMapping$instance extends NpgsqlTypeMapping$instance {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_CoreTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_RelationalTypeMapping: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlPointTypeMapping: never;
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlTypeMapping: never;
 
     readonly __tsonic_iface_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_INpgsqlTypeMapping: never;
 
-    Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
-    GenerateCodeLiteral(value: unknown): Expression;
-    GenerateNonNullSqlLiteral(value: unknown): string;
+    Clone: NpgsqlTypeMapping$instance["Clone"] & ((parameters: RelationalTypeMapping_RelationalTypeMappingParameters) => RelationalTypeMapping);
+    GenerateCodeLiteral: NpgsqlTypeMapping$instance["GenerateCodeLiteral"] & ((value: unknown) => Expression);
+    GenerateNonNullSqlLiteral: NpgsqlTypeMapping$instance["GenerateNonNullSqlLiteral"] & ((value: unknown) => string);
 }
 
 
@@ -974,14 +1078,17 @@ export interface __NpgsqlPointTypeMapping$views {
 export type NpgsqlPointTypeMapping = NpgsqlPointTypeMapping$instance & __NpgsqlPointTypeMapping$views;
 
 
-export interface NpgsqlPolygonTypeMapping$instance extends NpgsqlTypeMapping$instance, INpgsqlTypeMapping$instance {
+export interface NpgsqlPolygonTypeMapping$instance extends NpgsqlTypeMapping$instance {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_CoreTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_RelationalTypeMapping: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlPolygonTypeMapping: never;
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlTypeMapping: never;
 
     readonly __tsonic_iface_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_INpgsqlTypeMapping: never;
 
-    Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
-    GenerateCodeLiteral(value: unknown): Expression;
-    GenerateNonNullSqlLiteral(value: unknown): string;
+    Clone: NpgsqlTypeMapping$instance["Clone"] & ((parameters: RelationalTypeMapping_RelationalTypeMappingParameters) => RelationalTypeMapping);
+    GenerateCodeLiteral: NpgsqlTypeMapping$instance["GenerateCodeLiteral"] & ((value: unknown) => Expression);
+    GenerateNonNullSqlLiteral: NpgsqlTypeMapping$instance["GenerateNonNullSqlLiteral"] & ((value: unknown) => string);
 }
 
 
@@ -998,24 +1105,26 @@ export interface __NpgsqlPolygonTypeMapping$views {
 export type NpgsqlPolygonTypeMapping = NpgsqlPolygonTypeMapping$instance & __NpgsqlPolygonTypeMapping$views;
 
 
-export interface NpgsqlRangeTypeMapping$instance extends NpgsqlTypeMapping$instance, INpgsqlTypeMapping$instance {
+export interface NpgsqlRangeTypeMapping$instance extends NpgsqlTypeMapping$instance {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_CoreTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_RelationalTypeMapping: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlRangeTypeMapping: never;
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlTypeMapping: never;
 
     readonly __tsonic_iface_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_INpgsqlTypeMapping: never;
 
     readonly SubtypeMapping: RelationalTypeMapping;
     get UnquotedStoreType(): string | null;
     set UnquotedStoreType(value: string | null);
-    Clone(npgsqlDbType: NpgsqlDbType, subtypeTypeMapping: RelationalTypeMapping): NpgsqlRangeTypeMapping;
-    Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
-    ConfigureParameter(parameter: DbParameter): void;
-    GenerateCodeLiteral(value: unknown): Expression;
-    GenerateEmbeddedNonNullSqlLiteral(value: unknown): string;
-    GenerateNonNullSqlLiteral(value: unknown): string;
+    Clone: NpgsqlTypeMapping$instance["Clone"] & ((npgsqlDbType: NpgsqlDbType, subtypeTypeMapping: RelationalTypeMapping) => NpgsqlRangeTypeMapping) & ((parameters: RelationalTypeMapping_RelationalTypeMappingParameters) => RelationalTypeMapping);
+    ConfigureParameter: NpgsqlTypeMapping$instance["ConfigureParameter"] & ((parameter: DbParameter) => void);
+    GenerateCodeLiteral: NpgsqlTypeMapping$instance["GenerateCodeLiteral"] & ((value: unknown) => Expression);
+    GenerateEmbeddedNonNullSqlLiteral: NpgsqlTypeMapping$instance["GenerateEmbeddedNonNullSqlLiteral"] & ((value: unknown) => string);
+    GenerateNonNullSqlLiteral: NpgsqlTypeMapping$instance["GenerateNonNullSqlLiteral"] & ((value: unknown) => string);
 }
 
 
-export const NpgsqlRangeTypeMapping: (abstract new(parameters: RelationalTypeMapping_RelationalTypeMappingParameters, npgsqlDbType: NpgsqlDbType, subtypeMapping: RelationalTypeMapping) => NpgsqlRangeTypeMapping) & {
+export const NpgsqlRangeTypeMapping: {
     readonly Default: NpgsqlRangeTypeMapping;
     CreatBuiltInRangeMapping(rangeStoreType: string, rangeClrType: Type, rangeNpgsqlDbType: NpgsqlDbType, subtypeMapping: RelationalTypeMapping): NpgsqlRangeTypeMapping;
     CreatUserDefinedRangeMapping(quotedRangeStoreType: string, unquotedRangeStoreType: string, rangeClrType: Type, subtypeMapping: RelationalTypeMapping): NpgsqlRangeTypeMapping;
@@ -1029,13 +1138,16 @@ export interface __NpgsqlRangeTypeMapping$views {
 export type NpgsqlRangeTypeMapping = NpgsqlRangeTypeMapping$instance & __NpgsqlRangeTypeMapping$views;
 
 
-export interface NpgsqlRegconfigTypeMapping$instance extends NpgsqlTypeMapping$instance, INpgsqlTypeMapping$instance {
+export interface NpgsqlRegconfigTypeMapping$instance extends NpgsqlTypeMapping$instance {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_CoreTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_RelationalTypeMapping: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlRegconfigTypeMapping: never;
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlTypeMapping: never;
 
     readonly __tsonic_iface_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_INpgsqlTypeMapping: never;
 
-    Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
-    GenerateNonNullSqlLiteral(value: unknown): string;
+    Clone: NpgsqlTypeMapping$instance["Clone"] & ((parameters: RelationalTypeMapping_RelationalTypeMappingParameters) => RelationalTypeMapping);
+    GenerateNonNullSqlLiteral: NpgsqlTypeMapping$instance["GenerateNonNullSqlLiteral"] & ((value: unknown) => string);
 }
 
 
@@ -1052,13 +1164,16 @@ export interface __NpgsqlRegconfigTypeMapping$views {
 export type NpgsqlRegconfigTypeMapping = NpgsqlRegconfigTypeMapping$instance & __NpgsqlRegconfigTypeMapping$views;
 
 
-export interface NpgsqlRegdictionaryTypeMapping$instance extends NpgsqlTypeMapping$instance, INpgsqlTypeMapping$instance {
+export interface NpgsqlRegdictionaryTypeMapping$instance extends NpgsqlTypeMapping$instance {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_CoreTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_RelationalTypeMapping: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlRegdictionaryTypeMapping: never;
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlTypeMapping: never;
 
     readonly __tsonic_iface_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_INpgsqlTypeMapping: never;
 
-    Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
-    GenerateNonNullSqlLiteral(value: unknown): string;
+    Clone: NpgsqlTypeMapping$instance["Clone"] & ((parameters: RelationalTypeMapping_RelationalTypeMappingParameters) => RelationalTypeMapping);
+    GenerateNonNullSqlLiteral: NpgsqlTypeMapping$instance["GenerateNonNullSqlLiteral"] & ((value: unknown) => string);
 }
 
 
@@ -1075,12 +1190,14 @@ export interface __NpgsqlRegdictionaryTypeMapping$views {
 export type NpgsqlRegdictionaryTypeMapping = NpgsqlRegdictionaryTypeMapping$instance & __NpgsqlRegdictionaryTypeMapping$views;
 
 
-export interface NpgsqlRowValueTypeMapping$instance extends RelationalTypeMapping {
+export interface NpgsqlRowValueTypeMapping$instance extends Microsoft_EntityFrameworkCore_Storage_Internal.RelationalTypeMapping {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_CoreTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_RelationalTypeMapping: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlRowValueTypeMapping: never;
 
-    Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
-    ConfigureParameter(parameter: DbParameter): void;
-    GenerateNonNullSqlLiteral(value: unknown): string;
+    Clone: Microsoft_EntityFrameworkCore_Storage_Internal.RelationalTypeMapping["Clone"] & ((parameters: RelationalTypeMapping_RelationalTypeMappingParameters) => RelationalTypeMapping);
+    ConfigureParameter: Microsoft_EntityFrameworkCore_Storage_Internal.RelationalTypeMapping["ConfigureParameter"] & ((parameter: DbParameter) => void);
+    GenerateNonNullSqlLiteral: Microsoft_EntityFrameworkCore_Storage_Internal.RelationalTypeMapping["GenerateNonNullSqlLiteral"] & ((value: unknown) => string);
 }
 
 
@@ -1091,15 +1208,17 @@ export const NpgsqlRowValueTypeMapping: {
 
 export type NpgsqlRowValueTypeMapping = NpgsqlRowValueTypeMapping$instance;
 
-export interface NpgsqlStringTypeMapping$instance extends StringTypeMapping, INpgsqlTypeMapping$instance {
+export interface NpgsqlStringTypeMapping$instance extends Microsoft_EntityFrameworkCore_Storage_Internal.StringTypeMapping {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_CoreTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_RelationalTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_StringTypeMapping: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlStringTypeMapping: never;
 
     readonly __tsonic_iface_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_INpgsqlTypeMapping: never;
 
     readonly NpgsqlDbType: NpgsqlDbType;
-    Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
-    Clone(npgsqlDbType: NpgsqlDbType): NpgsqlStringTypeMapping;
-    ConfigureParameter(parameter: DbParameter): void;
+    Clone: Microsoft_EntityFrameworkCore_Storage_Internal.StringTypeMapping["Clone"] & ((npgsqlDbType: NpgsqlDbType) => NpgsqlStringTypeMapping) & ((parameters: RelationalTypeMapping_RelationalTypeMappingParameters) => RelationalTypeMapping);
+    ConfigureParameter: Microsoft_EntityFrameworkCore_Storage_Internal.StringTypeMapping["ConfigureParameter"] & ((parameter: DbParameter) => void);
 }
 
 
@@ -1116,16 +1235,19 @@ export interface __NpgsqlStringTypeMapping$views {
 export type NpgsqlStringTypeMapping = NpgsqlStringTypeMapping$instance & __NpgsqlStringTypeMapping$views;
 
 
-export interface NpgsqlStructuralJsonTypeMapping$instance extends JsonTypeMapping {
+export interface NpgsqlStructuralJsonTypeMapping$instance extends Microsoft_EntityFrameworkCore_Storage_Internal.JsonTypeMapping {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_CoreTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_JsonTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_RelationalTypeMapping: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlStructuralJsonTypeMapping: never;
 
     readonly NpgsqlDbType: NpgsqlDbType;
-    Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
-    ConfigureParameter(parameter: DbParameter): void;
-    CustomizeDataReaderExpression(expression: Expression): Expression;
+    Clone: Microsoft_EntityFrameworkCore_Storage_Internal.JsonTypeMapping["Clone"] & ((parameters: RelationalTypeMapping_RelationalTypeMappingParameters) => RelationalTypeMapping);
+    ConfigureParameter: Microsoft_EntityFrameworkCore_Storage_Internal.JsonTypeMapping["ConfigureParameter"] & ((parameter: DbParameter) => void);
+    CustomizeDataReaderExpression: Microsoft_EntityFrameworkCore_Storage_Internal.JsonTypeMapping["CustomizeDataReaderExpression"] & ((expression: Expression) => Expression);
     EscapeSqlLiteral(literal: string): string;
-    GenerateNonNullSqlLiteral(value: unknown): string;
-    GetDataReaderMethod(): MethodInfo;
+    GenerateNonNullSqlLiteral: Microsoft_EntityFrameworkCore_Storage_Internal.JsonTypeMapping["GenerateNonNullSqlLiteral"] & ((value: unknown) => string);
+    GetDataReaderMethod: Microsoft_EntityFrameworkCore_Storage_Internal.JsonTypeMapping["GetDataReaderMethod"] & (() => MethodInfo);
 }
 
 
@@ -1136,14 +1258,17 @@ export const NpgsqlStructuralJsonTypeMapping: {
 
 export type NpgsqlStructuralJsonTypeMapping = NpgsqlStructuralJsonTypeMapping$instance;
 
-export interface NpgsqlTidTypeMapping$instance extends NpgsqlTypeMapping$instance, INpgsqlTypeMapping$instance {
+export interface NpgsqlTidTypeMapping$instance extends NpgsqlTypeMapping$instance {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_CoreTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_RelationalTypeMapping: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlTidTypeMapping: never;
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlTypeMapping: never;
 
     readonly __tsonic_iface_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_INpgsqlTypeMapping: never;
 
-    Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
-    GenerateCodeLiteral(value: unknown): Expression;
-    GenerateNonNullSqlLiteral(value: unknown): string;
+    Clone: NpgsqlTypeMapping$instance["Clone"] & ((parameters: RelationalTypeMapping_RelationalTypeMappingParameters) => RelationalTypeMapping);
+    GenerateCodeLiteral: NpgsqlTypeMapping$instance["GenerateCodeLiteral"] & ((value: unknown) => Expression);
+    GenerateNonNullSqlLiteral: NpgsqlTypeMapping$instance["GenerateNonNullSqlLiteral"] & ((value: unknown) => string);
 }
 
 
@@ -1160,15 +1285,18 @@ export interface __NpgsqlTidTypeMapping$views {
 export type NpgsqlTidTypeMapping = NpgsqlTidTypeMapping$instance & __NpgsqlTidTypeMapping$views;
 
 
-export interface NpgsqlTimestampTypeMapping$instance extends NpgsqlTypeMapping$instance, INpgsqlTypeMapping$instance {
+export interface NpgsqlTimestampTypeMapping$instance extends NpgsqlTypeMapping$instance {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_CoreTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_RelationalTypeMapping: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlTimestampTypeMapping: never;
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlTypeMapping: never;
 
     readonly __tsonic_iface_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_INpgsqlTypeMapping: never;
 
-    Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
-    GenerateEmbeddedNonNullSqlLiteral(value: unknown): string;
-    GenerateNonNullSqlLiteral(value: unknown): string;
-    ProcessStoreType(parameters: RelationalTypeMapping_RelationalTypeMappingParameters, storeType: string, _: string): string;
+    Clone: NpgsqlTypeMapping$instance["Clone"] & ((parameters: RelationalTypeMapping_RelationalTypeMappingParameters) => RelationalTypeMapping);
+    GenerateEmbeddedNonNullSqlLiteral: NpgsqlTypeMapping$instance["GenerateEmbeddedNonNullSqlLiteral"] & ((value: unknown) => string);
+    GenerateNonNullSqlLiteral: NpgsqlTypeMapping$instance["GenerateNonNullSqlLiteral"] & ((value: unknown) => string);
+    ProcessStoreType: NpgsqlTypeMapping$instance["ProcessStoreType"] & ((parameters: RelationalTypeMapping_RelationalTypeMappingParameters, storeType: string, _: string) => string);
 }
 
 
@@ -1185,12 +1313,13 @@ export interface __NpgsqlTimestampTypeMapping$views {
 export type NpgsqlTimestampTypeMapping = NpgsqlTimestampTypeMapping$instance & __NpgsqlTimestampTypeMapping$views;
 
 
-export interface NpgsqlTimestampTypeMapping_NpgsqlJsonTimestampReaderWriter$instance extends JsonValueReaderWriter_1<DateTime> {
+export interface NpgsqlTimestampTypeMapping_NpgsqlJsonTimestampReaderWriter$instance extends Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<DateTime> {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_Json_JsonValueReaderWriter: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_Json_JsonValueReaderWriter_1: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlTimestampTypeMapping_NpgsqlJsonTimestampReaderWriter: never;
 
-    readonly ConstructorExpression: Expression;
-    FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown | null): DateTime;
-    ToJsonTyped(writer: Utf8JsonWriter, value: DateTime): void;
+    FromJsonTyped: Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<DateTime>["FromJsonTyped"] & ((manager: Utf8JsonReaderManager, existingObject?: unknown | null) => DateTime);
+    ToJsonTyped: Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<DateTime>["ToJsonTyped"] & ((writer: Utf8JsonWriter, value: DateTime) => void);
 }
 
 
@@ -1202,15 +1331,18 @@ export const NpgsqlTimestampTypeMapping_NpgsqlJsonTimestampReaderWriter: {
 
 export type NpgsqlTimestampTypeMapping_NpgsqlJsonTimestampReaderWriter = NpgsqlTimestampTypeMapping_NpgsqlJsonTimestampReaderWriter$instance;
 
-export interface NpgsqlTimestampTzTypeMapping$instance extends NpgsqlTypeMapping$instance, INpgsqlTypeMapping$instance {
+export interface NpgsqlTimestampTzTypeMapping$instance extends NpgsqlTypeMapping$instance {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_CoreTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_RelationalTypeMapping: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlTimestampTzTypeMapping: never;
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlTypeMapping: never;
 
     readonly __tsonic_iface_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_INpgsqlTypeMapping: never;
 
-    Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
-    GenerateEmbeddedNonNullSqlLiteral(value: unknown): string;
-    GenerateNonNullSqlLiteral(value: unknown): string;
-    ProcessStoreType(parameters: RelationalTypeMapping_RelationalTypeMappingParameters, storeType: string, _: string): string;
+    Clone: NpgsqlTypeMapping$instance["Clone"] & ((parameters: RelationalTypeMapping_RelationalTypeMappingParameters) => RelationalTypeMapping);
+    GenerateEmbeddedNonNullSqlLiteral: NpgsqlTypeMapping$instance["GenerateEmbeddedNonNullSqlLiteral"] & ((value: unknown) => string);
+    GenerateNonNullSqlLiteral: NpgsqlTypeMapping$instance["GenerateNonNullSqlLiteral"] & ((value: unknown) => string);
+    ProcessStoreType: NpgsqlTypeMapping$instance["ProcessStoreType"] & ((parameters: RelationalTypeMapping_RelationalTypeMappingParameters, storeType: string, _: string) => string);
 }
 
 
@@ -1227,12 +1359,13 @@ export interface __NpgsqlTimestampTzTypeMapping$views {
 export type NpgsqlTimestampTzTypeMapping = NpgsqlTimestampTzTypeMapping$instance & __NpgsqlTimestampTzTypeMapping$views;
 
 
-export interface NpgsqlTimestampTzTypeMapping_NpgsqlJsonTimestampTzDateTimeOffsetReaderWriter$instance extends JsonValueReaderWriter_1<DateTimeOffset> {
+export interface NpgsqlTimestampTzTypeMapping_NpgsqlJsonTimestampTzDateTimeOffsetReaderWriter$instance extends Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<DateTimeOffset> {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_Json_JsonValueReaderWriter: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_Json_JsonValueReaderWriter_1: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlTimestampTzTypeMapping_NpgsqlJsonTimestampTzDateTimeOffsetReaderWriter: never;
 
-    readonly ConstructorExpression: Expression;
-    FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown | null): DateTimeOffset;
-    ToJsonTyped(writer: Utf8JsonWriter, value: DateTimeOffset): void;
+    FromJsonTyped: Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<DateTimeOffset>["FromJsonTyped"] & ((manager: Utf8JsonReaderManager, existingObject?: unknown | null) => DateTimeOffset);
+    ToJsonTyped: Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<DateTimeOffset>["ToJsonTyped"] & ((writer: Utf8JsonWriter, value: DateTimeOffset) => void);
 }
 
 
@@ -1244,12 +1377,13 @@ export const NpgsqlTimestampTzTypeMapping_NpgsqlJsonTimestampTzDateTimeOffsetRea
 
 export type NpgsqlTimestampTzTypeMapping_NpgsqlJsonTimestampTzDateTimeOffsetReaderWriter = NpgsqlTimestampTzTypeMapping_NpgsqlJsonTimestampTzDateTimeOffsetReaderWriter$instance;
 
-export interface NpgsqlTimestampTzTypeMapping_NpgsqlJsonTimestampTzDateTimeReaderWriter$instance extends JsonValueReaderWriter_1<DateTime> {
+export interface NpgsqlTimestampTzTypeMapping_NpgsqlJsonTimestampTzDateTimeReaderWriter$instance extends Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<DateTime> {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_Json_JsonValueReaderWriter: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_Json_JsonValueReaderWriter_1: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlTimestampTzTypeMapping_NpgsqlJsonTimestampTzDateTimeReaderWriter: never;
 
-    readonly ConstructorExpression: Expression;
-    FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown | null): DateTime;
-    ToJsonTyped(writer: Utf8JsonWriter, value: DateTime): void;
+    FromJsonTyped: Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<DateTime>["FromJsonTyped"] & ((manager: Utf8JsonReaderManager, existingObject?: unknown | null) => DateTime);
+    ToJsonTyped: Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<DateTime>["ToJsonTyped"] & ((writer: Utf8JsonWriter, value: DateTime) => void);
 }
 
 
@@ -1261,15 +1395,18 @@ export const NpgsqlTimestampTzTypeMapping_NpgsqlJsonTimestampTzDateTimeReaderWri
 
 export type NpgsqlTimestampTzTypeMapping_NpgsqlJsonTimestampTzDateTimeReaderWriter = NpgsqlTimestampTzTypeMapping_NpgsqlJsonTimestampTzDateTimeReaderWriter$instance;
 
-export interface NpgsqlTimeTypeMapping$instance extends NpgsqlTypeMapping$instance, INpgsqlTypeMapping$instance {
+export interface NpgsqlTimeTypeMapping$instance extends NpgsqlTypeMapping$instance {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_CoreTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_RelationalTypeMapping: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlTimeTypeMapping: never;
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlTypeMapping: never;
 
     readonly __tsonic_iface_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_INpgsqlTypeMapping: never;
 
-    Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
-    GenerateEmbeddedNonNullSqlLiteral(value: unknown): string;
-    GenerateNonNullSqlLiteral(value: unknown): string;
-    ProcessStoreType(parameters: RelationalTypeMapping_RelationalTypeMappingParameters, storeType: string, _: string): string;
+    Clone: NpgsqlTypeMapping$instance["Clone"] & ((parameters: RelationalTypeMapping_RelationalTypeMappingParameters) => RelationalTypeMapping);
+    GenerateEmbeddedNonNullSqlLiteral: NpgsqlTypeMapping$instance["GenerateEmbeddedNonNullSqlLiteral"] & ((value: unknown) => string);
+    GenerateNonNullSqlLiteral: NpgsqlTypeMapping$instance["GenerateNonNullSqlLiteral"] & ((value: unknown) => string);
+    ProcessStoreType: NpgsqlTypeMapping$instance["ProcessStoreType"] & ((parameters: RelationalTypeMapping_RelationalTypeMappingParameters, storeType: string, _: string) => string);
 }
 
 
@@ -1286,15 +1423,18 @@ export interface __NpgsqlTimeTypeMapping$views {
 export type NpgsqlTimeTypeMapping = NpgsqlTimeTypeMapping$instance & __NpgsqlTimeTypeMapping$views;
 
 
-export interface NpgsqlTimeTzTypeMapping$instance extends NpgsqlTypeMapping$instance, INpgsqlTypeMapping$instance {
+export interface NpgsqlTimeTzTypeMapping$instance extends NpgsqlTypeMapping$instance {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_CoreTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_RelationalTypeMapping: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlTimeTzTypeMapping: never;
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlTypeMapping: never;
 
     readonly __tsonic_iface_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_INpgsqlTypeMapping: never;
 
-    Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
-    GenerateEmbeddedNonNullSqlLiteral(value: unknown): string;
-    GenerateNonNullSqlLiteral(value: unknown): string;
-    ProcessStoreType(parameters: RelationalTypeMapping_RelationalTypeMappingParameters, storeType: string, _: string): string;
+    Clone: NpgsqlTypeMapping$instance["Clone"] & ((parameters: RelationalTypeMapping_RelationalTypeMappingParameters) => RelationalTypeMapping);
+    GenerateEmbeddedNonNullSqlLiteral: NpgsqlTypeMapping$instance["GenerateEmbeddedNonNullSqlLiteral"] & ((value: unknown) => string);
+    GenerateNonNullSqlLiteral: NpgsqlTypeMapping$instance["GenerateNonNullSqlLiteral"] & ((value: unknown) => string);
+    ProcessStoreType: NpgsqlTypeMapping$instance["ProcessStoreType"] & ((parameters: RelationalTypeMapping_RelationalTypeMappingParameters, storeType: string, _: string) => string);
 }
 
 
@@ -1311,12 +1451,13 @@ export interface __NpgsqlTimeTzTypeMapping$views {
 export type NpgsqlTimeTzTypeMapping = NpgsqlTimeTzTypeMapping$instance & __NpgsqlTimeTzTypeMapping$views;
 
 
-export interface NpgsqlTimeTzTypeMapping_JsonTimeTzReaderWriter$instance extends JsonValueReaderWriter_1<DateTimeOffset> {
+export interface NpgsqlTimeTzTypeMapping_JsonTimeTzReaderWriter$instance extends Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<DateTimeOffset> {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_Json_JsonValueReaderWriter: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_Json_JsonValueReaderWriter_1: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlTimeTzTypeMapping_JsonTimeTzReaderWriter: never;
 
-    readonly ConstructorExpression: Expression;
-    FromJsonTyped(manager: Utf8JsonReaderManager, existingObject?: unknown | null): DateTimeOffset;
-    ToJsonTyped(writer: Utf8JsonWriter, value: DateTimeOffset): void;
+    FromJsonTyped: Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<DateTimeOffset>["FromJsonTyped"] & ((manager: Utf8JsonReaderManager, existingObject?: unknown | null) => DateTimeOffset);
+    ToJsonTyped: Microsoft_EntityFrameworkCore_Storage_Json_Internal.JsonValueReaderWriter_1<DateTimeOffset>["ToJsonTyped"] & ((writer: Utf8JsonWriter, value: DateTimeOffset) => void);
 }
 
 
@@ -1327,13 +1468,16 @@ export const NpgsqlTimeTzTypeMapping_JsonTimeTzReaderWriter: {
 
 export type NpgsqlTimeTzTypeMapping_JsonTimeTzReaderWriter = NpgsqlTimeTzTypeMapping_JsonTimeTzReaderWriter$instance;
 
-export interface NpgsqlTsQueryTypeMapping$instance extends NpgsqlTypeMapping$instance, INpgsqlTypeMapping$instance {
+export interface NpgsqlTsQueryTypeMapping$instance extends NpgsqlTypeMapping$instance {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_CoreTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_RelationalTypeMapping: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlTsQueryTypeMapping: never;
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlTypeMapping: never;
 
     readonly __tsonic_iface_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_INpgsqlTypeMapping: never;
 
-    Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
-    GenerateNonNullSqlLiteral(value: unknown): string;
+    Clone: NpgsqlTypeMapping$instance["Clone"] & ((parameters: RelationalTypeMapping_RelationalTypeMappingParameters) => RelationalTypeMapping);
+    GenerateNonNullSqlLiteral: NpgsqlTypeMapping$instance["GenerateNonNullSqlLiteral"] & ((value: unknown) => string);
 }
 
 
@@ -1350,10 +1494,13 @@ export interface __NpgsqlTsQueryTypeMapping$views {
 export type NpgsqlTsQueryTypeMapping = NpgsqlTsQueryTypeMapping$instance & __NpgsqlTsQueryTypeMapping$views;
 
 
-export interface NpgsqlTsRankingNormalizationTypeMapping$instance extends IntTypeMapping {
+export interface NpgsqlTsRankingNormalizationTypeMapping$instance extends Microsoft_EntityFrameworkCore_Storage_Internal.IntTypeMapping {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_CoreTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_IntTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_RelationalTypeMapping: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlTsRankingNormalizationTypeMapping: never;
 
-    Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
+    Clone: Microsoft_EntityFrameworkCore_Storage_Internal.IntTypeMapping["Clone"] & ((parameters: RelationalTypeMapping_RelationalTypeMappingParameters) => RelationalTypeMapping);
 }
 
 
@@ -1365,13 +1512,16 @@ export const NpgsqlTsRankingNormalizationTypeMapping: {
 
 export type NpgsqlTsRankingNormalizationTypeMapping = NpgsqlTsRankingNormalizationTypeMapping$instance;
 
-export interface NpgsqlTsVectorTypeMapping$instance extends NpgsqlTypeMapping$instance, INpgsqlTypeMapping$instance {
+export interface NpgsqlTsVectorTypeMapping$instance extends NpgsqlTypeMapping$instance {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_CoreTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_RelationalTypeMapping: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlTsVectorTypeMapping: never;
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlTypeMapping: never;
 
     readonly __tsonic_iface_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_INpgsqlTypeMapping: never;
 
-    Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
-    GenerateNonNullSqlLiteral(value: unknown): string;
+    Clone: NpgsqlTypeMapping$instance["Clone"] & ((parameters: RelationalTypeMapping_RelationalTypeMappingParameters) => RelationalTypeMapping);
+    GenerateNonNullSqlLiteral: NpgsqlTypeMapping$instance["GenerateNonNullSqlLiteral"] & ((value: unknown) => string);
 }
 
 
@@ -1388,20 +1538,22 @@ export interface __NpgsqlTsVectorTypeMapping$views {
 export type NpgsqlTsVectorTypeMapping = NpgsqlTsVectorTypeMapping$instance & __NpgsqlTsVectorTypeMapping$views;
 
 
-export interface NpgsqlTypeMapping$instance extends RelationalTypeMapping, INpgsqlTypeMapping$instance {
+export interface NpgsqlTypeMapping$instance extends Microsoft_EntityFrameworkCore_Storage_Internal.RelationalTypeMapping {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_CoreTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_RelationalTypeMapping: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlTypeMapping: never;
 
     readonly __tsonic_iface_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_INpgsqlTypeMapping: never;
 
     readonly NpgsqlDbType: NpgsqlDbType;
-    ConfigureParameter(parameter: DbParameter): void;
+    ConfigureParameter: Microsoft_EntityFrameworkCore_Storage_Internal.RelationalTypeMapping["ConfigureParameter"] & ((parameter: DbParameter) => void);
     GenerateEmbeddedNonNullSqlLiteral(value: unknown): string;
     GenerateEmbeddedProviderValueSqlLiteral(value: unknown | null): string;
     GenerateEmbeddedSqlLiteral(value: unknown | null): string;
 }
 
 
-export const NpgsqlTypeMapping: (abstract new(storeType: string, clrType: Type, npgsqlDbType: NpgsqlDbType, jsonValueReaderWriter: JsonValueReaderWriter | null, elementTypeMapping: CoreTypeMapping | null) => NpgsqlTypeMapping) & (abstract new(parameters: RelationalTypeMapping_RelationalTypeMappingParameters, npgsqlDbType: NpgsqlDbType) => NpgsqlTypeMapping) & {
+export const NpgsqlTypeMapping: (abstract new(storeType: string, clrType: Type, npgsqlDbType: NpgsqlDbType, jsonValueReaderWriter: JsonValueReaderWriter | null, elementTypeMapping: CoreTypeMapping | null) => NpgsqlTypeMapping) & {
 };
 
 
@@ -1412,12 +1564,15 @@ export interface __NpgsqlTypeMapping$views {
 export type NpgsqlTypeMapping = NpgsqlTypeMapping$instance & __NpgsqlTypeMapping$views;
 
 
-export interface NpgsqlUIntTypeMapping$instance extends NpgsqlTypeMapping$instance, INpgsqlTypeMapping$instance {
+export interface NpgsqlUIntTypeMapping$instance extends NpgsqlTypeMapping$instance {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_CoreTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_RelationalTypeMapping: never;
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlTypeMapping: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlUIntTypeMapping: never;
 
     readonly __tsonic_iface_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_INpgsqlTypeMapping: never;
 
-    Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
+    Clone: NpgsqlTypeMapping$instance["Clone"] & ((parameters: RelationalTypeMapping_RelationalTypeMappingParameters) => RelationalTypeMapping);
 }
 
 
@@ -1434,12 +1589,15 @@ export interface __NpgsqlUIntTypeMapping$views {
 export type NpgsqlUIntTypeMapping = NpgsqlUIntTypeMapping$instance & __NpgsqlUIntTypeMapping$views;
 
 
-export interface NpgsqlULongTypeMapping$instance extends NpgsqlTypeMapping$instance, INpgsqlTypeMapping$instance {
+export interface NpgsqlULongTypeMapping$instance extends NpgsqlTypeMapping$instance {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_CoreTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_RelationalTypeMapping: never;
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlTypeMapping: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlULongTypeMapping: never;
 
     readonly __tsonic_iface_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_INpgsqlTypeMapping: never;
 
-    Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
+    Clone: NpgsqlTypeMapping$instance["Clone"] & ((parameters: RelationalTypeMapping_RelationalTypeMappingParameters) => RelationalTypeMapping);
 }
 
 
@@ -1456,14 +1614,17 @@ export interface __NpgsqlULongTypeMapping$views {
 export type NpgsqlULongTypeMapping = NpgsqlULongTypeMapping$instance & __NpgsqlULongTypeMapping$views;
 
 
-export interface NpgsqlVarbitTypeMapping$instance extends NpgsqlTypeMapping$instance, INpgsqlTypeMapping$instance {
+export interface NpgsqlVarbitTypeMapping$instance extends NpgsqlTypeMapping$instance {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_CoreTypeMapping: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_RelationalTypeMapping: never;
+    readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlTypeMapping: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_NpgsqlVarbitTypeMapping: never;
 
     readonly __tsonic_iface_Npgsql_EntityFrameworkCore_PostgreSQL_Storage_Internal_Mapping_INpgsqlTypeMapping: never;
 
-    Clone(parameters: RelationalTypeMapping_RelationalTypeMappingParameters): RelationalTypeMapping;
-    GenerateCodeLiteral(value: unknown): Expression;
-    GenerateNonNullSqlLiteral(value: unknown): string;
+    Clone: NpgsqlTypeMapping$instance["Clone"] & ((parameters: RelationalTypeMapping_RelationalTypeMappingParameters) => RelationalTypeMapping);
+    GenerateCodeLiteral: NpgsqlTypeMapping$instance["GenerateCodeLiteral"] & ((value: unknown) => Expression);
+    GenerateNonNullSqlLiteral: NpgsqlTypeMapping$instance["GenerateNonNullSqlLiteral"] & ((value: unknown) => string);
 }
 
 

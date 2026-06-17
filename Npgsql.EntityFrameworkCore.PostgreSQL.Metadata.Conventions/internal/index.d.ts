@@ -21,12 +21,14 @@ import type { IConventionAnnotation, IConventionProperty, IEntityType, IIndex, I
 import type { IRelationalTypeMappingSource, RelationalTypeMapping } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage/internal/index.js";
 import type { ModelBuilder } from "@tsonic/efcore/Microsoft.EntityFrameworkCore/internal/index.js";
 
-export interface NpgsqlConventionSetBuilder$instance extends RelationalConventionSetBuilder {
+export interface NpgsqlConventionSetBuilder$instance extends Microsoft_EntityFrameworkCore_Metadata_Conventions_Infrastructure_Internal.RelationalConventionSetBuilder {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_Conventions_Infrastructure_ProviderConventionSetBuilder: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_Conventions_Infrastructure_RelationalConventionSetBuilder: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Metadata_Conventions_NpgsqlConventionSetBuilder: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_Infrastructure_IProviderConventionSetBuilder: never;
 
-    CreateConventionSet(): ConventionSet;
+    CreateConventionSet: Microsoft_EntityFrameworkCore_Metadata_Conventions_Infrastructure_Internal.RelationalConventionSetBuilder["CreateConventionSet"] & (() => ConventionSet);
 }
 
 
@@ -59,16 +61,18 @@ export const NpgsqlPostgresModelFinalizingConvention: {
 
 export type NpgsqlPostgresModelFinalizingConvention = NpgsqlPostgresModelFinalizingConvention$instance;
 
-export interface NpgsqlRuntimeModelConvention$instance extends RelationalRuntimeModelConvention {
+export interface NpgsqlRuntimeModelConvention$instance extends Microsoft_EntityFrameworkCore_Metadata_Conventions_Internal.RelationalRuntimeModelConvention {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_Conventions_RelationalRuntimeModelConvention: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_Conventions_RuntimeModelConvention: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Metadata_Conventions_NpgsqlRuntimeModelConvention: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IConvention: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IModelFinalizedConvention: never;
 
-    ProcessEntityTypeAnnotations(annotations: Dictionary_2<System_Internal.String, unknown | null>, entityType: IEntityType, runtimeEntityType: RuntimeEntityType, runtime: boolean): void;
-    ProcessIndexAnnotations(annotations: Dictionary_2<System_Internal.String, unknown | null>, index: IIndex, runtimeIndex: RuntimeIndex, runtime: boolean): void;
-    ProcessModelAnnotations(annotations: Dictionary_2<System_Internal.String, unknown | null>, model: IModel, runtimeModel: RuntimeModel, runtime: boolean): void;
-    ProcessPropertyAnnotations(annotations: Dictionary_2<System_Internal.String, unknown | null>, property: IProperty, runtimeProperty: RuntimeProperty, runtime: boolean): void;
+    ProcessEntityTypeAnnotations: Microsoft_EntityFrameworkCore_Metadata_Conventions_Internal.RelationalRuntimeModelConvention["ProcessEntityTypeAnnotations"] & ((annotations: Dictionary_2<System_Internal.String, unknown | null>, entityType: IEntityType, runtimeEntityType: RuntimeEntityType, runtime: boolean) => void);
+    ProcessIndexAnnotations: Microsoft_EntityFrameworkCore_Metadata_Conventions_Internal.RelationalRuntimeModelConvention["ProcessIndexAnnotations"] & ((annotations: Dictionary_2<System_Internal.String, unknown | null>, index: IIndex, runtimeIndex: RuntimeIndex, runtime: boolean) => void);
+    ProcessModelAnnotations: Microsoft_EntityFrameworkCore_Metadata_Conventions_Internal.RelationalRuntimeModelConvention["ProcessModelAnnotations"] & ((annotations: Dictionary_2<System_Internal.String, unknown | null>, model: IModel, runtimeModel: RuntimeModel, runtime: boolean) => void);
+    ProcessPropertyAnnotations: Microsoft_EntityFrameworkCore_Metadata_Conventions_Internal.RelationalRuntimeModelConvention["ProcessPropertyAnnotations"] & ((annotations: Dictionary_2<System_Internal.String, unknown | null>, property: IProperty, runtimeProperty: RuntimeProperty, runtime: boolean) => void);
 }
 
 
@@ -79,17 +83,14 @@ export const NpgsqlRuntimeModelConvention: {
 
 export type NpgsqlRuntimeModelConvention = NpgsqlRuntimeModelConvention$instance;
 
-export interface NpgsqlSharedTableConvention$instance extends SharedTableConvention {
+export interface NpgsqlSharedTableConvention$instance extends Microsoft_EntityFrameworkCore_Metadata_Conventions_Internal.SharedTableConvention {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_Conventions_SharedTableConvention: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Metadata_Conventions_NpgsqlSharedTableConvention: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IConvention: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IModelFinalizingConvention: never;
 
-    readonly CheckConstraintsUniqueAcrossTables: boolean;
-    readonly ForeignKeysUniqueAcrossTables: boolean;
-    readonly IndexesUniqueAcrossTables: boolean;
-    readonly KeysUniqueAcrossTables: boolean;
-    AreCompatible(index: IReadOnlyIndex, duplicateIndex: IReadOnlyIndex, storeObject: StoreObjectIdentifier): boolean;
+    AreCompatible: Microsoft_EntityFrameworkCore_Metadata_Conventions_Internal.SharedTableConvention["AreCompatible"] & ((index: IReadOnlyIndex, duplicateIndex: IReadOnlyIndex, storeObject: StoreObjectIdentifier) => boolean);
 }
 
 
@@ -100,15 +101,16 @@ export const NpgsqlSharedTableConvention: {
 
 export type NpgsqlSharedTableConvention = NpgsqlSharedTableConvention$instance;
 
-export interface NpgsqlStoreGenerationConvention$instance extends StoreGenerationConvention {
+export interface NpgsqlStoreGenerationConvention$instance extends Microsoft_EntityFrameworkCore_Metadata_Conventions_Internal.StoreGenerationConvention {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_Conventions_StoreGenerationConvention: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Metadata_Conventions_NpgsqlStoreGenerationConvention: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IConvention: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IModelFinalizingConvention: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IPropertyAnnotationChangedConvention: never;
 
-    ProcessPropertyAnnotationChanged(propertyBuilder: IConventionPropertyBuilder, name: string, annotation: IConventionAnnotation | null, oldAnnotation: IConventionAnnotation | null, context: IConventionContext_1<IConventionAnnotation>): void;
-    Validate(property: IConventionProperty, storeObject: StoreObjectIdentifier): void;
+    ProcessPropertyAnnotationChanged: Microsoft_EntityFrameworkCore_Metadata_Conventions_Internal.StoreGenerationConvention["ProcessPropertyAnnotationChanged"] & ((propertyBuilder: IConventionPropertyBuilder, name: string, annotation: IConventionAnnotation | null, oldAnnotation: IConventionAnnotation | null, context: IConventionContext_1<IConventionAnnotation>) => void);
+    Validate: Microsoft_EntityFrameworkCore_Metadata_Conventions_Internal.StoreGenerationConvention["Validate"] & ((property: IConventionProperty, storeObject: StoreObjectIdentifier) => void);
 }
 
 
@@ -119,7 +121,9 @@ export const NpgsqlStoreGenerationConvention: {
 
 export type NpgsqlStoreGenerationConvention = NpgsqlStoreGenerationConvention$instance;
 
-export interface NpgsqlValueGenerationConvention$instance extends RelationalValueGenerationConvention {
+export interface NpgsqlValueGenerationConvention$instance extends Microsoft_EntityFrameworkCore_Metadata_Conventions_Internal.RelationalValueGenerationConvention {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_Conventions_RelationalValueGenerationConvention: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_Conventions_ValueGenerationConvention: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Metadata_Conventions_NpgsqlValueGenerationConvention: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IConvention: never;
@@ -132,8 +136,8 @@ export interface NpgsqlValueGenerationConvention$instance extends RelationalValu
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IForeignKeyRemovedConvention: never;
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_Conventions_IPropertyAnnotationChangedConvention: never;
 
-    GetValueGenerated(property: IConventionProperty): Nullable_1<ValueGenerated>;
-    ProcessPropertyAnnotationChanged(propertyBuilder: IConventionPropertyBuilder, name: string, annotation: IConventionAnnotation | null, oldAnnotation: IConventionAnnotation | null, context: IConventionContext_1<IConventionAnnotation>): void;
+    GetValueGenerated: Microsoft_EntityFrameworkCore_Metadata_Conventions_Internal.RelationalValueGenerationConvention["GetValueGenerated"] & ((property: IConventionProperty) => Nullable_1<ValueGenerated>);
+    ProcessPropertyAnnotationChanged: Microsoft_EntityFrameworkCore_Metadata_Conventions_Internal.RelationalValueGenerationConvention["ProcessPropertyAnnotationChanged"] & ((propertyBuilder: IConventionPropertyBuilder, name: string, annotation: IConventionAnnotation | null, oldAnnotation: IConventionAnnotation | null, context: IConventionContext_1<IConventionAnnotation>) => void);
 }
 
 

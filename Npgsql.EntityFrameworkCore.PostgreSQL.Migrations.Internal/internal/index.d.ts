@@ -22,25 +22,24 @@ import type { HistoryRepository, HistoryRepositoryDependencies, HistoryRow, IHis
 import type { IDatabaseCreator, IDatabaseProvider, IExecutionStrategy, IRawSqlCommandBuilder, IRelationalConnection, ISqlGenerationHelper } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage/internal/index.js";
 import type { DbLoggerCategory_Migrations } from "@tsonic/efcore/Microsoft.EntityFrameworkCore/internal/index.js";
 
-export interface NpgsqlHistoryRepository$instance extends HistoryRepository {
+export interface NpgsqlHistoryRepository$instance extends Microsoft_EntityFrameworkCore_Migrations_Internal.HistoryRepository {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Migrations_HistoryRepository: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Migrations_Internal_NpgsqlHistoryRepository: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Migrations_IHistoryRepository: never;
 
-    readonly ExistsSql: string;
-    readonly LockReleaseBehavior: LockReleaseBehavior;
-    AcquireDatabaseLock(): IMigrationsDatabaseLock;
-    AcquireDatabaseLockAsync(cancellationToken?: CancellationToken): Task_1<IMigrationsDatabaseLock>;
-    Exists(): boolean;
-    ExistsAsync(cancellationToken?: CancellationToken): Task_1<System_Internal.Boolean>;
-    GetAppliedMigrations(): IReadOnlyList_1<HistoryRow>;
-    GetAppliedMigrationsAsync(cancellationToken?: CancellationToken): Task_1<IReadOnlyList_1<HistoryRow>>;
-    GetBeginIfExistsScript(migrationId: string): string;
-    GetBeginIfNotExistsScript(migrationId: string): string;
-    GetCreateCommands(): IReadOnlyList_1<MigrationCommand>;
-    GetCreateIfNotExistsScript(): string;
-    GetEndIfScript(): string;
-    InterpretExistsResult(value: unknown | null): boolean;
+    AcquireDatabaseLock: Microsoft_EntityFrameworkCore_Migrations_Internal.HistoryRepository["AcquireDatabaseLock"] & (() => IMigrationsDatabaseLock);
+    AcquireDatabaseLockAsync: Microsoft_EntityFrameworkCore_Migrations_Internal.HistoryRepository["AcquireDatabaseLockAsync"] & ((cancellationToken?: CancellationToken) => Task_1<IMigrationsDatabaseLock>);
+    Exists: Microsoft_EntityFrameworkCore_Migrations_Internal.HistoryRepository["Exists"] & (() => boolean);
+    ExistsAsync: Microsoft_EntityFrameworkCore_Migrations_Internal.HistoryRepository["ExistsAsync"] & ((cancellationToken?: CancellationToken) => Task_1<System_Internal.Boolean>);
+    GetAppliedMigrations: Microsoft_EntityFrameworkCore_Migrations_Internal.HistoryRepository["GetAppliedMigrations"] & (() => IReadOnlyList_1<HistoryRow>);
+    GetAppliedMigrationsAsync: Microsoft_EntityFrameworkCore_Migrations_Internal.HistoryRepository["GetAppliedMigrationsAsync"] & ((cancellationToken?: CancellationToken) => Task_1<IReadOnlyList_1<HistoryRow>>);
+    GetBeginIfExistsScript: Microsoft_EntityFrameworkCore_Migrations_Internal.HistoryRepository["GetBeginIfExistsScript"] & ((migrationId: string) => string);
+    GetBeginIfNotExistsScript: Microsoft_EntityFrameworkCore_Migrations_Internal.HistoryRepository["GetBeginIfNotExistsScript"] & ((migrationId: string) => string);
+    GetCreateCommands: Microsoft_EntityFrameworkCore_Migrations_Internal.HistoryRepository["GetCreateCommands"] & (() => IReadOnlyList_1<MigrationCommand>);
+    GetCreateIfNotExistsScript: Microsoft_EntityFrameworkCore_Migrations_Internal.HistoryRepository["GetCreateIfNotExistsScript"] & (() => string);
+    GetEndIfScript: Microsoft_EntityFrameworkCore_Migrations_Internal.HistoryRepository["GetEndIfScript"] & (() => string);
+    InterpretExistsResult: Microsoft_EntityFrameworkCore_Migrations_Internal.HistoryRepository["InterpretExistsResult"] & ((value: unknown | null) => boolean);
 }
 
 
@@ -51,13 +50,14 @@ export const NpgsqlHistoryRepository: {
 
 export type NpgsqlHistoryRepository = NpgsqlHistoryRepository$instance;
 
-export interface NpgsqlMigrator$instance extends Migrator {
+export interface NpgsqlMigrator$instance extends Microsoft_EntityFrameworkCore_Migrations_Internal_Internal.Migrator {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Migrations_Internal_Migrator: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Migrations_Internal_NpgsqlMigrator: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Migrations_IMigrator: never;
 
-    Migrate(targetMigration: string | null): void;
-    MigrateAsync(targetMigration: string | null, cancellationToken?: CancellationToken): Task;
+    Migrate: Microsoft_EntityFrameworkCore_Migrations_Internal_Internal.Migrator["Migrate"] & ((targetMigration: string | null) => void);
+    MigrateAsync: Microsoft_EntityFrameworkCore_Migrations_Internal_Internal.Migrator["MigrateAsync"] & ((targetMigration: string | null, cancellationToken?: CancellationToken) => Task);
 }
 
 

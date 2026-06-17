@@ -24,6 +24,7 @@ export { NpgsqlDbType as NpgsqlDbType } from './NpgsqlTypes/internal/index.js';
 export { NpgsqlInterval as NpgsqlInterval } from './NpgsqlTypes/internal/index.js';
 export { NpgsqlLogSequenceNumber as NpgsqlLogSequenceNumber } from './NpgsqlTypes/internal/index.js';
 export { NpgsqlRange_1 as NpgsqlRange } from './NpgsqlTypes/internal/index.js';
+export { NpgsqlRange_1_RangeTypeConverter as NpgsqlRange_1_RangeTypeConverter } from './NpgsqlTypes/internal/index.js';
 export { NpgsqlTsQuery as NpgsqlTsQuery } from './NpgsqlTypes/internal/index.js';
 export { NpgsqlTsQuery_NodeKind as NpgsqlTsQuery_NodeKind } from './NpgsqlTypes/internal/index.js';
 export { NpgsqlTsQueryLexeme as NpgsqlTsQueryLexeme } from './NpgsqlTypes/internal/index.js';

@@ -14,57 +14,16 @@ import * as System_Data_Common_Internal from "@tsonic/dotnet/System.Data.Common/
 import type { DbColumn } from "@tsonic/dotnet/System.Data.Common/internal/index.js";
 import type { Boolean as ClrBoolean, Int16, Int32, Nullable_1, Object as ClrObject, String as ClrString, Type, UInt32 } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface NpgsqlDbColumn$instance extends DbColumn {
+export interface NpgsqlDbColumn$instance extends System_Data_Common_Internal.DbColumn {
     readonly __tsonic_type_Npgsql_Schema_NpgsqlDbColumn: never;
+    readonly __tsonic_type_System_Data_Common_DbColumn: never;
 
-    get AllowDBNull(): Nullable_1<System_Internal.Boolean>;
-    set AllowDBNull(value: Nullable_1<System_Internal.Boolean> | boolean);
-    BaseCatalogName: string;
-    get BaseColumnName(): string | null;
-    set BaseColumnName(value: string | null);
-    get BaseSchemaName(): string | null;
-    set BaseSchemaName(value: string | null);
-    BaseServerName: string;
-    get BaseTableName(): string | null;
-    set BaseTableName(value: string | null);
-    get ColumnAttributeNumber(): Nullable_1<System_Internal.Int16>;
-    set ColumnAttributeNumber(value: Nullable_1<System_Internal.Int16> | short);
-    ColumnName: string;
-    get ColumnOrdinal(): Nullable_1<System_Internal.Int32>;
-    set ColumnOrdinal(value: Nullable_1<System_Internal.Int32> | int);
-    get ColumnSize(): Nullable_1<System_Internal.Int32>;
-    set ColumnSize(value: Nullable_1<System_Internal.Int32> | int);
-    get DataType(): Type | null;
-    set DataType(value: Type | null);
-    DataTypeName: string;
-    get DefaultValue(): string | null;
-    set DefaultValue(value: string | null);
-    get IsAliased(): Nullable_1<System_Internal.Boolean>;
-    set IsAliased(value: Nullable_1<System_Internal.Boolean> | boolean);
-    get IsAutoIncrement(): Nullable_1<System_Internal.Boolean>;
-    set IsAutoIncrement(value: Nullable_1<System_Internal.Boolean> | boolean);
-    get IsIdentity(): Nullable_1<System_Internal.Boolean>;
-    set IsIdentity(value: Nullable_1<System_Internal.Boolean> | boolean);
-    get IsKey(): Nullable_1<System_Internal.Boolean>;
-    set IsKey(value: Nullable_1<System_Internal.Boolean> | boolean);
-    get IsLong(): Nullable_1<System_Internal.Boolean>;
-    set IsLong(value: Nullable_1<System_Internal.Boolean> | boolean);
-    get IsReadOnly(): Nullable_1<System_Internal.Boolean>;
-    set IsReadOnly(value: Nullable_1<System_Internal.Boolean> | boolean);
-    get IsUnique(): Nullable_1<System_Internal.Boolean>;
-    set IsUnique(value: Nullable_1<System_Internal.Boolean> | boolean);
-    readonly Item: unknown | null;
-    get NpgsqlDbType(): Nullable_1<NpgsqlDbType>;
-    set NpgsqlDbType(value: Nullable_1<NpgsqlDbType> | NpgsqlDbType);
-    get NumericPrecision(): Nullable_1<System_Internal.Int32>;
-    set NumericPrecision(value: Nullable_1<System_Internal.Int32> | int);
-    get NumericScale(): Nullable_1<System_Internal.Int32>;
-    set NumericScale(value: Nullable_1<System_Internal.Int32> | int);
-    PostgresType: PostgresType;
-    TableOID: uint;
-    TypeOID: uint;
-    get UdtAssemblyQualifiedName(): string | null;
-    set UdtAssemblyQualifiedName(value: string | null);
+    readonly ColumnAttributeNumber: Nullable_1<System_Internal.Int16>;
+    readonly DefaultValue: string | null;
+    readonly NpgsqlDbType: Nullable_1<NpgsqlDbType>;
+    readonly PostgresType: PostgresType;
+    readonly TableOID: uint;
+    readonly TypeOID: uint;
 }
 
 

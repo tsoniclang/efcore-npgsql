@@ -20,12 +20,14 @@ import * as Microsoft_EntityFrameworkCore_Query_Internal from "@tsonic/efcore/Mi
 import type { CompiledQueryCacheKeyGeneratorDependencies, EvaluatableExpressionFilterDependencies, ICompiledQueryCacheKeyGenerator, IEvaluatableExpressionFilter, IQueryableMethodTranslatingExpressionVisitorFactory, IQueryCompilationContextFactory, IQuerySqlGeneratorFactory, IQueryTranslationPostprocessorFactory, IRelationalParameterBasedSqlProcessorFactory, IRelationalSqlTranslatingExpressionVisitorFactory, JsonQueryExpression, ParametersCacheDecorator, QueryableMethodTranslatingExpressionVisitor, QueryableMethodTranslatingExpressionVisitorDependencies, QueryCompilationContext, QueryCompilationContextDependencies, QueryContext, QuerySqlGenerator, QuerySqlGeneratorDependencies, QueryTranslationPostprocessor, QueryTranslationPostprocessorDependencies, RelationalCompiledQueryCacheKeyGenerator, RelationalCompiledQueryCacheKeyGeneratorDependencies, RelationalEvaluatableExpressionFilter, RelationalEvaluatableExpressionFilterDependencies, RelationalParameterBasedSqlProcessor, RelationalParameterBasedSqlProcessorDependencies, RelationalParameterBasedSqlProcessorParameters, RelationalQueryableMethodTranslatingExpressionVisitor, RelationalQueryableMethodTranslatingExpressionVisitorDependencies, RelationalQueryCompilationContext, RelationalQueryCompilationContextDependencies, RelationalQueryTranslationPostprocessor, RelationalQueryTranslationPostprocessorDependencies, RelationalSqlTranslatingExpressionVisitor, RelationalSqlTranslatingExpressionVisitorDependencies, RelationalTypeMappingPostprocessor, ShapedQueryExpression, SqlNullabilityProcessor, SqlTreePruner } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Query/internal/index.js";
 import type { IRelationalTypeMappingSource } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage/internal/index.js";
 
-export interface NpgsqlCompiledQueryCacheKeyGenerator$instance extends RelationalCompiledQueryCacheKeyGenerator {
+export interface NpgsqlCompiledQueryCacheKeyGenerator$instance extends Microsoft_EntityFrameworkCore_Query_Internal.RelationalCompiledQueryCacheKeyGenerator {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Query_CompiledQueryCacheKeyGenerator: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Query_RelationalCompiledQueryCacheKeyGenerator: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_Internal_NpgsqlCompiledQueryCacheKeyGenerator: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_ICompiledQueryCacheKeyGenerator: never;
 
-    GenerateCacheKey(query: Expression, async: boolean): unknown;
+    GenerateCacheKey: Microsoft_EntityFrameworkCore_Query_Internal.RelationalCompiledQueryCacheKeyGenerator["GenerateCacheKey"] & ((query: Expression, async: boolean) => unknown);
 }
 
 
@@ -36,8 +38,9 @@ export const NpgsqlCompiledQueryCacheKeyGenerator: {
 
 export type NpgsqlCompiledQueryCacheKeyGenerator = NpgsqlCompiledQueryCacheKeyGenerator$instance;
 
-export interface NpgsqlDeleteConvertingExpressionVisitor$instance extends ExpressionVisitor {
+export interface NpgsqlDeleteConvertingExpressionVisitor$instance extends System_Linq_Expressions_Internal.ExpressionVisitor {
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_Internal_NpgsqlDeleteConvertingExpressionVisitor: never;
+    readonly __tsonic_type_System_Linq_Expressions_ExpressionVisitor: never;
 
     Process(node: Expression): Expression;
     VisitDelete(deleteExpression: DeleteExpression): Expression;
@@ -51,12 +54,14 @@ export const NpgsqlDeleteConvertingExpressionVisitor: {
 
 export type NpgsqlDeleteConvertingExpressionVisitor = NpgsqlDeleteConvertingExpressionVisitor$instance;
 
-export interface NpgsqlEvaluatableExpressionFilter$instance extends RelationalEvaluatableExpressionFilter {
+export interface NpgsqlEvaluatableExpressionFilter$instance extends Microsoft_EntityFrameworkCore_Query_Internal.RelationalEvaluatableExpressionFilter {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Query_EvaluatableExpressionFilter: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Query_RelationalEvaluatableExpressionFilter: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_Internal_NpgsqlEvaluatableExpressionFilter: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_IEvaluatableExpressionFilter: never;
 
-    IsEvaluatableExpression(expression: Expression, model: IModel): boolean;
+    IsEvaluatableExpression: Microsoft_EntityFrameworkCore_Query_Internal.RelationalEvaluatableExpressionFilter["IsEvaluatableExpression"] & ((expression: Expression, model: IModel) => boolean);
 }
 
 
@@ -67,11 +72,12 @@ export const NpgsqlEvaluatableExpressionFilter: {
 
 export type NpgsqlEvaluatableExpressionFilter = NpgsqlEvaluatableExpressionFilter$instance;
 
-export interface NpgsqlParameterBasedSqlProcessor$instance extends RelationalParameterBasedSqlProcessor {
+export interface NpgsqlParameterBasedSqlProcessor$instance extends Microsoft_EntityFrameworkCore_Query_Internal.RelationalParameterBasedSqlProcessor {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Query_RelationalParameterBasedSqlProcessor: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_Internal_NpgsqlParameterBasedSqlProcessor: never;
 
-    Process(queryExpression: Expression, parametersDecorator: ParametersCacheDecorator): Expression;
-    ProcessSqlNullability(selectExpression: Expression, parametersDecorator: ParametersCacheDecorator): Expression;
+    Process: Microsoft_EntityFrameworkCore_Query_Internal.RelationalParameterBasedSqlProcessor["Process"] & ((queryExpression: Expression, parametersDecorator: ParametersCacheDecorator) => Expression);
+    ProcessSqlNullability: Microsoft_EntityFrameworkCore_Query_Internal.RelationalParameterBasedSqlProcessor["ProcessSqlNullability"] & ((selectExpression: Expression, parametersDecorator: ParametersCacheDecorator) => Expression);
 }
 
 
@@ -98,28 +104,31 @@ export const NpgsqlParameterBasedSqlProcessorFactory: {
 
 export type NpgsqlParameterBasedSqlProcessorFactory = NpgsqlParameterBasedSqlProcessorFactory$instance;
 
-export interface NpgsqlQueryableMethodTranslatingExpressionVisitor$instance extends RelationalQueryableMethodTranslatingExpressionVisitor {
+export interface NpgsqlQueryableMethodTranslatingExpressionVisitor$instance extends Microsoft_EntityFrameworkCore_Query_Internal.RelationalQueryableMethodTranslatingExpressionVisitor {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Query_QueryableMethodTranslatingExpressionVisitor: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Query_RelationalQueryableMethodTranslatingExpressionVisitor: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_Internal_NpgsqlQueryableMethodTranslatingExpressionVisitor: never;
+    readonly __tsonic_type_System_Linq_Expressions_ExpressionVisitor: never;
 
-    CreateSubqueryVisitor(): QueryableMethodTranslatingExpressionVisitor;
-    GenerateJsonPartialUpdateSetter(target: Expression, value: SqlExpression, existingSetterValue: SqlExpression | null): SqlExpression | null;
-    IsNaturallyOrdered(selectExpression: SelectExpression): boolean;
-    IsOrdered(selectExpression: SelectExpression): boolean;
-    IsValidSelectExpressionForExecuteDelete(selectExpression: SelectExpression): boolean;
-    IsValidSelectExpressionForExecuteUpdate(selectExpression: SelectExpression, targetTable: TableExpressionBase, tableExpression: TableExpression | null): boolean;
-    TransformJsonQueryToTable(jsonQueryExpression: JsonQueryExpression): ShapedQueryExpression;
-    TranslateAll(source: ShapedQueryExpression, predicate: LambdaExpression): ShapedQueryExpression | null;
-    TranslateAny(source: ShapedQueryExpression, predicate: LambdaExpression | null): ShapedQueryExpression | null;
-    TranslateConcat(source1: ShapedQueryExpression, source2: ShapedQueryExpression): ShapedQueryExpression;
-    TranslateContains(source: ShapedQueryExpression, item: Expression): ShapedQueryExpression | null;
-    TranslateCount(source: ShapedQueryExpression, predicate: LambdaExpression | null): ShapedQueryExpression | null;
-    TranslateElementAtOrDefault(source: ShapedQueryExpression, index: Expression, returnDefault: boolean): ShapedQueryExpression | null;
-    TranslateFirstOrDefault(source: ShapedQueryExpression, predicate: LambdaExpression | null, returnType: Type, returnDefault: boolean): ShapedQueryExpression | null;
-    TranslatePrimitiveCollection(sqlExpression: SqlExpression, property: IProperty | null, tableAlias: string): ShapedQueryExpression | null;
-    TranslateSkip(source: ShapedQueryExpression, count: Expression): ShapedQueryExpression | null;
-    TranslateTake(source: ShapedQueryExpression, count: Expression): ShapedQueryExpression | null;
-    TranslateWhere(source: ShapedQueryExpression, predicate: LambdaExpression): ShapedQueryExpression | null;
-    TrySerializeScalarToJson(target: JsonScalarExpression, value: SqlExpression, jsonValue: SqlExpression | null): boolean;
+    CreateSubqueryVisitor: Microsoft_EntityFrameworkCore_Query_Internal.RelationalQueryableMethodTranslatingExpressionVisitor["CreateSubqueryVisitor"] & (() => QueryableMethodTranslatingExpressionVisitor);
+    GenerateJsonPartialUpdateSetter: Microsoft_EntityFrameworkCore_Query_Internal.RelationalQueryableMethodTranslatingExpressionVisitor["GenerateJsonPartialUpdateSetter"] & ((target: Expression, value: SqlExpression, existingSetterValue: SqlExpression | null) => SqlExpression | null);
+    IsNaturallyOrdered: Microsoft_EntityFrameworkCore_Query_Internal.RelationalQueryableMethodTranslatingExpressionVisitor["IsNaturallyOrdered"] & ((selectExpression: SelectExpression) => boolean);
+    IsOrdered: Microsoft_EntityFrameworkCore_Query_Internal.RelationalQueryableMethodTranslatingExpressionVisitor["IsOrdered"] & ((selectExpression: SelectExpression) => boolean);
+    IsValidSelectExpressionForExecuteDelete: Microsoft_EntityFrameworkCore_Query_Internal.RelationalQueryableMethodTranslatingExpressionVisitor["IsValidSelectExpressionForExecuteDelete"] & ((selectExpression: SelectExpression) => boolean);
+    IsValidSelectExpressionForExecuteUpdate: Microsoft_EntityFrameworkCore_Query_Internal.RelationalQueryableMethodTranslatingExpressionVisitor["IsValidSelectExpressionForExecuteUpdate"] & ((selectExpression: SelectExpression, targetTable: TableExpressionBase, tableExpression: TableExpression | null) => boolean);
+    TransformJsonQueryToTable: Microsoft_EntityFrameworkCore_Query_Internal.RelationalQueryableMethodTranslatingExpressionVisitor["TransformJsonQueryToTable"] & ((jsonQueryExpression: JsonQueryExpression) => ShapedQueryExpression);
+    TranslateAll: Microsoft_EntityFrameworkCore_Query_Internal.RelationalQueryableMethodTranslatingExpressionVisitor["TranslateAll"] & ((source: ShapedQueryExpression, predicate: LambdaExpression) => ShapedQueryExpression | null);
+    TranslateAny: Microsoft_EntityFrameworkCore_Query_Internal.RelationalQueryableMethodTranslatingExpressionVisitor["TranslateAny"] & ((source: ShapedQueryExpression, predicate: LambdaExpression | null) => ShapedQueryExpression | null);
+    TranslateConcat: Microsoft_EntityFrameworkCore_Query_Internal.RelationalQueryableMethodTranslatingExpressionVisitor["TranslateConcat"] & ((source1: ShapedQueryExpression, source2: ShapedQueryExpression) => ShapedQueryExpression);
+    TranslateContains: Microsoft_EntityFrameworkCore_Query_Internal.RelationalQueryableMethodTranslatingExpressionVisitor["TranslateContains"] & ((source: ShapedQueryExpression, item: Expression) => ShapedQueryExpression | null);
+    TranslateCount: Microsoft_EntityFrameworkCore_Query_Internal.RelationalQueryableMethodTranslatingExpressionVisitor["TranslateCount"] & ((source: ShapedQueryExpression, predicate: LambdaExpression | null) => ShapedQueryExpression | null);
+    TranslateElementAtOrDefault: Microsoft_EntityFrameworkCore_Query_Internal.RelationalQueryableMethodTranslatingExpressionVisitor["TranslateElementAtOrDefault"] & ((source: ShapedQueryExpression, index: Expression, returnDefault: boolean) => ShapedQueryExpression | null);
+    TranslateFirstOrDefault: Microsoft_EntityFrameworkCore_Query_Internal.RelationalQueryableMethodTranslatingExpressionVisitor["TranslateFirstOrDefault"] & ((source: ShapedQueryExpression, predicate: LambdaExpression | null, returnType: Type, returnDefault: boolean) => ShapedQueryExpression | null);
+    TranslatePrimitiveCollection: Microsoft_EntityFrameworkCore_Query_Internal.RelationalQueryableMethodTranslatingExpressionVisitor["TranslatePrimitiveCollection"] & ((sqlExpression: SqlExpression, property: IProperty | null, tableAlias: string) => ShapedQueryExpression | null);
+    TranslateSkip: Microsoft_EntityFrameworkCore_Query_Internal.RelationalQueryableMethodTranslatingExpressionVisitor["TranslateSkip"] & ((source: ShapedQueryExpression, count: Expression) => ShapedQueryExpression | null);
+    TranslateTake: Microsoft_EntityFrameworkCore_Query_Internal.RelationalQueryableMethodTranslatingExpressionVisitor["TranslateTake"] & ((source: ShapedQueryExpression, count: Expression) => ShapedQueryExpression | null);
+    TranslateWhere: Microsoft_EntityFrameworkCore_Query_Internal.RelationalQueryableMethodTranslatingExpressionVisitor["TranslateWhere"] & ((source: ShapedQueryExpression, predicate: LambdaExpression) => ShapedQueryExpression | null);
+    TrySerializeScalarToJson: Microsoft_EntityFrameworkCore_Query_Internal.RelationalQueryableMethodTranslatingExpressionVisitor["TrySerializeScalarToJson"] & ((target: JsonScalarExpression, value: SqlExpression, jsonValue: SqlExpression | null) => boolean);
 }
 
 
@@ -148,11 +157,11 @@ export const NpgsqlQueryableMethodTranslatingExpressionVisitorFactory: {
 
 export type NpgsqlQueryableMethodTranslatingExpressionVisitorFactory = NpgsqlQueryableMethodTranslatingExpressionVisitorFactory$instance;
 
-export interface NpgsqlQueryCompilationContext$instance extends RelationalQueryCompilationContext {
+export interface NpgsqlQueryCompilationContext$instance extends Microsoft_EntityFrameworkCore_Query_Internal.RelationalQueryCompilationContext {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Query_QueryCompilationContext: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Query_RelationalQueryCompilationContext: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_Internal_NpgsqlQueryCompilationContext: never;
 
-    readonly IsBuffering: boolean;
-    readonly SupportsPrecompiledQuery: boolean;
 }
 
 
@@ -181,46 +190,49 @@ export const NpgsqlQueryCompilationContextFactory: {
 
 export type NpgsqlQueryCompilationContextFactory = NpgsqlQueryCompilationContextFactory$instance;
 
-export interface NpgsqlQuerySqlGenerator$instance extends QuerySqlGenerator {
+export interface NpgsqlQuerySqlGenerator$instance extends Microsoft_EntityFrameworkCore_Query_Internal.QuerySqlGenerator {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Query_QuerySqlGenerator: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Query_SqlExpressionVisitor: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_Internal_NpgsqlQuerySqlGenerator: never;
+    readonly __tsonic_type_System_Linq_Expressions_ExpressionVisitor: never;
 
-    GenerateLimitOffset(selectExpression: SelectExpression): void;
-    GenerateRootCommand(queryExpression: Expression): void;
-    GenerateSetOperation(setOperation: SetOperationBase): void;
-    GenerateSetOperationOperand(setOperation: SetOperationBase, operand: SelectExpression): void;
-    GenerateTop(selectExpression: SelectExpression): void;
-    GenerateValues(valuesExpression: ValuesExpression): void;
-    GetOperator(e: SqlBinaryExpression): string;
-    RequiresParentheses(outerExpression: SqlExpression, innerExpression: SqlExpression): boolean;
-    TryGenerateWithoutWrappingSelect(selectExpression: SelectExpression): boolean;
-    TryGetOperatorInfo(expression: SqlExpression, precedence: int, isAssociative: boolean): boolean;
+    GenerateLimitOffset: Microsoft_EntityFrameworkCore_Query_Internal.QuerySqlGenerator["GenerateLimitOffset"] & ((selectExpression: SelectExpression) => void);
+    GenerateRootCommand: Microsoft_EntityFrameworkCore_Query_Internal.QuerySqlGenerator["GenerateRootCommand"] & ((queryExpression: Expression) => void);
+    GenerateSetOperation: Microsoft_EntityFrameworkCore_Query_Internal.QuerySqlGenerator["GenerateSetOperation"] & ((setOperation: SetOperationBase) => void);
+    GenerateSetOperationOperand: Microsoft_EntityFrameworkCore_Query_Internal.QuerySqlGenerator["GenerateSetOperationOperand"] & ((setOperation: SetOperationBase, operand: SelectExpression) => void);
+    GenerateTop: Microsoft_EntityFrameworkCore_Query_Internal.QuerySqlGenerator["GenerateTop"] & ((selectExpression: SelectExpression) => void);
+    GenerateValues: Microsoft_EntityFrameworkCore_Query_Internal.QuerySqlGenerator["GenerateValues"] & ((valuesExpression: ValuesExpression) => void);
+    GetOperator: Microsoft_EntityFrameworkCore_Query_Internal.QuerySqlGenerator["GetOperator"] & ((e: SqlBinaryExpression) => string);
+    RequiresParentheses: Microsoft_EntityFrameworkCore_Query_Internal.QuerySqlGenerator["RequiresParentheses"] & ((outerExpression: SqlExpression, innerExpression: SqlExpression) => boolean);
+    TryGenerateWithoutWrappingSelect: Microsoft_EntityFrameworkCore_Query_Internal.QuerySqlGenerator["TryGenerateWithoutWrappingSelect"] & ((selectExpression: SelectExpression) => boolean);
+    TryGetOperatorInfo: Microsoft_EntityFrameworkCore_Query_Internal.QuerySqlGenerator["TryGetOperatorInfo"] & ((expression: SqlExpression, precedence: int, isAssociative: boolean) => boolean);
     VisitArrayAll(expression: PgAllExpression): Expression;
     VisitArrayAny(expression: PgAnyExpression): Expression;
-    VisitArrayIndex(expression: SqlBinaryExpression): Expression;
     VisitArrayIndex(expression: PgArrayIndexExpression): Expression;
+    VisitArrayIndex(expression: SqlBinaryExpression): Expression;
     VisitArraySlice(expression: PgArraySliceExpression): Expression;
-    VisitCollate(collateExpression: CollateExpression): Expression;
-    VisitCrossApply(crossApplyExpression: CrossApplyExpression): Expression;
-    VisitDelete(deleteExpression: DeleteExpression): Expression;
-    VisitExtension(extensionExpression: Expression): Expression;
+    VisitCollate: Microsoft_EntityFrameworkCore_Query_Internal.QuerySqlGenerator["VisitCollate"] & ((collateExpression: CollateExpression) => Expression);
+    VisitCrossApply: Microsoft_EntityFrameworkCore_Query_Internal.QuerySqlGenerator["VisitCrossApply"] & ((crossApplyExpression: CrossApplyExpression) => Expression);
+    VisitDelete: Microsoft_EntityFrameworkCore_Query_Internal.QuerySqlGenerator["VisitDelete"] & ((deleteExpression: DeleteExpression) => Expression);
+    VisitExtension: Microsoft_EntityFrameworkCore_Query_Internal.QuerySqlGenerator["VisitExtension"] & ((extensionExpression: Expression) => Expression);
     VisitILike(likeExpression: PgILikeExpression, negated?: boolean): Expression;
     VisitJsonPathTraversal(expression: PgJsonTraversalExpression): Expression;
-    VisitJsonScalar(jsonScalarExpression: JsonScalarExpression): Expression;
-    VisitNewArray(pgNewArrayExpression: PgNewArrayExpression): Expression;
-    VisitOrdering(ordering: OrderingExpression): Expression;
-    VisitOuterApply(outerApplyExpression: OuterApplyExpression): Expression;
+    VisitJsonScalar: Microsoft_EntityFrameworkCore_Query_Internal.QuerySqlGenerator["VisitJsonScalar"] & ((jsonScalarExpression: JsonScalarExpression) => Expression);
+    VisitNewArray: Microsoft_EntityFrameworkCore_Query_Internal.QuerySqlGenerator["VisitNewArray"] & ((pgNewArrayExpression: PgNewArrayExpression) => Expression);
+    VisitOrdering: Microsoft_EntityFrameworkCore_Query_Internal.QuerySqlGenerator["VisitOrdering"] & ((ordering: OrderingExpression) => Expression);
+    VisitOuterApply: Microsoft_EntityFrameworkCore_Query_Internal.QuerySqlGenerator["VisitOuterApply"] & ((outerApplyExpression: OuterApplyExpression) => Expression);
     VisitPgBinary(binaryExpression: PgBinaryExpression): Expression;
     VisitPgDelete(pgDeleteExpression: PgDeleteExpression): Expression;
     VisitPgFunction(e: PgFunctionExpression): Expression;
     VisitPgTableValuedFunctionExpression(tableValuedFunctionExpression: PgTableValuedFunctionExpression): Expression;
     VisitRegexMatch(expression: PgRegexMatchExpression, negated?: boolean): Expression;
-    VisitRowValue(rowValueExpression: PgRowValueExpression): Expression;
-    VisitSqlBinary(binary: SqlBinaryExpression): Expression;
-    VisitSqlConstant(sqlConstantExpression: SqlConstantExpression): Expression;
-    VisitSqlUnary(sqlUnaryExpression: SqlUnaryExpression): Expression;
+    VisitRowValue: Microsoft_EntityFrameworkCore_Query_Internal.QuerySqlGenerator["VisitRowValue"] & ((rowValueExpression: PgRowValueExpression) => Expression);
+    VisitSqlBinary: Microsoft_EntityFrameworkCore_Query_Internal.QuerySqlGenerator["VisitSqlBinary"] & ((binary: SqlBinaryExpression) => Expression);
+    VisitSqlConstant: Microsoft_EntityFrameworkCore_Query_Internal.QuerySqlGenerator["VisitSqlConstant"] & ((sqlConstantExpression: SqlConstantExpression) => Expression);
+    VisitSqlUnary: Microsoft_EntityFrameworkCore_Query_Internal.QuerySqlGenerator["VisitSqlUnary"] & ((sqlUnaryExpression: SqlUnaryExpression) => Expression);
     VisitUnknownBinary(unknownBinaryExpression: PgUnknownBinaryExpression): Expression;
-    VisitUpdate(updateExpression: UpdateExpression): Expression;
-    VisitValues(valuesExpression: ValuesExpression): Expression;
+    VisitUpdate: Microsoft_EntityFrameworkCore_Query_Internal.QuerySqlGenerator["VisitUpdate"] & ((updateExpression: UpdateExpression) => Expression);
+    VisitValues: Microsoft_EntityFrameworkCore_Query_Internal.QuerySqlGenerator["VisitValues"] & ((valuesExpression: ValuesExpression) => Expression);
 }
 
 
@@ -247,12 +259,14 @@ export const NpgsqlQuerySqlGeneratorFactory: {
 
 export type NpgsqlQuerySqlGeneratorFactory = NpgsqlQuerySqlGeneratorFactory$instance;
 
-export interface NpgsqlQueryTranslationPostprocessor$instance extends RelationalQueryTranslationPostprocessor {
+export interface NpgsqlQueryTranslationPostprocessor$instance extends Microsoft_EntityFrameworkCore_Query_Internal.RelationalQueryTranslationPostprocessor {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Query_QueryTranslationPostprocessor: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Query_RelationalQueryTranslationPostprocessor: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_Internal_NpgsqlQueryTranslationPostprocessor: never;
 
-    Process(query: Expression): Expression;
-    ProcessTypeMappings(expression: Expression): Expression;
-    Prune(query: Expression): Expression;
+    Process: Microsoft_EntityFrameworkCore_Query_Internal.RelationalQueryTranslationPostprocessor["Process"] & ((query: Expression) => Expression);
+    ProcessTypeMappings: Microsoft_EntityFrameworkCore_Query_Internal.RelationalQueryTranslationPostprocessor["ProcessTypeMappings"] & ((expression: Expression) => Expression);
+    Prune: Microsoft_EntityFrameworkCore_Query_Internal.RelationalQueryTranslationPostprocessor["Prune"] & ((query: Expression) => Expression);
 }
 
 
@@ -281,10 +295,11 @@ export const NpgsqlQueryTranslationPostprocessorFactory: {
 
 export type NpgsqlQueryTranslationPostprocessorFactory = NpgsqlQueryTranslationPostprocessorFactory$instance;
 
-export interface NpgsqlSetOperationTypingInjector$instance extends ExpressionVisitor {
+export interface NpgsqlSetOperationTypingInjector$instance extends System_Linq_Expressions_Internal.ExpressionVisitor {
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_Internal_NpgsqlSetOperationTypingInjector: never;
+    readonly __tsonic_type_System_Linq_Expressions_ExpressionVisitor: never;
 
-    VisitExtension(extensionExpression: Expression): Expression;
+    VisitExtension: System_Linq_Expressions_Internal.ExpressionVisitor["VisitExtension"] & ((extensionExpression: Expression) => Expression);
 }
 
 
@@ -295,22 +310,24 @@ export const NpgsqlSetOperationTypingInjector: {
 
 export type NpgsqlSetOperationTypingInjector = NpgsqlSetOperationTypingInjector$instance;
 
-export interface NpgsqlSqlNullabilityProcessor$instance extends SqlNullabilityProcessor {
+export interface NpgsqlSqlNullabilityProcessor$instance extends Microsoft_EntityFrameworkCore_Query_Internal.SqlNullabilityProcessor {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Query_SqlNullabilityProcessor: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_Internal_NpgsqlSqlNullabilityProcessor: never;
+    readonly __tsonic_type_System_Linq_Expressions_ExpressionVisitor: never;
 
     VisitAll(allExpression: PgAllExpression, allowOptimizedExpansion: boolean, nullable: boolean): SqlExpression;
     VisitAny(anyExpression: PgAnyExpression, allowOptimizedExpansion: boolean, nullable: boolean): SqlExpression;
     VisitArrayIndex(arrayIndexExpression: PgArrayIndexExpression, allowOptimizedExpansion: boolean, nullable: boolean): SqlExpression;
     VisitArraySlice(arraySliceExpression: PgArraySliceExpression, allowOptimizedExpansion: boolean, nullable: boolean): SqlExpression;
-    VisitCustomSqlExpression(sqlExpression: SqlExpression, allowOptimizedExpansion: boolean, nullable: boolean): SqlExpression;
+    VisitCustomSqlExpression: Microsoft_EntityFrameworkCore_Query_Internal.SqlNullabilityProcessor["VisitCustomSqlExpression"] & ((sqlExpression: SqlExpression, allowOptimizedExpansion: boolean, nullable: boolean) => SqlExpression);
     VisitILike(iLikeExpression: PgILikeExpression, allowOptimizedExpansion: boolean, nullable: boolean): SqlExpression;
     VisitJsonTraversal(jsonTraversalExpression: PgJsonTraversalExpression, allowOptimizedExpansion: boolean, nullable: boolean): SqlExpression;
-    VisitNewArray(newArrayExpression: PgNewArrayExpression, allowOptimizedExpansion: boolean, nullable: boolean): SqlExpression;
+    VisitNewArray: Microsoft_EntityFrameworkCore_Query_Internal.SqlNullabilityProcessor["VisitNewArray"] & ((newArrayExpression: PgNewArrayExpression, allowOptimizedExpansion: boolean, nullable: boolean) => SqlExpression);
     VisitPostgresBinary(binaryExpression: PgBinaryExpression, allowOptimizedExpansion: boolean, nullable: boolean): SqlExpression;
     VisitRegexMatch(regexMatchExpression: PgRegexMatchExpression, allowOptimizedExpansion: boolean, nullable: boolean): SqlExpression;
     VisitRowValueExpression(rowValueExpression: PgRowValueExpression, allowOptimizedExpansion: boolean, nullable: boolean): SqlExpression;
-    VisitSqlBinary(sqlBinaryExpression: SqlBinaryExpression, allowOptimizedExpansion: boolean, nullable: boolean): SqlExpression;
-    VisitSqlFunction(sqlFunctionExpression: SqlFunctionExpression, allowOptimizedExpansion: boolean, nullable: boolean): SqlExpression;
+    VisitSqlBinary: Microsoft_EntityFrameworkCore_Query_Internal.SqlNullabilityProcessor["VisitSqlBinary"] & ((sqlBinaryExpression: SqlBinaryExpression, allowOptimizedExpansion: boolean, nullable: boolean) => SqlExpression);
+    VisitSqlFunction: Microsoft_EntityFrameworkCore_Query_Internal.SqlNullabilityProcessor["VisitSqlFunction"] & ((sqlFunctionExpression: SqlFunctionExpression, allowOptimizedExpansion: boolean, nullable: boolean) => SqlExpression);
     VisitUnknownBinary(unknownBinaryExpression: PgUnknownBinaryExpression, allowOptimizedExpansion: boolean, nullable: boolean): SqlExpression;
 }
 
@@ -322,17 +339,19 @@ export const NpgsqlSqlNullabilityProcessor: {
 
 export type NpgsqlSqlNullabilityProcessor = NpgsqlSqlNullabilityProcessor$instance;
 
-export interface NpgsqlSqlTranslatingExpressionVisitor$instance extends RelationalSqlTranslatingExpressionVisitor {
+export interface NpgsqlSqlTranslatingExpressionVisitor$instance extends Microsoft_EntityFrameworkCore_Query_Internal.RelationalSqlTranslatingExpressionVisitor {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Query_RelationalSqlTranslatingExpressionVisitor: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_Internal_NpgsqlSqlTranslatingExpressionVisitor: never;
+    readonly __tsonic_type_System_Linq_Expressions_ExpressionVisitor: never;
 
-    GenerateGreatest(expressions: IReadOnlyList_1<SqlExpression>, resultType: Type): SqlExpression;
-    GenerateLeast(expressions: IReadOnlyList_1<SqlExpression>, resultType: Type): SqlExpression;
-    VisitBinary(binaryExpression: BinaryExpression): Expression;
-    VisitConditional(conditionalExpression: ConditionalExpression): Expression;
-    VisitMethodCall(methodCallExpression: MethodCallExpression): Expression;
-    VisitNew(newExpression: NewExpression): Expression;
-    VisitNewArray(newArrayExpression: NewArrayExpression): Expression;
-    VisitUnary(unaryExpression: UnaryExpression): Expression;
+    GenerateGreatest: Microsoft_EntityFrameworkCore_Query_Internal.RelationalSqlTranslatingExpressionVisitor["GenerateGreatest"] & ((expressions: IReadOnlyList_1<SqlExpression>, resultType: Type) => SqlExpression);
+    GenerateLeast: Microsoft_EntityFrameworkCore_Query_Internal.RelationalSqlTranslatingExpressionVisitor["GenerateLeast"] & ((expressions: IReadOnlyList_1<SqlExpression>, resultType: Type) => SqlExpression);
+    VisitBinary: Microsoft_EntityFrameworkCore_Query_Internal.RelationalSqlTranslatingExpressionVisitor["VisitBinary"] & ((binaryExpression: BinaryExpression) => Expression);
+    VisitConditional: Microsoft_EntityFrameworkCore_Query_Internal.RelationalSqlTranslatingExpressionVisitor["VisitConditional"] & ((conditionalExpression: ConditionalExpression) => Expression);
+    VisitMethodCall: Microsoft_EntityFrameworkCore_Query_Internal.RelationalSqlTranslatingExpressionVisitor["VisitMethodCall"] & ((methodCallExpression: MethodCallExpression) => Expression);
+    VisitNew: Microsoft_EntityFrameworkCore_Query_Internal.RelationalSqlTranslatingExpressionVisitor["VisitNew"] & ((newExpression: NewExpression) => Expression);
+    VisitNewArray: Microsoft_EntityFrameworkCore_Query_Internal.RelationalSqlTranslatingExpressionVisitor["VisitNewArray"] & ((newArrayExpression: NewArrayExpression) => Expression);
+    VisitUnary: Microsoft_EntityFrameworkCore_Query_Internal.RelationalSqlTranslatingExpressionVisitor["VisitUnary"] & ((unaryExpression: UnaryExpression) => Expression);
 }
 
 
@@ -344,11 +363,13 @@ export const NpgsqlSqlTranslatingExpressionVisitor: {
 
 export type NpgsqlSqlTranslatingExpressionVisitor = NpgsqlSqlTranslatingExpressionVisitor$instance;
 
-export enum NpgsqlSqlTranslatingExpressionVisitor_StartsEndsWithContains {
-    StartsWith = 0,
-    EndsWith = 1,
-    Contains = 2
-}
+export type NpgsqlSqlTranslatingExpressionVisitor_StartsEndsWithContains = number & { readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_Internal_NpgsqlSqlTranslatingExpressionVisitor_StartsEndsWithContains: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const NpgsqlSqlTranslatingExpressionVisitor_StartsEndsWithContains: {
+    readonly StartsWith: NpgsqlSqlTranslatingExpressionVisitor_StartsEndsWithContains;
+    readonly EndsWith: NpgsqlSqlTranslatingExpressionVisitor_StartsEndsWithContains;
+    readonly Contains: NpgsqlSqlTranslatingExpressionVisitor_StartsEndsWithContains;
+};
 
 
 export interface NpgsqlSqlTranslatingExpressionVisitorFactory$instance {
@@ -367,10 +388,12 @@ export const NpgsqlSqlTranslatingExpressionVisitorFactory: {
 
 export type NpgsqlSqlTranslatingExpressionVisitorFactory = NpgsqlSqlTranslatingExpressionVisitorFactory$instance;
 
-export interface NpgsqlSqlTreePruner$instance extends SqlTreePruner {
+export interface NpgsqlSqlTreePruner$instance extends Microsoft_EntityFrameworkCore_Query_Internal.SqlTreePruner {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Query_SqlTreePruner: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_Internal_NpgsqlSqlTreePruner: never;
+    readonly __tsonic_type_System_Linq_Expressions_ExpressionVisitor: never;
 
-    VisitExtension(node: Expression): Expression;
+    VisitExtension: Microsoft_EntityFrameworkCore_Query_Internal.SqlTreePruner["VisitExtension"] & ((node: Expression) => Expression);
 }
 
 
@@ -381,10 +404,12 @@ export const NpgsqlSqlTreePruner: {
 
 export type NpgsqlSqlTreePruner = NpgsqlSqlTreePruner$instance;
 
-export interface NpgsqlTypeMappingPostprocessor$instance extends RelationalTypeMappingPostprocessor {
+export interface NpgsqlTypeMappingPostprocessor$instance extends Microsoft_EntityFrameworkCore_Query_Internal.RelationalTypeMappingPostprocessor {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Query_RelationalTypeMappingPostprocessor: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_Internal_NpgsqlTypeMappingPostprocessor: never;
+    readonly __tsonic_type_System_Linq_Expressions_ExpressionVisitor: never;
 
-    VisitExtension(expression: Expression): Expression;
+    VisitExtension: Microsoft_EntityFrameworkCore_Query_Internal.RelationalTypeMappingPostprocessor["VisitExtension"] & ((expression: Expression) => Expression);
 }
 
 
@@ -395,10 +420,11 @@ export const NpgsqlTypeMappingPostprocessor: {
 
 export type NpgsqlTypeMappingPostprocessor = NpgsqlTypeMappingPostprocessor$instance;
 
-export interface NpgsqlUnnestPostprocessor$instance extends ExpressionVisitor {
+export interface NpgsqlUnnestPostprocessor$instance extends System_Linq_Expressions_Internal.ExpressionVisitor {
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_Internal_NpgsqlUnnestPostprocessor: never;
+    readonly __tsonic_type_System_Linq_Expressions_ExpressionVisitor: never;
 
-    Visit(expression: Expression | null): Expression | null;
+    Visit: System_Linq_Expressions_Internal.ExpressionVisitor["Visit"] & ((expression: Expression | null) => Expression | null);
 }
 
 

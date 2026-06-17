@@ -99,5 +99,5 @@ export type NpgsqlParameter<
   T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.NpgsqlParameter :
-  [T1] extends [unknown] ? Internal.NpgsqlParameter_1<T1> : never;
+  Internal.NpgsqlParameter_1<T1>;
 

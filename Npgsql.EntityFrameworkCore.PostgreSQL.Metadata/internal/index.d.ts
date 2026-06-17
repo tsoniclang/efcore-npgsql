@@ -13,27 +13,33 @@ import type { Boolean as ClrBoolean, Enum, IComparable, IConvertible, IFormattab
 import type { Annotatable, IReadOnlyAnnotatable } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Infrastructure/internal/index.js";
 import type { IConventionAnnotatable, IMutableAnnotatable } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Metadata/internal/index.js";
 
-export enum NpgsqlValueGenerationStrategy {
-    None = 0,
-    SequenceHiLo = 1,
-    SerialColumn = 2,
-    IdentityAlwaysColumn = 3,
-    IdentityByDefaultColumn = 4,
-    Sequence = 5
-}
+export type NpgsqlValueGenerationStrategy = number & { readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Metadata_NpgsqlValueGenerationStrategy: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const NpgsqlValueGenerationStrategy: {
+    readonly None: NpgsqlValueGenerationStrategy;
+    readonly SequenceHiLo: NpgsqlValueGenerationStrategy;
+    readonly SerialColumn: NpgsqlValueGenerationStrategy;
+    readonly IdentityAlwaysColumn: NpgsqlValueGenerationStrategy;
+    readonly IdentityByDefaultColumn: NpgsqlValueGenerationStrategy;
+    readonly Sequence: NpgsqlValueGenerationStrategy;
+};
 
 
-export enum NullSortOrder {
-    Unspecified = 0,
-    NullsFirst = 1,
-    NullsLast = 2
-}
+export type NullSortOrder = number & { readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Metadata_NullSortOrder: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const NullSortOrder: {
+    readonly Unspecified: NullSortOrder;
+    readonly NullsFirst: NullSortOrder;
+    readonly NullsLast: NullSortOrder;
+};
 
 
-export enum SortOrder {
-    Ascending = 0,
-    Descending = 1
-}
+export type SortOrder = number & { readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Metadata_SortOrder: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const SortOrder: {
+    readonly Ascending: SortOrder;
+    readonly Descending: SortOrder;
+};
 
 
 export interface CockroachDbInterleaveInParent$instance {
