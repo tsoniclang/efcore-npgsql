@@ -20,19 +20,15 @@ import type { IColumn, IEntityType, IIndex, IModel, IProperty, IRelationalModel,
 import type { CoreTypeMapping } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage/internal/index.js";
 import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection/internal/index.js";
 
-export interface NpgsqlAnnotationCodeGenerator$instance extends AnnotationCodeGenerator {
+export interface NpgsqlAnnotationCodeGenerator$instance extends Microsoft_EntityFrameworkCore_Design_Internal.AnnotationCodeGenerator {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Design_AnnotationCodeGenerator: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Design_Internal_NpgsqlAnnotationCodeGenerator: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Design_IAnnotationCodeGenerator: never;
 
-    GenerateFluentApi(model: IModel, annotation: IAnnotation): MethodCallCodeFragment | null;
-    GenerateFluentApi(entityType: IEntityType, annotation: IAnnotation): MethodCallCodeFragment | null;
-    GenerateFluentApi(index: IIndex, annotation: IAnnotation): MethodCallCodeFragment | null;
-    GenerateFluentApiCalls(model: IModel, annotations: IDictionary_2<System_Internal.String, IAnnotation>): IReadOnlyList_1<MethodCallCodeFragment>;
-    GenerateFluentApiCalls(property: IProperty, annotations: IDictionary_2<System_Internal.String, IAnnotation>): IReadOnlyList_1<MethodCallCodeFragment>;
-    IsHandledByConvention(model: IModel, annotation: IAnnotation): boolean;
-    IsHandledByConvention(index: IIndex, annotation: IAnnotation): boolean;
-    IsHandledByConvention(property: IProperty, annotation: IAnnotation): boolean;
+    GenerateFluentApi: Microsoft_EntityFrameworkCore_Design_Internal.AnnotationCodeGenerator["GenerateFluentApi"] & ((entityType: IEntityType, annotation: IAnnotation) => MethodCallCodeFragment | null) & ((index: IIndex, annotation: IAnnotation) => MethodCallCodeFragment | null) & ((model: IModel, annotation: IAnnotation) => MethodCallCodeFragment | null);
+    GenerateFluentApiCalls: Microsoft_EntityFrameworkCore_Design_Internal.AnnotationCodeGenerator["GenerateFluentApiCalls"] & ((model: IModel, annotations: IDictionary_2<System_Internal.String, IAnnotation>) => IReadOnlyList_1<MethodCallCodeFragment>) & ((property: IProperty, annotations: IDictionary_2<System_Internal.String, IAnnotation>) => IReadOnlyList_1<MethodCallCodeFragment>);
+    IsHandledByConvention: Microsoft_EntityFrameworkCore_Design_Internal.AnnotationCodeGenerator["IsHandledByConvention"] & ((index: IIndex, annotation: IAnnotation) => boolean) & ((model: IModel, annotation: IAnnotation) => boolean) & ((property: IProperty, annotation: IAnnotation) => boolean);
 }
 
 
@@ -43,19 +39,14 @@ export const NpgsqlAnnotationCodeGenerator: {
 
 export type NpgsqlAnnotationCodeGenerator = NpgsqlAnnotationCodeGenerator$instance;
 
-export interface NpgsqlCSharpRuntimeAnnotationCodeGenerator$instance extends RelationalCSharpRuntimeAnnotationCodeGenerator {
+export interface NpgsqlCSharpRuntimeAnnotationCodeGenerator$instance extends Microsoft_EntityFrameworkCore_Design_Internal_Internal.RelationalCSharpRuntimeAnnotationCodeGenerator {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Design_Internal_CSharpRuntimeAnnotationCodeGenerator: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Design_Internal_RelationalCSharpRuntimeAnnotationCodeGenerator: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Design_Internal_NpgsqlCSharpRuntimeAnnotationCodeGenerator: never;
 
     AddNpgsqlTypeMappingTweaks(typeMapping: CoreTypeMapping, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
-    Create(typeMapping: CoreTypeMapping, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters, valueComparer?: ValueComparer | null, keyValueComparer?: ValueComparer | null, providerValueComparer?: ValueComparer | null): boolean;
-    Generate(model: IModel, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
-    Generate(model: IRelationalModel, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
-    Generate(property: IProperty, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
-    Generate(column: IColumn, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
-    Generate(index: IIndex, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
-    Generate(index: ITableIndex, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
-    Generate(entityType: IEntityType, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
-    Generate(table: ITable, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters): void;
+    Create: Microsoft_EntityFrameworkCore_Design_Internal_Internal.RelationalCSharpRuntimeAnnotationCodeGenerator["Create"] & ((typeMapping: CoreTypeMapping, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters, valueComparer?: ValueComparer | null, keyValueComparer?: ValueComparer | null, providerValueComparer?: ValueComparer | null) => boolean);
+    Generate: Microsoft_EntityFrameworkCore_Design_Internal_Internal.RelationalCSharpRuntimeAnnotationCodeGenerator["Generate"] & ((column: IColumn, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters) => void) & ((entityType: IEntityType, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters) => void) & ((index: IIndex, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters) => void) & ((index: ITableIndex, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters) => void) & ((model: IModel, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters) => void) & ((model: IRelationalModel, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters) => void) & ((property: IProperty, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters) => void) & ((table: ITable, parameters: CSharpRuntimeAnnotationCodeGeneratorParameters) => void);
 }
 
 

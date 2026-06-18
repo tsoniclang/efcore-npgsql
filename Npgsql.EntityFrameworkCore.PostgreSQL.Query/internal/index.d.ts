@@ -19,7 +19,8 @@ import * as Microsoft_EntityFrameworkCore_Query_Internal from "@tsonic/efcore/Mi
 import type { EnumerableExpression, ISqlExpressionFactory, SqlExpressionFactory, SqlExpressionFactoryDependencies } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Query/internal/index.js";
 import type { RelationalTypeMapping } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage/internal/index.js";
 
-export interface NpgsqlSqlExpressionFactory$instance extends SqlExpressionFactory {
+export interface NpgsqlSqlExpressionFactory$instance extends Microsoft_EntityFrameworkCore_Query_Internal.SqlExpressionFactory {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Query_SqlExpressionFactory: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_NpgsqlSqlExpressionFactory: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Query_ISqlExpressionFactory: never;
@@ -27,7 +28,7 @@ export interface NpgsqlSqlExpressionFactory$instance extends SqlExpressionFactor
     AggregateFunction(name: string, arguments: IEnumerable_1<SqlExpression>, aggregateEnumerableExpression: EnumerableExpression, nullable: boolean, argumentsPropagateNullability: IEnumerable_1<System_Internal.Boolean>, returnType: Type, typeMapping?: RelationalTypeMapping | null): PgFunctionExpression;
     All(item: SqlExpression, array: SqlExpression, operatorType: PgAllOperatorType): PgAllExpression;
     Any(item: SqlExpression, array: SqlExpression, operatorType: PgAnyOperatorType): PgAnyExpression;
-    ApplyTypeMapping(sqlExpression: SqlExpression | null, typeMapping: RelationalTypeMapping | null): SqlExpression | null;
+    ApplyTypeMapping: Microsoft_EntityFrameworkCore_Query_Internal.SqlExpressionFactory["ApplyTypeMapping"] & ((sqlExpression: SqlExpression | null, typeMapping: RelationalTypeMapping | null) => SqlExpression | null);
     ArrayIndex(array: SqlExpression, index: SqlExpression, nullable: boolean, typeMapping?: RelationalTypeMapping | null): PgArrayIndexExpression;
     ArraySlice(array: SqlExpression, lowerBound: SqlExpression | null, upperBound: SqlExpression | null, nullable: boolean, typeMapping?: RelationalTypeMapping | null): PgArraySliceExpression;
     AtTimeZone(timestamp: SqlExpression, timeZone: SqlExpression, type: Type, typeMapping?: RelationalTypeMapping | null): AtTimeZoneExpression;
@@ -36,9 +37,9 @@ export interface NpgsqlSqlExpressionFactory$instance extends SqlExpressionFactor
     Contains(left: SqlExpression, right: SqlExpression): SqlExpression;
     GenerateOneBasedIndexExpression(expression: SqlExpression): SqlExpression;
     ILike(match: SqlExpression, pattern: SqlExpression, escapeChar?: SqlExpression | null): PgILikeExpression;
-    JsonTraversal(expression: SqlExpression, returnsText: boolean, type: Type, typeMapping?: RelationalTypeMapping | null): PgJsonTraversalExpression;
     JsonTraversal(expression: SqlExpression, path: IEnumerable_1<SqlExpression>, returnsText: boolean, type: Type, typeMapping?: RelationalTypeMapping | null): PgJsonTraversalExpression;
-    MakeBinary(operatorType: ExpressionType, left: SqlExpression, right: SqlExpression, typeMapping: RelationalTypeMapping | null, existingExpr?: SqlExpression | null): SqlExpression | null;
+    JsonTraversal(expression: SqlExpression, returnsText: boolean, type: Type, typeMapping?: RelationalTypeMapping | null): PgJsonTraversalExpression;
+    MakeBinary: Microsoft_EntityFrameworkCore_Query_Internal.SqlExpressionFactory["MakeBinary"] & ((operatorType: ExpressionType, left: SqlExpression, right: SqlExpression, typeMapping: RelationalTypeMapping | null, existingExpr?: SqlExpression | null) => SqlExpression | null);
     MakePostgresBinary(operatorType: PgExpressionType, left: SqlExpression, right: SqlExpression, typeMapping?: RelationalTypeMapping | null): SqlExpression;
     NewArray(expressions: IReadOnlyList_1<SqlExpression>, type: Type, typeMapping?: RelationalTypeMapping | null): PgNewArrayExpression;
     NewArrayOrConstant(elements: IReadOnlyList_1<SqlExpression>, type: Type, typeMapping?: RelationalTypeMapping | null): SqlExpression;

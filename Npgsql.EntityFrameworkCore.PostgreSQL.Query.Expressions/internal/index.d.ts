@@ -10,35 +10,37 @@ import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, in
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Enum, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable } from "@tsonic/dotnet/System/internal/index.js";
 
-export enum PgExpressionType {
-    Contains = 0,
-    ContainedBy = 1,
-    Overlaps = 2,
-    Distance = 3,
-    NetworkContainedByOrEqual = 4,
-    NetworkContainsOrEqual = 5,
-    NetworkContainsOrContainedBy = 6,
-    RangeIsStrictlyLeftOf = 7,
-    RangeIsStrictlyRightOf = 8,
-    RangeDoesNotExtendRightOf = 9,
-    RangeDoesNotExtendLeftOf = 10,
-    RangeIsAdjacentTo = 11,
-    RangeUnion = 12,
-    RangeIntersect = 13,
-    RangeExcept = 14,
-    TextSearchMatch = 15,
-    TextSearchAnd = 16,
-    TextSearchOr = 17,
-    JsonExists = 18,
-    JsonExistsAny = 19,
-    JsonExistsAll = 20,
-    LTreeMatches = 21,
-    LTreeMatchesAny = 22,
-    LTreeFirstAncestor = 23,
-    LTreeFirstDescendent = 24,
-    LTreeFirstMatches = 25,
-    CubeNthCoordinate = 26,
-    CubeNthCoordinateKnn = 27,
-    CubeDistanceTaxicab = 28,
-    CubeDistanceChebyshev = 29
-}
+export type PgExpressionType = number & { readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Query_Expressions_PgExpressionType: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const PgExpressionType: {
+    readonly Contains: PgExpressionType;
+    readonly ContainedBy: PgExpressionType;
+    readonly Overlaps: PgExpressionType;
+    readonly Distance: PgExpressionType;
+    readonly NetworkContainedByOrEqual: PgExpressionType;
+    readonly NetworkContainsOrEqual: PgExpressionType;
+    readonly NetworkContainsOrContainedBy: PgExpressionType;
+    readonly RangeIsStrictlyLeftOf: PgExpressionType;
+    readonly RangeIsStrictlyRightOf: PgExpressionType;
+    readonly RangeDoesNotExtendRightOf: PgExpressionType;
+    readonly RangeDoesNotExtendLeftOf: PgExpressionType;
+    readonly RangeIsAdjacentTo: PgExpressionType;
+    readonly RangeUnion: PgExpressionType;
+    readonly RangeIntersect: PgExpressionType;
+    readonly RangeExcept: PgExpressionType;
+    readonly TextSearchMatch: PgExpressionType;
+    readonly TextSearchAnd: PgExpressionType;
+    readonly TextSearchOr: PgExpressionType;
+    readonly JsonExists: PgExpressionType;
+    readonly JsonExistsAny: PgExpressionType;
+    readonly JsonExistsAll: PgExpressionType;
+    readonly LTreeMatches: PgExpressionType;
+    readonly LTreeMatchesAny: PgExpressionType;
+    readonly LTreeFirstAncestor: PgExpressionType;
+    readonly LTreeFirstDescendent: PgExpressionType;
+    readonly LTreeFirstMatches: PgExpressionType;
+    readonly CubeNthCoordinate: PgExpressionType;
+    readonly CubeNthCoordinateKnn: PgExpressionType;
+    readonly CubeDistanceTaxicab: PgExpressionType;
+    readonly CubeDistanceChebyshev: PgExpressionType;
+};

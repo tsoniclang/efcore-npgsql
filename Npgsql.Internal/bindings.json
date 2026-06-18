@@ -1653,19 +1653,7 @@
         "properties": [],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Npgsql:Npgsql.Internal.DbTypeResolverFactory::.ctor():void",
-            "metadataToken": 100666316,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Npgsql.Internal.DbTypeResolverFactory",
-            "ownerIdentity": "Npgsql"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Npgsql:Npgsql.Internal.DynamicTypeInfoResolver",
@@ -1708,104 +1696,6 @@
             "ownerQualifiedName": "Npgsql.Internal.DynamicTypeInfoResolver",
             "ownerIdentity": "Npgsql",
             "isExtensionMethod": false
-          },
-          {
-            "stableId": "Npgsql:Npgsql.Internal.DynamicTypeInfoResolver::CreateCollection(Npgsql.Internal.TypeInfoMappingCollection):Npgsql.Internal.DynamicTypeInfoResolver+DynamicMappingCollection",
-            "targetName": "CreateCollection",
-            "metadataToken": 100666318,
-            "canonicalSignature": "(Npgsql.Internal.TypeInfoMappingCollection):Npgsql.Internal.DynamicTypeInfoResolver+DynamicMappingCollection",
-            "normalizedSignature": "CreateCollection|(Npgsql.Internal.TypeInfoMappingCollection):Npgsql.Internal.DynamicTypeInfoResolver+DynamicMappingCollection|static=true",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "arity": 0,
-            "parameterCount": 1,
-            "isStatic": true,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "isSealed": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Npgsql.Internal.DynamicTypeInfoResolver",
-            "ownerIdentity": "Npgsql",
-            "isExtensionMethod": false
-          },
-          {
-            "stableId": "Npgsql:Npgsql.Internal.DynamicTypeInfoResolver::IsTypeOrNullableOfType(System.Type,System.Func_2[[System.Type,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Type&):System.Boolean",
-            "targetName": "IsTypeOrNullableOfType",
-            "metadataToken": 100666319,
-            "canonicalSignature": "(System.Type,System.Func_2[[System.Type,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Type&):System.Boolean",
-            "normalizedSignature": "IsTypeOrNullableOfType|(System.Type,System.Func_2[[System.Type,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Type&):System.Boolean|static=true",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "arity": 0,
-            "parameterCount": 3,
-            "isStatic": true,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "isSealed": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Npgsql.Internal.DynamicTypeInfoResolver",
-            "ownerIdentity": "Npgsql",
-            "isExtensionMethod": false,
-            "parameterModifiers": [
-              {
-                "index": 2,
-                "modifier": "out"
-              }
-            ]
-          },
-          {
-            "stableId": "Npgsql:Npgsql.Internal.DynamicTypeInfoResolver::IsArrayLikeType(System.Type,System.Type&):System.Boolean",
-            "targetName": "IsArrayLikeType",
-            "metadataToken": 100666320,
-            "canonicalSignature": "(System.Type,System.Type&):System.Boolean",
-            "normalizedSignature": "IsArrayLikeType|(System.Type,System.Type&):System.Boolean|static=true",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "arity": 0,
-            "parameterCount": 2,
-            "isStatic": true,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "isSealed": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Npgsql.Internal.DynamicTypeInfoResolver",
-            "ownerIdentity": "Npgsql",
-            "isExtensionMethod": false,
-            "parameterModifiers": [
-              {
-                "index": 1,
-                "modifier": "out"
-              }
-            ]
-          },
-          {
-            "stableId": "Npgsql:Npgsql.Internal.DynamicTypeInfoResolver::IsArrayDataTypeName(Npgsql.Internal.Postgres.DataTypeName,Npgsql.Internal.PgSerializerOptions,Npgsql.Internal.Postgres.DataTypeName&):System.Boolean",
-            "targetName": "IsArrayDataTypeName",
-            "metadataToken": 100666321,
-            "canonicalSignature": "(Npgsql.Internal.Postgres.DataTypeName,Npgsql.Internal.PgSerializerOptions,Npgsql.Internal.Postgres.DataTypeName&):System.Boolean",
-            "normalizedSignature": "IsArrayDataTypeName|(Npgsql.Internal.Postgres.DataTypeName,Npgsql.Internal.PgSerializerOptions,Npgsql.Internal.Postgres.DataTypeName&):System.Boolean|static=true",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "arity": 0,
-            "parameterCount": 3,
-            "isStatic": true,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "isSealed": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Npgsql.Internal.DynamicTypeInfoResolver",
-            "ownerIdentity": "Npgsql",
-            "isExtensionMethod": false,
-            "parameterModifiers": [
-              {
-                "index": 2,
-                "modifier": "out"
-              }
-            ]
           },
           {
             "stableId": "Npgsql:Npgsql.Internal.DynamicTypeInfoResolver::GetMappings(System.Type,Npgsql.Internal.Postgres.DataTypeName,Npgsql.Internal.PgSerializerOptions):Npgsql.Internal.DynamicTypeInfoResolver+DynamicMappingCollection",
@@ -1852,19 +1742,7 @@
         "properties": [],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Npgsql:Npgsql.Internal.DynamicTypeInfoResolver::.ctor():void",
-            "metadataToken": 100666323,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Npgsql.Internal.DynamicTypeInfoResolver",
-            "ownerIdentity": "Npgsql"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Npgsql:Npgsql.Internal.DynamicTypeInfoResolver+DynamicMappingCollection",
@@ -2070,12 +1948,12 @@
             "targetName": "TextEncoding",
             "metadataToken": 385876732,
             "canonicalSignature": ":System.Text.Encoding",
-            "normalizedSignature": "TextEncoding|:System.Text.Encoding|static=false|accessor=getset",
+            "normalizedSignature": "TextEncoding|:System.Text.Encoding|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
@@ -2203,26 +2081,6 @@
             "isStatic": false,
             "isAbstract": true,
             "isVirtual": true,
-            "isOverride": false,
-            "isSealed": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Npgsql.Internal.NpgsqlDatabaseInfo",
-            "ownerIdentity": "Npgsql",
-            "isExtensionMethod": false
-          },
-          {
-            "stableId": "Npgsql:Npgsql.Internal.NpgsqlDatabaseInfo::ParseServerVersion(System.String):System.Version",
-            "targetName": "ParseServerVersion",
-            "metadataToken": 100666575,
-            "canonicalSignature": "(System.String):System.Version",
-            "normalizedSignature": "ParseServerVersion|(System.String):System.Version|static=true",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "arity": 0,
-            "parameterCount": 1,
-            "isStatic": true,
-            "isAbstract": false,
-            "isVirtual": false,
             "isOverride": false,
             "isSealed": false,
             "visibility": "Protected",
@@ -2559,30 +2417,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Npgsql:Npgsql.Internal.NpgsqlDatabaseInfo::.ctor(System.String,System.Int32,System.String,System.Version):void",
-            "metadataToken": 100666565,
-            "canonicalSignature": "(System.String,System.Int32,System.String,System.Version):void",
-            "normalizedSignature": "constructor|(System.String,System.Int32,System.String,System.Version):void|static=false",
-            "isStatic": false,
-            "parameterCount": 4,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Npgsql.Internal.NpgsqlDatabaseInfo",
-            "ownerIdentity": "Npgsql"
-          },
-          {
-            "stableId": "Npgsql:Npgsql.Internal.NpgsqlDatabaseInfo::.ctor(System.String,System.Int32,System.String,System.Version,System.String):void",
-            "metadataToken": 100666566,
-            "canonicalSignature": "(System.String,System.Int32,System.String,System.Version,System.String):void",
-            "normalizedSignature": "constructor|(System.String,System.Int32,System.String,System.Version,System.String):void|static=false",
-            "isStatic": false,
-            "parameterCount": 5,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Npgsql.Internal.NpgsqlDatabaseInfo",
-            "ownerIdentity": "Npgsql"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Npgsql:Npgsql.Internal.PgBufferedConverter`1",
@@ -2756,19 +2591,7 @@
         "properties": [],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Npgsql:Npgsql.Internal.PgBufferedConverter`1::.ctor(System.Boolean):void",
-            "metadataToken": 100666698,
-            "canonicalSignature": "(System.Boolean):void",
-            "normalizedSignature": "constructor|(System.Boolean):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Npgsql.Internal.PgBufferedConverter`1",
-            "ownerIdentity": "Npgsql"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Npgsql:Npgsql.Internal.PgConverter",
@@ -2802,32 +2625,6 @@
             "isOverride": false,
             "isSealed": false,
             "visibility": "Public",
-            "ownerQualifiedName": "Npgsql.Internal.PgConverter",
-            "ownerIdentity": "Npgsql",
-            "isExtensionMethod": false,
-            "parameterModifiers": [
-              {
-                "index": 1,
-                "modifier": "out"
-              }
-            ]
-          },
-          {
-            "stableId": "Npgsql:Npgsql.Internal.PgConverter::CanConvertBufferedDefault(Npgsql.Internal.DataFormat,Npgsql.Internal.BufferRequirements&):System.Boolean",
-            "targetName": "CanConvertBufferedDefault",
-            "metadataToken": 100666737,
-            "canonicalSignature": "(Npgsql.Internal.DataFormat,Npgsql.Internal.BufferRequirements&):System.Boolean",
-            "normalizedSignature": "CanConvertBufferedDefault|(Npgsql.Internal.DataFormat,Npgsql.Internal.BufferRequirements&):System.Boolean|static=false",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "arity": 0,
-            "parameterCount": 2,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "isSealed": false,
-            "visibility": "Protected",
             "ownerQualifiedName": "Npgsql.Internal.PgConverter",
             "ownerIdentity": "Npgsql",
             "isExtensionMethod": false,
@@ -3102,26 +2899,6 @@
             "ownerQualifiedName": "Npgsql.Internal.PgConverterResolver",
             "ownerIdentity": "Npgsql",
             "isExtensionMethod": false
-          },
-          {
-            "stableId": "Npgsql:Npgsql.Internal.PgConverterResolver::CreateUnsupportedPgTypeIdException(Npgsql.Internal.Postgres.PgTypeId):System.ArgumentOutOfRangeException",
-            "targetName": "CreateUnsupportedPgTypeIdException",
-            "metadataToken": 100666772,
-            "canonicalSignature": "(Npgsql.Internal.Postgres.PgTypeId):System.ArgumentOutOfRangeException",
-            "normalizedSignature": "CreateUnsupportedPgTypeIdException|(Npgsql.Internal.Postgres.PgTypeId):System.ArgumentOutOfRangeException|static=false",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "arity": 0,
-            "parameterCount": 1,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "isSealed": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Npgsql.Internal.PgConverterResolver",
-            "ownerIdentity": "Npgsql",
-            "isExtensionMethod": false
           }
         ],
         "properties": [],
@@ -3192,19 +2969,7 @@
         "properties": [],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Npgsql:Npgsql.Internal.PgConverterResolver`1::.ctor():void",
-            "metadataToken": 100666777,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Npgsql.Internal.PgConverterResolver`1",
-            "ownerIdentity": "Npgsql"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Npgsql:Npgsql.Internal.PgReader",
@@ -4399,12 +4164,12 @@
             "targetName": "TypeInfoResolver",
             "metadataToken": 385876871,
             "canonicalSignature": ":Npgsql.Internal.IPgTypeInfoResolver",
-            "normalizedSignature": "TypeInfoResolver|:Npgsql.Internal.IPgTypeInfoResolver|static=false|accessor=getset",
+            "normalizedSignature": "TypeInfoResolver|:Npgsql.Internal.IPgTypeInfoResolver|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
@@ -4527,19 +4292,7 @@
         "properties": [],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Npgsql:Npgsql.Internal.PgStreamingConverter`1::.ctor(System.Boolean):void",
-            "metadataToken": 100666913,
-            "canonicalSignature": "(System.Boolean):void",
-            "normalizedSignature": "constructor|(System.Boolean):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Npgsql.Internal.PgStreamingConverter`1",
-            "ownerIdentity": "Npgsql"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Npgsql:Npgsql.Internal.PgTypeInfo",
@@ -4890,19 +4643,7 @@
         "properties": [],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Npgsql:Npgsql.Internal.PgTypeInfoResolverFactory::.ctor():void",
-            "metadataToken": 100666997,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Npgsql.Internal.PgTypeInfoResolverFactory",
-            "ownerIdentity": "Npgsql"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Npgsql:Npgsql.Internal.PgWriter",

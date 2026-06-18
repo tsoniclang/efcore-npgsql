@@ -28,10 +28,12 @@ export interface INpgsqlDataSourceConfigurationPlugin$instance {
 
 export type INpgsqlDataSourceConfigurationPlugin = INpgsqlDataSourceConfigurationPlugin$instance;
 
-export interface EntityFrameworkNpgsqlServicesBuilder$instance extends EntityFrameworkRelationalServicesBuilder {
+export interface EntityFrameworkNpgsqlServicesBuilder$instance extends Microsoft_EntityFrameworkCore_Infrastructure_Internal.EntityFrameworkRelationalServicesBuilder {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Infrastructure_EntityFrameworkRelationalServicesBuilder: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Infrastructure_EntityFrameworkServicesBuilder: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Infrastructure_EntityFrameworkNpgsqlServicesBuilder: never;
 
-    TryGetServiceCharacteristics(serviceType: Type): Nullable_1<ServiceCharacteristics>;
+    TryGetServiceCharacteristics: Microsoft_EntityFrameworkCore_Infrastructure_Internal.EntityFrameworkRelationalServicesBuilder["TryGetServiceCharacteristics"] & ((serviceType: Type) => Nullable_1<ServiceCharacteristics>);
 }
 
 
@@ -42,25 +44,26 @@ export const EntityFrameworkNpgsqlServicesBuilder: {
 
 export type EntityFrameworkNpgsqlServicesBuilder = EntityFrameworkNpgsqlServicesBuilder$instance;
 
-export interface NpgsqlDbContextOptionsBuilder$instance extends RelationalDbContextOptionsBuilder_2<NpgsqlDbContextOptionsBuilder, NpgsqlOptionsExtension> {
+export interface NpgsqlDbContextOptionsBuilder$instance extends Microsoft_EntityFrameworkCore_Infrastructure_Internal.RelationalDbContextOptionsBuilder_2<NpgsqlDbContextOptionsBuilder, NpgsqlOptionsExtension> {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Infrastructure_RelationalDbContextOptionsBuilder_2: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Infrastructure_NpgsqlDbContextOptionsBuilder: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_IRelationalDbContextOptionsBuilderInfrastructure: never;
 
     ConfigureDataSource(dataSourceBuilderAction: Action_1<NpgsqlDataSourceBuilder>): NpgsqlDbContextOptionsBuilder;
     EnableRetryOnFailure(): NpgsqlDbContextOptionsBuilder;
-    EnableRetryOnFailure(maxRetryCount: int): NpgsqlDbContextOptionsBuilder;
     EnableRetryOnFailure(errorCodesToAdd: ICollection_1<System_Internal.String> | null): NpgsqlDbContextOptionsBuilder;
+    EnableRetryOnFailure(maxRetryCount: int): NpgsqlDbContextOptionsBuilder;
     EnableRetryOnFailure(maxRetryCount: int, maxRetryDelay: TimeSpan, errorCodesToAdd: ICollection_1<System_Internal.String> | null): NpgsqlDbContextOptionsBuilder;
-    MapEnum<T extends NonNullable<unknown> & number>(enumName?: string | null, schemaName?: string | null, nameTranslator?: INpgsqlNameTranslator | null): NpgsqlDbContextOptionsBuilder;
     MapEnum(clrType: Type, enumName?: string | null, schemaName?: string | null, nameTranslator?: INpgsqlNameTranslator | null): NpgsqlDbContextOptionsBuilder;
-    MapRange<TSubtype extends unknown>(rangeName: string, schemaName?: string | null, subtypeName?: string | null): NpgsqlDbContextOptionsBuilder;
+    MapEnum<T extends { readonly __tsonic_type_System_ValueType: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never }>(enumName?: string | null, schemaName?: string | null, nameTranslator?: INpgsqlNameTranslator | null): NpgsqlDbContextOptionsBuilder;
     MapRange(rangeName: string, subtypeClrType: Type, schemaName?: string | null, subtypeName?: string | null): NpgsqlDbContextOptionsBuilder;
+    MapRange<TSubtype extends unknown>(rangeName: string, schemaName?: string | null, subtypeName?: string | null): NpgsqlDbContextOptionsBuilder;
     ProvideClientCertificatesCallback(callback: ProvideClientCertificatesCallback | null): NpgsqlDbContextOptionsBuilder;
     ProvidePasswordCallback(callback: ProvidePasswordCallback | null): NpgsqlDbContextOptionsBuilder;
     RemoteCertificateValidationCallback(callback: RemoteCertificateValidationCallback | null): NpgsqlDbContextOptionsBuilder;
-    SetPostgresVersion(postgresVersion: Version | null): NpgsqlDbContextOptionsBuilder;
     SetPostgresVersion(major: int, minor: int): NpgsqlDbContextOptionsBuilder;
+    SetPostgresVersion(postgresVersion: Version | null): NpgsqlDbContextOptionsBuilder;
     UseAdminDatabase(dbName: string | null): NpgsqlDbContextOptionsBuilder;
     UseRedshift(useRedshift?: boolean): NpgsqlDbContextOptionsBuilder;
 }

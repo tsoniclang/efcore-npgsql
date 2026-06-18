@@ -14,12 +14,13 @@ import * as Microsoft_EntityFrameworkCore_Storage_Internal from "@tsonic/efcore/
 import type { ExecutionStrategy, ExecutionStrategyDependencies, IExecutionStrategy } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage/internal/index.js";
 import type { DbContext } from "@tsonic/efcore/Microsoft.EntityFrameworkCore/internal/index.js";
 
-export interface NpgsqlRetryingExecutionStrategy$instance extends ExecutionStrategy {
+export interface NpgsqlRetryingExecutionStrategy$instance extends Microsoft_EntityFrameworkCore_Storage_Internal.ExecutionStrategy {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Storage_ExecutionStrategy: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_NpgsqlRetryingExecutionStrategy: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Storage_IExecutionStrategy: never;
 
-    ShouldRetryOn(exception: Exception | null): boolean;
+    ShouldRetryOn: Microsoft_EntityFrameworkCore_Storage_Internal.ExecutionStrategy["ShouldRetryOn"] & ((exception: Exception | null) => boolean);
 }
 
 

@@ -28,8 +28,8 @@ export interface IdentitySequenceOptionsData$instance {
     NumbersToCache: long;
     get StartValue(): Nullable_1<System_Internal.Int64>;
     set StartValue(value: Nullable_1<System_Internal.Int64> | long);
-    Equals(other: IdentitySequenceOptionsData | null): boolean;
     Equals(obj: unknown | null): boolean;
+    Equals(other: IdentitySequenceOptionsData | null): boolean;
     GetHashCode(): int;
     Serialize(): string;
 }
@@ -45,15 +45,13 @@ export const IdentitySequenceOptionsData: {
 
 export type IdentitySequenceOptionsData = IdentitySequenceOptionsData$instance;
 
-export interface NpgsqlAnnotationProvider$instance extends RelationalAnnotationProvider {
+export interface NpgsqlAnnotationProvider$instance extends Microsoft_EntityFrameworkCore_Metadata_Internal.RelationalAnnotationProvider {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Metadata_RelationalAnnotationProvider: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Metadata_Internal_NpgsqlAnnotationProvider: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Metadata_IRelationalAnnotationProvider: never;
 
-    For(table: ITable, designTime: boolean): IEnumerable_1<IAnnotation>;
-    For(column: IColumn, designTime: boolean): IEnumerable_1<IAnnotation>;
-    For(index: ITableIndex, designTime: boolean): IEnumerable_1<IAnnotation>;
-    For(model: IRelationalModel, designTime: boolean): IEnumerable_1<IAnnotation>;
+    For: Microsoft_EntityFrameworkCore_Metadata_Internal.RelationalAnnotationProvider["For"] & ((column: IColumn, designTime: boolean) => IEnumerable_1<IAnnotation>) & ((index: ITableIndex, designTime: boolean) => IEnumerable_1<IAnnotation>) & ((model: IRelationalModel, designTime: boolean) => IEnumerable_1<IAnnotation>) & ((table: ITable, designTime: boolean) => IEnumerable_1<IAnnotation>);
 }
 
 

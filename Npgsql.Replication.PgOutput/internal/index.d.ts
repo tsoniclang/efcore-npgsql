@@ -20,27 +20,33 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Byte, Enum, IComparable, IConvertible, IEquatable_1, IFormattable, Int32, ISpanFormattable, Nullable_1, Object as ClrObject, String as ClrString, Type, UInt16, UInt64 } from "@tsonic/dotnet/System/internal/index.js";
 
-export enum PgOutputProtocolVersion {
-    V1 = 1,
-    V2 = 2,
-    V3 = 3,
-    V4 = 4
-}
+export type PgOutputProtocolVersion = number & { readonly __tsonic_type_Npgsql_Replication_PgOutput_PgOutputProtocolVersion: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const PgOutputProtocolVersion: {
+    readonly V1: PgOutputProtocolVersion;
+    readonly V2: PgOutputProtocolVersion;
+    readonly V3: PgOutputProtocolVersion;
+    readonly V4: PgOutputProtocolVersion;
+};
 
 
-export enum PgOutputStreamingMode {
-    Off = 0,
-    On = 1,
-    Parallel = 2
-}
+export type PgOutputStreamingMode = number & { readonly __tsonic_type_Npgsql_Replication_PgOutput_PgOutputStreamingMode: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const PgOutputStreamingMode: {
+    readonly Off: PgOutputStreamingMode;
+    readonly On: PgOutputStreamingMode;
+    readonly Parallel: PgOutputStreamingMode;
+};
 
 
-export enum TupleDataKind {
-    Null = 110,
-    UnchangedToastedValue = 117,
-    TextValue = 116,
-    BinaryValue = 98
-}
+export type TupleDataKind = number & { readonly __tsonic_type_Npgsql_Replication_PgOutput_TupleDataKind: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const TupleDataKind: {
+    readonly Null: TupleDataKind;
+    readonly UnchangedToastedValue: TupleDataKind;
+    readonly TextValue: TupleDataKind;
+    readonly BinaryValue: TupleDataKind;
+};
 
 
 export interface PgOutputReplicationOptions$instance {
@@ -54,8 +60,8 @@ export interface PgOutputReplicationOptions$instance {
     readonly PublicationNames: List_1<System_Internal.String>;
     readonly StreamingMode: Nullable_1<PgOutputStreamingMode>;
     readonly TwoPhase: Nullable_1<System_Internal.Boolean>;
-    Equals(other: PgOutputReplicationOptions | null): boolean;
     Equals(obj: unknown | null): boolean;
+    Equals(other: PgOutputReplicationOptions | null): boolean;
     GetHashCode(): int;
 }
 
@@ -70,8 +76,10 @@ export const PgOutputReplicationOptions: {
 
 export type PgOutputReplicationOptions = PgOutputReplicationOptions$instance;
 
-export interface PgOutputReplicationSlot$instance extends LogicalReplicationSlot {
+export interface PgOutputReplicationSlot$instance extends Npgsql_Replication_Internal_Internal.LogicalReplicationSlot$instance {
+    readonly __tsonic_type_Npgsql_Replication_Internal_LogicalReplicationSlot: never;
     readonly __tsonic_type_Npgsql_Replication_PgOutput_PgOutputReplicationSlot: never;
+    readonly __tsonic_type_Npgsql_Replication_ReplicationSlot: never;
 
 }
 
@@ -89,7 +97,7 @@ export interface ReplicationTuple$instance {
 
     readonly __tsonic_iface_System_Collections_Generic_IAsyncEnumerable_1: never;
 
-    NumColumns: ushort;
+    readonly NumColumns: ushort;
     GetAsyncEnumerator(cancellationToken?: CancellationToken): IAsyncEnumerator_1<ReplicationValue>;
 }
 
@@ -105,10 +113,10 @@ export interface ReplicationValue$instance {
 
     readonly IsDBNull: boolean;
     readonly IsUnchangedToastedValue: boolean;
-    Kind: TupleDataKind;
-    Length: int;
-    Get<T extends unknown>(cancellationToken?: CancellationToken): ValueTask_1<T>;
+    readonly Kind: TupleDataKind;
+    readonly Length: int;
     Get(cancellationToken?: CancellationToken): ValueTask_1<unknown>;
+    Get<T extends unknown>(cancellationToken?: CancellationToken): ValueTask_1<T>;
     GetDataTypeName(): string;
     GetFieldName(): string;
     GetFieldType(): Type;

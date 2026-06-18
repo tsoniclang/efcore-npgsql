@@ -20,7 +20,8 @@ import type { IEntityType, IKey, IModel, IProperty, StoreObjectIdentifier } from
 import type { DbLoggerCategory_Model_Validation, ParameterTranslationMode } from "@tsonic/efcore/Microsoft.EntityFrameworkCore/internal/index.js";
 import type { IServiceCollection } from "@tsonic/microsoft-extensions/Microsoft.Extensions.DependencyInjection/internal/index.js";
 
-export interface INpgsqlSingletonOptions$instance extends ISingletonOptions {
+export interface INpgsqlSingletonOptions$instance {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_ISingletonOptions: never;
     readonly __tsonic_iface_Npgsql_EntityFrameworkCore_PostgreSQL_Infrastructure_Internal_INpgsqlSingletonOptions: never;
 
     readonly PostgresVersion: Version;
@@ -31,8 +32,6 @@ export interface INpgsqlSingletonOptions$instance extends ISingletonOptions {
     readonly UserRangeDefinitions: IReadOnlyList_1<UserRangeDefinition>;
 }
 
-
-export interface INpgsqlSingletonOptions$instance extends Microsoft_EntityFrameworkCore_Infrastructure_Internal.ISingletonOptions {}
 
 export type INpgsqlSingletonOptions = INpgsqlSingletonOptions$instance;
 
@@ -59,18 +58,20 @@ export const EnumDefinition: {
 
 export type EnumDefinition = EnumDefinition$instance;
 
-export interface NpgsqlModelValidator$instance extends RelationalModelValidator {
+export interface NpgsqlModelValidator$instance extends Microsoft_EntityFrameworkCore_Infrastructure_Internal.RelationalModelValidator {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Infrastructure_ModelValidator: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Infrastructure_RelationalModelValidator: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Infrastructure_Internal_NpgsqlModelValidator: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_IModelValidator: never;
 
-    Validate(model: IModel, logger: IDiagnosticsLogger_1<DbLoggerCategory_Model_Validation>): void;
-    ValidateCompatible(property: IProperty, duplicateProperty: IProperty, columnName: string, storeObject: StoreObjectIdentifier, logger: IDiagnosticsLogger_1<DbLoggerCategory_Model_Validation>): void;
+    Validate: Microsoft_EntityFrameworkCore_Infrastructure_Internal.RelationalModelValidator["Validate"] & ((model: IModel, logger: IDiagnosticsLogger_1<DbLoggerCategory_Model_Validation>) => void);
+    ValidateCompatible: Microsoft_EntityFrameworkCore_Infrastructure_Internal.RelationalModelValidator["ValidateCompatible"] & ((property: IProperty, duplicateProperty: IProperty, columnName: string, storeObject: StoreObjectIdentifier, logger: IDiagnosticsLogger_1<DbLoggerCategory_Model_Validation>) => void);
     ValidateIdentityVersionCompatibility(model: IModel): void;
     ValidateIndexIncludeProperties(model: IModel): void;
-    ValidateStoredProcedures(model: IModel, logger: IDiagnosticsLogger_1<DbLoggerCategory_Model_Validation>): void;
-    ValidateTypeMappings(model: IModel, logger: IDiagnosticsLogger_1<DbLoggerCategory_Model_Validation>): void;
-    ValidateValueGeneration(entityType: IEntityType, key: IKey, logger: IDiagnosticsLogger_1<DbLoggerCategory_Model_Validation>): void;
+    ValidateStoredProcedures: Microsoft_EntityFrameworkCore_Infrastructure_Internal.RelationalModelValidator["ValidateStoredProcedures"] & ((model: IModel, logger: IDiagnosticsLogger_1<DbLoggerCategory_Model_Validation>) => void);
+    ValidateTypeMappings: Microsoft_EntityFrameworkCore_Infrastructure_Internal.RelationalModelValidator["ValidateTypeMappings"] & ((model: IModel, logger: IDiagnosticsLogger_1<DbLoggerCategory_Model_Validation>) => void);
+    ValidateValueGeneration: Microsoft_EntityFrameworkCore_Infrastructure_Internal.RelationalModelValidator["ValidateValueGeneration"] & ((entityType: IEntityType, key: IKey, logger: IDiagnosticsLogger_1<DbLoggerCategory_Model_Validation>) => void);
 }
 
 
@@ -81,38 +82,30 @@ export const NpgsqlModelValidator: {
 
 export type NpgsqlModelValidator = NpgsqlModelValidator$instance;
 
-export interface NpgsqlOptionsExtension$instance extends RelationalOptionsExtension {
+export interface NpgsqlOptionsExtension$instance extends Microsoft_EntityFrameworkCore_Infrastructure_Internal.RelationalOptionsExtension {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Infrastructure_RelationalOptionsExtension: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Infrastructure_Internal_NpgsqlOptionsExtension: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Infrastructure_IDbContextOptionsExtension: never;
 
-    get AdminDatabase(): string | null;
-    set AdminDatabase(value: string | null);
-    get DataSource(): DbDataSource | null;
-    set DataSource(value: DbDataSource | null);
-    get DataSourceBuilderAction(): Action_1<NpgsqlDataSourceBuilder> | null;
-    set DataSourceBuilderAction(value: Action_1<NpgsqlDataSourceBuilder> | null);
+    readonly AdminDatabase: string | null;
+    readonly DataSource: DbDataSource | null;
+    readonly DataSourceBuilderAction: Action_1<NpgsqlDataSourceBuilder> | null;
     readonly EnumDefinitions: IReadOnlyList_1<EnumDefinition>;
-    readonly Info: DbContextOptionsExtensionInfo;
     readonly IsPostgresVersionSet: boolean;
-    readonly MinBatchSize: Nullable_1<System_Internal.Int32>;
-    readonly ParameterizedCollectionMode: ParameterTranslationMode;
     readonly PostgresVersion: Version;
-    get ProvideClientCertificatesCallback(): ProvideClientCertificatesCallback | null;
-    set ProvideClientCertificatesCallback(value: ProvideClientCertificatesCallback | null);
-    get ProvidePasswordCallback(): ProvidePasswordCallback | null;
-    set ProvidePasswordCallback(value: ProvidePasswordCallback | null);
-    get RemoteCertificateValidationCallback(): RemoteCertificateValidationCallback | null;
-    set RemoteCertificateValidationCallback(value: RemoteCertificateValidationCallback | null);
-    ReverseNullOrdering: boolean;
-    UseRedshift: boolean;
+    readonly ProvideClientCertificatesCallback: ProvideClientCertificatesCallback | null;
+    readonly ProvidePasswordCallback: ProvidePasswordCallback | null;
+    readonly RemoteCertificateValidationCallback: RemoteCertificateValidationCallback | null;
+    readonly ReverseNullOrdering: boolean;
+    readonly UseRedshift: boolean;
     readonly UserRangeDefinitions: IReadOnlyList_1<UserRangeDefinition>;
-    ApplyServices(services: IServiceCollection): void;
-    Clone(): RelationalOptionsExtension;
-    Validate(options: IDbContextOptions): void;
+    ApplyServices: Microsoft_EntityFrameworkCore_Infrastructure_Internal.RelationalOptionsExtension["ApplyServices"] & ((services: IServiceCollection) => void);
+    Clone: Microsoft_EntityFrameworkCore_Infrastructure_Internal.RelationalOptionsExtension["Clone"] & (() => RelationalOptionsExtension);
+    Validate: Microsoft_EntityFrameworkCore_Infrastructure_Internal.RelationalOptionsExtension["Validate"] & ((options: IDbContextOptions) => void);
     WithAdminDatabase(adminDatabase: string | null): NpgsqlOptionsExtension;
-    WithConnection(connection: DbConnection | null): RelationalOptionsExtension;
-    WithConnectionString(connectionString: string | null): RelationalOptionsExtension;
+    WithConnection: Microsoft_EntityFrameworkCore_Infrastructure_Internal.RelationalOptionsExtension["WithConnection"] & ((connection: DbConnection | null) => RelationalOptionsExtension);
+    WithConnectionString: Microsoft_EntityFrameworkCore_Infrastructure_Internal.RelationalOptionsExtension["WithConnectionString"] & ((connectionString: string | null) => RelationalOptionsExtension);
     WithDataSource(dataSource: DbDataSource | null): RelationalOptionsExtension;
     WithDataSourceConfiguration(dataSourceBuilderAction: Action_1<NpgsqlDataSourceBuilder>): NpgsqlOptionsExtension;
     WithEnumMapping(clrType: Type, enumName: string | null, schemaName: string | null, nameTranslator: INpgsqlNameTranslator | null): NpgsqlOptionsExtension;
@@ -121,9 +114,9 @@ export interface NpgsqlOptionsExtension$instance extends RelationalOptionsExtens
     WithProvidePasswordCallback(callback: ProvidePasswordCallback | null): NpgsqlOptionsExtension;
     WithRedshift(useRedshift: boolean): NpgsqlOptionsExtension;
     WithRemoteCertificateValidationCallback(callback: RemoteCertificateValidationCallback | null): NpgsqlOptionsExtension;
-    WithUseParameterizedCollectionMode(parameterizedCollectionMode: ParameterTranslationMode): RelationalOptionsExtension;
-    WithUserRangeDefinition<TSubtype extends unknown>(rangeName: string, schemaName?: string | null, subtypeName?: string | null): NpgsqlOptionsExtension;
+    WithUseParameterizedCollectionMode: Microsoft_EntityFrameworkCore_Infrastructure_Internal.RelationalOptionsExtension["WithUseParameterizedCollectionMode"] & ((parameterizedCollectionMode: ParameterTranslationMode) => RelationalOptionsExtension);
     WithUserRangeDefinition(rangeName: string, schemaName: string | null, subtypeClrType: Type, subtypeName: string | null): NpgsqlOptionsExtension;
+    WithUserRangeDefinition<TSubtype extends unknown>(rangeName: string, schemaName?: string | null, subtypeName?: string | null): NpgsqlOptionsExtension;
 }
 
 

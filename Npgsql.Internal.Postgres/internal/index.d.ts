@@ -12,6 +12,7 @@ import type { Boolean as ClrBoolean, IEquatable_1, Int32, Object as ClrObject, S
 
 export interface DataTypeName$instance {
     readonly __tsonic_type_Npgsql_Internal_Postgres_DataTypeName: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly __tsonic_iface_System_IEquatable_1: never;
 
@@ -22,8 +23,8 @@ export interface DataTypeName$instance {
     readonly UnqualifiedDisplayName: string;
     readonly UnqualifiedName: string;
     readonly Value: string;
-    Equals(other: DataTypeName): boolean;
     Equals(obj: unknown | null): boolean;
+    Equals(other: DataTypeName): boolean;
     GetHashCode(): int;
     ToArrayName(): DataTypeName;
     ToDefaultMultirangeName(): DataTypeName;
@@ -43,6 +44,7 @@ export type DataTypeName = DataTypeName$instance;
 
 export interface Field$instance {
     readonly __tsonic_type_Npgsql_Internal_Postgres_Field: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     Name: string;
     PgTypeId: PgTypeId;
@@ -59,12 +61,13 @@ export type Field = Field$instance;
 
 export interface Oid$instance {
     readonly __tsonic_type_Npgsql_Internal_Postgres_Oid: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly __tsonic_iface_System_IEquatable_1: never;
 
     Value: uint;
-    Equals(other: Oid): boolean;
     Equals(obj: unknown | null): boolean;
+    Equals(other: Oid): boolean;
     GetHashCode(): int;
     ToString(): string;
 }
@@ -80,6 +83,7 @@ export type Oid = Oid$instance;
 
 export interface PgTypeId$instance {
     readonly __tsonic_type_Npgsql_Internal_Postgres_PgTypeId: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly __tsonic_iface_System_IEquatable_1: never;
 
@@ -87,8 +91,8 @@ export interface PgTypeId$instance {
     readonly IsDataTypeName: boolean;
     readonly IsOid: boolean;
     readonly Oid: Oid;
-    Equals(other: PgTypeId): boolean;
     Equals(obj: unknown | null): boolean;
+    Equals(other: PgTypeId): boolean;
     GetHashCode(): int;
     ToString(): string;
 }

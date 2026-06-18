@@ -16,8 +16,9 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Nullable_1, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface LogicalReplicationSlot$instance extends ReplicationSlot {
+export interface LogicalReplicationSlot$instance extends Npgsql_Replication_Internal.ReplicationSlot$instance {
     readonly __tsonic_type_Npgsql_Replication_Internal_LogicalReplicationSlot: never;
+    readonly __tsonic_type_Npgsql_Replication_ReplicationSlot: never;
 
     readonly ConsistentPoint: NpgsqlLogSequenceNumber;
     readonly OutputPlugin: string;
@@ -25,7 +26,7 @@ export interface LogicalReplicationSlot$instance extends ReplicationSlot {
 }
 
 
-export const LogicalReplicationSlot: (abstract new(outputPlugin: string, replicationSlotOptions: ReplicationSlotOptions) => LogicalReplicationSlot) & {
+export const LogicalReplicationSlot: {
 };
 
 

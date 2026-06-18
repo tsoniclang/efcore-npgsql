@@ -17,12 +17,13 @@ import * as Microsoft_EntityFrameworkCore_Scaffolding_Internal from "@tsonic/efc
 import type { DatabaseModelFactory, DatabaseModelFactoryOptions, IDatabaseModelFactory, IProviderConfigurationCodeGenerator, ProviderCodeGenerator, ProviderCodeGeneratorDependencies } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Scaffolding/internal/index.js";
 import type { DbLoggerCategory_Scaffolding } from "@tsonic/efcore/Microsoft.EntityFrameworkCore/internal/index.js";
 
-export interface NpgsqlCodeGenerator$instance extends ProviderCodeGenerator {
+export interface NpgsqlCodeGenerator$instance extends Microsoft_EntityFrameworkCore_Scaffolding_Internal.ProviderCodeGenerator {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Scaffolding_ProviderCodeGenerator: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Scaffolding_Internal_NpgsqlCodeGenerator: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Scaffolding_IProviderConfigurationCodeGenerator: never;
 
-    GenerateUseProvider(connectionString: string, providerOptions: MethodCallCodeFragment | null): MethodCallCodeFragment;
+    GenerateUseProvider: Microsoft_EntityFrameworkCore_Scaffolding_Internal.ProviderCodeGenerator["GenerateUseProvider"] & ((connectionString: string, providerOptions: MethodCallCodeFragment | null) => MethodCallCodeFragment);
 }
 
 
@@ -33,13 +34,13 @@ export const NpgsqlCodeGenerator: {
 
 export type NpgsqlCodeGenerator = NpgsqlCodeGenerator$instance;
 
-export interface NpgsqlDatabaseModelFactory$instance extends DatabaseModelFactory {
+export interface NpgsqlDatabaseModelFactory$instance extends Microsoft_EntityFrameworkCore_Scaffolding_Internal.DatabaseModelFactory {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_Scaffolding_DatabaseModelFactory: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_Scaffolding_Internal_NpgsqlDatabaseModelFactory: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_Scaffolding_IDatabaseModelFactory: never;
 
-    Create(connectionString: string, options: DatabaseModelFactoryOptions): DatabaseModel;
-    Create(dbConnection: DbConnection, options: DatabaseModelFactoryOptions): DatabaseModel;
+    Create: Microsoft_EntityFrameworkCore_Scaffolding_Internal.DatabaseModelFactory["Create"] & ((connectionString: string, options: DatabaseModelFactoryOptions) => DatabaseModel) & ((dbConnection: DbConnection, options: DatabaseModelFactoryOptions) => DatabaseModel);
 }
 
 

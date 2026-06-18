@@ -28,25 +28,28 @@ import type { DatabaseModel } from "@tsonic/efcore/Microsoft.EntityFrameworkCore
 import type { ValueConverter } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.Storage.ValueConversion/internal/index.js";
 import type { DbContext, DbContextOptionsBuilder, DbContextOptionsBuilder_1, DbFunctions, ModelBuilder } from "@tsonic/efcore/Microsoft.EntityFrameworkCore/internal/index.js";
 
-export enum NpgsqlTsRankingNormalization {
-    Default = 0,
-    DivideBy1PlusLogLength = 1,
-    DivideByLength = 2,
-    DivideByMeanHarmonicDistanceBetweenExtents = 4,
-    DivideByUniqueWordCount = 8,
-    DividesBy1PlusLogUniqueWordCount = 16,
-    DivideByItselfPlusOne = 32
-}
+export type NpgsqlTsRankingNormalization = number & { readonly __tsonic_type_Microsoft_EntityFrameworkCore_NpgsqlTsRankingNormalization: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const NpgsqlTsRankingNormalization: {
+    readonly Default: NpgsqlTsRankingNormalization;
+    readonly DivideBy1PlusLogLength: NpgsqlTsRankingNormalization;
+    readonly DivideByLength: NpgsqlTsRankingNormalization;
+    readonly DivideByMeanHarmonicDistanceBetweenExtents: NpgsqlTsRankingNormalization;
+    readonly DivideByUniqueWordCount: NpgsqlTsRankingNormalization;
+    readonly DividesBy1PlusLogUniqueWordCount: NpgsqlTsRankingNormalization;
+    readonly DivideByItselfPlusOne: NpgsqlTsRankingNormalization;
+};
 
 
 export interface LTree$instance {
     readonly __tsonic_type_Microsoft_EntityFrameworkCore_LTree: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly __tsonic_iface_System_IEquatable_1: never;
 
     readonly NLevel: int;
-    Equals(other: LTree): boolean;
     Equals(obj: unknown | null): boolean;
+    Equals(other: LTree): boolean;
     GetHashCode(): int;
     Index(other: LTree): int;
     Index(other: LTree, offset: int): int;
@@ -54,8 +57,8 @@ export interface LTree$instance {
     IsDescendantOf(other: LTree): boolean;
     MatchesLQuery(lquery: string): boolean;
     MatchesLTxtQuery(ltxtquery: string): boolean;
-    Subpath(offset: int, len: int): LTree;
     Subpath(offset: int): LTree;
+    Subpath(offset: int, len: int): LTree;
     Subtree(start: int, end: int): LTree;
     ToString(): string;
 }
@@ -173,11 +176,11 @@ export abstract class NpgsqlDatabaseModelExtensions$instance {
 export type NpgsqlDatabaseModelExtensions = NpgsqlDatabaseModelExtensions$instance;
 
 export abstract class NpgsqlDbContextOptionsBuilderExtensions$instance {
-    static UseNpgsql<TContext extends unknown & DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, npgsqlOptionsAction?: Action_1<NpgsqlDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
-    static UseNpgsql<TContext extends unknown & DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connection: DbConnection, npgsqlOptionsAction?: Action_1<NpgsqlDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
-    static UseNpgsql<TContext extends unknown & DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connection: DbConnection, contextOwnsConnection: boolean, npgsqlOptionsAction?: Action_1<NpgsqlDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
-    static UseNpgsql<TContext extends unknown & DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, dataSource: DbDataSource, npgsqlOptionsAction?: Action_1<NpgsqlDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
-    static UseNpgsql<TContext extends unknown & DbContext>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connectionString: string | null, npgsqlOptionsAction?: Action_1<NpgsqlDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
+    static UseNpgsql<TContext extends unknown & { readonly __tsonic_type_Microsoft_EntityFrameworkCore_DbContext: never }>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, npgsqlOptionsAction?: Action_1<NpgsqlDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
+    static UseNpgsql<TContext extends unknown & { readonly __tsonic_type_Microsoft_EntityFrameworkCore_DbContext: never }>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connection: DbConnection, npgsqlOptionsAction?: Action_1<NpgsqlDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
+    static UseNpgsql<TContext extends unknown & { readonly __tsonic_type_Microsoft_EntityFrameworkCore_DbContext: never }>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connection: DbConnection, contextOwnsConnection: boolean, npgsqlOptionsAction?: Action_1<NpgsqlDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
+    static UseNpgsql<TContext extends unknown & { readonly __tsonic_type_Microsoft_EntityFrameworkCore_DbContext: never }>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, dataSource: DbDataSource, npgsqlOptionsAction?: Action_1<NpgsqlDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
+    static UseNpgsql<TContext extends unknown & { readonly __tsonic_type_Microsoft_EntityFrameworkCore_DbContext: never }>(optionsBuilder: DbContextOptionsBuilder_1<TContext>, connectionString: string | null, npgsqlOptionsAction?: Action_1<NpgsqlDbContextOptionsBuilder> | null): DbContextOptionsBuilder_1<TContext>;
     static UseNpgsql(optionsBuilder: DbContextOptionsBuilder, npgsqlOptionsAction?: Action_1<NpgsqlDbContextOptionsBuilder> | null): DbContextOptionsBuilder;
     static UseNpgsql(optionsBuilder: DbContextOptionsBuilder, connection: DbConnection, npgsqlOptionsAction?: Action_1<NpgsqlDbContextOptionsBuilder> | null): DbContextOptionsBuilder;
     static UseNpgsql(optionsBuilder: DbContextOptionsBuilder, connection: DbConnection, contextOwnsConnection: boolean, npgsqlOptionsAction?: Action_1<NpgsqlDbContextOptionsBuilder> | null): DbContextOptionsBuilder;
@@ -436,7 +439,7 @@ export abstract class NpgsqlModelBuilderExtensions$instance {
     static HasCollation(modelBuilder: ModelBuilder, schema: string | null, name: string, lcCollate: string, lcCtype: string, provider?: string | null, deterministic?: Nullable_1<System_Internal.Boolean>): ModelBuilder;
     static HasHiLoSequence(modelBuilder: IConventionModelBuilder, name: string | null, schema: string | null, fromDataAnnotation?: boolean): IConventionSequenceBuilder | null;
     static HasPostgresEnum(modelBuilder: IConventionModelBuilder, schema: string | null, name: string, labels: string[]): IConventionModelBuilder;
-    static HasPostgresEnum<TEnum extends NonNullable<unknown> & number>(modelBuilder: ModelBuilder, schema?: string | null, name?: string | null, nameTranslator?: INpgsqlNameTranslator | null): ModelBuilder;
+    static HasPostgresEnum<TEnum extends { readonly __tsonic_type_System_ValueType: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never }>(modelBuilder: ModelBuilder, schema?: string | null, name?: string | null, nameTranslator?: INpgsqlNameTranslator | null): ModelBuilder;
     static HasPostgresEnum(modelBuilder: ModelBuilder, schema: string | null, name: string, labels: string[]): ModelBuilder;
     static HasPostgresEnum(modelBuilder: ModelBuilder, name: string, labels: string[]): ModelBuilder;
     static HasPostgresExtension(modelBuilder: IConventionModelBuilder, name: string, fromDataAnnotation?: boolean): IConventionModelBuilder | null;

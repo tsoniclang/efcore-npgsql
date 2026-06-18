@@ -28,23 +28,24 @@ export interface INpgsqlSequenceValueGeneratorFactory$instance {
 
 export type INpgsqlSequenceValueGeneratorFactory = INpgsqlSequenceValueGeneratorFactory$instance;
 
-export interface INpgsqlValueGeneratorCache$instance extends IValueGeneratorCache {
+export interface INpgsqlValueGeneratorCache$instance {
+    readonly __tsonic_iface_Microsoft_EntityFrameworkCore_ValueGeneration_IValueGeneratorCache: never;
     readonly __tsonic_iface_Npgsql_EntityFrameworkCore_PostgreSQL_ValueGeneration_Internal_INpgsqlValueGeneratorCache: never;
 
     GetOrAddSequenceState(property: IProperty, connection: IRelationalConnection): NpgsqlSequenceValueGeneratorState;
 }
 
 
-export interface INpgsqlValueGeneratorCache$instance extends Microsoft_EntityFrameworkCore_ValueGeneration_Internal.IValueGeneratorCache {}
-
 export type INpgsqlValueGeneratorCache = INpgsqlValueGeneratorCache$instance;
 
-export interface NpgsqlSequenceHiLoValueGenerator_1$instance<TValue extends unknown> extends HiLoValueGenerator_1<TValue> {
+export interface NpgsqlSequenceHiLoValueGenerator_1$instance<TValue extends unknown> extends Microsoft_EntityFrameworkCore_ValueGeneration_Internal.HiLoValueGenerator_1<TValue> {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_ValueGeneration_HiLoValueGenerator_1: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_ValueGeneration_ValueGenerator: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_ValueGeneration_ValueGenerator_1: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_ValueGeneration_Internal_NpgsqlSequenceHiLoValueGenerator_1: never;
 
-    readonly GeneratesTemporaryValues: boolean;
-    GetNewLowValue(): long;
-    GetNewLowValueAsync(cancellationToken?: CancellationToken): Task_1<System_Internal.Int64>;
+    GetNewLowValue: Microsoft_EntityFrameworkCore_ValueGeneration_Internal.HiLoValueGenerator_1<TValue>["GetNewLowValue"] & (() => long);
+    GetNewLowValueAsync: Microsoft_EntityFrameworkCore_ValueGeneration_Internal.HiLoValueGenerator_1<TValue>["GetNewLowValueAsync"] & ((cancellationToken?: CancellationToken) => Task_1<System_Internal.Int64>);
 }
 
 
@@ -55,7 +56,7 @@ export const NpgsqlSequenceHiLoValueGenerator_1: {
 
 export type NpgsqlSequenceHiLoValueGenerator_1<TValue extends unknown> = NpgsqlSequenceHiLoValueGenerator_1$instance<TValue>;
 
-export interface NpgsqlSequenceValueGeneratorFactory$instance extends INpgsqlSequenceValueGeneratorFactory$instance {
+export interface NpgsqlSequenceValueGeneratorFactory$instance {
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_ValueGeneration_Internal_NpgsqlSequenceValueGeneratorFactory: never;
 
     readonly __tsonic_iface_Npgsql_EntityFrameworkCore_PostgreSQL_ValueGeneration_Internal_INpgsqlSequenceValueGeneratorFactory: never;
@@ -76,7 +77,8 @@ export interface __NpgsqlSequenceValueGeneratorFactory$views {
 export type NpgsqlSequenceValueGeneratorFactory = NpgsqlSequenceValueGeneratorFactory$instance & __NpgsqlSequenceValueGeneratorFactory$views;
 
 
-export interface NpgsqlSequenceValueGeneratorState$instance extends HiLoValueGeneratorState {
+export interface NpgsqlSequenceValueGeneratorState$instance extends Microsoft_EntityFrameworkCore_ValueGeneration_Internal.HiLoValueGeneratorState {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_ValueGeneration_HiLoValueGeneratorState: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_ValueGeneration_Internal_NpgsqlSequenceValueGeneratorState: never;
 
     readonly __tsonic_iface_System_IDisposable: never;
@@ -92,7 +94,8 @@ export const NpgsqlSequenceValueGeneratorState: {
 
 export type NpgsqlSequenceValueGeneratorState = NpgsqlSequenceValueGeneratorState$instance;
 
-export interface NpgsqlValueGeneratorCache$instance extends ValueGeneratorCache, INpgsqlValueGeneratorCache$instance {
+export interface NpgsqlValueGeneratorCache$instance extends Microsoft_EntityFrameworkCore_ValueGeneration_Internal.ValueGeneratorCache {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_ValueGeneration_ValueGeneratorCache: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_ValueGeneration_Internal_NpgsqlValueGeneratorCache: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_ValueGeneration_IValueGeneratorCache: never;
@@ -114,14 +117,15 @@ export interface __NpgsqlValueGeneratorCache$views {
 export type NpgsqlValueGeneratorCache = NpgsqlValueGeneratorCache$instance & __NpgsqlValueGeneratorCache$views;
 
 
-export interface NpgsqlValueGeneratorSelector$instance extends RelationalValueGeneratorSelector {
+export interface NpgsqlValueGeneratorSelector$instance extends Microsoft_EntityFrameworkCore_ValueGeneration_Internal.RelationalValueGeneratorSelector {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_ValueGeneration_RelationalValueGeneratorSelector: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_ValueGeneration_ValueGeneratorSelector: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_ValueGeneration_Internal_NpgsqlValueGeneratorSelector: never;
 
     readonly __tsonic_iface_Microsoft_EntityFrameworkCore_ValueGeneration_IValueGeneratorSelector: never;
 
-    readonly Cache: INpgsqlValueGeneratorCache;
-    FindForType(property: IProperty, typeBase: ITypeBase, clrType: Type): ValueGenerator | null;
-    TrySelect(property: IProperty, typeBase: ITypeBase, valueGenerator: ValueGenerator | null): boolean;
+    FindForType: Microsoft_EntityFrameworkCore_ValueGeneration_Internal.RelationalValueGeneratorSelector["FindForType"] & ((property: IProperty, typeBase: ITypeBase, clrType: Type) => ValueGenerator | null);
+    TrySelect: Microsoft_EntityFrameworkCore_ValueGeneration_Internal.RelationalValueGeneratorSelector["TrySelect"] & ((property: IProperty, typeBase: ITypeBase, valueGenerator: ValueGenerator | null) => boolean);
 }
 
 

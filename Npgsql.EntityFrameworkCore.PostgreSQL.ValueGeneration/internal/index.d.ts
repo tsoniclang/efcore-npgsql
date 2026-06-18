@@ -13,11 +13,12 @@ import type { EntityEntry } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.C
 import * as Microsoft_EntityFrameworkCore_ValueGeneration_Internal from "@tsonic/efcore/Microsoft.EntityFrameworkCore.ValueGeneration/internal/index.js";
 import type { ValueGenerator_1 } from "@tsonic/efcore/Microsoft.EntityFrameworkCore.ValueGeneration/internal/index.js";
 
-export interface NpgsqlSequentialGuidValueGenerator$instance extends ValueGenerator_1<Guid> {
+export interface NpgsqlSequentialGuidValueGenerator$instance extends Microsoft_EntityFrameworkCore_ValueGeneration_Internal.ValueGenerator_1<Guid> {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_ValueGeneration_ValueGenerator: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_ValueGeneration_ValueGenerator_1: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_ValueGeneration_NpgsqlSequentialGuidValueGenerator: never;
 
-    readonly GeneratesTemporaryValues: boolean;
-    Next(entry: EntityEntry): Guid;
+    Next: Microsoft_EntityFrameworkCore_ValueGeneration_Internal.ValueGenerator_1<Guid>["Next"] & ((entry: EntityEntry) => Guid);
 }
 
 
@@ -28,11 +29,12 @@ export const NpgsqlSequentialGuidValueGenerator: {
 
 export type NpgsqlSequentialGuidValueGenerator = NpgsqlSequentialGuidValueGenerator$instance;
 
-export interface NpgsqlSequentialStringValueGenerator$instance extends ValueGenerator_1<System_Internal.String> {
+export interface NpgsqlSequentialStringValueGenerator$instance extends Microsoft_EntityFrameworkCore_ValueGeneration_Internal.ValueGenerator_1<System_Internal.String> {
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_ValueGeneration_ValueGenerator: never;
+    readonly __tsonic_type_Microsoft_EntityFrameworkCore_ValueGeneration_ValueGenerator_1: never;
     readonly __tsonic_type_Npgsql_EntityFrameworkCore_PostgreSQL_ValueGeneration_NpgsqlSequentialStringValueGenerator: never;
 
-    readonly GeneratesTemporaryValues: boolean;
-    Next(entry: EntityEntry): string;
+    Next: Microsoft_EntityFrameworkCore_ValueGeneration_Internal.ValueGenerator_1<System_Internal.String>["Next"] & ((entry: EntityEntry) => string);
 }
 
 

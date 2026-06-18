@@ -22,11 +22,11 @@ export interface INpgsqlTypeMapper$instance {
     ConfigureJsonOptions(serializerOptions: JsonSerializerOptions): INpgsqlTypeMapper;
     EnableDynamicJson(jsonbClrTypes?: Type[] | null, jsonClrTypes?: Type[] | null): INpgsqlTypeMapper;
     EnableRecordsAsTuples(): INpgsqlTypeMapper;
-    MapEnum<TEnum extends NonNullable<unknown> & number>(pgName?: string | null, nameTranslator?: INpgsqlNameTranslator | null): INpgsqlTypeMapper;
     MapEnum(clrType: Type, pgName?: string | null, nameTranslator?: INpgsqlNameTranslator | null): INpgsqlTypeMapper;
+    MapEnum<TEnum extends { readonly __tsonic_type_System_ValueType: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never }>(pgName?: string | null, nameTranslator?: INpgsqlNameTranslator | null): INpgsqlTypeMapper;
     Reset(): void;
-    UnmapEnum<TEnum extends NonNullable<unknown> & number>(pgName?: string | null, nameTranslator?: INpgsqlNameTranslator | null): boolean;
     UnmapEnum(clrType: Type, pgName?: string | null, nameTranslator?: INpgsqlNameTranslator | null): boolean;
+    UnmapEnum<TEnum extends { readonly __tsonic_type_System_ValueType: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never }>(pgName?: string | null, nameTranslator?: INpgsqlNameTranslator | null): boolean;
 }
 
 
